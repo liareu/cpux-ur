@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1 Einführung in die NKA | CPUX-UR Prozess-Landkarte</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landkarte.css">
+<link rel="stylesheet" href="lernen.css">
+</head>
+<body>
+
+<button class="sb-toggle" id="sbToggle" aria-label="Navigation ein- oder ausblenden" title="Navigation ein-/ausblenden"><span class="material-icons" id="sbIcon">menu_open</span></button>
+
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <span class="ux-lab-pill">UX Lab</span>
+        <h2>CPUX-UR Prozess-Landkarte</h2>
+        <p>Lernbegleiter zum Training, Stand Folie S. 252</p>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+        <div class="nav-group">Überblick</div>
+        <a href="index.html" class="nav-link"><span class="material-icons">map</span>Prozesskarte</a>
+        <a href="dashboard.html" class="nav-link"><span class="material-icons">dashboard</span>Lern-Cockpit</a>
+        <a href="seminar.html" class="nav-link"><span class="material-icons">school</span>Zum Seminar</a>
+        <div class="nav-group">Lernen</div>
+        <a href="zusammenhang.html" class="nav-link"><span class="material-icons">hub</span>Alles im Zusammenhang</a>
+        <a href="schaubilder.html" class="nav-link"><span class="material-icons">account_tree</span>Schaubilder</a>
+        <a href="lernziele.html" class="nav-link"><span class="material-icons">checklist</span>Lernziele</a>
+        <a href="selbsttest.html" class="nav-link"><span class="material-icons">style</span>Selbsttest Begriffe</a>
+        <div class="nav-group">Kapitel</div>
+        <a href="kapitel-1.html" class="nav-link active"><span class="material-icons">looks_one</span>1 Einführung in die NKA</a>
+        <div class="nav-sub"><a href="#kette">Die Kette</a><a href="#kontext">Nutzungskontext</a><a href="#aufgabenmodell">Aufgabenmodell</a><a href="#anforderungen">Anforderungsarten &amp; Qualität</a><a href="#nutzungsanforderungen">Nutzungsanforderungen</a></div>
+        <a href="kapitel-2.html" class="nav-link"><span class="material-icons">looks_two</span>2 NKA planen</a>
+        <a href="kapitel-3.html" class="nav-link"><span class="material-icons">looks_3</span>3 Information erheben</a>
+        <a href="kapitel-4.html" class="nav-link"><span class="material-icons">looks_4</span>4 Erfordernisse identifizieren</a>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>5 NA ableiten</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>6 Konsolidieren &amp; priorisieren</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>7 Schnittstellen</span>
+        <div class="nav-group">Prüfung</div>
+        <a href="pruefung-theorie.html" class="nav-link"><span class="material-icons">quiz</span>Theoretische Prüfung</a>
+        <a href="pruefung-praxis.html" class="nav-link"><span class="material-icons">assignment</span>Praktische Prüfung</a>
+        <div class="nav-group">Nachschlagen</div>
+        <a href="glossar.html" class="nav-link"><span class="material-icons">menu_book</span>Glossar</a>
+        <a href="ure-story.html" class="nav-link"><span class="material-icons">auto_stories</span>URE Story</a>
+        <a href="schablonen.html" class="nav-link"><span class="material-icons">text_fields</span>Formulierungsschablonen</a>
+        <a href="curriculum.html" class="nav-link"><span class="material-icons">library_books</span>Curriculum</a>
+    </nav>
+    <div class="sidebar-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54331 231.41233" width="100" aria-label="Micromata"><g style="isolation:isolate"><polygon fill="#009ba3" points="148.258 115.749 126.403 93.891 126.401 93.892 73.277 40.768 51.416 62.623 104.543 115.75 51.416 168.878 73.277 190.733 126.4 137.607 126.403 137.61 148.258 115.749"/><rect fill="#007480" x="110.9384" y="100.29035" width="30.91783" height="30.91093" transform="translate(297.62103 108.27464) rotate(135.02027)"/><polygon fill="#ffcb00" style="mix-blend-mode:multiply" points="248.142 40.767 226.287 62.621 279.411 115.75 226.287 168.876 248.142 190.735 301.268 137.609 323.129 115.747 248.142 40.767"/><polygon fill="#75be01" points="410.565 115.749 388.71 93.891 388.708 93.892 335.584 40.768 313.723 62.623 366.85 115.75 313.723 168.878 335.584 190.733 388.707 137.608 388.71 137.61 410.565 115.749"/><rect fill="#32912e" x="373.25004" y="100.28859" width="30.91285" height="30.91093" transform="translate(745.47512 -77.14329) rotate(135.02027)"/><polygon fill="#e10057" points="235.693 115.747 160.706 40.767 138.851 62.621 191.975 115.75 138.851 168.876 160.706 190.735 213.832 137.609 213.832 137.609 235.693 115.747"/><rect fill="#a70836" x="198.37947" y="100.29397" width="30.90915" height="30.91093" transform="translate(446.87971 46.37618) rotate(134.99583)"/><rect fill="#ff9d01" x="285.81339" y="100.29397" width="30.90915" height="30.91093" transform="translate(596.13425 -15.45344) rotate(134.99583)"/></g></svg>
+    </div>
+</aside>
+
+<div class="container">
+
+    <div class="header sub">
+        <p class="eyebrow">Kapitel 1</p>
+        <h1>Einführung in die Nutzungskontextanalyse</h1>
+    </div>
+
+    <!-- =========================================================
+         DIE KETTE (Folien S. 20–50)
+         ========================================================= -->
+    <section class="section" id="kette">
+        <div class="section-title"><div class="num"><span class="material-icons">link</span></div><h2>Zusammenhang Nutzungskontext, Erfordernis, Anforderung, Lösung</h2></div>
+        <p class="section-lead">1.1 Anforderungen und Lösungen unterscheiden: Verstehen, dass Anforderungen zum Einkreisen passender Lösungen und Verwerfen unpassender Lösungen geeignet sind und somit helfen, Konsens über Lösungsvorschläge auf Basis von argumentativen Fakten statt Meinungen zu finden. (S. 20)</p>
+
+        <div class="card">
+            <div class="chain-zone">
+                <div class="zone-label problem">Problemraum</div>
+                <div class="zone-label loesung">Lösungsraum <span style="font-weight:600">· deine Notiz: Lösungsneutral</span></div>
+            </div>
+            <div class="chain">
+                <div class="chain-step">
+                    <div class="step-name">Nutzungskontext</div>
+                    <div class="step-def">Enthält faktische Information, die auf Erfordernis hinweisen.</div>
+                    <div class="step-ex"><b>Definition (S. 23)</b>Eine Kombination aus Benutzern, Zielen und Aufgaben, Ressourcen und Umgebungen</div>
+                    <div class="step-ex"><b>Beispiel (S. 132)</b>Viele ankommende Flugreisende am Frankfurter Flughafen haben als Reiseziel die Frankfurter Innenstadt und nutzen dazu den öffentlichen Nahverkehr.</div>
+                </div>
+                <div class="chain-arrow"><span class="material-icons">arrow_forward</span></div>
+                <div class="chain-step">
+                    <div class="step-name">Erfordernis</div>
+                    <div class="step-def">Ist Grund für den Unterstützungsbedarf und stellt Basis für Anforderung.</div>
+                    <div class="step-ex"><b>Definition (S. 23)</b>Eine Voraussetzung, die für einen Benutzer oder eine Benutzergruppe als notwendig erachtet wird, um ein implizites oder im Rahmen eines bestimmten Nutzungskontextes vorgegebenes Ziel zu erreichen.</div>
+                    <div class="step-ex"><b>Beispiel (S. 132)</b>Erfordernis: Der angekommene Fluggast muss nach Ankunft einen gültigen Fahrschein für die S-Bahn haben, um sein endgültiges Reiseziel legal zu erreichen.</div>
+                </div>
+                <div class="chain-arrow"><span class="material-icons">arrow_forward</span></div>
+                <div class="chain-step l">
+                    <div class="step-name">Anforderung</div>
+                    <div class="step-def">Ist geforderte Leistungen an ein interaktives System, um eine angemessene Unterstützung zu bieten.</div>
+                    <div class="step-ex"><b>Definition (S. 23)</b>Eine Bedingung oder Fähigkeit, die ein interaktives System erfüllen oder besitzen muss, um eine Vereinbarung, eine Norm, eine Spezifikation oder andere formal auferlegte Dokumente zu erfüllen.</div>
+                    <div class="step-ex"><b>Beispiel, nicht immunisiert (S. 48)</b>Der Benutzer muss am System auf Grundlage des ausgewählten Fahrtziels den Preis für die Fahrt erkennen können.</div>
+                </div>
+                <div class="chain-arrow"><span class="material-icons">arrow_forward</span></div>
+                <div class="chain-step l">
+                    <div class="step-name">Lösung</div>
+                    <div class="step-def">Ist interaktives System mit geeigneten Merkmalen zur Unterstützung.</div>
+                    <div class="step-ex"><b>Definition (S. 23)</b>Ein Produktmerkmal oder mehrere zusammenhängende Produktmerkmale, die spezifiziert oder realisiert sind und eine oder mehrere Anforderungen erfüllen sollen.</div>
+                </div>
+            </div>
+            <div class="grid-2" style="margin-top:18px">
+                <div class="box"><div class="box-title">Problemraum</div>Sammelbegriff für den Nutzungskontext und die darin enthaltenen Erfordernisse zur Zielerreichung der Benutzer.</div>
+                <div class="box lila"><div class="box-title">Lösungsraum</div>Sammelbegriff für die Nutzungsanforderungen und Lösungen, die die Erfordernisse zur Zielerreichung der Benutzer befriedigen.</div>
+            </div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 23)</div>Nutzungskontext: Aufgabe → Ziel</div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 23–26, 48, 132</span>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3><span class="material-icons">record_voice_over</span>Benutzerwunsch (user want), Forderung (request)</h3>
+                <div class="grid-2" style="gap:12px">
+                    <div class="box lila"><div class="box-title">Benutzerwunsch</div>Ein Wunsch, den ein Benutzer hinsichtlich der Attribute eines interaktiven Systems formuliert.</div>
+                    <div class="box lila"><div class="box-title">Forderung</div>Ein Benutzerwunsch oder eine Vorgabe eines oder mehrerer Stakeholder für das interaktive System.</div>
+                </div>
+                <p style="font-size:14px;margin:12px 0">Forderungen werden oftmals als Lösungsvorschlag formuliert, ohne dass der zugrundeliegende Benutzerwunsch angegeben wird. Oft beschreiben sie Features, die sich Benutzer an einem Produkt wünschen.</p>
+                <div class="flow-v">
+                    <div class="fv-step"><span class="badge soft">Forderung</span>Das E-Mail-Programm soll nach Versand einer E-Mail automatisch in den Ordner "Gesendete Objekte" an die Stelle der gesendeten E-Mail wechseln.</div>
+                    <div class="fv-arrow"><span class="material-icons">south</span></div>
+                    <div class="fv-step"><span class="badge soft">Auf Nachfrage hin, Benutzerwunsch</span>Ich möchte sicher sein, dass die Mail rausgegangen ist.</div>
+                    <div class="fv-arrow"><span class="material-icons">south</span></div>
+                    <div class="fv-step l"><span class="badge lila">Mögliche Nutzungsanforderung</span>Der Benutzer muss am System nach dem Senden einer E-Mail erkennen können, ob sie gesendet wurde.</div>
+                </div>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen (S. 42)</div>Benutzerwunsch: individuell · Wunsch: Allgemeingültigkeit? → ja → Erfordernis</div>
+                <h4>Abgrenzung Forderungen und Anforderung (S. 43)</h4>
+                <ul style="font-size:14px">
+                    <li>Forderungen werden häufig als Lösungsvorschlags formuliert, ohne dass die zugrundeliegenden Wünsche der Benutzenden genannt werden.</li>
+                    <li>Forderungen sind oft Beschreibungen von "Features", die sich Benutzer an einem Produkt wünschen.</li>
+                    <li>Forderungen sind keine Anforderungen. Sie werden wie andere Nutzungskontextinformationen in Hinblick auf enthaltene Erfordernisse und ableitbare Nutzungsanforderungen analysiert und können somit in Anforderungen überführt werden.</li>
+                    <li>Forderungen nach Änderungen an einem bestehenden System oder Prototyp durch Projektbeteiligte, einschließlich des Managements, werden häufig als "change requests" bezeichnet.</li>
+                    <li>Forderungen weisen auf kontextspezifische Nutzungsanforderungen hin. Gestaltungsregeln wiederum sind Regeln, die für viele Nutzungskontexte gelten.</li>
+                </ul>
+                <div class="box"><div class="box-title"><span class="material-icons">edit</span>Praktische Übung 1 (S. 44)</div>Bitte bearbeiten Sie Übung 1 aus der Datei "Praktische Übungen":
+                    <p style="margin-top:6px">Im Folgenden sehen Sie einen Zusammenschnitt kontextueller Interviews zu Küchenmaschinen. Sammeln Sie bitte</p>
+                    <ul><li>Erfordernisse</li><li>Forderungen</li><li>Wünsche,</li></ul>
+                    <p>die in dem folgenden kontextuellen Interview / Beobachtung genannt werden.</p>
+                    <span class="src"><span class="material-icons">description</span>Folie S. 44</span></div>
+                <span class="src"><span class="material-icons">description</span>Folien S. 42, 43</span>
+            </div>
+            <div class="card">
+                <h3><span class="material-icons">warning_amber</span>Immunisierungsfalle (immunization trap)</h3>
+                <p style="font-size:13px;color:#6b7280">Immunisierungsfalle – Mobiltelefon (S. 49, Fotos auf der Folie)</p>
+                <div class="box pink"><div class="box-title">Definition</div>Ein unbewusst gewähltes Vorgehen, bei dem Anforderungen spezifiziert werden, die bekannte oder vorgestellte Lösungen repräsentieren, statt lösungsneutral auf der Basis von Erfordernissen im Nutzungskontext hergeleitet worden zu sein.
+                    <ul style="margin-top:6px"><li>Führt zu immunisierten Anforderungen.</li><li>Das systematische Herleiten von Anforderungen auf der Basis von Nutzungskontextinformationen vermeidet die Immunisierungsfalle. Dies ermöglicht den Vergleich von Lösungsalternativen, die die Anforderungen erfüllen.</li></ul></div>
+                <div style="margin-top:14px">
+                    <div class="nok"><span class="material-icons">close</span><span><b>Immunisiert:</b> Der Benutzer muss am Fahrkartenautomaten das Tarifsystem aufrufen können.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span><b>Nicht immunisiert:</b> Der Benutzer muss am System auf Grundlage des ausgewählten Fahrtziels den Preis für die Fahrt erkennen können.</span></div>
+                    <div class="nok"><span class="material-icons">close</span><span><b>Immunisiert:</b> Der Benutzer muss am Heizungsventil die Wärmestufen 1, 2, 3, 4, 5 auswählen können.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span><b>Nicht immunisiert:</b> Der Benutzer muss an der Heizung die Wunschtemperatur auswählen können.</span></div>
+                </div>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 48)</div>hilfreich</div>
+                <span class="src"><span class="material-icons">description</span>Folien S. 48, 49</span>
+            </div>
+        </div>
+
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Anforderungen und Lösungen unterscheiden</h3>
+            <p class="card-lead">Deine Notiz: Zusammenfassung (S. 50)</p>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Bei der menschzentrierten Gestaltung liegt der Fokus auf den Benutzenden und anderen Menschen, die von dem interaktiven System betroffen sein können.</div>
+                <div class="st"><span class="sn">2</span>Die Qualität des interaktiven Systems umfasst die menschzentrierte und die technische Qualität.</div>
+                <div class="st"><span class="sn">3</span>Aus der Gestaltung können Risiken für Benutzer, andere Menschen, Institutionen resultieren, z.B. für die Gesundheit, die Sicherheit, die Finanzen oder die Umwelt.</div>
+                <div class="st"><span class="sn">4</span>Der Nutzungskontext ist die Basis für Erfordernissen, aus denen die Nutzungsanforderungen abgeleitet werden, die zur Umsetzung und Erreichung der menschzentrierten Qualität beitragen.</div>
+                <div class="st"><span class="sn">5</span>Lösungen sind Attribute von interaktiven Systemen, die Anforderungen erfüllen sollen.</div>
+                <div class="st"><span class="sn">6</span>Anforderungen kreisen passende Lösungen ein und verwerfen unpassende Lösungen, da Lösungsvorschläge auf Fakten anstatt Meinungen basieren. Der Lösungsraum muss zum Problemraum passen.</div>
+                <div class="st"><span class="sn">7</span>Forderungen und Wünsche von Benutzenden und anderen Stakeholdern werden analysiert, um eventuell zugrundeliegende Erfordernisse zu identifizieren. Damit wird die Immunisierungsfalle vermieden und unbegründete Anforderungen und suboptimale interaktive Systeme verhindert.</div>
+                <div class="st"><span class="sn">8</span>Der Lösungsraum des geplanten interaktiven Systems wird durch kontextspezifische Nutzungsanforderungen, etablierte Gestaltungsrichtlinien und konkrete Gestaltungsregeln bestimmt.</div>
+            </div>
+            <div class="grid-2" style="margin-top:16px">
+                <div class="box"><div class="box-title">Welches Gerät ist besser nutzbar? (S. 22)</div>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>it depends, für was, wen …</div></div>
+                <div class="box"><div class="box-title">Interaktives System (interactive system), S. 28</div>Eine Kombination von Hardware, Software und Dienstleistungen mit denen Benutzer interagieren, um bestimmte Ziele zu erreichen.
+                    <ul style="margin-top:6px"><li>Dies schließt gegebenenfalls Verpackung, Dokumentation, Online-Hilfe, Support, Schulung mit ein.</li><li>Eine Usability-Studie für ein Fernsehgerät kann sich mit dem Gerät selbst oder mit dem Auspack- und der Inbetriebnahme befassen. Dies ist der Out-Of-the-Box-Test der die Verpackung, den Einrichtungsprozess, die Benutzerdokumentation sowie die Usability dieser Komponenten testet.</li><li>Auch Systeme, die keine Eingaben von Benutzenden akzeptieren, fallen unter diese Definition, z.B. Ankunfts- und Abfahrtstafeln in Flughäfen oder Bahnhöfen.</li><li>Im Rahmen des Curriculums ist mit "interaktives System" meist das zu entwickelnde System gemeint.</li></ul>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen</div>das zu entwickelnde System · unboxing</div></div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 22, 28, 50</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         NUTZUNGSKONTEXT (Folien S. 67–97)
+         ========================================================= -->
+    <section class="section" id="kontext">
+        <div class="section-title"><div class="num"><span class="material-icons">account_tree</span></div><h2>Die 5 Komponenten des Nutzungskontextes – B/A&amp;Z/U/R</h2></div>
+        <p class="section-lead">1.3 – Der Nutzungskontext als Grundlage für Nutzungsanforderungen · Sicherstellen, dass alle Bestandteile des Nutzungskontextes, die zu Nutzungsanforderungen an das interaktive System führen können, angemessen bei der Anforderungsspezifikation berücksichtigt werden. (S. 67)</p>
+        <p class="kap-bar"><span>Anforderungen und Qualität</span> → <span>Anforderung und Stakeholder</span> → <span>Komponenten des Nutzungskontexts</span> → <span>Nutzungsanforderungen</span> <small>(S. 67)</small></p>
+        <div class="pg" data-pg="{&quot;titel&quot;: &quot;Die 5 Komponenten des Nutzungskontextes – B/A&amp;Z/U/R&quot;, &quot;folie&quot;: &quot;S. 71, 208&quot;, &quot;stufen&quot;: [{&quot;titel&quot;: &quot;Benutzer&quot;, &quot;k&quot;: &quot;benutzer&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Benutzergruppe 1&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;pers. Ziele&quot;, &quot;k&quot;: &quot;benutzer&quot;}, {&quot;label&quot;: &quot;Eigenschaften&quot;, &quot;k&quot;: &quot;benutzer&quot;}, {&quot;label&quot;: &quot;Einstellungen&quot;, &quot;k&quot;: &quot;benutzer&quot;}, {&quot;label&quot;: &quot;…&quot;, &quot;k&quot;: &quot;benutzer&quot;}]}, {&quot;titel&quot;: &quot;Benutzergruppe n&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;pers. Ziele&quot;, &quot;k&quot;: &quot;benutzer&quot;}, {&quot;label&quot;: &quot;Eigenschaften&quot;, &quot;k&quot;: &quot;benutzer&quot;}, {&quot;label&quot;: &quot;Einstellungen&quot;, &quot;k&quot;: &quot;benutzer&quot;}, {&quot;label&quot;: &quot;…&quot;, &quot;k&quot;: &quot;benutzer&quot;}]}]}, {&quot;titel&quot;: &quot;Aufgaben &amp; Ziele&quot;, &quot;k&quot;: &quot;aufgaben&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Aufgabe 1, Ziel 1&quot;, &quot;k&quot;: &quot;aufgaben&quot;}, {&quot;label&quot;: &quot;…&quot;, &quot;k&quot;: &quot;aufgaben&quot;}, {&quot;label&quot;: &quot;Aufgabe m, Ziel m&quot;, &quot;k&quot;: &quot;aufgaben&quot;}]}], &quot;pfeil_text&quot;: &quot;&quot;}, {&quot;titel&quot;: &quot;Umgebung&quot;, &quot;k&quot;: &quot;umgebung&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;physische Bedingung&quot;, &quot;k&quot;: &quot;umgebung&quot;}, {&quot;label&quot;: &quot;soziale Bedingung&quot;, &quot;k&quot;: &quot;umgebung&quot;}, {&quot;label&quot;: &quot;technische Bedingung&quot;, &quot;k&quot;: &quot;umgebung&quot;}]}], &quot;pfeil_text&quot;: &quot;&quot;}, {&quot;titel&quot;: &quot;Ressourcen&quot;, &quot;k&quot;: &quot;ressourcen&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;wiederverwendbar&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Ausrüstung: Hardware, Software&quot;, &quot;k&quot;: &quot;ressourcen&quot;}, {&quot;label&quot;: &quot;Informationen&quot;, &quot;k&quot;: &quot;ressourcen&quot;}, {&quot;label&quot;: &quot;Support: menschlich, technisch&quot;, &quot;k&quot;: &quot;ressourcen&quot;}]}, {&quot;titel&quot;: &quot;sich erschöpfend&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Material&quot;, &quot;k&quot;: &quot;ressourcen&quot;}, {&quot;label&quot;: &quot;Zeit&quot;, &quot;k&quot;: &quot;ressourcen&quot;}, {&quot;label&quot;: &quot;Geld&quot;, &quot;k&quot;: &quot;ressourcen&quot;}, {&quot;label&quot;: &quot;Leistungsfähigkeit: körperlich, mental&quot;, &quot;k&quot;: &quot;ressourcen&quot;}]}], &quot;pfeil_text&quot;: &quot;&quot;}]}"></div>
+        <div class="card">
+            <h3><span class="material-icons">account_balance</span>Menschzentrierte Gestaltung (HCD)</h3>
+            <p>Planung des menschzentrierten Gestaltungsprozesses → <b>Verstehen und Festlegen des Nutzungskontextes</b> → Festlegen der Nutzungsanforderungen → Erarbeiten von Gestaltungslösungen → Evaluieren der Gestaltung → Gestaltungslösung erfüllt die Nutzungsanforderungen</p>
+            <p style="font-size:13px;color:#6b7280">Iterationen · Quelle: ISO 9241-210:2019</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 68</span>
+        </div>
+
+        <div class="card">
+            <div class="tree-root"><span>Nutzungskontext</span><small>Eine Kombination aus Benutzern, Zielen und Aufgaben, Ressourcen und Umgebungen. (S. 70)</small></div>
+            <div class="tree-line"></div>
+            <div class="tree-bar"></div>
+            <div class="tree-cols">
+                <div class="tree-col">
+                    <div class="tree-head"><span class="letter">B</span>Benutzer</div>
+                    <div class="tree-body">
+                        <div class="sub">Benutzergruppe 1</div>
+                        <ul><li>pers. Ziele</li><li>Eigenschaften</li><li>Einstellungen</li><li>…</li></ul>
+                        <div class="sub">…</div>
+                        <div class="sub">Benutzergruppe n</div>
+                        <ul><li>pers. Ziele</li><li>Eigenschaften</li><li>Einstellungen</li><li>…</li></ul>
+                    </div>
+                </div>
+                <div class="tree-col">
+                    <div class="tree-head"><span class="letter">A</span>Aufgaben &amp; Ziele</div>
+                    <div class="tree-body">
+                        <ul><li>Aufgabe 1, Ziel 1</li><li>…</li><li>Aufgabe m, Ziel m</li></ul>
+                        <div class="note" style="margin-top:10px"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>5 Komponenten</div>
+                    </div>
+                </div>
+                <div class="tree-col">
+                    <div class="tree-head"><span class="letter">U</span>Umgebung</div>
+                    <div class="tree-body">
+                        <ul><li>physische Bedingung</li><li>soziale Bedingung</li><li>technische Bedingung</li></ul>
+                    </div>
+                </div>
+                <div class="tree-col">
+                    <div class="tree-head"><span class="letter">R</span>Ressourcen</div>
+                    <div class="tree-body">
+                        <div class="sub">wiederverwendbar</div>
+                        <ul><li>Ausrüstung: Hardware, Software</li><li>Informationen</li><li>Support: menschlich, technisch</li></ul>
+                        <div class="sub">sich erschöpfend</div>
+                        <ul><li>Material</li><li>Zeit</li><li>Geld</li><li>Leistungsfähigkeit: körperlich, mental</li></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box" style="margin-top:18px"><div class="box-title">Nutzungskontext (context of use), S. 70</div>
+                <ul><li>Nutzungskontextinformationen sind faktische Informationen, die im Nutzungskontext erhoben werden.</li><li>Die Ergebnisse aus Beobachtungen und kontextuellen Interviews werden in Nutzungskontextbeschreibungen dokumentiert.</li><li>Die Teilmenge des Nutzungskontextes, die als Basis für die Gestaltung eines interaktiven Systems verwendet wird, wird als Nutzungskontext für die Gestaltung bezeichnet.</li></ul></div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 69, 70</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">person</span>Benutzer (user)</h3>
+            <p class="card-lead">Eine Person, die mit einem interaktiven System interagiert oder die Ergebnisse, die vom System erzeugt werden, benutzt.</p>
+            <div class="user-types">
+                <div class="ut-group"><div class="ut-label">Unterschiede im Ziel der Interaktion</div>
+                    <div class="ut-card"><span class="ut-ic"><span class="material-icons">person</span></span><b>Primäre Benutzer</b>Ein Benutzer, der das interaktive System für den beabsichtigten Zweck verwendet.</div>
+                    <div class="ut-card"><span class="ut-ic"><span class="material-icons">build</span></span><b>Sekundäre Benutzer</b>Ein Benutzer, der unterstützende Aufgaben mit dem interaktiven System ausführt, beispielsweise um es zu warten oder um primäre Benutzer zu schulen.</div>
+                </div>
+                <div class="ut-group"><div class="ut-label">keine Interaktion</div>
+                    <div class="ut-card l"><span class="ut-ic"><span class="material-icons">visibility</span></span><b>Indirekte Benutzer</b>Ein Benutzer, der die Ergebnisse des interaktiven Systems verwendet, aber nicht direkt mit dem interaktiven System interagiert.</div>
+                </div>
+            </div>
+            <div class="grid-2" style="margin-top:16px">
+                <div class="box"><div class="box-title">Warum unterscheiden wir zwischen verschiedenen Nutzertypen? (S. 73)</div>
+                    <div class="note" style="margin-top:4px"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>Unterschiedl. Ziele / Aufgabenbezogen · z.B. techn./Administrativ · Haupt/primärnutzer</div></div>
+                <div class="box"><div class="box-title">Typen von Benutzenden und UIs, Screens (S. 74)</div>Verschiedene Nutzertypen haben unterschiedliche Aufgaben, Erfordernisse und Anforderungen und daher auch UIs!</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 72–74</span>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3><span class="material-icons">domain</span>Umgebung (environment)</h3>
+                <p class="card-lead">Die physischen, sozialen und technischen Bedingungen, unter denen ein Benutzer mit einem interaktiven System interagiert</p>
+                <div class="env">
+                    <div class="env-i"><span class="material-icons">straighten</span><b>physisch</b>Die physischen Bedingungen beziehen sich auf alles, was mit einem physischen Parameter versehen ist, z.B. Raumgröße (in Quadratmetern), Lichtstärke (in Lumen), Lärm (in Dezibel).</div>
+                    <div class="env-i"><span class="material-icons">wifi</span><b>technisch</b>Die technischen Bedingungen beziehen sich auf den Zugang zu Energie und Konnektivität, z.B. W-LAN-Zugang, Steckdosen, Telefonanschluss.</div>
+                    <div class="env-i"><span class="material-icons">diversity_3</span><b>sozial</b>Die sozialen Bedingungen beziehen sich auf die Aspekte des Lebens, die von der Gesellschaft geprägt sind, z.B. Arbeitsbedingungen, Gesetze und Vorschriften, Zugang zu Informationen und KollegInnen.</div>
+                </div>
+                <span class="src"><span class="material-icons">description</span>Folie S. 89</span>
+            </div>
+            <div class="card">
+                <h3><span class="material-icons">inventory</span>Ressourcen (resources)</h3>
+                <p class="card-lead">Alle Mittel, die erforderlich sind, um ein beabsichtigtes Ergebnis im Nutzungskontext zu erreichen</p>
+                <div class="grid-2" style="gap:10px">
+                    <div class="box"><div class="box-title"><span class="material-icons">autorenew</span>wiederverwendbare Ressourcen</div><ul><li>Information</li><li>Support</li><li>Ausrüstung<ul><li>Hardware</li><li>Software</li><li>physische Gegenstände</li></ul></li></ul></div>
+                    <div class="box lila"><div class="box-title"><span class="material-icons">hourglass_bottom</span>sich erschöpfende Ressourcen</div><ul><li>Zeit</li><li>physischer Aufwand</li><li>mentaler Aufwand</li><li>finanzieller Aufwand</li><li>Material</li></ul></div>
+                </div>
+                <div style="text-align:center;font-weight:700;margin:8px 0">mit Bezug auf die Verwendung des Systems</div>
+                <ul style="font-size:14px"><li>Ressourcen sind immer in Bezug auf die Nutzung des Systems definiert.</li><li>Benutzergruppen können ggf. nach der Verfügbarkeit von Ressourcen unterschieden werden.</li><li>Das System selbst ist keine Ausrüstung.</li></ul>
+                <span class="src"><span class="material-icons">description</span>Folie S. 91</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">filter_alt</span>Nutzungskontext für die Gestaltung (context of use for design)</h3>
+            <p class="card-lead">Eine Teilmenge des Nutzungskontextes, die als Grundlage für die Gestaltung eines interaktiven Systems verwendet wird.</p>
+            <div class="subset">
+                                <div>
+                    <b style="font-size:14px">Beispiele für Nutzungskontextinformationen, die für die Gestaltung nicht verwendet werden:</b>
+                    <div class="nok" style="margin-top:8px"><span class="material-icons">remove_circle_outline</span><span>Die Unterscheidung von Benutzenden in Männer und Frauen wird bei der Gestaltung des interaktiven Systems nicht berücksichtigt. (Komponente Benutzer)</span></div>
+                    <div class="nok"><span class="material-icons">remove_circle_outline</span><span>"Silver Surfer" als eine Benutzergruppe einer neuen mobilen Anwendung wird bei der Gestaltung nicht berücksichtigt. (Komponente Benutzer)</span></div>
+                    <div class="nok"><span class="material-icons">remove_circle_outline</span><span>Die Nutzung des interaktiven Systems "im Straßenverkehr" wird bei der Gestaltung des Systems nicht berücksichtigt. (Komponente Umgebung)</span></div>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 93)</div>– für wen entwickeln wir das? in welcher Umgebung mit welchen Ressourcen … – Nutzungskontext bestimmen in welchem Kontext</div>
+                </div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 93</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">school</span>Übung zur Diskussion (S. 95)</h3>
+            <p class="card-lead">Ordnen Sie die unten aufgeführten Komponenten des Nutzungskontextes zu: In einem Schulbüro erstellen Mitarbeiter des Sekretariat Zertifikate für die Schüler rechtzeitig vor der Zeugnisübergabe. Sie bestätigen die Gültigkeit der Zertifikate mit Hilfe des Schulstempels. Interaktives System: Textverarbeitung</p>
+            <table class="exercise">
+                <tr><th>Benutzer</th><td>Mitarbeiter Sekretariat · <small>indirekt:</small> Schüler</td></tr>
+                <tr><th>Aufgabe und Ziel</th><td>Aufgabe: Zertifikat erstellen · Ziel: Gültigkeit bestätigen / rechtzeitig gültige Zertifikat abgeben</td></tr>
+                <tr><th>Aufgabenobjekt und Attribute</th><td>Objekt: Zertifikat · Attribut: Stempel (Bleistift: … Stempel, Stempelkissen, stempeln, Zertifikat zur Seite legen)</td></tr>
+                <tr><th>Umgebungsbedingungen</th><td><small>physisch:</small> Schulbüro · <small>sozial:</small> Mitarbeiter, Schüler</td></tr>
+                <tr><th>Ressourcen</th><td><small>wiederverwendbar:</small> Stempel · <small>erschöpfend:</small> Zeit</td></tr>
+            </table>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>Learning: Den Text genau nehmen</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 95, Lösungen aus deinen Notizen</span>
+        </div>
+
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Der Nutzungskontext als Grundlage für Nutzungsanforderungen</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Der Nutzungskontext umfasst die Benutzenden des interaktiven Systems, ihre Ziele und Aufgaben, die verwendeten Ressourcen, die Umgebung, in der die Aufgaben ausgeführt werden. Alle Bestandteile des Nutzungskontextes können Erfordernisse enthalten, die zu Nutzungsanforderungen führen.</div>
+                <div class="st"><span class="sn">2</span>Der heutige Nutzungskontext ist die Basis des Nutzungskontextes für die Gestaltung. Dieser ist oft eine Teilmenge des heutigen Nutzungskontexts ist, da nicht alle Benutzergruppen und nicht alle Aufgaben des heutigen Nutzungskontextes und tlw. neue Benutzergruppen vom geplanten System unterstützt werden sollen.</div>
+                <div class="st"><span class="sn">3</span>Jede Aufgabe kann in Teilaufgaben unterteilt werden, was in einem Aufgabenmodell dargestellt wird. Das Aufgabenmodell des heutigen Nutzungskontextes beschreibt, wie Benutzende Aufgaben erledigen, bevor das geplante interaktive System verfügbar ist. Das Aufgabenmodell für die Gestaltung ist eine Weiterentwicklung des Aufgabenmodells des heutigen Nutzungskontextes und typischerweise optimiert auf Basis identifizierter Erfordernisse, abgeleiteter Nutzungsanforderungen und neuer Technologien.</div>
+                <div class="st"><span class="sn">4</span>Wenn Benutzende Aufgaben ausführen, erstellen, ändern oder inspizieren sie Aufgabenobjekte. Beim Konzipieren und Entwerfen von Lösungen sind die Aufgabenobjekte des heutigen Nutzungskontextes ganz oder teilweise in der Benutzungsschnittstelle des geplanten interaktiven Systems enthalten und können zusätzliche Informationen enthalten.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 97</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         AUFGABENMODELL (Folien S. 75–94)
+         ========================================================= -->
+    <section class="section" id="aufgabenmodell">
+        <div class="section-title"><div class="num"><span class="material-icons">checklist</span></div><h2>Aufgaben &amp; Ziele, Aufgabenmodell</h2></div>
+        <p class="section-lead">Aufgabenmodell (task model): Eine Beschreibung einer Aufgabe, die aus dem Grund für das Beginnen der Aufgabe, dem Ziel, das sie unterstützt, und den Teilaufgaben besteht, die ausgeführt werden müssen, um die Aufgabe zu erledigen (S. 79)</p>
+        <div class="pg" data-pg="{&quot;titel&quot;: &quot;Lebenszyklus einer Aufgabe&quot;, &quot;folie&quot;: &quot;S. 76–84&quot;, &quot;stufen&quot;: [{&quot;titel&quot;: &quot;Vorbedingung&quot;, &quot;art&quot;: &quot;g&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Grund des Aktivwerdens&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Auslöser oder Problem, die zur Aufgabe / Aktivität führen&quot;, &quot;text&quot;: &quot;Auslöser oder Problem, die zur Aufgabe / Aktivität führen&quot;, &quot;folie&quot;: &quot;S. 81&quot;}]}]}, {&quot;titel&quot;: &quot;Aufgabe / Aktivität&quot;, &quot;k&quot;: &quot;aufgaben&quot;, &quot;art&quot;: &quot;t&quot;, &quot;pfeil_text&quot;: &quot;löst aus&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Planen&quot;, &quot;text&quot;: &quot;Aufgabe: Eine Menge von Aktivitäten, die durchgeführt werden, um ein bestimmtes Ziel zu erreichen · Teilaufgabe: Ein Schritt, der durchgeführt wird, um eine Aufgabe zu erledigen.&quot;, &quot;folie&quot;: &quot;S. 76, 77, 81&quot;}, {&quot;label&quot;: &quot;Vorbereiten&quot;, &quot;text&quot;: &quot;Aufgabe: Eine Menge von Aktivitäten, die durchgeführt werden, um ein bestimmtes Ziel zu erreichen · Teilaufgabe: Ein Schritt, der durchgeführt wird, um eine Aufgabe zu erledigen.&quot;, &quot;folie&quot;: &quot;S. 76, 77, 81&quot;}, {&quot;label&quot;: &quot;Durchführen&quot;, &quot;text&quot;: &quot;Aufgabe: Eine Menge von Aktivitäten, die durchgeführt werden, um ein bestimmtes Ziel zu erreichen · Teilaufgabe: Ein Schritt, der durchgeführt wird, um eine Aufgabe zu erledigen.&quot;, &quot;folie&quot;: &quot;S. 76, 77, 81&quot;}, {&quot;label&quot;: &quot;Ergebnis bewerten&quot;, &quot;text&quot;: &quot;Aufgabe: Eine Menge von Aktivitäten, die durchgeführt werden, um ein bestimmtes Ziel zu erreichen · Teilaufgabe: Ein Schritt, der durchgeführt wird, um eine Aufgabe zu erledigen.&quot;, &quot;folie&quot;: &quot;S. 76, 77, 81&quot;}, {&quot;label&quot;: &quot;Ergebnis weitergeben&quot;, &quot;text&quot;: &quot;Aufgabe: Eine Menge von Aktivitäten, die durchgeführt werden, um ein bestimmtes Ziel zu erreichen · Teilaufgabe: Ein Schritt, der durchgeführt wird, um eine Aufgabe zu erledigen.&quot;, &quot;folie&quot;: &quot;S. 76, 77, 81&quot;}]}]}, {&quot;titel&quot;: &quot;Nachbedingung&quot;, &quot;art&quot;: &quot;l&quot;, &quot;pfeil_text&quot;: &quot;führt zu&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Ziel&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;ein neues Aufgabenobjekt erstellt wurde&quot;, &quot;text&quot;: &quot;Nachbedingung erreicht durch das angestrebte Arbeitsergebnis (Ziel) indem: ein neues Aufgabenobjekt erstellt wurde · Ziel: Das beabsichtigte Ergebnis der Aufgabe. · Aufgabenobjekt: Die Objekte, die von einer Person erstellt, verändert oder inspiziert werden, um die beabsichtigten Ergebnisse einer Aufgabe zu erzielen.&quot;, &quot;folie&quot;: &quot;S. 78, 81, 84&quot;}, {&quot;label&quot;: &quot;ein bestehendes Aufgabenobjekt verändert wurde&quot;, &quot;text&quot;: &quot;Nachbedingung erreicht durch das angestrebte Arbeitsergebnis (Ziel) indem: ein bestehendes Aufgabenobjekt verändert wurde · Ziel: Das beabsichtigte Ergebnis der Aufgabe. · Aufgabenobjekt: Die Objekte, die von einer Person erstellt, verändert oder inspiziert werden, um die beabsichtigten Ergebnisse einer Aufgabe zu erzielen.&quot;, &quot;folie&quot;: &quot;S. 78, 81, 84&quot;}, {&quot;label&quot;: &quot;über ein bestehendes Aufgabenobjekt informiert wurde&quot;, &quot;text&quot;: &quot;Nachbedingung erreicht durch das angestrebte Arbeitsergebnis (Ziel) indem: über ein bestehendes Aufgabenobjekt informiert wurde · Ziel: Das beabsichtigte Ergebnis der Aufgabe. · Aufgabenobjekt: Die Objekte, die von einer Person erstellt, verändert oder inspiziert werden, um die beabsichtigten Ergebnisse einer Aufgabe zu erzielen.&quot;, &quot;folie&quot;: &quot;S. 78, 81, 84&quot;}]}]}]}"></div>
+
+        <div class="card">
+            <div class="grid-3">
+                <div class="box"><div class="box-title"><span class="material-icons">task</span>Aufgabe (task), S. 76</div>Eine Menge von Aktivitäten, die durchgeführt werden, um ein bestimmtes Ziel zu erreichen
+                    <ul style="margin-top:6px"><li>Viele Aufgaben können in Teilaufgaben unterteilt werden, die von dem zukünftigen System unterstützt werden.</li><li>Für jede Teilaufgabe spezifizieren die Nutzungsanforderungen die erforderliche Interaktion, d.h. was Benutzende am System erkennen, auswählen, eingeben können müssen.</li><li>Teilaufgaben ergeben sich aus der ursprünglichen Aufgabe selbst – sachaufgabeninduziert – oder aus der gewählten Implementierung des Systems – systeminduziert.</li><li>Systeminduzierte Teilaufgaben sind typischerweise notwendig, leisten aber keinen Beitrag zum Ziel der Aufgabe.</li></ul>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>kein Beitrag zum Ziel der Aufgabe</div></div>
+                <div class="box"><div class="box-title"><span class="material-icons">subdirectory_arrow_right</span>Teilaufgabe (subtask), S. 77</div>Ein Schritt, der durchgeführt wird, um eine Aufgabe zu erledigen.
+                    <ul style="margin-top:6px"><li>Teilaufgaben werden durch das zukünftige interaktive System unterstützt, damit Benutzende die Aufgabe effektiver und effizienter erledigen kann.</li><li>Möglicherweise können nicht alle Teilaufgaben durch das zukünftige interaktive System unterstützt werden. Daher werden Teilaufgaben unabhängig von der Interaktion mit dem interaktiven System beschrieben.</li><li>Teilaufgaben werden als Handlungen oder als Entscheidungen beschrieben, die im Rahmen der Aufgabe zu treffen sind.</li><li>Teilaufgaben werden durch das interaktive System in Form von Informationen, Auswahlmöglichkeiten und / oder Eingaben unterstützt.</li></ul></div>
+                <div class="box lila"><div class="box-title"><span class="material-icons">flag</span>Ziel (goal), S. 78</div>Das beabsichtigte Ergebnis der Aufgabe.
+                    <ul style="margin-top:6px"><li>Beabsichtigte Ergebnisse gibt es sowohl bei Aufgaben als auch bei jeder Teilaufgabe innerhalb einer Aufgabe als "Teilziele".</li><li>Beabsichtigte Ergebnisse sind beobachtbare Bedingungen, nachdem die Aufgabe abgeschlossen ist.</li></ul>
+                    <b style="display:block;margin-top:8px">Beispiele für Ziele in Form einer beobachtbaren Bedingung:</b>
+                    <ul><li>Der Bankkunde hat die Überweisung erfolgreich initiiert.</li><li>Der Autofahrer hat sein Fahrzeug unbeschädigt in der Parklücke abgestellt.</li><li>Der Wähler hat den ausgefüllten Wahlschein in die Wahlurne geworfen.</li></ul></div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 76–78</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">loop</span>Lebenszyklus einer Aufgabe</h3>
+            <div class="lifecycle">
+                <div class="lc-step pre">Vorbedingung<small>Grund des Aktivwerdens</small></div>
+                <div class="lc-step act">Planen</div>
+                <div class="lc-step act">Vorbereiten</div>
+                <div class="lc-step act">Durchführen</div>
+                <div class="lc-step act">Ergebnis bewerten</div>
+                <div class="lc-step act">Ergebnis weitergeben</div>
+                <div class="lc-step post">Nachbedingung<small>Ziel</small></div>
+            </div>
+            <div class="lc-brace"><div>Auslöser oder Problem, die zur Aufgabe / Aktivität führen</div><div>Aufgabe / Aktivität · Aktivitäten</div><div></div></div>
+            <h4>Wann ist der Lebenszyklus einer Aufgabe beendet? Nachbedingung erreicht durch das angestrebte Arbeitsergebnis (Ziel) indem:</h4>
+            <p class="kap-bar" style="margin-left:0">Aufgabenobjekt als Ergebnis der Aufgabe – Beispiele <small>(S. 82)</small></p>
+            <div class="grid-3">
+                <div class="box"><div class="box-title"><span class="material-icons">add_box</span>ein neues Aufgabenobjekt erstellt wurde</div><span class="note-inline">Deine Notiz: z.B. Buchung</span><div class="ok" style="margin-top:6px"><span class="material-icons">check</span><span>Bei der Aufgabe "eine Rechnung schreiben" erstellt eine Person das Aufgabenobjekt "Rechnung".</span></div></div>
+                <div class="box"><div class="box-title"><span class="material-icons">edit</span>ein bestehendes Aufgabenobjekt verändert wurde</div><div class="ok" style="margin-top:6px"><span class="material-icons">check</span><span>Bei der Aufgabe "Fenster putzen" verändert eine Person das Aufgabenobjekt "Fenster". Das Fenster hat nach dem Putzen andere Merkmale als vorher. Vorher war es verschmutzt. Nach dem Putzen ist es sauber.</span></div></div>
+                <div class="box"><div class="box-title"><span class="material-icons">visibility</span>über ein bestehendes Aufgabenobjekt informiert wurde</div><span class="note-inline">Deine Notiz: Recherche</span><div class="ok" style="margin-top:6px"><span class="material-icons">check</span><span>Bei der Aufgabe "Tageszeitung lesen" befasst sich die Person mit dem Aufgabenobjekt "Zeitungsartikel" und informiert sich zum Inhalt des Zeitungsartikels.</span></div></div>
+            </div>
+            <div class="box grau" style="margin-top:14px"><div class="box-title">Aufgabenmodell (S. 79)</div>
+                <ul><li>Der Zweck eines Aufgabenmodells besteht darin, die Teilaufgaben innerhalb einer Aufgabe in einer sinnvollen Reihenfolge zu beschreiben, einschließlich der kontextuellen Vorbedingung(en) und der beabsichtigten Ergebnisse.</li><li>Beabsichtigte Ergebnisse werden auch als kontextuelle Nachbedingungen bezeichnet.</li><li>Ein Aufgabenmodell beschreibt die Logik (Inhalt / Abarbeitung / Abfolge) einer Aufgabe an sich plus den Grund des Startens und das beabsichtigte Arbeitsergebnis der Aufgabe.</li></ul></div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen (S. 79)</div>Grund für das Beginnen · Beschreibung d. Aufgabe ⇒ Grund + Ziel + Teilaufgaben</div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 79, 81, 82</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">directions_car</span>Aufgaben und Teilaufgaben – Beispiel</h3>
+            <div class="task-struct">
+                <div class="ts-col">
+                    <div class="ts-h">kontextuelle Vorbedingung == Grund des Aktivwerdens</div>
+                    <b>Freunde besuchen, kein eigenes Auto</b> <small>(S. 83)</small>
+                    <div class="note" style="margin-top:10px"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 80)</div>Urlaub Ort besuchen</div>
+                    <div class="ts-h" style="margin-top:14px">erfüllt das "Meta"-Ziel: gute Zeit mit Freunden verbringen <small>(S. 83)</small></div>
+                    kann Freunde besuchen <small>(S. 83)</small>
+                </div>
+                <div class="ts-main">
+                    <div class="ts-h">Aufgabe, Auto mieten · Teilaufgaben (Aktivitäten)</div>
+                    <div class="to-group"><span class="to-tag">Miete</span><ol><li>Abhol- / Rückgabestation wählen</li><li>Mietzeitraum auswählen</li></ol></div>
+                    <div class="to-group"><span class="to-tag">Fahrzeug</span><ol start="3"><li>Wahl des Fahrzeugsegments</li><li>Wahl der Optionen</li></ol></div>
+                    <div class="to-group"><span class="to-tag">Mieter</span><ol start="5"><li>Eingabe der persönlichen Daten</li></ol></div>
+                    <div class="to-group"><span class="to-tag">Bezahlung</span><ol start="6"><li>Wahl des Zahlungsmittels</li><li>Eingabe der Kreditkarteninfo</li><li>Bestätigung der AGB</li><li>Bestätigung der Buchung</li></ol></div>
+                    <div class="ts-h" style="margin-top:8px">Aufgabenobjekte (S. 85): Miete, Fahrzeug, Mieter, Bezahlung</div>
+                </div>
+                <div class="ts-col">
+                    <div class="ts-h">kontextuelle Nachbedingung == Ziel</div>
+                    <b>erfüllt das aufgabenbezogene Ziel: Fahrzeug ist gemietet</b> <small>(S. 83)</small>
+                    <div class="ts-h" style="margin-top:14px">Ergebnis der Aufgabe</div>
+                    Reservierung Tag X
+                    <div class="note" style="margin-top:10px"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 80)</div>Beobachtbare Bedingung: Bestätigung</div>
+                </div>
+            </div>
+            <h4>Struktur des Aufgabenmodells der Aufgabe Fahrzeug leihen (S. 83)</h4>
+            <div class="flow-h">
+                <div class="fh"><small>Grund des Aktivwerdens</small>Freunde besuchen, kein eigenes Auto</div>
+                <div class="fh-a">löst aus<span class="material-icons">east</span></div>
+                <div class="fh main"><small>Fahrzeug mieten · Aufgabenlebenszyklus</small>1. Planen · 2. Vorbereiten · 3. Durchführen · 4. Ergebnis bewerten <span class="note-inline">Deine Notiz: / Überprüfung</span> · 5. Ergebnis weitergeben</div>
+                <div class="fh-a">führt zu<span class="material-icons">east</span></div>
+                <div class="fh">Fahrzeug reserviert für Abholung</div>
+            </div>
+            <div class="grid-3" style="margin-top:12px">
+                <div class="box"><div class="box-title">während der Aufgabenbearbeitung wurde ein Aufgabenobjekt erstellt</div>Fahrzeug ist gemietet, Leihvertrag abgeschlossen</div>
+                <div class="box"><div class="box-title">5. Ergebnis weitergeben</div>bestehendes Aufgabenobjekt geändert</div>
+                <div class="box">mit bestehendem Aufgabenobjekt neues Wissen generiert</div>
+            </div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen (S. 85)</div>Attribute &lt; Teilaufgaben · Mini-Daten &lt; Aufgabenobjekte &lt; Ergebnis</div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 80, 83, 85</span>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3><span class="material-icons">inventory_2</span>Aufgabenobjekt (task object)</h3>
+                <p class="card-lead">Die Objekte, die von einer Person erstellt, verändert oder inspiziert werden, um die beabsichtigten Ergebnisse einer Aufgabe zu erzielen.</p>
+                <ul style="font-size:14px"><li>Aufgabenobjekte werden im Rahmen von kontextuellen Interviews oder Beobachtungen identifiziert. Sie sind Bestandteil der Nutzungskontextbeschreibung.</li><li>Für die effiziente Durchführung von Arbeitsaufgaben müssen die Benutzende die Aufgabenobjekte identifizieren können. Daher müssen die Aufgabenobjekte und ihre Attribute an der Benutzungsschnittstelle dargestellt werden.</li><li>Aufgabenobjekte werden teilweise, vollständig oder mit Zusatzinformationen an der Benutzungsschnittstelle des interaktiven Systems repräsentiert.</li><li>Aufgabenobjekte sind Gegenstand der Aufgabenerledigung als auch Ergebnis der Aufgabe selbst.</li></ul>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen (S. 84)</div>= Ende der Aufgabe / früher Nutzungsobjekte · Daten sammeln</div>
+                <h4>Aufgabenobjekt (S. 86)</h4>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen (S. 86)</div>Ist – jetziger Zustand (nicht zufrieden) · Soll – Optimierung, schneller, einfacher, besser</div>
+                <ul style="font-size:14px;margin-top:10px"><li>Es ist wichtig, den Unterschied zwischen einem "Ist"-Aufgabenobjekt im Nutzungskontext und dem "Soll"-Aufgabenobjekt, das an der Benutzungsschnittstelle dargestellt wird, als Grundlage für die Gestaltungsentscheidungen zu verstehen.</li><li>Die Nutzungsanforderungen sind die Basis für die Überführung der "Ist"-Aufgabenobjekte in "Soll"-Aufgabenobjekte für das spätere Design.</li><li>Die "Ist"-Aufgabenobjekte sind möglicherweise unzureichend für die Durchführung von Aufgaben mit dem interaktiven System. Um Effektivität, Effizienz und Zufriedenstellung bei der Nutzung des interaktiven Systems zu gewährleisten, werden die Nutzungsanforderungen zur Spezifikation der "Soll"-Aufgabenobjekte der Benutzungsschnittstelle verwendet.</li></ul>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>qualitativ interaktiv durch Benutzungsschnittstelle</div>
+                <span class="src"><span class="material-icons">description</span>Folien S. 84, 86</span>
+            </div>
+            <div class="card">
+                <h3><span class="material-icons">web</span>Aufgabenobjekt (repräsentiert im User Interface) – Beispiele</h3>
+                <div class="ok"><span class="material-icons">check</span><span>Eine Liste von Rechnungen (Aufgabenobjekt) in einem Rechnungsverfolgungssystem mit der Zusatzinformation "unbezahlt".</span></div>
+                <div class="ok"><span class="material-icons">check</span><span>Ein Kundenauftrag in einem Auftragsverwaltungssystem mit den notwendigen Informationen, z.B. "noch nicht bestätigt".</span></div>
+                <div class="ok"><span class="material-icons">check</span><span>Ein Brief an einen Kunden in einem Textverarbeitungssystem, bei dem die Adresse bereits vorausgefüllt ist.</span></div>
+                <div class="ok"><span class="material-icons">check</span><span>Die Bordkarte in der Anwendung einer Fluggesellschaft, die anzeigt, dass der Flug Verspätung hat.</span></div>
+                <span class="src"><span class="material-icons">description</span>Folie S. 87</span>
+                <h3 style="margin-top:22px"><span class="material-icons">auto_fix_high</span>Beschreibung – Aufgabenmodell für die Gestaltung (task model used for design)</h3>
+                <p style="font-size:14px">Aufgabenmodelle des gegenwärtigen Nutzungskontextes können in Aufgabenmodelle für die Gestaltung überführt werden. Es wird berücksichtigt, wie die Aufgabe durch das zu entwickelnde interaktive System unterstützt wird.</p>
+                <p style="font-size:14px;margin-top:8px">Eine Anpassung des Aufgabenmodells wird etwa aus folgenden Gründen vorgenommen:</p>
+                <ul style="font-size:14px"><li>Der Nutzungskontext für die Gestaltung wurde eingeschränkt (z.B. wird nur eine bestimmte Benutzergruppe unterstützt).</li><li>Es gibt weniger Teilaufgaben aufgrund von Automatisierung oder zusätzliche Teilaufgaben aufgrund von Einschränkungen bei der Implementierung (z.B. eine bestimmte Technologie, die für Benutzende Teilaufgaben mit sich bringen).</li><li>Die Aufgaben der Benutzenden wurden im frühen Design vereinfacht.</li></ul>
+                <div class="box lila" style="margin-top:10px">Die Anpassung von Aufgabenmodellen kann das <b>Löschen</b>, <b>Hinzufügen</b> oder <b>Ändern von Teilaufgaben</b> innerhalb jeder unterstützten Aufgabe umfassen.</div>
+                <span class="src"><span class="material-icons">description</span>Folie S. 94</span>
+            </div>
+        </div>
+    </section>
+    <!-- =========================================================
+         ANFORDERUNGSARTEN & QUALITAET (Folien S. 29–66, 98–100, 114–115)
+         ========================================================= -->
+    <section class="section" id="anforderungen">
+        <div class="section-title"><div class="num"><span class="material-icons">layers</span></div><h2>Stakeholder- und Systemanforderung, Qualität</h2></div>
+        <p class="section-lead">1.2 – Stakeholderanforderungen und Systemanforderungen unterscheiden · Sicherstellen, dass die Basis für die menschzentrierte Qualität des interaktiven Systems vollständig hergeleitet und überprüfbar gemacht wird. (S. 51)</p>
+        <p class="kap-bar"><span>Anforderungen und Qualität</span> → <span>Anforderung und Stakeholder</span> → <span>Komponenten des Nutzungskontexts</span> → <span>Nutzungsanforderungen</span> <small>(S. 51)</small></p>
+        <div class="pg" data-pg="{&quot;titel&quot;: &quot;Anforderung, Gestaltungsregeln und Qualität&quot;, &quot;folie&quot;: &quot;S. 32–38, 55–60&quot;, &quot;stufen&quot;: [{&quot;titel&quot;: &quot;Anforderungen&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Stakeholderanforderungen (S. 55)&quot;, &quot;k&quot;: &quot;stakeholder&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Gesetzliche / regulatorische Anforderungen · Gesetzgeber&quot;, &quot;text&quot;: &quot;Eine Stakeholderanforderung, die durch ein Gesetz oder ein regulatorisches Dokument (z.B. eine harmonisierte ISO-Norm, Vorgabe einer Aufsichtsbehörde) vorgegeben ist, und die bei der Gestaltung des interaktiven Systems zu berücksichtigen ist.&quot;, &quot;folie&quot;: &quot;S. 56&quot;}, {&quot;label&quot;: &quot;Marktanforderungen · Kaufentscheider&quot;, &quot;text&quot;: &quot;Eine Anforderung für ein interaktives System basierend auf einer Marketingpolitik, die darauf abzielt, Geschäftschancen, Absatz und Nutzen zu maximieren.&quot;, &quot;folie&quot;: &quot;S. 57&quot;}, {&quot;label&quot;: &quot;Organisatorische Anforderungen · Betreiber der Organisation&quot;, &quot;text&quot;: &quot;Eine organisatorische Regel, die Benutzer bei der Ausführung ihrer Aufgaben befolgen müssen.&quot;, &quot;folie&quot;: &quot;S. 58&quot;}, {&quot;label&quot;: &quot;Fachliche Anforderungen · Indirekte Benutzer&quot;, &quot;text&quot;: &quot;Eine Anforderung, die die Attribute eines vollständigen und richtigen Arbeitsergebnisses einer Aufgabe definiert.&quot;, &quot;folie&quot;: &quot;S. 59&quot;}, {&quot;label&quot;: &quot;Nutzungsanforderungen · Primäre, sekundäre Benutzer&quot;, &quot;text&quot;: &quot;Anforderungen an die Nutzung, die die Grundlage für die Gestaltung und die Evaluierung eines interaktiven Systems bildet, um Erfordernisse zu erfüllen.&quot;, &quot;folie&quot;: &quot;S. 60, 101&quot;}]}, {&quot;titel&quot;: &quot;Gestaltungsregeln&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Gestaltungsregeln (generische Anforderung)&quot;, &quot;text&quot;: &quot;Konkrete, spezifische Instruktion oder Empfehlung für das Design und die Implementierung von Benutzungsschnittstellen, die wenig Interpretationsspielraum lässt, sodass sie konsistent umgesetzt werden kann.&quot;, &quot;folie&quot;: &quot;S. 37&quot;}]}]}, {&quot;titel&quot;: &quot;Systemanforderungen&quot;, &quot;k&quot;: &quot;stakeholder&quot;, &quot;art&quot;: &quot;g&quot;, &quot;pfeil_text&quot;: &quot;sind Basis für&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Systemanforderung (Basis für technische Lösung)&quot;, &quot;text&quot;: &quot;Stakeholderanforderungen, die nicht in Systemanforderungen überführt werden, tragen nicht zur menschzentrierten Qualität bei.&quot;, &quot;folie&quot;: &quot;S. 38&quot;}]}]}, {&quot;titel&quot;: &quot;Qualität der Lösung&quot;, &quot;art&quot;: &quot;l&quot;, &quot;pfeil_text&quot;: &quot;Grad der Erfüllung wirkt auf&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;menschzentrierte Qualität&quot;, &quot;text&quot;: &quot;Ein beabsichtigtes Ergebnis der Entwicklung eines interaktiven Systems für den Benutzer, das sich auf die Usability, die User Experience, die Barrierefreiheit oder die Vermeidung von Schäden durch die Benutzung bezieht.&quot;, &quot;folie&quot;: &quot;S. 33&quot;}, {&quot;label&quot;: &quot;technische Qualität&quot;, &quot;text&quot;: &quot;Grad der Erfüllung von Systemanforderungen durch ein interaktives System.&quot;, &quot;folie&quot;: &quot;S. 32&quot;}]}]}]}"></div>
+
+        <div class="card">
+            <h3><span class="material-icons">stacks</span>Stakeholder- und Systemanforderung</h3>
+            <p class="card-lead">Übung zur Diskussion (S. 61): Bitte nennen Sie Anforderungen an einen Fahrkartenautomaten der Deutschen Bundesbahn aus verschiedenen Stakeholder-Perspektiven:</p>
+            <div class="onion">
+                <div>
+                    <div class="onion-layers">
+                        <div class="layer-box l1"><div class="lt">Gesetzliche / regulatorische Anforderungen</div><div class="lw">Gesetzgeber</div><div class="lx"><b>Deine Notiz:</b> barrierefrei, ISO Bildschirm, Payment?, Datenschutz, Monopol</div></div>
+                        <div class="layer-box l2"><div class="lt">Marktanforderungen</div><div class="lw">Kaufentscheider</div><div class="lx"><b>Deine Notiz:</b> Markt – Marke</div></div>
+                        <div class="layer-box l3"><div class="lt">Organisatorische Anforderungen</div><div class="lw">Betreiber der Organisation</div><div class="lx"><b>Deine Notiz:</b> Bahncard, Zahlung ab x €, personengebunden, ICE Preis, Sparpreis, Zugbindung</div></div>
+                        <div class="layer-box l4"><div class="lt">Fachliche Anforderungen</div><div class="lw">Indirekte Benutzer</div><div class="lx"><b>Deine Notiz:</b> Mitfahrende, Kontrolleur, Ergebnisse auswerten, Datenanalyse</div></div>
+                        <div class="layer-box l5"><div class="lt">Nutzungsanforderungen</div><div class="lw">Primäre, sekundäre Benutzer</div><div class="lx"><b>Deine Notiz:</b> primär: Käufer, Preis, Zugverbindung, Ticket, Ort · sekundär: Assistenzen beim Automaten, säubern, Geld, Reparieren</div></div>
+                    </div>
+                    <div class="basis-arrows"><span class="material-icons">south</span><span style="font-size:12.5px;font-weight:600">sind Basis für</span><span class="material-icons">south</span></div>
+                    <div class="sys-bar">Systemanforderungen</div>
+                </div>
+                <div class="onion-brace"><div class="brace-v" style="height:82%">Stakeholderanforderungen</div><div class="brace-v" style="height:12%">System-</div></div>
+            </div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen (S. 55, 61)</div>Bsp. Fahrkarte kaufen ↳ welche Infos gehören drauf · User: Käufer · Indirekt: Schaffner, Beamter v. Finanzamt, Controlling · Organisatorisch: Finanzamt · (S. 61:) → Attribute, Objekte oder Aufgaben · Interaktion (unsicher gelesen)</div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 55, 61, 100</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">groups</span>Stakeholder (Interessenvertreter)</h3>
+            <div class="grid-2">
+                <div>
+                    <p style="font-size:14.5px">Einzelperson oder Organisation, die ein Anrecht, einen Anteil, einen Anspruch oder ein Interesse an einem System oder an dessen Merkmalen hat, die ihren Erfordernissen und Erwartungen entsprechen.</p>
+                    <p style="font-size:14.5px;margin-top:8px">Eine Person oder Organisation mit einem aktiven Interesse an einem interaktiven System (UXQB)</p>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen (S. 52)</div>Nutzer + weitere · neue Definition · Erfordernissen: Fakt · Erwartungen: subjektiv</div>
+                </div>
+                <div>
+                    <div class="ok"><span class="material-icons">check</span><span>Alle Benutzer haben ein aktives Interesse am interaktiven System: "gute" Nutzung. Sie sind daher Stakeholder.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span>Es gibt Stakeholder (deine Notiz: indirekt), die ein anderes Interesse am System / Produkt haben, etwa Markterfolg. Sie nutzen das System nicht und nutzen auch keine Daten, die durch die Nutzung des Systems generiert werden. Beispiel sind Aktionäre, Entwickler, Manager von Entwicklern, Vorstandmitglieder, Marketingmitarbeiter.</span></div>
+                    <div class="box gelb" style="margin-top:8px"><span class="material-icons" style="color:#8a6d00">east</span> Daher sprechen wir von <b>Nutzern und weiteren Stakeholdern!</b></div>
+                </div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 52, Quelle: nach ISO 9241-210:2019</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">category</span>Die Anforderungsarten</h3>
+            <div class="grid-2">
+                <div class="box grau"><div class="box-title">Gesetzliche / regulatorische Anforderung (legal/regulatory requirement)</div>Eine Stakeholderanforderung, die durch ein Gesetz oder ein regulatorisches Dokument (z.B. eine harmonisierte ISO-Norm, Vorgabe einer Aufsichtsbehörde) vorgegeben ist, und die bei der Gestaltung des interaktiven Systems zu berücksichtigen ist.
+                    <div class="ok" style="margin-top:6px"><span class="material-icons">check</span><span>Der Arbeitgeber muss die Arbeitsbedingungen regelmäßig bezgl. Gefährdungen für die Gesundheit untersuchen. (Arbeitsschutzgesetz)</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span>Die Grundsätze der Ergonomie sind insbesondere auf die Verarbeitung von Informationen durch den Menschen anzuwenden. (Bildschirmarbeitsverordnung)</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span>Der Hersteller muss bekannte oder vorhersehbare Gefährdungen und Gefährdungssituationen ermitteln, in denen Patienten, Benutzer und andere beim Gebrauch des Medizinprodukts geschädigt werden können. (DIN EN 62366-1:2017-07)</span></div>
+                    <span class="src"><span class="material-icons">description</span>S. 56</span></div>
+                <div class="box grau"><div class="box-title">Marktanforderung (market requirement)</div>Eine Anforderung für ein interaktives System basierend auf einer Marketingpolitik, die darauf abzielt, Geschäftschancen, Absatz und Nutzen zu maximieren.
+                    <ul style="margin-top:6px"><li>Häufig werden Marktanforderungen auch Kundenanforderungen genannt.</li></ul>
+                    <div class="ok"><span class="material-icons">check</span><span>Die Webseite muss mindestens so benutzbar sein, wie jene der zwei stärksten Wettbewerber.</span></div>
+                    <span class="src"><span class="material-icons">description</span>S. 57</span></div>
+                <div class="box grau"><div class="box-title">Organisatorische Anforderung (organisational requirement)</div>Eine organisatorische Regel, die Benutzer bei der Ausführung ihrer Aufgaben befolgen müssen.
+                    <ul style="margin-top:6px"><li>Organisatorische Anforderungen definieren Regeln, die Benutzende bei der Arbeit in organisatorischen Prozessen befolgen müssen.</li><li>Organisatorische Anforderungen sind für den Betrieb des interaktiven Systems relevant und müssen im Rahmen des Projekts umgesetzt werden.</li></ul>
+                    <div class="ok"><span class="material-icons">check</span><span>Radiologisch-medizinische Assistenten müssen den Patienten beim Einstellen des Patiententisches im Auge behalten.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span>Angebote über 100.000 Euro vom Geschäftsführer unterschreiben lassen.</span></div>
+                    <ul style="margin-top:6px"><li>In der Praxis wird oft der Begriff der "Geschäftsanforderungen" genutzt. Diese begründen warum ein interaktives System für die eigene Organisation entwickelt oder beschafft wird.</li></ul>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>z.B. Styleguide, Markenkonformität</div>
+                    <span class="src"><span class="material-icons">description</span>S. 58</span></div>
+                <div class="box"><div class="box-title">Fachliche Anforderung (domain-specific requirement)</div>Eine Anforderung, die die Attribute eines vollständigen und richtigen Arbeitsergebnisses einer Aufgabe definiert.
+                    <ul style="margin-top:6px"><li>Während sich fachliche Anforderungen auf Aufgabenobjekte (vollständiges und richtiges Arbeitsergebnis) beziehen, beziehen sich organisatorische Anforderungen auf die handelnden Personen in einer Organisation (Verhaltensregeln bei der Aufgabenerledigung).</li></ul>
+                    <div class="ok"><span class="material-icons">check</span><span>Auf der Rechnung muss immer die Auftragsnummer des Auftraggebers enthalten sein.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span>Der Zeitungsartikel muss immer einen Titel und einen Autor haben.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span>Der Jahresbeitrag für den Versicherungsschein muss sich gemäß den festgelegten Rechenregeln des Versicherungstarifs ergeben.</span></div>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>Arbeitsergebnisses: Fahrkarte · was muss auf die Fahrkarte drauf damit Aufgabe erfüllt wird</div>
+                    <span class="src"><span class="material-icons">description</span>S. 59</span></div>
+            </div>
+            <div class="grid-2">
+                <div class="box lila"><div class="box-title">Organisatorische Anforderung führen zu Nutzungsanforderungen (S. 114)</div>
+                    <b>Organisatorische Anforderung:</b> Zum Geschäftsjahresende müssen alle nicht vollständig ausgeschöpften Beauftragungen finanziell zum Folgejahr abgegrenzt werden.
+                    <div style="text-align:center;color:#a0aec0"><span class="material-icons" style="font-size:28px">south</span></div>
+                    <b>Nutzungsanforderung für ein Controlling System:</b>
+                    <div class="ok"><span class="material-icons">check</span><span>Jeder Benutzer muss einen Überblick über die Beauftragungen haben, für die er zuständig ist.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span>Jeder Benutzer muss eine Liste aller nicht vollständig ausgeschöpften Beauftragungen jederzeit erstellen können.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span>Jeder Benutzer muss, für jede Abteilung individuell, das nicht genutzte Gesamtbudget aller Beauftragungen angezeigt bekommen.</span></div></div>
+                <div class="box lila"><div class="box-title">Nutzungsanforderung führen zu organisatorischen Anforderungen (S. 115)</div>
+                    <b>Nutzungsanforderung für ein Controlling System:</b> Jeder Benutzer (Controller) muss seinen budgetabhängigen Bonus einsehen können. <span class="note-inline">Deine Notiz: primär</span>
+                    <div style="text-align:center;color:#a0aec0"><span class="material-icons" style="font-size:28px">south</span></div>
+                    <b>Organisatorische Anforderung:</b>
+                    <div class="ok"><span class="material-icons">check</span><span>Bevor ein neuer Benutzer in der Benutzerverwaltung frei geschaltet wird, muss die Personalabteilung die vereinbarten Vertragsbedingungen für jeden Benutzer eintragen und prüfen.</span></div>
+                    <span class="note-inline">Deine Notiz: sekundär</span></div>
+            </div>
+            <div class="box lila" style="margin-top:12px"><div class="box-title">Qualitative Nutzungsanforderung – Beispiele für Stakeholderanforderungen, die sich aus Nutzungsanforderungen ergeben (S. 107)</div>
+                <div class="grid-3" style="gap:10px;margin-top:6px">
+                    <div><b>Qualitative Nutzungsanforderung</b><br>Der Benutzer muss am System die Kennnummer des Patienten eingeben können.</div>
+                    <div><b>Organisatorische Anforderung</b><br>Die Krankenschwester, die die Patientenakten anlegt, muss jedem neuen Patienten eine Kennnummer zuweisen.</div>
+                    <div><b>Fachliche Anforderung</b><br>Eine Patienten-Kennnummer muss immer Teil einer Patientenakte sein.</div>
+                </div></div>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">verified</span>Anforderung, Gestaltungsregeln und Qualität</h3>
+            <p class="card-lead">Anforderungen bilden die Basis für die Erarbeitung von Lösungsalternativen. (S. 38)</p>
+            <div class="q-flow">
+                <div class="q-colh">Anforderungen</div><div></div><div class="q-colh">Qualität der Lösung</div>
+                <div class="q-src">Stakeholderanforderungen<small>(aus Nutzungskontext) · deine Notiz: Nutzer + Business</small></div>
+                <div class="q-mid"><span class="material-icons">arrow_forward</span>Grad der Erfüllung wirkt auf</div>
+                <div class="q-target mz" style="grid-row: span 2">menschzentrierte Qualität</div>
+                <div class="q-src">Gestaltungsregeln<small>(generische Anforderung)</small></div>
+                <div class="q-mid"><span class="material-icons">arrow_forward</span>Einhaltung wirkt auf</div>
+                <div class="q-src">Systemanforderung<small>(Basis für technische Lösung) · werden überführt</small></div>
+                <div class="q-mid"><span class="material-icons">arrow_forward</span>Grad der Erfüllung wirkt auf</div>
+                <div class="q-target tech">technische Qualität</div>
+            </div>
+            <div class="box pink" style="margin-top:16px"><div class="box-title"><span class="material-icons">bolt</span>wenn nicht überführt</div>Stakeholderanforderungen, die nicht in Systemanforderungen überführt werden, tragen nicht zur menschzentrierten Qualität bei.</div>
+            <div class="grid-2" style="margin-top:16px">
+                <div class="box"><div class="box-title">Qualität (quality), S. 31</div>Grad der Erfüllung von Anforderungen durch ein interaktives System. <span class="note-inline">Deine Notiz: Basis</span>
+                    <b style="display:block;margin-top:6px">Es wirken:</b><ul><li>menschzentrierte Qualität, die auch Nutzungsqualität genannt wird</li><li>technische Qualität</li><li>wirtschaftliche Qualität</li></ul>
+                    <div class="qual-top">Qualität<small>Erfüllung von Anforderungen</small></div>
+                    <div class="qual-mini"><span>technische Qualität<small>Erfüllung von Systemanforderungen</small></span><em>ermöglicht<br><small>deine Notiz: Abhängigkeit</small></em><span>menschzentrierte Qualität<small>Erfüllung von Stakeholderanforderungen</small></span></div></div>
+                <div class="box"><div class="box-title">Gestaltungsregel (user interface guideline), S. 37</div>Konkrete, spezifische Instruktion oder Empfehlung für das Design und die Implementierung von Benutzungsschnittstellen, die wenig Interpretationsspielraum lässt, sodass sie konsistent umgesetzt werden kann.
+                    <ul style="margin-top:6px"><li>Eine Gestaltungsregel ist bindend und sorgt für Konsistenz.</li><li>Gestaltungsregeln betreffen das Verhalten und Aussehen von User Interface Elementen, Schriftarten, die Verwendung von Farben, die Formulierung von Fehlermeldungen, die Interaktionsstruktur und mehr.</li><li>Um die Konsistenz der Benutzungsschnittstelle zu gewährleisten, sollten Gestaltungsregeln zwingend vorgeschrieben werden mit klar festgelegten Verfahren für zulässige Abweichungen aus triftigen Gründen.</li></ul>
+                    Sammlungen von Gestaltungsregeln sind Styleguides. Eine Sammlung von UI-Komponenten und Gestaltungsrichtlinien zur direkten Umsetzung und Anwendung sind Desginsysteme.
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>Styleguides, Design Systeme</div></div>
+            </div>
+            <div class="box" style="margin-top:12px"><div class="box-title">Qualität = Maß der Umsetzung von Anforderungen · Welche Anforderungen und Regelsätze wirken auf die Produkt-, System-, Servicequalität ein? (S. 36)</div><span class="note-inline">Deine Notiz: rechtlich · organisatorisch Anforderungen</span></div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 31, 36–38</span>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3><span class="material-icons">accessibility_new</span>Menschzentrierte Qualität (human-centred quality)</h3>
+                <p class="card-lead">Ein beabsichtigtes Ergebnis der Entwicklung eines interaktiven Systems für den Benutzer, das sich auf die Usability, die User Experience, die Barrierefreiheit oder die Vermeidung von Schäden durch die Benutzung bezieht.</p>
+                <div class="pillar-roof">menschzentrierte Qualität (Nutzungsqualität)</div>
+                <div class="pillars">
+                    <div class="pillar"><b>Usability</b><span>Effizienz, Effektivität, Zufriedenstellung während der Benutzung</span></div>
+                    <div class="pillar"><b>User Experience</b><span>Erlebnis vor, während, nach der Benutzung</span></div>
+                    <div class="pillar"><b>Barriere&shy;freiheit</b><span>Benutzung für alle</span></div>
+                    <div class="pillar"><b>Vermeidung von Schäden durch die Benutzung</b><span>sichere Benutzung</span></div>
+                </div>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 33)</div>funktioniert nicht immer alles gleichzeitig</div>
+                <div class="box pink" style="margin-top:14px"><div class="box-title">Vermeidung von Schäden durch die Benutzung (avoidance of harm from use), S. 34</div>Das Ausmaß, in dem negative Auswirkungen auf Gesundheit, Sicherheit, Finanzen oder Umwelt, die sich aus der Benutzung des interaktiven Systems ergeben, minimiert werden.
+                    <ul style="margin-top:6px"><li>Negative Auswirkungen können alle Stakeholder betreffen, z.B. Benutzende, andere Personen, verkaufende und nutzende Organisationen.</li><li>Eine vollständige Vermeidung von Schäden durch die Benutzung kann gewöhnlich nicht erreicht werden. Die Gestaltung sollte sicherstellen, dass die Risiken minimiert werden.</li></ul>
+                    <div class="ok"><span class="material-icons">check</span><span>Benutzende sollen mit dem Rezepterstellungssystem keine miteinander unverträgliche Medikamente verordnen können.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span>Kaufinteressierte des neuen Kaffeeautomaten sollen keinen vermeidbaren Müll erzeugen, der umweltschädlich ist (z.B. durch verpackte Kaffeekapseln). <span class="note-inline">Deine Notiz: Bsp. Nespresso</span></span></div>
+                    <div class="ok"><span class="material-icons">check</span><span>Benutzer sollen am System gelöschte Daten wiederherstellen können.</span></div></div>
+                <div class="box pink" style="margin-top:12px"><div class="box-title">Risiko (risk), S. 35</div>Kombination der Wahrscheinlichkeit des Auftretens eines Schadens und des Schweregrads dieses Schadens.
+                    <ul style="margin-top:6px"><li>Schaden ist definiert als physische Verletzung oder Schädigung der Gesundheit von Menschen oder Schädigung von Gütern oder der Umwelt.</li></ul>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 35)</div>wie wahrscheinlich × wie groß sind Konsequenzen</div></div>
+                <span class="src"><span class="material-icons">description</span>Folien S. 33–35</span>
+            </div>
+            <div class="card">
+                <h3><span class="material-icons">memory</span>Technische Qualität (technology-centred quality)</h3>
+                <p class="card-lead">Grad der Erfüllung von Systemanforderungen durch ein interaktives System.</p>
+                <div class="box grau"><div class="box-title">Die Komponenten von technischer Qualität sind:</div>
+                    <div class="dr-pills" style="margin-top:6px"><span>funktionale Angemessenheit</span><span>Interoperabilität</span><span>Sicherheit</span><span>Übertragbarkeit</span><span>technische Performanz</span><span>Zuverlässigkeit</span><span>Wartbarkeit</span></div></div>
+                <ul style="font-size:14px;margin-top:10px"><li>Die technische Qualität wird von Benutzenden oft als selbstverständlich vorausgesetzt. So gehen Benutzende einer Waschmaschine unbewusst davon aus, dass die Wäsche sauber wird.</li><li>Ist das Ergebnis der der Umsetzung von Systemanforderungen.</li></ul>
+                <span class="src"><span class="material-icons">description</span>Folie S. 32, Quelle: ISO / IEC 25010:2011-03</span>
+                <h3 style="margin-top:22px"><span class="material-icons">thumb_up</span>Ein System ist "gut", …</h3>
+                <div class="box grau"><div class="box-title"><span class="material-icons">help_outline</span>Frage (S. 29)</div>Wann ist ein interaktives System (Lösung) gut?<br>Was sind umgangssprachliche Ausprägungen, die auf gute Qualität hinweisen?</div>
+                <div class="good">
+                    <div><span>wenn's mir hilft</span><em>==</em><b>Ziele werden unterstützt</b></div>
+                    <div><span>wenn ich's versteh</span><em>==</em><b>Struktur, Ordnung, Benennung</b></div>
+                    <div><span>wenn ich's nutzen kann</span><em>==</em><b>gute Usability</b></div>
+                    <div><span>wenn's funktioniert</span><em>==</em><b>Technik unterstützt alle Fkt.</b></div>
+                </div>
+                <p style="font-size:15px;font-weight:700;margin-top:10px"><span class="material-icons" style="color:#009BA3">east</span> Wenn die Qualität stimmt!</p>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 30)</div>ux Hilfe ☺</div>
+                <span class="src"><span class="material-icons">description</span>Folien S. 29, 30</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">fact_check</span>Auf welche Art von Umsetzung hin können Anforderungen überprüft werden?</h3>
+            <p class="card-lead">Deine Notiz (S. 62): → Verifizierung &amp; → Validierung</p>
+            <div class="vv">
+                <div class="vv-col">
+                    <span class="badge tuerkis">Verifizierung (verification)</span>
+                    <div class="vv-q">Deine Notiz: umgesetzt? ja/nein</div>
+                    <p style="font-size:14px">Prozess, bei dem festgestellt wird, ob alle Anforderungen in entsprechende Produktmerkmale umgesetzt wurden.</p>
+                    <ul style="font-size:14px;margin-top:8px"><li>Eine inspektions-basierte Usability-Evaluierung, bei der explizit die Erfüllung von Inspektionskriterien (Nutzungsanforderungen und / oder Gestaltungsregeln) überprüft wird, ist eine Verifizierung.</li></ul>
+                    <div class="box" style="margin-top:10px;background:white"><span class="material-icons" style="color:#009BA3">east</span> Ist die Prüfung, ob jede Anforderung umgesetzt wurde, bzw. ein Produktmerkmal dazu existiert, wie es vorab spezifiziert wurde.</div>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>Wurden Anforderungen alle umgesetzt? · Styleguide-einhaltung</div>
+                </div>
+                <div class="vv-col">
+                    <span class="badge lila">Validierung (validation)</span>
+                    <div class="vv-q">Deine Notiz: kann der Nutzer es nutzen aus User/Stakeholder Sicht</div>
+                    <p style="font-size:14px">Prozess, bei dem festgestellt wird, ob die Stakeholderanforderungen aus Sicht der fordernden Stakeholder angemessen umgesetzt wurden.</p>
+                    <ul style="font-size:14px;margin-top:8px"><li>Ein Usability-Test, bei dem explizit die Erfüllung von Nutzungsanforderungen überprüft wird, ist eine Validierung.</li></ul>
+                    <div class="box lila" style="margin-top:10px;background:white"><span class="material-icons" style="color:#8b5cf6">east</span> Ist die Prüfung, ob Umsetzung aus Nutzersicht funktioniert.</div>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>Usability Inspektion · Usability Test</div>
+                </div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 62–64</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">edit</span>Praktische Übung 2</h3>
+            <p>Bitte bearbeiten Sie Übung 2 aus der Datei "Praktische Übungen":</p>
+            <p style="margin-top:6px">Im Folgenden finden Sie verschiedene Aussagen, die in Nutzungskontextinterviews gesammelt oder aus diesen abgeleitet wurden. Bitte ordnen Sie diese, soweit möglich, den angegebenen Kategorien zu.</p>
+            <p style="margin-top:6px">Die Aussagen können sehr verkürzt sein, so dass in dieser Übung Annahmen getroffen werden müssen. Daher notieren Sie sich, welche Fragen Sie zusätzlich stellen würden, um diese Anforderung zuzuordnen.</p>
+            <p style="margin-top:6px">Zur Zuordnung zu einer Kategorie, stellen Sie sich selbst die Fragen:</p>
+            <ul><li>um welches interaktive System, Produkt oder Service es sich handeln könnte?</li><li>wann und von wem die Aussage getroffen wurde?</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 65</span>
+        </div>
+
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Stakeholderanforderungen und Systemanforderungen unterscheiden</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Anforderungen werden in Stakeholder- und Systemanforderungen unterschieden.</div>
+                <div class="st"><span class="sn">2</span>Zu den Stakeholdern eines geplanten interaktiven Systems gehören die Benutzenden und alle anderen Menschen, Organisationen, die ein Interesse daran haben und/oder von ihm betroffen sind.</div>
+                <div class="st"><span class="sn">3</span>Benutzende lassen sich in primäre, sekundäre und indirekte Benutzer unterteilen. Der Sponsor des interaktiven Systems ist ebenfalls ein Stakeholder.</div>
+                <div class="st"><span class="sn">4</span>Stakeholderanforderungen spezifizieren die Fähigkeiten des interaktiven Systems aus der Sicht der verschiedenen Stakeholder.</div>
+                <div class="st"><span class="sn">5</span>Systemanforderungen beziehen sich auf die Fähigkeiten des technischen Systems zur Erfüllung der Stakeholderanforderungen.</div>
+                <div class="st"><span class="sn">6</span>Der Prozess der Verifizierung prüft, ob alle Anforderungen umgesetzt wurden. Der Prozess der Validierung prüft, ob Stakeholderanforderungen aus Sicht der Stakeholder effektiv umgesetzt wurden.</div>
+                <div class="st"><span class="sn">7</span>Um die erforderliche menschzentrierte Qualität eines interaktiven Systems zu erreichen, müssen alle relevanten Anforderungen vollständig hergeleitet, umgesetzt und verifiziert, validiert werden.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 66</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         NUTZUNGSANFORDERUNGEN (Folien S. 60, 98–118)
+         ========================================================= -->
+    <section class="section" id="nutzungsanforderungen">
+        <div class="section-title"><div class="num"><span class="material-icons">edit_note</span></div><h2>Nutzungsanforderung (user requirement)</h2></div>
+        <p class="section-lead">1.4 Nutzungsanforderungen als eigene Anforderungskategorie innerhalb der Stakeholderanforderungen: Sicherstellen, dass der Unterschied von Nutzungsanforderungen zu fachlichen Anforderungen, organisatorischen Anforderungen, Marktanforderungen und gesetzlichen Anforderungen verstanden wird. (S. 98)</p>
+
+        <div class="card">
+            <p style="font-size:15px;font-weight:600;text-align:center;margin-bottom:18px">Anforderungen an die Nutzung, die die Grundlage für die Gestaltung und die Evaluierung eines interaktiven Systems bildet, um Erfordernisse zu erfüllen.</p>
+            <div class="na-compare">
+                <div class="na-col ql">
+                    <div class="na-head"><div class="t">Qualitative Nutzungsanforderung</div><div class="s">Deine Notizen: WAS · Interaktionsschritte · Gestaltung · Offene Fragen</div></div>
+                    <div class="na-body">
+                        <div class="sec">Übersicht (S. 60)</div>
+                        <ul><li>Grundlage für die Gestaltung eines interaktiven Systems</li><li>Richtschnur für das Design</li><li>bestimmen die Interaktionsschritte</li><li>sind Grundlage für Funktionen des Systems</li></ul>
+                        <div class="box" style="background:white;margin-top:8px">Art und Weise der Interaktion, um Ziele zu erreichen → Interaktionsanforderungen</div>
+                        <div class="sec">Definition (S. 102)</div>
+                        Eine Aussage darüber, was Benutzer im Rahmen der Durchführung einer Aufgabe mit dem interaktiven System erkennen, auswählen oder eingeben können müssen, um den identifizierten Erfordernissen des Nutzungskontextes zu genügen.
+                        <ul style="margin-top:6px"><li>Qualitative Nutzungsanforderungen sind keine Funktionen, sondern stellen die Basis für Funktionen dar.</li><li>Qualitative Nutzungsanforderungen müssen immer rückverfolgbar sein auf die zugrundeliegenden Erfordernisse und zugehörige Nutzungskontextinformationen (traceability). <span class="note-inline">Deine Notiz: woher hab ich die Informationen</span></li><li>werden auch Interaktionsanforderungen genannt</li></ul>
+                        <div class="ok"><span class="material-icons">check</span><span>Der Benutzer muss die unterschiedlichen Fahrzeuge, die für einen bestimmten Preisbereich auf der Autovermietungswebseite verfügbar sind, vergleichen können.</span></div>
+                        <div class="sec">Qualitative Nutzungsanforderungen werden mit Hilfe der Elemente (syntaktische Einheiten) spezifiziert: (S. 103)</div>
+                        <ul><li>Benutzergruppe</li><li>Art der Nutzung (erkennen, auswählen, eingeben)</li><li>spezifische Bedingung(en) des Nutzungskontextes bei denen die Nutzungsanforderung relevant ist</li></ul>
+                        <div class="schablone" data-titel="Qualitative Nutzungsanforderung" data-folie="S. 103">
+                        <div class="sec">Formulierungsschablone (Syntax) für eine qualitativen Nutzungsanforderung:</div>
+                        <div class="template">Der <span class="slot">&lt;Benutzer&gt;</span> muss am System eine <span class="slot">&lt;Information oder Ressource&gt;</span> <span class="slot">erkennen / eingeben / auswählen</span> können unter <span class="slot">&lt;Bedingung (optional)&gt;</span>.</div>
+                        </div>
+                        <span class="note-inline">Deine Notiz: Bei einer Aufgabe! · Formulierungsschablone</span>
+                        <div class="sec">Quellen (S. 104)</div>
+                        <div class="src-split"><div><b>direkte Quelle</b>ein oder mehrere Erfordernisse<span class="note-inline">Deine Notiz: Beobachtung, Interviews, Nutzerbefragungen, Ist-Szenario</span></div><div><b>indirekte Quelle</b> <span class="note-inline">(Deine Notiz: möglich, am System)</span><ul><li>Menschzentrierte Qualitätsziele</li><li>regulatorische Anforderungen</li><li>Marktanforderungen</li><li>Organisatorische Anforderungen</li><li>fachliche Anforderungen</li><li>Forderungen</li><li>identifizierte oder antizipierte Nutzungsprobleme</li><li>Interaktionsprinzipien und Heuristiken</li></ul></div></div>
+                        <div class="sec">Beispiele (S. 105)</div>
+                        <b>gut formuliert</b>
+                        <div class="ok"><span class="material-icons">check</span><span>Der Benutzer muss am System erkennen können, welche Autos in einer bestimmten Preisklasse verfügbar sind.</span></div>
+                        <div class="ok"><span class="material-icons">check</span><span>Der Benutzer muss am System ein Fahrzeug mit Automatikgetriebe auswählen können.</span></div>
+                        <div class="ok"><span class="material-icons">check</span><span>Der Benutzer muss am System die Mietdauer eintragen (eingeben) können.</span></div>
+                        <b>falsch formuliert</b>
+                        <div class="nok"><span class="material-icons">close</span><span>Die Benutzungsschnittstelle muss gebrauchstauglich sein und alle Benutzeraufgaben unterstützen. (zu allgemein)</span></div>
+                        <div class="nok"><span class="material-icons">close</span><span>Die Benutzungsschnittstelle muss eine große rote Schaltfläche "Auto mieten" haben. (Lösung)</span></div>
+                        <div class="sec">Übung (S. 108)</div>
+                        <p>Formulieren Sie zwei qualitative Nutzungsanforderungen an die Dienstleistung UR-Engineering Seminare halten.<br>(Teilnehmerperspektive)</p>
+                    </div>
+                </div>
+                <div class="na-col qn">
+                    <div class="na-head"><div class="t">Quantitative Nutzungsanforderung</div><div class="s">Deine Notizen: WIE · usability, ux, barrierefreiheit, Schädenvermeidung · Evaluierung · Zustimmung ja/nein, Bewerten 1–5</div></div>
+                    <div class="na-body">
+                        <div class="sec">Übersicht (S. 60)</div>
+                        <ul><li>Grundlage für die Evaluierung eines interaktiven Systems</li><li>Kriterien für die Akzeptanz, Evaluierung</li><li>bestimmen die menschzentrierte Qualität</li><li>sind überprüfbare Kriterien der Nutzung des Systems</li></ul>
+                        <div class="box lila" style="background:white;margin-top:8px">Messbares Ziel für die menschzentrierte Qualität → Anforderungen an die Nutzungsqualität</div>
+                        <div class="sec">Definition (S. 109)</div>
+                        Ein erforderliches Maß an menschzentrierter Qualität, um identifizierte Erfordernisse in einem bestimmten Nutzungskontext zu erfüllen, ausgedrückt in Maßen für die Usability, User Experience, Barrierefreiheit und der Vermeidung von Schäden durch die Benutzung.
+                        <ul style="margin-top:6px"><li>Quantitative Nutzungsanforderungen sind unter anderem Akzeptanzkriterien für die Effektivität, Effizienz und Zufriedenstellung eines interaktiven Systems, z.B. ob Benutzende eine bestimmte Aufgabe in einer angemessenen Zeit oder mit einem festgeschriebenen Maximum an Benutzungsfehlern mit dem System erledigen können.</li><li>Werden auch Anforderung an die Nutzungsqualität genannt.</li></ul>
+                        <div class="ok"><span class="material-icons">check</span><span>Der Patient muss nach spätestens 60 Sekunden das Auge geschlossen haben, um ausreichend Feuchtigkeit auf der Netzhaut zu haben.</span></div>
+                        <div class="ok"><span class="material-icons">check</span><span>Ein Benutzer, der zum ersten Mal auf der Webseite ist, muss innerhalb von 10 Minuten ein Fahrzeug seiner Wahl mieten können.</span></div>
+                        <div class="schablone" data-titel="Quantitative Nutzungsanforderung" data-folie="S. 110">
+                        <div class="sec">Elemente einer quantitativen Nutzungsanforderung (S. 110)</div>
+                        <ul><li><span class="slot">Stakeholder</span>, der die Anforderung stellt (z.B. Arbeitgeber oder Gesetzgeber)</li><li>betroffene <span class="slot">Benutzergruppen</span>, für die die Anforderung während der Nutzung gilt</li><li><span class="slot">Anzahl / Prozentzahl der Benutzer</span>, die die Anforderung erfüllen müssen</li><li><span class="slot">Gegenstand der Nutzung</span> (Nutzungsobjekt, Werkzeug) <span class="note-inline">Deine Notiz: Aufgabe</span></li><li><span class="slot">Quantität</span> (z.B. maximal zulässige Zeit, Fehlerrate, Genauigkeit)</li><li><span class="slot">spezifische Bedingungen</span> des Nutzungskontextes unter denen die Nutzung stattfindet</li></ul>
+                        </div>
+                        <p style="margin-top:6px">Quantitative Nutzungsanforderungen sollten immer anhand der zugrundeliegenden Erfordernisse verifiziert werden, damit das Maß an Usability nicht willkürlich ist.</p>
+                        <div class="sec">Quellen (S. 111)</div>
+                        <div class="src-split"><div><b>Nutzungskontext</b>quantitative Erfordernisse aus dem NK<span class="note-inline">Deine Notiz: Effizienz, einfacher</span></div><div><b>Stakeholder</b>Akzeptanzkriterien für die menschzentrierte Qualität<ul><li>Usability (Effektivität, Effizienz, Zufriedenstellung)</li><li>User Experience, UX</li><li>Barrierefreiheit</li><li>Vermeidung von Schäden durch die Nutzung</li></ul></div></div>
+                        <div class="sec">Beispiele (S. 112)</div>
+                        <b>gut formuliert</b>
+                        <div class="ok"><span class="material-icons">check</span><span>80% der Benutzer, die die Autovermietungswebseite mindestens zweimal benutzt haben, müssen innerhalb von 5 Minuten einen Kleinwagen ab Flughafen Frankfurt (Deutschland) für zwei Tage beginnend ab morgen 09:00 Uhr mieten können.</span></div>
+                        <b>falsch formuliert</b>
+                        <div class="nok"><span class="material-icons">close</span><span>Benutzer sollten in der Lage sein die Aufgabe der Automiete zufriedenstellend zu beenden. <span class="note-inline">Deine Notiz: nicht messbar</span></span></div>
+                        <div class="sec">Übung (S. 113)</div>
+                        <p>Formulieren Sie zwei quantitative Nutzungsanforderungen an die Dienstleistung UR-Seminare halten.<br>(Teilnehmerperspektive)</p>
+                    </div>
+                </div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 60, 101–112</span>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3><span class="material-icons">rule</span>Typische Qualitätskriterien von Anforderung aus dem RE <span class="note-inline">(Bosch)</span></h3>
+                <div class="box grau"><div class="box-title"><span class="material-icons">help_outline</span>Frage (S. 39)</div>Auf welche Kriterien hin können Anforderungen überprüft werden?<br>Gibt es Unterschiede für die Formulierung für das Requirements Engineering und das User Requirements Engineering?</div>
+                <table class="criteria">
+                    <tr><th>#</th><th>Eigenschaft</th><th>Beschreibung</th></tr>
+                    <tr><td>1</td><td>eindeutig</td><td>Darf nur in einer Weise auslegbar sein.</td></tr>
+                    <tr><td>2</td><td>umsetzbar</td><td>Darf physikalischen Grundsätzen nicht widersprechen.</td></tr>
+                    <tr><td>3</td><td>verständlich</td><td>Muss beim ersten Lesen zu verstehen sein.</td></tr>
+                    <tr><td>4</td><td>testbar</td><td>Muss ein Kriterium enthalten, das durch einen Test überprüfbar ist.</td></tr>
+                    <tr><td>5</td><td>lösungsneutral</td><td>Darf keine Lösung enthalten oder auf eine Lösung hinweisen.</td></tr>
+                    <tr><td>6</td><td>korrekt</td><td>Muss so formuliert sein, dass der Anfordernde und der Entwickelnde / Spezifizierende das Gleiche darunter verstehen.</td></tr>
+                    <tr><td>7</td><td>eineindeutig</td><td>Ein Sachverhalt pro Anforderung.</td></tr>
+                    <tr><td>8</td><td>identifizierbar</td><td>Eindeutige, nicht änderbare ID für das Lebenszyklusmanagement.</td></tr>
+                    <tr class="hl"><td>9</td><td>begründet</td><td>Muss auf einem Erfordernis beruhen. <span class="note-inline">und … wichtiges Qualitätskriterium im URE (S. 41)</span></td></tr>
+                </table>
+                <span class="src"><span class="material-icons">description</span>Folien S. 40, 41</span>
+            </div>
+            <div class="card">
+                <h3><span class="material-icons">balance</span>Qualitative Nutzungsanforderung – Beispiele für Konsequenzen der Umsetzung</h3>
+                <div class="conseq">
+                    <div class="box"><div class="box-title">Qualitative Nutzungsanforderung</div>Der Benutzer muss am System erkennen können, dass er sein Geld erst erhält, nachdem er seine Geldkarte entnommen hat.</div>
+                    <div class="conseq-split">
+                        <div class="box emerald"><div class="box-title"><span class="material-icons" style="color:#10b981">add_circle</span>Positive Konsequenz, wenn umgesetzt</div>Der Benutzer kann seine Karte nicht im Geldautomaten zurücklassen.</div>
+                        <div class="box pink"><div class="box-title"><span class="material-icons" style="color:#E10057">remove_circle</span>Negative Konsequenz, wenn nicht umgesetzt</div>Der Benutzer könnte seine Karte im Geldautomaten zurücklassen. Im schlimmsten Fall wird die Karte gestohlen.</div>
+                    </div>
+                </div>
+                <span class="src"><span class="material-icons">description</span>Folie S. 106</span>
+                <h3 style="margin-top:22px"><span class="material-icons">help_outline</span>Was ist der Unterschied zwischen Nutzungsanforderungen und anderen Stakeholderanforderungen? (S. 99)</h3>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>Unterschiedliche Stakeholder</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">place</span>Nutzungsanforderungen in der Menschzentrierten Gestaltung (HCD)</h3>
+            <p class="card-lead">Wo tauchen Nutzungsanforderungen entlang des Human-centred Designs auf? (S. 116)</p>
+            <div class="na-hcd">
+                <div class="nh"><span class="nh-act">Planung des menschzentrierten Gestaltungsprozesses</span>Festlegung der zu entwickelnden menschzentrierten Qualitätsziele<span class="note-inline">Deine Notiz: → Vision – quantitative &amp; Qualitativ</span></div>
+                <div class="nh"><span class="nh-act">Verstehen und Festlegen des Nutzungskontextes</span>Informationen zu und in "Frühform" von Bedürfnissen, Zielen, Wünschen, Forderungen, Funktionen</div>
+                <div class="nh l"><span class="nh-act">Festlegen der Nutzungsanforderungen</span>Ableitung aus Erfordernissen und Stakeholderanforderungen<br>Priorisierung in der Planung der Produkt Road Map</div>
+                <div class="nh l"><span class="nh-act">Erarbeiten von Gestaltungslösungen</span>Grundlage für Design, Funktionen und zu erreichende MZ-Qualität<span class="note-inline">Deine Notizen: qualitativ · quantitativ</span></div>
+                <div class="nh l"><span class="nh-act">Evaluieren der Gestaltung</span>Testaufgabe und Kriterium der Evaluierung</div>
+                <div class="nh g"><span class="nh-act">Gestaltungslösung erfüllt die Nutzungsanforderungen</span>Funktion oder Merkmal im Produkt, System</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 117, Quelle: ISO 9241-210:2019</span>
+        </div>
+
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Nutzungsanforderungen als eigene Anforderungskategorie innerhalb der Stakeholderanforderungen</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Nutzungsanforderungen sind eine Kategorie von Stakeholderanforderungen. Es gibt Qualitative und Quantitative Nutzungsanforderungen.</div>
+                <div class="st"><span class="sn">2</span>Qualitative Nutzungsanforderungen geben wieder, was die Benutzende am geplanten interaktiven System erkennen, auswählen oder eingeben können, daher werden sie auch Interaktionsanforderungen genannt. Sie werden aus den im Nutzungskontext identifizierten Erfordernissen abgeleitet.</div>
+                <div class="st"><span class="sn">3</span>Quantitative Nutzungsanforderungen geben das erforderliche Maß an Usability, Barrierefreiheit, User Experience und Vermeidung von Schäden durch die Benutzung wieder, die das geplante interaktive System erfüllen muss. Sie werden oft von Stakeholdern als Akzeptanzkriterien festgelegt.</div>
+                <div class="st"><span class="sn">4</span>Die direkte Quelle einer Nutzungsanforderung sind immer ein oder mehrere Erfordernisse. Andere Stakeholderanforderungen können indirekt zu Nutzungsanforderungen führen, und vice versa.</div>
+                <div class="st"><span class="sn">5</span>Nutzungsanforderung tragen unterschiedlich stark zur Usability des geplanten interaktiven Systems bei. So kann die Implementierung einer bestimmten Nutzungsanforderung für die Usability des interaktiven Systems entscheidend sein im Gegensatz zu einer anderen Nutzungsanforderung.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 118</span>
+        </div>
+    </section>
+
+    <nav class="pager"><a class="prev" href="selbsttest.html"><span class="material-icons">chevron_left</span><span><small>Zurück</small>Selbsttest Begriffe</span></a><a class="next" href="kapitel-2.html"><span><small>Weiter</small>2 NKA planen</span><span class="material-icons">chevron_right</span></a></nav>
+
+    <footer>Lernmaterial auf Basis der CPUX-UR-Seminarunterlagen (Spiegel Institut, 2026) nach UXQB CPUX-F Curriculum V4.01 und ISO 9241-210:2019. Nur für den internen Gebrauch.</footer>
+</div>
+
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drTitle">
+    <div class="dr-head">
+        <button class="dr-close" id="drClose" aria-label="Schließen"><span class="material-icons">close</span></button>
+        <div class="dr-icon"><span class="material-icons" id="drIcon">info</span></div>
+        <h3 id="drTitle"></h3>
+        <div class="dr-tags" id="drTags"></div>
+    </div>
+    <div class="dr-body" id="drBody"></div>
+    <div class="dr-foot">
+        <div class="dr-nav">
+            <button class="btn" id="drPrev" title="Vorheriger Prozessschritt"><span class="material-icons">chevron_left</span></button>
+            <button class="btn" id="drNext" title="Nächster Prozessschritt"><span class="material-icons">chevron_right</span></button>
+        </div>
+        <a class="btn on" id="drLink" href="#"><span class="material-icons">open_in_full</span>Zur Detailkarte</a>
+    </div>
+</aside>
+
+<button class="back-to-top" id="backToTop" aria-label="Zurück nach oben"><span class="material-icons" style="font-size:26px">arrow_upward</span></button>
+
+<script src="lern-daten.js"></script>
+<script src="landkarte.js"></script>
+<script src="folien-daten.js"></script>
+<script src="folien.js"></script>
+<script src="hervorhebung-daten.js"></script>
+<script src="hervorhebung.js"></script>
+<script src="detail.js"></script>
+<script src="prozessgrafik.js"></script>
+<script src="lernen.js"></script>
+</body>
+</html>

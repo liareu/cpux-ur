@@ -1,0 +1,344 @@
+[
+ {
+  "id": "cu-1-1-anforderungen-und-loesungen-unterscheiden",
+  "code": "1.1",
+  "titel": "Anforderungen und Lösungen unterscheiden",
+  "lz": [
+   [
+    "1.1.a",
+    "Wissen, dass interaktive Systeme zwei grundsätzliche Klassen von Qualität haben (menschzentrierte Qualität und technische Qualität)."
+   ],
+   [
+    "1.1.b",
+    "Die Fachbegriffe 1.) Nutzungskontext, 2.) Erfordernisse, 3.) Anforderungen und 4.) Lösungen kennen und unterscheiden können."
+   ],
+   [
+    "1.1.c",
+    "Den Unterschied zwischen Anforderung und Lösung kennen."
+   ],
+   [
+    "1.1.d",
+    "Den Unterschied zwischen Forderung und Anforderung kennen."
+   ],
+   [
+    "1.1.e",
+    "Den Unterschied zwischen Problemraum und Lösungsraum kennen."
+   ],
+   [
+    "1.1.f",
+    "Verstehen, dass Anforderungen auf Erfordernissen im Nutzungskontext basieren müssen."
+   ],
+   [
+    "1.1.g",
+    "Verstehen, wie sich Anforderungen von Gestaltungsregeln unterscheiden."
+   ],
+   [
+    "1.1.h",
+    "Feststellen können, ob eine textuelle Aussage eine Anforderung oder eine Lösung beinhaltet."
+   ],
+   [
+    "1.1.i",
+    "Die Immunisierungsfalle beim Formulieren von Anforderungen kennen."
+   ]
+  ]
+ },
+ {
+  "id": "cu-1-2-stakeholderanforderungen-und-systemanforderungen-untersc",
+  "code": "1.2",
+  "titel": "Stakeholderanforderungen und Systemanforderungen unterscheiden",
+  "lz": [
+   [
+    "1.2.a",
+    "Arten von Stakeholderanforderungen kennen und unterscheiden können."
+   ],
+   [
+    "1.2.b",
+    "Den Unterschied zwischen Stakeholderanforderungen und Systemanforderungen kennen."
+   ],
+   [
+    "1.2.c",
+    "Verstehen, dass Stakeholderanforderungen die Basis für Systemanforderungen darstellen."
+   ],
+   [
+    "1.2.d",
+    "Verstehen, dass Nutzungsanforderungen eine eigene Kategorie innerhalb der Stakeholderanforderungen bilden."
+   ],
+   [
+    "1.2.e",
+    "Die Bedeutung von Verifizierung und Validierung kennen und zwischen beiden unterscheiden können."
+   ],
+   [
+    "1.2.f",
+    "Den Unterschied zwischen Usability-Engineering und Requirements-Engineering kennen."
+   ],
+   [
+    "1.2.g",
+    "Das IREB und den CPRE kennen."
+   ]
+  ]
+ },
+ {
+  "id": "cu-1-3-der-nutzungskontext-als-grundlage-fuer-nutzungsanforderu",
+  "code": "1.3",
+  "titel": "Der Nutzungskontext als Grundlage für Nutzungsanforderungen",
+  "lz": [
+   [
+    "1.3.a",
+    "Benutzer, Ziele und Aufgaben, Ressourcen, soziale Umgebung und physische Umgebung trennscharf unterscheiden können."
+   ],
+   [
+    "1.3.b",
+    "Ziele als beabsichtigte Ergebnisse formulieren können. Aufgabe, Aufgabenmodell und Aufgabenobjekt unterscheiden können"
+   ],
+   [
+    "1.3.c",
+    "Den Begriff „Aufgabenmodell” und seine Bedeutung für die Beschreibung von Aufgaben kennen. Das Konstrukt „Aufgabenobjekt“ als Gegenstand der Aufgabenerledigung kennen. Verstehen, wie Aufgabenobjekte in der Benutzungsschnittstelle repräsentiert"
+   ],
+   [
+    "1.3.d",
+    "werden. Aufgaben als „Aufgabenmodell” bestehend aus kontextuellen Vorbedingung(en), Teilaufgaben und beabsichtigte(s) Ergebnis(se) (kontextuelle Nachbedingung(en)) beschreiben können."
+   ],
+   [
+    "1.3.e",
+    "Verstehen, dass der Nutzungskontext für die Gestaltung typischerweise eine Teilmenge des gegebenen Nutzungskontextes ist und als Basis für die Herleitung von Nutzungsanforderungen verwendet wird."
+   ]
+  ]
+ },
+ {
+  "id": "cu-1-4-nutzungsanforderungen-als-eigene-anforderungskategorie-i",
+  "code": "1.4",
+  "titel": "Nutzungsanforderungen als eigene Anforderungskategorie innerhalb der Stakeholderanforderungen",
+  "lz": [
+   [
+    "1.4.a",
+    "Verstehen, dass Umsetzen bzw. Nicht-Umsetzen einzelner Nutzungsanforderungen die Usability eines Systems bedeutsam beeinflussen können."
+   ],
+   [
+    "1.4.b",
+    "Verstehen, dass qualitative Nutzungsanforderungen die Basis für die Gestaltung der Interaktion mit dem interaktiven System darstellen."
+   ],
+   [
+    "1.4.c",
+    "Verstehen, wie Nutzungsanforderungen einerseits zu anderen Stakeholderanforderungen führen können und andererseits aus anderen Stakeholderanforderungen hergeleitet werden können."
+   ]
+  ]
+ },
+ {
+  "id": "cu-2-1-anlass-und-ziele-der-nutzungskontextanalyse-ermitteln",
+  "code": "2.1",
+  "titel": "Anlass und Ziele der Nutzungskontextanalyse ermitteln",
+  "lz": [
+   [
+    "2.1.a",
+    "Die unterschiedlichen Anlässe für Nutzungskontextanalysen kennen."
+   ],
+   [
+    "2.1.b",
+    "Menschzentrierte Qualitätsziele für die Gestaltung eines interaktiven Systems festlegen können (in Ergänzung zu allgemeinen Projektzielen)."
+   ]
+  ]
+ },
+ {
+  "id": "cu-2-2-das-vorgehen-bei-der-nutzungskontextanalyse-festlegen",
+  "code": "2.2",
+  "titel": "Das Vorgehen bei der Nutzungskontextanalyse festlegen",
+  "lz": [
+   [
+    "2.2.a",
+    "Vorläufige Annahmen über den Nutzungskontext als Ausgangspunkt für die Gewinnung von empirischer Information (Fakten aus dem Nutzungskontext) verstehen."
+   ],
+   [
+    "2.2.b",
+    "Die unterschiedlichen Vorgehensweisen bei der Nutzungskontextanalyse (klassisch versus modellbasiert) anwenden können."
+   ],
+   [
+    "2.2.c",
+    "Verstehen, dass die Nutzungskontextanalyse nicht im Widerspruch zu Aktivitäten steht, die mit &quot;Design Thinking&quot; oder &quot;Lean UX&quot; in Verbindung gebracht werden, sondern dass diese Ansätze ebenfalls auf einer Nutzungskontextanalyse beruhen, so wie fast alle mensch- bzw. benutzerzentrierten Ansätze."
+   ]
+  ]
+ },
+ {
+  "id": "cu-3-1-benutzer-fuer-die-erhebung-von-nutzungskontextinformatio",
+  "code": "3.1",
+  "titel": "Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren",
+  "lz": [
+   [
+    "3.1.a",
+    "Benutzergruppenprofile als Basis für Rekrutierungsfragebögen entwickeln können"
+   ],
+   [
+    "3.1.b",
+    "Rekrutierungsfragebögen für die Auswahl von Benutzern für kontextuelle Interviews, Beobachtungen und/oder Fokusgruppen entwickeln können"
+   ],
+   [
+    "3.1.c",
+    "Wissen, wie man Benutzer für kontextuelle Interviews, Beobachtungen und/oder Fokusgruppen rekrutiert"
+   ]
+  ]
+ },
+ {
+  "id": "cu-3-2-erhebung-von-nutzungskontextinformationen-vorbereiten-un",
+  "code": "3.2",
+  "titel": "Erhebung von Nutzungskontextinformationen vorbereiten und durchführen",
+  "lz": [
+   [
+    "3.2.a",
+    "Wissen, welche Methoden es zur Erhebung von Nutzungskontextinformationen gibt."
+   ],
+   [
+    "3.2.b",
+    "Wissen, wie man entscheidet, welche Methode / Kombination von Methoden bevorzugt anzuwenden ist."
+   ],
+   [
+    "3.2.c",
+    "Wissen, worauf bei der Vorbereitung und Durchführung eines kontextuellen Interviews zu achten ist."
+   ],
+   [
+    "3.2.d",
+    "Wissen, worauf bei der Vorbereitung und Durchführung von Beobachtungen zu achten ist."
+   ],
+   [
+    "3.2.e",
+    "Wissen, worauf bei der Vorbereitung und Durchführung von Fokusgruppen zu achten ist."
+   ],
+   [
+    "3.2.f",
+    "Wissen, dass Daten aus Interviews und Beobachtungen flüchtig sind, wenn sie nicht protokolliert / dokumentiert werden."
+   ]
+  ]
+ },
+ {
+  "id": "cu-3-3-nutzungskontextbeschreibungen-basierend-auf-nutzungskont",
+  "code": "3.3",
+  "titel": "Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen",
+  "lz": [
+   [
+    "3.3.a",
+    "Die Arten von Nutzungskontextbeschreibungen kennen."
+   ],
+   [
+    "3.3.b",
+    "Wissen, dass Benutzergruppenprofile ggf. auf Basis durchgeführter kontextueller Interviews, Beobachtungen und/oder Fokusgruppen angepasst werden müssen."
+   ],
+   [
+    "3.3.c",
+    "Die Rolle von Personas im Vergleich zu Benutzergruppenprofilen verstehen."
+   ],
+   [
+    "3.3.d",
+    "Nutzungskontextinformationen so dokumentieren können, dass vermeidbare Rückfragen minimiert werden und ein tiefes Verständnis des Nutzungskontextes durch Dritte ermöglicht wird."
+   ]
+  ]
+ },
+ {
+  "id": "cu-4-1-erfordernisse-systematisch-identifizieren-und-formuliere",
+  "code": "4.1",
+  "titel": "Erfordernisse systematisch identifizieren und formulieren",
+  "lz": [
+   [
+    "4.1.a",
+    "Arten von Erfordernissen kennen und unterscheiden können."
+   ],
+   [
+    "4.1.b",
+    "Gütekriterien für Erfordernisse kennen und anwenden können."
+   ],
+   [
+    "4.1.c",
+    "Erfordernisse systematisch in Nutzungskontextinformationen erkennen können."
+   ],
+   [
+    "4.1.d",
+    "Erfordernisse so formulieren können, dass hieraus Anforderungen abgeleitet werden können."
+   ],
+   [
+    "4.1.e",
+    "Verstehen der Unterschiede zwischen Benutzerwünschen und Erfordernissen."
+   ]
+  ]
+ },
+ {
+  "id": "cu-5-1-erfordernisse-systematisch-in-nutzungsanforderungen-uebe",
+  "code": "5.1",
+  "titel": "Erfordernisse systematisch in Nutzungsanforderungen überführen",
+  "lz": [
+   [
+    "5.1.a",
+    "Gütekriterien für Nutzungsanforderungen kennen und anwenden können."
+   ],
+   [
+    "5.1.b",
+    "Die Syntaxregel der qualitativen Nutzungsanforderung anwenden können."
+   ],
+   [
+    "5.1.c",
+    "Qualitative Nutzungsanforderungen aus Erfordernissen herleiten können."
+   ],
+   [
+    "5.1.d",
+    "Quantitative Nutzungsanforderungen formulieren können."
+   ],
+   [
+    "5.1.e",
+    "Widersprüchliche Erfordernisse aus unterschiedlichen Quellen in konsensfähige Nutzungsanforderungen und/oder Lösungen überführen können."
+   ]
+  ]
+ },
+ {
+  "id": "cu-5-2-nutzungsanforderungen-angemessen-strukturieren",
+  "code": "5.2",
+  "titel": "Nutzungsanforderungen angemessen strukturieren",
+  "lz": [
+   [
+    "5.2.a",
+    "Aufgabenmodell des Nutzungskontexts und Aufgabenmodell für die Gestaltung unterscheiden können."
+   ],
+   [
+    "5.2.b",
+    "Eine Nutzungsanforderung einer zu unterstützenden Aufgabe und Teilaufgabe zuordnen können, die vom interaktiven System unterstützt werden müssen."
+   ]
+  ]
+ },
+ {
+  "id": "cu-6-1-nutzungsanforderungen-mit-benutzern-konsolidieren-und-pr",
+  "code": "6.1",
+  "titel": "Nutzungsanforderungen mit Benutzern konsolidieren und priorisieren",
+  "lz": [
+   [
+    "6.1.a",
+    "Wissen, wie man zusammen mit den Benutzern feststellt, ob die spezifizierten Nutzungsanforderungen angemessen, vollständig und relevant sind oder nicht."
+   ],
+   [
+    "6.1.b",
+    "Notwendigkeit zur Verwendung eines strukturierten Schemas für Priorisierungen verstehen."
+   ],
+   [
+    "6.1.c",
+    "Publiziertes Schema für eine Priorisierung kennen."
+   ]
+  ]
+ },
+ {
+  "id": "cu-6-2-die-umsetzungsprioritaet-von-nutzungsanforderungen-mit-p",
+  "code": "6.2",
+  "titel": "Die Umsetzungspriorität von Nutzungsanforderungen mit Projektbeteiligten festlegen",
+  "lz": [
+   [
+    "6.2.a",
+    "Nutzungsanforderungen an Stakeholder in einem Projekt kommunizieren können."
+   ],
+   [
+    "6.2.b",
+    "Den Stakeholdern in einem Projekt vermitteln können, welche Relevanz ermittelte Nutzungsanforderungen haben."
+   ],
+   [
+    "6.2.c",
+    "Wissen, dass Nutzungsanforderungen eine überdauernde dokumentarische Verortung für eine ggf. spätere Umsetzung und Nutzung haben, z.B. in Form einer Produkt-Roadmap."
+   ],
+   [
+    "6.2.d",
+    "Gemeinsam mit den Stakeholdern in einem Projekt Konsens über die Umsetzungspriorität der jeweiligen Nutzungsanforderung herbeiführen können."
+   ]
+  ]
+ }
+]

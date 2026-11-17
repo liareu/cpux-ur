@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zum Seminar | CPUX-UR Prozess-Landkarte</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landkarte.css">
+<link rel="stylesheet" href="lernen.css">
+</head>
+<body>
+
+<button class="sb-toggle" id="sbToggle" aria-label="Navigation ein- oder ausblenden" title="Navigation ein-/ausblenden"><span class="material-icons" id="sbIcon">menu_open</span></button>
+
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <span class="ux-lab-pill">UX Lab</span>
+        <h2>CPUX-UR Prozess-Landkarte</h2>
+        <p>Lernbegleiter zum Training, Stand Folie S. 252</p>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+        <div class="nav-group">Überblick</div>
+        <a href="index.html" class="nav-link"><span class="material-icons">map</span>Prozesskarte</a>
+        <a href="dashboard.html" class="nav-link"><span class="material-icons">dashboard</span>Lern-Cockpit</a>
+        <a href="seminar.html" class="nav-link active"><span class="material-icons">school</span>Zum Seminar</a>
+        <div class="nav-sub"><a href="#ausblick">Kommt noch</a><a href="#rollen">Rollen &amp; Begriffe</a></div>
+        <div class="nav-group">Lernen</div>
+        <a href="zusammenhang.html" class="nav-link"><span class="material-icons">hub</span>Alles im Zusammenhang</a>
+        <a href="schaubilder.html" class="nav-link"><span class="material-icons">account_tree</span>Schaubilder</a>
+        <a href="lernziele.html" class="nav-link"><span class="material-icons">checklist</span>Lernziele</a>
+        <a href="selbsttest.html" class="nav-link"><span class="material-icons">style</span>Selbsttest Begriffe</a>
+        <div class="nav-group">Kapitel</div>
+        <a href="kapitel-1.html" class="nav-link"><span class="material-icons">looks_one</span>1 Einführung in die NKA</a>
+        <a href="kapitel-2.html" class="nav-link"><span class="material-icons">looks_two</span>2 NKA planen</a>
+        <a href="kapitel-3.html" class="nav-link"><span class="material-icons">looks_3</span>3 Information erheben</a>
+        <a href="kapitel-4.html" class="nav-link"><span class="material-icons">looks_4</span>4 Erfordernisse identifizieren</a>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>5 NA ableiten</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>6 Konsolidieren &amp; priorisieren</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>7 Schnittstellen</span>
+        <div class="nav-group">Prüfung</div>
+        <a href="pruefung-theorie.html" class="nav-link"><span class="material-icons">quiz</span>Theoretische Prüfung</a>
+        <a href="pruefung-praxis.html" class="nav-link"><span class="material-icons">assignment</span>Praktische Prüfung</a>
+        <div class="nav-group">Nachschlagen</div>
+        <a href="glossar.html" class="nav-link"><span class="material-icons">menu_book</span>Glossar</a>
+        <a href="ure-story.html" class="nav-link"><span class="material-icons">auto_stories</span>URE Story</a>
+        <a href="schablonen.html" class="nav-link"><span class="material-icons">text_fields</span>Formulierungsschablonen</a>
+        <a href="curriculum.html" class="nav-link"><span class="material-icons">library_books</span>Curriculum</a>
+    </nav>
+    <div class="sidebar-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54331 231.41233" width="100" aria-label="Micromata"><g style="isolation:isolate"><polygon fill="#009ba3" points="148.258 115.749 126.403 93.891 126.401 93.892 73.277 40.768 51.416 62.623 104.543 115.75 51.416 168.878 73.277 190.733 126.4 137.607 126.403 137.61 148.258 115.749"/><rect fill="#007480" x="110.9384" y="100.29035" width="30.91783" height="30.91093" transform="translate(297.62103 108.27464) rotate(135.02027)"/><polygon fill="#ffcb00" style="mix-blend-mode:multiply" points="248.142 40.767 226.287 62.621 279.411 115.75 226.287 168.876 248.142 190.735 301.268 137.609 323.129 115.747 248.142 40.767"/><polygon fill="#75be01" points="410.565 115.749 388.71 93.891 388.708 93.892 335.584 40.768 313.723 62.623 366.85 115.75 313.723 168.878 335.584 190.733 388.707 137.608 388.71 137.61 410.565 115.749"/><rect fill="#32912e" x="373.25004" y="100.28859" width="30.91285" height="30.91093" transform="translate(745.47512 -77.14329) rotate(135.02027)"/><polygon fill="#e10057" points="235.693 115.747 160.706 40.767 138.851 62.621 191.975 115.75 138.851 168.876 160.706 190.735 213.832 137.609 213.832 137.609 235.693 115.747"/><rect fill="#a70836" x="198.37947" y="100.29397" width="30.90915" height="30.91093" transform="translate(446.87971 46.37618) rotate(134.99583)"/><rect fill="#ff9d01" x="285.81339" y="100.29397" width="30.90915" height="30.91093" transform="translate(596.13425 -15.45344) rotate(134.99583)"/></g></svg>
+    </div>
+</aside>
+
+<div class="container">
+
+    <div class="header sub">
+        <p class="eyebrow">Zum Seminar</p>
+        <h1>Agenda, Rollen und Begriffe</h1>
+    </div>
+
+    <!-- =========================================================
+         AUSBLICK
+         ========================================================= -->
+    <section class="section" id="ausblick">
+        <div class="section-title"><div class="num"><span class="material-icons">upcoming</span></div><h2>Agenda des Seminars</h2></div>
+        <p class="section-lead">Kapitel 1 und 2 sind eingearbeitet, Kapitel 3 vollständig, Kapitel 4 bis Folie S. 252. Die übrigen Kapitel ergänze ich, sobald die Folien da sind.</p>
+        <div class="card">
+            <div class="pipeline">
+                <div class="pipe done"><span class="pn">1</span>Einführung in die Nutzungskontextanalyse</div>
+                <div class="pipe done"><span class="pn">2</span>Nutzungskontextanalyse planen</div>
+                <div class="pipe"><span class="pn">3</span>Nutzungskontextinformation erheben</div>
+                <div class="pipe"><span class="pn">4</span>Erfordernisse identifizieren</div>
+                <div class="pipe"><span class="pn">5</span>Nutzungsanforderungen ableiten</div>
+                <div class="pipe"><span class="pn">6</span>Nutzungsanforderungen konsolidieren &amp; priorisieren</div>
+                <div class="pipe"><span class="pn">7</span>Schnittstellen des UR-Engineers</div>
+            </div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen (S. 9)</div>6: mit User-Brille · 7: 296–300, nicht prüfungsrelevant</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 9</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         ROLLEN & BEGRIFFE (Folien S. 11–19)
+         ========================================================= -->
+    <section class="section" id="rollen">
+        <div class="section-title"><div class="num"><span class="material-icons">hub</span></div><h2>Rollen und Begriffe</h2></div>
+        <p class="section-lead">Motivation, die Produktentwicklung: Welten, Zusammenarbeit, Ziele (S. 16)</p>
+        <div class="grid-2">
+            <div class="card">
+                <h3><span class="material-icons">hub</span>Motivation, die Produktentwicklung</h3>
+                <svg viewBox="0 0 520 450" class="venn">
+                    <circle cx="190" cy="165" r="135" fill="rgba(74,85,104,0.6)"/>
+                    <circle cx="330" cy="165" r="135" fill="rgba(0,155,163,0.6)"/>
+                    <circle cx="260" cy="280" r="135" fill="rgba(139,92,246,0.55)"/>
+                    <text x="120" y="62" class="v-h">Technologie</text>
+                    <text x="400" y="62" class="v-h" text-anchor="end">Nutzende</text>
+                    <text x="260" y="438" class="v-h" text-anchor="middle">Business</text>
+                    <text x="120" y="140" class="v-r" text-anchor="middle">Systems Engineer</text>
+                    <text x="120" y="164" class="v-s" text-anchor="middle">fortschrittlich,</text><text x="120" y="179" class="v-s" text-anchor="middle">technisch solide,</text><text x="120" y="194" class="v-s" text-anchor="middle">umsetzbar</text>
+                    <text x="400" y="140" class="v-r" text-anchor="middle">UX Professional</text>
+                    <text x="400" y="164" class="v-s" text-anchor="middle">nützlich,</text><text x="400" y="179" class="v-s" text-anchor="middle">verständlich,</text><text x="400" y="194" class="v-s" text-anchor="middle">begeisternd</text>
+                    <text x="260" y="345" class="v-r" text-anchor="middle">Business Analyst</text>
+                    <text x="260" y="368" class="v-s" text-anchor="middle">wirtschaftlich, strategisch passend,</text><text x="260" y="383" class="v-s" text-anchor="middle">Identität stärkend</text>
+                    <circle cx="260" cy="205" r="52" fill="white"/>
+                    <text x="260" y="192" class="v-c" text-anchor="middle">Product</text><text x="260" y="210" class="v-c" text-anchor="middle">Manager /</text><text x="260" y="228" class="v-c" text-anchor="middle">Product Owner</text>
+                </svg>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 16)</div>→ Produktqualität · ideale, erfolgreiche Systeme</div>
+                <h4>Produktentwicklungsprozess Anteile zum PEP (S. 18)</h4>
+                <div class="grid-3" style="gap:10px">
+                    <div class="box grau"><div class="box-title">Technologie</div>Technische Entwicklung</div>
+                    <div class="box"><div class="box-title">Nutzende</div>Menschzentrierte Gestaltung (HCD)</div>
+                    <div class="box lila"><div class="box-title">Business</div>organisatorische Produktentwicklung</div>
+                </div>
+                <span class="src"><span class="material-icons">description</span>Folien S. 16, 18</span>
+            </div>
+            <div class="card">
+                <h3><span class="material-icons">join_inner</span>IREB und CPRE – UXQB und CPUX-UR</h3>
+                <div class="bridge">
+                    <div class="bridge-side tech"><b>Welt der Technologie</b><span>Systems Engineering</span><small>Systems Engineer und andere</small></div>
+                    <div class="bridge-mid"><span class="material-icons">sync_alt</span><b>Requirements Engineering</b><small>Requirements Engineer und User Requirements Engineer</small></div>
+                    <div class="bridge-side user"><b>Welt der Benutzenden</b><span>Usability Engineering</span><small>Usability Engineer und andere</small></div>
+                </div>
+                <div class="grid-2" style="gap:12px;margin-top:14px">
+                    <div class="box grau"><div class="box-title">IREB: International Requirements Engineering Board</div>Zertifikat – CPRE: Certified Professional for Requirements Engineering für Systems Engineers (Systemanforderungen, technikzentrierte Qualität)</div>
+                    <div class="box"><div class="box-title">UXQB: User Experience Qualification Board</div>Zertifikat – CPUX-UR: Certified Professional for User Requirements Engineering für Usability Professionals (Nutzungsanforderungen, menschzentrierte Qualität)</div>
+                </div>
+                <div class="box gelb" style="margin-top:12px"><div class="box-title"><span class="material-icons">link</span>User Requirements Engineering, die Brücke zwischen den Welten der Nutzenden und der Technologie</div>
+                    <div class="note" style="margin-top:6px"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 14)</div>Systems Engineering: Systemanforderungen · Usability Engineering: Nutzungsanforderungen</div>
+                </div>
+                <span class="src"><span class="material-icons">description</span>Folien S. 14, 19</span>
+            </div>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">help_outline</span>User / Requirements / Engineering</h3>
+            <div class="grid-3">
+                <div class="word"><span class="w-big">User</span><span class="w-eq">== Benutzer</span><p>Eine Person, die mit einem interaktiven System interagiert oder die Ergebnisse, die vom System erzeugt werden, benutzt.</p></div>
+                <div class="word"><span class="w-big">Requirements</span><span class="w-eq">== Anforderung</span><p>Eine Bedingung oder Fähigkeit, die ein interaktives System erfüllen oder besitzen muss, um eine Vereinbarung, eine Norm, eine Spezifikation oder anderen formal auferlegte Dokumente zu erfüllen.</p></div>
+                <div class="word"><span class="w-big">Engineering</span><span class="w-eq">== Ingenieurstätigkeit</span><p>Geistige Tätigkeiten, die für die Definition, die Planung, die Herstellung, die Erhaltung und Wiederverwertung eines Produkts, eines Prozesses oder eines Gebäudes erforderlich sind.</p></div>
+            </div>
+            <div class="grid-2" style="margin-top:16px">
+                <div class="box grau"><div class="box-title">Requirements Engineering aus Sicht der Technologie, Perspektive des Systems Engineering</div>The systematic and disciplined approach to the specification and management of requirements with the goal of
+                    <ul><li>understanding the stakeholders' desires and needs and</li><li>minimizing the risk of delivering a system that does not meet the stakeholders' desires and needs</li></ul></div>
+                <div class="box"><div class="box-title">Requirements Engineering aus Sicht der Vertreter der Nutzenden, Perspektive des Usability Engineering</div>Disziplin, die das systematische Spezifizieren und Verwalten von Stakeholderanforderungen und Systemanforderungen umfasst.
+                    <ul><li>Beim Requirements Engineering wird nicht immer explizit zwischen Stakeholder- und Systemanforderungen unterschieden.</li><li>Die zunehmende Bedeutung der Usability und User Experience hat den Begriff User Requirements und damit das Berufsfeld <b>User Requirements Engineering</b> gefördert.</li><li>User Requirements Engineering ist eine Teildisziplin des Usability Engineering und des Requirements Engineering.</li></ul></div>
+            </div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 2)</div>User Requirement Engineer</div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 11–13</span>
+        </div>
+    </section>
+
+    <nav class="pager"><a class="prev" href="dashboard.html"><span class="material-icons">chevron_left</span><span><small>Zurück</small>Lern-Cockpit</span></a><a class="next" href="zusammenhang.html"><span><small>Weiter</small>Alles im Zusammenhang</span><span class="material-icons">chevron_right</span></a></nav>
+
+    <footer>Lernmaterial auf Basis der CPUX-UR-Seminarunterlagen (Spiegel Institut, 2026) nach UXQB CPUX-F Curriculum V4.01 und ISO 9241-210:2019. Nur für den internen Gebrauch.</footer>
+</div>
+
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drTitle">
+    <div class="dr-head">
+        <button class="dr-close" id="drClose" aria-label="Schließen"><span class="material-icons">close</span></button>
+        <div class="dr-icon"><span class="material-icons" id="drIcon">info</span></div>
+        <h3 id="drTitle"></h3>
+        <div class="dr-tags" id="drTags"></div>
+    </div>
+    <div class="dr-body" id="drBody"></div>
+    <div class="dr-foot">
+        <div class="dr-nav">
+            <button class="btn" id="drPrev" title="Vorheriger Prozessschritt"><span class="material-icons">chevron_left</span></button>
+            <button class="btn" id="drNext" title="Nächster Prozessschritt"><span class="material-icons">chevron_right</span></button>
+        </div>
+        <a class="btn on" id="drLink" href="#"><span class="material-icons">open_in_full</span>Zur Detailkarte</a>
+    </div>
+</aside>
+
+<button class="back-to-top" id="backToTop" aria-label="Zurück nach oben"><span class="material-icons" style="font-size:26px">arrow_upward</span></button>
+
+<script src="lern-daten.js"></script>
+<script src="landkarte.js"></script>
+<script src="folien-daten.js"></script>
+<script src="folien.js"></script>
+<script src="hervorhebung-daten.js"></script>
+<script src="hervorhebung.js"></script>
+<script src="detail.js"></script>
+<script src="prozessgrafik.js"></script>
+<script src="lernen.js"></script>
+</body>
+</html>

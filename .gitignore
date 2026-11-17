@@ -1,0 +1,13 @@
+# Vorkopien / Sicherungen
+*_vor-*
+
+# System & Werkzeug-Cache
+.DS_Store
+__pycache__/
+*.pyc
+
+# Lokale Claude-Code-Einstellungen
+.claude/
+
+# Original-Folienfotos (zu groß; die Seite nutzt Landkarte/folien/)
+Folien/

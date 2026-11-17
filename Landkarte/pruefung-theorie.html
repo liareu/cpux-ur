@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theoretische Prüfung | CPUX-UR Prozess-Landkarte</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landkarte.css">
+<link rel="stylesheet" href="lernen.css">
+<link rel="stylesheet" href="pruefung.css">
+</head>
+<body>
+
+<button class="sb-toggle" id="sbToggle" aria-label="Navigation ein- oder ausblenden" title="Navigation ein-/ausblenden"><span class="material-icons" id="sbIcon">menu_open</span></button>
+
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <span class="ux-lab-pill">UX Lab</span>
+        <h2>CPUX-UR Prozess-Landkarte</h2>
+        <p>Lernbegleiter zum Training, Stand Folie S. 252</p>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+        <div class="nav-group">Überblick</div>
+        <a href="index.html" class="nav-link"><span class="material-icons">map</span>Prozesskarte</a>
+        <a href="dashboard.html" class="nav-link"><span class="material-icons">dashboard</span>Lern-Cockpit</a>
+        <a href="seminar.html" class="nav-link"><span class="material-icons">school</span>Zum Seminar</a>
+        <div class="nav-group">Lernen</div>
+        <a href="zusammenhang.html" class="nav-link"><span class="material-icons">hub</span>Alles im Zusammenhang</a>
+        <a href="schaubilder.html" class="nav-link"><span class="material-icons">account_tree</span>Schaubilder</a>
+        <a href="lernziele.html" class="nav-link"><span class="material-icons">checklist</span>Lernziele</a>
+        <a href="selbsttest.html" class="nav-link"><span class="material-icons">style</span>Selbsttest Begriffe</a>
+        <div class="nav-group">Kapitel</div>
+        <a href="kapitel-1.html" class="nav-link"><span class="material-icons">looks_one</span>1 Einführung in die NKA</a>
+        <a href="kapitel-2.html" class="nav-link"><span class="material-icons">looks_two</span>2 NKA planen</a>
+        <a href="kapitel-3.html" class="nav-link"><span class="material-icons">looks_3</span>3 Information erheben</a>
+        <a href="kapitel-4.html" class="nav-link"><span class="material-icons">looks_4</span>4 Erfordernisse identifizieren</a>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>5 NA ableiten</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>6 Konsolidieren &amp; priorisieren</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>7 Schnittstellen</span>
+        <div class="nav-group">Prüfung</div>
+        <a href="pruefung-theorie.html" class="nav-link active"><span class="material-icons">quiz</span>Theoretische Prüfung</a>
+        <div class="nav-sub"><a href="#theorie-anleitung">Anleitung & Bewertung</a><a href="#theorie-fragen">Die 40 Fragen</a><a href="#theorie-ergebnis">Auswertung</a></div>
+        <a href="pruefung-praxis.html" class="nav-link"><span class="material-icons">assignment</span>Praktische Prüfung</a>
+        <div class="nav-group">Nachschlagen</div>
+        <a href="glossar.html" class="nav-link"><span class="material-icons">menu_book</span>Glossar</a>
+        <a href="ure-story.html" class="nav-link"><span class="material-icons">auto_stories</span>URE Story</a>
+        <a href="schablonen.html" class="nav-link"><span class="material-icons">text_fields</span>Formulierungsschablonen</a>
+        <a href="curriculum.html" class="nav-link"><span class="material-icons">library_books</span>Curriculum</a>
+    </nav>
+    <div class="sidebar-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54331 231.41233" width="100" aria-label="Micromata"><g style="isolation:isolate"><polygon fill="#009ba3" points="148.258 115.749 126.403 93.891 126.401 93.892 73.277 40.768 51.416 62.623 104.543 115.75 51.416 168.878 73.277 190.733 126.4 137.607 126.403 137.61 148.258 115.749"/><rect fill="#007480" x="110.9384" y="100.29035" width="30.91783" height="30.91093" transform="translate(297.62103 108.27464) rotate(135.02027)"/><polygon fill="#ffcb00" style="mix-blend-mode:multiply" points="248.142 40.767 226.287 62.621 279.411 115.75 226.287 168.876 248.142 190.735 301.268 137.609 323.129 115.747 248.142 40.767"/><polygon fill="#75be01" points="410.565 115.749 388.71 93.891 388.708 93.892 335.584 40.768 313.723 62.623 366.85 115.75 313.723 168.878 335.584 190.733 388.707 137.608 388.71 137.61 410.565 115.749"/><rect fill="#32912e" x="373.25004" y="100.28859" width="30.91285" height="30.91093" transform="translate(745.47512 -77.14329) rotate(135.02027)"/><polygon fill="#e10057" points="235.693 115.747 160.706 40.767 138.851 62.621 191.975 115.75 138.851 168.876 160.706 190.735 213.832 137.609 213.832 137.609 235.693 115.747"/><rect fill="#a70836" x="198.37947" y="100.29397" width="30.90915" height="30.91093" transform="translate(446.87971 46.37618) rotate(134.99583)"/><rect fill="#ff9d01" x="285.81339" y="100.29397" width="30.90915" height="30.91093" transform="translate(596.13425 -15.45344) rotate(134.99583)"/></g></svg>
+    </div>
+</aside>
+
+<div class="container">
+
+    <div class="header sub">
+        <p class="eyebrow">Theoretische Prüfung</p>
+        <h1>Öffentliche Beispielprüfung CPUX-UR: 40 Fragen, 90 Minuten</h1>
+    </div>
+
+    <!-- =========================================================
+         THEORETISCHE PRÜFUNG: BEISPIEL (PDF Kap. 2, S. 3–44)
+         ========================================================= -->
+    <section class="section" id="theorie-anleitung">
+        <div class="section-title"><div class="num"><span class="material-icons">info</span></div><h2>2.1 Anleitung und 2.2 Bewertung</h2></div>
+        <p class="section-lead">Theoretische Prüfung CPUX-UR – Beispiel. Kreuze an und lass dir jede Frage einzeln auflösen (Lernmodus) oder beantworte alle 40 Fragen und werte am Ende aus (Prüfungsmodus). Gezählt wird mit 1 Punkt je Frage: jede richtig angekreuzte Antwort bringt einen Anteil, jede falsch angekreuzte zieht ihn ab, nicht Angekreuztes zählt nicht, keine Frage fällt unter 0. Bestanden ab 70 %. Das entspricht der Regel aus 2.2 (dort 3 Punkte je Frage, 84 von 120).</p>
+        <div class="grid-2">
+            <div class="card">
+                <h4 class="ex-h">2.1 Anleitung</h4>
+                <p>Dieses Beispiel eines kompletten Prüfungssatzes für den theoretischen Teil der CPUX-UR Prüfung enthält 40 Prüfungsfragen.</p>
+                <p>Zur Beantwortung stehen Ihnen 90 Minuten zur Verfügung. Wenn die Prüfung nicht in Ihrer Muttersprache stattfindet, haben Sie 105 Minuten Zeit.</p>
+                <p>Bei der Beantwortung der Prüfungsaufgaben dürfen Sie keinerlei Hilfsmittel, wie zum Beispiel Computer, Notizen und Lehrbücher verwenden.</p>
+                <p>Bei allen Prüfungsfragen handelt es sich um Multiple-Choice-Fragen mit 6 Antwortmöglichkeiten. Die Anzahl der korrekten Antworten – entweder eine, zwei oder drei – geht klar aus der Aufgabenstellung hervor. Kreuzen Sie immer die Optionen an, die richtig sind oder aus Perspektive des Curriculums deutlich besser passen als die anderen Optionen.</p>
+                <p>Am Ende der Zertifizierungsprüfung werden die Fragen und Ihre Antworten eingesammelt. Sie dürfen weder die Prüfungsaufgaben noch Ihre Notizen mit aus der Prüfung nehmen.</p>
+                <p><b>Um die theoretische Prüfung für das CPUX-UR Zertifikat zu bestehen, müssen Sie mindestens 84 von 120 möglichen Punkten erreichen (70%).</b></p>
+            </div>
+            <div class="card">
+                <h4 class="ex-h">2.2 Bewertung</h4>
+                <p>Der Prüfungsteilnehmer muss die angebotenen Antwortmöglichkeiten bewerten und für jede vorhandene Antwortmöglichkeit die richtige Entscheidung (ankreuzen oder nicht ankreuzen) treffen. Es werden 3 Punkte vergeben, wenn alle richtigen Alternativen (maximal 3) und auch nur diese als richtig markiert wurden.</p>
+                <p>Wurde eine richtige Antwortmöglichkeit fälschlich nicht angekreuzt, so werden von der Maximalpunktzahl „Strafpunkte“ abgezogen, und zwar</p>
+                <ul class="ex-list"><li>3 Punkte, wenn nur eine Antwortalternative richtig ist,</li><li>1,5 Punkte, wenn 2 Antwortalternativen richtig sind,</li><li>1 Punkt, wenn 3 Antwortalternativen richtig sind.</li></ul>
+                <p>Dasselbe geschieht, wenn eine falsche Alternative als richtig angekreuzt wurde. Abzüge können jedoch niemals zu einer negativen Punktzahl führen.</p>
+                <details class="ex-sol"><summary><span class="material-icons">expand_more</span>Beispiele 1–4 aus dem PDF</summary>
+                    <p><b>Beispiel 1:</b> In einer Multiple-Choice-Frage gibt es sechs Alternativen, drei davon sind richtig, die drei anderen sind falsch. Der Prüfungsteilnehmer kreuzt zwei Alternativen richtig und eine weitere falsch an. Dann erhält er von der Maximalpunktzahl (3 Punkte) für die fehlende richtige Alternative sowie für die falsch angekreuzte falsche Alternative jeweils 1 Strafpunkt abgezogen. Sein Ergebnis ist somit 1 Punkt.</p>
+                    <p><b>Beispiel 2:</b> Es sind zwei von sechs Alternativen richtig. Der Prüfungsteilnehmer hat eine richtige und eine falsche Antwort angekreuzt, d.h. er erhält einen Strafpunkt für die angekreuzte falsche Antwort und einen Strafpunkt für die nicht angekreuzte richtige Antwort. Ein Strafpunkt beträgt hier 1,5 Punkte. Er erhält also 3 – 2 * 1,5 Punkte = 0 Punkte.</p>
+                    <p><b>Beispiel 3:</b> Es sind drei Alternativen richtig, drei falsch. Um vermeintlich sicher zu sein, kreuzt der Prüfungsteilnehmer alle sechs Alternativen an. Er erhält dann drei Strafpunkte für die drei falschen Entscheidungen, d.h. 3 – 3 * 1 = 0 Punkte.</p>
+                    <p><b>Beispiel 4:</b> Es sind zwei von sechs Alternativen richtig. Der Prüfungsteilnehmer kreuzt nur eine richtige Alternative an. Die angekreuzte Alternative ist richtig. Der Prüfungsteilnehmer erhält 1,5 Punkte.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="theorie-fragen">
+        <div class="section-title"><div class="num"><span class="material-icons">quiz</span></div><h2>2.3 Prüfungsfragen für die theoretische Prüfung - 40 Fragen, 90 Minuten</h2></div>
+        <div class="q-bar" id="qBar">
+            <div class="q-modes" role="radiogroup" aria-label="Modus">
+                <button class="btn" data-mode="lern" role="radio"><span class="material-icons">school</span>Lernmodus</button>
+                <button class="btn" data-mode="pruef" role="radio"><span class="material-icons">timer</span>Prüfungsmodus</button>
+            </div>
+            <div class="q-modes" role="radiogroup" aria-label="Ansicht">
+                <button class="btn" data-view="einzeln" role="radio"><span class="material-icons">looks_one</span>Einzeln</button>
+                <button class="btn" data-view="alle" role="radio"><span class="material-icons">view_list</span>Alle</button>
+            </div>
+            <select class="q-filter" id="qFilter" aria-label="Fragen filtern">
+                <option value="">Alle Lernziele</option>
+            </select>
+            <span class="q-timer" id="qTimer" title="Prüfungszeit 90 Minuten"></span>
+            <span class="q-progress" id="qProgress"></span>
+            <button class="btn on" id="qEval"><span class="material-icons">fact_check</span>Auswerten</button>
+            <button class="btn" id="qReset" title="Alle Kreuze löschen"><span class="material-icons">restart_alt</span></button>
+        </div>
+        <div class="q-dots" id="qDots" aria-label="Fragenübersicht"></div>
+        <div id="qList"></div>
+    </section>
+
+    <section class="section" id="theorie-ergebnis">
+        <div class="section-title"><div class="num"><span class="material-icons">fact_check</span></div><h2>Auswertung</h2></div>
+        <div class="card" id="qResult"><p class="ex-mute">Noch nicht ausgewertet. Wenn du alle Fragen beantwortet hast, klick oben auf „Auswerten“.</p></div>
+        <p class="ex-src">Quelle: CPUX-UR Öffentliche Beispielprüfung, Version 3.1 DE, 2. Juli 2026, Herausgeber UXQB e. V. Fragen (2.3) und Lösungen mit Anmerkungen (2.4) sind wörtlich übernommen.</p>
+    </section>
+
+    <nav class="pager"><a class="prev" href="kapitel-4.html"><span class="material-icons">chevron_left</span><span><small>Zurück</small>4 Erfordernisse identifizieren</span></a><a class="next" href="pruefung-praxis.html"><span><small>Weiter</small>Praktische Prüfung</span><span class="material-icons">chevron_right</span></a></nav>
+
+    <footer>Lernmaterial auf Basis der CPUX-UR-Seminarunterlagen (Spiegel Institut, 2026) nach UXQB CPUX-F Curriculum V4.01 und ISO 9241-210:2019. Nur für den internen Gebrauch.</footer>
+</div>
+
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drTitle">
+    <div class="dr-head">
+        <button class="dr-close" id="drClose" aria-label="Schließen"><span class="material-icons">close</span></button>
+        <div class="dr-icon"><span class="material-icons" id="drIcon">info</span></div>
+        <h3 id="drTitle"></h3>
+        <div class="dr-tags" id="drTags"></div>
+    </div>
+    <div class="dr-body" id="drBody"></div>
+    <div class="dr-foot">
+        <div class="dr-nav">
+            <button class="btn" id="drPrev" title="Vorheriger Prozessschritt"><span class="material-icons">chevron_left</span></button>
+            <button class="btn" id="drNext" title="Nächster Prozessschritt"><span class="material-icons">chevron_right</span></button>
+        </div>
+        <a class="btn on" id="drLink" href="#"><span class="material-icons">open_in_full</span>Zur Detailkarte</a>
+    </div>
+</aside>
+
+<button class="back-to-top" id="backToTop" aria-label="Zurück nach oben"><span class="material-icons" style="font-size:26px">arrow_upward</span></button>
+
+<script src="lern-daten.js"></script>
+<script src="landkarte.js"></script>
+<script src="folien-daten.js"></script>
+<script src="folien.js"></script>
+<script src="hervorhebung-daten.js"></script>
+<script src="hervorhebung.js"></script>
+<script src="detail.js"></script>
+<script src="prozessgrafik.js"></script>
+<script src="pruefung-daten.js"></script>
+<script src="pruefung.js"></script>
+<script src="lernen.js"></script>
+</body>
+</html>

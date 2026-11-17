@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URE Story | CPUX-UR Prozess-Landkarte</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landkarte.css">
+<link rel="stylesheet" href="lernen.css">
+</head>
+<body>
+
+<button class="sb-toggle" id="sbToggle" aria-label="Navigation ein- oder ausblenden" title="Navigation ein-/ausblenden"><span class="material-icons" id="sbIcon">menu_open</span></button>
+
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <span class="ux-lab-pill">UX Lab</span>
+        <h2>CPUX-UR Prozess-Landkarte</h2>
+        <p>Lernbegleiter zum Training, Stand Folie S. 252</p>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+        <div class="nav-group">Überblick</div>
+        <a href="index.html" class="nav-link"><span class="material-icons">map</span>Prozesskarte</a>
+        <a href="dashboard.html" class="nav-link"><span class="material-icons">dashboard</span>Lern-Cockpit</a>
+        <a href="seminar.html" class="nav-link"><span class="material-icons">school</span>Zum Seminar</a>
+        <div class="nav-group">Lernen</div>
+        <a href="zusammenhang.html" class="nav-link"><span class="material-icons">hub</span>Alles im Zusammenhang</a>
+        <a href="schaubilder.html" class="nav-link"><span class="material-icons">account_tree</span>Schaubilder</a>
+        <a href="lernziele.html" class="nav-link"><span class="material-icons">checklist</span>Lernziele</a>
+        <a href="selbsttest.html" class="nav-link"><span class="material-icons">style</span>Selbsttest Begriffe</a>
+        <div class="nav-group">Kapitel</div>
+        <a href="kapitel-1.html" class="nav-link"><span class="material-icons">looks_one</span>1 Einführung in die NKA</a>
+        <a href="kapitel-2.html" class="nav-link"><span class="material-icons">looks_two</span>2 NKA planen</a>
+        <a href="kapitel-3.html" class="nav-link"><span class="material-icons">looks_3</span>3 Information erheben</a>
+        <a href="kapitel-4.html" class="nav-link"><span class="material-icons">looks_4</span>4 Erfordernisse identifizieren</a>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>5 NA ableiten</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>6 Konsolidieren &amp; priorisieren</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>7 Schnittstellen</span>
+        <div class="nav-group">Prüfung</div>
+        <a href="pruefung-theorie.html" class="nav-link"><span class="material-icons">quiz</span>Theoretische Prüfung</a>
+        <a href="pruefung-praxis.html" class="nav-link"><span class="material-icons">assignment</span>Praktische Prüfung</a>
+        <div class="nav-group">Nachschlagen</div>
+        <a href="glossar.html" class="nav-link"><span class="material-icons">menu_book</span>Glossar</a>
+        <a href="ure-story.html" class="nav-link active"><span class="material-icons">auto_stories</span>URE Story</a>
+        <div class="nav-sub"><a href="#s-kapitel-1">1 Einführung in die NKA</a><a href="#s-kapitel-2">2 NKA planen</a><a href="#s-kapitel-3">3 Information erheben</a></div>
+        <a href="schablonen.html" class="nav-link"><span class="material-icons">text_fields</span>Formulierungsschablonen</a>
+        <a href="curriculum.html" class="nav-link"><span class="material-icons">library_books</span>Curriculum</a>
+    </nav>
+    <div class="sidebar-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54331 231.41233" width="100" aria-label="Micromata"><g style="isolation:isolate"><polygon fill="#009ba3" points="148.258 115.749 126.403 93.891 126.401 93.892 73.277 40.768 51.416 62.623 104.543 115.75 51.416 168.878 73.277 190.733 126.4 137.607 126.403 137.61 148.258 115.749"/><rect fill="#007480" x="110.9384" y="100.29035" width="30.91783" height="30.91093" transform="translate(297.62103 108.27464) rotate(135.02027)"/><polygon fill="#ffcb00" style="mix-blend-mode:multiply" points="248.142 40.767 226.287 62.621 279.411 115.75 226.287 168.876 248.142 190.735 301.268 137.609 323.129 115.747 248.142 40.767"/><polygon fill="#75be01" points="410.565 115.749 388.71 93.891 388.708 93.892 335.584 40.768 313.723 62.623 366.85 115.75 313.723 168.878 335.584 190.733 388.707 137.608 388.71 137.61 410.565 115.749"/><rect fill="#32912e" x="373.25004" y="100.28859" width="30.91285" height="30.91093" transform="translate(745.47512 -77.14329) rotate(135.02027)"/><polygon fill="#e10057" points="235.693 115.747 160.706 40.767 138.851 62.621 191.975 115.75 138.851 168.876 160.706 190.735 213.832 137.609 213.832 137.609 235.693 115.747"/><rect fill="#a70836" x="198.37947" y="100.29397" width="30.90915" height="30.91093" transform="translate(446.87971 46.37618) rotate(134.99583)"/><rect fill="#ff9d01" x="285.81339" y="100.29397" width="30.90915" height="30.91093" transform="translate(596.13425 -15.45344) rotate(134.99583)"/></g></svg>
+    </div>
+</aside>
+
+<div class="container">
+
+    <div class="header sub">
+        <p class="eyebrow">URE Story</p>
+        <h1>Die Zusammenfassungen der Kapitel</h1>
+    </div>
+
+    <section class="section" id="s-kapitel-1">
+        <div class="section-title"><div class="num"><span class="material-icons">looks_one</span></div><h2>Kapitel 1 – Einführung in die Nutzungskontextanalyse</h2><a class="sm-link" href="kapitel-1.html">zur Kapitelseite →</a></div>
+        <div class="sammel">
+            <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Anforderungen und Lösungen unterscheiden</h3>
+            <p class="card-lead">Deine Notiz: Zusammenfassung (S. 50)</p>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Bei der menschzentrierten Gestaltung liegt der Fokus auf den Benutzenden und anderen Menschen, die von dem interaktiven System betroffen sein können.</div>
+                <div class="st"><span class="sn">2</span>Die Qualität des interaktiven Systems umfasst die menschzentrierte und die technische Qualität.</div>
+                <div class="st"><span class="sn">3</span>Aus der Gestaltung können Risiken für Benutzer, andere Menschen, Institutionen resultieren, z.B. für die Gesundheit, die Sicherheit, die Finanzen oder die Umwelt.</div>
+                <div class="st"><span class="sn">4</span>Der Nutzungskontext ist die Basis für Erfordernissen, aus denen die Nutzungsanforderungen abgeleitet werden, die zur Umsetzung und Erreichung der menschzentrierten Qualität beitragen.</div>
+                <div class="st"><span class="sn">5</span>Lösungen sind Attribute von interaktiven Systemen, die Anforderungen erfüllen sollen.</div>
+                <div class="st"><span class="sn">6</span>Anforderungen kreisen passende Lösungen ein und verwerfen unpassende Lösungen, da Lösungsvorschläge auf Fakten anstatt Meinungen basieren. Der Lösungsraum muss zum Problemraum passen.</div>
+                <div class="st"><span class="sn">7</span>Forderungen und Wünsche von Benutzenden und anderen Stakeholdern werden analysiert, um eventuell zugrundeliegende Erfordernisse zu identifizieren. Damit wird die Immunisierungsfalle vermieden und unbegründete Anforderungen und suboptimale interaktive Systeme verhindert.</div>
+                <div class="st"><span class="sn">8</span>Der Lösungsraum des geplanten interaktiven Systems wird durch kontextspezifische Nutzungsanforderungen, etablierte Gestaltungsrichtlinien und konkrete Gestaltungsregeln bestimmt.</div>
+            </div>
+            <div class="grid-2" style="margin-top:16px">
+                <div class="box"><div class="box-title">Welches Gerät ist besser nutzbar? (S. 22)</div>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>it depends, für was, wen …</div></div>
+                <div class="box"><div class="box-title">Interaktives System (interactive system), S. 28</div>Eine Kombination von Hardware, Software und Dienstleistungen mit denen Benutzer interagieren, um bestimmte Ziele zu erreichen.
+                    <ul style="margin-top:6px"><li>Dies schließt gegebenenfalls Verpackung, Dokumentation, Online-Hilfe, Support, Schulung mit ein.</li><li>Eine Usability-Studie für ein Fernsehgerät kann sich mit dem Gerät selbst oder mit dem Auspack- und der Inbetriebnahme befassen. Dies ist der Out-Of-the-Box-Test der die Verpackung, den Einrichtungsprozess, die Benutzerdokumentation sowie die Usability dieser Komponenten testet.</li><li>Auch Systeme, die keine Eingaben von Benutzenden akzeptieren, fallen unter diese Definition, z.B. Ankunfts- und Abfahrtstafeln in Flughäfen oder Bahnhöfen.</li><li>Im Rahmen des Curriculums ist mit "interaktives System" meist das zu entwickelnde System gemeint.</li></ul>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen</div>das zu entwickelnde System · unboxing</div></div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 22, 28, 50</span>
+        </div>
+            <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Der Nutzungskontext als Grundlage für Nutzungsanforderungen</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Der Nutzungskontext umfasst die Benutzenden des interaktiven Systems, ihre Ziele und Aufgaben, die verwendeten Ressourcen, die Umgebung, in der die Aufgaben ausgeführt werden. Alle Bestandteile des Nutzungskontextes können Erfordernisse enthalten, die zu Nutzungsanforderungen führen.</div>
+                <div class="st"><span class="sn">2</span>Der heutige Nutzungskontext ist die Basis des Nutzungskontextes für die Gestaltung. Dieser ist oft eine Teilmenge des heutigen Nutzungskontexts ist, da nicht alle Benutzergruppen und nicht alle Aufgaben des heutigen Nutzungskontextes und tlw. neue Benutzergruppen vom geplanten System unterstützt werden sollen.</div>
+                <div class="st"><span class="sn">3</span>Jede Aufgabe kann in Teilaufgaben unterteilt werden, was in einem Aufgabenmodell dargestellt wird. Das Aufgabenmodell des heutigen Nutzungskontextes beschreibt, wie Benutzende Aufgaben erledigen, bevor das geplante interaktive System verfügbar ist. Das Aufgabenmodell für die Gestaltung ist eine Weiterentwicklung des Aufgabenmodells des heutigen Nutzungskontextes und typischerweise optimiert auf Basis identifizierter Erfordernisse, abgeleiteter Nutzungsanforderungen und neuer Technologien.</div>
+                <div class="st"><span class="sn">4</span>Wenn Benutzende Aufgaben ausführen, erstellen, ändern oder inspizieren sie Aufgabenobjekte. Beim Konzipieren und Entwerfen von Lösungen sind die Aufgabenobjekte des heutigen Nutzungskontextes ganz oder teilweise in der Benutzungsschnittstelle des geplanten interaktiven Systems enthalten und können zusätzliche Informationen enthalten.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 97</span>
+        </div>
+            <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Stakeholderanforderungen und Systemanforderungen unterscheiden</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Anforderungen werden in Stakeholder- und Systemanforderungen unterschieden.</div>
+                <div class="st"><span class="sn">2</span>Zu den Stakeholdern eines geplanten interaktiven Systems gehören die Benutzenden und alle anderen Menschen, Organisationen, die ein Interesse daran haben und/oder von ihm betroffen sind.</div>
+                <div class="st"><span class="sn">3</span>Benutzende lassen sich in primäre, sekundäre und indirekte Benutzer unterteilen. Der Sponsor des interaktiven Systems ist ebenfalls ein Stakeholder.</div>
+                <div class="st"><span class="sn">4</span>Stakeholderanforderungen spezifizieren die Fähigkeiten des interaktiven Systems aus der Sicht der verschiedenen Stakeholder.</div>
+                <div class="st"><span class="sn">5</span>Systemanforderungen beziehen sich auf die Fähigkeiten des technischen Systems zur Erfüllung der Stakeholderanforderungen.</div>
+                <div class="st"><span class="sn">6</span>Der Prozess der Verifizierung prüft, ob alle Anforderungen umgesetzt wurden. Der Prozess der Validierung prüft, ob Stakeholderanforderungen aus Sicht der Stakeholder effektiv umgesetzt wurden.</div>
+                <div class="st"><span class="sn">7</span>Um die erforderliche menschzentrierte Qualität eines interaktiven Systems zu erreichen, müssen alle relevanten Anforderungen vollständig hergeleitet, umgesetzt und verifiziert, validiert werden.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 66</span>
+        </div>
+            <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Nutzungsanforderungen als eigene Anforderungskategorie innerhalb der Stakeholderanforderungen</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Nutzungsanforderungen sind eine Kategorie von Stakeholderanforderungen. Es gibt Qualitative und Quantitative Nutzungsanforderungen.</div>
+                <div class="st"><span class="sn">2</span>Qualitative Nutzungsanforderungen geben wieder, was die Benutzende am geplanten interaktiven System erkennen, auswählen oder eingeben können, daher werden sie auch Interaktionsanforderungen genannt. Sie werden aus den im Nutzungskontext identifizierten Erfordernissen abgeleitet.</div>
+                <div class="st"><span class="sn">3</span>Quantitative Nutzungsanforderungen geben das erforderliche Maß an Usability, Barrierefreiheit, User Experience und Vermeidung von Schäden durch die Benutzung wieder, die das geplante interaktive System erfüllen muss. Sie werden oft von Stakeholdern als Akzeptanzkriterien festgelegt.</div>
+                <div class="st"><span class="sn">4</span>Die direkte Quelle einer Nutzungsanforderung sind immer ein oder mehrere Erfordernisse. Andere Stakeholderanforderungen können indirekt zu Nutzungsanforderungen führen, und vice versa.</div>
+                <div class="st"><span class="sn">5</span>Nutzungsanforderung tragen unterschiedlich stark zur Usability des geplanten interaktiven Systems bei. So kann die Implementierung einer bestimmten Nutzungsanforderung für die Usability des interaktiven Systems entscheidend sein im Gegensatz zu einer anderen Nutzungsanforderung.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 118</span>
+        </div>
+        </div>
+    </section>
+    <section class="section" id="s-kapitel-2">
+        <div class="section-title"><div class="num"><span class="material-icons">looks_two</span></div><h2>Kapitel 2 – Nutzungskontextanalyse planen</h2><a class="sm-link" href="kapitel-2.html">zur Kapitelseite →</a></div>
+        <div class="sammel">
+            <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Anlass und Ziele der Nutzungskontextanalyse ermitteln</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Der Nutzungskontext wird analysiert, um Nutzungskontextinformationen zu erheben, die dazu beitragen, unzureichend verstandene Erfordernisse zu identifizieren. Diese Erfordernisse dienen als Grundlage für die Ableitung von Nutzungsanforderungen.</div>
+                <div class="st"><span class="sn">2</span>Es gibt verschiedene Situationen, in denen eine Nutzungskontextanalyse durchgeführt wird. Etwa zur Entwicklung eines neuen interaktiven Systems oder zur Verbesserung eines bestehenden interaktiven Systems.</div>
+                <div class="st"><span class="sn">3</span>Als Ausgangspunkt für die Planung des Umfangs und des Schwerpunkts einer Nutzungskontextanalyse sollten von den Stakeholdern des Systems menschzentrierte Qualitätsziele festgelegt werden. Dabei handelt es sich um Projektziele aus Sicht der Benutzenden des geplanten interaktiven Systems. Zusätzlich zu den Geschäftszielen beschreiben sie, was für die Benutzer in Bezug auf Usability, Barrierefreiheit, User Experience und Vermeidung von Schäden durch die Benutzung erreicht werden muss. Dies wird oft auch Nutzungsqualität genannt.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 129</span>
+        </div>
+            <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Das Vorgehen bei der Nutzungskontextanalyse festlegen</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Eine Nutzungskontextanalyse ist der Prozess der Planung, Erhebung und Dokumentation authentischer Nutzungskontextinformationen, der Identifikation darin enthaltener Erfordernisse und der Ableitung von Nutzungsanforderungen aus diesen Erfordernissen.</div>
+                <div class="st"><span class="sn">2</span>Eine Nutzungskontextanalyse beginnt mit dem Sammeln von empirischen Informationen, z.B. Fakten über die Benutzenden, ihre Ziele und Aufgaben, verwendete Ressourcen und Umgebung, in denen Benutzende agieren. Empirische Informationen bilden die Grundlage für konstruierte Informationen.</div>
+                <div class="st"><span class="sn">3</span>In Projekten wird die Nutzungskontextanalyse oft als User Research bezeichnet. Personen, die User Research durchführen, können als User Researcher oder User Experience Researcher bezeichnet werden. User Research umfasst jedoch alle Aktivitäten in einem Projekt oder einer Organisation, die eine direkte Interaktion mit Benutzern beinhalten. Dazu gehören auch die direkte Zusammenarbeit mit Benutzenden bei der Gestaltung und beim Usability Testing.</div>
+                <div class="st"><span class="sn">4</span>Es ist wichtig, den richtigen Fokus für eine Nutzungskontextanalyse zu setzen. Der Fokus einer Nutzungskontextanalyse kann breit oder detailliert sein, je nachdem, welche Informationen über den Nutzungskontext dem Team bereits vorliegen.</div>
+                <div class="st"><span class="sn">5</span>Wenn das Projektteam wenig Wissen über den Nutzungskontext hat oder die Teammitglieder sich über Aspekte des Nutzungskontexts nicht einig sind, empfiehlt sich eine klassische Nutzungskontextanalyse, bei der keine Annahmen über den Nutzungskontext getroffen werden.</div>
+                <div class="st"><span class="sn">6</span>Wenn das Projektteam über umfassendes Wissen und/oder Informationen über den Nutzungskontext verfügt, ist eine modellbasierte Nutzungskontextanalyse zu empfehlen. Hier werden bekannte Informationen zu Aufgabenmodellen und Nutzungsanforderungen vom Projektteam strukturiert und zielgerichtete Fragen zu unbekannten Informationen formuliert. Diese werden für fokussierte Interviews, Beobachtungen und Fokusgruppen verwendet.</div>
+                <div class="st"><span class="sn">7</span>Eine modellbasierte Nutzungskontextanalyse passt gut zu den Ansätzen Lean UX und Design Thinking.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 152, 153</span>
+        </div>
+        </div>
+    </section>
+    <section class="section" id="s-kapitel-3">
+        <div class="section-title"><div class="num"><span class="material-icons">looks_3</span></div><h2>Kapitel 3 – Nutzungskontextinformation erheben und dokumentieren</h2><a class="sm-link" href="kapitel-3.html">zur Kapitelseite →</a></div>
+        <div class="sammel">
+            <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Um valide empirische Informationen über den Nutzungskontext zu sammeln, müssen Personen befragt und/oder beobachtet werden, die authentische Repräsentanten der beabsichtigten Benutzergruppe(n) des geplanten interaktiven Systems sind.</div>
+                <div class="st"><span class="sn">2</span>Benutzergruppenprofile spezifizieren die Attribute der Benutzenden innerhalb der Benutzergruppe.</div>
+                <div class="st"><span class="sn">3</span>Wenn das interaktive System für eine bestimmte Organisation entwickelt wird und auf die Benutzende direkt zugegriffen werden kann, ist das Benutzergruppenprofil zur Rekrutierung ausreichend.</div>
+                <div class="st"><span class="sn">4</span>Handelt es sich um ein kommerzielles System, Produkt oder Software, die organisationsübergreifend eingesetzt werden soll, müssen Benutzende rekrutiert werden, die dem Projektteam normalerweise nicht bekannt sind. In diesen Fällen wird ein Rekrutierungsfragebogen (recruitment screener) auf Basis der Benutzergruppenprofile erstellt, und potenzielle Teilnehmer werden für kontextuelle Interviews, Beobachtungen, Fokusgruppen überprüft und eingeladen, um sicherzustellen, dass die Teilnehmer zu der vorgesehenen Benutzergruppe gehören.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 163</span>
+        </div>
+            <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Erhebung von Nutzungskontextinformationen vorbereiten und durchführen</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Empirische Nutzungskontextinformationen werden in (kontextuellen) Interviews, Beobachtungen oder Fokusgruppen gesammelt. In der Regel arbeiten dabei ein Moderator und ein Protokollant als Team an der Datenerhebung. Unabhängig von der gewählten Methode sollte der Moderator das Meister-Schüler-Modell anwenden.</div>
+                <div class="st"><span class="sn">2</span>Kontextuelle Interviews werden verwendet, um ein umfassendes Verständnis der Komponenten eines Nutzungskontextes und ihrer Wechselbeziehungen zu erlangen.</div>
+                <div class="st"><span class="sn">3</span>Beobachtungen werden eingesetzt, für ein Verständnis spezifischer Aspekte der Aufgabenerledigung.</div>
+                <div class="st"><span class="sn">4</span>Fokusgruppen werden für spezifische Themen innerhalb des Nutzungskontextes eingesetzt, wenn ein tiefes Verständnis der Perspektiven verschiedener Benutzergruppen benötigt wird.</div>
+                <div class="st"><span class="sn">5</span>Soweit möglich, sollten die Interviews in der physischen Umgebung stattfinden, in der die Teilnehmenden normalerweise die Aufgaben ausführen, die durch das geplante interaktive System unterstützt werden. Dies wird als kontextuelles Interview bezeichnet.</div>
+                <div class="st"><span class="sn">6</span>In Interviews verwendet die Moderatorin eine Interviewcheckliste mit den Fragen, die geklärt werden müssen. Die Fragen sind offen und neutral, um die Validität der empirischen Informationen zu maximieren. Geschlossene Fragen sollten nur selten verwendet und Suggestivfragen gänzlich vermieden werden.</div>
+                <div class="st"><span class="sn">7</span>Bei einer Beobachtung werden die Benutzende in der physischen Umgebung beobachtet, in der sie ihre Aufgaben ausführen. Die Beobachtungen werden von einem Protokollanten dokumentiert. Der beobachtende Moderator unterbricht die Ausführung der Aufgabe normalerweise nicht, außer wenn eine klärende Frage gestellt werden muss. Dies generiert objektive, vollständige Informationen.</div>
+                <div class="st"><span class="sn">8</span>Eine spezifische Art der Beobachtung ist die Tagebuchstudie (Diary study), bei der Benutzende Nutzungskontextinformationen liefern, indem sie in bestimmten Zeitabständen, z.B. einmal pro Tag, oder in bestimmten Situationen über einen längeren Zeitraum hinweg einen Fragebogen ausfüllen.</div>
+                <div class="st"><span class="sn">9</span>Hier werden sogenannte "Cultural Probe", Proben bzw. Belege der Situation als Teil ihrer Nutzungskontextinformationen, von den Benutzern gesammelt. Cultural Probes können Fotos, Notizen, Skizzen oder andere "Proben" (Spuren) sein.</div>
+                <div class="st"><span class="sn">10</span>Bei einer Fokusgruppe werden Repräsentanten einer oder mehrerer Benutzergruppen von einem/r Moderator:in durch eine Diskussion geführt. In deren Verlauf werden vordefinierte Fragen und Themen zum Nutzungskontext aus verschiedenen Perspektiven und in Detailtiefe diskutiert.</div>
+                <div class="st"><span class="sn">11</span>Bei der Durchführung von Interviews oder der Moderation von Fokusgruppen ist es wichtig, sich als Moderator und Protokollant bewusst zu machen, dass Menschen ihre Erfahrungen des Nutzungskontextes auf Grundlage ihrer mentalen Modelle beschreiben. Also ihre Wahrnehmung von sich selbst, anderen, der Umgebung und den Dingen, mit denen sie interagieren wiedergeben.</div>
+                <div class="st"><span class="sn">12</span>Vor allem in Interviews und Fokusgruppen äußern Benutzende ihre Wünsche. Benutzerwünsche sind typischerweise keine Nutzungskontextinformationen, Erfordernisse oder Nutzungsanforderungen, sondern von Benutzenden gewünschte Lösungen. Benutzerwünsche können zu Nutzungsanforderungen führen, falls im zugrundeliegenden Nutzungskontext Erfordernisse dazu identifiziert werden können. Also, sie sind nicht nur subjektiv, sondern haben eine Allgemeingültigkeit für die Benutzergruppe.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 204–206</span>
+        </div>
+            <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen</h3>
+            <ul><li>Eine Nutzungskontextbeschreibung dient verschiedenen Zwecken. Der Information der Beteiligten und der Schaffung von Bewusstsein und Empathie für den Problemraum der Benutzenden des interaktiven Systems. Sowie dem Identifizieren von Erfordernissen und der Ableitung von Nutzungsanforderungen für das geplante interaktive System.</li><li>Es gibt verschiedene Arten von Nutzungskontextbeschreibungen.</li><li>Zu Projektbeginn wird als Ausgangspunkt eine zusammenfassende Nutzungskontextbeschreibung erstellt, in der die Komponenten des Nutzungskontextes aufgelistet sind.</li><li>Zusammenfassende Nutzungskontextbeschreibungen<ul><li>Geben Benutzergruppen, Aufgaben und Ziele, Ressourcen, Umgebungen wieder.</li><li>Sind in der Regel eine Mischung aus bekannten Nutzungskontextinformationen und Annahmen.</li><li>Enthalten eine Zusammenfassung der Informationen über die einzelnen Benutzergruppenprofile.</li><li>Werden typischerweise zusammen mit Benutzergruppenprofilen auf der Grundlage von Erkenntnissen aus kontextuellen Interviews, Beobachtungen und/oder Fokusgruppen angepasst.</li></ul></li></ul>
+            <ul><li>Detaillierte Nutzungskontextbeschreibungen<ul><li>Dokumentieren empirische Fakten, die aus kontextuellen Interviews, Beobachtungen und/oder Fokusgruppen gewonnen wurden.</li><li>Werden in narrativer Textform oder als modellhafte Nutzungskontextbeschreibungen dokumentiert.</li></ul></li><li>Übliche Formen narrativer Nutzungskontextbeschreibungen sind Personas und Ist-Szenarien. Personas dienen vor allem dazu Empathie für eine Benutzergruppe zu schaffen. Ist-Szenarien eignen sich zum Identifizieren von Erfordernissen und systematischem Ableiten von Nutzungsanforderungen.<ul><li>Ist-Szenarien geben den Nutzungskontext aus der Perspektive einer Benutzergruppe wieder. Sie beschreiben in narrativer Form Aufgaben und Ziele, Zusammenhänge zwischen Aufgaben, Ressourcen und die Umgebung mit den sozialen und physischen Bedingungen.</li><li>Der Hauptunterschied zwischen einem Ist-Szenario und einem Nutzungsszenario besteht darin, dass Ist-Szenarien Komponenten des aktuellen Nutzungskontexts beschreiben, und Nutzungsszenarien die geplante beabsichtigte Nutzungssituation des zu entwickelnden interaktiven Systems beschreiben.</li></ul></li></ul>
+            <ul><ul><li>Ein Nutzungsszenario ist also keine Nutzungskontextbeschreibung, weil es die angestrebte Nutzungssituation des geplanten interaktiven Systems beschreibt. Es ist eine Beschreibung des Nutzungskontextes für die Gestaltung und damit ein erster textueller Prototyp des zu entwickelnden Systems.</li></ul></li><li>Modellhafte Nutzungskontextbeschreibungen liefern strukturelle Darstellungen des Nutzungskontextes. Zu den üblichen Formen gehören User Journey Maps, Affinity-Diagramme und Zielkataloge.</li></ul><p>Modellhafte Nutzungskontextbeschreibungen unterstützen die effiziente Kommunikation und Anwendung bzw. Umsetzung von Aspekten des Nutzungskontexts innerhalb des ganzen Projektteams.</p><p>Dagegen erzählen Ist-Szenarien die ganze Geschichte und sind somit die primäre Quelle für das Identifizieren von Erfordernissen.</p>
+            <span class="src"><span class="material-icons">description</span>Folien S. 239, 240, 241</span>
+        </div>
+        </div>
+    </section>
+
+    <nav class="pager"><a class="prev" href="glossar.html"><span class="material-icons">chevron_left</span><span><small>Zurück</small>Glossar</span></a><a class="next" href="schablonen.html"><span><small>Weiter</small>Formulierungsschablonen</span><span class="material-icons">chevron_right</span></a></nav>
+
+    <footer>Lernmaterial auf Basis der CPUX-UR-Seminarunterlagen (Spiegel Institut, 2026) nach UXQB CPUX-F Curriculum V4.01 und ISO 9241-210:2019. Nur für den internen Gebrauch.</footer>
+</div>
+
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drTitle">
+    <div class="dr-head">
+        <button class="dr-close" id="drClose" aria-label="Schließen"><span class="material-icons">close</span></button>
+        <div class="dr-icon"><span class="material-icons" id="drIcon">info</span></div>
+        <h3 id="drTitle"></h3>
+        <div class="dr-tags" id="drTags"></div>
+    </div>
+    <div class="dr-body" id="drBody"></div>
+    <div class="dr-foot">
+        <div class="dr-nav">
+            <button class="btn" id="drPrev" title="Vorheriger Prozessschritt"><span class="material-icons">chevron_left</span></button>
+            <button class="btn" id="drNext" title="Nächster Prozessschritt"><span class="material-icons">chevron_right</span></button>
+        </div>
+        <a class="btn on" id="drLink" href="#"><span class="material-icons">open_in_full</span>Zur Detailkarte</a>
+    </div>
+</aside>
+
+<button class="back-to-top" id="backToTop" aria-label="Zurück nach oben"><span class="material-icons" style="font-size:26px">arrow_upward</span></button>
+
+<script src="lern-daten.js"></script>
+<script src="landkarte.js"></script>
+<script src="folien-daten.js"></script>
+<script src="folien.js"></script>
+<script src="hervorhebung-daten.js"></script>
+<script src="hervorhebung.js"></script>
+<script src="detail.js"></script>
+<script src="prozessgrafik.js"></script>
+<script src="lernen.js"></script>
+</body>
+</html>

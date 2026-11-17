@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prozesskarte | CPUX-UR Prozess-Landkarte</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landkarte.css">
+<link rel="stylesheet" href="lernen.css">
+</head>
+<body>
+
+<button class="sb-toggle" id="sbToggle" aria-label="Navigation ein- oder ausblenden" title="Navigation ein-/ausblenden"><span class="material-icons" id="sbIcon">menu_open</span></button>
+
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <span class="ux-lab-pill">UX Lab</span>
+        <h2>CPUX-UR Prozess-Landkarte</h2>
+        <p>Lernbegleiter zum Training, Stand Folie S. 252</p>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+        <div class="nav-group">Überblick</div>
+        <a href="index.html" class="nav-link active"><span class="material-icons">map</span>Prozesskarte</a>
+        <a href="dashboard.html" class="nav-link"><span class="material-icons">dashboard</span>Lern-Cockpit</a>
+        <a href="seminar.html" class="nav-link"><span class="material-icons">school</span>Zum Seminar</a>
+        <div class="nav-group">Lernen</div>
+        <a href="zusammenhang.html" class="nav-link"><span class="material-icons">hub</span>Alles im Zusammenhang</a>
+        <a href="schaubilder.html" class="nav-link"><span class="material-icons">account_tree</span>Schaubilder</a>
+        <a href="lernziele.html" class="nav-link"><span class="material-icons">checklist</span>Lernziele</a>
+        <a href="selbsttest.html" class="nav-link"><span class="material-icons">style</span>Selbsttest Begriffe</a>
+        <div class="nav-group">Kapitel</div>
+        <a href="kapitel-1.html" class="nav-link"><span class="material-icons">looks_one</span>1 Einführung in die NKA</a>
+        <a href="kapitel-2.html" class="nav-link"><span class="material-icons">looks_two</span>2 NKA planen</a>
+        <a href="kapitel-3.html" class="nav-link"><span class="material-icons">looks_3</span>3 Information erheben</a>
+        <a href="kapitel-4.html" class="nav-link"><span class="material-icons">looks_4</span>4 Erfordernisse identifizieren</a>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>5 NA ableiten</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>6 Konsolidieren &amp; priorisieren</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>7 Schnittstellen</span>
+        <div class="nav-group">Prüfung</div>
+        <a href="pruefung-theorie.html" class="nav-link"><span class="material-icons">quiz</span>Theoretische Prüfung</a>
+        <a href="pruefung-praxis.html" class="nav-link"><span class="material-icons">assignment</span>Praktische Prüfung</a>
+        <div class="nav-group">Nachschlagen</div>
+        <a href="glossar.html" class="nav-link"><span class="material-icons">menu_book</span>Glossar</a>
+        <a href="ure-story.html" class="nav-link"><span class="material-icons">auto_stories</span>URE Story</a>
+        <a href="schablonen.html" class="nav-link"><span class="material-icons">text_fields</span>Formulierungsschablonen</a>
+        <a href="curriculum.html" class="nav-link"><span class="material-icons">library_books</span>Curriculum</a>
+    </nav>
+    <div class="sidebar-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54331 231.41233" width="100" aria-label="Micromata"><g style="isolation:isolate"><polygon fill="#009ba3" points="148.258 115.749 126.403 93.891 126.401 93.892 73.277 40.768 51.416 62.623 104.543 115.75 51.416 168.878 73.277 190.733 126.4 137.607 126.403 137.61 148.258 115.749"/><rect fill="#007480" x="110.9384" y="100.29035" width="30.91783" height="30.91093" transform="translate(297.62103 108.27464) rotate(135.02027)"/><polygon fill="#ffcb00" style="mix-blend-mode:multiply" points="248.142 40.767 226.287 62.621 279.411 115.75 226.287 168.876 248.142 190.735 301.268 137.609 323.129 115.747 248.142 40.767"/><polygon fill="#75be01" points="410.565 115.749 388.71 93.891 388.708 93.892 335.584 40.768 313.723 62.623 366.85 115.75 313.723 168.878 335.584 190.733 388.707 137.608 388.71 137.61 410.565 115.749"/><rect fill="#32912e" x="373.25004" y="100.28859" width="30.91285" height="30.91093" transform="translate(745.47512 -77.14329) rotate(135.02027)"/><polygon fill="#e10057" points="235.693 115.747 160.706 40.767 138.851 62.621 191.975 115.75 138.851 168.876 160.706 190.735 213.832 137.609 213.832 137.609 235.693 115.747"/><rect fill="#a70836" x="198.37947" y="100.29397" width="30.90915" height="30.91093" transform="translate(446.87971 46.37618) rotate(134.99583)"/><rect fill="#ff9d01" x="285.81339" y="100.29397" width="30.90915" height="30.91093" transform="translate(596.13425 -15.45344) rotate(134.99583)"/></g></svg>
+    </div>
+</aside>
+
+<div class="container">
+
+    <div class="header">
+        <h1>User Requirements Engineering<br><span>im Human-centred Design</span></h1>
+        <p class="subtitle">Was gehört wozu, und was musst du an welcher Stelle tun? Eine Landkarte zu den Folien des CPUX-UR-Trainings, mit deinen Notizen aus der Schulung.</p>
+        <div class="meta">
+            <span class="chip"><span class="material-icons">description</span>Folien S. 2–252 (Zum Seminar, Kapitel 1–3, Kapitel 4 bis S. 252)</span>
+            <span class="chip"><span class="material-icons">edit_note</span>Gelbe Kästen = deine Notizen</span>
+            <span class="chip"><span class="material-icons">update</span>Wird mit dem Training erweitert</span>
+        </div>
+    </div>
+
+
+
+        <div class="card faden">
+            <h3><span class="material-icons">route</span>Der rote Faden in einem Satz</h3>
+            <div class="sequence big">
+                <span class="seq tuerkis hot-btn" data-k="planung"><span class="material-icons">event_note</span>Planung</span><span class="material-icons">chevron_right</span>
+                <span class="seq tuerkis hot-btn" data-k="verstehen"><span class="material-icons">travel_explore</span>Verstehen und Festlegen des Nutzungskontextes</span><span class="material-icons">chevron_right</span>
+                <span class="seq lila hot-btn" data-k="festlegen"><span class="material-icons">edit_note</span>Festlegen der Nutzungsanforderungen</span><span class="material-icons">chevron_right</span>
+                <span class="seq lila hot-btn" data-k="gestalten"><span class="material-icons">design_services</span>Gestalten von Lösungen</span><span class="material-icons">chevron_right</span>
+                <span class="seq lila hot-btn" data-k="evaluieren"><span class="material-icons">fact_check</span>Evaluieren</span>
+            </div>
+            <div class="faden-kette"><span>Die Kette:</span>
+                <span class="hot-btn" data-k="nkinfo">Nutzungskontext</span><span class="material-icons">east</span>
+                <span class="hot-btn" data-k="erfordernis">Erfordernis</span><span class="material-icons">east</span>
+                <span class="hot-btn" data-k="na">Nutzungsanforderung</span></div>
+            <p style="text-align:center;color:#718096;font-size:14px;margin-top:12px">Du planst, verstehst und legst den Nutzungskontext fest und findest darin die Erfordernisse, leitest daraus die Nutzungsanforderungen ab, gestaltest dazu Lösungen und evaluierst sie gegen genau diese Nutzungsanforderungen.</p>
+        </div>
+    <!-- =========================================================
+         1 PROZESSKARTE: HCD ALS DACH, ALLES DARIN VERORTET
+         ========================================================= -->
+    <section class="section wide" id="karte">
+        <div class="section-title"><div class="num"><span class="material-icons">map</span></div><h2>Die Prozesskarte</h2></div>
+        <p class="section-lead">Die menschzentrierte Gestaltung ist das Dach, und alles im Training hat darunter einen festen Platz. <b>Klick ein beliebiges Element an</b>, dann öffnen sich rechts die Details. Über die Schalter blendest du weitere Ebenen ein.</p>
+
+        <div class="card map-card">
+            <div class="toolbar">
+                <div class="view-switch" role="radiogroup" aria-label="Ansicht">
+                    <button class="btn on" data-view="grafik" role="radio"><span class="material-icons">account_tree</span>Grafik</button>
+                    <button class="btn" data-view="tabelle" role="radio"><span class="material-icons">table_chart</span>Tabelle</button>
+                </div>
+                <button class="btn" data-ptexam style="display:none"><span class="material-icons">assignment</span>Prüfung</button>
+                <button class="btn on" data-layer="raum"><span class="material-icons">contrast</span>Problem- / Lösungsraum</button>
+                <button class="btn" data-layer="kapitel"><span class="material-icons">bookmark</span>Seminar-Kapitel</button>
+                <button class="btn" data-layer="pruefung"><span class="material-icons">assignment</span>Prüfungspunkte</button>
+                <button class="btn" data-layer="einstieg"><span class="material-icons">flag</span>Einstiegspunkte</button>
+                <span class="toolbar-hint"><span class="material-icons">touch_app</span>Alles ist klickbar</span>
+            </div>
+
+            <svg class="master" viewBox="0 0 1400 840" role="img" aria-label="Prozesskarte der menschzentrierten Gestaltung">
+                <defs>
+                    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#009BA3"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+                    <linearGradient id="gRoof" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#009BA3"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+                    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4a5568"/></marker>
+                    <marker id="aS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#a0aec0"/></marker>
+                    <marker id="aT" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#009BA3"/></marker>
+                </defs>
+
+                <!-- Haus -->
+                <rect x="40" y="118" width="1320" height="700" rx="8" fill="#fbfdff" stroke="#e2e8f0" stroke-width="2"/>
+
+                <!-- Ebene Räume -->
+                <g class="layer" id="layer-raum">
+                    <path d="M40 118 H1360 V430 C1000 418 700 392 40 392 Z" fill="rgba(0,155,163,0.09)"/>
+                    <path d="M40 392 C700 392 1000 418 1360 430 V818 H40 Z" fill="rgba(139,92,246,0.08)"/>
+                    <g class="hot" data-k="problemraum"><rect x="1150" y="134" width="196" height="26" rx="4" fill="rgba(0,155,163,0.16)"/><text class="raum-t" x="1248" y="152" text-anchor="middle" fill="#007480">PROBLEMRAUM</text></g>
+                    <g class="hot" data-k="loesungsraum"><rect x="1150" y="780" width="196" height="26" rx="4" fill="rgba(139,92,246,0.16)"/><text class="raum-t" x="1248" y="798" text-anchor="middle" fill="#6d3fd6">LÖSUNGSRAUM</text></g>
+                </g>
+
+                <!-- Dach -->
+                <g class="hot roof" data-k="hcd">
+                    <polygon points="20,126 700,0 1380,126" fill="url(#gRoof)"/>
+                    <text x="700" y="94" text-anchor="middle" class="roof-t">Menschzentrierte Gestaltung (Human-centred Design)</text>
+                    <text x="700" y="114" text-anchor="middle" class="roof-s">nach ISO 9241-210:2019 · die Basis</text>
+                </g>
+
+                <!-- Zyklusrahmen -->
+                <rect x="396" y="140" width="946" height="656" rx="8" fill="none" stroke="#cbd5e0" stroke-width="2" stroke-dasharray="2 0"/>
+                <text class="lbl" x="416" y="164">iterativer Zyklus</text>
+
+                <!-- Pfeile Hauptablauf -->
+                <path class="fl" d="M364 186 H392" marker-end="url(#a)"/>
+                <path class="fl t" d="M920 192 H946" marker-end="url(#aT)"/>
+                <path class="fl t" d="M1080 200 C1105 205 1118 214 1120 228" marker-end="url(#aT)"/>
+                <path class="fl t" d="M1180 256 C1205 262 1210 270 1210 278" marker-end="url(#aT)"/>
+                <path class="fl t" d="M1210 314 V336" marker-end="url(#aT)"/>
+                <path class="fl" d="M1080 470 C1060 620 1010 732 944 732" marker-end="url(#a)"/>
+                <path class="fl" d="M580 732 C490 732 470 620 488 536" marker-end="url(#a)"/>
+                <path class="fl" d="M1220 518 V474" marker-end="url(#a)"/>
+                <!-- Iterationen -->
+                <path class="fl it" d="M520 446 C520 300 545 192 596 192" marker-end="url(#aS)"/>
+                <path class="fl it" d="M742 470 C860 470 950 420 1056 398" marker-end="url(#aS)"/>
+                <text class="lbl it-l" x="880" y="482">Iterationen</text>
+                <!-- Ausgang -->
+                <path class="fl" d="M420 488 H214 V700" marker-end="url(#a)"/>
+
+                <!-- PLANUNG -->
+                <g class="hot node" data-k="planung">
+                    <rect x="64" y="146" width="300" height="80" rx="5"/>
+                    <circle cx="102" cy="186" r="22" fill="url(#g)"/><text class="mi" x="102" y="196" text-anchor="middle">event_note</text>
+                    <text class="nt" x="136" y="176">Planung</text><text class="ns" x="136" y="196">des menschzentrierten</text><text class="ns" x="136" y="214">Gestaltungsprozesses</text>
+                </g>
+                <line x1="72" y1="226" x2="72" y2="446" stroke="#cbd5e0" stroke-width="2"/>
+                <g class="hot chip t" data-k="qziele"><rect x="80" y="244" width="284" height="36" rx="4"/><text x="222" y="267" text-anchor="middle">Menschzentrierte Qualitätsziele</text></g>
+                <g class="hot chip" data-k="anlass"><rect x="80" y="290" width="284" height="36" rx="4"/><text x="222" y="313" text-anchor="middle">Anlass und Ziele NKA</text></g>
+                <g class="hot chip" data-k="nka"><rect x="80" y="336" width="284" height="36" rx="4"/><text x="222" y="359" text-anchor="middle">Vorgehen NKA festlegen</text></g>
+                <g class="hot chip" data-k="info"><rect x="80" y="382" width="284" height="36" rx="4"/><text x="222" y="405" text-anchor="middle" style="font-size:12.5px">Empirische und konstruierte Information</text></g>
+                <g class="hot chip" data-k="methoden"><rect x="80" y="428" width="284" height="36" rx="4"/><text x="222" y="451" text-anchor="middle">Design Thinking · Lean UX</text></g>
+
+                <!-- VERSTEHEN -->
+                <g class="hot node" data-k="verstehen">
+                    <rect x="590" y="150" width="330" height="84" rx="5"/>
+                    <circle cx="628" cy="192" r="22" fill="url(#g)"/><text class="mi" x="628" y="202" text-anchor="middle">travel_explore</text>
+                    <text class="nt" x="660" y="188">Verstehen und Festlegen</text><text class="ns" x="660" y="208">des Nutzungskontextes</text>
+                </g>
+                <g stroke="#cbd5e0" stroke-width="2"><line x1="760" y1="234" x2="625" y2="256"/><line x1="760" y1="234" x2="715" y2="256"/><line x1="760" y1="234" x2="805" y2="256"/><line x1="760" y1="234" x2="895" y2="256"/></g>
+                <g class="hot bazur" data-k="benutzer"><circle cx="625" cy="280" r="24"/><text class="bz" x="625" y="287" text-anchor="middle">B</text><text class="bz-l" x="625" y="322" text-anchor="middle">Benutzer</text></g>
+                <g class="hot bazur" data-k="aufgaben"><circle cx="715" cy="280" r="24"/><text class="bz" x="715" y="286" text-anchor="middle" style="font-size:14px">A&amp;Z</text><text class="bz-l" x="715" y="322" text-anchor="middle">Aufgaben</text><text class="bz-l" x="715" y="336" text-anchor="middle">&amp; Ziele</text></g>
+                <g class="hot bazur" data-k="umgebung"><circle cx="805" cy="280" r="24"/><text class="bz" x="805" y="287" text-anchor="middle">U</text><text class="bz-l" x="805" y="322" text-anchor="middle">Umgebung</text></g>
+                <g class="hot bazur" data-k="ressourcen"><circle cx="895" cy="280" r="24"/><text class="bz" x="895" y="287" text-anchor="middle">R</text><text class="bz-l" x="895" y="322" text-anchor="middle">Ressourcen</text></g>
+                <line x1="715" y1="342" x2="715" y2="352" stroke="#cbd5e0" stroke-width="2"/>
+                <g class="hot chip t" data-k="aufgabenmodell"><rect x="640" y="354" width="150" height="34" rx="4"/><text x="715" y="376" text-anchor="middle">Aufgabenmodell</text></g>
+                <g class="hot chip t" data-k="nkbeschreibung"><rect x="798" y="354" width="120" height="34" rx="4"/><text x="858" y="376" text-anchor="middle" style="font-size:12px">NK-Beschreibung</text></g>
+                <!-- Kapitel 3: erheben -->
+                <g class="hot chip" data-k="rekrutierung"><rect x="600" y="394" width="104" height="21" rx="4"/><text x="652" y="409" text-anchor="middle" style="font-size:11.5px">Rekrutierung</text></g>
+                <g class="hot chip" data-k="interview"><rect x="710" y="394" width="118" height="21" rx="4"/><text x="769" y="409" text-anchor="middle" style="font-size:11.5px">Kontext. Interview</text></g>
+                <g class="hot chip" data-k="rollen"><rect x="834" y="394" width="84" height="21" rx="4"/><text x="876" y="409" text-anchor="middle" style="font-size:11.5px">Rollen</text></g>
+                <g class="hot chip" data-k="beobachtung"><rect x="600" y="419" width="104" height="21" rx="4"/><text x="652" y="434" text-anchor="middle" style="font-size:11.5px">Beobachtung</text></g>
+                <g class="hot chip" data-k="fokusgruppe"><rect x="710" y="419" width="118" height="21" rx="4"/><text x="769" y="434" text-anchor="middle" style="font-size:11.5px">Fokusgruppe</text></g>
+                <g class="hot chip" data-k="mentales"><rect x="834" y="419" width="84" height="21" rx="4"/><text x="876" y="434" text-anchor="middle" style="font-size:11.5px">Mentales M.</text></g>
+
+                <!-- KETTE -->
+                <g class="hot chip t" data-k="nkinfo"><rect x="948" y="176" width="140" height="32" rx="5"/><text x="1018" y="197" text-anchor="middle">Nutzungskontext</text></g>
+                <g class="hot chip t" data-k="erfordernis"><rect x="1060" y="232" width="120" height="32" rx="5"/><text x="1120" y="253" text-anchor="middle">Erfordernis</text></g>
+                <g class="hot chip l" data-k="na"><rect x="1130" y="282" width="168" height="32" rx="5"/><text x="1214" y="303" text-anchor="middle">Nutzungsanforderung</text></g>
+                <text class="lbl kette-l" x="958" y="246">die Kette</text>
+
+                <!-- FESTLEGEN -->
+                <g class="hot node" data-k="festlegen">
+                    <rect x="1060" y="340" width="270" height="84" rx="5"/>
+                    <circle cx="1100" cy="382" r="22" fill="url(#g)"/><text class="mi" x="1100" y="392" text-anchor="middle">edit_note</text>
+                    <text class="nt" x="1134" y="378">Festlegen der</text><text class="ns" x="1134" y="398">Nutzungsanforderungen</text>
+                </g>
+                <g class="hot chip t" data-k="qual"><rect x="1060" y="434" width="132" height="34" rx="4"/><text x="1126" y="456" text-anchor="middle">qualitativ · WAS</text></g>
+                <g class="hot chip l" data-k="quant"><rect x="1198" y="434" width="132" height="34" rx="4"/><text x="1264" y="456" text-anchor="middle">quantitativ · WIE</text></g>
+
+                <!-- STAKEHOLDER-STAPEL -->
+                <g class="hot stack" data-k="stakeholder">
+                    <rect x="1094" y="520" width="252" height="22" rx="2" fill="#4a5568"/><text x="1220" y="535" text-anchor="middle">Gesetzliche / regulatorische Anforderungen</text>
+                    <rect x="1104" y="545" width="232" height="22" rx="2" fill="#5a6578"/><text x="1220" y="560" text-anchor="middle">Marktanforderungen</text>
+                    <rect x="1114" y="570" width="212" height="22" rx="2" fill="#6b7689"/><text x="1220" y="585" text-anchor="middle">Organisatorische Anforderungen</text>
+                    <rect x="1124" y="595" width="192" height="22" rx="2" fill="#007480"/><text x="1220" y="610" text-anchor="middle">Fachliche Anforderungen</text>
+                    <rect x="1134" y="620" width="172" height="22" rx="2" fill="#009BA3"/><text x="1220" y="635" text-anchor="middle">Nutzungsanforderungen</text>
+                    <rect x="1094" y="652" width="252" height="24" rx="2" fill="#1a202c"/><text x="1220" y="668" text-anchor="middle">Systemanforderungen</text>
+                    <text class="lbl" x="1220" y="696" text-anchor="middle">Stakeholder- und Systemanforderung</text>
+                </g>
+
+                <!-- GESTALTEN -->
+                <g class="hot chip" data-k="amgest"><rect x="590" y="596" width="270" height="32" rx="4"/><text x="725" y="617" text-anchor="middle">Aufgabenmodell für die Gestaltung</text></g>
+                <g class="hot chip" data-k="regeln"><rect x="590" y="640" width="150" height="32" rx="4"/><text x="665" y="661" text-anchor="middle">Gestaltungsregeln</text></g>
+                <g class="hot chip" data-k="artefakte"><rect x="748" y="640" width="112" height="32" rx="4"/><text x="804" y="661" text-anchor="middle">Prototypen</text></g>
+                <g class="hot node" data-k="gestalten">
+                    <rect x="580" y="690" width="360" height="84" rx="5"/>
+                    <circle cx="620" cy="732" r="22" fill="url(#g)"/><text class="mi" x="620" y="742" text-anchor="middle">design_services</text>
+                    <text class="nt" x="654" y="728">Gestalten von Lösungen, die</text><text class="ns" x="654" y="748">Nutzungsanforderungen erfüllen</text>
+                </g>
+
+                <!-- EVALUIEREN -->
+                <g class="hot node" data-k="evaluieren">
+                    <rect x="420" y="446" width="320" height="84" rx="5"/>
+                    <circle cx="460" cy="488" r="22" fill="url(#g)"/><text class="mi" x="460" y="498" text-anchor="middle">fact_check</text>
+                    <text class="nt" x="494" y="476">Evaluieren der</text><text class="ns" x="494" y="496">Gestaltungslösung gegen</text><text class="ns" x="494" y="514">Nutzungsanforderungen</text>
+                </g>
+                <g class="hot chip t" data-k="verif"><rect x="530" y="540" width="104" height="32" rx="4"/><text x="582" y="561" text-anchor="middle">Verifizierung</text></g>
+                <g class="hot chip l" data-k="valid"><rect x="640" y="540" width="100" height="32" rx="4"/><text x="690" y="561" text-anchor="middle">Validierung</text></g>
+
+                <!-- ERGEBNIS -->
+                <g class="hot node done" data-k="erfuellt">
+                    <rect x="64" y="704" width="300" height="76" rx="5"/>
+                    <circle cx="102" cy="742" r="22" fill="#10b981"/><text class="mi" x="102" y="752" text-anchor="middle">task_alt</text>
+                    <text class="nt" x="136" y="738">Gestaltungslösung</text><text class="ns" x="136" y="758">erfüllt die Nutzungsanforderungen</text>
+                </g>
+
+                <!-- Ebene Kapitel -->
+                <g class="layer hidden" id="layer-kapitel">
+                    <g class="kap"><circle cx="1110" cy="104" r="13"/><text x="1110" y="108" text-anchor="middle">1</text></g><text class="kap-w" x="1128" y="108">Grundlagen</text>
+                    <g class="kap"><circle cx="364" cy="146" r="14"/><text x="364" y="150" text-anchor="middle">2</text></g>
+                    <g class="kap"><circle cx="920" cy="150" r="14"/><text x="920" y="154" text-anchor="middle">3</text></g>
+                    <g class="kap"><circle cx="1060" cy="232" r="14"/><text x="1060" y="236" text-anchor="middle">4</text></g>
+                    <g class="kap"><circle cx="1298" cy="282" r="14"/><text x="1298" y="286" text-anchor="middle">5</text></g>
+                    <g class="kap"><circle cx="1330" cy="340" r="14"/><text x="1330" y="344" text-anchor="middle">6</text></g>
+                    <g class="hot kap7" data-k="kap7"><rect x="790" y="512" width="220" height="44" rx="4"/><circle cx="812" cy="534" r="13"/><text class="n" x="812" y="538" text-anchor="middle">7</text><text x="832" y="530">Schnittstellen UR-Engineer</text><text x="832" y="546" class="s">nicht prüfungsrelevant</text></g>
+                </g>
+
+                <!-- Ebene Prüfung -->
+                <g class="layer hidden" id="layer-pruefung">
+                    <g class="hot pts" data-k="pruefung"><rect x="600" y="122" width="250" height="24" rx="4"/><text x="725" y="139" text-anchor="middle">Ist-Szenario 3 · Fehler 4 · Gruppen 5</text></g>
+                    <g class="hot pts" data-k="pruefung"><rect x="1186" y="236" width="60" height="24" rx="4"/><text x="1216" y="253" text-anchor="middle">40 P</text></g>
+                    <g class="hot pts" data-k="pruefung"><rect x="1062" y="286" width="60" height="24" rx="4"/><text x="1092" y="303" text-anchor="middle">26 P</text></g>
+                    <g class="hot pts" data-k="pruefung"><rect x="574" y="359" width="60" height="24" rx="4"/><text x="604" y="376" text-anchor="middle">12 P</text></g>
+                    <g class="hot pts" data-k="pruefung"><rect x="954" y="438" width="100" height="24" rx="4"/><text x="1004" y="455" text-anchor="middle">Zuordnung 10 P</text></g>
+                </g>
+
+                <!-- Ebene Einstieg -->
+                <g class="layer hidden" id="layer-einstieg">
+                    <g class="flag"><rect x="150" y="128" width="150" height="24" rx="3"/><text x="225" y="145" text-anchor="middle">Start: neues System</text></g>
+                    <g class="flag"><rect x="930" y="236" width="124" height="24" rx="3"/><text x="992" y="253" text-anchor="middle">Probleme analysieren</text></g>
+                    <g class="flag"><rect x="420" y="416" width="170" height="24" rx="3"/><text x="505" y="433" text-anchor="middle">Start: bestehende App</text></g>
+                    <g class="flag"><rect x="600" y="780" width="220" height="24" rx="3"/><text x="710" y="797" text-anchor="middle">Start: neues Designsystem / Tech</text></g>
+                </g>
+            </svg>
+
+            <div class="legend">
+                <span><i class="lg-node"></i>Aktivität im HCD</span>
+                <span><i class="lg-chip t"></i>Problemraum / Grundlage</span>
+                <span><i class="lg-chip l"></i>Lösungsraum</span>
+                <span><i class="lg-line"></i>Hauptablauf</span>
+                <span><i class="lg-line it"></i>Iteration</span>
+                <span><i class="lg-line tt"></i>Die Kette</span>
+            </div>
+
+            <div class="ptable" id="pTable" hidden></div>
+        </div>
+    </section>
+
+    <nav class="pager"><span></span><a class="next" href="dashboard.html"><span><small>Weiter</small>Lern-Cockpit</span><span class="material-icons">chevron_right</span></a></nav>
+
+    <footer>Lernmaterial auf Basis der CPUX-UR-Seminarunterlagen (Spiegel Institut, 2026) nach UXQB CPUX-F Curriculum V4.01 und ISO 9241-210:2019. Nur für den internen Gebrauch.</footer>
+</div>
+
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drTitle">
+    <div class="dr-head">
+        <button class="dr-close" id="drClose" aria-label="Schließen"><span class="material-icons">close</span></button>
+        <div class="dr-icon"><span class="material-icons" id="drIcon">info</span></div>
+        <h3 id="drTitle"></h3>
+        <div class="dr-tags" id="drTags"></div>
+    </div>
+    <div class="dr-body" id="drBody"></div>
+    <div class="dr-foot">
+        <div class="dr-nav">
+            <button class="btn" id="drPrev" title="Vorheriger Prozessschritt"><span class="material-icons">chevron_left</span></button>
+            <button class="btn" id="drNext" title="Nächster Prozessschritt"><span class="material-icons">chevron_right</span></button>
+        </div>
+        <a class="btn on" id="drLink" href="#"><span class="material-icons">open_in_full</span>Zur Detailkarte</a>
+    </div>
+</aside>
+
+<button class="back-to-top" id="backToTop" aria-label="Zurück nach oben"><span class="material-icons" style="font-size:26px">arrow_upward</span></button>
+
+<script src="lern-daten.js"></script>
+<script src="landkarte.js"></script>
+<script src="folien-daten.js"></script>
+<script src="folien.js"></script>
+<script src="hervorhebung-daten.js"></script>
+<script src="hervorhebung.js"></script>
+<script src="detail.js"></script>
+<script src="prozessgrafik.js"></script>
+<script src="lernen.js"></script>
+</body>
+</html>

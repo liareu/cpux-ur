@@ -1,0 +1,3526 @@
+[
+ {
+  "file": "IMG_9684.jpg",
+  "page": 1,
+  "marker": null,
+  "title": "(Titelfolie spiegel Institut, ohne Titel)",
+  "rot": [],
+  "rot_box": [],
+  "hinweis": "keine Seitenzahl gedruckt, Seite 1 abgeleitet"
+ },
+ {
+  "file": "IMG_9684.jpg",
+  "page": 2,
+  "marker": null,
+  "title": "Unterlagen zum CPUX-UR Training",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9685.jpg",
+  "page": 3,
+  "marker": null,
+  "title": "Zum Seminar",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9685.jpg",
+  "page": 6,
+  "marker": null,
+  "title": "Seminarunterlagen",
+  "rot": [],
+  "rot_box": [
+   "Ü",
+   "W",
+   "+",
+   "CPUX F",
+   "B"
+  ],
+  "hinweis": "rot_box = Legenden-Icons (Ü Übungen, W wichtige Folie, + zusätzliche Inhalte, CPUX-F Grundlagen aus CPUX-F Lehrplan, B Beispielfolie), kein Marker oben rechts"
+ },
+ {
+  "file": "IMG_9686.jpg",
+  "page": 7,
+  "marker": null,
+  "title": "Menschzentrierte Gestaltung (Human-centred Design, HCD)",
+  "rot": [
+   "Herangehensweise",
+   "Gestaltung",
+   "gebrauchstauglicher",
+   "indem",
+   "Verwendung",
+   "konzentriert"
+  ],
+  "rot_box": [],
+  "hinweis": "IMG_9687 ist Nahaufnahme derselben Seiten 7/8"
+ },
+ {
+  "file": "IMG_9686.jpg",
+  "page": 8,
+  "marker": null,
+  "title": "Aktivitäten des User Requirements Engineering im HCD",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9688.jpg",
+  "page": 9,
+  "marker": null,
+  "title": "Agenda des Seminars",
+  "rot": [],
+  "rot_box": [
+   "1 Einführung in die Nutzungskontextanalyse",
+   "2 Nutzungskontext-analyse planen",
+   "3 Nutzungskontext-information erheben",
+   "4 Erfordernisse identifizieren",
+   "5 Nutzungsanforder-ungen ableiten",
+   "7 Schnittstellen des UR-Engineers",
+   "6 Nutzungsanforderungen konsolidieren & priorisieren"
+  ],
+  "unsicher": true,
+  "hinweis": "Kastentexte klein; Silbentrennung wie gedruckt"
+ },
+ {
+  "file": "IMG_9688.jpg",
+  "page": 10,
+  "marker": null,
+  "title": "User Requirements Engineering",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9689.jpg",
+  "page": 11,
+  "marker": null,
+  "title": "User / Requirements / Engineering",
+  "rot": [
+   "Person",
+   "interagiert",
+   "Ergebnisse",
+   "benutzt",
+   "Bedingung",
+   "Fähigkeit",
+   "erfüllen",
+   "besitzen",
+   "zu erfüllen",
+   "Geistige Tätigkeiten",
+   "Definition",
+   "Planung",
+   "Herstellung",
+   "Erhaltung",
+   "Wiederverwertung",
+   "Produkts",
+   "Prozesses",
+   "Gebäudes"
+  ],
+  "rot_box": [],
+  "hinweis": "'+'-Symbol inline links vor 'Engineering == Ingenieurstätigkeit', nicht oben rechts"
+ },
+ {
+  "file": "IMG_9689.jpg",
+  "page": 12,
+  "marker": "+",
+  "title": "Requirements Engineering aus Sicht der Technologie, Perspektive des Systems Engineering",
+  "rot": [
+   "systematic",
+   "disciplined approach",
+   "specification",
+   "management",
+   "requirements",
+   "stakeholders' desires",
+   "needs",
+   "minimizing the risk",
+   "does not meet the stakeholders' desires and needs"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9690.jpg",
+  "page": 13,
+  "marker": "+",
+  "title": "Requirements Engineering aus Sicht der Vertreter der Nutzenden, Perspektive des Usability Engineering",
+  "rot": [
+   "systematische Spezifizieren",
+   "Verwalten",
+   "Stakeholderanforderungen",
+   "Systemanforderungen",
+   "nicht immer explizit",
+   "unterschieden",
+   "zunehmende Bedeutung",
+   "Usability",
+   "User Experience",
+   "User Requirements Engineering",
+   "Teildisziplin",
+   "Usability Engineering",
+   "Requirements Engineering"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9690.jpg",
+  "page": 14,
+  "marker": "+",
+  "title": "User Requirements Engineering, die Brücke zwischen den Welten der Nutzenden und der Technologie",
+  "rot": [
+   "... User Requirements Engineering ..."
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9691.jpg",
+  "page": 15,
+  "marker": null,
+  "title": "User Requirements Engineering – Human-centred Design",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9691.jpg",
+  "page": 16,
+  "marker": "+",
+  "title": "Motivation, die Produktentwicklung",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9692.jpg",
+  "page": 18,
+  "marker": "+",
+  "title": "Produktentwicklungsprozess Anteile zum PEP",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9692.jpg",
+  "page": 19,
+  "marker": "W",
+  "title": "IREB und CPRE – UXQB und CPUX-UR",
+  "rot": [
+   "IREB",
+   "UXQB",
+   "Zertifikat – CPRE:",
+   "für",
+   "Zertifikat – CPUX-UR:"
+  ],
+  "rot_box": [],
+  "hinweis": "'für' kommt zweimal vor (für Systems Engineers / für Usability Professionals)"
+ },
+ {
+  "file": "IMG_9693.jpg",
+  "page": 20,
+  "marker": null,
+  "title": "1. Einführung in die Nutzungskontextanalyse",
+  "rot": [
+   "1.1 – Anforderungen und Lösungen unterscheiden",
+   "Anforderungen zum Einkreisen passender Lösungen",
+   "Konsens über Lösungsvorschläge auf Basis von argumentativen Fakten"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9693.jpg",
+  "page": 21,
+  "marker": null,
+  "title": "Nutzungskontextanalyse (context of use analysis)",
+  "rot": [
+   "Planung",
+   "Erhebung",
+   "Dokumentation",
+   "Nutzungskontextinformationen",
+   "Erfordernisse",
+   "Nutzungsanforderungen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9694.jpg",
+  "page": 22,
+  "marker": null,
+  "title": "Welches Gerät ist besser nutzbar?",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9694.jpg",
+  "page": 23,
+  "marker": null,
+  "title": "Grundlegende Definitionen entlang des Human-centred Designs",
+  "rot": [
+   "Kombination",
+   "Benutzern",
+   "Zielen",
+   "Aufgaben",
+   "Ressourcen",
+   "Umgebungen",
+   "Voraussetzung",
+   "Ziel zu erreichen",
+   "Bedingung",
+   "Fähigkeit",
+   "erfüllen",
+   "besitzen",
+   "zu erfüllen",
+   "Produktmerkmal",
+   "spezifiziert",
+   "realisiert",
+   "Anforderungen erfüllen sollen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9695.jpg",
+  "page": 24,
+  "marker": null,
+  "title": "Zusammenhang Nutzungskontext, Erfordernis, Anforderung, Lösung",
+  "rot": [
+   "Problemraum",
+   "Lösungsraum"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9695.jpg",
+  "page": 25,
+  "marker": null,
+  "title": "Problem- und Lösungsraum (problem and solution space)",
+  "rot": [
+   "Nutzungskontext",
+   "enthaltenen Erfordernisse",
+   "Nutzungsanforderungen",
+   "Erfordernisse",
+   "befriedigen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9696.jpg",
+  "page": 26,
+  "marker": null,
+  "title": "(ohne Titel) Problemraum (Benutzende): Nutzungskontext, Erfordernis / Lösungsraum: Anforderung, Lösung – HCD-Grafik",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9696.jpg",
+  "page": 27,
+  "marker": "B",
+  "title": "Erfordernis – Beispiel",
+  "rot": [
+   "Benutzer",
+   "Erfordernis",
+   "Voraussetzung",
+   "Ziel"
+  ],
+  "rot_box": [],
+  "hinweis": "zusätzlich Ü-Kreis inline unten links vor der Übungsfrage"
+ },
+ {
+  "file": "IMG_9697.jpg",
+  "page": 28,
+  "marker": "CPUX-F",
+  "title": "Interaktives System (interactive system)",
+  "rot": [
+   "Hardware",
+   "Software",
+   "Dienstleistungen",
+   "Verpackung",
+   "Dokumentation",
+   "Online-Hilfe",
+   "Support",
+   "Schulung",
+   "Usability-Studie",
+   "Gerät selbst",
+   "Auspack- und der Inbetriebnahme",
+   "Out-Of-the-Box-Test",
+   "keine Eingaben von Benutzenden"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9697.jpg",
+  "page": 29,
+  "marker": null,
+  "title": "Wann ist ein interaktives System (Lösung) gut?",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9698.jpg",
+  "page": 30,
+  "marker": "+",
+  "title": "Ein System ist \"gut\", ...",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9698.jpg",
+  "page": 31,
+  "marker": null,
+  "title": "Qualität (quality)",
+  "rot": [
+   "Erfüllung von Anforderungen"
+  ],
+  "rot_box": [],
+  "hinweis": "'menschzentrierte' grün, 'technische' blau, 'wirtschaftliche' lila gedruckt (nicht rot)"
+ },
+ {
+  "file": "IMG_9699.jpg",
+  "page": 32,
+  "marker": null,
+  "title": "Technische Qualität (technology-centred quality)",
+  "rot": [
+   "Erfüllung von Systemanforderungen",
+   "Komponenten",
+   "wird von Benutzenden oft als selbstverständlich vorausgesetzt",
+   "der Umsetzung von Systemanforderungen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9699.jpg",
+  "page": 33,
+  "marker": "CPUX-F",
+  "title": "Menschzentrierte Qualität (human-centred quality)",
+  "rot": [
+   "beabsichtigtes Ergebnis",
+   "für den Benutzer",
+   "Usability",
+   "User Experience",
+   "Barrierefreiheit",
+   "Vermeidung von Schäden durch die Benutzung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9700.jpg",
+  "page": 34,
+  "marker": null,
+  "title": "Vermeidung von Schäden durch die Benutzung (avoidance of harm from use)",
+  "rot": [
+   "Ausmaß",
+   "negative Auswirkungen",
+   "Gesundheit",
+   "Sicherheit",
+   "Finanzen",
+   "Umwelt",
+   "minimiert werden",
+   "Negative Auswirkungen",
+   "alle Stakeholder",
+   "Risiken minimiert",
+   "unverträgliche Medikamente",
+   "vermeidbaren Müll",
+   "umweltschädlich",
+   "gelöschte Daten wiederherstellen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9700.jpg",
+  "page": 35,
+  "marker": null,
+  "title": "Risiko (risk)",
+  "rot": [
+   "Wahrscheinlichkeit des Auftretens",
+   "Schweregrads",
+   "physische Verletzung",
+   "Schädigung der Gesundheit",
+   "Schädigung von Gütern",
+   "Umwelt"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9701.jpg",
+  "page": 36,
+  "marker": null,
+  "title": "Qualität = Maß der Umsetzung von Anforderungen",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9701.jpg",
+  "page": 37,
+  "marker": "CPUX-F",
+  "title": "Gestaltungsregel (user interface guideline)",
+  "rot": [
+   "Konkrete, spezifische Instruktion",
+   "Empfehlung",
+   "Design",
+   "Implementierung",
+   "konsistent umgesetzt",
+   "bindend",
+   "Konsistenz",
+   "Verhalten",
+   "Aussehen",
+   "User Interface Elementen",
+   "Schriftarten",
+   "Farben",
+   "Formulierung",
+   "Interaktionsstruktur",
+   "vorgeschrieben",
+   "festgelegten Verfahren für zulässige Abweichungen",
+   "Gestaltungsregeln",
+   "Styleguides",
+   "Desginsysteme"
+  ],
+  "rot_box": [],
+  "hinweis": "'Desginsysteme' so gedruckt (Tippfehler); '+'-Symbol inline am Ende; 'und' zwischen Verhalten/Aussehen vermutlich schwarz"
+ },
+ {
+  "file": "IMG_9702.jpg",
+  "page": 38,
+  "marker": null,
+  "title": "Anforderung, Gestaltungsregeln und Qualität",
+  "rot": [
+   "nicht"
+  ],
+  "rot_box": [
+   "menschzentrierte Qualität",
+   "technische Qualität"
+  ]
+ },
+ {
+  "file": "IMG_9702.jpg",
+  "page": 39,
+  "marker": null,
+  "title": "Auf welche Kriterien hin können Anforderungen überprüft werden?",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9703.jpg",
+  "page": 40,
+  "marker": "+",
+  "title": "Typische Qualitätskriterien von Anforderung aus dem RE",
+  "rot": [],
+  "rot_box": [
+   "#",
+   "Eigenschaft",
+   "Beschreibung"
+  ],
+  "hinweis": "Tabellenkopf rot; Zeilen rosa hinterlegt mit schwarzer Schrift"
+ },
+ {
+  "file": "IMG_9703.jpg",
+  "page": 41,
+  "marker": "CPUX-F",
+  "title": "und ... wichtiges Qualitätskriterium im URE",
+  "rot": [],
+  "rot_box": [
+   "#",
+   "Eigenschaft",
+   "Beschreibung"
+  ],
+  "hinweis": "Zeile '9 begründet – Muss auf einem Erfordernis beruhen.' rosa hinterlegt, schwarze Schrift"
+ },
+ {
+  "file": "IMG_9704.jpg",
+  "page": 42,
+  "marker": null,
+  "title": "Benutzerwunsch (user want), Forderung (request)",
+  "rot": [
+   "Forderung",
+   "Auf Nachfrage hin, Benutzerwunsch",
+   "Mögliche Nutzungsanforderung"
+  ],
+  "rot_box": [
+   "Benutzerwunsch",
+   "Forderung"
+  ]
+ },
+ {
+  "file": "IMG_9704.jpg",
+  "page": 43,
+  "marker": null,
+  "title": "Abgrenzung Forderungen und Anforderung",
+  "rot": [
+   "Lösungsvorschlags",
+   "Features",
+   "Forderungen",
+   "keine Anforderungen",
+   "change requests",
+   "kontextspezifische Nutzungsanforderungen",
+   "Gestaltungsregeln",
+   "Nutzungskontexte"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9705.jpg",
+  "page": 44,
+  "marker": "Ü",
+  "title": "Praktische Übung 1",
+  "rot": [
+   "Praktische Übung 1"
+  ],
+  "rot_box": [],
+  "hinweis": "Titel selbst rot gedruckt"
+ },
+ {
+  "file": "IMG_9705.jpg",
+  "page": 48,
+  "marker": null,
+  "title": "Immunisierungsfalle (immunization trap)",
+  "rot": [
+   "unbewusst gewähltes Vorgehen",
+   "bekannte",
+   "vorgestellte Lösungen",
+   "lösungsneutral",
+   "immunisierten Anforderungen",
+   "systematische Herleiten",
+   "ermöglicht den Vergleich von Lösungsalternativen",
+   "Immunisiert",
+   "Nicht immunisiert"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9706.jpg",
+  "page": 49,
+  "marker": "B",
+  "title": "Immunisierungsfalle – Mobiltelefon",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9706.jpg",
+  "page": 50,
+  "marker": null,
+  "title": "Anforderungen und Lösungen unterscheiden",
+  "rot": [
+   "Fokus",
+   "Benutzenden",
+   "Menschen",
+   "System betroffen",
+   "Qualität",
+   "Risiken",
+   "Nutzungskontext ist die Basis für Erfordernissen",
+   "Nutzungsanforderungen abgeleitet",
+   "Lösungen sind Attribute von interaktiven Systemen",
+   "Anforderungen kreisen passende Lösungen ein",
+   "verwerfen unpassende Lösungen",
+   "Forderungen",
+   "Wünsche",
+   "anderen Stakeholdern",
+   "analysiert",
+   "zugrundeliegende Erfordernisse",
+   "Lösungsraum des geplanten interaktiven Systems",
+   "kontextspezifische Nutzungsanforderungen",
+   "etablierte Gestaltungsrichtlinien",
+   "konkrete Gestaltungsregeln"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9707.jpg",
+  "page": 51,
+  "marker": null,
+  "title": "1. Einführung in die Nutzungskontextanalyse",
+  "rot": [
+   "1.2 – Stakeholderanforderungen und Systemanforderungen unterscheiden",
+   "Basis für die menschzentrierte Qualität",
+   "hergeleitet",
+   "überprüfbar"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9707.jpg",
+  "page": 52,
+  "marker": null,
+  "title": "Stakeholder (Interessenvertreter)",
+  "rot": [
+   "Einzelperson",
+   "Organisation",
+   "Anrecht",
+   "Anteil",
+   "Anspruch",
+   "Interesse",
+   "Person",
+   "aktiven Interesse",
+   "Stakeholder",
+   "nutzen das System nicht",
+   "nutzen",
+   "keine Daten",
+   "Nutzern",
+   "weiteren Stakeholdern!"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9708.jpg",
+  "page": 55,
+  "marker": null,
+  "title": "Stakeholder- und Systemanforderung",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9708.jpg",
+  "page": 56,
+  "marker": null,
+  "title": "Gesetzliche / regulatorische Anforderung (legal/regulatory requirement)",
+  "rot": [
+   "Stakeholderanforderung",
+   "Gesetz",
+   "regulatorisches Dokument",
+   "vorgegeben",
+   "zu berücksichtigen ist."
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9709.jpg",
+  "page": 57,
+  "marker": "CPUX-F",
+  "title": "Marktanforderung (market requirement)",
+  "rot": [
+   "Anforderung",
+   "basierend auf einer Marketingpolitik",
+   "Geschäftschancen",
+   "Absatz",
+   "Nutzen",
+   "maximieren"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9709.jpg",
+  "page": 58,
+  "marker": "CPUX-F",
+  "title": "Organisatorische Anforderung (organisational requirement)",
+  "rot": [
+   "organisatorische Regel",
+   "befolgen müssen",
+   "Regeln",
+   "in organisatorischen Prozessen befolgen",
+   "Betrieb des interaktiven Systems relevant",
+   "Projekts umgesetzt",
+   "Geschäftsanforderungen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9710.jpg",
+  "page": 59,
+  "marker": null,
+  "title": "Fachliche Anforderung (domain-specific requirement)",
+  "rot": [
+   "Attribute",
+   "Arbeitsergebnisses",
+   "definiert",
+   "Aufgabenobjekte"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9710.jpg",
+  "page": 60,
+  "marker": "CPUX-F",
+  "title": "Nutzungsanforderung (user requirement)",
+  "rot": [
+   "Gestaltung",
+   "Evaluierung",
+   "Erfordernisse",
+   "Art",
+   "Weise",
+   "Interaktion",
+   "→ Interaktionsanforderungen",
+   "Messbares Ziel für die menschzentrierte Qualität",
+   "→ Anforderungen an die Nutzungsqualität"
+  ],
+  "rot_box": [],
+  "hinweis": "'+'-Symbol inline nach 'Interaktionsanforderungen'"
+ },
+ {
+  "file": "IMG_9711.jpg",
+  "page": 61,
+  "marker": "Ü",
+  "title": "Übung zur Diskussion",
+  "rot": [
+   "Übung zur Diskussion"
+  ],
+  "rot_box": [],
+  "hinweis": "Titel selbst rot gedruckt"
+ },
+ {
+  "file": "IMG_9711.jpg",
+  "page": 62,
+  "marker": null,
+  "title": "Auf welche Art von Umsetzung hin können Anforderungen überprüft werden?",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9712.jpg",
+  "page": 63,
+  "marker": null,
+  "title": "Validierung (validation)",
+  "rot": [
+   "Stakeholderanforderungen",
+   "angemessen umgesetzt"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9712.jpg",
+  "page": 64,
+  "marker": null,
+  "title": "Verifizierung (verification)",
+  "rot": [
+   "Anforderungen",
+   "Produktmerkmale umgesetzt"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9713.jpg",
+  "page": 65,
+  "marker": "Ü",
+  "title": "Praktische Übung 2",
+  "rot": [
+   "Praktische Übung 2"
+  ],
+  "rot_box": [],
+  "hinweis": "Titel selbst rot gedruckt"
+ },
+ {
+  "file": "IMG_9713.jpg",
+  "page": 66,
+  "marker": null,
+  "title": "Stakeholderanforderungen und Systemanforderungen unterscheiden",
+  "rot": [
+   "Stakeholder-",
+   "Systemanforderungen",
+   "Stakeholdern",
+   "Benutzenden",
+   "anderen Menschen",
+   "Organisationen",
+   "primäre",
+   "sekundäre",
+   "indirekte",
+   "Sponsor",
+   "Stakeholder",
+   "Stakeholderanforderungen",
+   "Verifizierung",
+   "Anforderungen umgesetzt",
+   "Validierung",
+   "aus Sicht der Stakeholder effektiv umgesetzt",
+   "menschzentrierte Qualität",
+   "alle",
+   "Anforderungen",
+   "hergeleitet",
+   "umgesetzt",
+   "verifiziert",
+   "validiert"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9714.jpg",
+  "page": 67,
+  "marker": null,
+  "title": "1. Einführung in die Nutzungskontextanalyse",
+  "rot": [
+   "1.3 – Der Nutzungskontext als Grundlage für Nutzungsanforderungen",
+   "alle Bestandteile des Nutzungskontextes",
+   "angemessen bei der Anforderungsspezifikation"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9714.jpg",
+  "page": 68,
+  "marker": null,
+  "title": "Menschzentrierte Gestaltung (HCD)",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9715.jpg",
+  "page": 69,
+  "marker": null,
+  "title": "Die 5 Komponenten des Nutzungskontextes – B/A&Z/U/R",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9715.jpg",
+  "page": 70,
+  "marker": null,
+  "title": "Nutzungskontext (context of use)",
+  "rot": [
+   "Kombination",
+   "Benutzern",
+   "Zielen",
+   "Aufgaben",
+   "Ressourcen",
+   "Umgebungen",
+   "Nutzungskontextinformationen",
+   "faktische Informationen",
+   "Beobachtungen",
+   "kontextuellen Interviews",
+   "Nutzungskontextbeschreibungen",
+   "Teilmenge des Nutzungskontextes",
+   "Nutzungskontext für die Gestaltung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9716.jpg",
+  "page": 71,
+  "marker": null,
+  "title": "Die 5 Komponenten des Nutzungskontextes – B/A&Z/U/R",
+  "rot": [],
+  "rot_box": [
+   "Benutzer"
+  ]
+ },
+ {
+  "file": "IMG_9716.jpg",
+  "page": 72,
+  "marker": null,
+  "title": "Benutzer (user)",
+  "rot": [
+   "interagiert",
+   "Ergebnisse",
+   "benutzt",
+   "Primäre Benutzer",
+   "Sekundäre Benutzer",
+   "unterstützende Aufgaben",
+   "warten",
+   "schulen",
+   "Indirekte Benutzer",
+   "verwendet",
+   "nicht direkt"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9717.jpg",
+  "page": 73,
+  "marker": null,
+  "title": "Fragefolie (?) ohne Titel: Warum unterscheiden wir zwischen verschiedenen Nutzertypen?",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9717.jpg",
+  "page": 74,
+  "marker": "B",
+  "title": "Typen von Benutzenden und UIs, Screens",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9718.jpg",
+  "page": 75,
+  "marker": null,
+  "title": "Die 5 Komponenten des Nutzungskontextes – B/A&Z/U/R",
+  "rot": [],
+  "rot_box": [
+   "Aufgaben & Ziele"
+  ]
+ },
+ {
+  "file": "IMG_9718.jpg",
+  "page": 76,
+  "marker": null,
+  "title": "Aufgabe (task)",
+  "rot": [
+   "Aktivitäten",
+   "durchgeführt werden",
+   "Ziel zu erreichen",
+   "Teilaufgaben",
+   "zukünftigen System unterstützt",
+   "spezifizieren",
+   "Nutzungsanforderungen",
+   "erforderliche Interaktion",
+   "sachaufgabeninduziert",
+   "systeminduziert"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9719.jpg",
+  "page": 77,
+  "marker": null,
+  "title": "Teilaufgabe (subtask)",
+  "rot": [
+   "Schritt",
+   "Teilaufgaben",
+   "zukünftige interaktive System unterstützt",
+   "nicht alle Teilaufgaben",
+   "zukünftige interaktive System unterstützt werden",
+   "Handlungen",
+   "Entscheidungen",
+   "in Form von Informationen, Auswahlmöglichkeiten",
+   "Eingaben unterstützt"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9719.jpg",
+  "page": 78,
+  "marker": null,
+  "title": "Ziel (goal)",
+  "rot": [
+   "beabsichtigte Ergebnis",
+   "in Form einer beobachtbaren Bedingung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9720.jpg",
+  "page": 79,
+  "marker": null,
+  "title": "Aufgabenmodell (task model)",
+  "rot": [
+   "Beschreibung einer Aufgabe",
+   "Grund für das Beginnen",
+   "Ziel",
+   "Teilaufgaben",
+   "Zweck",
+   "sinnvollen Reihenfolge",
+   "kontextuellen Vorbedingung",
+   "beabsichtigten Ergebnisse",
+   "Beabsichtigte Ergebnisse",
+   "kontextuelle Nachbedingungen",
+   "Logik",
+   "Grund des Startens",
+   "beabsichtigte Arbeitsergebnis"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9720.jpg",
+  "page": 80,
+  "marker": "B",
+  "title": "Aufgaben und Teilaufgaben – Beispiel",
+  "rot": [
+   "Aktivitäten"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9721.jpg",
+  "page": 81,
+  "marker": null,
+  "title": "Lebenszyklus einer Aufgabe",
+  "rot": [
+   "Aktivitäten"
+  ],
+  "rot_box": [
+   "Vorbedingung Grund des Aktivwerdens",
+   "Aufgabe / Aktivität",
+   "Nachbedingung Ziel"
+  ]
+ },
+ {
+  "file": "IMG_9721.jpg",
+  "page": 82,
+  "marker": "B",
+  "title": "Aufgabenobjekt als Ergebnis der Aufgabe – Beispiele",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9722.jpg",
+  "page": 83,
+  "marker": null,
+  "title": "Struktur des Aufgabenmodells der Aufgabe Fahrzeug leihen",
+  "rot": [
+   "Grund des Aktivwerdens",
+   "löst aus",
+   "Aufgabenlebenszyklus",
+   "während der Aufgabenbearbeitung wurde ein Aufgabenobjekt erstellt",
+   "führt zu",
+   "erfüllt das aufgabenbezogene Ziel: Fahrzeug ist gemietet",
+   "5. Ergebnis weitergeben",
+   "erfüllt das \"Meta\"-Ziel: gute Zeit mit Freunden verbringen"
+  ],
+  "rot_box": [
+   "Fahrzeug mieten",
+   "Fahrzeug reserviert für Abholung"
+  ]
+ },
+ {
+  "file": "IMG_9722.jpg",
+  "page": 84,
+  "marker": null,
+  "title": "Aufgabenobjekt (task object)",
+  "rot": [
+   "Objekte",
+   "erstellt",
+   "verändert",
+   "inspiziert",
+   "beabsichtigten Ergebnisse",
+   "erzielen",
+   "kontextuellen Interviews",
+   "Beobachtungen identifiziert",
+   "effiziente Durchführung von Arbeitsaufgaben",
+   "Aufgabenobjekte",
+   "ihre Attribute",
+   "Benutzungsschnittstelle dargestellt",
+   "Benutzungsschnittstelle",
+   "repräsentiert",
+   "Aufgabenobjekte sind Gegenstand der Aufgabenerledigung als auch Ergebnis der Aufgabe selbst."
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9723.jpg",
+  "page": 85,
+  "marker": "B",
+  "title": "Aufgabenobjekte – Beispiele",
+  "rot": [
+   "Miete",
+   "Fahrzeug",
+   "Mieter",
+   "Bezahlung",
+   "Ergebnis der Aufgabe",
+   "Reservierung Tag X"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9723.jpg",
+  "page": 86,
+  "marker": null,
+  "title": "Aufgabenobjekt",
+  "rot": [
+   "\"Ist\"-Aufgabenobjekt",
+   "\"Soll\"-Aufgabenobjekt",
+   "Nutzungsanforderungen sind die Basis",
+   "Überführung",
+   "Nutzungsanforderungen zur Spezifikation der \"Soll\"-Aufgabenobjekte",
+   "verwendet"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9724.jpg",
+  "page": 87,
+  "marker": "B",
+  "title": "Aufgabenobjekt (repräsentiert im User Interface) – Beispiele",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9724.jpg",
+  "page": 88,
+  "marker": null,
+  "title": "Die 5 Komponenten des Nutzungskontextes – B/A&Z/U/R",
+  "rot": [],
+  "rot_box": [
+   "Umgebung",
+   "Ressourcen"
+  ]
+ },
+ {
+  "file": "IMG_9725.jpg",
+  "page": 89,
+  "marker": null,
+  "title": "Umgebung (environment)",
+  "rot": [
+   "physischen",
+   "sozialen",
+   "technischen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9725.jpg",
+  "page": 91,
+  "marker": null,
+  "title": "Ressourcen (resources)",
+  "rot": [
+   "Mittel",
+   "erforderlich",
+   "beabsichtigtes Ergebnis",
+   "erreichen"
+  ],
+  "rot_box": [
+   "wiederverwendbare Ressourcen",
+   "sich erschöpfende Ressourcen"
+  ]
+ },
+ {
+  "file": "IMG_9726.jpg",
+  "page": 93,
+  "marker": null,
+  "title": "Nutzungskontext für die Gestaltung (context of use for design)",
+  "rot": [
+   "Teilmenge des Nutzungskontextes",
+   "Grundlage für die Gestaltung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9726.jpg",
+  "page": 94,
+  "marker": null,
+  "title": "Beschreibung – Aufgabenmodell für die Gestaltung (task model used for design)",
+  "rot": [
+   "Beschreibung",
+   "gegenwärtigen",
+   "für die Gestaltung überführt",
+   "berücksichtigt",
+   "entwickelnde interaktive System unterstützt",
+   "eingeschränkt",
+   "Automatisierung",
+   "Einschränkungen bei der Implementierung",
+   "Anpassung",
+   "Löschen",
+   "Hinzufügen",
+   "Ändern von Teilaufgaben",
+   "umfassen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9727.jpg",
+  "page": 95,
+  "marker": "Ü",
+  "title": "Übung zur Diskussion",
+  "rot": [
+   "Übung zur Diskussion"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9727.jpg",
+  "page": 97,
+  "marker": null,
+  "title": "Der Nutzungskontext als Grundlage für Nutzungsanforderungen",
+  "rot": [
+   "Nutzungskontext",
+   "Benutzenden",
+   "Ziele",
+   "Aufgaben",
+   "Ressourcen",
+   "Umgebung",
+   "Alle Bestandteile",
+   "Erfordernisse",
+   "Nutzungsanforderungen",
+   "heutige Nutzungskontext",
+   "Basis",
+   "Nutzungskontextes für die Gestaltung",
+   "Teilmenge",
+   "neue Benutzergruppen",
+   "Aufgabe",
+   "Teilaufgaben",
+   "Aufgabenmodell",
+   "Aufgabenmodell für die Gestaltung",
+   "Weiterentwicklung",
+   "Aufgabenmodells des heutigen Nutzungskontextes",
+   "optimiert",
+   "erstellen",
+   "ändern",
+   "inspizieren",
+   "Aufgabenobjekte",
+   "Aufgabenobjekte des heutigen Nutzungskontextes ganz oder teilweise in der Benutzungsschnittstelle",
+   "zusätzliche Informationen"
+  ],
+  "rot_box": [],
+  "hinweis": "Kopfbalken 'Die URE Story' nicht aufgenommen"
+ },
+ {
+  "file": "IMG_9728.jpg",
+  "page": 98,
+  "marker": null,
+  "title": "1. Einführung in die Nutzungskontextanalyse",
+  "rot": [
+   "1.4 – Nutzungsanforderungen als eigene Anforderungskategorie innerhalb der Stakeholderanforderungen",
+   "Unterschied",
+   "Nutzungsanforderungen",
+   "fachlichen Anforderungen",
+   "organisatorischen Anforderungen",
+   "Marktanforderungen",
+   "gesetzlichen Anforderungen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9728.jpg",
+  "page": 99,
+  "marker": null,
+  "title": "Fragefolie (?) ohne Titel: Was ist der Unterschied zwischen Nutzungsanforderungen und anderen Stakeholderanforderungen?",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9729.jpg",
+  "page": 100,
+  "marker": null,
+  "title": "Stakeholder- und Systemanforderung",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9729.jpg",
+  "page": 101,
+  "marker": "CPUX F",
+  "title": "Nutzungsanforderung (user requirement)",
+  "rot": [
+   "Gestaltung",
+   "Evaluierung",
+   "Erfordernisse",
+   "Art",
+   "Weise",
+   "Interaktion",
+   "Interaktionsanforderungen",
+   "Messbares Ziel",
+   "menschzentrierte Qualität",
+   "Anforderungen an die Nutzungsqualität"
+  ],
+  "rot_box": [],
+  "hinweis": "Marker ist roter Kreis mit 'CPUX F' (zweizeilig)"
+ },
+ {
+  "file": "IMG_9730.jpg",
+  "page": 102,
+  "marker": null,
+  "title": "Qualitative Nutzungsanforderung (qualitative user requirement)",
+  "rot": [
+   "Benutzer",
+   "Aufgabe",
+   "erkennen, auswählen",
+   "eingeben können müssen",
+   "Basis für Funktionen",
+   "rückverfolgbar",
+   "Erfordernisse",
+   "Nutzungskontextinformationen",
+   "Interaktionsanforderungen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9730.jpg",
+  "page": 103,
+  "marker": null,
+  "title": "Qualitative Nutzungsanforderung",
+  "rot": [
+   "Elemente",
+   "Benutzer",
+   "Information oder Ressource",
+   "erkennen",
+   "eingeben",
+   "auswählen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9731.jpg",
+  "page": 104,
+  "marker": null,
+  "title": "Quellen von qualitativen Nutzungsanforderungen",
+  "rot": [],
+  "rot_box": [
+   "qualitative Nutzungsanforderungen",
+   "direkte Quelle",
+   "indirekte Quelle"
+  ]
+ },
+ {
+  "file": "IMG_9731.jpg",
+  "page": 105,
+  "marker": "B",
+  "title": "Qualitative Nutzungsanforderung – Beispiele",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9732.jpg",
+  "page": 106,
+  "marker": "B",
+  "title": "Qualitative Nutzungsanforderung – Beispiele für Konsequenzen der Umsetzung",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9732.jpg",
+  "page": 107,
+  "marker": "B",
+  "title": "Qualitative Nutzungsanforderung – Beispiele für Stakeholder-anforderungen, die sich aus Nutzungsanforderungen ergeben",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9733.jpg",
+  "page": 108,
+  "marker": "Ü",
+  "title": "Übungsfolie ohne Titel: Formulieren Sie zwei qualitative Nutzungsanforderungen an die Dienstleistung UR-Engineering Seminare halten. (Teilnehmerperspektive)",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9733.jpg",
+  "page": 109,
+  "marker": null,
+  "title": "Quantitative Nutzungsanforderung (quantitative user requirement)",
+  "rot": [
+   "erforderliches Maß an menschzentrierter Qualität",
+   "Erfordernisse",
+   "erfüllen",
+   "Akzeptanzkriterien",
+   "Effektivität",
+   "Effizienz",
+   "Zufriedenstellung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9734.jpg",
+  "page": 110,
+  "marker": null,
+  "title": "Quantitative Nutzungsanforderung",
+  "rot": [
+   "Elemente",
+   "Stakeholder",
+   "Benutzergruppen",
+   "Anzahl / Prozentzahl der Benutzer",
+   "Gegenstand der Nutzung",
+   "Quantität",
+   "spezifische Bedingungen",
+   "zugrundeliegenden Erfordernisse verifiziert werden",
+   "nicht willkürlich"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9734.jpg",
+  "page": 111,
+  "marker": null,
+  "title": "Quellen von quantitativen Nutzungsanforderungen",
+  "rot": [],
+  "rot_box": [
+   "quantitative Nutzungsanforderungen",
+   "Nutzungskontext",
+   "Stakeholder"
+  ]
+ },
+ {
+  "file": "IMG_9735.jpg",
+  "page": 112,
+  "marker": "B",
+  "title": "Quantitative Nutzungsanforderung – Beispiele",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9735.jpg",
+  "page": 113,
+  "marker": "Ü",
+  "title": "Übungsfolie ohne Titel: Formulieren Sie zwei quantitative Nutzungsanforderungen an die Dienstleistung UR-Seminare halten. (Teilnehmerperspektive)",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9736.jpg",
+  "page": 114,
+  "marker": null,
+  "title": "Organisatorische Anforderung führen zu Nutzungsanforderungen",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9736.jpg",
+  "page": 115,
+  "marker": null,
+  "title": "Nutzungsanforderung führen zu organisatorischen Anforderungen",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9737.jpg",
+  "page": 116,
+  "marker": null,
+  "title": "Fragefolie (?) ohne Titel: Wo tauchen Nutzungsanforderungen entlang des Human-centred Designs auf?",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9737.jpg",
+  "page": 117,
+  "marker": null,
+  "title": "Nutzungsanforderungen in der Menschzentrierten Gestaltung (HCD)",
+  "rot": [
+   "Festlegung der zu entwickelnden menschzentrierten Qualitätsziele",
+   "Informationen zu und in \"Frühform\" von Bedürfnissen, Zielen, Wünschen, Forderungen, Funktionen",
+   "Testaufgabe und Kriterium der Evaluierung",
+   "Ableitung aus Erfordernissen und Stakeholderanforderungen",
+   "Priorisierung in der Planung der Produkt Road Map",
+   "Grundlage für Design, Funktionen und zu erreichende MZ-Qualität",
+   "Funktion oder Merkmal im Produkt, System"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9738.jpg",
+  "page": 118,
+  "marker": null,
+  "title": "Nutzungsanforderungen als eigene Anforderungskategorie innerhalb der Stakeholderanforderungen",
+  "rot": [
+   "Nutzungsanforderungen",
+   "Stakeholderanforderungen",
+   "Qualitative",
+   "Quantitative Nutzungsanforderungen",
+   "Qualitative Nutzungsanforderungen",
+   "System erkennen, auswählen",
+   "eingeben",
+   "Interaktions-anforderungen",
+   "Erfordernissen",
+   "Maß an Usability",
+   "Barrierefreiheit",
+   "User Experience",
+   "Vermeidung von Schäden durch die Benutzung",
+   "Stakeholdern",
+   "Akzeptanzkriterien festgelegt",
+   "direkte Quelle",
+   "Erfordernisse",
+   "indirekt zu Nutzungsanforderungen",
+   "vice versa",
+   "Nutzungsanforderung",
+   "unterschiedlich stark zur Usability"
+  ],
+  "rot_box": [],
+  "unsicher": true,
+  "hinweis": "Kopfbalken 'Die URE Story' nicht aufgenommen; Rot/Schwarz-Grenze bei 'Quantitative Nutzungsanforderungen' (Zeile 2) und 'abgeleitet' nicht ganz sicher"
+ },
+ {
+  "file": "IMG_9738.jpg",
+  "page": 119,
+  "marker": null,
+  "title": "2. Nutzungskontextanalysen planen",
+  "rot": [
+   "2.1 – Anlass und Ziele der Nutzungskontextanalyse ermitteln",
+   "Nutzungskontextanalyse",
+   "gegebenen Anlass",
+   "spezifizierten menschzentrierten Qualitätsziele"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9739.jpg",
+  "page": 120,
+  "marker": null,
+  "title": "Menschzentrierte Gestaltung",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9739.jpg",
+  "page": 121,
+  "marker": null,
+  "title": "Fragefolie (?) ohne Titel: Wann wird eine Nutzungskontextanalyse durchgeführt? Welche Anlässe für eine Nutzungskontextanalyse gibt es?",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9740.jpg",
+  "page": 122,
+  "marker": null,
+  "title": "Anlass einer Nutzungskontextanalyse",
+  "rot": [
+   "neues interaktives System",
+   "Akzeptanz / Nutzungsintensität",
+   "erhöht",
+   "Effizienz der Nutzung",
+   "Funktionsumfangs erweitert",
+   "Usability-Evaluierung",
+   "Nutzungsanforderungen ermittelt",
+   "weiterentwickelt / verändert"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9740.jpg",
+  "page": 123,
+  "marker": null,
+  "title": "Sponsor (sponsor)",
+  "rot": [
+   "Budget",
+   "entscheidet über Budgets",
+   "Erarbeitung von Interviewleitfäden",
+   "eingebunden",
+   "User Requirements Engineer",
+   "fachlicher Ansprechpartner"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9741.jpg",
+  "page": 124,
+  "marker": null,
+  "title": "Menschzentrierte Qualitätsziele (human-centred quality objectives)",
+  "rot": [
+   "beabsichtigtes Ergebnis",
+   "Usability",
+   "Barrierefreiheit",
+   "User Experience",
+   "Vermeidung von Schäden durch die Benutzung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9741.jpg",
+  "page": 125,
+  "marker": null,
+  "title": "Menschzentrierte Qualitätsziele",
+  "rot": [
+   "Ziele der Stakeholder in Bezug auf die menschzentrierte Qualität",
+   "Planung der menschzentrierten Gestaltung spezifiziert",
+   "explizite Spezifizieren",
+   "Fokus und Umfang",
+   "können als verifizierbare quantitative Nutzungsanforderungen"
+  ],
+  "rot_box": [],
+  "unsicher": true,
+  "hinweis": "'Fokus und Umfang' wirkt dunkelrot, aber zusätzlich pink unterstrichen; nicht ganz sicher"
+ },
+ {
+  "file": "IMG_9742.jpg",
+  "page": 126,
+  "marker": "B",
+  "title": "Menschzentrierte Qualitätsziele – Beispiele",
+  "rot": [
+   "Usability",
+   "Barrierefreiheit"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9742.jpg",
+  "page": 127,
+  "marker": "B",
+  "title": "Menschzentrierte Qualitätsziele – Beispiele",
+  "rot": [
+   "User Experience",
+   "Vermeidung von Schäden durch die Benutzung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9743.jpg",
+  "page": 128,
+  "marker": "+",
+  "title": "Abgrenzung Menschzentrierte Qualitätsziel und Projektziele",
+  "rot": [],
+  "rot_box": [],
+  "hinweis": "Marker ist roter Kreis mit weißem Plus"
+ },
+ {
+  "file": "IMG_9743.jpg",
+  "page": 129,
+  "marker": null,
+  "title": "Anlass und Ziele der Nutzungskontextanalyse ermitteln",
+  "rot": [
+   "Nutzungskontextinformationen zu erheben",
+   "Erfordernisse zu identifizieren",
+   "Grundlage für die Ableitung von Nutzungsanforderungen",
+   "Situationen",
+   "Entwicklung eines neuen interaktiven Systems",
+   "Verbesserung eines bestehenden interaktiven Systems",
+   "Ausgangspunkt",
+   "Planung des Umfangs",
+   "des Schwerpunkts einer Nutzungskontextanalyse",
+   "menschzentrierte Qualitätsziele festgelegt werden",
+   "Projektziele",
+   "Sicht der Benutzenden",
+   "Zusätzlich zu den Geschäftszielen",
+   "Usability",
+   "Barrierefreiheit",
+   "User Experience",
+   "Vermeidung von Schäden durch die Benutzung",
+   "Nutzungsqualität"
+  ],
+  "rot_box": [],
+  "hinweis": "Kopfbalken 'Die URE Story' nicht aufgenommen"
+ },
+ {
+  "file": "IMG_9744.jpg",
+  "page": 130,
+  "marker": null,
+  "title": "2. Nutzungskontextanalysen planen",
+  "rot": [
+   "2.2 – Das Vorgehen bei der Nutzungskontextanalyse festlegen",
+   "bekannte Informationen systematisch berücksichtigt",
+   "unbekannte Informationen systematisch erhoben"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9744.jpg",
+  "page": 131,
+  "marker": null,
+  "title": "Fragefolie (?) ohne Titel: Welche Informationen benötigen wir als User Requirements Engineers für eine Nutzungskontextanalyse? Mit welchen Methoden gewinnen wir diese Informationen? Welche Arten von Informationstypen gibt es generell? Und welche benötigen wir idealerweise?",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9745.jpg",
+  "page": 132,
+  "marker": null,
+  "title": "Nutzungskontextinformation (context of use information)",
+  "rot": [
+   "Fragment",
+   "Erfordernis",
+   "Nutzungskontextinformation ersetzt keine",
+   "Nutzungskontextbeschreibung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9745.jpg",
+  "page": 133,
+  "marker": null,
+  "title": "Empirische und konstruierte Information (empirical and constructed information)",
+  "rot": [
+   "Faktische Information",
+   "aus empirischer Information abgeleitet",
+   "Annahmen müssen durch Evaluierung bestätigt werden"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9746.jpg",
+  "page": 134,
+  "marker": null,
+  "title": "User Research (user research)",
+  "rot": [
+   "alle Aktivitäten",
+   "Analyse",
+   "Design",
+   "Usability-Evaluierung",
+   "Nutzungskontextanalyse",
+   "Herleitung von Nutzungsanforderungen",
+   "zentraler Bestandteil von User Research"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9746.jpg",
+  "page": 135,
+  "marker": null,
+  "title": "Konsens zum Vorgehen in einem Human-centred Project erstellen",
+  "rot": [
+   "Menschzentrierte Qualitätsziele",
+   "erarbeiten",
+   "Daten",
+   "Annahmen",
+   "identifizieren und dokumentieren",
+   "Wissenslücken",
+   "Unsicherheiten",
+   "identifizieren",
+   "Angemessene Fragen",
+   "formulieren",
+   "Personen für Befragungen",
+   "Vorgehen",
+   "entscheiden",
+   "Ressourcen planen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9747.jpg",
+  "page": 136,
+  "marker": null,
+  "title": "Nutzungskontextanalyse (context of use analysis) klassisch vs. modellbasiert (classic vs. model-based)",
+  "rot": [
+   "Planung",
+   "Erhebung",
+   "Dokumentation",
+   "Nutzungskontextinformationen",
+   "Erfordernisse",
+   "Nutzungsanforderungen",
+   "systematisch ohne Annahmen",
+   "alle Nutzungskontextinformationen",
+   "auf Basis bekannter Nutzungskontextinformationen",
+   "vorliegender Aufgabenmodelle",
+   "bereits bekannter Nutzungsanforderungen",
+   "Nutzungsszenarien",
+   "vorhandener Prototypen offene Fragen",
+   "gesammelt werden"
+  ],
+  "rot_box": [
+   "Planung",
+   "Erhebung und Dokumentation",
+   "Analyse"
+  ],
+  "hinweis": "rot_box hier: dunkle Schrift auf hellrot gefüllten Labels im Mini-Diagramm (nicht weiß auf rot); Mini-Diagramm-Text zu klein, nicht transkribiert"
+ },
+ {
+  "file": "IMG_9747.jpg",
+  "page": 137,
+  "marker": null,
+  "title": "Klassische vs. modellbasierte Nutzungskontextanalyse (NKA)",
+  "rot": [
+   "!"
+  ],
+  "rot_box": [
+   "klassische Nutzungskontextanalyse",
+   "modellbasierte Nutzungskontextanalyse"
+  ]
+ },
+ {
+  "file": "IMG_9748.jpg",
+  "page": 138,
+  "marker": null,
+  "title": "Klassische vs. modellbasierte Nutzungskontextanalyse (NKA)",
+  "rot": [
+   "wesentliche Unterschied",
+   "mehr empirische Nutzungskontextinformationen",
+   "ökonomischer",
+   "weniger empirische Nutzungskontextinformationen",
+   "risikobehafteter"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9748.jpg",
+  "page": 139,
+  "marker": null,
+  "title": "Klassische vs. modellbasierte Nutzungskontextanalyse",
+  "rot": [
+   "niedriges",
+   "kein Wissen",
+   "Dissens",
+   "Fragestellungen",
+   "allgemein",
+   "neue Erkenntnisse",
+   "Innovationspotentiale",
+   "unbekannt",
+   "Wissen",
+   "liegt vor",
+   "Skepsis",
+   "viel Erfahrung",
+   "interaktiven System",
+   "spezifischer Fokus",
+   "spezifische Erkenntnisse",
+   "sehr spezifisch"
+  ],
+  "rot_box": [
+   "Ausgangssituation klassische NKA",
+   "Ausgangssituation modellbasierte NKA"
+  ]
+ },
+ {
+  "file": "IMG_9749.jpg",
+  "page": 140,
+  "marker": null,
+  "title": "Klassische vs. modellbasierte Nutzungskontextanalyse",
+  "rot": [
+   "Konsens",
+   "Vorgehen",
+   "Benutzergruppenprofile",
+   "spezifizieren",
+   "Festlegung",
+   "Fragestellungen",
+   "Kontextuelle Interviews",
+   "Beobachtungen",
+   "Fokusgruppen",
+   "Identifizieren",
+   "Annahmen",
+   "Wissen",
+   "NK",
+   "Aufgabenmodelle",
+   "NA",
+   "Lücken",
+   "Unklarheiten",
+   "Optimierungsbedarfe",
+   "Bewahrenswertes",
+   "Interviews"
+  ],
+  "rot_box": [
+   "Vorgehen klassische NKA",
+   "Vorgehen modellbasierte NKA"
+  ],
+  "unsicher": true,
+  "hinweis": "kleine Schrift, rechte Spalte; rote Aufzählungsziffern rechts nicht aufgenommen"
+ },
+ {
+  "file": "IMG_9749.jpg",
+  "page": 141,
+  "marker": null,
+  "title": "NKA Vorgehen",
+  "rot": [
+   "klassische Nutzungskontextanalyse",
+   "modellbasierte Nutzungskontextanalyse"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9752.jpg",
+  "page": 142,
+  "marker": "Ü",
+  "title": "Praktische Übung 3",
+  "rot": [
+   "Praktische Übung 3"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9752.jpg",
+  "page": 143,
+  "marker": null,
+  "title": "Weitere Methoden, Vorgehen zum Verstehen und Erheben des Nutzungskontextes, die UX-Professionals kennen sollten!",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9754.jpg",
+  "page": 144,
+  "marker": null,
+  "title": "Design Thinking",
+  "rot": [
+   "systematischer Ansatz",
+   "Lösungen für komplexe Probleme",
+   "allen Lebensbereichen",
+   "drei Elemente",
+   "Menschen",
+   "Orte",
+   "Prozess"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9754.jpg",
+  "page": 145,
+  "marker": null,
+  "title": "Design Thinking",
+  "rot": [
+   "umfassendes",
+   "tiefes Verstehen des Problemraums",
+   "uneingeschränkte Kreativität bei der Lösungsfindung",
+   "jedoch Nutzungsanforderungen nur implizit",
+   "nicht explizit formuliert",
+   "dokumentiert"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9755.jpg",
+  "page": 146,
+  "marker": null,
+  "title": "Design Thinking",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9755.jpg",
+  "page": 147,
+  "marker": null,
+  "title": "Design Thinking",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9756.jpg",
+  "page": 148,
+  "marker": null,
+  "title": "Design Thinking",
+  "rot": [
+   "offene Fehlerkultur",
+   "sechsstufigen iterativen Design-Prozess",
+   "Hang nach Perfektion zu unterbinden",
+   "Ergebnisse erlebbar"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9756.jpg",
+  "page": 149,
+  "marker": "+",
+  "title": "Gemeinsamkeiten Design Thinking und HCD (CPUX-DS)",
+  "rot": [
+   "NICHT",
+   "Bedürfnisse",
+   "Forschung verstanden werden",
+   "erfahrbar",
+   "Prototypen",
+   "Iterationen",
+   "Evaluieren",
+   "nutzen Feedback"
+  ],
+  "rot_box": [
+   "Design Thinking und HCD"
+  ]
+ },
+ {
+  "file": "IMG_9757.jpg",
+  "page": 150,
+  "marker": "+",
+  "title": "Gegensätze Design Thinking und HCD (CPUX-DS)",
+  "rot": [
+   "kreatives Chaos",
+   "ISO-basiert"
+  ],
+  "rot_box": [
+   "Design Thinking, Design Sprint",
+   "HCD"
+  ]
+ },
+ {
+  "file": "IMG_9757.jpg",
+  "page": 151,
+  "marker": null,
+  "title": "Lean UX",
+  "rot": [
+   "Usability",
+   "User Experience",
+   "agile Entwicklung",
+   "wirtschaftliche Vorteile",
+   "geeigneter Ausgangspunkt",
+   "Lean Startup",
+   "Design Thinking",
+   "kombinieren",
+   "Agile Entwicklung ist",
+   "Design Thinking ist Basis des Lean UX"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9758.jpg",
+  "page": 152,
+  "marker": null,
+  "title": "Das Vorgehen bei der Nutzungskontextanalyse festlegen",
+  "rot": [
+   "Nutzungskontextanalyse",
+   "Planung",
+   "Erhebung",
+   "Dokumentation",
+   "Identifikation",
+   "Erfordernisse",
+   "Ableitung",
+   "Nutzungsanforderungen",
+   "beginnt",
+   "Sammeln von empirischen Informationen",
+   "Empirische Informationen",
+   "Grundlage",
+   "konstruierte Informationen",
+   "User Research",
+   "User Researcher",
+   "User Experience Researcher",
+   "direkte Interaktion mit Benutzern"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9758.jpg",
+  "page": 153,
+  "marker": null,
+  "title": "Das Vorgehen bei der Nutzungskontextanalyse festlegen",
+  "rot": [
+   "Fokus",
+   "Nutzungskontextanalyse",
+   "breit",
+   "detailliert",
+   "wenig Wissen",
+   "nicht einig",
+   "klassische Nutzungskontextanalyse",
+   "keine Annahmen",
+   "umfassendes Wissen",
+   "Informationen",
+   "modellbasierte Nutzungskontextanalyse",
+   "bekannte Informationen",
+   "strukturiert",
+   "zielgerichtete Fragen zu unbekannten Informationen formuliert",
+   "Lean UX",
+   "Design Thinking"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9759.jpg",
+  "page": 154,
+  "marker": null,
+  "title": "3. Nutzungskontextinformation erheben und dokumentieren",
+  "rot": [
+   "3.1 – Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren",
+   "authentische Nutzungskontextinformationen",
+   "authentischen Repräsentanten"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9759.jpg",
+  "page": 155,
+  "marker": null,
+  "title": "Menschzentrierte Gestaltung (HCD)",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9760.jpg",
+  "page": 156,
+  "marker": null,
+  "title": null,
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9760.jpg",
+  "page": 157,
+  "marker": null,
+  "title": "Benutzergruppen, Benutzergruppenprofil (user group, user-group profile)",
+  "rot": [
+   "persönlichen Merkmalen",
+   "Nutzungskontexten",
+   "verallgemeinerte Beschreibung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9761.jpg",
+  "page": 158,
+  "marker": "CPUX F",
+  "title": "Usability (Gebrauchstauglichkeit)",
+  "rot": [
+   "bestimmten Benutzern",
+   "bestimmten Nutzungskontext",
+   "bestimmte Ziele",
+   "interaktiven System",
+   "Benutzern",
+   "Aufgaben",
+   "Ziel",
+   "Umgebungen",
+   "Ressourcen",
+   "Arbeitsergebnis"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9761.jpg",
+  "page": 159,
+  "marker": "B",
+  "title": "Benutzergruppenprofil – Beispiel",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9763.jpg",
+  "page": 160,
+  "marker": null,
+  "title": "Rekrutierungsfragebogen (recruitment screener)",
+  "rot": [
+   "Kriterien",
+   "Benutzergruppenprofil abgeleitet",
+   "Reihe von Fragen",
+   "Kriterien erfüllt sind",
+   "Hintergrund",
+   "Wissen",
+   "Einstellungen",
+   "Interessen",
+   "Ausschlusskriterien",
+   "Basis für den Rekrutierungsfragebogen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9763.jpg",
+  "page": 161,
+  "marker": "B",
+  "title": "Rekrutierungsfragebogen – Beispiel",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9765.jpg",
+  "page": 162,
+  "marker": "W",
+  "title": "Rekrutierung von Benutzern",
+  "rot": [],
+  "rot_box": [
+   "Entwicklung für extern",
+   "Benutzende sind selbst Kunden oder in einer Kundenorganisation",
+   "Entwicklung für intern",
+   "Benutzende in eigener Organisation"
+  ]
+ },
+ {
+  "file": "IMG_9765.jpg",
+  "page": 163,
+  "marker": null,
+  "title": "Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren",
+  "rot": [
+   "valide empirische Informationen",
+   "authentische Repräsentanten",
+   "Benutzergruppenprofile",
+   "Attribute der Benutzenden",
+   "Benutzergruppe",
+   "bestimmte Organisation",
+   "Benutzergruppenprofil zur Rekrutierung ausreichend",
+   "kommerzielles System",
+   "Produkt",
+   "Software",
+   "Benutzende rekrutiert",
+   "Rekrutierungsfragebogen",
+   "potenzielle Teilnehmer",
+   "überprüft",
+   "eingeladen"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9766.jpg",
+  "page": 164,
+  "marker": null,
+  "title": "3. Nutzungskontextinformation erheben und dokumentieren",
+  "rot": [
+   "3.2 – Erhebung von Nutzungskontextinformationen vorbereiten und durchführen",
+   "passenden Methoden",
+   "ausgewählt",
+   "professionell angewendet"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9766.jpg",
+  "page": 165,
+  "marker": null,
+  "title": "",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9767.jpg",
+  "page": 166,
+  "marker": null,
+  "title": "Moderator (moderator)",
+  "rot": [
+   "Interview",
+   "Beobachtung",
+   "Fokusgruppe",
+   "Usability-Testsitzung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9767.jpg",
+  "page": 167,
+  "marker": null,
+  "title": "Protokollant (note-taker)",
+  "rot": [
+   "Protokollanten erlaubt dem Moderator",
+   "Durchführung",
+   "zu konzentrieren"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9768.jpg",
+  "page": 168,
+  "marker": null,
+  "title": "Beobachter (observer)",
+  "rot": [
+   "Person",
+   "beobachtet",
+   "nicht aktiv",
+   "eingreifen",
+   "!",
+   "Nicht zu verwechseln mit dem Moderator in einer Beobachtung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9768.jpg",
+  "page": 169,
+  "marker": null,
+  "title": "Erheben von Nutzungskontextinformation",
+  "rot": [],
+  "rot_box": [
+   "(kontextuelles) Interview",
+   "Beobachtung",
+   "Fokusgruppe",
+   "Benutzer-befragung"
+  ]
+ },
+ {
+  "file": "IMG_9769.jpg",
+  "page": 170,
+  "marker": null,
+  "title": "Interview, Interviewleitfaden (interview, interview guide)",
+  "rot": [
+   "Methode der Datensammlung",
+   "sorgfältig ausgewählte Personen",
+   "Verständnis",
+   "tiefes Verständnis",
+   "Nutzungskontextes",
+   "Erfordernisse",
+   "zu identifizieren",
+   "unabhängig von der aktuell",
+   "Lösung",
+   "Liste geeigneter Fragen und Hinweise"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9769.jpg",
+  "page": 171,
+  "marker": null,
+  "title": "kontextuelles Interview (contextual interview)",
+  "rot": [
+   "an dem Ort stattfindet",
+   "normalerweise Aufgaben",
+   "ausführen",
+   "contextual inquiry"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9774.jpg",
+  "page": 172,
+  "marker": null,
+  "title": "Meister-Schüler-Modell (master-apprentice model)",
+  "rot": [
+   "Benutzer",
+   "Meister",
+   "Interviewer",
+   "Schüler",
+   "Ziele",
+   "Aufgaben",
+   "im Detail zu verstehen",
+   "Haltung",
+   "Schüler (Interviewende)",
+   "Meistern (Benutzende)"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9774.jpg",
+  "page": 173,
+  "marker": null,
+  "title": "Fragetypen",
+  "rot": [
+   "Offene Frage",
+   "keinen Hinweis",
+   "erwartete Format",
+   "erwarteten Inhalt",
+   "Geschlossene Frage",
+   "Antwort",
+   "vordefinierten Satz von Alternativen",
+   "Neutrale Frage",
+   "keine impliziten Annahmen",
+   "keinen Ansatz",
+   "auszuschließen",
+   "zu lenken",
+   "Suggestivfrage",
+   "Präferenz",
+   "vorgibt",
+   "versucht"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9776.jpg",
+  "page": 174,
+  "marker": null,
+  "title": "Gütekriterien eines kontextuellen Interviews",
+  "rot": [
+   "Haltung, Einstellung des Interviewers",
+   "Methodische Kompetenz",
+   "Vorbereitung",
+   "Interview-Techniken",
+   "Herausarbeiten",
+   "zugrunde liegenden Bedürfnisse",
+   "Fachliche Kompetenz",
+   "Durchführung",
+   "Methode anpassen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9776.jpg",
+  "page": 175,
+  "marker": null,
+  "title": "Typisches Vorgehen bei einem kontextuellen Interview",
+  "rot": [],
+  "rot_box": [
+   "Planen",
+   "Vorbereiten",
+   "Durchführen",
+   "Dokumentieren"
+  ]
+ },
+ {
+  "file": "IMG_9780.jpg",
+  "page": 176,
+  "marker": "W",
+  "title": "Typische Fehler bei einem kontextuellen Interview",
+  "rot": [
+   "Kleben",
+   "Fehlerhaftes Paraphrasieren",
+   "Keine Überprüfung des Gesagten",
+   "Hinzufügen",
+   "Schlechte Fragen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9780.jpg",
+  "page": 177,
+  "marker": null,
+  "title": "Erheben von Nutzungskontextinformation",
+  "rot": [],
+  "rot_box": [
+   "(kontextuelles) Interview",
+   "Beobachtung",
+   "Fokusgruppe",
+   "Benutzer-befragung"
+  ]
+ },
+ {
+  "file": "IMG_9783.jpg",
+  "page": 178,
+  "marker": null,
+  "title": "Beobachtung (observation)",
+  "rot": [
+   "Sammeln von Kontextinformationen",
+   "User Experience Professional Benutzer beobachtet",
+   "Aufgaben ausführen",
+   "möglichst natürlichen Kontext",
+   "manuelle Abläufe",
+   "UX-Professionals",
+   "Stakeholder"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9783.jpg",
+  "page": 179,
+  "marker": null,
+  "title": "Selbstbeobachtung (self-observation), Cultural Probe (cultural probe), Tagebuchstudie (diary study)",
+  "rot": [
+   "Benutzer sich selbst beobachtet",
+   "Proben",
+   "Spuren",
+   "Ereignisse",
+   "Gefühle",
+   "Verhaltensweisen",
+   "Interaktionen",
+   "aufzeichnen",
+   "Selbstbeobachtung",
+   "\"Festhalten\"",
+   "späterem Erinnern"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9784.jpg",
+  "page": 180,
+  "marker": null,
+  "title": "Formen der Beobachtung",
+  "rot": [
+   "strukturiert",
+   "unstrukturiert",
+   "gezielt",
+   "geplant",
+   "Subjektivität des Beobachters zu reduzieren",
+   "festgelegte Beobachtungsschemata und -kategorien",
+   "teilnehmend",
+   "nicht-teilnehmend",
+   "an der Durchführung",
+   "beteiligt",
+   "ethnografische Studien",
+   "nicht-teilnehmenden"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9784.jpg",
+  "page": 181,
+  "marker": null,
+  "title": "Formen der Beobachtung",
+  "rot": [
+   "offen",
+   "verdeckt",
+   "Beobachter wahrnehmbar",
+   "gibt der Beobachter seine Identität nicht bekannt",
+   "im Feld",
+   "im Labor",
+   "natürlichen Umfeld",
+   "Laborumgebung entsprechend dem Untersuchungszweck"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9785.jpg",
+  "page": 182,
+  "marker": null,
+  "title": "Gütekriterien einer Beobachtung",
+  "rot": [
+   "objektiv",
+   "reliabel",
+   "valide",
+   "unabhängig vom Beobachter",
+   "objektiv",
+   "reliabel",
+   "gleiche Ergebnis",
+   "valide",
+   "misst (erfasst) genau das",
+   "effizient zu dokumentieren",
+   "mindestens",
+   "zwei Personen",
+   "gemeinsame untersuchungsbezogene Einarbeitung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9785.jpg",
+  "page": 183,
+  "marker": null,
+  "title": "Typisches Vorgehen bei der Beobachtung",
+  "rot": [],
+  "rot_box": [
+   "Planen",
+   "Vorbereiten",
+   "Durchführen",
+   "Dokumentieren"
+  ]
+ },
+ {
+  "file": "IMG_9786.jpg",
+  "page": 184,
+  "marker": "W",
+  "title": "Typische Fehler bei der Beobachtung",
+  "rot": [
+   "Vorwissen",
+   "Annahmen",
+   "Wertung",
+   "Interpretation",
+   "Beobachtung",
+   "frühe Abstraktion",
+   "zunehmender Vertrautheit",
+   "nimmt",
+   "Aufmerksamkeit",
+   "Zuverlässigkeit",
+   "ab"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9786.jpg",
+  "page": 185,
+  "marker": null,
+  "title": "Erheben von Nutzungskontextinformation",
+  "rot": [],
+  "rot_box": [
+   "(kontextuelles) Interview",
+   "Beobachtung",
+   "Fokusgruppe",
+   "Benutzer-befragung"
+  ]
+ },
+ {
+  "file": "IMG_9787.jpg",
+  "page": 186,
+  "marker": null,
+  "title": "Fokusgruppe (focus group)",
+  "rot": [
+   "moderierte Diskussion",
+   "Ergebnisse",
+   "Nutzungskontextinformationen",
+   "tiefes Verständnis",
+   "verschiedener Perspektiven",
+   "Ideen zu entwickeln",
+   "Anforderungen an Lösungen",
+   "verschiedenen Perspektiven"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9787.jpg",
+  "page": 187,
+  "marker": null,
+  "title": "Fokusgruppe",
+  "rot": [
+   "tiefe Verarbeitung der Thematik",
+   "hohen Erkenntnisgewinn",
+   "aufwändige Methode",
+   "kein Ersatz"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9788.jpg",
+  "page": 188,
+  "marker": null,
+  "title": "Gütekriterien für eine Fokusgruppe",
+  "rot": [
+   "Strukturierter Ablauf",
+   "Teilmethoden zur Stimulierung der Auseinandersetzung",
+   "Angemessene Anzahl",
+   "Teilnehmerzusammensetzung",
+   "Moderationskompetenz"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9788.jpg",
+  "page": 189,
+  "marker": null,
+  "title": "Typisches Vorgehen bei einer Fokusgruppe",
+  "rot": [],
+  "rot_box": [
+   "Planen",
+   "Vorbereiten",
+   "Durchführen",
+   "Dokumentieren"
+  ]
+ },
+ {
+  "file": "IMG_9789.jpg",
+  "page": 190,
+  "marker": "W",
+  "title": "Typische Fehler bei einer Fokusgruppe",
+  "rot": [
+   "Mangelnde Moderationskompetenz",
+   "Vorwissen",
+   "Annahmen",
+   "Teilnehmerperspektiven",
+   "missachtet",
+   "verfälscht",
+   "Mangelnde Steuerung",
+   "Falsche",
+   "schlechte Rekrutierung",
+   "kurze Erkundungsphase",
+   "frühen Abstraktionen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9789.jpg",
+  "page": 191,
+  "marker": "W",
+  "title": "Kriterien für die Auswahl und Kombination von Methoden, gesammelte Antworten",
+  "rot": [],
+  "rot_box": [
+   "kontextuelles Interview",
+   "Beobachtung",
+   "Fokusgruppe"
+  ]
+ },
+ {
+  "file": "IMG_9790.jpg",
+  "page": 192,
+  "marker": "W",
+  "title": "Kriterien für die Auswahl und Kombination von Methoden, gesammelte Antworten",
+  "rot": [],
+  "rot_box": [
+   "kontextuelles Interview",
+   "Beobachtung",
+   "Fokusgruppe"
+  ]
+ },
+ {
+  "file": "IMG_9790.jpg",
+  "page": 193,
+  "marker": null,
+  "title": "Und was wird sonst noch erhoben?",
+  "rot": [],
+  "rot_box": [
+   "(kontextuelles) Interview",
+   "Beobachtung",
+   "Fokusgruppe",
+   "Benutzer-befragung"
+  ]
+ },
+ {
+  "file": "IMG_9791.jpg",
+  "page": 194,
+  "marker": null,
+  "title": "Mentales Modell (mental model)",
+  "rot": [
+   "Konzept",
+   "Umgebung",
+   "Funktionsweise",
+   "Erfahrung",
+   "mentalen Modellen,",
+   "Systemmodell",
+   "Interpretation von wahrgenommenen Aktionen und sichtbaren Strukturen des interaktiven Systems",
+   "Benutzung anderer oder ähnlicher Systeme",
+   "unvollständig",
+   "widersprüchlich",
+   "nicht hindernisfrei benutzen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9791.jpg",
+  "page": 195,
+  "marker": null,
+  "title": "Mentales Modell",
+  "rot": [
+   "Offengelegte mentale Modelle",
+   "Erfordernissen.",
+   "Teaching-back:",
+   "Art und Weise der Aufgabenerledigung",
+   "erklären",
+   "Teaching-back",
+   "Paraphrasieren",
+   "Meister-Schüler-Modell"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9792.jpg",
+  "page": 196,
+  "marker": null,
+  "title": "Benutzerwünsche in Interviews",
+  "rot": [
+   "Wunsch",
+   "Wünsche hinterfragen",
+   "Benutzerwünsche",
+   "gesammelt werden",
+   "Akzeptanz von Lösungen",
+   "Lösungsvorschlägen",
+   "zusammen",
+   "Nutzungsanforderungen",
+   "nicht Ausgangspunkt für die Entwicklung",
+   "psychologische Bedürfnisse"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9792.jpg",
+  "page": 197,
+  "marker": null,
+  "title": "Benutzerwunsch und Bedürfnis",
+  "rot": [
+   "Benutzerwünsche",
+   "psychologische Bedürfnisse",
+   "kontextuellen Interviews ermittelt",
+   "psychologische Bedürfnisse",
+   "kontextuellen Interviews",
+   "Benutzerwünsche basieren oft auf Bedürfnissen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9793.jpg",
+  "page": 198,
+  "marker": null,
+  "title": "Psychologische Bedürfnisse",
+  "rot": [
+   "gemäß eigener Vorstellungen zu handeln",
+   "Beispiel",
+   "fähig und effektiv zu sein",
+   "Beispiel",
+   "mit Menschen regelmäßigen intimen Kontakt zu haben",
+   "Beispiel",
+   "gemocht und respektiert zu werden",
+   "Beispiel"
+  ],
+  "rot_box": [
+   "Psychologisches Bedürfnis",
+   "Beschreibung"
+  ]
+ },
+ {
+  "file": "IMG_9793.jpg",
+  "page": 199,
+  "marker": null,
+  "title": "Psychologische Bedürfnisse",
+  "rot": [
+   "Neues zu entdecken und ausreichend Anregung zu bekommen",
+   "Beispiel",
+   "sicher fühlen und sein Leben unter Kontrolle",
+   "Beispiel",
+   "bedeutsame Momente bewusst zu erleben",
+   "Beispiel"
+  ],
+  "rot_box": [
+   "Psychologisches Bedürfnis",
+   "Beschreibung"
+  ]
+ },
+ {
+  "file": "IMG_9794.jpg",
+  "page": 200,
+  "marker": "B",
+  "title": "Benutzerwünsche, Bedürfnisse, emotionale Zustände – Beispiele",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9794.jpg",
+  "page": 201,
+  "marker": "+",
+  "title": "Bedürfnis (user need)\nals Brücke vom Wunsch zum emotionalen Zustand",
+  "rot": [
+   "angestrebte emotionale Zustände",
+   "sicher",
+   "privat",
+   "motiviert",
+   "anerkannt",
+   "zufrieden",
+   "glücklich",
+   "selbstbestimmt",
+   "Kontrolle"
+  ],
+  "rot_box": [
+   "Sozialbedürfnisse",
+   "Sicherheit",
+   "Grund- oder Existenzbedürfnisse"
+  ]
+ },
+ {
+  "file": "IMG_9796.jpg",
+  "page": 202,
+  "marker": "W",
+  "title": "Gegenüberstellung Benutzerwunsch und Erfordernis",
+  "rot": [
+   "NICHT"
+  ],
+  "rot_box": [
+   "Benutzerwunsch",
+   "Erfordernis"
+  ]
+ },
+ {
+  "file": "IMG_9796.jpg",
+  "page": 203,
+  "marker": "Ü",
+  "title": "Praktische Übung 4",
+  "rot": [
+   "Praktische Übung 4"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9797.jpg",
+  "page": 204,
+  "marker": null,
+  "title": "Erhebung von Nutzungskontextinformationen vorbereiten und durchführen",
+  "rot": [
+   "Empirische Nutzungskontextinformationen",
+   "kontextuellen",
+   "Interviews",
+   "Beobachtungen",
+   "Fokusgruppen",
+   "Moderator und ein Protokollant als Team",
+   "Meister-Schüler-Modell",
+   "Kontextuelle Interviews",
+   "umfassendes Verständnis der Komponenten",
+   "Nutzungskontextes",
+   "Wechselbeziehungen",
+   "Beobachtungen",
+   "Fokusgruppen",
+   "Interviews",
+   "physischen Umgebung",
+   "kontextuelles Interview"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9797.jpg",
+  "page": 205,
+  "marker": null,
+  "title": "Erhebung von Nutzungskontextinformationen vorbereiten und durchführen",
+  "rot": [
+   "Interviewcheckliste",
+   "Fragen sind offen und neutral",
+   "Geschlossene Fragen",
+   "Suggestivfragen",
+   "Beobachtung",
+   "physischen Umgebung",
+   "Protokollanten",
+   "beobachtende Moderator unterbricht",
+   "nicht",
+   "außer",
+   "klärende Frage",
+   "objektive",
+   "vollständige Informationen.",
+   "Tagebuchstudie",
+   "bestimmten Zeitabständen",
+   "bestimmten Situationen"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9798.jpg",
+  "page": 206,
+  "marker": null,
+  "title": "Erhebung von Nutzungskontextinformationen vorbereiten und durchführen",
+  "rot": [
+   "Fokusgruppe",
+   "einer",
+   "mehrerer Benutzergruppen",
+   "Moderator:in durch eine Diskussion",
+   "verschiedenen Perspektiven",
+   "Detailtiefe",
+   "Durchführung von Interviews",
+   "Moderation von Fokusgruppen",
+   "Moderator und Protokollant bewusst",
+   "Grundlage ihrer mentalen Modelle",
+   "äußern Benutzende ihre Wünsche.",
+   "Benutzerwünsche",
+   "keine Nutzungskontextinformationen",
+   "Erfordernisse",
+   "Nutzungsanforderungen,",
+   "Benutzerwünsche können zu Nutzungsanforderungen führen,",
+   "Erfordernisse"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9798.jpg",
+  "page": 207,
+  "marker": null,
+  "title": "3. Nutzungskontextinformation erheben und dokumentieren",
+  "rot": [
+   "3.3 – Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen",
+   "erhobene Nutzungskontextinformationen von Dritten verstanden",
+   "ausgewertet"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9800.jpg",
+  "page": 208,
+  "marker": null,
+  "title": "Der Nutzungskontext und die 5 Komponenten – B/A&Z/U/R",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9800.jpg",
+  "page": 209,
+  "marker": null,
+  "title": "Nutzungskontextbeschreibung (context of use discription)",
+  "rot": [
+   "Alle",
+   "Darlegungen",
+   "Benutzer",
+   "Ziele",
+   "Aufgaben",
+   "Ressourcen",
+   "Umgebungen",
+   "Narrative",
+   "Modellhafte"
+  ],
+  "rot_box": [
+   "Zusammenfassende NK-Beschreibungen",
+   "Detaillierte NK-Beschreibungen"
+  ]
+ },
+ {
+  "file": "IMG_9801.jpg",
+  "page": 210,
+  "marker": null,
+  "title": "Zusammenfassende Nutzungskontextbeschreibung (summary context of use description)",
+  "rot": [
+   "Benutzergruppen",
+   "Aufgaben",
+   "Ziele",
+   "Bedingungen",
+   "Umgebung",
+   "Ressourcen"
+  ],
+  "rot_box": [
+   "Zusammenfassende NK-Beschreibungen"
+  ]
+ },
+ {
+  "file": "IMG_9801.jpg",
+  "page": 211,
+  "marker": null,
+  "title": "Zusammenfassende Nutzungskontextbeschreibung",
+  "rot": [
+   "Projektbeginn",
+   "bekannt",
+   "empirischer Information",
+   "Annahmen",
+   "Ausgangspunkt",
+   "modellbasierte Nutzungskontextanalyse",
+   "Planung",
+   "kein Ersatz",
+   "zusammenfassenden Kommunikation"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9802.jpg",
+  "page": 212,
+  "marker": null,
+  "title": "Detaillierte Nutzungskontextbeschreibung (detailed context of use discription)",
+  "rot": [
+   "zusammenhängende Beschreibung",
+   "Benutzer",
+   "Aufgaben",
+   "Ziele",
+   "Umgebung",
+   "Ressourcen",
+   "modellhafte Beschreibungen abgeleitet",
+   "Ist-Szenarien",
+   "Personas",
+   "Benutzergruppenprofile",
+   "Aufgabenmodelle",
+   "Aufgabenobjekte",
+   "Affinity-Diagramme",
+   "User Journeys",
+   "Zielkataloge",
+   "Umgebungsmodelle",
+   "Informationsmodelle"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9802.jpg",
+  "page": 213,
+  "marker": null,
+  "title": "Detaillierte, Narrative Nutzungskontextbeschreibungen",
+  "rot": [
+   "Narrative"
+  ],
+  "rot_box": [
+   "detaillierte NK-Beschreibungen"
+  ]
+ },
+ {
+  "file": "IMG_9803.jpg",
+  "page": 214,
+  "marker": null,
+  "title": "Ist-Szenario (as-is scenario)",
+  "rot": [
+   "erzählende",
+   "textuelle Beschreibung",
+   "Benutzer",
+   "Aufgaben",
+   "erledigt",
+   "den gegenwärtigen Nutzungskontext",
+   "Komponenten des gegebenen Nutzungskontextes",
+   "ein oder mehrere Probleme deutlich"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9803.jpg",
+  "page": 215,
+  "marker": "B",
+  "title": "Ist-Szenario – Beispiel",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9804.jpg",
+  "page": 216,
+  "marker": null,
+  "title": "Persona (persona)",
+  "rot": [
+   "Beschreibung",
+   "konstruierten",
+   "realistischen Benutzers",
+   "erfundene Beispiele eines realen Benutzenden",
+   "empirisch ermittelter Daten",
+   "Namen",
+   "Alter",
+   "Hintergrundinformationen",
+   "Ziele",
+   "Wünsche",
+   "wesentliches Wissen im Themenfeld",
+   "Interessen der Persona im Themenfeld"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9804.jpg",
+  "page": 217,
+  "marker": null,
+  "title": "Persona",
+  "rot": [
+   "geben den Benutzern ein Gesicht",
+   "Eigenschaften",
+   "Motivation",
+   "Ziele",
+   "Primäre und sekundäre Personas",
+   "Primäre Personas",
+   "Sekundäre Personas",
+   "Proto-Personas",
+   "Anti-Persona"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9805.jpg",
+  "page": 218,
+  "marker": "B",
+  "title": "Jack, 33 Jahre alt",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9805.jpg",
+  "page": 219,
+  "marker": "B",
+  "title": "CLOSE-UP: THE TECHNOPHILE",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9806.jpg",
+  "page": 220,
+  "marker": "B",
+  "title": "CLOSE-UP: THE PASSIVE",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9806.jpg",
+  "page": 221,
+  "marker": null,
+  "title": "Gütekriterien für die Entwicklung von Personas",
+  "rot": [
+   "Personen",
+   "Nutzungskontextanalyse",
+   "entspricht der Beschreibung",
+   "ist aber keine",
+   "kombiniert Eigenschaften realer Benutzer",
+   "wesentlichen Charakteristika",
+   "wichtigste Ziele",
+   "empirisches Fundament",
+   "wenige Personas",
+   "überprüft",
+   "angepasst",
+   "Erstellen",
+   "Qualität",
+   "Wartung",
+   "Produktteam",
+   "Nutzungskontextinformation",
+   "verfügbar bleiben"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9807.jpg",
+  "page": 222,
+  "marker": null,
+  "title": "Detaillierte, Modellhafte Nutzungskontextbeschreibung",
+  "rot": [
+   "Modellhafte"
+  ],
+  "rot_box": [
+   "detaillierte NK-Beschreibungen"
+  ]
+ },
+ {
+  "file": "IMG_9807.jpg",
+  "page": 223,
+  "marker": null,
+  "title": "Komponenten der Nutzungskontextbeschreibung",
+  "rot": [
+   "Benutzergruppenprofile",
+   "Aufgabenmodelle",
+   "Aufgabenobjekte",
+   "Affinity-Diagramme",
+   "User Journeys",
+   "Zielkataloge",
+   "Umgebungsmodelle",
+   "Informationsmodelle"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9808.jpg",
+  "page": 224,
+  "marker": null,
+  "title": "Affinity-Diagramm (affinity diagram)",
+  "rot": [
+   "strukturiertes Format",
+   "qualitativer Daten",
+   "Ideen oder Aussagen",
+   "hierarchisch organisierte Gruppen sortiert",
+   "Überschrift",
+   "kollaborativ"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9808.jpg",
+  "page": 225,
+  "marker": null,
+  "title": "",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9809.jpg",
+  "page": 226,
+  "marker": null,
+  "title": "User Journey (user journey)",
+  "rot": [
+   "Beschreibung der \"Begegnung\" von Benutzenden",
+   "interaktiven System",
+   "Organisation",
+   "Berührungspunkte",
+   "User Experience",
+   "alle Touchpoints",
+   "ersten",
+   "direkte aufgabenbezogene Interaktion",
+   "Kommunikation",
+   "User Journey Map"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9809.jpg",
+  "page": 227,
+  "marker": null,
+  "title": "User Journey Map (user journey map)",
+  "rot": [
+   "lineare Darstellung",
+   "Benutzers",
+   "interaktiven System",
+   "Organisation",
+   "Berührungspunkte",
+   "User Experience",
+   "gehen über die eigentliche Nutzung",
+   "hinaus",
+   "Kommunikationsmedium",
+   "Berührungspunkte",
+   "ersten Kontakts",
+   "aufgabenbezogenen Interaktion",
+   "User Experience",
+   "kein Ersatz"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9810.jpg",
+  "page": 228,
+  "marker": "B",
+  "title": "",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9810.jpg",
+  "page": 229,
+  "marker": null,
+  "title": "USER JOURNEY – ÜBER VIELE BEHANDLUNGEN HINWEG · PFLEGEKRAFT AN DER DIAYSEMASCHINE",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9811.jpg",
+  "page": 231,
+  "marker": null,
+  "title": "Max's journey – with our Investment App",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9811.jpg",
+  "page": 232,
+  "marker": null,
+  "title": "Zielkatalog (goal catalogue)",
+  "rot": [
+   "tabellarische Darstellung",
+   "identifizierten Ziele"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9813.jpg",
+  "page": 233,
+  "marker": "B",
+  "title": "Zielkatalog",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9813.jpg",
+  "page": 234,
+  "marker": "W",
+  "title": "Umgebungs- und Informationsmodel",
+  "rot": [
+   "besonderen Merkmale",
+   "Umgebung",
+   "Aufgabenmodell und",
+   "Aufgabenobjekten innewohnende Struktur"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9815.jpg",
+  "page": 235,
+  "marker": "B",
+  "title": "Umgebungsmodell grafisch",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9815.jpg",
+  "page": 236,
+  "marker": "B",
+  "title": "Umgebungsmodell tabellarisch",
+  "rot": [],
+  "rot_box": [
+   "Soziale Umgebung",
+   "Physische Umgebung"
+  ]
+ },
+ {
+  "file": "IMG_9816.jpg",
+  "page": 237,
+  "marker": "B",
+  "title": "Informationsmodell tabellarisch",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9816.jpg",
+  "page": 238,
+  "marker": "+",
+  "title": "Planung, Durchführung und HCD-Ergebnisse der NK-Erhebung",
+  "rot": [
+   "Aktivität",
+   "Ergebnis, Kenntnisgewinn"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9817.jpg",
+  "page": 239,
+  "marker": null,
+  "title": "Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen",
+  "rot": [
+   "Nutzungskontextbeschreibung",
+   "Information der Beteiligten",
+   "Bewusstsein",
+   "Empathie",
+   "Problemraum",
+   "Identifizieren von Erfordernissen",
+   "Ableitung von Nutzungsanforderungen",
+   "verschiedene Arten von Nutzungskontextbeschreibungen",
+   "zusammenfassende Nutzungskontextbeschreibung",
+   "Zusammenfassende Nutzungskontextbeschreibungen",
+   "Mischung",
+   "Nutzungskontextinformationen",
+   "Annahmen"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9817.jpg",
+  "page": 240,
+  "marker": null,
+  "title": "Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen",
+  "rot": [
+   "Detaillierte Nutzungskontextbeschreibungen",
+   "Dokumentieren empirische Fakten",
+   "narrativer Textform",
+   "modellhafte Nutzungskontextbeschreibungen",
+   "narrativer Nutzungskontextbeschreibungen",
+   "Personas",
+   "Ist-Szenarien",
+   "Personas",
+   "Empathie für eine Benutzergruppe",
+   "Ist-Szenarien",
+   "Identifizieren von Erfordernissen",
+   "systematischem Ableiten von Nutzungsanforderungen",
+   "Ist-Szenarien",
+   "narrativer Form Aufgaben",
+   "Ziele",
+   "Zusammenhänge",
+   "Ressourcen",
+   "Umgebung",
+   "sozialen",
+   "physischen Bedingungen",
+   "Hauptunterschied",
+   "Ist-Szenario",
+   "Nutzungsszenario",
+   "Ist-Szenarien Komponenten des aktuellen Nutzungskontexts beschreiben",
+   "Nutzungsszenarien",
+   "geplante beabsichtigte Nutzungssituation"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9818.jpg",
+  "page": 241,
+  "marker": null,
+  "title": "Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen",
+  "rot": [
+   "Nutzungsszenario",
+   "keine Nutzungskontextbeschreibung",
+   "Beschreibung des Nutzungskontextes für die Gestaltung",
+   "erster textueller Prototyp",
+   "Modellhafte Nutzungskontextbeschreibungen",
+   "strukturelle Darstellungen",
+   "üblichen Formen",
+   "User Journey Maps",
+   "Affinity-Diagramme",
+   "Zielkataloge",
+   "Modellhafte Nutzungskontextbeschreibungen",
+   "effiziente Kommunikation",
+   "Anwendung",
+   "Umsetzung",
+   "Aspekten",
+   "Nutzungskontexts",
+   "erzählen Ist-Szenarien"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9818.jpg",
+  "page": 242,
+  "marker": null,
+  "title": "4. Erfordernisse in Nutzungskontextinformationen identifizieren",
+  "rot": [
+   "4.1 – Erfordernisse systematisch identifizieren und formulieren",
+   "Nutzungsanforderungen zutreffend spezifiziert",
+   "lediglich auf Annahmen beruhen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9820.jpg",
+  "page": 243,
+  "marker": null,
+  "title": "",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9820.jpg",
+  "page": 244,
+  "marker": null,
+  "title": "Menschzentrierte Gestaltung",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9821.jpg",
+  "page": 245,
+  "marker": null,
+  "title": "Erfordernis (user need)",
+  "rot": [
+   "Voraussetzung",
+   "notwendig",
+   "Ziel zu erreichen",
+   "unabhängig",
+   "Lösung",
+   "Interviews",
+   "Beobachtungen",
+   "Benutzerbefragungen",
+   "Usability-Evaluierungen",
+   "Expertenanalyse",
+   "Lücken",
+   "informatorische Erfordernisse",
+   "Ressourcenerfordernisse",
+   "Kompetenzerfordernisse",
+   "transformiert in Nutzungsanforderungen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9821.jpg",
+  "page": 246,
+  "marker": "Ü",
+  "title": "Erfordernis",
+  "rot": [
+   "Benutzer",
+   "Erfordernis",
+   "Voraussetzung",
+   "Ziel"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9822.jpg, IMG_9823.jpg",
+  "page": 247,
+  "marker": null,
+  "title": "Arten von Erfordernissen",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9822.jpg, IMG_9823.jpg",
+  "page": 248,
+  "marker": null,
+  "title": "Informatorisches Erfordernis (informational need)",
+  "rot": [
+   "erforderlichen spezifischen Informationen",
+   "führen typischerweise zu Nutzungsanforderungen",
+   "notwendigen Informationen bereitstellen",
+   "häufig implizit"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9824.jpg",
+  "page": 249,
+  "marker": null,
+  "title": "Ressourcenerfordernis (resource need)",
+  "rot": [
+   "erforderlichen spezifischen Ressourcen",
+   "führen typischerweise zu organisatorischen Anforderungen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9824.jpg",
+  "page": 250,
+  "marker": null,
+  "title": "Kompetenzerfordernis (competence need)",
+  "rot": [
+   "bestimmte Kompetenz oder Fähigkeit",
+   "führen typischerweise zu organisatorischen Anforderungen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9825.jpg",
+  "page": 251,
+  "marker": "W",
+  "title": "Qualitätskriterien für Erfordernisse",
+  "rot": [
+   "im Nutzungskontext begründet",
+   "objektiv",
+   "Benutzenden einer Benutzergruppe zutreffend",
+   "unstrittig",
+   "Voraussetzung",
+   "Ziel",
+   "System kommt nicht",
+   "vor"
+  ],
+  "rot_box": [
+   "W"
+  ]
+ },
+ {
+  "file": "IMG_9825.jpg",
+  "page": 252,
+  "marker": null,
+  "title": "Formulierungsschablone (Syntax) für Erfordernisse",
+  "rot": [
+   "identifizierte Voraussetzung",
+   "beabsichtigtes Ergebnis == Ziel"
+  ],
+  "rot_box": []
+ }
+]

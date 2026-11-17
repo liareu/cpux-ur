@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3 Information erheben | CPUX-UR Prozess-Landkarte</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landkarte.css">
+<link rel="stylesheet" href="lernen.css">
+</head>
+<body>
+
+<button class="sb-toggle" id="sbToggle" aria-label="Navigation ein- oder ausblenden" title="Navigation ein-/ausblenden"><span class="material-icons" id="sbIcon">menu_open</span></button>
+
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <span class="ux-lab-pill">UX Lab</span>
+        <h2>CPUX-UR Prozess-Landkarte</h2>
+        <p>Lernbegleiter zum Training, Stand Folie S. 252</p>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+        <div class="nav-group">Überblick</div>
+        <a href="index.html" class="nav-link"><span class="material-icons">map</span>Prozesskarte</a>
+        <a href="dashboard.html" class="nav-link"><span class="material-icons">dashboard</span>Lern-Cockpit</a>
+        <a href="seminar.html" class="nav-link"><span class="material-icons">school</span>Zum Seminar</a>
+        <div class="nav-group">Lernen</div>
+        <a href="zusammenhang.html" class="nav-link"><span class="material-icons">hub</span>Alles im Zusammenhang</a>
+        <a href="schaubilder.html" class="nav-link"><span class="material-icons">account_tree</span>Schaubilder</a>
+        <a href="lernziele.html" class="nav-link"><span class="material-icons">checklist</span>Lernziele</a>
+        <a href="selbsttest.html" class="nav-link"><span class="material-icons">style</span>Selbsttest Begriffe</a>
+        <div class="nav-group">Kapitel</div>
+        <a href="kapitel-1.html" class="nav-link"><span class="material-icons">looks_one</span>1 Einführung in die NKA</a>
+        <a href="kapitel-2.html" class="nav-link"><span class="material-icons">looks_two</span>2 NKA planen</a>
+        <a href="kapitel-3.html" class="nav-link active"><span class="material-icons">looks_3</span>3 Information erheben</a>
+        <div class="nav-sub"><a href="#erheben">Überblick Kapitel 3</a><a href="#rekrutieren">3.1 Rekrutieren</a><a href="#durchfuehren">3.2 Erhebung durchführen</a><a href="#beobachtung">Beobachtung</a><a href="#fokusgruppe">Fokusgruppe</a><a href="#methodenwahl">Methoden wählen</a><a href="#mentale-modelle">Mentale Modelle, Wünsche</a><a href="#beschreiben">3.3 Beschreibungen</a><a href="#nk-beschreibung">Nutzungskontextbeschreibung</a><a href="#narrativ">Narrative Beschreibungen</a><a href="#modellhaft">Modellhafte Beschreibungen</a><a href="#ergebnisse-33">Planung und Ergebnisse der NK-Erhebung</a></div>
+        <a href="kapitel-4.html" class="nav-link"><span class="material-icons">looks_4</span>4 Erfordernisse identifizieren</a>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>5 NA ableiten</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>6 Konsolidieren &amp; priorisieren</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>7 Schnittstellen</span>
+        <div class="nav-group">Prüfung</div>
+        <a href="pruefung-theorie.html" class="nav-link"><span class="material-icons">quiz</span>Theoretische Prüfung</a>
+        <a href="pruefung-praxis.html" class="nav-link"><span class="material-icons">assignment</span>Praktische Prüfung</a>
+        <div class="nav-group">Nachschlagen</div>
+        <a href="glossar.html" class="nav-link"><span class="material-icons">menu_book</span>Glossar</a>
+        <a href="ure-story.html" class="nav-link"><span class="material-icons">auto_stories</span>URE Story</a>
+        <a href="schablonen.html" class="nav-link"><span class="material-icons">text_fields</span>Formulierungsschablonen</a>
+        <a href="curriculum.html" class="nav-link"><span class="material-icons">library_books</span>Curriculum</a>
+    </nav>
+    <div class="sidebar-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54331 231.41233" width="100" aria-label="Micromata"><g style="isolation:isolate"><polygon fill="#009ba3" points="148.258 115.749 126.403 93.891 126.401 93.892 73.277 40.768 51.416 62.623 104.543 115.75 51.416 168.878 73.277 190.733 126.4 137.607 126.403 137.61 148.258 115.749"/><rect fill="#007480" x="110.9384" y="100.29035" width="30.91783" height="30.91093" transform="translate(297.62103 108.27464) rotate(135.02027)"/><polygon fill="#ffcb00" style="mix-blend-mode:multiply" points="248.142 40.767 226.287 62.621 279.411 115.75 226.287 168.876 248.142 190.735 301.268 137.609 323.129 115.747 248.142 40.767"/><polygon fill="#75be01" points="410.565 115.749 388.71 93.891 388.708 93.892 335.584 40.768 313.723 62.623 366.85 115.75 313.723 168.878 335.584 190.733 388.707 137.608 388.71 137.61 410.565 115.749"/><rect fill="#32912e" x="373.25004" y="100.28859" width="30.91285" height="30.91093" transform="translate(745.47512 -77.14329) rotate(135.02027)"/><polygon fill="#e10057" points="235.693 115.747 160.706 40.767 138.851 62.621 191.975 115.75 138.851 168.876 160.706 190.735 213.832 137.609 213.832 137.609 235.693 115.747"/><rect fill="#a70836" x="198.37947" y="100.29397" width="30.90915" height="30.91093" transform="translate(446.87971 46.37618) rotate(134.99583)"/><rect fill="#ff9d01" x="285.81339" y="100.29397" width="30.90915" height="30.91093" transform="translate(596.13425 -15.45344) rotate(134.99583)"/></g></svg>
+    </div>
+</aside>
+
+<div class="container">
+
+    <div class="header sub">
+        <p class="eyebrow">Kapitel 3</p>
+        <h1>Nutzungskontextinformation erheben und dokumentieren</h1>
+    </div>
+
+    <!-- =========================================================
+         KAPITEL 3: ÜBERBLICK (Folien S. 154–156)
+         ========================================================= -->
+    <section class="section" id="erheben">
+        <div class="section-title"><div class="num"><span class="material-icons">travel_explore</span></div><h2>3. Nutzungskontextinformation erheben und dokumentieren</h2></div>
+        <p class="section-lead">Sicherstellen, dass authentische Nutzungskontextinformationen mit authentischen Repräsentanten der Benutzergruppen gewonnen werden. (S. 154)</p>
+
+        <div class="card">
+            <div class="flow-h">
+                <div class="fh main"><small>3.1</small>Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren</div>
+                <div class="fh-a"><span class="material-icons">east</span></div>
+                <div class="fh main"><small>3.2</small>Erhebung von Nutzungskontextinformationen vorbereiten und durchführen</div>
+                <div class="fh-a"><span class="material-icons">east</span></div>
+                <div class="fh main l"><small>3.3</small>Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen</div>
+            </div>
+            <div class="sequence" style="margin-top:16px">
+                <span class="seq tuerkis">Benutzer für NKA rekrutieren</span><span class="material-icons">chevron_right</span>
+                <span class="seq tuerkis">Methoden für NKA festlegen</span><span class="material-icons">chevron_right</span>
+                <span class="seq tuerkis">Ergebnisse der NKA dokumentieren</span>
+            </div>
+            <div class="grid-2" style="margin-top:16px">
+                <div class="box"><div class="box-title">Menschzentrierte Gestaltung (HCD) (S. 155)</div>Planung des menschzentrierten Gestaltungsprozesses → <b>Verstehen und Festlegen des Nutzungskontextes</b> → Festlegen der Nutzungsanforderungen → Erarbeiten von Gestaltungslösungen → Evaluieren der Gestaltung → Gestaltungslösung erfüllt die Nutzungsanforderungen<p style="margin-top:6px;font-size:12.5px;color:#718096">Iterationen · Quelle: ISO 9241-210:2019</p></div>
+                <div class="box grau"><div class="box-title"></div><ul><li>Welche Benutzer gibt es?</li><li>Wodurch sind diese charakterisiert?</li><li>Welche Infos werden zur Rekrutierung genutzt? <span class="note-inline">Deine Notiz: BAZUR</span></li><li>Wo sind diese Informationen zur Rekrutierung zu finden?</li></ul></div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 154–156</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         3.1 BENUTZER AUSWÄHLEN UND REKRUTIEREN (Folien S. 157–163)
+         ========================================================= -->
+    <section class="section" id="rekrutieren">
+        <div class="section-title"><div class="num"><span class="material-icons">group_add</span></div><h2>3.1 – Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren</h2></div>
+        <p class="section-lead">3.1 – Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren (S. 154)</p>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3><span class="material-icons">groups</span>Benutzergruppen, Benutzergruppenprofil (user group, user-group profile)</h3>
+                <div class="box"><div class="box-title">Benutzergruppe</div>Eine Gruppe von Benutzern mit gleichen oder ähnlichen persönlichen Merkmalen und Nutzungskontexten in Bezug auf das interaktive System.</div>
+                <div class="box" style="margin-top:10px"><div class="box-title">Benutzergruppenprofil</div>Eine verallgemeinerte Beschreibung einer Benutzergruppe.
+                    <ul style="margin-top:6px"><li>Benutzergruppenprofile stellen die Basis für den Rekrutierungsfragebogen</li></ul></div>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 157)</div>BAZUR · überblick dadurch bekommen</div>
+                <span class="src"><span class="material-icons">description</span>Folie S. 157</span>
+            </div>
+            <div class="card">
+                <h3><span class="material-icons">verified_user</span>Usability (Gebrauchstauglichkeit)</h3>
+                <div class="box"><div class="box-title">Definition</div>Das Ausmaß, in dem ein interaktives System von bestimmten Benutzern benutzt werden kann, um in einem bestimmten Nutzungskontext bestimmte Ziele effektiv, effizient und zufriedenstellend zu erreichen.</div>
+                <table class="criteria" style="margin-top:10px">
+                    <tr><td><b>Benutzer (user)</b></td><td>Person, die mit einem interaktiven System interagiert oder Ergebnisse, die vom System erzeugt werden, benutzt.</td></tr>
+                    <tr><td><b>Nutzungskontext (context of use)</b></td><td>Eine Kombination aus Benutzern, Aufgaben und Ziel, Umgebungen und Ressourcen.</td></tr>
+                    <tr><td><b>Ziel (goal)</b></td><td>Angestrebtes Arbeitsergebnis</td></tr>
+                </table>
+                <p style="margin-top:6px;font-size:12.5px;color:#718096">Quelle: ISO 9241-11:2018</p>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 158)</div></div>
+                <span class="src"><span class="material-icons">description</span>Folie S. 158</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">badge</span></h3>
+            <div class="box"><div class="box-title">Rekrutierungsfragebogen (recruitment screener), S. 160</div>Eine Reihe von Kriterien, die aus dem Benutzergruppenprofil abgeleitet wurden und die die Teilnehmer einer Nutzungskontextanalyse erfüllen müssen, sowie eine Reihe von Fragen, mit denen überprüft werden kann, ob die Kriterien erfüllt sind.
+                <ul style="margin-top:6px"><li>Relevante Qualifikationen sind Hintergrund, Wissen über das Sachgebiet, Einstellungen und Interessen</li><li>Es gibt auch Ausschlusskriterien, wenn z.B. bestimmte Berufsgruppen aus Gründen der Geheimhaltung oder Vertraulichkeit nicht teilnehmen sollen</li><li>Benutzergruppenprofile stellen die Basis für den Rekrutierungsfragebogen</li></ul>
+                <span class="src"><span class="material-icons">description</span>Folie S. 160</span></div>
+            <div class="grid-2" style="margin-top:14px">
+                <div class="box grau"><div class="box-title">Benutzergruppenprofil – Beispiel (S. 159)</div>
+                    <b>Benutzergruppenprofil Lagerleiter</b>
+                    <table class="criteria" style="margin-top:8px">
+                        <tr><td><b>Benutzergruppe Titel:</b></td><td>Lagerleiter</td></tr>
+                        <tr><td><b>Typische Aufgaben</b></td><td><ul><li>Planung der Wareneingangs- und Warenausgangsaktivitäten</li><li>Führung der Lagermitarbeiter</li><li>Auswertungen zu Platzauslastung, Materialumschlag, Reichweiten</li></ul></td></tr>
+                        <tr><td><b>Software-Erfahrung</b></td><td>Täglicher Umgang mit IT-System(en) zur Lagerverwaltung<ul><li>Buchen der Warenbewegungen</li><li>Buchen der Inventurdifferenzen</li><li>Buchen sonstiger Bestandsveränderungen, z. B. Verschrottung</li></ul></td></tr>
+                        <tr><td><b>Sprache:</b></td><td>Eines flüssigen Deutschs mächtig in Wort und Schrift</td></tr>
+                        <tr><td><b>Berufserfahrung</b></td><td>Mindestens 2 (zwei) Jahre Erfahrung als Lagerleiter</td></tr>
+                        <tr><td><b>Ziel-Branche</b></td><td>Diskrete Fertigung bevorzugt, z. B.:<ul><li>Automotive</li></ul>…</td></tr>
+                    </table>
+                    <p style="margin-top:6px;font-size:12.5px;color:#718096">Die Tabelle ist auf der Folie unten abgeschnitten.</p>
+                    <span class="src"><span class="material-icons">description</span>Folie S. 159</span></div>
+                <div class="box grau"><div class="box-title">Rekrutierungsfragebogen – Beispiel (S. 161)</div>
+                    <b>Rekrutierungsfragebogen Lagerleiter basierend auf Benutzergruppenprofil Lagerleiter</b>
+                    <table class="criteria" style="margin-top:8px">
+                        <tr><th>Frage</th><th>Zulässige Antworten</th></tr>
+                        <tr><td>1. Was ist Ihre Rollenbezeichnung im Unternehmen?</td><td>Lagerleiter<br>Leiter eines Lagers<br>Lagermanager</td></tr>
+                        <tr><td>2. Wie viele Jahre üben Sie diese Tätigkeit bereits aus (insgesamt, auch bei anderen Arbeitgebern)?</td><td>Min. 2 Jahre</td></tr>
+                        <tr><td>3. Was stellt Ihr Unternehmen her?</td><td>nur Herstellerunternehmen (kein Dienstleister)</td></tr>
+                        <tr><td>4. Welche Art der Fertigung findet bei Ihnen statt?</td><td>Einzelfertigung<br>Diskrete Fertigung</td></tr>
+                        <tr><td>5. Wie hoch ist der Jahresumsatz in Ihrem Unternehmen (von/bis)?</td><td>Jahresumsatz: 10 – (max) 400 Mio. EUR</td></tr>
+                        <tr><td>6. Wie viele Lager gibt es bei Ihnen?</td><td>(min 1)</td></tr>
+                        <tr><td>7. Wie viele Mitarbeiter sind in …</td><td>min. 3 – max 10</td></tr>
+                    </table>
+                    <p style="margin-top:6px;font-size:12.5px;color:#718096">Die Tabelle ist auf der Folie unten abgeschnitten.</p>
+                    <span class="src"><span class="material-icons">description</span>Folie S. 161</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">how_to_reg</span>Rekrutierung von Benutzern</h3>
+            <p class="card-lead">Je nach Verhältnis zwischen zu rekrutierenden Benutzenden und dem Hersteller des interaktiven Systems ist das Vorgehen bei der Rekrutierung unterschiedlich.</p>
+            <table class="criteria">
+                <tr><th>Entwicklung für extern<br><small style="font-weight:500">Benutzende sind selbst Kunden oder in einer Kundenorganisation</small></th><th>Entwicklung für intern<br><small style="font-weight:500">Benutzende in eigener Organisation</small></th></tr>
+                <tr><td>Benutzergruppenprofile mit Hersteller erstellen</td><td>Benutzergruppenprofile mit Organisationskundigen identifizieren</td></tr>
+                <tr><td>Rekrutierungsfragebogen (Screener) mit Hersteller für jede Benutzergruppe erstellen</td><td></td></tr>
+                <tr><td>potenzielle Benutzende identifizieren (ggf. mit Dienstleister)</td><td>Benutzende mit Führungskräften auswählen</td></tr>
+                <tr><td>passende Benutzende mit Screener für Interviews, Beobachtungen, Fokusgruppen verifizieren, rekrutieren und einladen</td><td></td></tr>
+            </table>
+            <span class="src"><span class="material-icons">description</span>Folie S. 162</span>
+        </div>
+
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Um valide empirische Informationen über den Nutzungskontext zu sammeln, müssen Personen befragt und/oder beobachtet werden, die authentische Repräsentanten der beabsichtigten Benutzergruppe(n) des geplanten interaktiven Systems sind.</div>
+                <div class="st"><span class="sn">2</span>Benutzergruppenprofile spezifizieren die Attribute der Benutzenden innerhalb der Benutzergruppe.</div>
+                <div class="st"><span class="sn">3</span>Wenn das interaktive System für eine bestimmte Organisation entwickelt wird und auf die Benutzende direkt zugegriffen werden kann, ist das Benutzergruppenprofil zur Rekrutierung ausreichend.</div>
+                <div class="st"><span class="sn">4</span>Handelt es sich um ein kommerzielles System, Produkt oder Software, die organisationsübergreifend eingesetzt werden soll, müssen Benutzende rekrutiert werden, die dem Projektteam normalerweise nicht bekannt sind. In diesen Fällen wird ein Rekrutierungsfragebogen (recruitment screener) auf Basis der Benutzergruppenprofile erstellt, und potenzielle Teilnehmer werden für kontextuelle Interviews, Beobachtungen, Fokusgruppen überprüft und eingeladen, um sicherzustellen, dass die Teilnehmer zu der vorgesehenen Benutzergruppe gehören.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 163</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         3.2 ERHEBUNG VORBEREITEN UND DURCHFÜHREN (Folien S. 164–177)
+         ========================================================= -->
+    <section class="section" id="durchfuehren">
+        <div class="section-title"><div class="num"><span class="material-icons">record_voice_over</span></div><h2>3.2 – Erhebung von Nutzungskontextinformationen vorbereiten und durchführen</h2></div>
+        <p class="section-lead">Sicherstellen, dass Nutzungskontextinformationen mit passenden Methoden erhoben werden und passende Methoden für die Nutzungskontextanalyse ausgewählt und professionell angewendet werden. (S. 164)</p>
+
+        <div class="card">
+            <h3><span class="material-icons">diversity_3</span>Wer ist in der User Research und der Durchführung üblicherweise mit eingebunden?</h3>
+            <p class="card-lead">Die Benutzer haben wir im vorherigen Abschnitt schon rekrutiert. (S. 165)</p>
+            <div class="grid-3">
+                <div class="box"><div class="box-title">Moderator (moderator), S. 166</div>Eine neutrale Person, die ein Interview, Beobachtung, Fokusgruppe oder Usability-Testsitzung leitet.
+                    <ul style="margin-top:6px"><li>Häufig wird der Moderator von einem Protokollanten begleitet, der sich auf die Aussagen der Benutzenden oder auf die Beobachtungen konzentriert und diese notiert.</li><li>Der Moderator konzentriert sich voll und ganz auf die Teilnehmenden und die Moderation konzentrieren kann.</li></ul>
+                    <p style="margin-top:6px"><b>!</b> Der Moderator ist bei der Methode "Beobachtung" nicht zu verstehen als der Beobachter. Denn die Beobachter sind üblicherweise Stakeholder wie Management, Produktmanagement, Entwickler etc., die bei den Methoden wie Beobachtung, Interview, Fokusgruppe, Usability-Test etc. zuschauen.</p>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 166)</div>System, projekt...</div>
+                    <span class="src"><span class="material-icons">description</span>Folie S. 166</span></div>
+                <div class="box"><div class="box-title">Protokollant (note-taker), S. 167</div>Ein User Experience Professional, der während einer Usability-Testsitzung, einer Fokusgruppe oder einem Interview Notizen über Usability-Befunde macht.
+                    <ul style="margin-top:6px"><li>Der Einsatz eines zusätzlichen Protokollanten erlaubt dem Moderator, sich voll auf die Durchführung des kontextuellen Interviews, der Beobachtung oder der Fokusgruppe zu konzentrieren.</li></ul>
+                    <span class="src"><span class="material-icons">description</span>Folie S. 167</span></div>
+                <div class="box lila"><div class="box-title">Beobachter (observer), S. 168</div>Eine Person, die Benutzer in einer Beobachtung, Usability-Testsitzung oder Fokusgruppe beobachtet.
+                    <ul style="margin-top:6px"><li>Beobachter dürfen nicht aktiv in die beobachtete Aktivität eingreifen (außer bei teilnehmender Beobachtung).</li><li>Beobachter können jedoch aktiv in die Analyse der Ergebnisse involviert sein.</li></ul>
+                    <p style="margin-top:6px"><b>!</b> Nicht zu verwechseln mit dem Moderator in einer Beobachtung – Beobachter sind oft keine UX-Professionals sondern "andere" Stakeholder, also Entwickler, Manager, Product Owner etc.</p>
+                    <span class="src"><span class="material-icons">description</span>Folie S. 168</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">hub</span>Erheben von Nutzungskontextinformation</h3>
+            <div class="erheben-m">
+                <span class="em on">(kontextuelles) Interview<small>S. 169</small></span>
+                <span class="em on">Beobachtung<small>S. 177</small></span>
+                <span class="em">Fokusgruppe</span>
+                <span class="em">Benutzer-befragung</span>
+            </div>
+            <div class="erheben-base">Nutzungskontext</div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 177)</div>der aktuellen Ausführung</div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 169, 177</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">forum</span>Interview, Interviewleitfaden (interview, interview guide)</h3>
+            <div class="grid-2">
+                <div class="box"><div class="box-title">Interview</div>Eine Methode der Datensammlung, die einige sorgfältig ausgewählte Personen eingehend befragt, um zu einem besseren Verständnis des Nutzungskontextes zu gelangen.
+                    <ul style="margin-top:6px"><li>Der Zweck eines (kontextuellen) Interviews ist ein tiefes Verständnis des Nutzungskontextes und der 5 Komponenten B/A&amp;Z/U/R zu erlangen, um die Erfordernisse im Nutzungskontext zu identifizieren.</li><li>Dieses Verständnis muss unabhängig von der aktuell verwendeten Lösung gewonnen werden.</li></ul>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 170)</div>BAZUR · Benutzergruppen</div></div>
+                <div class="box"><div class="box-title">Interviewleitfaden</div>Eine schriftliche Liste geeigneter Fragen und Hinweise, die der Interviewer während eines Interviews verwendet, um sicherzustellen, dass alle relevanten Themen abgedeckt werden.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 170</span>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3><span class="material-icons">place</span>kontextuelles Interview (contextual interview)</h3>
+                <div class="box">Ein Interview, das an dem Ort stattfindet, an dem die Benutzer normalerweise Aufgaben in Zusammenhang mit dem interaktiven System ausführen.
+                    <ul style="margin-top:6px"><li>Die Kombination kontextuelles Interview plus Beobachtung wird oft als contextual inquiry bezeichnet.</li></ul></div>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 171)</div>Meister-Schüler Modell</div>
+                <span class="src"><span class="material-icons">description</span>Folie S. 171</span>
+            </div>
+            <div class="card">
+                <h3><span class="material-icons">school</span>Meister-Schüler-Modell (master-apprentice model)</h3>
+                <div class="box">Ein Prinzip für ein erfolgreiches kontextuelles Interview: Der Interviewer behandelt den Benutzer als den Meister, während der Interviewer selbst der Schüler ist. Ziel des Meister-Schüler-Modells ist es, die Ziele und Aufgaben des Benutzers im Detail zu verstehen, indem man als Schüler vom Benutzer als Meister lernt.</div>
+                <ul style="margin-top:10px">
+                    <li>Das Meister-Schüler-Modell ist eine Haltung: Schüler (Interviewende) wollen von Meistern (Benutzende) so viel wie möglich über Ziele und Aufgaben im Detail verstehen.</li>
+                    <li>Schüler fragen, weil sie ernsthaft lernen wollen. Oft fragen sie mehrfach nach, um die Meister vollständig zu verstehen. Zu beachten ist:<ul><li>Alles, was die Meister sagen, wird ernst genommen.</li><li>Kein Unterbrechen, Beeinflussen, Anzweifeln, Steuern, Korrigieren der Meister.</li><li>Keine starre Verwendung des Interviewleitfadens, um das Interview zu steuern. Erlaube dem Meister Themen so anzusprechen, wie sie dem Meister in den Sinn kommen.</li></ul></li>
+                </ul>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 172)</div>Benutzer · Wir/Interviewer · Warum Fragen</div>
+                <span class="src"><span class="material-icons">description</span>Folie S. 172</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">help</span>Fragetypen</h3>
+            <div class="grid-2">
+                <div class="box"><div class="box-title">Offene Frage (open question)</div>Eine Frage in einem Interview, die keinen Hinweis auf das erwartete Format oder den erwarteten Inhalt der Antwort gibt.</div>
+                <div class="box"><div class="box-title">Geschlossene Frage (closed question)</div>Eine Interviewfrage, die eine Antwort aus einem vordefinierten Satz von Alternativen fordert.</div>
+                <div class="box ok-box"><div class="box-title"><span class="material-icons" style="color:#10b981">add_circle</span>Neutrale Frage (neutral question)</div>Eine Frage in einem Interview, die keine impliziten Annahmen beinhaltet und auch keinen Ansatz bietet, irgendetwas auszuschließen oder die Antwort in eine bestimmte Richtung zu lenken.</div>
+                <div class="box pink"><div class="box-title"><span class="material-icons" style="color:#E10057">remove_circle</span>Suggestivfrage (leading question)</div>Eine Frage in einem Interview, die eine Präferenz für bestimmte Antwortmöglichkeiten vorgibt oder versucht, die Antwort in eine bestimmte Richtung zu lenken.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 173</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">workspace_premium</span>Gütekriterien eines kontextuellen Interviews</h3>
+            <div class="grid-3">
+                <div class="box"><div class="box-title">Haltung, Einstellung des Interviewers:</div><ul><li>Meister-Schüler-Modells = Offenheit, Vorurteilsfreiheit, Neugierde etc.</li></ul></div>
+                <div class="box"><div class="box-title">Methodische Kompetenz:</div><ul><li>Kompetenz in der Vorbereitung (Entwickeln des Interviewleitfadens)</li><li>Interview-Techniken (Fragetechniken, aktives Zuhören, Paraphrasieren, Verbalisieren) <span class="note-inline">Deine Notiz: In eigenen Worten zusammenfassen und bestätigen lassen</span></li><li>Herausarbeiten der den Antworten zugrunde liegenden Bedürfnisse Laddering (warum, warum,…)</li></ul></div>
+                <div class="box"><div class="box-title">Fachliche Kompetenz:</div><ul><li>Domänenverständnis, um gezielt Fragen zu stellen und Antworten zu verstehen</li></ul></div>
+                <div class="box"><div class="box-title">Durchführung:</div><ul><li>Pilot-Interviews mit Feedback (Training und Test des Interviewleitfadens)</li></ul></div>
+                <div class="box"><div class="box-title">Methode anpassen:</div><ul><li>unstrukturierten, halbstandardisierten sowie standardisierten Interviews nutzen <span class="note-inline">Deine Notiz: → Übergang zur Benutzerbefragung</span></li><li>Anpassung des Interviewleitfadens nach durchgeführten Interviews, wenn notwendig.</li></ul></div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 174</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">view_week</span>Typisches Vorgehen bei einem kontextuellen Interview</h3>
+            <p class="card-lead">Logik wie Aufgabe →</p>
+            <div class="grid-4">
+                <div class="box"><div class="box-title">Planen</div><ul><li>Stakeholder (PM/PO) der Ergebnisse identifizieren</li><li>SH zur Vorbereitung einladen</li><li>mit SH Benutzergruppenprofile erstellen</li><li>für jede Benutzergruppe Fragen und Interviewleitfaden mit SH entwickeln</li><li>ggf. Screener entwickeln</li><li>TN einladen und aufsuchen</li><li>wenn möglich 2 UX-Prof. Moderator, Protokollant einplanen</li></ul></div>
+                <div class="box"><div class="box-title">Vorbereiten</div><ul><li>TN über Inhalt (sammeln von authentischen NK-Infos) und Ziele (Herleiten von NKs) aufklären</li><li>Anonymität zusichern</li></ul><div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>Erfahrung</div></div>
+                <div class="box"><div class="box-title">Durchführen</div><ul><li>Moderator und Protokollant stellen sich vor</li><li>Interview mit Interviewleitfaden durchführen</li><li>Paraphrasieren, ggf. Nachfragen für eindeutiges Verständnis</li><li>ggf. Lösungsvorschläge, Nutzungsprobleme auf Kontext zurückführen</li><li>Aussagen protokollieren</li><li>nicht behandelte Themen erfragen</li><li>Abstimmung Moderator, Protokollant zur Optimierung der Interviews</li></ul></div>
+                <div class="box"><div class="box-title">Dokumentieren</div><ul><li>Protokollierte Ausführungen als zusammenhängenden Text (Ist-Szenario) aufschreiben</li><li>SH erhalten umfassendes Bild des Nutzungskontext</li><li>Das Ist-Szenario kann anhand der Leitfragen strukturiert werden für bessere Vergleichbarkeit</li><li>weitere Info zu NK-Beschreibungen dokumentieren</li></ul></div>
+            </div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 175)</div>Ist-Szenario pro Benutzergruppe pro Aufgabe zusammenfassen</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 175</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">report</span>Typische Fehler bei einem kontextuellen Interview</h3>
+            <ul>
+                <li>Kleben am Interviewleitfaden (Inhalt und Reihenfolge) statt Anpassung des Interviews an den Erkenntnisgewinn während des Interviews</li>
+                <li>Fehlerhaftes Paraphrasieren wie etwa Wechsel der Ebene durch den Interviewer (Nutzungskontext, Erfordernisse, Nutzungsanforderungen, Lösungen)</li>
+                <li>Keine Überprüfung des Gesagten durch Nutzung gleicher Begriffe – Nachplappern</li>
+                <li>Hinzufügen eigener konstruierter Kontextinformationen</li>
+                <li>Schlechte Fragen: Suggestiv-, geschlossene Fragen, keine Anwendung des Meister-Schüler-Modells</li>
+            </ul>
+            <div class="box pink" style="margin-top:10px"><ul style="list-style:none;padding-left:0">
+                <li>→ Fehlende Kompetenz, Training und Erfahrung als Interviewer</li>
+                <li>→ Fehlende Kuriosität und fehlendes tiefes Explorieren des Interviewers</li>
+                <li>→ Stellen von impliziten Annahmen zum Nutzungskontext und den Erfordernissen</li>
+            </ul></div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 176</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         3.2 BEOBACHTUNG (Folien S. 178–185)
+         ========================================================= -->
+    <section class="section" id="beobachtung">
+        <div class="section-title"><div class="num"><span class="material-icons">visibility</span></div><h2>Beobachtung (observation)</h2></div>
+
+        <div class="card">
+            <h3><span class="material-icons">visibility</span>Beobachtung (observation)</h3>
+            <div class="box">Eine Methode zum Sammeln von Kontextinformationen zu den Erfordernissen des Nutzungskontextes, bei der ein User Experience Professional Benutzer beobachtet, die mit dem interaktiven System Aufgaben ausführen.</div>
+            <ul style="margin-top:10px">
+                <li>Die Beobachtung sollte in einem möglichst natürlichen Kontext stattfinden, z. B. am Arbeitsplatz der Benutzenden.</li>
+                <li>Wenn kein interaktives System benutzt wird, sollten manuelle Abläufe beobachtet werden.</li>
+                <li>Beobachtungen werden von UX-Professionals durchgeführt. Es können jedoch Stakeholder als Beobachter die Beobachtung selbst, also die Aufgabenerledigung durch den Benutzer, beobachten. Dies ist ein typisches Mittel, um Usability und UX in der Organisation zu stärken.</li>
+            </ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 178</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">photo_camera</span>Selbstbeobachtung (self-observation), Cultural Probe (cultural probe), Tagebuchstudie (diary study)</h3>
+            <div class="grid-2">
+                <div class="box"><div class="box-title">Cultural Probe <span class="note-inline">Deine Notiz: : bei längeren Zeiträumen</span></div>Spezialfall der Beobachtung, bei der der Benutzer sich selbst beobachtet bzw. Proben, Spuren seiner Aktivitäten im Nutzungskontext sammelt und für die Auswertung zur Verfügung stellt, z. B. Fotos, Notizzettel, Skizzen, ...</div>
+                <div class="box"><div class="box-title">Tagebuchstudie</div>Eine Spezialform der Beobachtung, bei der die Teilnehmer bestimmte Ereignisse, Gefühle, Verhaltensweisen und Interaktionen in einer mobilen Anwendung oder einem Papiertagebuch aufzeichnen, um einen Einblick in die User Experience mit einem interaktiven System zu geben.</div>
+            </div>
+            <p style="margin-top:12px">→ Die Selbstbeobachtung ist besonders dann nützlich, wenn die Beobachtung nicht sicher, praktikabel oder wirtschaftlich ist. Oft wird zum "Festhalten" und späterem Erinnern mit Cultural Probes und Tagebucheinträgen gearbeitet.</p>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 179)</div>Interview am Ende sinnvoll</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 179</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">category</span>Formen der Beobachtung</h3>
+            <div class="grid-2">
+                <div class="box"><div class="box-title">strukturiert versus unstrukturiert <span class="note-inline">Deine Notiz: Protokoll</span></div><ul><li>Eine strukturierte Beobachtung ist gezielt und geplant, um die Subjektivität des Beobachters zu reduzieren, verwendet man festgelegte Beobachtungsschemata und -kategorien.</li><li>Die unstrukturierte "freie" Beobachtung ist ungeplant und ungerichtet, subjektiv und ergebnisoffen und kann damit gut zur Hypothesenbildung eingesetzt werden.</li></ul></div>
+                <div class="box"><div class="box-title">teilnehmend versus nicht-teilnehmend <span class="note-inline">Deine Notiz: normalfall</span></div><ul><li>Bei der teilnehmenden Beobachtung ist der Beobachter neben der Beobachtung an der Durchführung der zu beobachtenden Aktivitäten beteiligt. (ethnografische Studien)</li><li>Bei der nicht-teilnehmenden Beobachtung ist der Beobachter in Bezug auf die zu beobachtende Aktivität passiv.</li></ul></div>
+                <div class="box"><div class="box-title">offen versus verdeckt</div><ul><li>Bei der offenen Beobachtung tritt der Beobachter wahrnehmbar als solcher auf. Andere an der Situation Beteiligte kennen zumindest den Zweck der Anwesenheit und können ihr Verhalten an die Anwesenheit eines Beobachters anpassen.</li><li>Bei der verdeckten Beobachtung gibt der Beobachter seine Identität nicht bekannt (hat also eine andere vorgegebene Identität), um das Feld möglichst nicht zu beeinflussen.</li></ul></div>
+                <div class="box"><div class="box-title">im Feld versus im Labor <span class="note-inline">Deine Notiz: z. B. Usability Test</span></div><ul><li>Eine Beobachtung im Feld findet im natürlichen Umfeld der zu beobachtenden Personen statt.</li><li>Für eine Beobachtung im Labor wird die Laborumgebung entsprechend dem Untersuchungszweck angepasst, um eine möglichst reale Situation und ein möglichst natürliches Verhalten der zu beobachtenden Personen herzustellen.</li></ul></div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 180, 181</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">workspace_premium</span>Gütekriterien einer Beobachtung</h3>
+            <ul>
+                <li>Beobachtungen sollen objektiv, reliabel und valide und damit frei von Einflüssen der Beobachtungssituation an sich oder des Beobachters als Person oder allen anderen Effekten sein
+                    <ul><li>objektiv: die Ergebnisse der Beobachtung sind unabhängig vom Beobachter – d.h. z. B. zwei Beobachter kommen zum gleichen Ergebnis</li><li>reliabel: die Beobachtung als Erhebungsverfahren liefert zuverlässig das gleiche Ergebnis, wenn sich am Gegenstand der Beobachtung nichts verändert hat</li><li>valide: Die Beobachtung misst (erfasst) genau das, was sie messen soll</li></ul></li>
+                <li>Beobachtungen müssen möglichst effizient zu dokumentieren sein, z.B. durch Protokollbögen, um schnell und automatisiert Handlungen zu erfassen</li>
+                <li>Durchführung durch mindestens (möglichst) zwei Personen: Moderator und Protokollant</li>
+                <li>Der oder die Beobachter müssen im Rahmen der Vorbereitung der Beobachtung eine gemeinsame untersuchungsbezogene Einarbeitung durchführen, um die Beobachtungen objektiv, reliabel, valide und effizient durchführen zu können</li>
+            </ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 182</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">view_week</span>Typisches Vorgehen bei der Beobachtung</h3>
+            <p class="card-lead">Logik wie Aufgabe →</p>
+            <div class="grid-4">
+                <div class="box"><div class="box-title">Planen</div><ul><li>Stakeholder (PM/PO) der Ergebnisse identifizieren</li><li>SH zur Vorbereitung einladen und Benutzergruppenprofile erstellen</li><li>Aufgaben und sich daraus ergebende Fragen für Benutzergruppen identifizieren</li><li>ggf. Screener entwickeln</li><li>wenn möglich 2 UX-Prof. Moderator, Protokollant einplanen</li></ul></div>
+                <div class="box"><div class="box-title">Vorbereiten</div><ul><li>TN aufsuchen und über Inhalt (Info zum NK, Ablauf von Aufgaben) und Ziele (NA) aufklären</li><li>Schildern lassen, welche Aufgaben durchgeführt werden, ggf. mit wem zusammen, beabsichtigtes Ergebnis der Aufgabe</li><li>Aufgaben benennen</li><li>Anonymität, Einverständnis zu Beobachtung einholen, Info zur Auswertung</li></ul></div>
+                <div class="box"><div class="box-title">Durchführen</div><ul><li>Moderator und Protokollant stellen sich vor</li><li>TN sagt welche Aufgabe er ausführt</li><li>Beobachtungen und in geeigneter Weise protokollieren</li><li>Bei Unklarheit während der Beobachtung Rückfragen stellen</li><li>TN für Mitarbeit und Teilnahme danken</li></ul></div>
+                <div class="box"><div class="box-title">Dokumentieren</div><ul><li>Beobachtungsdaten und Aussagen des TN als zusammenhängendes Ist-Szenario aufschreiben</li><li>SH bekommen umfassendes Bild über den Nutzungskontext</li><li>Fotos als Illustration zu textuellen Beschreibungen aufnehmen</li></ul></div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 183</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">report</span>Typische Fehler bei der Beobachtung</h3>
+            <ul>
+                <li>Vorwissen und Annahmen über zu beobachtende Phänomene können die Beobachtung verfälschen</li>
+                <li>Wertung, Interpretation und Beobachtung können sich vermischen</li>
+                <li>Zu frühe Abstraktion (auf vermutete Zusammenhänge ...) führt zu voreiligen Wertungen.</li>
+                <li>Mit zunehmender Vertrautheit der zu beobachtenden Ereignisse nimmt die Aufmerksamkeit und damit die Zuverlässigkeit der Beobachtung ab.</li>
+            </ul>
+            <div class="box pink" style="margin-top:10px"><ul style="list-style:none;padding-left:0">
+                <li>→ Phänomene von Zeit- und Kostendruck in der Entwicklung</li>
+                <li>→ Fehlende Kuriosität und fehlendes tiefes Explorieren der Beobachter oder Interviewer</li>
+                <li>→ Selbstüberschätzung seitens des Interviewers</li>
+                <li>→ Geltungsdrang und Wertschätzung der Expertise der Interviewer</li>
+            </ul></div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 184</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">hub</span>Erheben von Nutzungskontextinformation</h3>
+            <div class="erheben-m">
+                <span class="em">(kontextuelles) Interview</span>
+                <span class="em">Beobachtung</span>
+                <span class="em on">Fokusgruppe<small>S. 185</small></span>
+                <span class="em">Benutzer-befragung</span>
+            </div>
+            <div class="erheben-base">Nutzungskontext</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 185</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         3.2 FOKUSGRUPPE (Folien S. 186–190)
+         ========================================================= -->
+    <section class="section" id="fokusgruppe">
+        <div class="section-title"><div class="num"><span class="material-icons">groups</span></div><h2>Fokusgruppe (focus group)</h2></div>
+
+        <div class="card">
+            <h3><span class="material-icons">groups</span>Fokusgruppe (focus group)</h3>
+            <div class="box">Eine moderierte Diskussion über vorgegebene Themen und Fragen zwischen Mitgliedern einer oder mehrerer Benutzergruppen.</div>
+            <ul style="margin-top:10px">
+                <li>Die Ergebnisse von Fokusgruppen müssen wie Nutzungskontextinformationen behandelt werden und auf enthaltende Erfordernisse und ableitbare Nutzungsanforderungen hin analysiert werden.</li>
+                <li>Ihre Durchführung ist besonders sinnvoll, wenn<ul><li>ein tiefes Verständnis des Problemraums zu einem bestimmten Thema unter Berücksichtigung verschiedener Perspektiven hergestellt werden soll</li><li>Ideen zu entwickeln sind</li><li>Anforderungen an Lösungen aus verschiedenen Perspektiven herauszuarbeiten sind.</li></ul></li>
+            </ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 186)</div>mit Blick in die Zukunft nicht nur in der Analyse</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 186</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">forum</span>Fokusgruppe</h3>
+            <ul>
+                <li>Die moderierte Diskussion bei Fokussierung auf ein Thema / eine Fragestellung erzeugt eine tiefe Verarbeitung der Thematik und Fragestellungen bei den Teilnehmern und damit einen hohen Erkenntnisgewinn.</li>
+                <li>Sie ist als qualitative Methode eine aufwändige Methode, die nicht nur eine gute Vorbereitung und eine professionelle Durchführung, sondern darüber hinaus auch eine genaue Protokollierung sowie eine aufwändige Auswertung (z. B. Erarbeitung von Affinity-Diagrammen) benötigt.</li>
+                <li>Fokusgruppen sind kein Ersatz für kontextuelle Interviews, Beobachtungen oder Benutzerbefragungen.</li>
+            </ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 187)</div>einzelne Themen gezielt diskutieren</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 187</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">workspace_premium</span>Gütekriterien für eine Fokusgruppe</h3>
+            <ul>
+                <li>Strukturierter Ablauf mit zielgerichtet ausgewählten Teilmethoden zur Stimulierung der Auseinandersetzung der Teilnehmer mit dem Thema / der Fragestellung sowie zum Einsammeln und Diskutieren der Ideen und Gedanken der Teilnehmer.</li>
+                <li>Angemessene Anzahl der Teilnehmer (5-8), die eine aktive Diskussion stimuliert und zulässt.</li>
+                <li>Sinnvolle Teilnehmerzusammensetzung<ul><li>bspw. Expertise im Anwendungsbereich versus Beteiligung von Laien</li><li>Homogenität versus Heterogenität in Bezug auf die zu diskutierenden Themen oder Fragestellungen</li></ul></li>
+                <li>Durchführung durch (möglichst) zwei Personen: Moderator und Protokollant</li>
+                <li>Moderationskompetenz, also die Gestaltung des Prozesses in der Gruppe ohne eigenen Input sowie die Fähigkeit mit Gruppenphänomenen, wie Dominanz oder Wortführerschafft einzelner Personen oder dem Hang der Gruppe zum GroupThink (Antwort im vermuteten Gruppen-Konsens) umzugehen.</li>
+            </ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 188)</div>üblich 2-3</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 188</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">view_week</span>Typisches Vorgehen bei einer Fokusgruppe</h3>
+            <p class="card-lead">Logik wie Aufgabe →</p>
+            <div class="grid-4">
+                <div class="box"><div class="box-title">Planen</div><ul><li>Stakeholder (PM/PO) der Ergebnisse identifizieren</li><li>SH zur Vorbereitung einladen und zu diskutierendes Thema, Fragen und Ziele formulieren</li><li>Für alle Gruppen Benutzergruppenprofile mit SH erstellen</li><li>ggf. Screener entwickeln</li><li>TN einladen</li><li>wenn möglich 2 UX-Prof. Moderator, Protokollant einplanen</li></ul></div>
+                <div class="box"><div class="box-title">Vorbereiten</div><ul><li>Agenda/Moderationsleitfaden auf Basis des Ziels und der zu klärenden Fragen entwickeln</li></ul></div>
+                <div class="box"><div class="box-title">Durchführen</div><ul><li>Moderator und Protokollant stellen sich vor</li><li>TN Ziel und Vorgehen erläutern</li><li>Regeln der Interaktion der FG erklären</li><li>Themen vorstellen</li><li>Moderation entlang des Leitfadens, Diskussion unter den TN anregen</li><li>Rückfragen stellen, paraphrasieren</li><li>Protokollieren</li><li>Dank an TN</li></ul></div>
+                <div class="box"><div class="box-title">Dokumentieren</div><ul><li>Aussagen der TN den Fragestellungen, Themen zuordnen</li><li>Handlungsempfehlungen aufgrund der Aussagen aller TN formulieren</li><li>Ggf. Erkenntnisse in Nutzungskontextbeschreibungen aufnehmen</li></ul></div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 189</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">report</span>Typische Fehler bei einer Fokusgruppe</h3>
+            <ul>
+                <li>Mangelnde Moderationskompetenz, insbesondere:<ul><li>Vorwissen und Annahmen des Moderators zum Thema beeinflussen die Moderation. Teilnehmerperspektiven können missachtet oder verfälscht werden.</li><li>Mangelnde Steuerung dominierender Teilnehmer, die andere Teilnehmer führen oder unterdrücken</li></ul></li>
+                <li>Falsche oder schlechte Rekrutierung. Teilnehmer haben kein eigenes Erfahrungswissen zum Thema und bringen irrelevante Annahmen ein</li>
+                <li>Zu kurze Erkundungsphase (in Bezug auf ein Thema) führt zu frühen Abstraktionen auf vermutete Zusammenhänge und damit zu Ergebnissen oder voreiligen Wertungen, ohne Sammlung und Bewertung aller Perspektiven und Facetten des Themas.</li>
+            </ul>
+            <div class="box pink" style="margin-top:10px"><ul style="list-style:none;padding-left:0">
+                <li>→ Fehlende Kompetenz, Training und Erfahrung als Moderator</li>
+                <li>→ Fehlende Kuriosität und fehlendes tiefes Explorieren des Moderators</li>
+            </ul></div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 190)</div>Oft viele Fragen in zu weniger Zeit</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 190</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         3.2 METHODEN AUSWÄHLEN UND KOMBINIEREN (Folien S. 191–193)
+         ========================================================= -->
+    <section class="section" id="methodenwahl">
+        <div class="section-title"><div class="num"><span class="material-icons">tune</span></div><h2>Kriterien für die Auswahl und Kombination von Methoden, gesammelte Antworten</h2></div>
+        <div class="pg" data-pg="{&quot;titel&quot;: &quot;Typisches Vorgehen bei kontextuellem Interview, Beobachtung und Fokusgruppe&quot;, &quot;folie&quot;: &quot;S. 175, 183, 189, 191&quot;, &quot;stufen&quot;: [{&quot;titel&quot;: &quot;Planen&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;kontextuelles Interview (S. 175)&quot;, &quot;k&quot;: &quot;interview&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Stakeholder (PM/PO) der Ergebnisse identifizieren&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;SH zur Vorbereitung einladen&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;mit SH Benutzergruppenprofile erstellen&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;für jede Benutzergruppe Fragen und Interviewleitfaden mit SH entwickeln&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;ggf. Screener entwickeln&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;TN einladen und aufsuchen&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;wenn möglich 2 UX-Prof. Moderator, Protokollant einplanen&quot;, &quot;k&quot;: &quot;interview&quot;}]}, {&quot;titel&quot;: &quot;Beobachtung (S. 183)&quot;, &quot;k&quot;: &quot;beobachtung&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Stakeholder (PM/PO) der Ergebnisse identifizieren&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;SH zur Vorbereitung einladen und Benutzergruppenprofile erstellen&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;Aufgaben und sich daraus ergebende Fragen für Benutzergruppen identifizieren&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;ggf. Screener entwickeln&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;wenn möglich 2 UX-Prof. Moderator, Protokollant einplanen&quot;, &quot;k&quot;: &quot;beobachtung&quot;}]}, {&quot;titel&quot;: &quot;Fokusgruppe (S. 189)&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Stakeholder (PM/PO) der Ergebnisse identifizieren&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;SH zur Vorbereitung einladen und zu diskutierendes Thema, Fragen und Ziele formulieren&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;Für alle Gruppen Benutzergruppenprofile mit SH erstellen&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;ggf. Screener entwickeln&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;TN einladen&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;wenn möglich 2 UX-Prof. Moderator, Protokollant einplanen&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}]}]}, {&quot;titel&quot;: &quot;Vorbereiten&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;kontextuelles Interview (S. 175)&quot;, &quot;k&quot;: &quot;interview&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;TN über Inhalt (sammeln von authentischen NK-Infos) und Ziele (Herleiten von NKs) aufklären&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;Anonymität zusichern&quot;, &quot;k&quot;: &quot;interview&quot;}]}, {&quot;titel&quot;: &quot;Beobachtung (S. 183)&quot;, &quot;k&quot;: &quot;beobachtung&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;TN aufsuchen und über Inhalt (Info zum NK, Ablauf von Aufgaben) und Ziele (NA) aufklären&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;Schildern lassen, welche Aufgaben durchgeführt werden, ggf. mit wem zusammen, beabsichtigtes Ergebnis der Aufgabe&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;Aufgaben benennen&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;Anonymität, Einverständnis zu Beobachtung einholen, Info zur Auswertung&quot;, &quot;k&quot;: &quot;beobachtung&quot;}]}, {&quot;titel&quot;: &quot;Fokusgruppe (S. 189)&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Agenda/Moderationsleitfaden auf Basis des Ziels und der zu klärenden Fragen entwickeln&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}]}]}, {&quot;titel&quot;: &quot;Durchführen&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;kontextuelles Interview (S. 175)&quot;, &quot;k&quot;: &quot;interview&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Moderator und Protokollant stellen sich vor&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;Interview mit Interviewleitfaden durchführen&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;Paraphrasieren, ggf. Nachfragen für eindeutiges Verständnis&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;ggf. Lösungsvorschläge, Nutzungsprobleme auf Kontext zurückführen&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;Aussagen protokollieren&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;nicht behandelte Themen erfragen&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;Abstimmung Moderator, Protokollant zur Optimierung der Interviews&quot;, &quot;k&quot;: &quot;interview&quot;}]}, {&quot;titel&quot;: &quot;Beobachtung (S. 183)&quot;, &quot;k&quot;: &quot;beobachtung&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Moderator und Protokollant stellen sich vor&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;TN sagt welche Aufgabe er ausführt&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;Beobachtungen und in geeigneter Weise protokollieren&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;Bei Unklarheit während der Beobachtung Rückfragen stellen&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;TN für Mitarbeit und Teilnahme danken&quot;, &quot;k&quot;: &quot;beobachtung&quot;}]}, {&quot;titel&quot;: &quot;Fokusgruppe (S. 189)&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Moderator und Protokollant stellen sich vor&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;TN Ziel und Vorgehen erläutern&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;Regeln der Interaktion der FG erklären&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;Themen vorstellen&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;Moderation entlang des Leitfadens, Diskussion unter den TN anregen&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;Rückfragen stellen, paraphrasieren&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;Protokollieren&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;Dank an TN&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}]}]}, {&quot;titel&quot;: &quot;Dokumentieren&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;kontextuelles Interview (S. 175)&quot;, &quot;k&quot;: &quot;interview&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Protokollierte Ausführungen als zusammenhängenden Text (Ist-Szenario) aufschreiben&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;SH erhalten umfassendes Bild des Nutzungskontext&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;Das Ist-Szenario kann anhand der Leitfragen strukturiert werden für bessere Vergleichbarkeit&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;weitere Info zu NK-Beschreibungen dokumentieren&quot;, &quot;k&quot;: &quot;interview&quot;}]}, {&quot;titel&quot;: &quot;Beobachtung (S. 183)&quot;, &quot;k&quot;: &quot;beobachtung&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Beobachtungsdaten und Aussagen des TN als zusammenhängendes Ist-Szenario aufschreiben&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;SH bekommen umfassendes Bild über den Nutzungskontext&quot;, &quot;k&quot;: &quot;beobachtung&quot;}, {&quot;label&quot;: &quot;Fotos als Illustration zu textuellen Beschreibungen aufnehmen&quot;, &quot;k&quot;: &quot;beobachtung&quot;}]}, {&quot;titel&quot;: &quot;Fokusgruppe (S. 189)&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Aussagen der TN den Fragestellungen, Themen zuordnen&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;Handlungsempfehlungen aufgrund der Aussagen aller TN formulieren&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;Ggf. Erkenntnisse in Nutzungskontextbeschreibungen aufnehmen&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}]}]}, {&quot;titel&quot;: &quot;Kriterien für die Auswahl und Kombination von Methoden (S. 191)&quot;, &quot;art&quot;: &quot;l&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;kontextuelles Interview&quot;, &quot;k&quot;: &quot;interview&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;für alle Komponenten des Nutzungskontextes aus subjektiver Benutzendensicht&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;Art und Weise wie Benutzende ihre Ziele erreichen&quot;, &quot;k&quot;: &quot;interview&quot;}, {&quot;label&quot;: &quot;Rolle der Bedürfnisse und Erfüllung dieser&quot;, &quot;k&quot;: &quot;interview&quot;}]}, {&quot;titel&quot;: &quot;Beobachtung&quot;, &quot;k&quot;: &quot;beobachtung&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;wenn Detailinformationen bei der Aufgabenerledigung im tatsächlichen Nutzungskontext objektiv benötigt werden&quot;, &quot;k&quot;: &quot;beobachtung&quot;}]}, {&quot;titel&quot;: &quot;Fokusgruppe&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;für ein tiefes Verständnis des Problemraums bei Beachtung verschiedener Perspektiven&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;für Ideenentwicklung&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}, {&quot;label&quot;: &quot;Anforderungen an Lösungen aus verschiedenen Perspektiven&quot;, &quot;k&quot;: &quot;fokusgruppe&quot;}]}]}]}"></div>
+
+        <div class="card">
+            <h3><span class="material-icons">tune</span>Kriterien für die Auswahl und Kombination von Methoden, gesammelte Antworten</h3>
+            <div class="grid-3">
+                <div class="box"><div class="box-title">kontextuelles Interview</div><ul><li>für alle Komponenten des Nutzungskontextes aus subjektiver Benutzendensicht</li><li>Art und Weise wie Benutzende ihre Ziele erreichen</li><li>Rolle der Bedürfnisse und Erfüllung dieser</li></ul></div>
+                <div class="box"><div class="box-title">Beobachtung</div><ul><li>wenn Detailinformationen bei der Aufgabenerledigung im tatsächlichen Nutzungskontext objektiv benötigt werden</li></ul></div>
+                <div class="box"><div class="box-title">Fokusgruppe</div><ul><li>für ein tiefes Verständnis des Problemraums bei Beachtung verschiedener Perspektiven</li><li>für Ideenentwicklung</li><li>Anforderungen an Lösungen aus verschiedenen Perspektiven</li></ul></div>
+            </div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen (S. 191)</div>kontextuelles Interview: Muss entweder · + · Beobachtung: oder · oder beides</div>
+            <h4>Mögliche Kombination von Methoden zur NKA:</h4>
+            <ul>
+                <li>kontextuelle Interviews (subjektiv) und Beobachtungen (objektiv) == contextual inquiry</li>
+                <li>kontextuelle Interviews und thematische Vertiefung durch Fokusgruppen</li>
+                <li>Beobachtung und thematisch Vertiefung durch Fokusgruppen</li>
+                <li>Spezialfall: Selbstbeobachtung und Tagebuchstudien, um latentes Wissen mit cultural probes zu erfassen. <span class="note-inline">Deine Notiz: → mögliche Interviews</span></li>
+            </ul>
+            <div class="grid-2" style="margin-top:14px">
+                <div class="box grau"><div class="box-title">kontextuelles Interview, Beobachtung (S. 192)</div>Aufgaben, Bearbeitung dieser, Vorgehen, Ziele, Probleme, Hilfestellungen <span class="note-inline">Deine Notiz: ! !</span></div>
+                <div class="box grau"><div class="box-title">Fokusgruppe (S. 192)</div>spezielle Fragen zum Nutzungskontext</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 191, 192</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">help</span>Und was wird sonst noch erhoben?</h3>
+            <div class="erheben-m">
+                <span class="em">(kontextuelles) Interview</span>
+                <span class="em">Beobachtung</span>
+                <span class="em">Fokusgruppe</span>
+                <span class="em">Benutzer-befragung</span>
+            </div>
+            <div class="erheben-base">Aufgaben, Aufgabenbearbeitung, Vorgehen, Ziele, heutige Probleme, heutige mögliche Hilfestellungen, spezielle Fragestellungen, Detailinformation zu allen Komponenten des Nutzungskontext</div>
+            <div class="erheben-base" style="background:#a3122e">Mentale Modelle, Wünsche und Bedürfnisse der Benutzenden</div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 193)</div>Emotional</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 193</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         3.2 MENTALES MODELL, WÜNSCHE, BEDÜRFNISSE (Folien S. 194–203)
+         ========================================================= -->
+    <section class="section" id="mentale-modelle">
+        <div class="section-title"><div class="num"><span class="material-icons">psychology</span></div><h2>Mentale Modelle, Wünsche und Bedürfnisse</h2></div>
+
+        <div class="card">
+            <h3><span class="material-icons">psychology</span>Mentales Modell (mental model)</h3>
+            <div class="box">Das Konzept, das Menschen von sich selbst, anderen, der Umgebung und der Funktionsweise der Dinge, mit denen sie interagieren, entwickelt haben.</div>
+            <p style="margin-top:10px">Erfahrung → führt zu mentalen Modellen, == das dem Systemmodell entsprechen sollte</p>
+            <ul style="margin-top:8px">
+                <li>Menschen formen mentale Modelle durch ihre Erfahrungen mit interaktiven Systemen, Training und Anleitung. Sie werden weitgehend durch die Interpretation von wahrgenommenen Aktionen und sichtbaren Strukturen des interaktiven Systems gebildet.</li>
+                <li>Viele mentalen Modelle werden während der Benutzung anderer oder ähnlicher Systeme gebildet. <span class="note-inline">Deine Notiz: Erwartungen</span></li>
+                <li>Wenn ein mentales Modell der Benutzenden von einem interaktiven System unvollständig oder widersprüchlich ist, können die Benutzenden das interaktive System nicht hindernisfrei benutzen.</li>
+            </ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 194)</div>Richtlinien für die zukünftige Lösung · -&gt; von mehreren Nutzern erheben und übereinander legen /vergleichen</div>
+            <h4>Mentales Modell (S. 195)</h4>
+            <ul>
+                <li>Offengelegte mentale Modelle sind wichtige Informationsquellen für die Ermittlung von Erfordernissen.</li>
+                <li>Teaching-back: Die interviewte Person wird gebeten, dem Interviewer die Art und Weise der Aufgabenerledigung mit Hilfe des interaktiven Systems sowie die Bedienung und Funktionsweise des Systems zu erklären.</li>
+                <li>Teaching-back und Paraphrasieren sind Techniken, die nach dem Meister-Schüler-Modell angewendet werden können.</li>
+            </ul>
+            <span class="src"><span class="material-icons">description</span>Folien S. 194, 195</span>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3><span class="material-icons">record_voice_over</span>Benutzerwünsche in Interviews</h3>
+                <div class="box">Ein Wunsch, den ein Benutzer hinsichtlich der Attribute eines interaktiven Systems formuliert.</div>
+                <ul style="margin-top:10px">
+                    <li>Interviewer sollten diese Wünsche hinterfragen, anstatt voreilige Schlussfolgerungen zu ziehen oder zu interpretieren.</li>
+                    <li>Benutzerwünsche sollten gesammelt werden für<ul><li>die Akzeptanz von Lösungen</li><li>sollten in Form von Lösungsvorschlägen dokumentiert werden, zusammen mit den Nutzungsanforderungen, die für diese Wünsche Lösungsmöglichkeiten sein können.</li></ul></li>
+                    <li>Benutzerwünsche dürfen nicht Ausgangspunkt für die Entwicklung einer Lösung sein.</li>
+                    <li>Benutzerwünsche können sich auf psychologische Bedürfnisse beziehen, die für die Produktgestaltung relevant sind.</li>
+                </ul>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen (S. 196)</div>- erhöht die Akzeptanz · - häufen sich? -&gt; aufnehmen</div>
+                <span class="src"><span class="material-icons">description</span>Folie S. 196</span>
+            </div>
+            <div class="card">
+                <h3><span class="material-icons">favorite</span>Benutzerwunsch und Bedürfnis</h3>
+                <ul>
+                    <li>Benutzerwünsche basieren oft auf psychologische Bedürfnisse, die durch die Untersuchung von Benutzerwünschen in kontextuellen Interviews ermittelt werden.</li>
+                    <li>Daher können psychologische Bedürfnisse durch die Untersuchung von Benutzerwünschen in kontextuellen Interviews ermittelt werden.</li>
+                </ul>
+                <p style="margin-top:10px"><b>!!</b> Benutzerwünsche basieren oft auf Bedürfnissen</p>
+                <span class="src"><span class="material-icons">description</span>Folie S. 197</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">self_improvement</span>Psychologische Bedürfnisse</h3>
+            <table class="criteria">
+                <tr><th>Psychologisches Bedürfnis</th><th>Beschreibung</th></tr>
+                <tr><td><b>Autonomie</b></td><td>Das Gefühl, gemäß eigener Vorstellungen zu handeln, statt von äußeren Kräften zu Handlungen gezwungen zu werden. Beispiel: Zu entscheiden, das Büro wie geplant zu verlassen, statt darauf zu warten, dass das Update abgeschlossen ist.</td></tr>
+                <tr><td><b>Kompetenz</b></td><td>Das Gefühl, bei den Handlungen fähig und effektiv zu sein, statt sich unfähig oder erfolglos zu fühlen. Beispiel: Shortcuts benutzen zu können, um eine Aufgabe in einem einzigen Schritt zu erledigen, statt einen Assistenten mit mehreren Schritten benutzen zu müssen.</td></tr>
+                <tr><td><b>Verbundenheit</b></td><td>Das Gefühl, mit Menschen regelmäßigen intimen Kontakt zu haben, denen man etwas bedeutet, statt sich allein und ungeliebt zu fühlen. Beispiel: Arbeitskollegen jeden Morgen bei der Arbeit zu sehen, auch wenn diese in anderen Büros arbeiten.</td></tr>
+                <tr><td><b>Popularität</b></td><td>Das Gefühl, gemocht und respektiert zu werden, einen Einfluss auf andere zu haben, statt sich wie jemand zu fühlen, dessen Meinung oder Rat niemanden interessiert. Beispiel: Zu sehen, dass Mitarbeiter ein Dokument häufig benutzen, an dem man selbst lange gearbeitet hat.</td></tr>
+                <tr><td><b>Stimulation</b></td><td>Das Gefühl, Neues zu entdecken und ausreichend Anregung zu bekommen, statt gelangweilt und unterfordert zu sein. Beispiel: Eine visuelle Repräsentation eines Baumes symbolisiert den Arbeitsfortschritt. Eine nicht ausbalancierte Baumkrone zeigt fehlende Inhalte, und die Farbe der Blätter ihre Relevanz.</td></tr>
+                <tr><td><b>Sicherheit</b></td><td>Sich sicher fühlen und sein Leben unter Kontrolle zu haben, angenehme Gewohnheiten und Routinen zu haben, statt sich unsicher und von bestimmten Umständen gefährdet zu fühlen. Beispiel: Wissen, dass alle erforderlichen Schritte einer Anforderung erledigt wurden, statt nervös auf eine Rückmeldung zu warten.</td></tr>
+                <tr><td><b>Bedeutsamkeit</b></td><td>Das Gefühl, bedeutsame Momente bewusst zu erleben, persönliche Entwicklungen oder neue Einsichten zu erlangen und seinem Leben Bedeutung zu geben, statt das Gefühl zu haben, stillzustehen und im Leben nicht viel Sinn zu haben. Beispiel: Wenn eine Website, Geld zur Aufforstung spendet, welches durch Suchen gesammelt wird, sehen Benutzende direkt, wie viele Bäume bereits von ihnen oder anderen gepflanzt wurden.</td></tr>
+            </table>
+            <span class="src"><span class="material-icons">description</span>Folien S. 198, 199</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">lightbulb</span>Benutzerwünsche, Bedürfnisse, emotionale Zustände – Beispiele</h3>
+            <div class="schablone" data-titel="Benutzerwünsche, Bedürfnisse, emotionale Zustände – Beispiele" data-folie="S. 200">
+                <div class="ok"><span class="material-icons">check</span><span>Der Arzt (Zielgruppe) will beim Kauf eines Medizinprodukts (spezifische Situation) feststellen können, dass er das Medizinprodukt im Einsatz beherrschen wird (Voraussetzung), um sich bei der Kaufentscheidung sicher zu fühlen (emotionaler Zustand).</span></div>
+                <div class="ok"><span class="material-icons">check</span><span>Der Wähler (Zielgruppe) will bei der Wahl in der Wahlkabine (spezifische Situation) feststellen können, dass er nicht beobachtet wird (Voraussetzung), um während des Wahlvorgangs Privatsphäre wahrzunehmen (emotionaler Zustand).</span></div>
+                <div class="ok"><span class="material-icons">check</span><span>Der Schüler (Zielgruppe) will im Sportunterricht (spezifische Situation) eine Turnhose eines anerkannten Markenherstellers tragen (Voraussetzung), um in der Schulklasse das Gefühl der Anerkennung durch die Schulkameraden zu haben (emotionaler Zustand).</span></div>
+                <div class="ok"><span class="material-icons">check</span><span>Der Lottospieler (Zielgruppe) will sich beim Kauf des Lottoscheines (spezifische Situation) vorstellen können, wie es wäre, wenn er gewinnt (Voraussetzung) um Glück zu empfinden (emotionaler Zustand).</span></div>
+            </div>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 200)</div>Subjektiv / UX relevant</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 200</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">sentiment_satisfied</span>Bedürfnis (user need)</h3>
+            <p class="card-lead">als Brücke vom Wunsch zum emotionalen Zustand</p>
+            <div class="box">Ein Bedürfnis kann als Zustand oder Erleben eines Mangels, verbunden mit dem Wunsch ihn zu beheben, definiert werden.</div>
+            <div class="grid-2" style="margin-top:12px">
+                <div><b style="font-size:14px">Typische angestrebte emotionale Zustände, relevant für die Produktgestaltung sind:</b>
+                    <ul><li>sicher fühlen</li><li>privat sein</li><li>motiviert, entschlossen sein</li><li>anerkannt, zugehörig, wertgeschätzt fühlen</li><li>zufrieden sein</li><li>glücklich sein</li><li>selbstbestimmt handeln</li><li>Kontrolle über eine Situation haben</li></ul></div>
+                <div class="box grau"><div class="box-title">Bedürfnispyramide nach Maslow</div><ol style="list-style:none;padding-left:0"><li>Selbstverwirklichung</li><li>Anerkennung, Wertschätzung</li><li>Sozialbedürfnisse</li><li>Sicherheit</li><li>Grund- oder Existenzbedürfnisse</li></ol></div>
+            </div>
+            <p style="margin-top:10px">Derartige angestrebte emotionale Zustände können über die Relevanz von bestimmten Erfordernissen aus Sicht der Benutzenden entscheiden.</p>
+            <p style="font-size:12.5px;color:#718096">Quelle: dorsch.hogrefe.com/stichwort/beduerfnis/</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 201</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">compare_arrows</span>Gegenüberstellung Benutzerwunsch und Erfordernis</h3>
+            <table class="criteria">
+                <tr><th>Benutzerwunsch</th><th>Erfordernis</th></tr>
+                <tr><td>subjektiv</td><td>objektiv</td></tr>
+                <tr><td>wird in Interview häufig als Forderung/ Lösung formuliert</td><td>wird in Interview nur implizit genannt, von URE in NK-Info identifiziert, beschreibt was Benutzende brauchen</td></tr>
+                <tr><td>wird in NKA gesammelt, ist NICHT Ausgangspunkt für Lösungsfindung</td><td>ist Ausgangspunkt für NA</td></tr>
+                <tr><td>wird zusammen mit NA, für die er Lösungen ist, betrachtet und ist somit wichtig für Akzeptanz möglicher Lösungen</td><td>wird zu NA und kann durch Benutzerwunsch priorisiert werden</td></tr>
+                <tr><td>führt häufig zu Marktanforderungen</td><td>führt zu Nutzungsanforderungen</td></tr>
+                <tr><td>kann außerhalb des NK begründet sein, somit Systemgrenzen verdeutlichen und zu NA führen</td><td></td></tr>
+            </table>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen (S. 202)</div>NA = Nutzungsanforderungen · NKA = Nutzungskontextanalyse · Wunsch objektiv -&gt; Erfordernis</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 202</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">edit</span>Praktische Übung 4</h3>
+            <p>Bitte bearbeiten Sie Übung 4 aus der Datei "Praktische Übungen":</p>
+            <p style="margin-top:6px">Gruppenübung zur Durchführung eines Interviews.</p>
+            <p style="margin-top:6px">Sie haben für diese Aufgabe 40 Minuten Zeit.</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 203</span>
+        </div>
+
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Erhebung von Nutzungskontextinformationen vorbereiten und durchführen</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Empirische Nutzungskontextinformationen werden in (kontextuellen) Interviews, Beobachtungen oder Fokusgruppen gesammelt. In der Regel arbeiten dabei ein Moderator und ein Protokollant als Team an der Datenerhebung. Unabhängig von der gewählten Methode sollte der Moderator das Meister-Schüler-Modell anwenden.</div>
+                <div class="st"><span class="sn">2</span>Kontextuelle Interviews werden verwendet, um ein umfassendes Verständnis der Komponenten eines Nutzungskontextes und ihrer Wechselbeziehungen zu erlangen.</div>
+                <div class="st"><span class="sn">3</span>Beobachtungen werden eingesetzt, für ein Verständnis spezifischer Aspekte der Aufgabenerledigung.</div>
+                <div class="st"><span class="sn">4</span>Fokusgruppen werden für spezifische Themen innerhalb des Nutzungskontextes eingesetzt, wenn ein tiefes Verständnis der Perspektiven verschiedener Benutzergruppen benötigt wird.</div>
+                <div class="st"><span class="sn">5</span>Soweit möglich, sollten die Interviews in der physischen Umgebung stattfinden, in der die Teilnehmenden normalerweise die Aufgaben ausführen, die durch das geplante interaktive System unterstützt werden. Dies wird als kontextuelles Interview bezeichnet.</div>
+                <div class="st"><span class="sn">6</span>In Interviews verwendet die Moderatorin eine Interviewcheckliste mit den Fragen, die geklärt werden müssen. Die Fragen sind offen und neutral, um die Validität der empirischen Informationen zu maximieren. Geschlossene Fragen sollten nur selten verwendet und Suggestivfragen gänzlich vermieden werden.</div>
+                <div class="st"><span class="sn">7</span>Bei einer Beobachtung werden die Benutzende in der physischen Umgebung beobachtet, in der sie ihre Aufgaben ausführen. Die Beobachtungen werden von einem Protokollanten dokumentiert. Der beobachtende Moderator unterbricht die Ausführung der Aufgabe normalerweise nicht, außer wenn eine klärende Frage gestellt werden muss. Dies generiert objektive, vollständige Informationen.</div>
+                <div class="st"><span class="sn">8</span>Eine spezifische Art der Beobachtung ist die Tagebuchstudie (Diary study), bei der Benutzende Nutzungskontextinformationen liefern, indem sie in bestimmten Zeitabständen, z.B. einmal pro Tag, oder in bestimmten Situationen über einen längeren Zeitraum hinweg einen Fragebogen ausfüllen.</div>
+                <div class="st"><span class="sn">9</span>Hier werden sogenannte "Cultural Probe", Proben bzw. Belege der Situation als Teil ihrer Nutzungskontextinformationen, von den Benutzern gesammelt. Cultural Probes können Fotos, Notizen, Skizzen oder andere "Proben" (Spuren) sein.</div>
+                <div class="st"><span class="sn">10</span>Bei einer Fokusgruppe werden Repräsentanten einer oder mehrerer Benutzergruppen von einem/r Moderator:in durch eine Diskussion geführt. In deren Verlauf werden vordefinierte Fragen und Themen zum Nutzungskontext aus verschiedenen Perspektiven und in Detailtiefe diskutiert.</div>
+                <div class="st"><span class="sn">11</span>Bei der Durchführung von Interviews oder der Moderation von Fokusgruppen ist es wichtig, sich als Moderator und Protokollant bewusst zu machen, dass Menschen ihre Erfahrungen des Nutzungskontextes auf Grundlage ihrer mentalen Modelle beschreiben. Also ihre Wahrnehmung von sich selbst, anderen, der Umgebung und den Dingen, mit denen sie interagieren wiedergeben.</div>
+                <div class="st"><span class="sn">12</span>Vor allem in Interviews und Fokusgruppen äußern Benutzende ihre Wünsche. Benutzerwünsche sind typischerweise keine Nutzungskontextinformationen, Erfordernisse oder Nutzungsanforderungen, sondern von Benutzenden gewünschte Lösungen. Benutzerwünsche können zu Nutzungsanforderungen führen, falls im zugrundeliegenden Nutzungskontext Erfordernisse dazu identifiziert werden können. Also, sie sind nicht nur subjektiv, sondern haben eine Allgemeingültigkeit für die Benutzergruppe.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 204–206</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         3.3 AUFTAKT (Folie S. 207)
+         ========================================================= -->
+    <section class="section" id="beschreiben">
+        <div class="section-title"><div class="num"><span class="material-icons">description</span></div><h2>3.3 – Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen</h2></div>
+        <p class="section-lead">Sicherstellen, dass erhobene Nutzungskontextinformationen von Dritten verstanden werden und ausgewertet werden können. (S. 207)</p>
+        <div class="card">
+            <div class="sequence">
+                <span class="seq tuerkis" style="opacity:.55">Benutzer für NKA rekrutieren</span><span class="material-icons">chevron_right</span>
+                <span class="seq tuerkis" style="opacity:.55">Methoden für NKA festlegen</span><span class="material-icons">chevron_right</span>
+                <span class="seq tuerkis">Ergebnisse der NKA dokumentieren</span>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 207</span>
+        </div>
+    </section>
+    <section class="section" id="nk-beschreibung">
+        <div class="section-title"><div class="num"><span class="material-icons">description</span></div><h2>Nutzungskontextbeschreibung (context of use discription)</h2></div>
+        <div class="pg" data-pg="{&quot;titel&quot;: &quot;Nutzungskontextbeschreibung (context of use discription)&quot;, &quot;folie&quot;: &quot;S. 209, 212, 222, 223&quot;, &quot;stufen&quot;: [{&quot;titel&quot;: &quot;Zusammenfassende NK-Beschreibungen&quot;, &quot;art&quot;: &quot;g&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Liste, Tabelle der 5 Komponenten des Nutzungskontextes&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Benutzer(gruppen)&quot;, &quot;text&quot;: &quot;Benennen stichwortartig: Benutzergruppen für ein interaktives System&quot;, &quot;folie&quot;: &quot;S. 210&quot;}, {&quot;label&quot;: &quot;Aufgaben&quot;, &quot;text&quot;: &quot;Benennen stichwortartig: ihre Aufgaben und Ziele&quot;, &quot;folie&quot;: &quot;S. 210&quot;}, {&quot;label&quot;: &quot;Ziele&quot;, &quot;text&quot;: &quot;Benennen stichwortartig: ihre Aufgaben und Ziele&quot;, &quot;folie&quot;: &quot;S. 210&quot;}, {&quot;label&quot;: &quot;Umgebung(en)&quot;, &quot;text&quot;: &quot;Benennen stichwortartig: ihre physischen, sozialen, technischen Bedingungen bzw. die Umgebung in der die Aufgaben ausgeführt werden&quot;, &quot;folie&quot;: &quot;S. 210&quot;}, {&quot;label&quot;: &quot;Ressourcen&quot;, &quot;text&quot;: &quot;Benennen stichwortartig: ihre Ressourcen&quot;, &quot;folie&quot;: &quot;S. 210&quot;}]}]}, {&quot;titel&quot;: &quot;Detaillierte NK-Beschreibungen · Narrative Beschreibung&quot;, &quot;art&quot;: &quot;t&quot;, &quot;pfeil&quot;: &quot;east&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Ist-Szenarien&quot;, &quot;k&quot;: &quot;istszenario&quot;}, {&quot;label&quot;: &quot;Personas&quot;, &quot;k&quot;: &quot;persona&quot;}]}]}, {&quot;titel&quot;: &quot;Modellhafte Beschreibung&quot;, &quot;art&quot;: &quot;l&quot;, &quot;pfeil_text&quot;: &quot;⇒&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Benutzergruppenprofile&quot;, &quot;text&quot;: &quot;Benutzergruppenprofile beschreiben wichtige Merkmale von Benutzergruppen.&quot;, &quot;folie&quot;: &quot;S. 223&quot;}, {&quot;label&quot;: &quot;Aufgabenmodelle&quot;, &quot;text&quot;: &quot;Aufgabenmodelle und Aufgabenobjekte beschreiben die Struktur und Logik von Aufgaben, Teilaufgaben sowie den Gegenstand der Aufgabenbearbeitung, Aufgabenobjekte.&quot;, &quot;folie&quot;: &quot;S. 223&quot;}, {&quot;label&quot;: &quot;Aufgabenobjekte, Attribute&quot;, &quot;text&quot;: &quot;Aufgabenmodelle und Aufgabenobjekte beschreiben die Struktur und Logik von Aufgaben, Teilaufgaben sowie den Gegenstand der Aufgabenbearbeitung, Aufgabenobjekte.&quot;, &quot;folie&quot;: &quot;S. 223&quot;}, {&quot;label&quot;: &quot;Affinity-Diagramm&quot;, &quot;k&quot;: &quot;affinity&quot;}, {&quot;label&quot;: &quot;User Journeys&quot;, &quot;k&quot;: &quot;journey&quot;}, {&quot;label&quot;: &quot;Zielkataloge&quot;, &quot;text&quot;: &quot;Zielkataloge beschreiben alle Ziele für alle, ausgewählte Benutzergruppen.&quot;, &quot;folie&quot;: &quot;S. 223&quot;, &quot;k&quot;: &quot;zielkatalog&quot;}, {&quot;label&quot;: &quot;Umgebungsmodelle&quot;, &quot;text&quot;: &quot;Umgebungsmodelle (sozial, physisch, technisch) beschreiben besonderen Umgebungsmerkmale.&quot;, &quot;folie&quot;: &quot;S. 223&quot;, &quot;k&quot;: &quot;umgebungsmodell&quot;}, {&quot;label&quot;: &quot;Informationsmodelle&quot;, &quot;text&quot;: &quot;Informationsmodelle (Informationsobjekte) beschreiben die dem Aufgabenmodell und den Aufgabenobjekten innewohnende Struktur der Information.&quot;, &quot;folie&quot;: &quot;S. 223&quot;, &quot;k&quot;: &quot;umgebungsmodell&quot;}]}]}]}"></div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Der Nutzungskontext und die 5 Komponenten – B/A&amp;Z/U/R</h3>
+            <p>Nutzungskontext</p><ul><li>Benutzer<ul><li>Benutzergruppe 1<ul><li>Ziele</li><li>Eigenschaften</li><li>Einstellungen</li><li>...</li></ul></li><li>...</li><li>Benutzergruppe n<ul><li>Ziele</li><li>Eigenschaften</li><li>Einstellungen</li><li>...</li></ul></li></ul></li><li>Aufgaben &amp; Ziele<ul><li>Aufgabe 1, Ziel 1</li><li>...</li><li>Aufgabe m, Ziel m</li></ul></li><li>Umgebung<ul><li>physisch</li><li>sozial</li><li>technisch</li></ul></li><li>Ressourcen<ul><li>wiederverwendbar<ul><li>Ausrüstung<ul><li>Hardware</li><li>Software</li></ul></li><li>Informationen</li><li>Support<ul><li>menschlich</li><li>technisch</li></ul></li></ul></li><li>sich erschöpfend<ul><li>Material</li><li>Zeit</li><li>Geld</li><li>Leistungsfähigkeit<ul><li>körperlich</li><li>mental</li></ul></li></ul></li></ul></li></ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 208)</div>alles dokumentieren</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 208</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">menu_book</span>Nutzungskontextbeschreibung (context of use discription)</h3>
+            <p>Alle Arten von Darlegungen, die die Benutzer, Ziele, Aufgaben, Ressourcen und Umgebungen beschreiben, die durch die Analyse von Beobachtungen, kontextuellen Interviews, Fokusgruppen und Benutzerbefragungen ermittelt wurden.</p><p>Zusammenfassende NK-Beschreibungen</p><p>↓</p><p>Liste, Tabelle der 5 Komponenten des Nutzungskontextes</p><ul><li>Benutzer(gruppen)</li><li>Aufgaben</li><li>Ziele</li><li>Umgebung(en)</li><li>Ressourcen</li></ul><p>Detaillierte NK-Beschreibungen</p><p>↓ Narrative Beschreibung</p><ul><li>Ist-Szenarien</li><li>Personas</li></ul><p>⇒</p><p>↓ Modellhafte Beschreibung</p><ul><li>Benutzergruppenprofile</li><li>Aufgabenmodelle</li><li>Aufgabenobjekte, Attribute</li><li>Affinity-Diagramm</li><li>User Journeys</li><li>Zielkataloge</li><li>Umgebungsmodelle</li><li>Informationsmodelle</li></ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 209)</div>übersicht | schneller überblick · ↳ relevant für Entwicklung</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 209</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Zusammenfassende Nutzungskontextbeschreibung (summary context of use description)</h3>
+            <p>Zusammenfassende NK-Beschreibungen</p><p>↓</p><p>Liste, Tabelle der 5 Komponenten des Nutzungskontextes</p><ul><li>Benutzer(gruppen)</li><li>Aufgaben</li><li>Ziele</li><li>Umgebung(en)</li><li>Ressourcen</li></ul><p>Benennen stichwortartig</p><ul><li>Benutzergruppen für ein interaktives System</li><li>ihre Aufgaben und Ziele</li><li>ihre physischen, sozialen, technischen Bedingungen bzw. die Umgebung in der die Aufgaben ausgeführt werden</li><li>ihre Ressourcen</li></ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 210)</div>BAZUR</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 210</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Zusammenfassende Nutzungskontextbeschreibung</h3>
+            <ul><li>Sie benennen typischerweise zu Projektbeginn, was über die Benutzende deren Ziele und Aufgaben, Umgebung und Ressourcen bekannt ist.</li></ul><p>Noch ist keine (neue / weitere) Nutzungskontextanalyse durchgeführt, daher muss zwischen empirischer Information und Annahmen unterschieden werden.</p><ul><li>Sie bilden typischerweise den Ausgangspunkt für eine modellbasierte Nutzungskontextanalyse</li><li>Sie sind besonders hilfreich während der Planung von Nutzungskontextanalysen</li><li>Sie sind kein Ersatz für detaillierte Nutzungskontextbeschreibungen</li><li>Sie können nach der Durchführung von Nutzungskontextanalysen zur zusammenfassenden Kommunikation der Ergebnisse an Stakeholder verwendet werden.</li></ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 211)</div>vom bestehenden System · Basis von modellbasierter Nutzungskontextanalyse</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 211</span>
+        </div>
+    </section>
+    <section class="section" id="narrativ">
+        <div class="section-title"><div class="num"><span class="material-icons">history_edu</span></div><h2>Detaillierte, Narrative Nutzungskontextbeschreibungen</h2></div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Detaillierte Nutzungskontextbeschreibung (detailed context of use discription)</h3>
+            <p>Sie ist eine zusammenhängende Beschreibung der Benutzer, ihrer Aufgaben und Ziele, ihrer physischen, sozialen, technischen Umgebung sowie Ressourcen. Sie werden typischerweise als narrative Textbeschreibung dokumentiert aus denen modellhafte Beschreibungen abgeleitet werden.</p><p>narrative Beschreibungen</p><ul><li>Ist-Szenarien als Beschreibung, wie sich Benutzende oder Personas bei der Erledigung ihrer Aufgaben verhalten</li><li>Personas als personalisierte Illustration von Benutzern innerhalb einer Benutzergruppe, repräsentieren oft Benutzer im Ist-Szenario.</li></ul><p>⇒</p><p>modellhafte Beschreibungen</p><ul><li>Benutzergruppenprofile beschreiben wichtige Merkmale von Benutzergruppen</li><li>Aufgabenmodelle und Aufgabenobjekte beschreiben die Struktur und Logik von Aufgaben, Teilaufgaben sowie den Gegenstand der Aufgabenbearbeitung, Aufgabenobjekte</li><li>Affinity-Diagramme beschreiben semantische Struktur der Benutzeraussagen</li><li>User Journeys beschreiben Erwartungen, Verhalten und Emotionen von Benutzenden über alle Kontaktpunkte mit dem System, Organisation hinweg</li><li>Zielkataloge beschreiben alle Ziele für alle, ausgewählte Benutzergruppen</li><li>Umgebungsmodelle (sozial, physisch, technisch) beschreiben besonderen Umgebungsmerkmale</li><li>Informationsmodelle (Informationsobjekte) beschreiben die dem Aufgabenmodell und den Aufgabenobjekten innewohnende Struktur der Information</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 212</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Detaillierte, Narrative Nutzungskontextbeschreibungen</h3>
+            <p>Zusammenfassende NK-Beschreibungen (ausgegraut)</p><p>↓</p><p>Liste, Tabelle der 5 Komponenten des Nutzungskontextes</p><ul><li>Benutzer(gruppen)</li><li>Aufgaben</li><li>Ziele</li><li>Umgebung(en)</li><li>Ressourcen</li></ul><p>detaillierte NK-Beschreibungen</p><p>↓ Narrative Beschreibung (hervorgehoben)</p><ul><li>Ist-Szenarien</li><li>Personas</li></ul><p>⇒</p><p>↓ Modellhafte Beschreibung (ausgegraut)</p><ul><li>Benutzergruppenprofile</li><li>Aufgabenmodelle</li><li>Aufgabenobjekte</li><li>Affinity-Diagramme</li><li>User Journeys</li><li>Zielkataloge</li><li>Umgebungsmodelle</li><li>Informationsmodelle</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 213</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">menu_book</span>Ist-Szenario (as-is scenario)</h3>
+            <p>Eine erzählende, textuelle Beschreibung, wie ein Benutzer derzeit eine oder mehrere Aufgaben im aktuellen Nutzungskontext erledigt.</p><ul><li>Ist-Szenarien beschreiben den gegenwärtigen Nutzungskontext und dienen dazu, Erfordernisse zu erkennen und Nutzungsanforderungen abzuleiten.</li><li>Ist-Szenarien beschreiben vorrangig die Komponenten des gegebenen Nutzungskontextes im Zusammenspiel.</li><li>Ist-Szenarien machen in der Beschreibung des Verhaltens von Benutzenden ein oder mehrere Probleme deutlich, die die effiziente Erledigung der Aufgaben behindern.</li></ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 214)</div>gegenwärtig</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 214</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Ist-Szenario – Beispiel</h3>
+            <p>Siehe Ist-Szenario Radiologe</p><p>Herr Dr. Staubert (Name geändert) ist Radiologe und Nuklearmediziner. Seit 24 Jahren ist er Vollzeit in der Radiologie tätig.</p><p>Er arbeitet in einem (Akut-)Krankenhaus. Insgesamt sind dort vier Radiologen tätig in der sogenannten Abteilung für radiologische Diagnostik und interventionelle Radiologie. Viele der Patienten für die Herr Dr. Staubert radiologische Untersuchungen durchführt sind Herzpatienten. Herzkranzgefäßuntersuchungen sind schwierig, da das Herz schlägt und sich „bewegt“.</p><p>Ein Radiologe hat immer mehrere Arbeitsplätze. Es gibt verteilte Arbeitsplätze auf denen die vier Radiologen alle sechs Monate rotieren. „Arbeitsplatz“ heißt hierbei, dass jeweils ein bestimmtes radiologisches Untersuchungssystem genutzt wird. Der Radiologe hat immer einen „primären“ Arbeitsplatz und nutzt die anderen Arbeitsplätze situationsbezogen, wenn es eben aus der Untersuchungssituation heraus erforderlich wird.</p><p>Jeder Radiologe hat ein Zimmer mit Befundungsmonitor, um radiologische Aufnahmen auszuwerten.</p><p>Insgesamt gibt es fünf Arbeitsplätze:</p><p>1. Arbeitsplatz für Computertomographie (CT)</p><p>primär geeignet für die Diagnostik der Herzkranzgefäße</p><p>2. Arbeitsplatz für digitale Subtraktionsangiographie (DSA)</p><p>primär geeignet für Therapiezwecke, eher traditionelle Technologie</p><p>3. Arbeitsplatz für Durchleuchtung</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 215</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">menu_book</span>Persona (persona)</h3>
+            <p>Eine Beschreibung eines konstruierten, aber realistischen Benutzers und was dieser bei der Benutzung eines interaktiven Systems beabsichtigt</p><ul><li>Personas sind erfundene Beispiele eines realen Benutzenden auf der Basis empirisch ermittelter Daten, zum Beispiel von Beobachtungen oder kontextuellen Interviews.</li><li>Personas verfügen typischerweise über einen Namen, Alter, einige Hintergrundinformationen, Ziele und Wünsche. Persona-Beschreibungen enthalten oft ein Foto.</li><li>Eine Persona-Beschreibung sollte Informationen über wesentliches Wissen im Themenfeld des interaktiven Systems und die entsprechenden Interessen der Persona im Themenfeld beinhalten.</li></ul><p>Fred, 36 Jahre</p><ul><li>ledig, 50.000 € Einkommen</li><li>Heavy Internet-User und Social-Medianutzer</li><li>...</li><li>...</li><li>Hobbies: ...</li><li>Marken: ...</li><li>Gadgets: ...</li><li>Bildung: ...</li><li>Ziele im Leben: ...</li><li>Wünsche: ...</li></ul><p>Siehe auch: https://www.cooper.com/journal/2008/05/the_origin_of_personas/</p>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 216)</div>Zusammenfassende Benutzergruppe</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 216</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Persona</h3>
+            <ul><li>Personas geben den Benutzern ein Gesicht, so dass alle Projektbeteiligten eine Vorstellung über die späteren Benutzenden eines interaktiven Systems, deren Eigenschaften, Motivation und Ziele entwickeln können.</li><li>Primäre und sekundäre Personas<ul><li>Primäre Personas repräsentieren Hauptzielgruppen</li><li>Sekundäre Personas stellen bestimmte Ziele oder Eigenschaften in den Mittelpunkt, die auch bei der Herleitung von Nutzungsanforderungen relevant sind und die primäre Persona-Beschreibung überlasten würden.</li></ul></li><li>Personas die auf Annahmen beruhen, werden Proto-Personas genannt (siehe Lean UX). Sie werden verwendet um als Ausgangspunkt modellbasierter Nutzungskontextanalyse zu dienen.</li><li>Mit einer sogenannten Anti-Persona werden konträre Ausprägungen repräsentiert, um deutlich zu machen, für wen nicht gestaltet wird.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 217</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Jack, 33 Jahre alt</h3>
+            <p>Sportstudium</p><p>geht regelmäßig joggen</p><p>Ziel: Marathonläufe absolvieren</p><p>Fitnesskaufmann</p><p>Wohnt in einer Großstadt</p><p>verfolgt Modetrends</p><p>modebewusst</p><p>lebt gesund</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 218</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>CLOSE-UP: THE TECHNOPHILE</h3>
+            <p>Characteristics</p><ul><li>Actively deals with new technologies</li><li>Also uses non-approved software, tinkers around</li><li>Uses different apps</li><li>Sometimes has a tendency to be overcautious due to the permanent availability of values</li><li>Is open to telemedicine</li><li>Actively exchanges information in online forums and thus keeps up to date with the latest technical developments</li><li>Places comparatively less value on data protection, since the collection of data from other diabetics can be useful for improving the applications.</li></ul><p>Goals &amp; Wishes</p><ul><li>Analysis of data and recommendations by AI</li><li>More data connection, e.g. publication of dishes incl. insulin demand of restaurants, basis of experiences of other diabetic persons</li><li>Sharing personal data for better blood glucose management</li><li>Wishes for more compatibility of applications</li><li>Professional closed-loop offers</li></ul><p>"I'm in control of my own diabetes - if an app can help me do that - all the better."</p><ul><li>Mario, 29 -</li></ul><p>Pain Points</p><ul><li>Data protection gets in the way of many things</li><li>Activity selection in apps not sufficient, e.g. different types of sports</li><li>Apps from different manufacturers often cannot be paired</li></ul><p>Exchange of Information</p><table class="criteria"><tr><th>Doctor, Diabetologist</th><th>Flyer / Brochures</th></tr><tr><td>Other diabetics</td><td>Online fora</td></tr></table><p>page 13, Spiegel Institut medical, 2021</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 219</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>CLOSE-UP: THE PASSIVE</h3>
+            <p>Characteristics</p><ul><li>Obtains his information mainly through the trusted doctor's office</li><li>Wants as little effort as possible and is more practically minded</li><li>Tries out less and sticks to the variant that works for her for a long time</li><li>Is less digitally on the go, uses no app or hardly at all</li><li>Goes by routine and feeling, is also satisfied with values that are not 100% perfect</li><li>Welcomes new technologies if they take work off her hands</li><li>Is concerned about data protection</li><li>Tends to be sceptical about trying out new applications</li></ul><p>Goals &amp; Wishes</p><ul><li>Closed-loop system for those not so tech-savvy, but with final control by oneself</li><li>Smaller devices, higher insulin storage to reduce effort</li><li>To have to deal with diabetes as little as possible</li></ul><p>"I'd like it if there was some kind of all-in-one self-regulating thing that made it so you didn't have to deal with it at all."</p><ul><li>Sandra, 36 -</li></ul><p>Pain Points</p><ul><li>Scepticism about future technologies and telemedicine because of data protection</li><li>Pump is clunky and sometimes distracting</li><li>Readjusting the base rate and calibrating the pump is time-consuming</li><li>Desire for closed-loop, but necessary informatics is a deterrent and too much work</li></ul><p>Exchange of Information</p><table class="criteria"><tr><th>Doctor, Diabetologist</th><th>Flyer / Brochures</th></tr><tr><td>Other diabetics</td><td>Online fora</td></tr></table><p>page 14, Spiegel Institut medical, 2021</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 220</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Gütekriterien für die Entwicklung von Personas</h3>
+            <ul><li>Persona werden von Personen entwickelt, die die Nutzungskontextanalyse durchgeführt haben.</li><li>Die Beschreibung der Persona entspricht der Beschreibung einer realen Person, sie ist aber keine.</li><li>Die zu entwickelnde Persona kombiniert Eigenschaften realer Benutzer.</li><li>Die Beschreibung der Persona enthält alle wesentlichen Charakteristika der jeweiligen Benutzenden sowie deren wichtigste Ziele.</li><li>Die Entwicklung einer Persona benötigt ein empirisches Fundament – sie darf nicht frei erfunden sein.</li><li>Es sollten nur wenige Personas entwickelt werden (max. 2-5), um mit ihnen ökonomisch zu arbeiten.</li><li>Wie Nutzungskontexte, müssen Personas als Repräsentanten echter Benutzer regelmäßig überprüft und ggf. angepasst werden.</li><li>Verantwortung für das Erstellen, die Qualität sowie die Wartung der Persona hat das Produktteam.</li><li>Die Nutzungskontextinformation, die zur Erstellung und Anpassung der Personas herangezogen wurde, muss für das Produkt-Team verfügbar bleiben.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 221</span>
+        </div>
+    </section>
+    <section class="section" id="modellhaft">
+        <div class="section-title"><div class="num"><span class="material-icons">schema</span></div><h2>Detaillierte, Modellhafte Nutzungskontextbeschreibung</h2></div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Detaillierte, Modellhafte Nutzungskontextbeschreibung</h3>
+            <p>Zusammenfassende NK-Beschreibungen</p><p>↓</p><p>Liste oder Tabelle</p><ul><li>Benutzer(gruppen)</li><li>Aufgaben und Ziele</li><li>Umgebung(en)</li><li>Ressourcen</li></ul><p>detaillierte NK-Beschreibungen</p><p>↓ Narrative Beschreibung</p><ul><li>Ist-Szenarien</li><li>Personas</li></ul><p>⇒</p><p>↓ Modellhafte Beschreibung</p><ul><li>Benutzergruppenprofile</li><li>Aufgabenmodelle</li><li>Aufgabenobjekte</li><li>Affinity-Diagramme</li><li>User Journeys</li><li>Zielkataloge</li><li>Umgebungsmodelle</li><li>Informationsmodelle</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 222</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Komponenten der Nutzungskontextbeschreibung</h3>
+            <ul><li>Benutzergruppenprofile beschreiben wichtige Merkmale von Benutzergruppen.</li><li>Aufgabenmodelle und Aufgabenobjekte beschreiben die Struktur und Logik von Aufgaben, Teilaufgaben sowie den Gegenstand der Aufgabenbearbeitung, Aufgabenobjekte.</li><li>Affinity-Diagramme beschreiben semantische Struktur der Benutzeraussagen.</li><li>User Journeys beschreiben Erwartungen, Verhalten und Emotionen von Benutzenden über alle Kontaktpunkte mit dem interaktiven System, Organisation hinweg.</li><li>Zielkataloge beschreiben alle Ziele für alle, ausgewählte Benutzergruppen.</li><li>Umgebungsmodelle (sozial, physisch, technisch) beschreiben besonderen Umgebungsmerkmale.</li><li>Informationsmodelle (Informationsobjekte) beschreiben die dem Aufgabenmodell und den Aufgabenobjekten innewohnende Struktur der Information.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 223</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">menu_book</span>Affinity-Diagramm (affinity diagram)</h3>
+            <p>Ein strukturiertes Format für die Dokumentation von Ergebnissen aus der Analyse qualitativer Daten.</p><ul><li>Zusammengehörige Ideen oder Aussagen werden nach dem Prinzip "bottom-up" in Gruppen sortiert, denen jeweils eine Überschrift zugewiesen wird.</li><li>Durch die Gruppierung und Benennung von zusammenhängenden Gruppen entsteht die typische Struktur eines Affinity-Diagramms.</li><li>Ideen oder Aussagen werden zunächst auf Karten notiert ("Affinity-Notes") und anschließend in mehreren Iterationen in hierarchisch organisierte Gruppen sortiert. Für jede Gruppe oder jede Gruppe von Gruppen wird eine passende Überschrift vergeben</li><li>Affinity-Diagramme werden idealerweise kollaborativ erzeugt – umgruppieren ist erlaubt</li><li>Mit der Verwendung von Farben kann die Struktur (Ebenen: Ziele, Themen, Zusammenhänge zwischen Inhalten) besser visualisiert werden</li></ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 224)</div>Beispiel UXQB</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 224</span>
+        </div>
+        <div class="card">
+            
+            
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 225)</div>BEISPIEL Affinity Diagramm</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 225</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>User Journey (user journey)</h3>
+            <p>Ein Verfahren, das dazu dient, eine Beschreibung der "Begegnung" von Benutzenden mit dem interaktiven System und der Organisation über alle Berührungspunkte (touchpoints) an denen die User Experience entsteht, für Dritte erfahrbar zu machen.</p><p>Dabei werden alle Touchpoints vom ersten Kontakt mit dem interaktiven System (z. B. "Wie habe ich erfahren, dass es diesen neuen interaktiven Service gibt?") über die direkte aufgabenbezogene Interaktion bis zur Kommunikation der User Experience an Dritte (z. B. Bericht an Kollegen) betrachtet.</p><p>Mittels einer User Journey Map wird eine User Journey diagrammartig visualisiert.</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 226</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">menu_book</span>User Journey Map (user journey map)</h3>
+            <p>Eine lineare Darstellung der Interaktion eines Benutzers mit dem interaktiven System und der betreibenden Organisation, die alle Berührungspunkte abdeckt, die die User Experience beeinflussen.</p><ul><li>User Journey Maps gehen über die eigentliche Nutzung eines Produktes hinaus und reichen von der Entdeckung des Produkts, über den Kauf bis hin zur späteren, längeren Nutzung des Produkts.</li><li>User Journey Maps sind zusammenfassende Kommunikationsmedium, um Stakeholdern auf einfache Weise Szenarien zu veranschaulichen, die über die eigentliche Nutzung hinausgehen.</li><li>Dabei werden alle Berührungspunkte (touch points) berücksichtigt, einschließlich des ersten Kontakts der Benutzenden mit dem interaktiven System, der direkten aufgabenbezogenen Interaktion und der Kommunikation der User Experience an Dritte.</li><li>User Journey Maps sind kein Ersatz für Ist-Szenarien oder Nutzungsszenarien.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 227</span>
+        </div>
+        <div class="card">
+            
+            <table class="criteria"><tr><td>Breakdown</td><td>Select</td><td>Negotiate</td><td>Receive and Use</td></tr></table><p>Breakdown: car is broken – search for new car</p><p>Select: selected not available – found an expensive one</p><p>Negotiate: 8 weeks delivery – delivery soon</p><p>Receive and Use: trouble with dealer – using new car</p><table class="criteria"><tr><td>see ads</td><td>read reviews</td><td>contact dealerships</td><td>negotiation</td><td>sign contract</td><td>receive call of delivery</td><td>delivery</td><td>first trip</td></tr></table>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 228)</div>USER JOURNEY Beispiel</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 228</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>USER JOURNEY – ÜBER VIELE BEHANDLUNGEN HINWEG · PFLEGEKRAFT AN DER DIAYSEMASCHINE</h3>
+            
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 229)</div>USER JOURNEY MAP Beispiel</div>
+            <p class="ex-mute">Kleindruck auf der Folie – bitte im Originalfoto lesen.</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 229</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Max's journey – with our Investment App</h3>
+            
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 231)</div>USER JOURNEY MAP</div>
+            <p class="ex-mute">Kleindruck auf der Folie – bitte im Originalfoto lesen.</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 231</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">menu_book</span>Zielkatalog (goal catalogue)</h3>
+            <p>Ein Zielkatalog ist eine tabellarische Darstellung aller identifizierten Ziele, die für das Benutzerverhalten im Nutzungskontext Relevanz haben.</p><ul><li>Für jedes Ziel muss angegeben werden, für welche Benutzergruppen oder Personas es gültig ist.</li><li>Der Zielkatalog hilft zu prüfen, ob relevante Ziele für eine Benutzergruppe identifiziert und beschrieben wurden, und ob es Lücken oder Verständnisprobleme gibt.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 232</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Zielkatalog</h3>
+            <p>Das interaktive System, für dessen Entwicklung dieser Zielkatalog entwickelt wurde, ist eine Smartphone-App, die Parkplatzsuchende beim Auffinden von Park-</p><p>plätzen und Bezahlen von Parkplatzgebühren unterstützt.</p><p>Zielkatalog</p><table class="criteria"><tr><th>Ziel</th><th>Gelassene Besucher</th><th>Gestresste Berufstätige</th><th>Unerfahrene Besucher</th><th>Anwohner</th><th>Parkraum-überwacher</th></tr><tr><td>Ich möchte gleich einen freien Parkplatz  finden</td><td>x</td><td>x</td><td>x</td><td>x |</td><td></td></tr><tr><td>Ich möchte immer rechtmäßig parken</td><td></td><td>x</td><td>x</td><td>x |</td><td></td></tr><tr><td>Ich möchte einfach nur Besorgungen machen</td><td>x</td><td>x</td><td>x</td><td>x |</td><td></td></tr><tr><td>Ich möchte jemanden besuchen</td><td>x</td><td></td><td>x</td><td>x |</td><td></td></tr><tr><td>Ich möchte, dass der Parkprozess unaufwändig ist</td><td></td><td>x</td><td>x</td><td>x |</td><td></td></tr><tr><td>Ich möchte schnell mit dem Funktionsumfang von Geräten zurechtkommen</td><td></td><td>x</td><td>x</td><td>x |</td><td></td></tr><tr><td>Ich möchte mich regelkonform verhalten</td><td>x</td><td>x</td><td>x</td><td>x |</td><td></td></tr><tr><td>Ich möchte meinen Arbeitsort pünktlich erreichen</td><td></td><td>x</td><td></td><td>x |</td><td></td></tr><tr><td>Ich möchte möglichst wenig laufen oder wenigstens immer den kürzesten Weg kennen.</td><td></td><td>x</td><td></td><td>x</td><td>x</td></tr><tr><td>In meinem Zuständigkeitsbereich soll Ordnung  herrschen</td><td></td><td></td><td></td><td></td><td>x</td></tr><tr><td>Ich möchte mich auf Freizeitaktivitäten konzentrieren können, ohne mich durch Parken ablenken zu lassen</td><td>x</td><td></td><td>x</td><td>x |</td><td></td></tr><tr><td>Nach meinem Aufenthalt möchte ich wieder wegfahren, ohne, dass ich mein Auto suchen muss</td><td>x</td><td>x</td><td>x</td><td>x |</td><td></td></tr></table><p>Quelle: Anschauungsbeispiele zum CPUX-UR, www.uxqb.org</p>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 233)</div>BEISPIEL</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 233</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Umgebungs- und Informationsmodel</h3>
+            <p>Umgebungsmodelle (sozial und physisch) beschreiben die besonderen Merkmale der jeweiligen Umgebung.</p><p>Informationsmodelle (Informationsobjekte) beschreiben die dem Aufgabenmodell und den Aufgabenobjekten innewohnende Struktur der Information.</p>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 234)</div>Umgebung. · z.B. Unternehmenshierarchie · Unternehmenshiearchie · Untenehmenshiesarchie · Detailierte NK Beschreibung → Narrativ / → Modellhaft →</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 234</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Umgebungsmodell grafisch</h3>
+            
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 235)</div>Beispiel · physisch</div>
+            <p class="ex-mute">Kleindruck auf der Folie – bitte im Originalfoto lesen.</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 235</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Umgebungsmodell tabellarisch</h3>
+            <p>Soziale Umgebung</p><table class="criteria"><tr><th>Personen / Rollen</th><th>Fahrer des Autos</th></tr><tr><td></td><td>Beifahrer</td></tr><tr><td></td><td>Mitarbeiter Parkraumbewirtschaftung</td></tr><tr><td></td><td>Anwohner</td></tr><tr><td></td><td>Dienstleister (Post…)</td></tr><tr><td></td><td>Andere Autofahrer</td></tr><tr><td>Parksituation</td><td>Parkgrund</td></tr><tr><td></td><td>Zeitdruck</td></tr><tr><td>Regeln / Gesetze</td><td>Parken gestattet</td></tr><tr><td></td><td>Parken muss legitimiert werden im Zeitraum von 9-24 Uhr</td></tr><tr><td></td><td>Parkplatz vor Ablauf der Legitimationsdauer verlassen</td></tr><tr><td></td><td>Bußgeld bei Nichteinhaltung</td></tr><tr><td>Regeln für das Bezahlen</td><td>keine Mindestvoraussetzungen</td></tr><tr><td></td><td>Bezahlsystem (App, SMS, Parkuhr)</td></tr><tr><td></td><td>Zahlungsarten (bar, Kreditkarte…)</td></tr><tr><td></td><td>Höhe der Parkgebühren</td></tr><tr><td></td><td>Zeitwahl (vorher / nachher etc.)</td></tr></table><p>Physische Umgebung</p><table class="criteria"><tr><th>Parkzonen</th><th>Einteilung in Parkzonen</th></tr><tr><td></td><td>Parkzonennummer</td></tr><tr><td></td><td>Anzahl der Parkplätze</td></tr><tr><td></td><td>Größe der Parkplätze</td></tr><tr><td></td><td>Anordnung der Parkplätze</td></tr><tr><td></td><td>Auslastung der Parkplätze</td></tr><tr><td></td><td>Höhen der Gebühren</td></tr><tr><td></td><td>Sonderveranstaltungen / Events in der Nähe</td></tr><tr><td></td><td>Automatendichte</td></tr><tr><td>Automat</td><td>Automatennummer</td></tr><tr><td></td><td>Höhe des Displays</td></tr><tr><td></td><td>Zustand des Automaten</td></tr></table><p>Quelle: Anschauungsbeispiele zum CPUX-UR, www.uxqb.org</p>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 236)</div>Beispiel</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 236</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Informationsmodell tabellarisch</h3>
+            <table class="criteria"><tr><th>Informationsobjekt</th><th>Teilinformation</th><th>Form</th><th>Beispiel der Nutzung</th></tr><tr><td>Legitimation: gültig temporär parken</td><td>| |</td><td></td><td></td></tr><tr><td></td><td>Legitimationsablauf</td><td>Datum &amp; Uhrzeit</td><td>Durch die angegebene Uhrzeit weiß Jenny genau, wann die Parkzeit endet und kann pünktlich an ihrem Auto sein</td></tr><tr><td></td><td>Gebühr</td><td>Betrag in €</td><td>Auf dem Parkschein steht, wie viel Geld Holger für das Parken bezahlt hat, das hilft ihm bei der Buchführung</td></tr><tr><td></td><td>Parkschein-Nr.</td><td>Code (Zahlen &amp; Buchstaben)</td><td>Durch die Parkscheinnummer kann Andreas die unterschiedlichen Parkscheine bei der Kontrolle auseinanderhalten</td></tr><tr><td></td><td>Standort Automat</td><td>Straße &amp; Nummer</td><td>Durch die angegebene Straße und die Nummer weiß Andreas sofort, bei welchem Automaten das Ticket gelöst wurde</td></tr><tr><td></td><td>Hinweis</td><td>Text</td><td>Lukas liest den Hinweis und weiß sofort, dass der Parkschein gut lesbar hinter die Windschutzscheibe legen muss</td></tr><tr><td>Legitimation: Bewohnerparkberechtigung</td><td>| |</td><td></td><td></td></tr><tr><td></td><td>Rahmenbedingungen</td><td>Text</td><td>Julia informiert sich über die Rahmenbedingungen, bevor sie die Parkberechtigung beantragt</td></tr><tr><td></td><td>Antrag</td><td>Text</td><td>Julia füllt den Antrag aus und weist ihre Legitimierung nach</td></tr><tr><td></td><td>Gebühr</td><td>Betrag in €</td><td>Julia überweist die angegebene Bearbeitungsgebühr</td></tr><tr><td></td><td>Genehmigung</td><td>Text</td><td>Julia wird über ihren Berechtigungsstatus informiert, jetzt weiß sie, dass sie bald eine Bewohnerparkberechtigung erhält</td></tr><tr><td></td><td>Kennzeichnung</td><td>Vignette</td><td>Julia erhält die Kennzeichnung ihrer Bewohnerparkberechtigung und klebt diese gut sichtbar hinter ihre Windschutzscheibe</td></tr><tr><td>Legitimation: Handy-Parken</td><td>| |</td><td></td><td></td></tr><tr><td></td><td>Kennzeichnung</td><td>Vignette</td><td>Marcel meldet sich beim Handy-Parken an, kann seine Vignette direkt ausdrucken und hinter der Windschutzscheibe anbringen</td></tr><tr><td></td><td>Parken anmelden</td><td>Kennzeichen &amp; Parkzone</td><td>Marcel schreibt eine SMS mit seinem Kennzeichen und seiner Parkzone an die Servicenummer des Betreibers</td></tr><tr><td></td><td>Parken abmelden</td><td>Nachricht "jetzt"</td><td>Als Marcel nach einem langen Arbeitstag wiederkommt, meldet er seine Legitimation per SMS ab</td></tr><tr><td>Parkplatz</td><td>| |</td><td></td><td></td></tr><tr><td></td><td>Belegungszustand</td><td>Frei vs. nicht frei</td><td>Jenny findet einen freien Parkplatz und parkt ein; Jenny findet keinen freien Parkplatz und sucht weiter.</td></tr><tr><td>Parkzone</td><td>| |</td><td></td><td></td></tr><tr><td></td><td>Kennzeichnung Zone</td><td>Nummer</td><td>Julia guckt, ob sie noch in der für ihre Berechtigung vorgesehenen Parkzone ist</td></tr><tr><td></td><td>gültiger Parkplatz</td><td>Markierung</td><td>Julia findet einen Parkplatz in der richtigen Parkzone.</td></tr><tr><td>(Straßen-)Schilder</td><td>| |</td><td></td><td></td></tr><tr><td></td><td>Parkhinweise</td><td>Symbole &amp; Text</td><td>Lukas findet endlich einen freien Parkplatz. Als er aus dem Auto aussteigt, bemerkt er, dass er im Parkverbot steht.</td></tr><tr><td>Fahrzeug</td><td>| |</td><td></td><td></td></tr><tr><td></td><td>Standort</td><td>Ort</td><td>Julia muss sich merken, wo sie ihr Auto geparkt hat.</td></tr><tr><td></td><td>Kennzeichen</td><td>Zahlen &amp; Buchstaben</td><td>Um sich per SMS zu legitimieren muss Lukas sein Kennzeichen angeben.</td></tr><tr><td></td><td>Sichtbarkeit</td><td>Windschutzscheibe</td><td>Lukas legt seinen Parkschein gut sichtbar hinter die Windschutzscheibe.</td></tr><tr><td>Zahlungsmittel</td><td>| |</td><td></td><td></td></tr><tr><td></td><td>Wert</td><td>Wert in €</td><td>Für 2€ kann Jenny eine Stunde parken.</td></tr><tr><td></td><td>Art</td><td>Auswahl</td><td>Jenny zahlt direkt vor Ort und wirft ihr Kleingeld in den Automaten.</td></tr><tr><td></td><td>Verfügbarkeit</td><td>verfügbar vs. nicht verfügbar</td><td>Jenny hat kein Kleingeld dabei und entscheidet sich spontan sich per SMS zu legitimieren.</td></tr></table><p>Quelle: Anschauungsbeispiele zum CPUX-UR, www.uxqb.org</p>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 237)</div>Beispiel</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 237</span>
+        </div>
+    </section>
+    <section class="section" id="ergebnisse-33">
+        <div class="section-title"><div class="num"><span class="material-icons">fact_check</span></div><h2>Planung, Durchführung und HCD-Ergebnisse der NK-Erhebung</h2></div>
+        <div class="pg" data-pg="{&quot;titel&quot;: &quot;Planung, Durchführung und HCD-Ergebnisse der NK-Erhebung&quot;, &quot;folie&quot;: &quot;S. 238&quot;, &quot;viele&quot;: true, &quot;stufen&quot;: [{&quot;titel&quot;: &quot;1. Auftrag und Auftragsklärung mit Auftraggeber&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;→ Fragestellung, erwartetes Ergebnis&quot;, &quot;text&quot;: &quot;Aktivität: 1. Auftrag und Auftragsklärung mit Auftraggeber · Ergebnis, Kenntnisgewinn: → Fragestellung, erwartetes Ergebnis&quot;, &quot;folie&quot;: &quot;S. 238&quot;}]}]}, {&quot;titel&quot;: &quot;2. Erstellung der zusammenfassenden-NKB&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;→ B/A&amp;Z/U/R, Grundlage Planung Vorgehen der NKA&quot;, &quot;text&quot;: &quot;Aktivität: 2. Erstellung der zusammenfassenden-NKB · Ergebnis, Kenntnisgewinn: → B/A&amp;Z/U/R, Grundlage Planung Vorgehen der NKA&quot;, &quot;folie&quot;: &quot;S. 238&quot;}]}]}, {&quot;titel&quot;: &quot;3. Festlegung des NKA-Vorgehens&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;→ klassisch oder modellbasiert NKA&quot;, &quot;text&quot;: &quot;Aktivität: 3. Festlegung des NKA-Vorgehens · Ergebnis, Kenntnisgewinn: → klassisch oder modellbasiert NKA&quot;, &quot;folie&quot;: &quot;S. 238&quot;}]}]}, {&quot;titel&quot;: &quot;4. Festlegung der Explorationsmethoden&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;→ Beobachtung, Interviews, Fokusgruppen&quot;, &quot;text&quot;: &quot;Aktivität: 4. Festlegung der Explorationsmethoden · Ergebnis, Kenntnisgewinn: → Beobachtung, Interviews, Fokusgruppen&quot;, &quot;folie&quot;: &quot;S. 238&quot;}]}]}, {&quot;titel&quot;: &quot;5. (angenommene) Benutzergruppen und -profile&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;→ Rekrutierung der Teilnehmer&quot;, &quot;text&quot;: &quot;Aktivität: 5. (angenommene) Benutzergruppen und -profile · Ergebnis, Kenntnisgewinn: → Rekrutierung der Teilnehmer&quot;, &quot;folie&quot;: &quot;S. 238&quot;}]}]}, {&quot;titel&quot;: &quot;6. Durchführung der Beo. / Int. / FGs&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;→ Dokumentation und Protokoll&quot;, &quot;text&quot;: &quot;Aktivität: 6. Durchführung der Beo. / Int. / FGs · Ergebnis, Kenntnisgewinn: → Dokumentation und Protokoll&quot;, &quot;folie&quot;: &quot;S. 238&quot;}]}]}, {&quot;titel&quot;: &quot;7. Überprüfung der Benutzergruppen, -profile&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;→ ggf. Anpassung&quot;, &quot;text&quot;: &quot;Aktivität: 7. Überprüfung der Benutzergruppen, -profile · Ergebnis, Kenntnisgewinn: → ggf. Anpassung&quot;, &quot;folie&quot;: &quot;S. 238&quot;}]}]}, {&quot;titel&quot;: &quot;8. Auswertung und Ergebnisse der Beo. / Int.&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;→ Ist-Szenarien&quot;, &quot;text&quot;: &quot;Aktivität: 8. Auswertung und Ergebnisse der Beo. / Int. · Ergebnis, Kenntnisgewinn: → Ist-Szenarien&quot;, &quot;folie&quot;: &quot;S. 238&quot;}]}]}, {&quot;titel&quot;: &quot;9. Auswerten der Ist-Szenarien und weiterer Interviewinhalte, Befragungsergebnisse&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;→ Aufgabenmodelle, Aufgabenobjekte/Attribute&quot;, &quot;text&quot;: &quot;Aktivität: 9. Auswerten der Ist-Szenarien und weiterer Interviewinhalte, Befragungsergebnisse · Ergebnis, Kenntnisgewinn: → Aufgabenmodelle, Aufgabenobjekte/Attribute&quot;, &quot;folie&quot;: &quot;S. 238&quot;}, {&quot;label&quot;: &quot;→ Zielkataloge, Umgebungsmodelle, Ressourcen&quot;, &quot;text&quot;: &quot;Aktivität: 9. Auswerten der Ist-Szenarien und weiterer Interviewinhalte, Befragungsergebnisse · Ergebnis, Kenntnisgewinn: → Zielkataloge, Umgebungsmodelle, Ressourcen&quot;, &quot;folie&quot;: &quot;S. 238&quot;}]}]}, {&quot;titel&quot;: &quot;10. Pflege der zusammenfassenden-NKB&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;→ Kommunikation Auftraggeber, Entwicklungsteam&quot;, &quot;text&quot;: &quot;Aktivität: 10. Pflege der zusammenfassenden-NKB · Ergebnis, Kenntnisgewinn: → Kommunikation Auftraggeber, Entwicklungsteam&quot;, &quot;folie&quot;: &quot;S. 238&quot;}]}]}]}"></div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Planung, Durchführung und HCD-Ergebnisse der NK-Erhebung</h3>
+            <table class="criteria"><tr><th>Aktivität</th><th>Ergebnis, Kenntnisgewinn</th></tr><tr><td>1. Auftrag und Auftragsklärung mit Auftraggeber</td><td>→ Fragestellung, erwartetes Ergebnis</td></tr><tr><td>2. Erstellung der zusammenfassenden-NKB</td><td>→ B/A&amp;Z/U/R, Grundlage Planung Vorgehen der NKA</td></tr><tr><td>3. Festlegung des NKA-Vorgehens</td><td>→ klassisch oder modellbasiert NKA</td></tr><tr><td>4. Festlegung der Explorationsmethoden</td><td>→ Beobachtung, Interviews, Fokusgruppen</td></tr><tr><td>5. (angenommene) Benutzergruppen und -profile</td><td>→ Rekrutierung der Teilnehmer</td></tr><tr><td>6. Durchführung der Beo. / Int. / FGs</td><td>→ Dokumentation und Protokoll</td></tr><tr><td>7. Überprüfung der Benutzergruppen, -profile</td><td>→ ggf. Anpassung</td></tr><tr><td>8. Auswertung und Ergebnisse der Beo. / Int.</td><td>→ Ist-Szenarien</td></tr><tr><td>9. Auswerten der Ist-Szenarien und weiterer Interviewinhalte, Befragungsergebnisse</td><td>→ Aufgabenmodelle, Aufgabenobjekte/Attribute</td></tr><tr><td></td><td>→ Zielkataloge, Umgebungsmodelle, Ressourcen</td></tr><tr><td>10. Pflege der zusammenfassenden-NKB</td><td>→ Kommunikation Auftraggeber, Entwicklungsteam</td></tr></table>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 238)</div>GUTE ÜBERSICHT · NKB = Nutzungskontextbeschreibung</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 238</span>
+        </div>
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen</h3>
+            <ul><li>Eine Nutzungskontextbeschreibung dient verschiedenen Zwecken. Der Information der Beteiligten und der Schaffung von Bewusstsein und Empathie für den Problemraum der Benutzenden des interaktiven Systems. Sowie dem Identifizieren von Erfordernissen und der Ableitung von Nutzungsanforderungen für das geplante interaktive System.</li><li>Es gibt verschiedene Arten von Nutzungskontextbeschreibungen.</li><li>Zu Projektbeginn wird als Ausgangspunkt eine zusammenfassende Nutzungskontextbeschreibung erstellt, in der die Komponenten des Nutzungskontextes aufgelistet sind.</li><li>Zusammenfassende Nutzungskontextbeschreibungen<ul><li>Geben Benutzergruppen, Aufgaben und Ziele, Ressourcen, Umgebungen wieder.</li><li>Sind in der Regel eine Mischung aus bekannten Nutzungskontextinformationen und Annahmen.</li><li>Enthalten eine Zusammenfassung der Informationen über die einzelnen Benutzergruppenprofile.</li><li>Werden typischerweise zusammen mit Benutzergruppenprofilen auf der Grundlage von Erkenntnissen aus kontextuellen Interviews, Beobachtungen und/oder Fokusgruppen angepasst.</li></ul></li></ul>
+            <ul><li>Detaillierte Nutzungskontextbeschreibungen<ul><li>Dokumentieren empirische Fakten, die aus kontextuellen Interviews, Beobachtungen und/oder Fokusgruppen gewonnen wurden.</li><li>Werden in narrativer Textform oder als modellhafte Nutzungskontextbeschreibungen dokumentiert.</li></ul></li><li>Übliche Formen narrativer Nutzungskontextbeschreibungen sind Personas und Ist-Szenarien. Personas dienen vor allem dazu Empathie für eine Benutzergruppe zu schaffen. Ist-Szenarien eignen sich zum Identifizieren von Erfordernissen und systematischem Ableiten von Nutzungsanforderungen.<ul><li>Ist-Szenarien geben den Nutzungskontext aus der Perspektive einer Benutzergruppe wieder. Sie beschreiben in narrativer Form Aufgaben und Ziele, Zusammenhänge zwischen Aufgaben, Ressourcen und die Umgebung mit den sozialen und physischen Bedingungen.</li><li>Der Hauptunterschied zwischen einem Ist-Szenario und einem Nutzungsszenario besteht darin, dass Ist-Szenarien Komponenten des aktuellen Nutzungskontexts beschreiben, und Nutzungsszenarien die geplante beabsichtigte Nutzungssituation des zu entwickelnden interaktiven Systems beschreiben.</li></ul></li></ul>
+            <ul><ul><li>Ein Nutzungsszenario ist also keine Nutzungskontextbeschreibung, weil es die angestrebte Nutzungssituation des geplanten interaktiven Systems beschreibt. Es ist eine Beschreibung des Nutzungskontextes für die Gestaltung und damit ein erster textueller Prototyp des zu entwickelnden Systems.</li></ul></li><li>Modellhafte Nutzungskontextbeschreibungen liefern strukturelle Darstellungen des Nutzungskontextes. Zu den üblichen Formen gehören User Journey Maps, Affinity-Diagramme und Zielkataloge.</li></ul><p>Modellhafte Nutzungskontextbeschreibungen unterstützen die effiziente Kommunikation und Anwendung bzw. Umsetzung von Aspekten des Nutzungskontexts innerhalb des ganzen Projektteams.</p><p>Dagegen erzählen Ist-Szenarien die ganze Geschichte und sind somit die primäre Quelle für das Identifizieren von Erfordernissen.</p>
+            <span class="src"><span class="material-icons">description</span>Folien S. 239, 240, 241</span>
+        </div>
+    </section>
+
+    <nav class="pager"><a class="prev" href="kapitel-2.html"><span class="material-icons">chevron_left</span><span><small>Zurück</small>2 NKA planen</span></a><a class="next" href="kapitel-4.html"><span><small>Weiter</small>4 Erfordernisse identifizieren</span><span class="material-icons">chevron_right</span></a></nav>
+
+    <footer>Lernmaterial auf Basis der CPUX-UR-Seminarunterlagen (Spiegel Institut, 2026) nach UXQB CPUX-F Curriculum V4.01 und ISO 9241-210:2019. Nur für den internen Gebrauch.</footer>
+</div>
+
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drTitle">
+    <div class="dr-head">
+        <button class="dr-close" id="drClose" aria-label="Schließen"><span class="material-icons">close</span></button>
+        <div class="dr-icon"><span class="material-icons" id="drIcon">info</span></div>
+        <h3 id="drTitle"></h3>
+        <div class="dr-tags" id="drTags"></div>
+    </div>
+    <div class="dr-body" id="drBody"></div>
+    <div class="dr-foot">
+        <div class="dr-nav">
+            <button class="btn" id="drPrev" title="Vorheriger Prozessschritt"><span class="material-icons">chevron_left</span></button>
+            <button class="btn" id="drNext" title="Nächster Prozessschritt"><span class="material-icons">chevron_right</span></button>
+        </div>
+        <a class="btn on" id="drLink" href="#"><span class="material-icons">open_in_full</span>Zur Detailkarte</a>
+    </div>
+</aside>
+
+<button class="back-to-top" id="backToTop" aria-label="Zurück nach oben"><span class="material-icons" style="font-size:26px">arrow_upward</span></button>
+
+<script src="lern-daten.js"></script>
+<script src="landkarte.js"></script>
+<script src="folien-daten.js"></script>
+<script src="folien.js"></script>
+<script src="hervorhebung-daten.js"></script>
+<script src="hervorhebung.js"></script>
+<script src="detail.js"></script>
+<script src="prozessgrafik.js"></script>
+<script src="lernen.js"></script>
+</body>
+</html>

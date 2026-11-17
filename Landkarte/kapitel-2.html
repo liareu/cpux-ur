@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2 NKA planen | CPUX-UR Prozess-Landkarte</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landkarte.css">
+<link rel="stylesheet" href="lernen.css">
+</head>
+<body>
+
+<button class="sb-toggle" id="sbToggle" aria-label="Navigation ein- oder ausblenden" title="Navigation ein-/ausblenden"><span class="material-icons" id="sbIcon">menu_open</span></button>
+
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <span class="ux-lab-pill">UX Lab</span>
+        <h2>CPUX-UR Prozess-Landkarte</h2>
+        <p>Lernbegleiter zum Training, Stand Folie S. 252</p>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+        <div class="nav-group">Überblick</div>
+        <a href="index.html" class="nav-link"><span class="material-icons">map</span>Prozesskarte</a>
+        <a href="dashboard.html" class="nav-link"><span class="material-icons">dashboard</span>Lern-Cockpit</a>
+        <a href="seminar.html" class="nav-link"><span class="material-icons">school</span>Zum Seminar</a>
+        <div class="nav-group">Lernen</div>
+        <a href="zusammenhang.html" class="nav-link"><span class="material-icons">hub</span>Alles im Zusammenhang</a>
+        <a href="schaubilder.html" class="nav-link"><span class="material-icons">account_tree</span>Schaubilder</a>
+        <a href="lernziele.html" class="nav-link"><span class="material-icons">checklist</span>Lernziele</a>
+        <a href="selbsttest.html" class="nav-link"><span class="material-icons">style</span>Selbsttest Begriffe</a>
+        <div class="nav-group">Kapitel</div>
+        <a href="kapitel-1.html" class="nav-link"><span class="material-icons">looks_one</span>1 Einführung in die NKA</a>
+        <a href="kapitel-2.html" class="nav-link active"><span class="material-icons">looks_two</span>2 NKA planen</a>
+        <div class="nav-sub"><a href="#planen">NKA planen</a><a href="#methoden">Design Thinking, Lean UX</a></div>
+        <a href="kapitel-3.html" class="nav-link"><span class="material-icons">looks_3</span>3 Information erheben</a>
+        <a href="kapitel-4.html" class="nav-link"><span class="material-icons">looks_4</span>4 Erfordernisse identifizieren</a>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>5 NA ableiten</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>6 Konsolidieren &amp; priorisieren</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>7 Schnittstellen</span>
+        <div class="nav-group">Prüfung</div>
+        <a href="pruefung-theorie.html" class="nav-link"><span class="material-icons">quiz</span>Theoretische Prüfung</a>
+        <a href="pruefung-praxis.html" class="nav-link"><span class="material-icons">assignment</span>Praktische Prüfung</a>
+        <div class="nav-group">Nachschlagen</div>
+        <a href="glossar.html" class="nav-link"><span class="material-icons">menu_book</span>Glossar</a>
+        <a href="ure-story.html" class="nav-link"><span class="material-icons">auto_stories</span>URE Story</a>
+        <a href="schablonen.html" class="nav-link"><span class="material-icons">text_fields</span>Formulierungsschablonen</a>
+        <a href="curriculum.html" class="nav-link"><span class="material-icons">library_books</span>Curriculum</a>
+    </nav>
+    <div class="sidebar-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54331 231.41233" width="100" aria-label="Micromata"><g style="isolation:isolate"><polygon fill="#009ba3" points="148.258 115.749 126.403 93.891 126.401 93.892 73.277 40.768 51.416 62.623 104.543 115.75 51.416 168.878 73.277 190.733 126.4 137.607 126.403 137.61 148.258 115.749"/><rect fill="#007480" x="110.9384" y="100.29035" width="30.91783" height="30.91093" transform="translate(297.62103 108.27464) rotate(135.02027)"/><polygon fill="#ffcb00" style="mix-blend-mode:multiply" points="248.142 40.767 226.287 62.621 279.411 115.75 226.287 168.876 248.142 190.735 301.268 137.609 323.129 115.747 248.142 40.767"/><polygon fill="#75be01" points="410.565 115.749 388.71 93.891 388.708 93.892 335.584 40.768 313.723 62.623 366.85 115.75 313.723 168.878 335.584 190.733 388.707 137.608 388.71 137.61 410.565 115.749"/><rect fill="#32912e" x="373.25004" y="100.28859" width="30.91285" height="30.91093" transform="translate(745.47512 -77.14329) rotate(135.02027)"/><polygon fill="#e10057" points="235.693 115.747 160.706 40.767 138.851 62.621 191.975 115.75 138.851 168.876 160.706 190.735 213.832 137.609 213.832 137.609 235.693 115.747"/><rect fill="#a70836" x="198.37947" y="100.29397" width="30.90915" height="30.91093" transform="translate(446.87971 46.37618) rotate(134.99583)"/><rect fill="#ff9d01" x="285.81339" y="100.29397" width="30.90915" height="30.91093" transform="translate(596.13425 -15.45344) rotate(134.99583)"/></g></svg>
+    </div>
+</aside>
+
+<div class="container">
+
+    <div class="header sub">
+        <p class="eyebrow">Kapitel 2</p>
+        <h1>Nutzungskontextanalyse planen</h1>
+    </div>
+
+    <!-- =========================================================
+         KAPITEL 2: NKA PLANEN (Folien S. 119–141)
+         ========================================================= -->
+    <section class="section" id="planen">
+        <div class="section-title"><div class="num"><span class="material-icons">event_note</span></div><h2>2. Nutzungskontextanalysen planen</h2></div>
+        <p class="section-lead">Sicherstellen, dass die Nutzungskontextanalyse für den gegebenen Anlass und die spezifizierten menschzentrierten Qualitätsziele in angemessenem Umfang geplant werden kann. (S. 119)</p>
+
+        <div class="card">
+            <div class="flow-h">
+                <div class="fh main"><small>2.1</small>Anlass und Ziele der Nutzungskontextanalyse ermitteln</div>
+                <div class="fh-a"><span class="material-icons">east</span></div>
+                <div class="fh main l"><small>2.2</small>Das Vorgehen bei der Nutzungskontextanalyse festlegen</div>
+            </div>
+            <div style="margin-top:16px"><div class="box grau"><div class="box-title"><span class="material-icons">help_outline</span>Frage (S. 121)</div>Wann wird eine Nutzungskontextanalyse durchgeführt?<br>Welche Anlässe für eine Nutzungskontextanalyse gibt es?</div></div>
+            <div class="grid-2" style="margin-top:16px">
+                <div class="box"><div class="box-title">Anlass einer Nutzungskontextanalyse (S. 122)</div>Typische Anlässe für Nutzungskontextanalysen innerhalb eines Projekts zur Gestaltung eines interaktiven Systems
+                    <ul style="margin-top:6px"><li>Ein neues interaktives System soll entwickelt werden, ohne dass es einen Vorgänger hierfür gibt.</li><li>Die Akzeptanz / Nutzungsintensität eines bestehenden interaktiven Systems soll erhöht werden.</li><li>Die Effizienz der Nutzung eines interaktiven Systems soll für eine Benutzergruppe erhöht werden.</li><li>Ein bestehendes interaktives System soll bezüglich seines Funktionsumfangs erweitert werden (Erhöhung der Effektivität, z.B. für eine neue Benutzergruppe oder eine neue Aufgabe innerhalb einer bereits unterstützten Benutzergruppe).</li><li>Für eine Usability-Evaluierung eines interaktiven Systems sollen die relevanten Nutzungsanforderungen ermittelt werden.</li><li>Nutzungskontext hat sich über die Zeit weiterentwickelt / verändert.</li></ul></div>
+                <div class="box lila"><div class="box-title">Sponsor (sponsor), S. 123</div>Stakeholder, der das Budget für ein Entwicklungsprojekt bereitstellt.
+                    <ul style="margin-top:6px"><li>Der Sponsor entscheidet über Budgets für Aktivitäten der menschzentrierten Gestaltungsaktivitäten wie z.B. die Erhebung und Dokumentation von Nutzungskontextinformationen oder die Spezifikation von Nutzungsanforderungen.</li><li>Der Sponsor (oder ein entsandter Vertreter) ist ggf. bei der Erarbeitung von Interviewleitfäden für Nutzungskontextanalysen eingebunden.</li><li>Der User Requirements Engineer ist hierbei fachlicher Ansprechpartner.</li></ul></div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 119, 122, 123</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">flag</span>Menschzentrierte Qualitätsziele (human-centred quality objectives)</h3>
+            <p class="card-lead">Ein beabsichtigtes Ergebnis der Entwicklung eines interaktiven Systems für den Benutzer, das sich auf die Usability, die Barrierefreiheit, die User Experience oder die Vermeidung von Schäden durch die Benutzung bezieht · Deine Notiz: Nutzungsqualität</p>
+            <div class="pillar-roof">menschzentrierte Qualitätsziele · Deine Notiz: ⇒ gemeinsames Entwicklungsziel</div>
+            <div class="pillars">
+                <div class="pillar"><b>Usability</b><span>Effizienz, Effektivität, Zufriedenstellung während der Benutzung</span></div>
+                <div class="pillar"><b>User Experience</b><span>Erlebnis vor, während, nach der Benutzung</span></div>
+                <div class="pillar"><b>Barriere&shy;freiheit</b><span>Benutzung für alle</span></div>
+                <div class="pillar"><b>Vermeidung von Schäden durch die Benutzung</b><span>sichere Benutzung</span></div>
+            </div>
+            <div class="grid-2" style="margin-top:16px">
+                <div class="box"><div class="box-title">Menschzentrierte Qualitätsziele (S. 125)</div>
+                    <ul><li>Menschzentrierte Qualitätsziele sind Ziele der Stakeholder in Bezug auf die menschzentrierte Qualität des zu entwickelnden, zu verbessernden interaktiven Systems. Sie sind noch keine Nutzungsanforderungen.</li><li>Menschzentrierte Qualitätsziele werden bei der Planung der menschzentrierten Gestaltung spezifiziert. Der User Requirements Engineer fungiert hierbei als Moderator, da er die Fachkenntnisse für das Spezifizieren hat.</li><li>Das explizite Spezifizieren von menschzentrierte Qualitätszielen hilft, bei Projektbeginn den Fokus und Umfang für die durchzuführende Nutzungskontextanalyse angemessen zu setzen</li><li>Menschzentrierte Qualitätsziele können als verifizierbare quantitative Nutzungsanforderungen formuliert sein, wenn sie als Akzeptanzkriterien im Projekt dienen sollen.</li></ul>
+                    <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz</div>Planung und Zielsetzung mit Stakeholdern, Ziele aufstellen → Kontexterhebung/Interviews → Erfordernisse → Ziele challengen/ändern</div></div>
+                <div class="box grau"><div class="box-title">Abgrenzung Menschzentrierte Qualitätsziel und Projektziele (S. 128)</div>
+                    <div class="grid-2" style="gap:10px">
+                        <div><b>Menschzentrierte Ziele</b><br>Ziele der menschzentrierten Qualität (Stakeholder == primärer Benutzer)<ul><li>Gebrauchstauglichkeit</li><li>Benutzererlebnis</li><li>Barrierefreiheit</li><li>Vermeidung von Schäden durch die Benutzung</li></ul></div>
+                        <div><b>Projektziele</b><br>Ziele anderer Stakeholder<ul><li>günstigster Anbieter am Markt</li><li>schnellstes interaktives System <span class="note-inline">= Effizienz</span></li><li>besondere Funktionsumfänge <span class="note-inline">= Effektivität</span></li><li>günstigere Produktionskosten des interaktiven Systems</li><li>Erfüllung weltweiter Regularien</li></ul></div>
+                    </div></div>
+            </div>
+            <h4>Menschzentrierte Qualitätsziele – Beispiele (S. 126, 127)</h4>
+            <div class="grid-4">
+                <div class="box"><div class="box-title">Qualitätsziel Usability</div><ul><li>Nach dem Kauf einer Bahnfahrkarte kann der Reisende zu einem späteren Zeitpunkt eine identische Fahrkarte kaufen, ohne die Fahrkartendaten erneut eingeben zu müssen.</li><li>Benutzende sollen die webbasierte Gesundheitsakte bereits bei der ersten Nutzung ohne fremde Hilfe verwenden können.</li></ul></div>
+                <div class="box"><div class="box-title">Reihenfolge der Blöcke wie auf den Folien: Qualitätsziel Usability → Qualitätsziel Barrierefreiheit (S. 126) → Qualitätsziel User Experience → Qualitätsziel Vermeidung von Schäden durch die Benutzung (S. 127)</div><ul><li>Benutzende sollen bereits vor der Nutzung des Reisekostenerstattungssystems den Eindruck haben, dass sie Zeit sparen werden mit diesem System.</li><li>Benutzer sollen mit der elektronischen Wahlkabine das Gefühl völliger Privatsphäre haben.</li><li>Benutzende sollen das sichere Gefühl haben, dass sie mit dem neuen Kaffeevollautomaten keinen vermeidbaren Abfall (z.B. Kapselverpackungen) produzieren.</li></ul></div>
+                <div class="box"><div class="box-title">Qualitätsziel Barrierefreiheit</div><ul><li>Blinde Benutzer sollen die Inhalte der Website erkennen und verstehen können.</li><li>Rollstuhlfahrer sollen an allen Haltestellen ohne fremde Hilfe Fahrkarten kaufen können.</li><li>Sehbehinderte Käufer sollen im Laden alle Produkte ohne fremde Hilfe auffinden können.</li></ul></div>
+                <div class="box pink"><div class="box-title">Qualitätsziel Vermeidung von Schäden durch die Benutzung</div><ul><li>Benutzer sollen mit dem Rezepterstellungssystem keine miteinander unverträgliche Medikamente verschreiben können.</li><li>Kaufinteressierte des neuen Kaffeeautomaten sollen keinen vermeidbaren Müll erzeugen, der umweltschädlich ist (z.B. durch verpackte Kaffeekapseln).</li><li>Benutzende sollen am System gelöschte Daten wiederherstellen können.</li></ul></div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 124–128</span>
+        </div>
+
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Anlass und Ziele der Nutzungskontextanalyse ermitteln</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Der Nutzungskontext wird analysiert, um Nutzungskontextinformationen zu erheben, die dazu beitragen, unzureichend verstandene Erfordernisse zu identifizieren. Diese Erfordernisse dienen als Grundlage für die Ableitung von Nutzungsanforderungen.</div>
+                <div class="st"><span class="sn">2</span>Es gibt verschiedene Situationen, in denen eine Nutzungskontextanalyse durchgeführt wird. Etwa zur Entwicklung eines neuen interaktiven Systems oder zur Verbesserung eines bestehenden interaktiven Systems.</div>
+                <div class="st"><span class="sn">3</span>Als Ausgangspunkt für die Planung des Umfangs und des Schwerpunkts einer Nutzungskontextanalyse sollten von den Stakeholdern des Systems menschzentrierte Qualitätsziele festgelegt werden. Dabei handelt es sich um Projektziele aus Sicht der Benutzenden des geplanten interaktiven Systems. Zusätzlich zu den Geschäftszielen beschreiben sie, was für die Benutzer in Bezug auf Usability, Barrierefreiheit, User Experience und Vermeidung von Schäden durch die Benutzung erreicht werden muss. Dies wird oft auch Nutzungsqualität genannt.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 129</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">science</span>2.2 Das Vorgehen bei der Nutzungskontextanalyse festlegen</h3>
+            <p style="font-size:13px">2.1 – Anlass und Ziele der Nutzungskontextanalyse ermitteln <span class="note-inline">Deine Notiz (S. 130): ✓ abgeschlossen</span></p>
+            <p class="card-lead">Sicherstellen, dass bei der Nutzungskontextanalyse bekannte Informationen systematisch berücksichtigt werden und unbekannte Informationen systematisch erhoben werden. (S. 130)</p>
+            <div class="grid-3">
+                <div class="box"><div class="box-title">Welche Informationen benötigen wir als User Requirements Engineers für eine Nutzungskontextanalyse?</div><span class="note-inline">Deine Notiz: BAZUR · Benutzer, Aufgaben &amp; Ziele, Umgebung, Ressourcen</span></div>
+                <div class="box"><div class="box-title">Mit welchen Methoden gewinnen wir diese Informationen?</div></div>
+                <div class="box"><div class="box-title">Welche Arten von Informationstypen gibt es generell? Und welche benötigen wir idealerweise?</div><span class="note-inline">Deine Notiz: Fakten</span></div>
+            </div>
+            <div class="box" style="margin-top:14px"><div class="box-title">Nutzungskontextinformation (context of use information), S. 132</div>Fragment einer Nutzungskontextbeschreibung, das Erfordernisse enthält.
+                <ul style="margin-top:6px"><li>Jedes Erfordernis beruht auf mindestens einer spezifischen Nutzungskontextinformation.</li><li>Eine einzelne Nutzungskontextinformation ersetzt keine (zusammenhängende) Nutzungskontextbeschreibung.</li></ul>
+                <div class="ok"><span class="material-icons">check</span><span>Viele ankommende Flugreisende am Frankfurter Flughafen haben als Reiseziel die Frankfurter Innenstadt und nutzen dazu den öffentlichen Nahverkehr.</span></div>
+                <div class="ok"><span class="material-icons">east</span><span><b>Erfordernis:</b> Der angekommene Fluggast muss nach Ankunft einen gültigen Fahrschein für die S-Bahn haben, um sein endgültiges Reiseziel legal zu erreichen.</span></div></div>
+            <h4>Empirische und konstruierte Information (S. 133)</h4>
+            <div class="info-flow">
+                <div class="info-box"><b style="color:var(--tuerkis-dark)">Empirische Information</b>Faktische Information, die im Nutzungskontext durch kontextuelle Interviews oder Beobachtungen erhoben wurde.<ul style="margin-top:4px"><li>Beispiele sind etwa Aufgaben und Ziele, Ist-Szenarios</li></ul><span class="note-inline">Deine Notizen: z.B. aus Interview · Benutzergruppen</span></div>
+                <div class="info-arrow"><span class="material-icons">arrow_forward</span>Empirische Information ist die Grundlage für konstruierte Information</div>
+                <div class="info-box"><b style="color:#6d3fd6">Konstruierte Information</b>Eine Information, die aus empirischer Information abgeleitet wurde. Z.B. Personas, Anforderungen<span class="note-inline">Deine Notiz: Erfordernisse werden zu Anforderungen konstruiert</span></div>
+                <div class="info-box"><b style="color:var(--pink)">Annahmen</b>sind Informationen, die nicht auf empirische Informationen zurückgeführt werden können.</div>
+                <div class="info-arrow"><span class="material-icons">arrow_upward</span>Annahmen müssen durch Evaluierung bestätigt werden</div>
+                <div class="info-box" style="background:white;border:1px dashed #cbd5e0">und werden, bei Bestätigung, überführt in empirische Information.</div>
+            </div>
+            <div class="box" style="margin-top:16px"><div class="box-title"><span class="material-icons">travel_explore</span>User Research (user research), S. 134</div>User Research umfasst alle Aktivitäten während der Analyse, Design und Usability-Evaluierung interaktiver Systeme, bei denen in Zusammenarbeit mit Benutzern Informationen gesammelt werden über
+                <ul style="margin-top:4px"><li>Nutzungskontext</li><li>Wünsche, Vorlieben und Abneigungen</li><li>Nutzungsprobleme bei der Nutzung von interaktiven Systemen</li></ul>
+                <ul><li>Nutzungskontextanalyse und die Herleitung von Nutzungsanforderungen sind zentraler Bestandteil von User Research, genauso wie Usability Testing.</li></ul>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notizen</div>damit weden empirische Informationen eingeholt · → Erfordernisse → Anforderungen</div></div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 130–134</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">handshake</span>Konsens zum Vorgehen in einem Human-centred Project erstellen</h3>
+            <p class="card-lead">Um einen Konsens über das Vorgehen im Projekt zu erzielen, können folgende Schritte unternommen werden:</p>
+            <ol class="steps7">
+                <li>Menschzentrierte Qualitätsziele mit den Projektbeteiligten erarbeiten</li>
+                <li>Bekannte Daten und Annahmen über den Nutzungskontext als Ausgangpunkt identifizieren und dokumentieren</li>
+                <li>Wissenslücken und Unsicherheiten über den Nutzungskontext identifizieren</li>
+                <li>Angemessene Fragen für Nutzungskontextanalysen formulieren</li>
+                <li>Personen für Befragungen oder Interviews identifizieren</li>
+                <li>Sich für ein Vorgehen (klassisch versus modellbasiert) entscheiden</li>
+                <li>Ressourcen planen und deren Verfügbarkeit sicherstellen</li>
+            </ol>
+            <span class="src"><span class="material-icons">description</span>Folie S. 135</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">alt_route</span>Nutzungskontextanalyse (context of use analysis) klassisch vs. modellbasiert (classic vs. model-based)</h3>
+            <p class="card-lead">Nutzungskontextanalyse: Prozess der Planung (1), Erhebung (2) und Dokumentation (3) authentischer Nutzungskontextinformationen, des Identifizierens darin enthaltener Erfordernisse und des Spezifizierens der Nutzungsanforderungen. · Deine Notizen: 1 · 2 · 3 · BAZUR · 1 (bei Planung) · 2+3 (bei Erhebung und Dokumentation)</p>
+            <div class="decide">
+                <div class="box">
+                    <div class="box-title">Klassische Nutzungskontextanalyse</div>
+                    Vorgehen bei der Nutzungskontextanalyse, bei dem systematisch ohne Annahmen über den Nutzungskontext zunächst alle Nutzungskontextinformationen erhoben werden und erst dann Erfordernisse und ableitbare Nutzungsanforderungen ermittelt werden.
+                    <h4>! keine Annahmen werden getroffen</h4>
+                    <ul><li>Erhebung erfolgt systematisch ohne Annahmen zum Kontext</li><li>Erhebung aller Nutzungskontextinformationen (B/A&amp;Z/U/R) mit kontextuellen Interviews, Beobachtungen</li><li>Identifikation der Erfordernisse</li><li>Ableitung der Nutzungsanforderungen</li></ul>
+                    <h4>Ausgangssituation klassische NKA</h4>
+                    <ul><li>niedriges bis gar kein Wissen oder auch Dissens über die Komponenten des Nutzungskontextes</li><li>Fragestellungen für die Nutzungskontextanalyse des Auftraggebers sind eher allgemein <span class="note-inline">Deine Notiz: ohne Details</span></li><li>hohe Erwartung an neue Erkenntnisse aus der Nutzungskontextanalyse</li><li>Innovationspotentiale durch Nutzung des interaktiven Systems weitestgehend unbekannt</li></ul>
+                </div>
+                <div class="box lila">
+                    <div class="box-title">Modellbasierte Nutzungskontextanalyse</div>
+                    Vorgehen bei der Nutzungskontextanalyse, bei dem auf Basis bekannter Nutzungskontextinformationen, vorliegender Aufgabenmodelle, bereits bekannter Nutzungsanforderungen und Nutzungsszenarien und/oder vorhandener Prototypen offene Fragen über den Nutzungskontext gesammelt werden, mit deren Hilfe dann systematisch in kontextuellen Interviews und/oder Beobachtungen empirische Informationen über den Nutzungskontext eingeholt werden.
+                    <h4>! bekannt sind NK-Informationen, Aufgabenmodelle, Nutzungsanforderungen, -szenarien, möglicherweise sind Prototypen vorhanden <span class="note-inline">Deine Notiz: &amp; Annahmen</span></h4>
+                    <ul><li>Überblick vorhandener Informationen</li><li>Sammlung offener Fragen zum Nutzungskontext für kontextuelle Interviews und Beobachtungen</li><li>Empirische Information wird gezielt eingeholt <span class="note-inline">Deine Notiz: /Fakten</span></li><li>Identifikation der Erfordernisse</li><li>Ableitung der Nutzungsanforderungen</li></ul>
+                    <h4>Ausgangssituation modellbasierte NKA</h4>
+                    <ul><li>Wissen über Benutzer, Aufgaben und Ziele, Umgebungen und Ressourcen liegt vor</li><li>Skepsis bei Projektbeteiligten zu gewinnbaren Erkenntnissen durch empirische Datenerhebung <span class="note-inline">Deine Notiz: Skepsis, Interviews, Daten</span></li><li>viel Erfahrung mit bestehendem interaktiven System</li><li>spezifischer Fokus der NKA</li><li>spezifische Erkenntnisse der NKA erwartet</li><li>Fragestellungen für die NKA sind sehr spezifisch und bauen aufeinander auf</li><li>NA scheinen dem Auftraggeber bekannt</li></ul>
+                </div>
+            </div>
+            <div class="box pink" style="margin-top:14px"><div class="box-title"><span class="material-icons">warning_amber</span>Klassische vs. modellbasierte Nutzungskontextanalyse (NKA), S. 138</div>
+                <ul><li>Der wesentliche Unterschied zwischen klassischer Nutzungskontextanalyse und modellbasierter Nutzungskontextanalyse ist<ul><li>Interviewleitfaden für die modellbasierte Kontextanalyse beinhaltet spezifischere Fragen</li><li>Aufgabenmodelle teilweise bekannt</li><li>Nutzungsanforderungen teilweise bekannt</li></ul></li><li>Je mehr empirische Nutzungskontextinformationen bereits im Projektteam vorliegen, umso ökonomischer ist die modellbasierte Nutzungskontextanalyse. (siehe auch LeanUX)</li><li>Je weniger empirische Nutzungskontextinformationen über den Nutzungskontext bereits im Projektteam vorliegen, umso risikobehafteter ist die modellbasierte Nutzungskontextanalyse in Hinblick auf die Immunisierungsfalle. <span class="note-inline">Deine Notiz: Annahmebasiert</span></li></ul></div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 136–139</span>
+        </div>
+
+        <div class="pg" data-pg="{&quot;titel&quot;: &quot;Klassische vs. modellbasierte Nutzungskontextanalyse&quot;, &quot;folie&quot;: &quot;S. 140&quot;, &quot;stufen&quot;: [{&quot;titel&quot;: &quot;1.&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Vorgehen klassische NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Mit Sponsor und weiteren Stakeholdern im Projekt Konsens herstellen, dass dieses Vorgehen aufgrund des Anlasses gewählt wird.&quot;, &quot;k&quot;: &quot;nka&quot;}]}, {&quot;titel&quot;: &quot;Vorgehen modellbasierte NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Konsens zum Vorgehen nach erstem Identifizieren der Annahmen und Wissen zu NK&quot;, &quot;k&quot;: &quot;nka&quot;}]}]}, {&quot;titel&quot;: &quot;2.&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Vorgehen klassische NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Benutzergruppenprofile für jede angenommene Benutzergruppe spezifizieren&quot;, &quot;k&quot;: &quot;nka&quot;}]}, {&quot;titel&quot;: &quot;Vorgehen modellbasierte NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Benutzergruppenprofile für jede Gruppe spezifizieren&quot;, &quot;k&quot;: &quot;nka&quot;}]}]}, {&quot;titel&quot;: &quot;3.&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Vorgehen klassische NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Festlegung der zu klärenden Fragestellungen&quot;, &quot;k&quot;: &quot;nka&quot;}]}, {&quot;titel&quot;: &quot;Vorgehen modellbasierte NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Mit Auftraggeber Aufgabenmodelle für jede zu unterstützende Aufgabe konstruieren / NA für die jeweilige Aufgabe antizipieren / Lücken, Unklarheiten, Optimierungsbedarfe und Bewahrenswertes aus antizipierten NK-Beschreibungen, konstruierten Aufgabenmodellen, und antizipierten NA identifizieren / Fragestellungen für NK-Analyse ableiten&quot;, &quot;k&quot;: &quot;nka&quot;}]}]}, {&quot;titel&quot;: &quot;4.&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Vorgehen klassische NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Kontextuelle Interviews, Beobachtungen und/oder Fokusgruppen durchführen&quot;, &quot;k&quot;: &quot;nka&quot;}]}, {&quot;titel&quot;: &quot;Vorgehen modellbasierte NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Ggf. kontextuelle Interviews und/oder Beobachtungen und/oder Fokusgruppen durchführen&quot;, &quot;k&quot;: &quot;nka&quot;}]}]}, {&quot;titel&quot;: &quot;5.&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Vorgehen klassische NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Nutzungskontextdaten dokumentieren, auswerten und strukturieren&quot;, &quot;k&quot;: &quot;nka&quot;}]}, {&quot;titel&quot;: &quot;Vorgehen modellbasierte NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Nutzungskontextdaten dokumentieren, auswerten und strukturieren&quot;, &quot;k&quot;: &quot;nka&quot;}]}]}, {&quot;titel&quot;: &quot;6.&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Vorgehen klassische NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Erfordernisse, Nutzungsanforderungen&quot;, &quot;k&quot;: &quot;nka&quot;}]}, {&quot;titel&quot;: &quot;Vorgehen modellbasierte NKA&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Erfordernisse, Nutzungsanforderungen&quot;, &quot;k&quot;: &quot;nka&quot;}]}]}]}"></div>
+
+        <div class="card">
+            <h3><span class="material-icons">timeline</span>Klassische vs. modellbasierte Nutzungskontextanalyse</h3>
+            <div class="decide">
+                <div class="box"><div class="box-title">Vorgehen klassische NKA (S. 140)</div>
+                    <ol class="num-steps"><li>Mit Sponsor und weiteren Stakeholdern im Projekt Konsens herstellen, dass dieses Vorgehen aufgrund des Anlasses gewählt wird. <span class="note-inline">Deine Notiz: Auftragsklärung</span></li><li>Benutzergruppenprofile für jede angenommene Benutzergruppe spezifizieren</li><li>Festlegung der zu klärenden Fragestellungen</li><li>Kontextuelle Interviews, Beobachtungen und/oder Fokusgruppen durchführen</li><li>Nutzungskontextdaten dokumentieren, auswerten und strukturieren</li><li>Erfordernisse, Nutzungsanforderungen</li></ol></div>
+                <div class="box lila"><div class="box-title">Vorgehen modellbasierte NKA (S. 140)</div>
+                    <ol class="num-steps"><li>Konsens zum Vorgehen nach erstem Identifizieren der Annahmen und Wissen zu NK</li><li>Benutzergruppenprofile für jede Gruppe spezifizieren</li><li>Mit Auftraggeber Aufgabenmodelle für jede zu unterstützende Aufgabe konstruieren / NA für die jeweilige Aufgabe antizipieren / Lücken, Unklarheiten, Optimierungsbedarfe und Bewahrenswertes aus antizipierten NK-Beschreibungen, konstruierten Aufgabenmodellen, und antizipierten NA identifizieren / Fragestellungen für NK-Analyse ableiten</li><li>Ggf. kontextuelle Interviews und/oder Beobachtungen und/oder Fokusgruppen durchführen</li><li>Nutzungskontextdaten dokumentieren, auswerten und strukturieren</li><li>Erfordernisse, Nutzungsanforderungen</li></ol></div>
+            </div>
+            <h4>NKA Vorgehen (S. 141)</h4>
+            <div class="nka-lanes">
+                <div class="lane klassisch">
+                    <div class="lane-head"><span>klassische Nutzungskontextanalyse</span><span class="badge tuerkis">Expertentätigkeit</span></div>
+                    <div class="lane-steps">
+                        <div class="lane-step">Benutzergruppen identifizieren</div>
+                        <div class="lane-step">Nutzungskontextanalyse planen<small>– Fragestellung, Fragen<br>– Benutzende rekrutieren</small></div>
+                        <div class="lane-step">Nutzungskontext erheben<small>– kontextuelle Interviews<br>– Beobachten<br>– (Fokusgruppen)</small></div>
+                        <div class="lane-step">Analysieren und strukturieren<small>– Erfordernisse<br>– Nutzungsanforderungen</small></div>
+                    </div>
+                </div>
+                <div class="lane modell">
+                    <div class="lane-head"><span>modellbasierte Nutzungskontextanalyse</span><span class="badge lila">in Zusammenarbeit mit Auftraggeber</span></div>
+                    <div class="lane-grid">
+                        <div class="lane-step">Bekannte/angenommenen Daten strukturieren und dokumentieren<small>– Benutzergruppen<br>– Aufgaben und Aufgabenmodelle</small></div>
+                        <div class="lane-step">Analysieren und strukturieren<small>– Teilaufgaben prüfen und identifizieren<br>– bekannte Nutzungsanforderungen prüfen</small></div>
+                        <div class="lane-loop"><span class="material-icons" style="color:#E10057">south</span>auf Grund erkannter Unklarheiten Bedarf ermitteln · komplettieren und korrigieren<span class="material-icons" style="color:#E10057">north</span></div>
+                        <div class="lane-loop"><span class="material-icons" style="color:#E10057">south</span>auf Grund erkannter Unklarheiten Bedarf ermitteln · komplettieren und korrigieren<span class="material-icons" style="color:#E10057">north</span></div>
+                        <div class="lane-step">Nutzungskontext erheben<small>– kontextuelle Interviews<br>– Beobachtungen</small></div>
+                        <div class="lane-step">Nutzungsanforderungen herleiten<small>– Erfordernisse identifizieren<br>– Nutzungsanforderungen herleiten und strukturieren</small><span class="badge tuerkis" style="margin-top:6px">Expertentätigkeit</span></div>
+                    </div>
+                </div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 140, 141</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         KAPITEL 2: WEITERE METHODEN (Folien S. 142–153)
+         ========================================================= -->
+    <section class="section" id="methoden">
+        <div class="section-title"><div class="num"><span class="material-icons">lightbulb</span></div><h2>Weitere Methoden, Vorgehen zum Verstehen und Erheben des Nutzungskontextes, die UX-Professionals kennen sollten!</h2></div>
+        <p class="section-lead">Folie S. 143</p>
+
+        <div class="card">
+            <h3><span class="material-icons">edit</span>Praktische Übung 3</h3>
+            <p>Bitte bearbeiten Sie Übung 3 aus der Datei "Praktische Übungen":</p>
+            <p style="margin-top:8px">Im Folgenden finden Sie drei verschiedene Anfragen zur Unterstützung in der Produktentwicklung:</p>
+            <ul style="margin-top:6px"><li>Zu welchem Typ von Nutzungskontextanalyse würden Sie den drei Auftraggebern raten?</li><li>Arbeiten Sie für eine Anfrage das Vorgehen weiter aus.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 142</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">psychology</span>Design Thinking</h3>
+            <div class="box"><div class="box-title">Definition (S. 144)</div>Ein systematischer Ansatz zur Erarbeitung von Lösungen für komplexe Probleme in allen Lebensbereichen, bei dem menschliche Werte Vorrang vor technischen oder wirtschaftlichen Zwängen haben. Es ist ein Instrument zur Bewältigung unbekannter Problemstellungen und wird bei der Entwicklung von Produkten, Dienstleistungen oder Prozessinnovationen verwendet.
+                <ul style="margin-top:6px"><li>Design Thinking konzentriert sich auf drei Elemente: Menschen, Orte, Prozess.</li></ul>
+                <div class="note" style="margin-top:8px"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 144)</div></div>
+            </div>
+            <ul style="margin-top:14px">
+                <li>Im Mittelpunkt von Design Thinking stehen ein umfassendes und tiefes Verstehen des Problemraums sowie eine uneingeschränkte Kreativität bei der Lösungsfindung. Gefundene Lösungen werden dann an den Problemkontext angepasst.</li>
+                <li>Design Thinking liefert einen besonderen Weg, sich eine Lösung, die zum Problemkontext passt, zu erarbeiten. Dieses Vorgehen berücksichtigt jedoch Nutzungsanforderungen nur implizit, sie werden nicht explizit formuliert und für eine spätere Verwendung dokumentiert.</li>
+            </ul>
+            <span class="src"><span class="material-icons">description</span>Folien S. 144, 145</span>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">category</span>Design Thinking</h3>
+            <div class="grid-3">
+                <div class="box"><div class="box-title">Element Menschen (S. 146)</div>
+                    <ul><li>multidisziplinär</li><li>kollaborierende Teams<ul><li>die schnell agieren</li><li>ihre kollektive Intelligenz nutzen</li></ul></li><li>nachhaltigere Arbeitsprozesse generieren und so besondere Ergebnisse erzielen</li></ul>
+                    <span class="src"><span class="material-icons">description</span>Folie S. 146</span></div>
+                <div class="box"><div class="box-title">Element Orte (S. 147)</div>Ideen entfalten sich am besten in einer freien und flexiblen Arbeitsumgebung
+                    <ul style="margin-top:6px"><li>variable Projekträume, bewegliche Tische und Stellwände</li><li>Platz für Visualisierungen wo immer es geht</li><li>große Vielfalt an nutzbaren Materialien um Ideen, Gedanken oder Arbeitsergebnisse zu veranschaulichen</li></ul>
+                    <p style="margin-top:6px;font-size:12.5px;color:#718096">SAP apphaus, Heidelberg</p>
+                    <span class="src"><span class="material-icons">description</span>Folie S. 147</span></div>
+                <div class="box"><div class="box-title">Element Prozess (S. 148)</div>offene Fehlerkultur in einem sechsstufigen iterativen Design-Prozess, Deadlines setzen, um den Hang nach Perfektion zu unterbinden, ganzheitlich arbeiten und Ergebnisse erlebbar machen.
+                    <div class="dt-cycle">
+                        <div class="dt-raum t"><small>Problemraum</small><span>Verstehen</span><span>Beobachten</span><span>Standpunkt definieren</span></div>
+                        <div class="dt-raum l"><small>Lösungsraum</small><span>Ideen finden</span><span>Prototypen entwickeln</span><span>Testen</span></div>
+                    </div>
+                    <div class="note" style="margin-top:8px"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 148)</div>oft interne Lösungsfindung/ Ideengenerierung · ohne Anforderungserstellung! · Direkt erfahrbar nutzbar machen</div>
+                    <span class="src"><span class="material-icons">description</span>Folie S. 148</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">compare_arrows</span>Design Thinking und HCD (CPUX-DS)</h3>
+            <div class="grid-2">
+                <div class="box"><div class="box-title">Gemeinsamkeiten Design Thinking und HCD (CPUX-DS) (S. 149)</div>
+                    <ul>
+                        <li>Fokus strikt auf Menschen und ihre Bedürfnisse</li>
+                        <li>NICHT die Erfahrungen des Designers ist Quelle möglicher Lösungen, sondern die verborgenen Bedürfnisse von Menschen</li>
+                        <li>Bedürfnisse müssen durch Forschung verstanden werden, erfordern eine Analyse der Ausgangssituation mittels der Methoden Personas, Beobachtungen, Interviews</li>
+                        <li>Empfehlen die Durchführung der Gestaltungsarbeit in interdisziplinären Teams</li>
+                        <li>Machen Ideen und mögliche Lösungen in Arbeitsprodukten erfahrbar z. B. Prototypen</li>
+                        <li>Betonen die Wichtigkeit von Iterationen</li>
+                        <li>Evaluieren Arbeitsprodukte mit Benutzenden und nutzen Feedback von allen Stakeholdern, um Lösungen zu verbessern</li>
+                    </ul>
+                    <div class="note" style="margin-top:8px"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 149)</div>✓ Fokus strikt auf Menschen ·  · Needs Research</div>
+                    <span class="src"><span class="material-icons">description</span>Folie S. 149</span></div>
+                <div class="box lila"><div class="box-title">Gegensätze Design Thinking und HCD (CPUX-DS) (S. 150)</div>
+                    <table class="criteria">
+                        <tr><th></th><th>Design Thinking, Design Sprint</th><th>HCD</th></tr>
+                        <tr><td><b>Art der Probleme</b></td><td>alle Probleme</td><td>Nutzungsprobleme</td></tr>
+                        <tr><td><b>Lösungsraum</b></td><td>innovative oder kreative Services, Produkte in analoger oder digitaler Welt</td><td>Nutzungsqualität eines digitalen Produktes oder Service</td></tr>
+                        <tr><td><b>Rolle Innovation</b></td><td>Innovationen und Produktideen</td><td>Verbesserung oder Erweiterung existierender Produkte <span class="note-inline">Deine Notiz: (aber auch neue</span></td></tr>
+                        <tr><td><b>Einbeziehung der Umsetzung</b></td><td>endet mit erstellten Prototypen</td><td>berücksichtigt Umsetzung und finale Evaluierung</td></tr>
+                        <tr><td><b>Standards als Grundlage</b></td><td>grob nach Prinzipien, Methoden und Techniken: kreatives Chaos</td><td>ISO-basiert, definiert, geordnet, kontrolliert</td></tr>
+                    </table>
+                    <span class="src"><span class="material-icons">description</span>Folie S. 150</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><span class="material-icons">rocket_launch</span>Lean UX</h3>
+            <div class="box lila"><div class="box-title">Definition (S. 151)</div>Ein Ansatz der menschzentrierten Gestaltung, der Prinzipien und Methoden für Usability und User Experience in die agile Entwicklung integriert und damit wirtschaftliche Vorteile erzielt.</div>
+            <ul style="margin-top:14px">
+                <li>Die modellbasierte Nutzungskontextanalyse ist ein geeigneter Ausgangspunkt für LeanUX</li>
+                <li>Lean UX basiert auf der Idee, Lean Startup, agile Entwicklung und Design Thinking zu kombinieren.</li>
+                <li>Agile Entwicklung ist Basis von Lean UX<ul><li>iteratives Vorgehen in Teams</li><li>umsetzen kleiner, gut beschreibbarer Pakete</li><li>regelmäßig kleine, schnelle Tests durchführen</li><li>Ergebnisse fließen direkt in die nächste Iteration ("Sprint") ein.</li></ul></li>
+                <li>Design Thinking ist Basis des Lean UX<ul><li>lösungsorientierte Denkweise und umfassendes Verstehen des Problemkontexts</li><li>Einnahme der Perspektive der Benutzenden</li></ul></li>
+            </ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 151)</div>Idee Annahme → MVP → Rückmeldung wirtschaftl. → braucht die Welt dieses Produkt?</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 151</span>
+        </div>
+
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Das Vorgehen bei der Nutzungskontextanalyse festlegen</h3>
+            <div class="story">
+                <div class="st"><span class="sn">1</span>Eine Nutzungskontextanalyse ist der Prozess der Planung, Erhebung und Dokumentation authentischer Nutzungskontextinformationen, der Identifikation darin enthaltener Erfordernisse und der Ableitung von Nutzungsanforderungen aus diesen Erfordernissen.</div>
+                <div class="st"><span class="sn">2</span>Eine Nutzungskontextanalyse beginnt mit dem Sammeln von empirischen Informationen, z.B. Fakten über die Benutzenden, ihre Ziele und Aufgaben, verwendete Ressourcen und Umgebung, in denen Benutzende agieren. Empirische Informationen bilden die Grundlage für konstruierte Informationen.</div>
+                <div class="st"><span class="sn">3</span>In Projekten wird die Nutzungskontextanalyse oft als User Research bezeichnet. Personen, die User Research durchführen, können als User Researcher oder User Experience Researcher bezeichnet werden. User Research umfasst jedoch alle Aktivitäten in einem Projekt oder einer Organisation, die eine direkte Interaktion mit Benutzern beinhalten. Dazu gehören auch die direkte Zusammenarbeit mit Benutzenden bei der Gestaltung und beim Usability Testing.</div>
+                <div class="st"><span class="sn">4</span>Es ist wichtig, den richtigen Fokus für eine Nutzungskontextanalyse zu setzen. Der Fokus einer Nutzungskontextanalyse kann breit oder detailliert sein, je nachdem, welche Informationen über den Nutzungskontext dem Team bereits vorliegen.</div>
+                <div class="st"><span class="sn">5</span>Wenn das Projektteam wenig Wissen über den Nutzungskontext hat oder die Teammitglieder sich über Aspekte des Nutzungskontexts nicht einig sind, empfiehlt sich eine klassische Nutzungskontextanalyse, bei der keine Annahmen über den Nutzungskontext getroffen werden.</div>
+                <div class="st"><span class="sn">6</span>Wenn das Projektteam über umfassendes Wissen und/oder Informationen über den Nutzungskontext verfügt, ist eine modellbasierte Nutzungskontextanalyse zu empfehlen. Hier werden bekannte Informationen zu Aufgabenmodellen und Nutzungsanforderungen vom Projektteam strukturiert und zielgerichtete Fragen zu unbekannten Informationen formuliert. Diese werden für fokussierte Interviews, Beobachtungen und Fokusgruppen verwendet.</div>
+                <div class="st"><span class="sn">7</span>Eine modellbasierte Nutzungskontextanalyse passt gut zu den Ansätzen Lean UX und Design Thinking.</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>Folien S. 152, 153</span>
+        </div>
+    </section>
+
+    <nav class="pager"><a class="prev" href="kapitel-1.html"><span class="material-icons">chevron_left</span><span><small>Zurück</small>1 Einführung in die NKA</span></a><a class="next" href="kapitel-3.html"><span><small>Weiter</small>3 Information erheben</span><span class="material-icons">chevron_right</span></a></nav>
+
+    <footer>Lernmaterial auf Basis der CPUX-UR-Seminarunterlagen (Spiegel Institut, 2026) nach UXQB CPUX-F Curriculum V4.01 und ISO 9241-210:2019. Nur für den internen Gebrauch.</footer>
+</div>
+
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drTitle">
+    <div class="dr-head">
+        <button class="dr-close" id="drClose" aria-label="Schließen"><span class="material-icons">close</span></button>
+        <div class="dr-icon"><span class="material-icons" id="drIcon">info</span></div>
+        <h3 id="drTitle"></h3>
+        <div class="dr-tags" id="drTags"></div>
+    </div>
+    <div class="dr-body" id="drBody"></div>
+    <div class="dr-foot">
+        <div class="dr-nav">
+            <button class="btn" id="drPrev" title="Vorheriger Prozessschritt"><span class="material-icons">chevron_left</span></button>
+            <button class="btn" id="drNext" title="Nächster Prozessschritt"><span class="material-icons">chevron_right</span></button>
+        </div>
+        <a class="btn on" id="drLink" href="#"><span class="material-icons">open_in_full</span>Zur Detailkarte</a>
+    </div>
+</aside>
+
+<button class="back-to-top" id="backToTop" aria-label="Zurück nach oben"><span class="material-icons" style="font-size:26px">arrow_upward</span></button>
+
+<script src="lern-daten.js"></script>
+<script src="landkarte.js"></script>
+<script src="folien-daten.js"></script>
+<script src="folien.js"></script>
+<script src="hervorhebung-daten.js"></script>
+<script src="hervorhebung.js"></script>
+<script src="detail.js"></script>
+<script src="prozessgrafik.js"></script>
+<script src="lernen.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praktische Prüfung | CPUX-UR Prozess-Landkarte</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landkarte.css">
+<link rel="stylesheet" href="lernen.css">
+<link rel="stylesheet" href="pruefung.css">
+</head>
+<body>
+
+<button class="sb-toggle" id="sbToggle" aria-label="Navigation ein- oder ausblenden" title="Navigation ein-/ausblenden"><span class="material-icons" id="sbIcon">menu_open</span></button>
+
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <span class="ux-lab-pill">UX Lab</span>
+        <h2>CPUX-UR Prozess-Landkarte</h2>
+        <p>Lernbegleiter zum Training, Stand Folie S. 252</p>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+        <div class="nav-group">Überblick</div>
+        <a href="index.html" class="nav-link"><span class="material-icons">map</span>Prozesskarte</a>
+        <a href="dashboard.html" class="nav-link"><span class="material-icons">dashboard</span>Lern-Cockpit</a>
+        <a href="seminar.html" class="nav-link"><span class="material-icons">school</span>Zum Seminar</a>
+        <div class="nav-group">Lernen</div>
+        <a href="zusammenhang.html" class="nav-link"><span class="material-icons">hub</span>Alles im Zusammenhang</a>
+        <a href="schaubilder.html" class="nav-link"><span class="material-icons">account_tree</span>Schaubilder</a>
+        <a href="lernziele.html" class="nav-link"><span class="material-icons">checklist</span>Lernziele</a>
+        <a href="selbsttest.html" class="nav-link"><span class="material-icons">style</span>Selbsttest Begriffe</a>
+        <div class="nav-group">Kapitel</div>
+        <a href="kapitel-1.html" class="nav-link"><span class="material-icons">looks_one</span>1 Einführung in die NKA</a>
+        <a href="kapitel-2.html" class="nav-link"><span class="material-icons">looks_two</span>2 NKA planen</a>
+        <a href="kapitel-3.html" class="nav-link"><span class="material-icons">looks_3</span>3 Information erheben</a>
+        <a href="kapitel-4.html" class="nav-link"><span class="material-icons">looks_4</span>4 Erfordernisse identifizieren</a>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>5 NA ableiten</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>6 Konsolidieren &amp; priorisieren</span>
+        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>7 Schnittstellen</span>
+        <div class="nav-group">Prüfung</div>
+        <a href="pruefung-theorie.html" class="nav-link"><span class="material-icons">quiz</span>Theoretische Prüfung</a>
+        <a href="pruefung-praxis.html" class="nav-link active"><span class="material-icons">assignment</span>Praktische Prüfung</a>
+        <div class="nav-sub"><a href="#pruefung">Prüfung im Prozess</a><a href="#praxis-instruktion">Instruktion</a><a href="#praxis-material">Prüfungsmaterial</a><a href="#praxis-szenario">Ist-Szenario</a><a href="#praxis-gruppen">Benutzergruppen</a><a href="#praxis-erfordernisse">Erfordernisse & NA</a><a href="#praxis-aufgabenmodell">Aufgabenmodell</a><a href="#praxis-interviewer">Interviewfehler</a><a href="#praxis-auswertung">Selbstauswertung</a></div>
+        <div class="nav-group">Nachschlagen</div>
+        <a href="glossar.html" class="nav-link"><span class="material-icons">menu_book</span>Glossar</a>
+        <a href="ure-story.html" class="nav-link"><span class="material-icons">auto_stories</span>URE Story</a>
+        <a href="schablonen.html" class="nav-link"><span class="material-icons">text_fields</span>Formulierungsschablonen</a>
+        <a href="curriculum.html" class="nav-link"><span class="material-icons">library_books</span>Curriculum</a>
+    </nav>
+    <div class="sidebar-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54331 231.41233" width="100" aria-label="Micromata"><g style="isolation:isolate"><polygon fill="#009ba3" points="148.258 115.749 126.403 93.891 126.401 93.892 73.277 40.768 51.416 62.623 104.543 115.75 51.416 168.878 73.277 190.733 126.4 137.607 126.403 137.61 148.258 115.749"/><rect fill="#007480" x="110.9384" y="100.29035" width="30.91783" height="30.91093" transform="translate(297.62103 108.27464) rotate(135.02027)"/><polygon fill="#ffcb00" style="mix-blend-mode:multiply" points="248.142 40.767 226.287 62.621 279.411 115.75 226.287 168.876 248.142 190.735 301.268 137.609 323.129 115.747 248.142 40.767"/><polygon fill="#75be01" points="410.565 115.749 388.71 93.891 388.708 93.892 335.584 40.768 313.723 62.623 366.85 115.75 313.723 168.878 335.584 190.733 388.707 137.608 388.71 137.61 410.565 115.749"/><rect fill="#32912e" x="373.25004" y="100.28859" width="30.91285" height="30.91093" transform="translate(745.47512 -77.14329) rotate(135.02027)"/><polygon fill="#e10057" points="235.693 115.747 160.706 40.767 138.851 62.621 191.975 115.75 138.851 168.876 160.706 190.735 213.832 137.609 213.832 137.609 235.693 115.747"/><rect fill="#a70836" x="198.37947" y="100.29397" width="30.90915" height="30.91093" transform="translate(446.87971 46.37618) rotate(134.99583)"/><rect fill="#ff9d01" x="285.81339" y="100.29397" width="30.90915" height="30.91093" transform="translate(596.13425 -15.45344) rotate(134.99583)"/></g></svg>
+    </div>
+</aside>
+
+<div class="container">
+
+    <div class="header sub">
+        <p class="eyebrow">Praktische Prüfung</p>
+        <h1>Öffentliche Beispielprüfung CPUX-UR: Aufgaben, Material und Lösung</h1>
+    </div>
+
+    <!-- =========================================================
+         PRUEFUNG
+         ========================================================= -->
+    <section class="section" id="pruefung">
+        <div class="section-title"><div class="num"><span class="material-icons">assignment</span></div><h2>Überblick praktische Prüfung</h2></div>
+        <p class="section-lead">Es gilt, eine Nutzungskontextanalyse für eine gegebene Benutzergruppe und eine gegebene Thematik durchzuführen. Dazu gibt es eine Interviewcheckliste für kontextuelle Interviews mit 4 Fragen/Aufgaben, daraus ergeben sich 4 Ist-Szenarien. Für 3 der 4 Fragen ist das Ist-Szenario bereits erstellt. Für die 4. Frage gibt es ein Video eines Interviews (alle 4 Fragen kommen darin vor), und man erstellt das Ist-Szenario für diese eine fehlende Frage.</p>
+        <div class="card">
+            <h3><span class="material-icons">map</span>Aufgaben, Ort im HCD-Prozess, Punkte</h3>
+            <p class="card-lead">Die Spalte „HCD-Aktivität" ist meine Zuordnung zur Prozesskarte, Aufgaben und Punkte stammen aus Folie 256.</p>
+            <div class="exam-map" id="examMap"></div>
+            <div class="grid-3" style="margin-top:20px">
+                <div class="box"><div class="box-title"><span class="material-icons">schedule</span>Praktische Prüfung</div>5:45 mit 3 Aufgabenbereichen. Handschriftlich auf Papier.</div>
+                <div class="box lila"><div class="box-title"><span class="material-icons">quiz</span>Theoretische Prüfung</div>40 Multiple-Choice Fragen in 90 Minuten zu beantworten. Online.</div>
+                <div class="box gelb"><div class="box-title"><span class="material-icons">priority_high</span>Punkte</div>Erfordernisse 40 + Nutzungsanforderungen 26 = 66 von 100</div>
+            </div>
+            <span class="src"><span class="material-icons">description</span>CPUX-UR_Pruefungsabstimmung.md, Folie 256 (Screenshot 06.11.)</span>
+        </div>
+    </section>
+    <!-- =========================================================
+         PRAKTISCHE PRÜFUNG: BEISPIEL (PDF Kap. 3, S. 45–56)
+         ========================================================= -->
+    <section class="section" id="praxis-instruktion">
+        <div class="section-title"><div class="num"><span class="material-icons">assignment</span></div><h2>3.1 Instruktion für den Teilnehmer</h2></div>
+        <p class="section-lead">Praktische Prüfungsaufgabe – Beispiel. Du bearbeitest die Aufgaben direkt hier; deine Eingaben bleiben nur in diesem Browser gespeichert. Unter jeder Aufgabe kannst du die Lösung aus der Beispielprüfung einblenden.</p>
+        <div class="card">
+            <h4 class="ex-h">Einleitung:</h4>
+            <ul class="ex-list">
+                <li>Sie werden gleich eine Videoaufzeichnung gezeigt bekommen, in der ein Teil eines kontextuellen Interviews gezeigt wird. Die Videoaufzeichnung dauert ca. 30 Minuten. (Hinweis: Diese Videoaufzeichnung existiert nicht für die öffentliche Beispielprüfung. Die Videoaufzeichnungen existieren nur für die realen praktischen Prüfungen.)</li>
+                <li>Bevor die Aufzeichnung startet, haben Sie 15 Minuten Zeit,
+                    <ul><li>das Ziel der Nutzungskontextanalyse zu lesen (Abschnitt 3.1),</li><li>das Benutzergruppenprofil zu lesen (Abschnitt 3.2) und</li><li>den 4 Fragen umfassenden Interview-Leitfaden zu lesen (Abschnitt 3.3)</li></ul></li>
+                <li>Zu Frage 1, 2 und Frage 4 des Interview-Leitfadens finden Sie bereits den Text des Ist-Szenarios im Abschnitt 3.4.</li>
+                <li>Zur Bearbeitung Ihrer Aufgabenstellung haben Sie insgesamt 5 Stunden Zeit.</li>
+            </ul>
+            <h4 class="ex-h">Ihre Aufgabenstellung:</h4>
+            <ol class="ex-list">
+                <li>Komplettieren Sie das Ist-Szenario zu Frage 3 anhand der Ausführungen des Interviewteilnehmers in der Videoaufzeichnung. Schreiben Sie Ihr Ist-Szenario in die Tabelle im Abschnitt 3.4 rechts neben Frage 3.</li>
+                <li>Identifizieren Sie alle weiteren Benutzergruppen, die insgesamt im Ist-Szenario (Abschnitt 3.4, Frage 1 – 4) vorkommen. Schreiben Sie hierzu alle Benutzergruppen in die Tabelle im Abschnitt 3.5.</li>
+                <li>Identifizieren Sie alle Erfordernisse, die im Ausschnitt des Ist-Szenarios zu Frage 4 erkennbar sind. Schreiben Sie Ihre erkannten Erfordernisse in die Tabelle 3.6.
+                    <div class="ex-hint"><b>Wichtige Hinweise:</b><br>Im Ist-Szenario ist eine große Anzahl identifizierbarer Erfordernissen enthalten. Für das Erreichen der maximalen Anzahl von 40 Punkten in dieser Prüfungsaufgabe müssen ZEHN gültige Erfordernisse identifiziert und korrekt formuliert werden.
+                        <ul>
+                            <li>Ein Erfordernis ist gültig, wenn es aus dem Ist-Szenario ableitbar ist und nicht auf weiteren Annahmen beruht und wenn es nicht redundant zu einem anderen schon identifizierten Erfordernis ist.</li>
+                            <li>Jedes gültige und korrekt formulierte Erfordernis wird mit VIER Punkten bewertet, ungültige Erfordernisse werden mit NULL Punkten bewertet.</li>
+                            <li>Es gibt je Erfordernis jeweils VIER Punkte Abzug, wenn es nicht korrekt formuliert ist, d.h. wenn es nicht (1) als Ziel und Voraussetzung (2) die Voraussetzung bzw. (3) das Ziel gemäß der anzuwendenden Syntax formuliert wurde.</li>
+                            <li>Kein Erfordernis kann mit weniger als NULL Punkten bewertet werden</li>
+                        </ul>
+                        Die für die Bewertung durch den Prüfer heranzuziehenden ZEHN Erfordernisse müssen durch eine doppelte Unterstreichung der Nummer des jeweiligen Erfordernisses markiert werden, z. B. E3. Nur die 10 doppelt unterstrichenen Erfordernisse werden durch den Fachprüfer bewertet.</div></li>
+                <li>Leiten Sie anschließend alle Nutzungsanforderungen ab, die sich aus den von Ihnen identifizierten Erfordernissen herleiten lassen. Schreiben Sie Ihre abgeleiteten Nutzungsanforderungen ebenfalls in die Tabelle3.6.
+                    <div class="ex-hint"><b>Wichtige Hinweise:</b><br>Aus den im Ist-Szenario identifizierten Erfordernissen lassen sich mindestens 13 Nutzungsanforderungen ableiten. Für das Erreichen der maximalen Punktzahl in dieser Prüfungsaufgabe müssen Sie DREIZEHN gültige Nutzungsanforderungen aus den 10 doppelt unterstrichenen Erfordernissen ableiten und korrekt formulieren.
+                        <ul>
+                            <li>Eine Nutzungsanforderung ist gültig, wenn sie korrekt aus Erfordernissen abgeleitet wurde und nicht redundant zu einer anderen schon formulierten Nutzungsanforderung ist.</li>
+                            <li>Jede gültige und korrekt formulierte Nutzungsanforderung wird mit ZWEI Punkten bewertet, ungültige Nutzungsanforderungen werden mit NULL Punkten bewertet.</li>
+                            <li>Es gibt je Nutzungsanforderung jeweils ZWEI Punkte Abzug, wenn sie nicht korrekt formuliert wurde, d.h. wenn die Nutzungsanforderung
+                                <ol type="a"><li>nicht beschreibt, was der Benutzer am System erkennen/eingeben/auswählen muss oder</li><li>nicht nach den Syntaxregeln korrekt formuliert wurde.</li></ol></li>
+                            <li>Es gibt je Nutzungsanforderung ZWEI Punkte Abzug, wenn Sie immunisiert ist.</li>
+                            <li>Keine Nutzungsanforderung kann mit weniger als NULL Punkten bewertet werden.</li>
+                        </ul>
+                        Die für die Bewertung durch den Prüfer heranzuziehenden DREIZEHN Nutzungsanforderungen müssen durch eine doppelte Unterstreichung der Nummer der jeweiligen Nutzungsanforderung markiert werden, z. B. NA5. Nur die 13 doppelt unterstrichenen Nutzungsanforderungen werden durch den Fachprüfer bewertet.</div></li>
+                <li>Alle Ihre identifizierten Erfordernisse und Nutzungsanforderungen gehören zu einer (1) Aufgabe.
+                    <ul><li>Die Aufgabe ist bereits benannt. Benennen Sie für diese Aufgabe die kontextuellen Vorbedingung(en) und Nachbedingung(en).</li><li>Identifizieren Sie die Teilaufgaben, aus denen sich die Aufgabe zusammensetzt</li><li>Ordnen Sie Ihre identifizierten Nutzungsanforderungen der passenden Teilaufgabe zu.</li><li>Nutzen Sie hierzu die Tabelle in Abschnitt 3.7</li></ul></li>
+                <li>Benennen Sie etwaige Verhaltensfehler des Interviewers, die Ihnen beim Betrachten der Videoaufzeichnung aufgefallen sind. Listen Sie diese im Abschnitt 3.8.</li>
+            </ol>
+            <p class="ex-src">Quelle: CPUX-UR Öffentliche Beispielprüfung, Abschnitt 3.1 (S. 45–46). Die Abschnittsnummern in der Instruktion stehen so im PDF; die Überschriften im PDF sind um eins höher nummeriert.</p>
+        </div>
+    </section>
+
+    <section class="section" id="praxis-material">
+        <div class="section-title"><div class="num"><span class="material-icons">description</span></div><h2>Prüfungsmaterial</h2></div>
+        <div class="grid-2">
+            <div class="card">
+                <h4 class="ex-h">3.2 Ziel der Nutzungskontextanalyse</h4>
+                <p>Ein Hersteller von Apps für Smartphones sieht Potential für eine App, die Geschäftsreisende bei der Reisevorbereitung und Reisedurchführung unterstützt.</p>
+                <p>Da die Anforderungen an ein solches System unklar sind, soll eine Nutzungskontextanalyse durch einen User Requirements Engineer durchgeführt werden.</p>
+            </div>
+            <div class="card">
+                <h4 class="ex-h">3.4 Interview-Leitfaden für das kontextuelle Interview</h4>
+                <ol class="ex-list">
+                    <li>Wie oft reisen Sie geschäftlich und zu welchen Reisezielen?</li>
+                    <li>Wie entscheiden Sie im Einzelfall, ob Sie mit der Bahn, dem Firmen-PKW oder dem Flugzeug reisen?</li>
+                    <li>Welches Verkehrsmittel bevorzugen Sie und warum?</li>
+                    <li>Welche Probleme erleben Sie mit den einzelnen Verkehrsmitteln bei Ihrer Geschäftsreise?</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card">
+            <h4 class="ex-h">3.3 Benutzergruppenprofil</h4>
+            <table class="ex-table">
+                <thead><tr><th>Bezeichnung der Benutzergruppe</th><th>Erwartete Berufsausbildung und berufliche Tätigkeit</th><th>Demographische Merkmale</th><th>Erwartete IT-Kenntnisse / IT-Ausrüstung</th></tr></thead>
+                <tbody><tr><td><b>Geschäftsreisender</b></td>
+                    <td><ul><li>Abgeschlossene Berufsausbildung oder Studium in einem beliebigen Beruf</li><li>Außendienst-Tätigkeit, die häufige Reisetätigkeiten mit Geschäftsfahrzeug, Bahn und Flugzeug erfordert</li></ul></td>
+                    <td><ul><li>männlich oder weiblich</li><li>25 Jahre - 65 Jahre</li></ul></td>
+                    <td><ul><li>Smartphone</li><li>Notebook</li><li>Textverarbeitung</li><li>E-Mail</li><li>Umgang mit elektronischen Kalendern</li></ul></td></tr></tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section" id="praxis-szenario">
+        <div class="section-title"><div class="num"><span class="material-icons">history_edu</span></div><h2>3.5 Ist-Szenario</h2></div>
+        <p class="section-lead">Die Ausführungen zu Frage 3 müssen durch den Prüfungsteilnehmer ergänzt werden.</p>
+        <div class="card">
+            <table class="ex-table ex-scen">
+                <thead><tr><th>Frage</th><th>Ist-Szenario</th></tr></thead>
+                <tbody>
+                <tr><td>1. Wie oft reisen Sie geschäftlich und zu welchen Reisezielen?</td><td>Herr Müller ist bei einem großen Dienstleistungsunternehmen im Vertriebsaußendienst. Herr Müller akquiriert für seinen Arbeitgeber Prozessaudits bei Herstellern von unterschiedlichsten Produkten. Ziel ist hierbei immer, bestehende Herstellungsprozesse auf Schwachstellen im Qualitätsmanagement hin zu untersuchen und konkrete Verbesserungen vorzuschlagen. Er ist fast jede Woche von dienstags bis donnerstags auf Geschäftsreisen. Sein Zuständigkeitsbereich umfasst Deutschland, Österreich und die Schweiz. Er nutzt für Geschäftsreisen sowohl sein Firmenfahrzeug als auch die Bahn und das Flugzeug. Vor Ort beim potenziellen Kunden hat er es immer mit Budgetverantwortlichen für das Thema Qualität zu tun.<br>Meist reist er abends von der Geschäftsreise wieder nachhause. Es sei denn, er käme erst nach 21h abends zuhause an und muss morgens früh wieder raus. Das lohnt sich dann nicht für das Wiedersehen mit der Familie. In diesem Fall übernachtet er in einem Hotel am nächsten Zielort.</td></tr>
+                <tr><td>2. Wie entscheiden Sie im Einzelfall, ob Sie mit der Bahn, dem Firmen-PKW oder dem Flugzeug fliegen?</td><td>Die Entscheidung darüber, mit welchem Verkehrsmittel er zum Kunden fährt, hängt stark von der Entfernung und der hiermit verbundenen Reisedauer ab. Herr Müller beginnt seine Geschäftsreise typischerweise von zuhause. Inzwischen fährt er meist mit der Bahn oder nimmt das Flugzeug, auch wenn er einen Firmenwagen hat. Wenn er weiß, dass er drei Tage am Stück verreist, beginnt die Fahrt zuhause mit dem Taxi, da das unter dem Strich billiger ist als Parken am Flughafen.<br>Er entscheidet bei jedem Reiseziel aufs Neue, ob er mit der Bahn, dem PKW oder dem Flugzeug reist. Es sei denn, das Reiseziel ist eines, das er schon mehrfach angefahren hat. Wenn er an einem Ziel noch nie war, kann es schon mal dauern, bis er die richtige Entscheidung getroffen hat. Hierzu sucht er dann auf bahn.de und bei Fluggesellschaften, wie lange die Reise dauert. Es zieht hierbei auch notwendige Taxifahrten in Betracht, diese können aber teuer werden. Vor Ort fährt er nie mit lokalen Bussen oder Bahnen, da ihm das einfach zu lästig ist. Es erfordert zu viel Nachdenken und erzeugt nur Belege, die man für die spätere Abrechnung mit sich rumschleppen muss.</td></tr>
+                <tr><td>3. Welches Verkehrsmittel bevorzugen Sie und warum?</td><td><span class="ex-mute">Ist-Szenario zu dieser Frage muss durch den Prüfungsteilnehmer komplettiert werden.</span>
+                    <div class="ex-task"><span class="ex-tag">Aufgabe 1</span> Ohne Video kannst du das hier nicht üben, die Aufzeichnung gibt es nur in der realen Prüfung. Probier es mit einem eigenen Interview oder einer Aufnahme aus dem Training.
+                    <textarea class="ex-input" data-save="p1" rows="5" placeholder="Dein Ist-Szenario zu Frage 3 …"></textarea></div></td></tr>
+                <tr><td>4. Welche Probleme erleben Sie mit den einzelnen Verkehrsmitteln bei Ihrer Geschäftsreise?</td><td>Herr Müller fährt so spät wie möglich von zuhause los. Seine Ehefrau stresst das etwas, aber er sieht das eher gelassen. Sein Reiseplan für jeden der drei Tage (Dienstag, Mittwoch, Donnerstag) steht im Kalender seines Notebooks bzw. Smartphones. Das funktioniert bei der Fahrt zum Bahnhof ganz gut, da er hier eine sehr verkehrsruhige Strecke hat. Er braucht typischerweise max. 15 Minuten zum Bahnhof. Beim Flughafen ist das anders. Hier muss er jedes Mal aufs Neue überlegen, wann er losfährt. Herr Müller vergisst dummerweise oft, sich zu informieren, ob die Bahnfahrt oder das Flugzeug sich verspätet. Wenn er das zufällig mitbekommt, fährt er noch später los. Er hat seine Tickets, egal ob Bahn oder Flugzeug, in aller Regel bereits am letzten Freitag online gekauft. Eigentlich soll das seine Kollegin im Servicebüro machen, das ist ihm aber zu kompliziert, weswegen er es selbst macht. Trotzdem fährt Herr Müller üblicherweise genau eine Stunde vor Abflug des Flugzeugs los. Er braucht im Durchschnitt 20 Minuten zum Flughafen. Kürzlich fuhr er zum Flughafen mit dem Firmenwagen, um eine eintägige Geschäftsreise anzutreten. Als er am Flughafen ankam, waren alle Parkhäuser belegt. An jeder Zufahrt warteten schon 10 Fahrzeuge. Herr Müller erwischte gerade noch seinen Flug, aber hätte er das geahnt, wäre er natürlich mit dem Taxi zum Flughafen gefahren.</td></tr>
+                <tr><td>Ende des Ausschnitts aus dem kontextuellen Interview. Hier würde der Interviewer mit der zweiten Aufgabe von Herrn Müller fortfahren.</td><td>-/-</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section" id="praxis-gruppen">
+        <div class="section-title"><div class="num"><span class="material-icons">groups</span></div><h2>3.6 Weitere Benutzergruppen, die im Ist-Szenario vorkommen</h2></div>
+        <p class="section-lead">Hinweis: Die Gesamtzahl der Benutzergruppen ist kleiner oder gleich 5. Die fünf Zeilen sollen nicht suggerieren, dass es sich um 5 Benutzergruppen handelt.</p>
+        <div class="card">
+            <div class="ex-task"><span class="ex-tag">Aufgabe 2</span>
+                <div class="ex-rows">
+                    <label><span>1</span><input class="ex-input" data-save="p2-1"></label>
+                    <label><span>2</span><input class="ex-input" data-save="p2-2"></label>
+                    <label><span>3</span><input class="ex-input" data-save="p2-3"></label>
+                    <label><span>4</span><input class="ex-input" data-save="p2-4"></label>
+                    <label><span>5</span><input class="ex-input" data-save="p2-5"></label>
+                </div>
+            </div>
+            <details class="ex-sol"><summary><span class="material-icons">visibility</span>Lösung aus der Beispielprüfung anzeigen</summary>
+                <table class="ex-table"><thead><tr><th>Nr.</th><th>Bezeichnung der Benutzergruppe</th></tr></thead><tbody>
+                    <tr><td>1</td><td>Geschäftsreisender (Interviewte Person)</td></tr>
+                    <tr><td>2</td><td>Budgetverantwortlicher beim potenziellen Kunden</td></tr>
+                    <tr><td>3</td><td>Ehepartner</td></tr>
+                    <tr><td>4</td><td>Kollege / Kollegin im Servicebüro</td></tr>
+                    <tr><td>5</td><td>-/-</td></tr>
+                </tbody></table>
+            </details>
+        </div>
+    </section>
+
+    <section class="section" id="praxis-erfordernisse">
+        <div class="section-title"><div class="num"><span class="material-icons">edit_note</span></div><h2>3.7 Identifizierte Erfordernisse und abgeleitete Nutzungsanforderungen</h2></div>
+        <p class="section-lead">Alle Ausführungen in der folgenden Tabelle beziehen sich auf Frage 4 des Interview-Leitfadens.</p>
+        <div class="card">
+            <div class="ex-task"><span class="ex-tag">Aufgabe 3 + 4</span>
+                <div class="ex-two">
+                    <label>Identifizierte Erfordernisse<br><small>(Bitte nummerieren, E1, E2, E3, …)</small><textarea class="ex-input" data-save="p3" rows="14" placeholder="E1 Der Geschäftsreisende muss wissen, …, um …"></textarea></label>
+                    <label>Abgeleitete Nutzungsanforderungen<br><small>(Bitte nummerieren, NA1, NA2, NA3, …)</small><textarea class="ex-input" data-save="p4" rows="14" placeholder="NA1 Der Benutzer muss am System … können."></textarea></label>
+                </div>
+            </div>
+            <details class="ex-sol"><summary><span class="material-icons">visibility</span>Lösung aus der Beispielprüfung anzeigen</summary>
+                <table class="ex-table ex-sol3">
+                    <thead><tr><th>Ist-Szenario zu Frage 4 des Interview-Leitfadens</th><th>Identifizierte Erfordernisse</th><th>Abgeleitete Nutzungsanforderungen</th></tr></thead>
+                    <tbody>
+                    <tr><td>Herr Müller fährt so spät wie möglich von zuhause los. Seine Ehefrau stresst das etwas, aber er sieht das eher gelassen. Sein Reiseplan für jeden der drei Tage (Dienstag, Mittwoch, Donnerstag) steht im Kalender seines Notebooks bzw. Smartphones.</td>
+                        <td><p><b>E1</b> Der Geschäftsreisende muss wissen, wie lange seine Fahrt zum Bahnhof oder Flughafen dauern wird, um entscheiden zu können, wann er losfährt.</p><p><b>E2</b> Der Geschäftsreisende muss wissen, ob er jetzt losfahren muss, damit er sein nächstes Verkehrsmittel nicht verpasst.</p><p><b>E3</b> Der Geschäftsreisende muss wissen, wann seine nächste Reise beginnt, um entscheiden zu können, wann er losfährt.</p><p><b>E4</b> Der Geschäftsreisende muss wissen, mit welchem Verkehrsmittel seine nächste Reise stattfindet, um gezielt Bahnhof oder Flughafen anzufahren.</p></td>
+                        <td><p><b>NA1</b> Der Benutzer muss am System erkennen können, wie lange seine Fahrt zum Bahnhof oder Flughafen aktuell dauern wird.</p><p><b>NA2</b> Der Benutzer muss am System erkennen können, ob der Abreisezeitpunkt gekommen ist.</p><p><b>NA3</b> Der Benutzer muss am System erkennen können, wann seine nächste Reise mit der Bahn oder dem Flugzeug beginnt.</p><p><b>NA4</b> Der Benutzer muss am System eine Reise mit dem Zug oder dem Flugzeug mit allen Daten eingeben können.</p><p><b>NA5</b> Der Benutzer muss am System bei jeder Reise erkennen können, ob es sich um eine Bahnfahrt oder einen Flug handelt.</p></td></tr>
+                    <tr><td>Das funktioniert bei der Fahrt zum Bahnhof ganz gut, da er hier eine sehr verkehrsruhige Strecke hat. Er braucht typisch max. 15 Minuten zum Bahnhof. Beim Flughafen ist das anderes. Hier muss er jedes Mal aufs Neue überlegen, wann er losfährt.</td><td>Vgl. E1</td><td></td></tr>
+                    <tr><td>Herr Müller vergisst dummerweise oft, sich zu informieren, ob die Bahnfahrt oder das Flugzeug sich verspäten. Wenn er das zufällig mitbekommt, fährt er noch später los.</td>
+                        <td><p><b>E5</b> Der Geschäftsreisende muss wissen, ob seine Bahnfahrt oder sein Flug sich verspäten, um entscheiden zu können, wann er losfährt.</p></td>
+                        <td><p><b>NA6</b> Der Benutzer muss am System unmittelbar erkennen können, dass sein Zug oder sein Flug verspätet sind.</p><p><b>NA7</b> Der Benutzer muss am System die voraussichtliche Verspätung und Veränderungen der Verspätung zu jedem Zeitpunkt erkennen können.</p></td></tr>
+                    <tr><td>Er hat seine Tickets, egal ob Bahn oder Flugzeug in aller Regel bereits am letzten Freitag online gekauft. Eigentlich soll das seine Kollegin im Servicebüro machen, das ist ihm aber zu kompliziert, weswegen er es selbst macht.</td>
+                        <td><p><b>E6</b> Der Geschäftsreisende muss für jede Fahrt mit der Bahn oder Flugzeug ein Ticket haben, um die Reise antreten zu können.</p><p><b>E7</b> Der Geschäftsreisende muss wissen, ob er bereits ein Ticket für seine nächste Reise hat oder noch eines beschaffen muss, um die Reise antreten zu können.</p></td>
+                        <td><p><b>NA8</b> Der Benutzer muss am System für eine hinterlegte Bahnfahrt oder eine Flugreise den Kauf eines Tickets auswählen können (d.h. den Kauf initiieren können). (siehe auch NA4)</p><p><b>NA9</b> Der Benutzer muss am System für jede anzutretende Reise erkennen können, ob er bereits ein Ticket hat. (siehe auch NA4)</p></td></tr>
+                    <tr><td>Trotzdem fährt Herr Müller üblicherweise genau eine Stunde vor Abflug des Flugzeugs los. Er braucht im Durchschnitt 20 Minuten zum Flughafen. Kürzlich fuhr er zum Flughafen mit dem Firmenwagen, um eine eintägige Geschäftsreise anzutreten.</td><td>Vgl. E1<br>Vgl. E4</td><td></td></tr>
+                    <tr><td>Als er am Flughafen ankam, waren alle Parkhäuser belegt. An jeder Zufahrt warteten schon10 Fahrzeuge. Herr Müller erwischte gerade noch seinen Flug, aber hätte er das geahnt, wäre er natürlich mit dem Taxi zum Flughafen gefahren.</td>
+                        <td><p><b>E8</b> Der Geschäftsreisende muss einen Parkplatz für sein Auto am Bahnhof oder Flughafen verfügbar haben, um die Reise mit Bahn oder Flugzeug antreten zu können.</p><p><b>E9</b> Der Geschäftsreisende muss vor Abfahrt wissen, ob bei Ankunft am Bahnhof oder Flughafen unmittelbar Parkplätze verfügbar sind, um entscheiden zu können, ob er mit dem Firmenwagen oder dem Taxi fährt.</p></td>
+                        <td><p><b>NA10</b> Der Benutzer muss am System erkennen können, ob zum Ankunftszeitpunkt Parkplätze verfügbar sind.</p><p><b>NA11</b> Der Benutzer muss am System auswählen können, dass ein gewünschter Parkplatz zu einem festlegbaren Zeitpunkt reserviert ist.</p><p><b>NA12</b> Der Benutzer muss am System die Bestellung eines Taxis zum Flughafen auswählen können.</p></td></tr>
+                    </tbody>
+                </table>
+            </details>
+        </div>
+    </section>
+
+    <section class="section" id="praxis-aufgabenmodell">
+        <div class="section-title"><div class="num"><span class="material-icons">checklist</span></div><h2>3.8 Zuordnung der Nutzungsanforderungen zu Teilaufgaben</h2></div>
+        <div class="card">
+            <div class="ex-task"><span class="ex-tag">Aufgabe 5</span>
+                <table class="ex-table ex-form">
+                    <tr><th>Titel der Aufgabe:</th><td>Eine geplante Dienstreise antreten</td></tr>
+                    <tr><th>Vorbedingung(en):</th><td><textarea class="ex-input" data-save="p5-vor" rows="2"></textarea></td></tr>
+                    <tr><th>Nachbedingung(en):</th><td><textarea class="ex-input" data-save="p5-nach" rows="2"></textarea></td></tr>
+                </table>
+                <div class="ex-two">
+                    <label>Teilaufgaben<textarea class="ex-input" data-save="p5-ta" rows="9" placeholder="1. …"></textarea></label>
+                    <label>Zugehörige Nutzungsanforderungen<br><small>(Referenz zur jeweiligen Nr. z.B. „NA4“ reicht aus)</small><textarea class="ex-input" data-save="p5-na" rows="9" placeholder="1. NA…"></textarea></label>
+                </div>
+            </div>
+            <details class="ex-sol"><summary><span class="material-icons">visibility</span>Lösung aus der Beispielprüfung anzeigen</summary>
+                <table class="ex-table ex-form">
+                    <tr><th>Titel der Aufgabe:</th><td>Eine geplante Dienstreise antreten</td></tr>
+                    <tr><th>Vorbedingung(en):</th><td>Der Geschäftsreisende bereitet sich auf eine Dienstreise mit dem Auto, der Bahn oder dem Flugzeug vor, die er in Kürze antritt.</td></tr>
+                    <tr><th>Nachbedingung(en):</th><td>Der Geschäftsreisende befindet sich im geplanten Verkehrsmittel für die Reise.</td></tr>
+                </table>
+                <table class="ex-table">
+                    <thead><tr><th>Teilaufgaben</th><th>Zugehörige Nutzungsanforderungen</th></tr></thead>
+                    <tbody>
+                    <tr><td>1. Feststellen, wann die Bahnfahrt oder der Flug beginnt</td><td>NA3, NA6</td></tr>
+                    <tr><td>2. Prüfen, ob man ein Ticket hat</td><td>NA9</td></tr>
+                    <tr><td>3. Ggf. ein Ticket kaufen</td><td>NA8</td></tr>
+                    <tr><td>4. Identifizieren, wann man losfahren muss</td><td>NA1, NA2, NA3, NA6, NA7</td></tr>
+                    <tr><td>5. Entscheiden, ob man mit dem Taxi oder dem Firmenwagen fährt</td><td>NA10, NA11, NA12</td></tr>
+                    <tr><td>6. Ggf. ein Taxi bestellen</td><td>NA12</td></tr>
+                    <tr><td>7. Die Fahrt zum Flughafen oder Bahnhof durchführen.</td><td>NA7</td></tr>
+                    </tbody>
+                </table>
+            </details>
+        </div>
+    </section>
+
+    <section class="section" id="praxis-interviewer">
+        <div class="section-title"><div class="num"><span class="material-icons">record_voice_over</span></div><h2>3.9 Beobachtete Verhaltensfehler des Interviewers (beispielhaft)</h2></div>
+        <div class="card">
+            <div class="ex-task"><span class="ex-tag">Aufgabe 6</span><textarea class="ex-input" data-save="p6" rows="4" placeholder="Verhaltensfehler, die dir im Video aufgefallen sind …"></textarea></div>
+            <details class="ex-sol"><summary><span class="material-icons">visibility</span>Lösung aus der Beispielprüfung anzeigen</summary>
+                <ul class="ex-list"><li>Der Interviewer lässt den Interviewpartner nicht ausreden.</li><li>Der Interviewer suggeriert passende Lösungen im kontextuellen Interview.</li></ul>
+            </details>
+        </div>
+    </section>
+
+    <section class="section" id="praxis-auswertung">
+        <div class="section-title"><div class="num"><span class="material-icons">fact_check</span></div><h2>Selbstauswertung</h2></div>
+        <p class="section-lead">In der echten Prüfung bewertet ein Fachprüfer. Vergleiche deine Antworten mit der Lösung und trage ein, wie viele Punkte du dir gibst. Maximalpunkte laut Folie „Überblick praktische Prüfung“.</p>
+        <div class="card">
+            <div class="ex-score" id="praxisScore"></div>
+            <div class="ex-actions"><button class="btn" id="praxisReset"><span class="material-icons">restart_alt</span>Alle Eingaben auf dieser Seite löschen</button></div>
+        </div>
+    </section>
+
+    <nav class="pager"><a class="prev" href="pruefung-theorie.html"><span class="material-icons">chevron_left</span><span><small>Zurück</small>Theoretische Prüfung</span></a><a class="next" href="glossar.html"><span><small>Weiter</small>Glossar</span><span class="material-icons">chevron_right</span></a></nav>
+
+    <footer>Lernmaterial auf Basis der CPUX-UR-Seminarunterlagen (Spiegel Institut, 2026) nach UXQB CPUX-F Curriculum V4.01 und ISO 9241-210:2019. Nur für den internen Gebrauch.</footer>
+</div>
+
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drTitle">
+    <div class="dr-head">
+        <button class="dr-close" id="drClose" aria-label="Schließen"><span class="material-icons">close</span></button>
+        <div class="dr-icon"><span class="material-icons" id="drIcon">info</span></div>
+        <h3 id="drTitle"></h3>
+        <div class="dr-tags" id="drTags"></div>
+    </div>
+    <div class="dr-body" id="drBody"></div>
+    <div class="dr-foot">
+        <div class="dr-nav">
+            <button class="btn" id="drPrev" title="Vorheriger Prozessschritt"><span class="material-icons">chevron_left</span></button>
+            <button class="btn" id="drNext" title="Nächster Prozessschritt"><span class="material-icons">chevron_right</span></button>
+        </div>
+        <a class="btn on" id="drLink" href="#"><span class="material-icons">open_in_full</span>Zur Detailkarte</a>
+    </div>
+</aside>
+
+<button class="back-to-top" id="backToTop" aria-label="Zurück nach oben"><span class="material-icons" style="font-size:26px">arrow_upward</span></button>
+
+<script src="lern-daten.js"></script>
+<script src="landkarte.js"></script>
+<script src="folien-daten.js"></script>
+<script src="folien.js"></script>
+<script src="hervorhebung-daten.js"></script>
+<script src="hervorhebung.js"></script>
+<script src="detail.js"></script>
+<script src="prozessgrafik.js"></script>
+<script src="pruefung-daten.js"></script>
+<script src="pruefung.js"></script>
+<script src="lernen.js"></script>
+</body>
+</html>
