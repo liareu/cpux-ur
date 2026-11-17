@@ -122,11 +122,12 @@
     document.querySelectorAll('.is-neben').forEach(el => {
         if (el.querySelector('.is-kern') || el.closest('.mehr') || el.closest('.drawer') || el.classList.contains('g-item')) return;
         if (mehrLabel(el) === 'Beispiel') return;           /* Beispiele (B) bleiben immer offen */
+        if (el.classList.contains('card')) return;          /* ganze Karten nie zuklappen, sonst bleibt nur eine leere Hülle; das „+“ oben rechts zeigt den Zusatz */
         const keep = el.querySelector(':scope > h3, :scope > .box-title');
         const rest = [...el.childNodes].filter(n => n !== keep && !(n.classList && (n.classList.contains('mk') || n.classList.contains('src'))));
         if (!rest.some(n => n.nodeType === 1 || (n.nodeType === 3 && n.textContent.trim()))) return;
         const d = document.createElement('details'); d.className = 'mehr';
-        d.innerHTML = `<summary><span class="material-icons">expand_more</span>${mehrLabel(el)} anzeigen</summary>`;
+        d.innerHTML = `<summary><span class="mehr-pfeil" aria-hidden="true"></span>${mehrLabel(el)} anzeigen</summary>`;
         rest.forEach(n => d.appendChild(n));
         const src = el.querySelector(':scope > .src');
         src ? el.insertBefore(d, src) : el.appendChild(d);
@@ -140,7 +141,7 @@
         for (let n = h.nextElementSibling; n && !/^H[34]$/.test(n.tagName) && !n.classList.contains('src'); n = n.nextElementSibling) part.push(n);
         if (!part.length || part.some(n => n.classList.contains('is-kern') || n.querySelector('.is-kern'))) return;
         const d = document.createElement('details'); d.className = 'mehr';
-        d.innerHTML = `<summary><span class="material-icons">expand_more</span>${/Übung/.test(t) ? 'Übung' : /Beispiel/.test(t) ? 'Beispiele' : 'Abgrenzung'} anzeigen</summary>`;
+        d.innerHTML = `<summary><span class="mehr-pfeil" aria-hidden="true"></span>${/Übung/.test(t) ? 'Übung' : /Beispiel/.test(t) ? 'Beispiele' : 'Abgrenzung'} anzeigen</summary>`;
         h.after(d); part.forEach(n => d.appendChild(n));
         h.classList.add('is-neben');
     });
@@ -168,9 +169,13 @@
     const drBody = document.getElementById('drBody');
     if (drBody) new MutationObserver(() => apply(drBody)).observe(drBody, { childList: true });
 
-    /* Legende mit Schalter unter dem Seitenkopf */
+    /* Hervorhebungen aus/an gilt auf allen Seiten; geschaltet wird in der Legende der Startseite */
+    let off = false; try { off = localStorage.getItem(KEY) === 'aus'; } catch (e) {}
+    document.body.classList.toggle('hl-off', off);
+
+    /* Legende mit Schalter nur auf der Startseite (Prozesskarte), unter dem Seitenkopf */
     const head = document.querySelector('.container > .header');
-    if (head && document.querySelector('b.rot, .w-badge, .w-svg')) {
+    if (head && document.getElementById('karte')) {
         head.insertAdjacentHTML('afterend', `
             <details class="hl-legend" id="hlLegend"><summary><span class="material-icons">info_outline</span>Hervorhebungen erklärt<span class="material-icons hl-pfeil">expand_more</span></summary>
             <div class="hl-body"><span><span class="w-badge"><i>W</i>wichtige Folie</span> prüfungsrelevant, wie das „W“ oben rechts auf der Folie</span>
@@ -182,8 +187,7 @@
         try { lg.open = localStorage.getItem(KEY + '-legende') === 'auf'; } catch (e) {}
         lg.addEventListener('toggle', () => { try { localStorage.setItem(KEY + '-legende', lg.open ? 'auf' : 'zu'); } catch (e) {} });
         const t = document.getElementById('hlToggle');
-        let off = false; try { off = localStorage.getItem(KEY) === 'aus'; } catch (e) {}
-        t.checked = off; document.body.classList.toggle('hl-off', off);
+        t.checked = off;
         t.addEventListener('change', () => {
             document.body.classList.toggle('hl-off', t.checked);
             try { localStorage.setItem(KEY, t.checked ? 'aus' : 'an'); } catch (e) {}

@@ -21,16 +21,16 @@ def between(text, start, end, incl=False):
 # ---------- Seitenaufbau ----------
 # (Datei, Navigationstitel, Icon, Gruppe, Sektionen, Seitenüberschrift, Unterzeile)
 PAGES = [
-    ('index.html', 'Prozesskarte', 'map', 'Überblick', ['karte'], None, None),
     ('dashboard.html', 'Lern-Cockpit', 'dashboard', 'Überblick', ['@cockpit'],
      'Lern-Cockpit', 'Dein Lernstand und dein nächster Schritt'),
+    ('index.html', 'Prozesskarte', 'map', 'Überblick', ['karte'], None, None),
     ('seminar.html', 'Zum Seminar', 'school', 'Überblick', ['ausblick', 'rollen'],
      'Zum Seminar', 'Agenda, Rollen und Begriffe'),
     ('zusammenhang.html', 'Alles im Zusammenhang', 'hub', 'Lernen', ['@zusammenhang'],
      'Alles im Zusammenhang', 'Der HCD-Prozess Schritt für Schritt: Begriffe, wichtige Folien, Schablonen, Lernziele und Prüfung an einem Ort'),
     ('schaubilder.html', 'Schaubilder', 'account_tree', 'Lernen', ['@schaubilder'],
      'Schaubilder', 'Alle klickbaren Prozess- und Strukturschaubilder der Folien'),
-    ('lernziele.html', 'Lernziele', 'checklist', 'Lernen', ['@lernziele'],
+    ('lernziele.html', 'Lernziele des Curriculums', 'checklist', 'Lernen', ['@lernziele'],
      'Lernziele', 'Alle 61 Lernziele des Curriculums mit Folien und Prüfungsfragen'),
     ('selbsttest.html', 'Selbsttest Begriffe', 'style', 'Lernen', ['@selbsttest'],
      'Selbsttest Begriffe', 'Begriff sehen, Definition aufdecken, „kann ich“ oder „nochmal“ markieren'),
@@ -169,7 +169,7 @@ if os.path.exists(frot):
     open(os.path.join(out_dir, 'hervorhebung-daten.js'), 'w', encoding='utf-8').write(
         '/* Folienseite → Marker im roten Kreis (W = prüfungsrelevant) und rot gedruckte Begriffe. Erzeugt mit build_site.py. */\nconst ROT = '
         + json.dumps(rot, ensure_ascii=False, indent=0) + ';\n')
-for f in ('pruefung.css', 'pruefung.js', 'folien.js', 'hervorhebung.js', 'detail.js', 'curriculum.js', 'zusammenhang.js', 'prozessgrafik.js', 'lernen.js', 'lernen.css', 'selbsttest.js'):
+for f in ('pruefung.css', 'pruefung.js', 'folien.js', 'hervorhebung.js', 'detail.js', 'curriculum.js', 'zusammenhang.js', 'prozessgrafik.js', 'ausrichten.js', 'lernen.js', 'lernen.css', 'selbsttest.js'):
     open(os.path.join(out_dir, f), 'w', encoding='utf-8').write(open(os.path.join(tool_dir, f), encoding='utf-8').read())
 open(os.path.join(out_dir, 'pruefung-daten.js'), 'w', encoding='utf-8').write(
     open(os.path.join(tool_dir, 'pruefung-daten.js'), encoding='utf-8').read())
@@ -367,6 +367,53 @@ for st in STEPS:
         Z_NR[st['k']] = len(Z_NR) + 1
 
 
+# Schaubilder einordnen: Kapitel und Prozessschritt an jedes .pg (data-ort, id), dazu die Übersicht der Schaubilder-Seite
+PG_FORM = {'baum': ('account_tree', 'Struktur'), 'zusammenlauf': ('call_merge', 'Struktur'), 'ebenen': ('view_agenda', 'Ebenen'),
+           'wirkung': ('trending_flat', 'Wirkung'), 'vergleich': ('compare_arrows', 'Vergleich'),
+           'paare': ('format_list_numbered', 'Schritte und Ergebnisse'), 'klammer': ('call_split', 'Einteilung'), 'matrix': ('view_week', 'Vorgehen je Methode')}
+pg_liste = []
+
+
+def pg_einordnen(sec, h):
+    pg = next((x for x in PAGES if x[0] == page_of.get(sec)), None)
+    st = next((x for x in STEPS if sec in x['secs']), None)
+    ort = ' · '.join(t for t in ((pg[5] if pg and pg[5] else ''), (('Schritt %d ' % Z_NR[st['k']] if st['k'] in Z_NR else '') + Z_KURZ.get(st['k'], '') if st else '')) if t)
+
+    def setzen(m):
+        g_ = json.loads(html.unescape(m.group(1)))
+        pid = 'pg-' + re.sub(r'[^a-z0-9]+', '-', g_['titel'].lower()).strip('-')[:40]
+        pg_liste.append(dict(id=pid, titel=g_['titel'], folie=g_.get('folie', ''), ort=ort, form=g_.get('form', ''), seite=pg[0] if pg else ''))
+        return m.group(0) + ' data-ort="%s" id="%s"' % (html.escape(ort), pid)
+    return re.sub(r'<div class="pg" data-pg="([^"]*)"', setzen, h)
+
+
+for _sec in list(sections):
+    if '<div class="pg" data-pg=' in sections[_sec]:
+        sections[_sec] = pg_einordnen(_sec, sections[_sec])
+_ueb = ''.join('<a class="pg-ueb-k" href="#%s"><span class="material-icons">%s</span><span><b>%s</b><small>%s · %s</small><em>%s</em></span></a>' % (
+    x['id'], PG_FORM.get(x['form'], ('east', 'Ablauf'))[0], html.escape(x['titel']), html.escape(x['ort']), html.escape(x['folie']),
+    PG_FORM.get(x['form'], ('east', 'Ablauf'))[1]) for x in pg_liste)
+extra_html['@schaubilder'] = ('    <section class="section" id="s-uebersicht">\n        <div class="section-title"><div class="num"><span class="material-icons">grid_view</span></div><h2>Übersicht</h2></div>\n'
+    '        <p class="section-lead">Jedes Schaubild in der Form seiner Folie: Struktur (Baum), Ebenen, Wirkung, Vergleich, Einteilung, Schritte und Ergebnisse oder Vorgehen je Methode. Ein Klick springt hin.</p>\n'
+    '        <div class="pg-ueb">' + _ueb + '</div>\n    </section>\n'
+    + sammelseite(r'<div class="pg" data-pg=', 'Schaubilder', 'Noch keine Schaubilder vorhanden.'))
+EXTRA_SUB['@schaubilder'] = [('s-uebersicht', 'Übersicht', 'grid_view')] + EXTRA_SUB['@schaubilder']
+
+
+def wegweiser(titel, folie, sec):
+    """Eine Zeile „Titel · Folie → Kapitelabschnitt“ statt der vollen Karte"""
+    ziel = '%s#%s' % (page_of.get(sec, ''), sec)
+    return '<li><a href="%s">%s</a> <small>%s</small><span class="z-weg-wo">%s</span></li>' % (
+        ziel, titel.strip(), html.escape(folie.strip()), html.escape(sec_title.get(sec, sec)))
+
+
+def wege(titel, icon, items):
+    if not items:
+        return ''
+    return '<div class="z-weg"><h4 class="z-h2">%s%s</h4><ul>%s</ul></div>' % (
+        '<span class="material-icons">%s</span>' % icon if icon else '', titel, ''.join(items))
+
+
 def schrittleiste(akt):
     """Prozessschritte mit Nummern, aktueller Schritt hervorgehoben"""
     out = []
@@ -386,7 +433,8 @@ for st in STEPS:
             srcs = ' '.join(re.findall(r'<span class="src">(?:<span class="material-icons">[^<]*</span>)?([^<]*)</span>', card))
             if seiten(srcs) & w_pages and card not in gesehen and card.count('<div class="card') == 1:
                 gesehen.add(card)
-                w_html.append(card)
+                t = re.search(r'<h3>(?:<span class="material-icons">[^<]*</span>)?(.*?)</h3>', card, re.S)
+                w_html.append(wegweiser(t.group(1) if t else sec_title.get(sec, sec), re.sub(r'^Folien? ', '', srcs.strip()), sec))
         for m in re.finditer(r'<div class="card ure">', h):
             b = element_at(h, m.start())
             if b not in gesehen:
@@ -396,13 +444,13 @@ for st in STEPS:
             b = element_at(h, m.start())
             if b not in gesehen:
                 gesehen.add(b)
-                pg_html.append(b)
+                g_ = json.loads(html.unescape(re.search(r'data-pg="([^"]*)"', b).group(1)))
+                pg_html.append(wegweiser(html.escape(g_['titel']), g_.get('folie', ''), sec))
         for m in re.finditer(r'<div class="schablone"', h):
             b = element_at(h, m.start())
             if b not in gesehen:
                 gesehen.add(b)
-                sch_html.append('<div class="card"><h3><span class="material-icons">text_fields</span>%s</h3>%s<span class="src"><span class="material-icons">description</span>Folie %s</span></div>' % (
-                    re.search(r'data-titel="([^"]*)"', b).group(1), b, re.search(r'data-folie="S\. ([^"]*)"', b).group(1)))
+                sch_html.append(wegweiser(re.search(r'data-titel="([^"]*)"', b).group(1), re.search(r'data-folie="([^"]*)"', b).group(1), sec))
     lz = lz_items(STEP_LZ.get(st['k'], []))
     praxis = ''.join('<a class="pt-p" href="pruefung-praxis.html#praxis-%s">%s <b>%s P</b></a>' % (i, t, p) for t, p, i in st['praxis'])
     vertiefen = ''.join('<a href="%s#%s">%s</a>' % (page_of.get(x, ''), x, html.escape(sec_title.get(x, x))) for x in st['secs'] if x in page_of)
@@ -417,10 +465,8 @@ for st in STEPS:
             {'<h4 class="z-h">Praktische Prüfung</h4><div class="z-praxis">' + praxis + '</div>' if praxis else ''}
             <div class="z-vertiefen"><span>Ausführlich in den Kapiteln:</span>{vertiefen}</div>
         </div>
-        {'<h4 class="z-h2">Schaubilder</h4>' + ''.join(pg_html) if pg_html else ''}
         {'<h4 class="z-h2">Die URE Story</h4><div class="sammel">' + ''.join(ure_html) + '</div>' if ure_html else ''}
-        {'<h4 class="z-h2"><span class="w-badge"><i>W</i>wichtige Folien</span></h4><div class="sammel">' + ''.join(w_html) + '</div>' if w_html else ''}
-        {'<h4 class="z-h2">Formulierungsschablonen</h4><div class="sammel">' + ''.join(sch_html) + '</div>' if sch_html else ''}
+        {'<div class="z-wege">' + wege('Schaubilder', 'account_tree', pg_html) + wege('<span class="w-badge"><i>W</i>wichtige Folien</span>', '', w_html) + wege('Formulierungsschablonen', 'text_fields', sch_html) + '</div>' if pg_html or w_html or sch_html else ''}
     </section>
 """)
     if st['k'] == 'verstehen':
@@ -543,7 +589,8 @@ for n, p in enumerate(PAGES):
 <script src="pruefung.js"></script>''' if exam else ''}{'''
 <script src="curriculum.js"></script>''' if p[0] == 'curriculum.html' else ''}{'''
 <script src="zusammenhang.js"></script>''' if p[0] == 'zusammenhang.html' else ''}
-<script src="lernen.js"></script>{'''
+<script src="lernen.js"></script>
+<script src="ausrichten.js"></script>{'''
 <script src="selbsttest.js"></script>''' if p[0] == 'selbsttest.html' else ''}
 </body>
 </html>

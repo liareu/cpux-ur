@@ -1506,3 +1506,155 @@ details.pb-wie[open] { background: #fffdf3; }
 .pb-block > .pb-kopf { background: rgba(0,155,163,0.08); border-radius: 4px 4px 0 0; }
 .pb-block:nth-of-type(4) > .pb-kopf { background: linear-gradient(90deg, rgba(0,155,163,0.08), rgba(139,92,246,0.08)); }
 .pb-block:nth-of-type(n+5) > .pb-kopf { background: rgba(139,92,246,0.08); }
+
+/* Alles im Zusammenhang: Wegweiser statt Kopien (Schaubilder, W-Folien, Schablonen stehen voll in den Kapiteln) */
+.z-wege { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 8px 28px; margin-top: 8px; }
+.z-weg .z-h2 { display: flex; align-items: center; gap: 6px; margin: 18px 0 8px; }
+.z-weg .z-h2 .material-icons { font-size: 18px; }
+.z-weg ul { list-style: none; margin: 0; padding: 0; }
+.z-weg li { padding: 7px 0; border-bottom: 1px solid #eee; font-size: 13.5px; line-height: 1.4; }
+.z-weg li a { color: #111; font-weight: 600; text-decoration: none; }
+.z-weg li a:hover { text-decoration: underline; text-underline-offset: 2px; }
+.z-weg li small { color: #333; font-size: 11.5px; margin-left: 4px; }
+.z-weg-wo { display: block; font-size: 12px; color: #333; }
+.z-weg-wo::before { content: '→ '; }
+
+/* Folienquellen und Notizen leiser: kleiner, nicht fett, weniger Abstand */
+.src { font-weight: 400; margin-top: 12px; }
+.src .material-icons { font-size: 13px; }
+.note { padding: 9px 14px; margin-top: 12px; }
+
+/* Aufklapp-Pfeil ohne Symbolschrift (sonst erscheint „expand_more“ als Text, wenn die Schrift nicht lädt) */
+details.mehr > summary .mehr-pfeil { width: 7px; height: 7px; border-right: 1.6px solid currentColor; border-bottom: 1.6px solid currentColor; transform: rotate(45deg); margin: 0 4px 3px 2px; transition: transform 0.2s; flex: none; }
+details.mehr[open] > summary .mehr-pfeil { transform: rotate(-135deg); margin-bottom: -2px; }
+
+/* Nebeneinander vergleichen: in Rastern kein Abstand oben für den zweiten, dritten … Kasten, sonst stehen Spalten versetzt */
+:is(.grid-2, .grid-3, .grid-4, .bridge, .conseq-split) > .box + .box { margin-top: 0; }
+/* Begriffskarten: Wort und Übersetzung je eine Zeile, damit die Definitionen auf gleicher Höhe beginnen */
+.word .w-big, .word .w-eq { display: block; }
+
+/* ---------- Schaubilder in der Form ihrer Folie ---------- */
+.pg { --pg-dunkel: #4a4f5a; --pg-hell: #eef0f3; }
+.pg-kopf { align-items: flex-start; }
+.pg-typ { display: inline-flex; align-items: center; gap: 5px; flex: none; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #111; border: 1px solid #111; border-radius: 999px; padding: 3px 10px 3px 7px; margin-top: 2px; }
+.pg-typ .material-icons { font-size: 15px; }
+.pg-ort { display: block; font-size: 12px; font-weight: 500; color: #333; margin-top: 3px; }
+.pg-lead { font-size: 14px; margin: -4px 0 14px; color: #111; }
+.pg-fuss { display: flex; gap: 6px; align-items: flex-start; font-size: 13px; color: #111; margin: 12px 0 0; }
+.pg-fuss .material-icons, .pg-wk-nicht .material-icons { font-size: 16px; color: #b3122e; }
+.pg ul { list-style: none; margin: 0; padding: 0; }
+.pg li .pg-el { border: 0; background: none; padding: 2px 0; font-weight: 500; }
+.pg li .pg-el:hover { text-decoration: underline; text-underline-offset: 2px; }
+.pg-spalten { display: grid; grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr)); gap: 12px; }
+
+/* Baum: Wurzel → Äste → Zweige */
+.pg-baum { display: flex; flex-direction: column; align-items: center; }
+.pg-wurzel { background: var(--pg-dunkel); color: white; font-weight: 700; font-size: 15px; padding: 9px 26px; border-radius: 3px; position: relative; }
+.pg-wurzel::after { content: ''; position: absolute; left: 50%; top: 100%; width: 1.5px; height: 14px; background: #888; }
+.pg-aeste { width: 100%; margin-top: 14px; padding-top: 14px; border-top: 1.5px solid #888; }
+.pg-ast { position: relative; }
+.pg-ast::before { content: ''; position: absolute; left: 50%; top: -14px; width: 1.5px; height: 14px; background: #888; }
+.pg-ast-t { background: var(--pg-dunkel); color: white; text-align: center; font-weight: 700; font-size: 14px; padding: 8px 10px; border-radius: 3px; margin-bottom: 10px; }
+.pg-ast-t .pg-head { color: white; }
+.pg-zweig { border-left: 1.5px solid #888; margin: 0 0 10px 10px; padding-left: 12px; }
+.pg-zw-t { font-weight: 700; font-size: 13px; color: #111; margin-bottom: 2px; }
+.pg-zweig li { position: relative; padding-left: 14px; font-size: 13px; }
+.pg-zweig li::before { content: ''; position: absolute; left: 0; top: 0.95em; width: 9px; height: 1.5px; background: #888; }
+
+/* Zusammenlauf: oben → drei Kästen → unten */
+.pg-lauf { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.pg-lauf-oben, .pg-lauf-unten { border: 1.5px solid var(--pg-dunkel); border-radius: 4px; padding: 9px 22px; font-weight: 700; text-align: center; }
+.pg-lauf-unten { width: 100%; font-weight: 500; }
+.pg-lauf-unten .pg-el { display: inline; border: 0; padding: 0; background: none; font-size: 14px; }
+.pg-lauf-mitte { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 14px; width: 100%; }
+.pg-lauf-mitte > div { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.pg-lauf-mitte .pg-el { width: 100%; text-align: center; padding: 9px; border: 1.5px solid var(--pg-dunkel); font-size: 13.5px; }
+.pg-lauf-mitte .material-icons, .pg-lauf::before { color: #888; }
+
+/* Ebenen: links die Ebene, rechts der Inhalt */
+.pg-ebenen { display: grid; grid-template-columns: 190px 1fr; gap: 8px 10px; }
+.pg-ebene { display: contents; }
+.pg-eb-t { background: var(--pg-dunkel); color: white; font-weight: 700; font-size: 14px; padding: 10px 14px; border-radius: 3px; clip-path: polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 78%); padding-bottom: 18px; }
+.pg-eb-t .pg-head { color: white; }
+.pg-eb-t small { display: block; font-weight: 500; font-size: 12px; opacity: 0.9; }
+.pg-eb-i { background: var(--pg-hell); border-radius: 3px; padding: 10px 14px; display: flex; align-items: center; font-size: 13.5px; }
+.pg-eb-i li + li { margin-top: 2px; }
+.pg-kette { display: flex; gap: 4px; width: 100%; }
+.pg-kette .pg-el { flex: 1; text-align: center; background: white; border: 0; padding: 9px 16px 9px 12px; clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%, 10px 50%); }
+
+/* Wirkung: Zeilen Anforderung → wirkt auf → Qualität */
+.pg-wirkung { display: grid; grid-template-columns: minmax(0, 1.2fr) 190px minmax(0, 1fr); gap: 10px 12px; align-items: stretch; }
+.pg-wk-h { grid-row: 1; font-weight: 800; font-size: 14px; color: #111; }
+.pg-wk-a { grid-column: 1; background: var(--pg-hell); border-radius: 3px; padding: 10px 14px; position: relative; }
+.pg-wk-at { font-weight: 700; font-size: 13.5px; margin-bottom: 6px; }
+.pg-wk-p { grid-column: 2; display: flex; align-items: center; justify-content: space-between; gap: 6px; background: #d9dce1; clip-path: polygon(0 18%, calc(100% - 16px) 18%, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, calc(100% - 16px) 82%, 0 82%); padding: 0 20px 0 10px; font-size: 12.5px; font-weight: 600; }
+.pg-wk-p .material-icons { display: none; }
+.pg-wk-q { grid-column: 3; display: flex; }
+.pg-wk-q .pg-el { flex: 1; background: var(--pg-dunkel); color: white; border: 0; font-size: 14px; display: flex; align-items: center; justify-content: center; text-align: center; }
+.pg-wk-q .pg-el:hover { color: white; text-decoration: underline; }
+.pg-wk-ue { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; font-size: 12px; margin-top: 8px; color: #111; }
+.pg-wk-ue .material-icons { font-size: 16px; }
+.pg-wk-nicht { display: inline-flex; align-items: center; gap: 2px; margin-left: 12px; }
+
+/* Vergleich und Paare: Zeilen in einem gemeinsamen Raster */
+.pg-vgl { display: grid; grid-template-columns: 44px repeat(var(--n), minmax(0, 1fr)); gap: 6px 10px; }
+.pg-paare { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6px 10px; }
+.pg-vgl-h { background: var(--pg-dunkel); color: white; font-weight: 700; font-size: 14px; padding: 9px 14px; border-radius: 3px; }
+.pg-vgl-nr { font-weight: 800; font-size: 15px; display: flex; flex-direction: column; align-items: center; padding-top: 8px; }
+.pg-vgl-nr small { font-size: 12px; font-weight: 700; color: #333; border: 1px solid #bbb; border-radius: 50%; width: 18px; height: 18px; display: grid; place-items: center; margin-top: 4px; }
+.pg-vgl-z, .pg-pa-a, .pg-pa-e { background: var(--pg-hell); border-radius: 3px; padding: 8px 12px; font-size: 13.5px; }
+.pg-vgl-z.gleich { background: #f6f7f9; color: #333; }
+.pg-vgl-z .pg-el, .pg-pa-e .pg-el { border: 0; background: none; padding: 0; font-weight: 500; display: block; }
+.pg-pa-a { font-weight: 700; }
+.pg-pa-e { background: white; border: 1px solid #e2e5ea; }
+
+/* Matrix: Vorgehen je Methode */
+.pg-mx-wahl { margin-bottom: 14px; flex-wrap: wrap; }
+.pg-phase { background: var(--pg-hell); border-radius: 3px; padding: 0 0 10px; }
+.pg-ph-t { display: flex; align-items: center; gap: 8px; background: var(--pg-dunkel); color: white; font-weight: 700; font-size: 14px; padding: 8px 12px; border-radius: 3px 3px 0 0; }
+.pg-ph-t b { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: white; color: #111; font-size: 11px; flex: none; }
+.pg-ph-t .pg-head { color: white; }
+.pg-phase ul, .pg-mx-z ul { padding: 8px 12px 0; }
+.pg-phase li, .pg-mx-z li { font-size: 13px; position: relative; padding-left: 12px; }
+.pg-phase li::before, .pg-mx-z li::before { content: '–'; position: absolute; left: 0; top: 2px; color: #555; }
+.pg-mx { display: grid; grid-template-columns: 130px repeat(var(--n), minmax(0, 1fr)); gap: 6px; }
+.pg-mx-m { font-weight: 700; font-size: 13px; padding: 10px 8px 0 0; }
+.pg-mx-z { background: var(--pg-hell); border-radius: 3px; padding-bottom: 8px; }
+.pg-mx-z ul { padding-top: 6px; }
+.pg-extra { margin-top: 18px; border-top: 1px solid #e2e5ea; padding-top: 14px; }
+.pg-extra-t { font-weight: 800; font-size: 14px; margin-bottom: 10px; }
+.pg-extra li { font-size: 13px; }
+
+/* Übersicht der Schaubilder-Seite */
+.pg-ueb { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+.pg-ueb-k { display: flex; gap: 12px; align-items: flex-start; background: white; border: 1px solid var(--linie); border-radius: 6px; padding: 12px 14px; color: #111; text-decoration: none; }
+.pg-ueb-k:hover { border-color: #111; }
+.pg-ueb-k .material-icons { font-size: 26px; color: #111; }
+.pg-ueb-k b { display: block; font-size: 14px; line-height: 1.3; }
+.pg-ueb-k small { display: block; font-size: 12px; color: #333; margin-top: 3px; }
+.pg-ueb-k em { display: inline-block; font-style: normal; font-size: 10.5px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; border: 1px solid #111; border-radius: 999px; padding: 1px 8px; margin-top: 6px; }
+
+@media (max-width: 960px) {
+    .pg-spalten, .pg-lauf-mitte { grid-template-columns: 1fr; }
+    .pg-ebenen, .pg-wirkung, .pg-paare { grid-template-columns: 1fr; }
+    .pg-wk-a, .pg-wk-p, .pg-wk-q, .pg-wk-h { grid-column: 1 !important; grid-row: auto !important; }
+    .pg-mx { grid-template-columns: 1fr; }
+}
+
+/* Klammer: links allein, rechts eine Klammer über mehrere Spalten (z. B. Detaillierte NK-Beschreibungen) */
+.pg-kl { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr); gap: 14px; align-items: stretch; }
+.pg-kl-allein { display: flex; flex-direction: column; padding-top: 57px; }
+.pg-kl-allein .pg-kl-s { flex: 1; }
+.pg-kl-gruppe { border: 1.5px solid var(--pg-dunkel); border-radius: 4px; padding: 0 12px 12px; display: flex; flex-direction: column; }
+.pg-kl-k { background: var(--pg-dunkel); color: white; font-weight: 700; font-size: 15px; text-align: center; padding: 9px; margin: 0 -12px 12px; }
+.pg-kl-innen { display: flex; gap: 8px; flex: 1; }
+.pg-kl-innen > .pg-kl-s { flex: 1; }
+.pg-kl-s { display: flex; flex-direction: column; background: var(--pg-hell); border-radius: 3px; }
+.pg-kl-t { background: var(--pg-dunkel); color: white; font-weight: 700; font-size: 14px; padding: 8px 12px; border-radius: 3px 3px 0 0; }
+.pg-kl-t .pg-head { color: white; }
+.pg-kl-i { padding: 10px 12px; font-size: 13px; }
+.pg-kl-i .pg-zw-t { margin-top: 2px; }
+.pg-kl-i li { position: relative; padding-left: 12px; }
+.pg-kl-i li::before { content: '–'; position: absolute; left: 0; top: 2px; color: #555; }
+.pg-kl-pfeil { align-self: center; font-size: 22px; font-weight: 700; color: #111; }
+@media (max-width: 960px) { .pg-kl { grid-template-columns: 1fr; } .pg-kl-allein { padding-top: 0; } .pg-kl-innen { flex-direction: column; } .pg-kl-pfeil { transform: rotate(90deg); } }
