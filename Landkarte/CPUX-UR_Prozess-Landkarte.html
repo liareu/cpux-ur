@@ -854,7 +854,7 @@ tr.pt-abgl { display: none; }
     <div class="sidebar-header">
         <span class="ux-lab-pill">UX Lab</span>
         <h2>CPUX-UR Prozess-Landkarte</h2>
-        <p>Lernbegleiter zum Training, Stand Folie S. 252</p>
+        <p>Lernbegleiter zum Training, Stand Folie S. 258</p>
     </div>
     <nav class="sidebar-nav" id="nav">
         <div class="nav-group">Überblick</div>
@@ -888,8 +888,12 @@ tr.pt-abgl { display: none; }
         <a href="#arten-erfordernisse" class="nav-link"><span class="material-icons">category</span>Arten von Erfordernissen</a>
         <a href="#qualitaet-erfordernisse" class="nav-link"><span class="material-icons">workspace_premium</span>Qualitätskriterien</a>
         <a href="#syntax-erfordernisse" class="nav-link"><span class="material-icons">text_fields</span>Formulierungsschablone</a>
+        <a href="#erfordernisse-identifizieren" class="nav-link"><span class="material-icons">manage_search</span>Erfordernisse identifizieren</a>
+        <a href="#nki-typen-beispiele" class="nav-link"><span class="material-icons">lightbulb</span>NKI → Typen – Beispiele</a>
+        <a href="#ueberblick-praxis" class="nav-link"><span class="material-icons">assignment</span>Überblick Praktische Prüfung</a>
+        <a href="#ure-erfordernisse" class="nav-link"><span class="material-icons">auto_stories</span>URE Story</a>
         <div class="nav-group">Nachschlagen</div>
-        <a href="#pruefung" class="nav-link"><span class="material-icons">assignment</span>Prüfung im Prozess</a>
+        <a href="#pruefung" class="nav-link"><span class="material-icons">assignment</span>Überblick Aufgaben &amp; Punkte</a>
         <a href="#ausblick" class="nav-link"><span class="material-icons">upcoming</span>Kommt noch</a>
         <a href="#glossar" class="nav-link"><span class="material-icons">menu_book</span>Glossar</a>
     </nav>
@@ -904,7 +908,7 @@ tr.pt-abgl { display: none; }
         <h1>User Requirements Engineering<br><span>im Human-centred Design</span></h1>
         <p class="subtitle">Was gehört wozu, und was musst du an welcher Stelle tun? Eine Landkarte zu den Folien des CPUX-UR-Trainings, mit deinen Notizen aus der Schulung.</p>
         <div class="meta">
-            <span class="chip"><span class="material-icons">description</span>Folien S. 2–252 (Zum Seminar, Kapitel 1–3, Kapitel 4 bis S. 252)</span>
+            <span class="chip"><span class="material-icons">description</span>Folien S. 2–258 (Zum Seminar, Kapitel 1–3, Kapitel 4 bis S. 258)</span>
             <span class="chip"><span class="material-icons">edit_note</span>Gelbe Kästen = deine Notizen</span>
             <span class="chip"><span class="material-icons">update</span>Wird mit dem Training erweitert</span>
         </div>
@@ -2234,7 +2238,7 @@ tr.pt-abgl { display: none; }
         <p class="section-lead">3.1 – Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren (S. 154)</p>
 
         <div class="grid-2">
-            <div class="card">
+            <div class="card" id="benutzergruppen">
                 <h3><span class="material-icons">groups</span>Benutzergruppen, Benutzergruppenprofil (user group, user-group profile)</h3>
                 <div class="box"><div class="box-title">Benutzergruppe</div>Eine Gruppe von Benutzern mit gleichen oder ähnlichen persönlichen Merkmalen und Nutzungskontexten in Bezug auf das interaktive System.</div>
                 <div class="box" style="margin-top:10px"><div class="box-title">Benutzergruppenprofil</div>Eine verallgemeinerte Beschreibung einer Benutzergruppe.
@@ -2397,7 +2401,7 @@ tr.pt-abgl { display: none; }
             <span class="src"><span class="material-icons">description</span>Folie S. 173</span>
         </div>
 
-        <div class="card">
+        <div class="card" id="guetekriterien-interview">
             <h3><span class="material-icons">workspace_premium</span>Gütekriterien eines kontextuellen Interviews</h3>
             <div class="grid-3">
                 <div class="box"><div class="box-title">Haltung, Einstellung des Interviewers:</div><ul><li>Meister-Schüler-Modells = Offenheit, Vorurteilsfreiheit, Neugierde etc.</li></ul></div>
@@ -2836,7 +2840,7 @@ tr.pt-abgl { display: none; }
             <p>Zusammenfassende NK-Beschreibungen (ausgegraut)</p><p>↓</p><p>Liste, Tabelle der 5 Komponenten des Nutzungskontextes</p><ul><li>Benutzer(gruppen)</li><li>Aufgaben</li><li>Ziele</li><li>Umgebung(en)</li><li>Ressourcen</li></ul><p>detaillierte NK-Beschreibungen</p><p>↓ Narrative Beschreibung (hervorgehoben)</p><ul><li>Ist-Szenarien</li><li>Personas</li></ul><p>⇒</p><p>↓ Modellhafte Beschreibung (ausgegraut)</p><ul><li>Benutzergruppenprofile</li><li>Aufgabenmodelle</li><li>Aufgabenobjekte</li><li>Affinity-Diagramme</li><li>User Journeys</li><li>Zielkataloge</li><li>Umgebungsmodelle</li><li>Informationsmodelle</li></ul>
             <span class="src"><span class="material-icons">description</span>Folie S. 213</span>
         </div>
-        <div class="card">
+        <div class="card" id="ist-szenario">
             <h3><span class="material-icons">menu_book</span>Ist-Szenario (as-is scenario)</h3>
             <p>Eine erzählende, textuelle Beschreibung, wie ein Benutzer derzeit eine oder mehrere Aufgaben im aktuellen Nutzungskontext erledigt.</p><ul><li>Ist-Szenarien beschreiben den gegenwärtigen Nutzungskontext und dienen dazu, Erfordernisse zu erkennen und Nutzungsanforderungen abzuleiten.</li><li>Ist-Szenarien beschreiben vorrangig die Komponenten des gegebenen Nutzungskontextes im Zusammenspiel.</li><li>Ist-Szenarien machen in der Beschreibung des Verhaltens von Benutzenden ein oder mehrere Probleme deutlich, die die effiziente Erledigung der Aufgaben behindern.</li></ul>
             <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 214)</div>gegenwärtig</div>
@@ -3072,6 +3076,57 @@ tr.pt-abgl { display: none; }
         </div>
     </section>
 
+    <section class="section" id="erfordernisse-identifizieren">
+        <div class="section-title"><div class="num"><span class="material-icons">manage_search</span></div><h2>Erfordernisse identifizieren</h2></div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Erfordernisse identifizieren</h3>
+            <p>Jede Nutzungskontextinformation kann ein oder mehrere Erfordernisse enthalten. Es empfiehlt sich daher, Nutzungskontextbeschreibungen Satz für Satz durchzugehen und mit den folgenden Leitfragen Erfordernisse zu identifizieren:</p><ul><li>Welche Ressource wird jeweils innerhalb der beschriebenen Nutzungskontextinformation benötigt und warum (Ziel)?</li><li>Welche Information wird jeweils innerhalb der beschriebenen Nutzungskontextinformation benötigt und warum (Ziel)?</li><li>Welche Kompetenz wird jeweils innerhalb der beschriebenen Nutzungskontextinformation benötigt und warum (Ziel)?</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 253</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Tipps</h3>
+            <ul><li>Wiederkehrende Erfordernisse nur ein Mal festhalten, die Wiederkehrenden darauf verweisen.</li><li>In organisatorischen Anforderungen enthaltenen Erfordernisse identifizieren<ul><li>Organisation: "Der Vertriebsmitarbeiter muss Angebote mit einem Auftragsvolumen größer EUR 100.000 vom Vertriebsleiter unterschreiben lassen."</li><li>Erfordernis: "Der Vertriebsmitarbeiter muss wissen, ab welcher Höhe des Auftragsvolumens er seine Angebote dem Vertriebsleiter vorlegen muss, um regelkonform mit erstellten Angeboten umzugehen."</li></ul></li><li>Forderungen werden häufig als gewünschte Lösungen am interaktiven System formuliert, basieren aber nicht unbedingt auf Erfordernissen des Nutzungskontextes.</li><li>In kontextuellen Interviews kann durch Nachfragen festgestellt werden, ob hinter einer Forderung Erfordernisse des Nutzungskontextes stecken oder ob die Forderung auf rein subjektiven Einstellungen und Präferenzen der Benutzenden beruhen, die sich nicht notwendigerweise für die Produktgestaltung verallgemeinern lassen.</li></ul>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 254)</div>allgemeingültig?</div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 254</span>
+        </div>
+    </section>
+
+    <section class="section" id="nki-typen-beispiele">
+        <div class="section-title"><div class="num"><span class="material-icons">lightbulb</span></div><h2>NKI → Typen von Erfordernissen – Beispiele</h2></div>
+        <div class="card">
+            <h3><span class="material-icons">lightbulb</span>NKI → Typen von Erfordernissen – Beispiele</h3>
+            <table class="criteria nki-tab"><tr><th>Nutzungskontextinformation</th><th>Bsp. identifizierte Erfordernisse</th></tr><tr><td>Patienten müssen oft über den vereinbarten Termin hinaus auf ihre Behandlung warten. Das Warten ist für die Patienten sehr ärgerlich, vor allem, wenn sie bis zu 90 Minuten im Wartezimmer sitzen müssen, ohne dass klar ist, wie lange es noch dauert, bis sie an der Reihe sind.</td><td><b>Informatorisches Erfordernis</b><br>Der Patient (Benutzergruppe) muss vor Ankunft in der Arztpraxis wissen, wann der vereinbarte Behandlungstermin tatsächlich beginnt (Information), um die verbleibende Zeit sinnvoll nutzen zu können (beabsichtigtes Ergebnis).</td></tr><tr><td>Die Patienten vereinbaren ihre Termine oft lange im Voraus, da gute Ärzte nicht kurzfristig verfügbar sind.</td><td><b>Ressourcenerfordernis</b><br>Der Patient (Benutzergruppe) muss einen vereinbarten Behandlungstermin haben (Ressource), um zum vereinbarten Zeitpunkt behandelt zu werden (beabsichtigtes Ergebnis).</td></tr><tr><td>Allgemeinmediziner haben es mit einer großen Vielfalt von Krankheiten zu tun. Sie stellen Diagnosen jedoch schnell, und die Patienten verlassen sich auf die von ihnen verschriebenen Behandlungen.</td><td><b>Kompetenzerfordernis</b><br>Der Arzt (Benutzergruppe) muss die Kompetenz besitzen, die richtige Diagnose zu stellen (Kompetenz), um die richtige Therapie zu bestimmen (beabsichtigtes Ergebnis).</td></tr></table>
+            <span class="src"><span class="material-icons">description</span>Folie S. 255</span>
+        </div>
+    </section>
+
+    <section class="section" id="ueberblick-praxis">
+        <div class="section-title"><div class="num"><span class="material-icons">assignment</span></div><h2>Überblick Praktische Prüfung – Aufgaben und Punkte</h2></div>
+        <div class="card">
+            <h3><span class="material-icons">assignment</span>Überblick Praktische Prüfung – Aufgaben und Punkte</h3>
+            <ul><li>Es gilt eine Nutzungskontextanalyse durchzuführen für eine gegebene Benutzergruppe und eine gegebene Thematik.</li><li>Hierzu gibt es eine Interviewcheckliste für kontextuelle Interviews mit 4 Fragen/Aufgaben → 4 Ist-Szenarien.</li><li>Für 3 von 4 Fragen ist das Ist-Szenario bereits erstellt. Für die 4. Frage gibt es ein Video eines Interviews (alle 4 Fragen kommen darin vor) und Ihr erstellt das Ist-Szenario für diese eine fehlende Frage.</li></ul>
+            <table class="criteria pu-folie"><tr><th></th><th></th><th>Punkte pro</th><th>max.</th></tr><tr><td>1.</td><td>Ist-Szenario des Videos erstellen</td><td>3 Punkte</td><td>3</td></tr><tr><td>2.</td><td>max. 4 Interviewfehler identifizieren</td><td>4 mal 1 Punkt</td><td>4</td></tr><tr><td>3.</td><td>alle Benutzergruppen aus den 4 Ist-Szenarien identifizieren</td><td>5 mal 1 Punkt</td><td>5</td></tr><tr><td>4.</td><td>für ein Ist-Szenario, die darin enthaltenen Erfordernisse identifizieren, 10 markieren</td><td>10 mal 4 Punkte</td><td>40</td></tr><tr><td>5.</td><td>Aus den Erfordernissen alle Nutzungsanforderungen ableiten, 13 markieren</td><td>13 mal 2 Punkte</td><td>26</td></tr><tr><td>6.</td><td>Aufgabenmodell: Vor- und Nachbedingung, Teilaufgaben</td><td>1 + 1 plus 5 mal 2 Punkte</td><td>12</td></tr><tr><td>7.</td><td>Nutzungsanforderungen den Teilaufgaben des Aufgabenmodells zuordnen</td><td></td><td>10</td></tr><tr><td></td><td></td><td></td><td><b>total 100 Punkte</b></td></tr></table>
+            <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 256)</div>zu 2. z.B. nicht ordentlich paraphrasiert o.ä. wenn nicht 4 gefunden werden<br>- suggestiv o.ä.<br>- nicht tief genug nachgefragt<br>s. Folie 174</div>
+            <p><a class="sm-link" href="#pruefung">Zur Prüfungsübersicht mit Sprüngen zu jeder Aufgabe, zum Lernstoff und zu den Schablonen →</a></p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 256</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Praktische Übung 5</h3>
+            <p>Bitte bearbeiten Sie Übung 5 aus der Datei "Praktische Übungen":</p><p>Schreiben eines Ist-Szenarios (Übung für die praktische Prüfung).</p><p>Im folgenden sehen Sie Ausschnitte aus einem Interview. Erstellen Sie bitte das Ist-Szenario zu den in Übung 5 vorgegebenen Fragen.</p><p>Achten Sie dabei ebenso auf Fehler des Interviewenden und protokollieren Sie diese.</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 257</span>
+        </div>
+    </section>
+
+    <section class="section" id="ure-erfordernisse">
+        <div class="section-title"><div class="num"><span class="material-icons">auto_stories</span></div><h2>Erfordernisse systematisch identifizieren und formulieren</h2></div>
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Erfordernisse systematisch identifizieren und formulieren</h3>
+            <ul><li>Erfordernisse sind in Nutzungskontextbeschreibungen enthalten, sind jedoch selten explizit aufgeführt. Durch die Analyse werden Erfordernisse identifiziert und bilden die Grundlage für Nutzungsanforderungen. Identifizierte Erfordernisse werden im heutigen Nutzungskontext nicht unbedingt befriedigt und sind eine hilfreiche Grundlage für die Gestaltung des interaktiven Systems.</li><li>Es gibt drei Arten von Erfordernissen: informatorische Erfordernisse (spezifische Informationen), Ressourcenerfordernisse (spezifische Ressourcen), Kompetenzerfordernisse (bestimmte Fähigkeiten, Kompetenzen), die Benutzende benötigen, um Aufgaben zu erledigen und Ergebnisse zu erzielen.</li><li>Einheitliche Formulierungen stellen sicher, dass Erfordernisse klar und gut kommuniziert werden.</li><li>Erfordernisse beinhalten immer eine detaillierte Beschreibung des beabsichtigten Ergebnisses und der Voraussetzungen (Informationen, Ressourcen oder Kompetenzen), die erforderlich sind, um dieses Arbeitsergebnis zu erzielen.</li><li>Erfordernisse der Benutzer werden identifiziert, indem Nutzungskontextinformationen analysiert werden, um das beabsichtigte Ergebnis und die dafür erforderlichen Voraussetzungen zu ermitteln.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 258</span>
+        </div>
+    </section>
+
+
 
 
 
@@ -3081,18 +3136,29 @@ tr.pt-abgl { display: none; }
          PRUEFUNG
          ========================================================= -->
     <section class="section" id="pruefung">
-        <div class="section-title"><div class="num"><span class="material-icons">assignment</span></div><h2>Überblick praktische Prüfung</h2></div>
-        <p class="section-lead">Es gilt, eine Nutzungskontextanalyse für eine gegebene Benutzergruppe und eine gegebene Thematik durchzuführen. Dazu gibt es eine Interviewcheckliste für kontextuelle Interviews mit 4 Fragen/Aufgaben, daraus ergeben sich 4 Ist-Szenarien. Für 3 der 4 Fragen ist das Ist-Szenario bereits erstellt. Für die 4. Frage gibt es ein Video eines Interviews (alle 4 Fragen kommen darin vor), und man erstellt das Ist-Szenario für diese eine fehlende Frage.</p>
-        <div class="card">
-            <h3><span class="material-icons">map</span>Aufgaben, Ort im HCD-Prozess, Punkte</h3>
-            <p class="card-lead">Die Spalte „HCD-Aktivität" ist meine Zuordnung zur Prozesskarte, Aufgaben und Punkte stammen aus Folie 256.</p>
-            <div class="exam-map" id="examMap"></div>
+        <div class="section-title"><div class="num"><span class="material-icons">assignment</span></div><h2>Überblick Praktische Prüfung – Aufgaben und Punkte</h2></div>
+        <div class="card pu-card">
+            <ul><li>Es gilt eine Nutzungskontextanalyse durchzuführen für eine gegebene Benutzergruppe und eine gegebene Thematik.</li><li>Hierzu gibt es eine Interviewcheckliste für kontextuelle Interviews mit 4 Fragen/Aufgaben → 4 Ist-Szenarien.</li><li>Für 3 von 4 Fragen ist das Ist-Szenario bereits erstellt. Für die 4. Frage gibt es ein Video eines Interviews (alle 4 Fragen kommen darin vor) und Ihr erstellt das Ist-Szenario für diese eine fehlende Frage.</li></ul>
+            <p class="pu-pdf"><a href="../Input/CPUX-UR_DE_Checkliste-Praktische-Pruefung.pdf" target="_blank"><span class="material-icons">picture_as_pdf</span>CPUX-UR Checkliste Praktische Prüfung (UXQB, Version 3.0, 31. Mai 2025) – PDF</a></p>
+            <div class="pu-tab">
+<div class="pu-row pu-head"><div></div><div>Aufgabe · Sprung zu Übung, Lernstoff und Schablone</div><div class="pu-pro">Punkte pro</div><div class="pu-max">max.</div></div>
+<div class="pu-row" id="pu-1"><div class="pu-nr">1.</div><div class="pu-task"><div class="pu-text">Ist-Szenario des Videos erstellen</div><div class="pu-phase">Verstehen NK</div><div class="pu-wege"><span class="pu-w"><b>Üben</b><span class="pu-ls"><a href="#praxis-szenario">3.5 Ist-Szenario</a></span></span><span class="pu-w"><b>Lernen</b><span class="pu-ls"><a href="#ist-szenario">Ist-Szenario (S. 214)</a><a href="#narrativ">Narrative Nutzungskontextbeschreibungen</a><a href="#ueberblick-praxis">Praktische Übung 5 (S. 257)</a></span></span></div></div><div class="pu-pro">3 Punkte</div><div class="pu-max">3<div class="exam-bar" style="width:8%"></div></div></div>
+<div class="pu-row" id="pu-2"><div class="pu-nr">2.</div><div class="pu-task"><div class="pu-text">max. 4 Interviewfehler identifizieren</div><div class="pu-phase">Verstehen NK</div><div class="pu-wege"><span class="pu-w"><b>Üben</b><span class="pu-ls"><a href="#praxis-interviewer">3.9 Verhaltensfehler des Interviewers</a></span></span><span class="pu-w"><b>Lernen</b><span class="pu-ls"><a href="#guetekriterien-interview">Gütekriterien eines kontextuellen Interviews (S. 174)</a><a href="#durchfuehren">3.2 Erhebung durchführen</a></span></span></div><div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 256)</div>zu 2. z.B. nicht ordentlich paraphrasiert o.ä. wenn nicht 4 gefunden werden<br>- suggestiv o.ä.<br>- nicht tief genug nachgefragt<br>s. Folie 174</div></div><div class="pu-pro">4 mal 1 Punkt</div><div class="pu-max">4<div class="exam-bar" style="width:10%"></div></div></div>
+<div class="pu-row" id="pu-3"><div class="pu-nr">3.</div><div class="pu-task"><div class="pu-text">alle Benutzergruppen aus den 4 Ist-Szenarien identifizieren</div><div class="pu-phase">Verstehen NK</div><div class="pu-wege"><span class="pu-w"><b>Üben</b><span class="pu-ls"><a href="#praxis-gruppen">3.6 Weitere Benutzergruppen</a></span></span><span class="pu-w"><b>Lernen</b><span class="pu-ls"><a href="#benutzergruppen">Benutzergruppen, Benutzergruppenprofil</a><a href="#kontext">Die 5 Komponenten des Nutzungskontextes</a></span></span></div></div><div class="pu-pro">5 mal 1 Punkt</div><div class="pu-max">5<div class="exam-bar" style="width:12%"></div></div></div>
+<div class="pu-row" id="pu-4"><div class="pu-nr">4.</div><div class="pu-task"><div class="pu-text">für ein Ist-Szenario, die darin enthaltenen Erfordernisse identifizieren, 10 markieren</div><div class="pu-phase">Festlegen NA</div><div class="pu-wege"><span class="pu-w"><b>Üben</b><span class="pu-ls"><a href="#praxis-erfordernisse">3.7 Erfordernisse</a></span></span><span class="pu-w"><b>Lernen</b><span class="pu-ls"><a href="#erfordernis-def">Erfordernis (user need)</a><a href="#arten-erfordernisse">Arten von Erfordernissen</a><a href="#qualitaet-erfordernisse">Qualitätskriterien (W)</a><a href="#erfordernisse-identifizieren">Erfordernisse identifizieren (S. 253, Tipps S. 254)</a><a href="#nki-typen-beispiele">NKI → Typen – Beispiele (S. 255)</a></span></span><span class="pu-w pu-sch"><b>Schablone</b><span class="pu-ls"><a href="schablonen.html#sch-252">Formulierungsschablone (Syntax) für Erfordernisse (S. 252)</a></span></span></div></div><div class="pu-pro">10 mal 4 Punkte</div><div class="pu-max">40<div class="exam-bar" style="width:100%"></div></div></div>
+<div class="pu-row" id="pu-5"><div class="pu-nr">5.</div><div class="pu-task"><div class="pu-text">Aus den Erfordernissen alle Nutzungsanforderungen ableiten, 13 markieren</div><div class="pu-phase">Festlegen NA</div><div class="pu-wege"><span class="pu-w"><b>Üben</b><span class="pu-ls"><a href="#praxis-erfordernisse">3.7 Nutzungsanforderungen</a></span></span><span class="pu-w"><b>Lernen</b><span class="pu-ls"><a href="#nutzungsanforderungen">Nutzungsanforderung (user requirement)</a></span></span><span class="pu-w pu-sch"><b>Schablone</b><span class="pu-ls"><a href="schablonen.html#sch-103">Qualitative Nutzungsanforderung (S. 103)</a><a href="schablonen.html#sch-110">Quantitative Nutzungsanforderung (S. 110)</a></span></span></div></div><div class="pu-pro">13 mal 2 Punkte</div><div class="pu-max">26<div class="exam-bar" style="width:65%"></div></div></div>
+<div class="pu-row" id="pu-6"><div class="pu-nr">6.</div><div class="pu-task"><div class="pu-text">Aufgabenmodell: Vor- und Nachbedingung, Teilaufgaben</div><div class="pu-phase">Verstehen NK</div><div class="pu-wege"><span class="pu-w"><b>Üben</b><span class="pu-ls"><a href="#praxis-aufgabenmodell">3.8 Vor-/Nachbedingung, Teilaufgaben</a></span></span><span class="pu-w"><b>Lernen</b><span class="pu-ls"><a href="#aufgabenmodell">Aufgaben &amp; Ziele, Aufgabenmodell</a><a href="#modellhaft">Modellhafte Nutzungskontextbeschreibung</a></span></span></div></div><div class="pu-pro">1 + 1 plus 5 mal 2 Punkte</div><div class="pu-max">12<div class="exam-bar" style="width:30%"></div></div></div>
+<div class="pu-row" id="pu-7"><div class="pu-nr">7.</div><div class="pu-task"><div class="pu-text">Nutzungsanforderungen den Teilaufgaben des Aufgabenmodells zuordnen</div><div class="pu-phase">Festlegen NA</div><div class="pu-wege"><span class="pu-w"><b>Üben</b><span class="pu-ls"><a href="#praxis-aufgabenmodell">3.8 Zuordnung zu Teilaufgaben</a></span></span><span class="pu-w"><b>Lernen</b><span class="pu-ls"><a href="#aufgabenmodell">Aufgabenmodell</a><a href="#nutzungsanforderungen">Nutzungsanforderung</a></span></span></div></div><div class="pu-pro"></div><div class="pu-max">10<div class="exam-bar" style="width:25%"></div></div></div>
+<div class="pu-row pu-sum"><div></div><div class="pu-max pu-total">total 100 Punkte</div></div>
+            </div>
+            <p class="card-lead">„Verstehen NK“ und „Festlegen NA“ sind meine Zuordnung zur Prozesskarte; Aufgaben und Punkte im Wortlaut der Folie.</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 256</span> <a class="sm-link" href="#ueberblick-praxis">im Kapitel ansehen →</a>
             <div class="grid-3" style="margin-top:20px">
                 <div class="box"><div class="box-title"><span class="material-icons">schedule</span>Praktische Prüfung</div>5:45 mit 3 Aufgabenbereichen. Handschriftlich auf Papier.</div>
                 <div class="box lila"><div class="box-title"><span class="material-icons">quiz</span>Theoretische Prüfung</div>40 Multiple-Choice Fragen in 90 Minuten zu beantworten. Online.</div>
                 <div class="box gelb"><div class="box-title"><span class="material-icons">priority_high</span>Punkte</div>Erfordernisse 40 + Nutzungsanforderungen 26 = 66 von 100</div>
             </div>
-            <span class="src"><span class="material-icons">description</span>CPUX-UR_Pruefungsabstimmung.md, Folie 256 (Screenshot 06.11.)</span>
+            <span class="src"><span class="material-icons">description</span>CPUX-UR_Pruefungsabstimmung.md</span>
         </div>
     </section>
 
@@ -3101,7 +3167,7 @@ tr.pt-abgl { display: none; }
          ========================================================= -->
     <section class="section" id="ausblick">
         <div class="section-title"><div class="num"><span class="material-icons">upcoming</span></div><h2>Agenda des Seminars</h2></div>
-        <p class="section-lead">Kapitel 1 und 2 sind eingearbeitet, Kapitel 3 vollständig, Kapitel 4 bis Folie S. 252. Die übrigen Kapitel ergänze ich, sobald die Folien da sind.</p>
+        <p class="section-lead">Kapitel 1 und 2 sind eingearbeitet, Kapitel 3 vollständig, Kapitel 4 bis Folie S. 258. Die übrigen Kapitel ergänze ich, sobald die Folien da sind.</p>
         <div class="card">
             <div class="pipeline">
                 <div class="pipe done"><span class="pn">1</span>Einführung in die Nutzungskontextanalyse</div>
@@ -3346,6 +3412,7 @@ const D = {
         ['Qualitätskriterien für Erfordernisse (S. 251)', 'workspace_premium', ul(['Erfordernisse sind immer im Nutzungskontext begründet', 'Erfordernisse sind immer objektiv für alle Benutzenden einer Benutzergruppe zutreffend', 'Erfordernisse sind immer unstrittig', 'Erfordernisse bestehen immer aus einer Voraussetzung, die gegeben sein muss in Form eines Zustands ("etwas verfügbar haben" oder "etwas wissen" oder "etwas können") und dem Ziel, dem diese Voraussetzung dient ("etwas entscheiden können" oder "etwas tun können").', 'Das (zu entwickelnde oder zu evaluierende) interaktive System kommt nicht im Erfordernis vor.']) + '<a href="#qualitaet-erfordernisse">Qualitätskriterien für Erfordernisse</a>'],
         ['Formulierungsschablone (Syntax) für Erfordernisse (S. 252)', 'text_fields', '<a href="#syntax-erfordernisse">Formulierungsschablone (Syntax) für Erfordernisse</a>'],
         ['Erfordernis (user need) (S. 245)', 'menu_book', '<a href="#erfordernis-def">Erfordernis (user need)</a>'],
+        ['Erfordernisse identifizieren (S. 253)', 'manage_search', 'Jede Nutzungskontextinformation kann ein oder mehrere Erfordernisse enthalten. Es empfiehlt sich daher, Nutzungskontextbeschreibungen Satz für Satz durchzugehen und mit den folgenden Leitfragen Erfordernisse zu identifizieren:' + ul(['Welche Ressource wird jeweils innerhalb der beschriebenen Nutzungskontextinformation benötigt und warum (Ziel)?', 'Welche Information wird jeweils innerhalb der beschriebenen Nutzungskontextinformation benötigt und warum (Ziel)?', 'Welche Kompetenz wird jeweils innerhalb der beschriebenen Nutzungskontextinformation benötigt und warum (Ziel)?']) + '<a href="#erfordernisse-identifizieren">Erfordernisse identifizieren</a>'],
         ['', '', note('– wie viel Zeit ich noch benötige – wie viele Folien [übrig] hat er wie lang braucht er', 'S. 27') + note('Wunsch: Allgemeingültigkeit? → ja → Erfordernis', 'S. 42') + src('S. 23, 24, 27, 132')]
     ]},
     na: { icon: 'edit_note', title: 'Nutzungsanforderung (user requirement)', tags: ['Lösungsraum', 'Kapitel 5', 'Prüfung 26 P'], link: '#nutzungsanforderungen', blocks: [
@@ -3436,9 +3503,9 @@ const D = {
     kap7: { icon: 'cable', title: '7 Schnittstellen des UR-Engineers', tags: ['Agenda S. 9'], link: '#ausblick', blocks: [
         ['', '', note('296–300 · nicht prüfungsrelevant', 'S. 9') + src('S. 9')]
     ]},
-    pruefung: { icon: 'assignment', title: 'Überblick praktische Prüfung', tags: ['100 Punkte', '5:45'], link: '#pruefung', blocks: [
-        ['Aufgaben und Punkte', 'list', ul(['Ist-Szenario des Videos erstellen: 3 Punkte', 'max. 4 Interviewfehler identifizieren: 4 × 1 Punkt', 'alle Benutzergruppen aus den 4 Ist-Szenarien identifizieren: 5 × 1 Punkt', 'für ein Ist-Szenario die enthaltenen Erfordernisse identifizieren, 10 markieren: 10 × 4 Punkte = 40', 'aus den Erfordernissen alle Nutzungsanforderungen ableiten, 13 markieren: 13 × 2 Punkte = 26', 'Aufgabenmodell: Vor- und Nachbedingung, Teilaufgaben: 1 + 1 plus 5 × 2 Punkte = 12', 'Nutzungsanforderungen den Teilaufgaben des Aufgabenmodells zuordnen: 10'])],
-        ['', '', '<span class="src"><span class="material-icons">description</span>CPUX-UR_Pruefungsabstimmung.md, Folie 256</span>']
+    pruefung: { icon: 'assignment', title: 'Überblick Praktische Prüfung – Aufgaben und Punkte', tags: ['100 Punkte', '5:45'], link: '#pruefung', blocks: [
+        ['Aufgaben und Punkte (S. 256)', 'list', '<ol><li>Ist-Szenario des Videos erstellen – 3 Punkte – max. 3</li><li>max. 4 Interviewfehler identifizieren – 4 mal 1 Punkt – max. 4</li><li>alle Benutzergruppen aus den 4 Ist-Szenarien identifizieren – 5 mal 1 Punkt – max. 5</li><li>für ein Ist-Szenario, die darin enthaltenen Erfordernisse identifizieren, 10 markieren – 10 mal 4 Punkte – max. 40</li><li>Aus den Erfordernissen alle Nutzungsanforderungen ableiten, 13 markieren – 13 mal 2 Punkte – max. 26</li><li>Aufgabenmodell: Vor- und Nachbedingung, Teilaufgaben – 1 + 1 plus 5 mal 2 Punkte – max. 12</li><li>Nutzungsanforderungen den Teilaufgaben des Aufgabenmodells zuordnen – max. 10</li></ol><p><b>total 100 Punkte</b></p><a href="#pruefung">Zur Prüfungsübersicht mit Sprüngen</a>'],
+        ['', '', src('S. 256')]
     ]}
 };
 
@@ -3501,7 +3568,7 @@ if (document.getElementById('pTable')) {
         { k: 'verstehen', raum: 'Problemraum', kap: ['3', '4'], themen: ['benutzer', 'aufgaben', 'umgebung', 'ressourcen', 'aufgabenmodell', 'rekrutierung', 'interview', 'rollen', 'beobachtung', 'fokusgruppe', 'mentales', 'nkbeschreibung', 'istszenario', 'persona', 'affinity', 'journey', 'zielkatalog', 'umgebungsmodell', 'nkinfo', 'erfordernis', 'infoerf', 'ressourcenerf', 'kompetenzerf'],
           theorie: [['3', 20, 24], ['4', 25, 29]],
           praxis: [['Ist-Szenario', 3, 'szenario'], ['Interviewfehler', 4, 'interviewer'], ['Benutzergruppen', 5, 'gruppen'], ['Erfordernisse', 40, 'erfordernisse'], ['Aufgabenmodell', 12, 'aufgabenmodell']],
-          lesen: '<a href="#kontext">Nutzungskontext</a><a href="#aufgabenmodell">Aufgabenmodell</a><a href="#erheben">Überblick Kapitel 3</a><a href="#rekrutieren">3.1 Rekrutieren</a><a href="#durchfuehren">3.2 Erhebung durchführen</a><a href="#beobachtung">Beobachtung</a><a href="#fokusgruppe">Fokusgruppe</a><a href="#methodenwahl">Methoden wählen</a><a href="#mentale-modelle">Mentale Modelle, Wünsche</a><a href="#beschreiben">3.3 Beschreibungen</a><a href="#nk-beschreibung">Nutzungskontextbeschreibung</a><a href="#narrativ">Narrative Beschreibungen</a><a href="#modellhaft">Modellhafte Beschreibungen</a><a href="#ergebnisse-33">Planung und Ergebnisse der NK-Erhebung</a><a href="#erfordernisse-4">4. Erfordernisse identifizieren</a><a href="#erfordernis-def">Erfordernis (user need)</a><a href="#arten-erfordernisse">Arten von Erfordernissen</a><a href="#qualitaet-erfordernisse">Qualitätskriterien für Erfordernisse</a><a href="#syntax-erfordernisse">Formulierungsschablone für Erfordernisse</a><a href="#kette">Die Kette</a>' },
+          lesen: '<a href="#kontext">Nutzungskontext</a><a href="#aufgabenmodell">Aufgabenmodell</a><a href="#erheben">Überblick Kapitel 3</a><a href="#rekrutieren">3.1 Rekrutieren</a><a href="#durchfuehren">3.2 Erhebung durchführen</a><a href="#beobachtung">Beobachtung</a><a href="#fokusgruppe">Fokusgruppe</a><a href="#methodenwahl">Methoden wählen</a><a href="#mentale-modelle">Mentale Modelle, Wünsche</a><a href="#beschreiben">3.3 Beschreibungen</a><a href="#nk-beschreibung">Nutzungskontextbeschreibung</a><a href="#narrativ">Narrative Beschreibungen</a><a href="#modellhaft">Modellhafte Beschreibungen</a><a href="#ergebnisse-33">Planung und Ergebnisse der NK-Erhebung</a><a href="#erfordernisse-4">4. Erfordernisse identifizieren</a><a href="#erfordernis-def">Erfordernis (user need)</a><a href="#arten-erfordernisse">Arten von Erfordernissen</a><a href="#qualitaet-erfordernisse">Qualitätskriterien für Erfordernisse</a><a href="#syntax-erfordernisse">Formulierungsschablone für Erfordernisse</a><a href="#erfordernisse-identifizieren">Erfordernisse identifizieren</a><a href="#nki-typen-beispiele">NKI → Typen von Erfordernissen</a><a href="#ueberblick-praxis">Überblick Praktische Prüfung</a><a href="#ure-erfordernisse">URE Story Kapitel 4</a><a href="#kette">Die Kette</a>' },
         { k: 'festlegen', raum: 'Problem-/Lösungsraum', kap: ['4', '5', '6'], themen: ['na', 'qual', 'quant', 'stakeholder'],
           theorie: [['5', 30, 36], ['6', 37, 40]],
           praxis: [['Nutzungsanforderungen', 26, 'erfordernisse'], ['Zuordnung zu Teilaufgaben', 10, 'aufgabenmodell']],
@@ -3518,7 +3585,7 @@ if (document.getElementById('pTable')) {
     const raumCls = r => r === 'Lösungsraum' ? 'l' : r === 'Problemraum' ? 't' : r === 'Basis' ? 'b' : 'tl';
     /* Folienkapitel je Begriff: aus „Kapitel x.y“ in den Tags, sonst aus dem Abschnitt, auf den der Begriff verweist */
     const SEK_KAP = { rollen: 'Seminar', ausblick: 'Seminar', kette: '1.1', anforderungen: '1.2', kontext: '1.3', aufgabenmodell: '1.3', nutzungsanforderungen: '1.4',
-        planen: '2', methoden: '2.2', erheben: '3', rekrutieren: '3.1', durchfuehren: '3.2', beobachtung: '3.2', fokusgruppe: '3.2', methodenwahl: '3.2', 'mentale-modelle': '3.2', beschreiben: '3.3', 'nk-beschreibung': '3.3', narrativ: '3.3', modellhaft: '3.3', 'ergebnisse-33': '3.3', 'erfordernisse-4': '4.1', 'erfordernis-def': '4.1', 'arten-erfordernisse': '4.1', 'qualitaet-erfordernisse': '4.1', 'syntax-erfordernisse': '4.1' };
+        planen: '2', methoden: '2.2', erheben: '3', rekrutieren: '3.1', durchfuehren: '3.2', beobachtung: '3.2', fokusgruppe: '3.2', methodenwahl: '3.2', 'mentale-modelle': '3.2', beschreiben: '3.3', 'nk-beschreibung': '3.3', narrativ: '3.3', modellhaft: '3.3', 'ergebnisse-33': '3.3', 'erfordernisse-4': '4.1', 'erfordernis-def': '4.1', 'arten-erfordernisse': '4.1', 'qualitaet-erfordernisse': '4.1', 'syntax-erfordernisse': '4.1', 'erfordernisse-identifizieren': '4.1', 'nki-typen-beispiele': '4.1', 'ueberblick-praxis': '4.1', 'ure-erfordernisse': '4.1' };
     const kapOf = k => {
         const t = (D[k].tags || []).map(x => (x.match(/^Kapitel (\d+(?:\.\d+)?)$/) || [])[1]).find(Boolean);
         return t || SEK_KAP[(D[k].link || '').split('#')[1]] || '';
@@ -3720,20 +3787,6 @@ document.getElementById('sbToggle').addEventListener('click', () => setSidebar(!
 /* Direktlink auf ein Detail, z. B. #d-erfordernis */
 if (location.hash.startsWith('#d-')) { document.getElementById('karte').scrollIntoView(); openDetail(location.hash.slice(3)); }
 
-/* ---------- Prüfung ---------- */
-const EXAM = [
-    ['Verstehen NK', 'Ist-Szenario des Videos erstellen (3 Punkte)', 3],
-    ['Verstehen NK', 'max. 4 Interviewfehler identifizieren (4 × 1 Punkt)', 4],
-    ['Verstehen NK', 'alle Benutzergruppen aus den 4 Ist-Szenarien identifizieren (5 × 1 Punkt)', 5],
-    ['Festlegen NA', 'für ein Ist-Szenario die enthaltenen Erfordernisse identifizieren, 10 markieren (10 × 4 Punkte)', 40],
-    ['Festlegen NA', 'aus den Erfordernissen alle Nutzungsanforderungen ableiten, 13 markieren (13 × 2 Punkte)', 26],
-    ['Verstehen NK', 'Aufgabenmodell: Vor- und Nachbedingung, Teilaufgaben (1 + 1 plus 5 × 2 Punkte)', 12],
-    ['Festlegen NA', 'Nutzungsanforderungen den Teilaufgaben des Aufgabenmodells zuordnen', 10]
-];
-document.getElementById('examMap').innerHTML =
-    '<div class="exam-row"><div style="font-weight:700">HCD-Aktivität</div><div style="font-weight:700">Aufgabe</div><div style="font-weight:700;justify-content:flex-end">max.</div></div>' +
-    EXAM.map(r => '<div class="exam-row"><div class="exam-phase">' + r[0] + '</div><div class="exam-task">' + r[1] + '<div class="exam-bar" style="width:' + (r[2] * 2.2) + '%"></div></div><div class="exam-pts">' + r[2] + '</div></div>').join('') +
-    '<div class="exam-row"><div></div><div style="font-weight:700">Gesamt</div><div class="exam-pts">100</div></div>';
 
 /* ---------- Glossar: Definitionen im Wortlaut der Folien ---------- */
 const G = [

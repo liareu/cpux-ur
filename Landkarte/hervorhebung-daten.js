@@ -2368,5 +2368,61 @@ const ROT = {
 "identifizierte Voraussetzung",
 "beabsichtigtes Ergebnis == Ziel"
 ]
+},
+"253": {
+"m": null,
+"rot": [
+"Nutzungskontextbeschreibungen Satz für Satz durchzugehen",
+"Leitfragen"
+]
+},
+"254": {
+"m": null,
+"rot": [
+"Wiederkehrende Erfordernisse",
+"enthaltenen Erfordernisse identifizieren",
+"Forderungen",
+"gewünschte Lösungen am interaktiven System formuliert",
+"Nachfragen",
+"Forderung"
+]
+},
+"255": {
+"m": null,
+"rot": []
+},
+"256": {
+"m": "+",
+"rot": []
+},
+"257": {
+"m": "Ü",
+"rot": [
+"Praktische Übung 5"
+]
+},
+"258": {
+"m": null,
+"rot": [
+"Erfordernisse",
+"Nutzungskontextbeschreibungen",
+"Analyse werden Erfordernisse identifiziert",
+"Grundlage für Nutzungsanforderungen",
+"Identifizierte Erfordernisse",
+"unbedingt befriedigt",
+"hilfreiche Grundlage",
+"informatorische Erfordernisse",
+"Ressourcenerfordernisse",
+"Kompetenzerfordernisse",
+"Aufgaben zu erledigen",
+"Ergebnisse zu erzielen",
+"Einheitliche Formulierungen",
+"klar und gut kommuniziert",
+"detaillierte Beschreibung des beabsichtigten Ergebnisses",
+"Voraussetzungen",
+"identifiziert",
+"beabsichtigte Ergebnis",
+"erforderlichen Voraussetzungen"
+]
 }
 };

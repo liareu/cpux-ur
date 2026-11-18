@@ -187,6 +187,7 @@ const D = {
         ['Qualitätskriterien für Erfordernisse (S. 251)', 'workspace_premium', ul(['Erfordernisse sind immer im Nutzungskontext begründet', 'Erfordernisse sind immer objektiv für alle Benutzenden einer Benutzergruppe zutreffend', 'Erfordernisse sind immer unstrittig', 'Erfordernisse bestehen immer aus einer Voraussetzung, die gegeben sein muss in Form eines Zustands ("etwas verfügbar haben" oder "etwas wissen" oder "etwas können") und dem Ziel, dem diese Voraussetzung dient ("etwas entscheiden können" oder "etwas tun können").', 'Das (zu entwickelnde oder zu evaluierende) interaktive System kommt nicht im Erfordernis vor.']) + '<a href="kapitel-4.html#qualitaet-erfordernisse">Qualitätskriterien für Erfordernisse</a>'],
         ['Formulierungsschablone (Syntax) für Erfordernisse (S. 252)', 'text_fields', '<a href="kapitel-4.html#syntax-erfordernisse">Formulierungsschablone (Syntax) für Erfordernisse</a>'],
         ['Erfordernis (user need) (S. 245)', 'menu_book', '<a href="kapitel-4.html#erfordernis-def">Erfordernis (user need)</a>'],
+        ['Erfordernisse identifizieren (S. 253)', 'manage_search', 'Jede Nutzungskontextinformation kann ein oder mehrere Erfordernisse enthalten. Es empfiehlt sich daher, Nutzungskontextbeschreibungen Satz für Satz durchzugehen und mit den folgenden Leitfragen Erfordernisse zu identifizieren:' + ul(['Welche Ressource wird jeweils innerhalb der beschriebenen Nutzungskontextinformation benötigt und warum (Ziel)?', 'Welche Information wird jeweils innerhalb der beschriebenen Nutzungskontextinformation benötigt und warum (Ziel)?', 'Welche Kompetenz wird jeweils innerhalb der beschriebenen Nutzungskontextinformation benötigt und warum (Ziel)?']) + '<a href="kapitel-4.html#erfordernisse-identifizieren">Erfordernisse identifizieren</a>'],
         ['', '', note('– wie viel Zeit ich noch benötige – wie viele Folien [übrig] hat er wie lang braucht er', 'S. 27') + note('Wunsch: Allgemeingültigkeit? → ja → Erfordernis', 'S. 42') + src('S. 23, 24, 27, 132')]
     ]},
     na: { icon: 'edit_note', title: 'Nutzungsanforderung (user requirement)', tags: ['Lösungsraum', 'Kapitel 5', 'Prüfung 26 P'], link: 'kapitel-1.html#nutzungsanforderungen', blocks: [
@@ -277,9 +278,9 @@ const D = {
     kap7: { icon: 'cable', title: '7 Schnittstellen des UR-Engineers', tags: ['Agenda S. 9'], link: 'seminar.html#ausblick', blocks: [
         ['', '', note('296–300 · nicht prüfungsrelevant', 'S. 9') + src('S. 9')]
     ]},
-    pruefung: { icon: 'assignment', title: 'Überblick praktische Prüfung', tags: ['100 Punkte', '5:45'], link: 'pruefung-praxis.html#pruefung', blocks: [
-        ['Aufgaben und Punkte', 'list', ul(['Ist-Szenario des Videos erstellen: 3 Punkte', 'max. 4 Interviewfehler identifizieren: 4 × 1 Punkt', 'alle Benutzergruppen aus den 4 Ist-Szenarien identifizieren: 5 × 1 Punkt', 'für ein Ist-Szenario die enthaltenen Erfordernisse identifizieren, 10 markieren: 10 × 4 Punkte = 40', 'aus den Erfordernissen alle Nutzungsanforderungen ableiten, 13 markieren: 13 × 2 Punkte = 26', 'Aufgabenmodell: Vor- und Nachbedingung, Teilaufgaben: 1 + 1 plus 5 × 2 Punkte = 12', 'Nutzungsanforderungen den Teilaufgaben des Aufgabenmodells zuordnen: 10'])],
-        ['', '', '<span class="src"><span class="material-icons">description</span>CPUX-UR_Pruefungsabstimmung.md, Folie 256</span>']
+    pruefung: { icon: 'assignment', title: 'Überblick Praktische Prüfung – Aufgaben und Punkte', tags: ['100 Punkte', '5:45'], link: 'pruefung-praxis.html#pruefung', blocks: [
+        ['Aufgaben und Punkte (S. 256)', 'list', '<ol><li>Ist-Szenario des Videos erstellen – 3 Punkte – max. 3</li><li>max. 4 Interviewfehler identifizieren – 4 mal 1 Punkt – max. 4</li><li>alle Benutzergruppen aus den 4 Ist-Szenarien identifizieren – 5 mal 1 Punkt – max. 5</li><li>für ein Ist-Szenario, die darin enthaltenen Erfordernisse identifizieren, 10 markieren – 10 mal 4 Punkte – max. 40</li><li>Aus den Erfordernissen alle Nutzungsanforderungen ableiten, 13 markieren – 13 mal 2 Punkte – max. 26</li><li>Aufgabenmodell: Vor- und Nachbedingung, Teilaufgaben – 1 + 1 plus 5 mal 2 Punkte – max. 12</li><li>Nutzungsanforderungen den Teilaufgaben des Aufgabenmodells zuordnen – max. 10</li></ol><p><b>total 100 Punkte</b></p><a href="pruefung-praxis.html#pruefung">Zur Prüfungsübersicht mit Sprüngen</a>'],
+        ['', '', src('S. 256')]
     ]}
 };
 
@@ -342,7 +343,7 @@ if (document.getElementById('pTable')) {
         { k: 'verstehen', raum: 'Problemraum', kap: ['3', '4'], themen: ['benutzer', 'aufgaben', 'umgebung', 'ressourcen', 'aufgabenmodell', 'rekrutierung', 'interview', 'rollen', 'beobachtung', 'fokusgruppe', 'mentales', 'nkbeschreibung', 'istszenario', 'persona', 'affinity', 'journey', 'zielkatalog', 'umgebungsmodell', 'nkinfo', 'erfordernis', 'infoerf', 'ressourcenerf', 'kompetenzerf'],
           theorie: [['3', 20, 24], ['4', 25, 29]],
           praxis: [['Ist-Szenario', 3, 'szenario'], ['Interviewfehler', 4, 'interviewer'], ['Benutzergruppen', 5, 'gruppen'], ['Erfordernisse', 40, 'erfordernisse'], ['Aufgabenmodell', 12, 'aufgabenmodell']],
-          lesen: '<a href="kapitel-1.html#kontext">Nutzungskontext</a><a href="kapitel-1.html#aufgabenmodell">Aufgabenmodell</a><a href="kapitel-3.html#erheben">Überblick Kapitel 3</a><a href="kapitel-3.html#rekrutieren">3.1 Rekrutieren</a><a href="kapitel-3.html#durchfuehren">3.2 Erhebung durchführen</a><a href="kapitel-3.html#beobachtung">Beobachtung</a><a href="kapitel-3.html#fokusgruppe">Fokusgruppe</a><a href="kapitel-3.html#methodenwahl">Methoden wählen</a><a href="kapitel-3.html#mentale-modelle">Mentale Modelle, Wünsche</a><a href="kapitel-3.html#beschreiben">3.3 Beschreibungen</a><a href="kapitel-3.html#nk-beschreibung">Nutzungskontextbeschreibung</a><a href="kapitel-3.html#narrativ">Narrative Beschreibungen</a><a href="kapitel-3.html#modellhaft">Modellhafte Beschreibungen</a><a href="kapitel-3.html#ergebnisse-33">Planung und Ergebnisse der NK-Erhebung</a><a href="kapitel-4.html#erfordernisse-4">4. Erfordernisse identifizieren</a><a href="kapitel-4.html#erfordernis-def">Erfordernis (user need)</a><a href="kapitel-4.html#arten-erfordernisse">Arten von Erfordernissen</a><a href="kapitel-4.html#qualitaet-erfordernisse">Qualitätskriterien für Erfordernisse</a><a href="kapitel-4.html#syntax-erfordernisse">Formulierungsschablone für Erfordernisse</a><a href="kapitel-1.html#kette">Die Kette</a>' },
+          lesen: '<a href="kapitel-1.html#kontext">Nutzungskontext</a><a href="kapitel-1.html#aufgabenmodell">Aufgabenmodell</a><a href="kapitel-3.html#erheben">Überblick Kapitel 3</a><a href="kapitel-3.html#rekrutieren">3.1 Rekrutieren</a><a href="kapitel-3.html#durchfuehren">3.2 Erhebung durchführen</a><a href="kapitel-3.html#beobachtung">Beobachtung</a><a href="kapitel-3.html#fokusgruppe">Fokusgruppe</a><a href="kapitel-3.html#methodenwahl">Methoden wählen</a><a href="kapitel-3.html#mentale-modelle">Mentale Modelle, Wünsche</a><a href="kapitel-3.html#beschreiben">3.3 Beschreibungen</a><a href="kapitel-3.html#nk-beschreibung">Nutzungskontextbeschreibung</a><a href="kapitel-3.html#narrativ">Narrative Beschreibungen</a><a href="kapitel-3.html#modellhaft">Modellhafte Beschreibungen</a><a href="kapitel-3.html#ergebnisse-33">Planung und Ergebnisse der NK-Erhebung</a><a href="kapitel-4.html#erfordernisse-4">4. Erfordernisse identifizieren</a><a href="kapitel-4.html#erfordernis-def">Erfordernis (user need)</a><a href="kapitel-4.html#arten-erfordernisse">Arten von Erfordernissen</a><a href="kapitel-4.html#qualitaet-erfordernisse">Qualitätskriterien für Erfordernisse</a><a href="kapitel-4.html#syntax-erfordernisse">Formulierungsschablone für Erfordernisse</a><a href="kapitel-4.html#erfordernisse-identifizieren">Erfordernisse identifizieren</a><a href="kapitel-4.html#nki-typen-beispiele">NKI → Typen von Erfordernissen</a><a href="kapitel-4.html#ueberblick-praxis">Überblick Praktische Prüfung</a><a href="kapitel-4.html#ure-erfordernisse">URE Story Kapitel 4</a><a href="kapitel-1.html#kette">Die Kette</a>' },
         { k: 'festlegen', raum: 'Problem-/Lösungsraum', kap: ['4', '5', '6'], themen: ['na', 'qual', 'quant', 'stakeholder'],
           theorie: [['5', 30, 36], ['6', 37, 40]],
           praxis: [['Nutzungsanforderungen', 26, 'erfordernisse'], ['Zuordnung zu Teilaufgaben', 10, 'aufgabenmodell']],
@@ -359,7 +360,7 @@ if (document.getElementById('pTable')) {
     const raumCls = r => r === 'Lösungsraum' ? 'l' : r === 'Problemraum' ? 't' : r === 'Basis' ? 'b' : 'tl';
     /* Folienkapitel je Begriff: aus „Kapitel x.y“ in den Tags, sonst aus dem Abschnitt, auf den der Begriff verweist */
     const SEK_KAP = { rollen: 'Seminar', ausblick: 'Seminar', kette: '1.1', anforderungen: '1.2', kontext: '1.3', aufgabenmodell: '1.3', nutzungsanforderungen: '1.4',
-        planen: '2', methoden: '2.2', erheben: '3', rekrutieren: '3.1', durchfuehren: '3.2', beobachtung: '3.2', fokusgruppe: '3.2', methodenwahl: '3.2', 'mentale-modelle': '3.2', beschreiben: '3.3', 'nk-beschreibung': '3.3', narrativ: '3.3', modellhaft: '3.3', 'ergebnisse-33': '3.3', 'erfordernisse-4': '4.1', 'erfordernis-def': '4.1', 'arten-erfordernisse': '4.1', 'qualitaet-erfordernisse': '4.1', 'syntax-erfordernisse': '4.1' };
+        planen: '2', methoden: '2.2', erheben: '3', rekrutieren: '3.1', durchfuehren: '3.2', beobachtung: '3.2', fokusgruppe: '3.2', methodenwahl: '3.2', 'mentale-modelle': '3.2', beschreiben: '3.3', 'nk-beschreibung': '3.3', narrativ: '3.3', modellhaft: '3.3', 'ergebnisse-33': '3.3', 'erfordernisse-4': '4.1', 'erfordernis-def': '4.1', 'arten-erfordernisse': '4.1', 'qualitaet-erfordernisse': '4.1', 'syntax-erfordernisse': '4.1', 'erfordernisse-identifizieren': '4.1', 'nki-typen-beispiele': '4.1', 'ueberblick-praxis': '4.1', 'ure-erfordernisse': '4.1' };
     const kapOf = k => {
         const t = (D[k].tags || []).map(x => (x.match(/^Kapitel (\d+(?:\.\d+)?)$/) || [])[1]).find(Boolean);
         return t || SEK_KAP[(D[k].link || '').split('#')[1]] || '';
@@ -561,22 +562,6 @@ document.getElementById('sbToggle').addEventListener('click', () => setSidebar(!
 /* Direktlink auf ein Detail, z. B. #d-erfordernis */
 if (location.hash.startsWith('#d-')) { const karte = document.getElementById('karte'); if (karte) karte.scrollIntoView(); openDetail(location.hash.slice(3)); }
 
-/* ---------- Prüfung ---------- */
-if (document.getElementById('examMap')) {
-const EXAM = [
-    ['Verstehen NK', 'Ist-Szenario des Videos erstellen (3 Punkte)', 3],
-    ['Verstehen NK', 'max. 4 Interviewfehler identifizieren (4 × 1 Punkt)', 4],
-    ['Verstehen NK', 'alle Benutzergruppen aus den 4 Ist-Szenarien identifizieren (5 × 1 Punkt)', 5],
-    ['Festlegen NA', 'für ein Ist-Szenario die enthaltenen Erfordernisse identifizieren, 10 markieren (10 × 4 Punkte)', 40],
-    ['Festlegen NA', 'aus den Erfordernissen alle Nutzungsanforderungen ableiten, 13 markieren (13 × 2 Punkte)', 26],
-    ['Verstehen NK', 'Aufgabenmodell: Vor- und Nachbedingung, Teilaufgaben (1 + 1 plus 5 × 2 Punkte)', 12],
-    ['Festlegen NA', 'Nutzungsanforderungen den Teilaufgaben des Aufgabenmodells zuordnen', 10]
-];
-document.getElementById('examMap').innerHTML =
-    '<div class="exam-row"><div style="font-weight:700">HCD-Aktivität</div><div style="font-weight:700">Aufgabe</div><div style="font-weight:700;justify-content:flex-end">max.</div></div>' +
-    EXAM.map(r => '<div class="exam-row"><div class="exam-phase">' + r[0] + '</div><div class="exam-task">' + r[1] + '<div class="exam-bar" style="width:' + (r[2] * 2.2) + '%"></div></div><div class="exam-pts">' + r[2] + '</div></div>').join('') +
-    '<div class="exam-row"><div></div><div style="font-weight:700">Gesamt</div><div class="exam-pts">100</div></div>';
-}
 
 /* ---------- Glossar: Definitionen im Wortlaut der Folien ---------- */
 if (document.getElementById('glossary')) {

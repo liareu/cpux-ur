@@ -1,7 +1,7 @@
-"""Baut aus CPUX-UR_Prozess-Landkarte.html (Einzelseite) die Unterseiten im Ordner Landkarte/.
+"""Baut aus Landkarte/CPUX-UR_Prozess-Landkarte.html (Einzelseite) die Unterseiten im Ordner Landkarte/.
 
 Aufruf (im Projektordner):
-  python3 -I _Werkzeug/build_site.py CPUX-UR_Prozess-Landkarte.html Landkarte _Werkzeug
+  python3 -I _Werkzeug/build_site.py Landkarte/CPUX-UR_Prozess-Landkarte.html Landkarte _Werkzeug
 Die Folienfotos in Landkarte/folien/ (verkleinert, 12 davon gedreht) werden hiervon nicht berührt.
 Die Einzelseite wird nur gelesen. Kann beliebig oft neu ausgeführt werden.
 """
@@ -41,7 +41,7 @@ PAGES = [
      'Kapitel 2', 'Nutzungskontextanalyse planen'),
     ('kapitel-3.html', '3 Information erheben', 'looks_3', 'Kapitel', ['erheben', 'rekrutieren', 'durchfuehren', 'beobachtung', 'fokusgruppe', 'methodenwahl', 'mentale-modelle', 'beschreiben', 'nk-beschreibung', 'narrativ', 'modellhaft', 'ergebnisse-33'],
      'Kapitel 3', 'Nutzungskontextinformation erheben und dokumentieren'),
-    ('kapitel-4.html', '4 Erfordernisse identifizieren', 'looks_4', 'Kapitel', ['erfordernisse-4', 'erfordernis-def', 'arten-erfordernisse', 'qualitaet-erfordernisse', 'syntax-erfordernisse'],
+    ('kapitel-4.html', '4 Erfordernisse identifizieren', 'looks_4', 'Kapitel', ['erfordernisse-4', 'erfordernis-def', 'arten-erfordernisse', 'qualitaet-erfordernisse', 'syntax-erfordernisse', 'erfordernisse-identifizieren', 'nki-typen-beispiele', 'ueberblick-praxis', 'ure-erfordernisse'],
      'Kapitel 4', 'Erfordernisse in Nutzungskontextinformationen identifizieren'),
     ('pruefung-theorie.html', 'Theoretische Prüfung', 'quiz', 'Prüfung', ['@theorie'],
      'Theoretische Prüfung', 'Öffentliche Beispielprüfung CPUX-UR: 40 Fragen, 90 Minuten'),
@@ -107,6 +107,10 @@ for p in PAGES:
     for s in p[4]:
         for sub in EXTRA_SUB.get(s, []):
             page_of[sub[0]] = p[0]
+# Sprungziele auf einzelne Karten (id an der Karte) liegen auf der Seite ihrer Sektion
+for sec, h in sections.items():
+    for kid in re.findall(r'<div class="card[^"]*" id="([\w-]+)"', h):
+        page_of.setdefault(kid, page_of.get(sec))
 
 
 def relink(text):
@@ -126,7 +130,7 @@ def chunk(name):
     return hits[0]
 
 
-for name, el in (('Prüfung', 'examMap'), ('Glossar', 'glossary')):
+for name, el in (('Glossar', 'glossary'),):
     i = chunk(name)
     first, rest = chunks[i].split('\n', 1)
     chunks[i] = "%s\nif (document.getElementById('%s')) {\n%s}\n\n" % (first, el, rest.rstrip() + '\n')
@@ -220,9 +224,23 @@ extra_html['@ure'] = sammelseite(r'<div class="card ure">', 'URE Story', 'Noch k
 schab = []
 for pg, sec, h in sammeln(r'<div class="schablone"'):
     t = re.search(r'data-titel="([^"]*)"', h).group(1); f = re.search(r'data-folie="([^"]*)"', h).group(1)
-    schab.append('        <div class="card schablone-karte"><h3><span class="material-icons">text_fields</span>%s <small>%s</small></h3>\n            %s\n            <span class="src"><span class="material-icons">description</span>Folie %s</span> <a class="sm-link" href="%s#%s">im Kapitel ansehen →</a>\n        </div>\n' % (t, html.escape(pg[5] or ''), h, f.replace('S. ', 'S. '), pg[0], sec))
+    schab.append('        <div class="card schablone-karte" id="sch-%s"><h3>' % re.sub(r'\D', '', f.split(',')[0]) + '<span class="material-icons">text_fields</span>%s <small>%s</small></h3>\n            %s\n            <span class="src"><span class="material-icons">description</span>Folie %s</span> <a class="sm-link" href="%s#%s">im Kapitel ansehen →</a>\n        </div>\n' % (t, html.escape(pg[5] or ''), h, f.replace('S. ', 'S. '), pg[0], sec))
 extra_html['@schablonen'] = ('    <section class="section" id="schablonen-alle">\n        <div class="section-title"><div class="num"><span class="material-icons">text_fields</span></div><h2>Formulierungsschablonen</h2></div>\n'
     '        <p class="section-lead">Alle Schablonen und Bausteine aus den Folien an einem Ort, im Wortlaut. Neue Schablonen aus weiteren Folien kommen automatisch dazu.</p>\n' + ''.join(schab) + '    </section>\n')
+# Schablonen direkt an der Prüfungsaufgabe: <!--SCHABLONEN S. 252|S. 103--> in praxis.html
+sch_by = {re.search(r'data-folie="([^"]*)"', h).group(1).split(',')[0]: (re.search(r'data-titel="([^"]*)"', h).group(1), h) for pg, sec, h in sammeln(r'<div class="schablone"')}
+
+
+def schablonen_an_aufgabe(m):
+    teile = []
+    for f in m.group(1).split('|'):
+        t, h = sch_by[f.strip()]
+        teile.append('<div class="pu-sch-k"><div class="pu-sch-t">%s <small>Folie %s</small> <a class="sm-link" href="schablonen.html#sch-%s">bei allen Schablonen →</a></div>%s</div>' % (t, f.strip(), re.sub(r'\D', '', f), h))
+    return ('<details class="pu-schablonen" open><summary><span class="material-icons">text_fields</span>Formulierungsschablonen für diese Aufgabe</summary>'
+            + ''.join(teile) + '</details>')
+
+
+extra_html['@praxis'] = re.sub(r'<!--SCHABLONEN ([^>]*)-->', schablonen_an_aufgabe, extra_html['@praxis'])
 EXTRA_SUB['@ure'] = [('s-' + p[0][:-5], p[1], 'chevron_right') for p in PAGES if any(x[0] == p for x in sammeln(r'<div class="card ure">'))]
 EXTRA_SUB['@schablonen'] = [('schablonen-alle', 'Alle Schablonen', 'text_fields')]
 # ---------- Lernziele und „Alles im Zusammenhang“ ----------
@@ -235,7 +253,7 @@ for q in EXQ:
 # Zuordnung Lerneinheit → Abschnitte der Kapitelseiten (redaktionell, auf Ebene der Lerneinheit)
 UNIT_SECS = {'1.1': ['kette'], '1.2': ['anforderungen'], '1.3': ['kontext', 'aufgabenmodell'], '1.4': ['nutzungsanforderungen'],
              '2.1': ['planen'], '2.2': ['planen', 'methoden'], '3.1': ['rekrutieren'],
-             '3.2': ['durchfuehren', 'beobachtung', 'fokusgruppe', 'methodenwahl', 'mentale-modelle'], '3.3': ['beschreiben', 'nk-beschreibung', 'narrativ', 'modellhaft', 'ergebnisse-33'], '4.1': ['erfordernisse-4', 'erfordernis-def', 'arten-erfordernisse', 'qualitaet-erfordernisse', 'syntax-erfordernisse']}
+             '3.2': ['durchfuehren', 'beobachtung', 'fokusgruppe', 'methodenwahl', 'mentale-modelle'], '3.3': ['beschreiben', 'nk-beschreibung', 'narrativ', 'modellhaft', 'ergebnisse-33'], '4.1': ['erfordernisse-4', 'erfordernis-def', 'arten-erfordernisse', 'qualitaet-erfordernisse', 'syntax-erfordernisse', 'erfordernisse-identifizieren', 'nki-typen-beispiele', 'ueberblick-praxis', 'ure-erfordernisse']}
 sec_title = {}
 for sid, h in sections.items():
     m = re.search(r'<h2>(.*?)</h2>', h, re.S)
