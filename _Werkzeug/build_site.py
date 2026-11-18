@@ -228,8 +228,7 @@ extra_html = {
 extra_html['@ure'] = sammelseite(r'<div class="card ure">', 'URE Story', 'Noch keine URE Story vorhanden.')
 schab, sch_tabs = [], []
 # Gütekriterien zu einer Schablone (Folie der Schablone → Karten-IDs in den Kapiteln)
-SCH_KRIT = {'103': ['guete-qual-k', 'krit-anforderungen', 'immunisierungsfalle'], '264': ['guete-qual-k', 'immunisierungsfalle'],
-            '110': ['guete-quant-k', 'krit-anforderungen'], '267': ['guete-quant-k'], '252': ['krit-erfordernisse']}
+SCH_KRIT = {'264': ['guete-qual-k', 'krit-anforderungen', 'immunisierungsfalle'], '267': ['guete-quant-k', 'krit-anforderungen'], '252': ['krit-erfordernisse']}
 
 
 def karte_mit_id(kid):
