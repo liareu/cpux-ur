@@ -38,6 +38,8 @@ PAGES = [
      'Theoretische Prüfung', 'Öffentliche Beispielprüfung CPUX-UR: 40 Fragen, 90 Minuten'),
     ('pruefung-praxis.html', 'Praktische Prüfung', 'assignment', 'Lernen', ['pruefung', '@praxis'],
      'Praktische Prüfung', 'Öffentliche Beispielprüfung CPUX-UR: Aufgaben, Material und Lösung'),
+    ('pruefung-uebungen.html', 'Übungen', 'edit', 'Lernen', ['@uebungen'],
+     'Übungen aus dem Seminar', 'Ist-Szenario schreiben, Erfordernisse und Nutzungsanforderungen ableiten, Aufgabenmodell – mit Beispiellösungen'),
     ('kapitel-1.html', '1 Einführung in die NKA', 'looks_one', 'Kapitel',
      ['kette', 'kontext', 'aufgabenmodell', 'anforderungen', 'nutzungsanforderungen'],
      'Kapitel 1', 'Einführung in die Nutzungskontextanalyse'),
@@ -70,6 +72,7 @@ EXTRA_SUB = {
     '@theorie': [('theorie-anleitung', 'Anleitung & Bewertung', 'info'),
                  ('theorie-fragen', 'Die 40 Fragen', 'quiz'),
                  ('theorie-ergebnis', 'Auswertung', 'fact_check')],
+    '@uebungen': [('ueb-ist-szenario', 'Ist-Szenario schreiben', 'history_edu'), ('ueb-frage4', 'Frage 4 Geschäftsreisender', 'edit_note'), ('ueb-frage2', 'Frage 2 Geschäftsreisender', 'alt_route')],
     '@praxis': [('praxis-start', 'Beginn praktische Prüfung', 'flag'),
                 ('praxis-instruktion', 'Instruktion', 'assignment'),
                 ('praxis-material', 'Prüfungsmaterial', 'description'),
@@ -224,6 +227,7 @@ def sammelseite(muster, titel, leer):
 extra_html = {
     '@theorie': open(os.path.join(tool_dir, 'theorie.html'), encoding='utf-8').read(),
     '@praxis': open(os.path.join(tool_dir, 'praxis.html'), encoding='utf-8').read(),
+    '@uebungen': open(os.path.join(tool_dir, 'uebungen.html'), encoding='utf-8').read(),
     '@curriculum': open(os.path.join(tool_dir, 'curriculum.html'), encoding='utf-8').read(),
 }
 extra_html['@ure'] = sammelseite(r'<div class="card ure">', 'URE Story', 'Noch keine URE Story vorhanden.')
@@ -274,6 +278,7 @@ def schablonen_an_aufgabe(m):
 
 
 extra_html['@praxis'] = re.sub(r'<!--SCHABLONEN ([^>]*)-->', schablonen_an_aufgabe, extra_html['@praxis'])
+extra_html['@uebungen'] = re.sub(r'<!--SCHABLONEN ([^>]*)-->', schablonen_an_aufgabe, extra_html['@uebungen'])
 EXTRA_SUB['@ure'] = [('s-' + p[0][:-5], p[1], 'chevron_right') for p in PAGES if any(x[0] == p for x in sammeln(r'<div class="card ure">'))]
 EXTRA_SUB['@schablonen'] = [('schablonen-alle', 'Alle Schablonen', 'text_fields')]
 # ---------- Lernziele und „Alles im Zusammenhang“ ----------

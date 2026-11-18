@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Übungen | CPUX-UR Prozess-Landkarte</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landkarte.css">
+<link rel="stylesheet" href="lernen.css">
+<link rel="stylesheet" href="pruefung.css">
+</head>
+<body>
+
+<button class="sb-toggle" id="sbToggle" aria-label="Navigation ein- oder ausblenden" title="Navigation ein-/ausblenden"><span class="material-icons" id="sbIcon">menu_open</span></button>
+
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <span class="ux-lab-pill">UX Lab</span>
+        <h2>CPUX-UR Prozess-Landkarte</h2>
+        <p>Lernbegleiter zum Training, Stand Folie S. 300</p>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+        <div class="nav-group">Überblick</div>
+        <a href="dashboard.html" class="nav-link"><span class="material-icons">dashboard</span>Lern-Cockpit</a>
+        <a href="index.html" class="nav-link"><span class="material-icons">map</span>Prozesskarte</a>
+        <a href="seminar.html" class="nav-link"><span class="material-icons">school</span>Zum Seminar</a>
+        <div class="nav-group">Lernen</div>
+        <a href="zusammenhang.html" class="nav-link"><span class="material-icons">hub</span>Alles im Zusammenhang</a>
+        <a href="schaubilder.html" class="nav-link"><span class="material-icons">account_tree</span>Schaubilder</a>
+        <a href="lernziele.html" class="nav-link"><span class="material-icons">checklist</span>Lernziele des Curriculums</a>
+        <a href="selbsttest.html" class="nav-link"><span class="material-icons">style</span>Selbsttest Begriffe</a>
+        <a href="pruefung-theorie.html" class="nav-link"><span class="material-icons">quiz</span>Theoretische Prüfung</a>
+        <a href="pruefung-praxis.html" class="nav-link"><span class="material-icons">assignment</span>Praktische Prüfung</a>
+        <a href="pruefung-uebungen.html" class="nav-link active"><span class="material-icons">edit</span>Übungen</a>
+        <div class="nav-sub"><a href="#ueb-ist-szenario">Ist-Szenario schreiben</a><a href="#ueb-frage4">Frage 4 Geschäftsreisender</a><a href="#ueb-frage2">Frage 2 Geschäftsreisender</a></div>
+        <div class="nav-group">Kapitel</div>
+        <a href="kapitel-1.html" class="nav-link"><span class="material-icons">looks_one</span>1 Einführung in die NKA</a>
+        <a href="kapitel-2.html" class="nav-link"><span class="material-icons">looks_two</span>2 NKA planen</a>
+        <a href="kapitel-3.html" class="nav-link"><span class="material-icons">looks_3</span>3 Information erheben</a>
+        <a href="kapitel-4.html" class="nav-link"><span class="material-icons">looks_4</span>4 Erfordernisse identifizieren</a>
+        <a href="kapitel-5.html" class="nav-link"><span class="material-icons">looks_5</span>5 NA ableiten</a>
+        <a href="kapitel-6.html" class="nav-link"><span class="material-icons">looks_6</span>6 Konsolidieren &amp; priorisieren</a>
+        <a href="kapitel-7.html" class="nav-link"><span class="material-icons">filter_7</span>7 Schnittstellen</a>
+        <div class="nav-group">Nachschlagen</div>
+        <a href="glossar.html" class="nav-link"><span class="material-icons">menu_book</span>Glossar</a>
+        <a href="ure-story.html" class="nav-link"><span class="material-icons">auto_stories</span>URE Story</a>
+        <a href="schablonen.html" class="nav-link"><span class="material-icons">text_fields</span>Formulierungsschablonen</a>
+        <a href="curriculum.html" class="nav-link"><span class="material-icons">library_books</span>Curriculum</a>
+    </nav>
+    <div class="sidebar-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54331 231.41233" width="100" aria-label="Micromata"><g style="isolation:isolate"><polygon fill="#009ba3" points="148.258 115.749 126.403 93.891 126.401 93.892 73.277 40.768 51.416 62.623 104.543 115.75 51.416 168.878 73.277 190.733 126.4 137.607 126.403 137.61 148.258 115.749"/><rect fill="#007480" x="110.9384" y="100.29035" width="30.91783" height="30.91093" transform="translate(297.62103 108.27464) rotate(135.02027)"/><polygon fill="#ffcb00" style="mix-blend-mode:multiply" points="248.142 40.767 226.287 62.621 279.411 115.75 226.287 168.876 248.142 190.735 301.268 137.609 323.129 115.747 248.142 40.767"/><polygon fill="#75be01" points="410.565 115.749 388.71 93.891 388.708 93.892 335.584 40.768 313.723 62.623 366.85 115.75 313.723 168.878 335.584 190.733 388.707 137.608 388.71 137.61 410.565 115.749"/><rect fill="#32912e" x="373.25004" y="100.28859" width="30.91285" height="30.91093" transform="translate(745.47512 -77.14329) rotate(135.02027)"/><polygon fill="#e10057" points="235.693 115.747 160.706 40.767 138.851 62.621 191.975 115.75 138.851 168.876 160.706 190.735 213.832 137.609 213.832 137.609 235.693 115.747"/><rect fill="#a70836" x="198.37947" y="100.29397" width="30.90915" height="30.91093" transform="translate(446.87971 46.37618) rotate(134.99583)"/><rect fill="#ff9d01" x="285.81339" y="100.29397" width="30.90915" height="30.91093" transform="translate(596.13425 -15.45344) rotate(134.99583)"/></g></svg>
+    </div>
+</aside>
+
+<div class="container">
+
+    <div class="header sub">
+        <p class="eyebrow">Übungen aus dem Seminar</p>
+        <h1>Ist-Szenario schreiben, Erfordernisse und Nutzungsanforderungen ableiten, Aufgabenmodell – mit Beispiellösungen</h1>
+    </div>
+
+    <!-- =========================================================
+         ÜBUNGEN AUS DEM SEMINAR (PDFs Spiegel Institut, Ordner Input/bungencpuxurtnbescheinigungrckmeldungslink)
+         ========================================================= -->
+    <section class="section" id="ueb-ist-szenario" data-uebung>
+        <div class="section-title"><div class="num"><span class="material-icons">history_edu</span></div><h2>Übung –Erstellen eines Ist-Szenarios</h2></div>
+        <p class="section-lead">Zur Praktischen Übung 5 (Folie S. 257) und zu den Prüfungsaufgaben Ist-Szenario und Interviewfehler. Deine Eingaben bleiben nur in diesem Browser gespeichert.</p>
+        <div class="card">
+            <p>In diesem Link auf ein YouTube-Video sehen Sie einen Mitschnitt eines Ist-Szenarios eines Kontextinterview zu den Aufgaben eines strategischen Einkäufers. Bitte erstellen Sie für Frage 6 ein Ist-Szenario.</p>
+            <p>Bitte identifizieren Sie ebenso die Interviewfehler.</p>
+            <p><a href="https://www.youtube.com/watch?v=_D7k2qJnvUQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=_D7k2qJnvUQ</a></p>
+            <h4 class="ex-h">Benutzergruppenprofil des Gesprächspartners</h4>
+            <table class="ex-table">
+                <thead><tr><th>Bezeichnung der Nutzergruppe</th><th>Erwartete Berufsausbildung und berufliche Tätigkeit</th><th>Demographische Merkmale</th><th>Aufgaben (Annahmen)</th><th>Erwartete IT-Kenntnisse / IT-Ausrüstung</th></tr></thead>
+                <tbody><tr><td><b>Strategischer Einkäufer</b></td>
+                    <td><ul><li>Großhandelskaufmann</li><li>Industriekaufmann</li></ul></td>
+                    <td><ul><li>männlich oder weiblich</li><li>30 – 65 Jahre</li></ul></td>
+                    <td><ul><li>Dienstleister für Projekte finden</li><li>Angebote mit Dienstleistern verhandeln</li></ul></td>
+                    <td><ul><li>Textverarbeitung</li><li>Tabellenkalkulation</li></ul></td></tr></tbody>
+            </table>
+            <h4 class="ex-h">Interviewleitfaden für das kontextuelle Interview</h4>
+            <ol class="ex-list">
+                <li>Welche Rolle nehmen Sie hier im Unternehmen wahr?</li>
+                <li>Wie lange üben Sie diese Tätigkeit bereits aus?</li>
+                <li>Welche Aufgaben erledigen Sie wiederkehrend im Rahmen Ihrer Tätigkeit?</li>
+                <li>Mit welchen Personen arbeiten Sie im Unternehmen zusammen?</li>
+                <li>Welche Aufgabe machen Sie am häufigsten?</li>
+                <li>Welche Dienstleistungen unterscheiden Sie?</li>
+                <li>Wie läuft die Zusammenarbeit zwischen der Einkaufsabteilung und den Abteilungen, die eine Dienstleistung benötigen? (Wer macht was?)</li>
+                <li>Was prüfen Sie im Detail bei jedem Angebot?</li>
+            </ol>
+            <div class="ex-task"><span class="ex-tag">Ist-Szenario zu Frage 6</span>
+                <textarea class="ex-input" data-save="u5-ist" rows="8" placeholder="Dein Ist-Szenario zu Frage 6 …"></textarea></div>
+            <details class="ex-sol"><summary><span class="material-icons">visibility</span>Beispiellösung für das Ist-Szenario anzeigen</summary>
+                <p><b>Ist-Szenario – Welche Dienstleistungen unterscheiden Sie?</b></p>
+                <p>Herr Winter unterscheidet folgende Kategorien von Dienstleistungen:</p>
+                <ul class="ex-list"><li>Entwicklungsdienstleistung</li><li>Beratungsdienstleistung</li></ul>
+                <p>In den meisten Fällen bieten Dienstleister genau eine dieser Dienstleistungsarten an.</p>
+                <p>Herr Winter hat in Excel bereit eine Liste aller Dienstleister, die min. 1 x tätig waren für seinen Arbeitgeber. Es sind insgesamt ca. 50 Unternehmen. Grundsätzlich greift Herr Winter bei der Dienstleisterauswahl auf bestehende Geschäftspartner zurück. Es sollen nicht wahllos neue Geschäftspartnerschaften entstehen. Das macht nur vermeidbare Arbeit.</p>
+                <p>Alle Dienstleister werden fortlaufend durch Herr Winter klassifiziert in einem A B C – Schema:</p>
+                <p>"A-Supplier" sind dadurch charakterisiert, dass sie mindestens 250 TEURO Jahresumsatz machen. Mit diesen Dienstleistern gibt es in aller Regel einen Rahmenvertrag, der die Tagessätze festlegt. A-Supplier sind vorrangig auszuwählen, da sie typisch günstige Konditionen haben.</p>
+                <p>"B-Supplier" sind diejenigen, die weniger als 250 T-EURO Jahresumsatz generieren.</p>
+                <p>"C-Supplier" sind typisch Einzelpersonen / "Freelancer". Diese verursachen "viel Arbeit", da sie häufig kleine Aufträge bekommen. Aus diesem Grund hat der Einkaufsleiter beschlossen, die Auftragsabwicklung an einen Subunternehmer outzusourcen. Dieser Subunternehmer beauftragt jetzt die C-Supplier direkt. Mitarbeiter von C-Supplier rufen hierzu schon mal bei Herr Winter an, weil sie sich fragen, warum jetzt kein Auftrag mehr direkt kommt und "was dahinter steckt".</p>
+            </details>
+            <div class="ex-task"><span class="ex-tag">Interviewfehler</span>
+                <textarea class="ex-input" data-save="u5-fehler" rows="5" placeholder="Zeitpunkt im Video · beobachteter Verhaltensfehler · Typ des Fehlers …"></textarea></div>
+            <details class="ex-sol"><summary><span class="material-icons">visibility</span>Beobachtete Verhaltensfehler des Interviewers (beispielhaft) anzeigen</summary>
+                <table class="ex-table">
+                    <thead><tr><th>Zeitpunkt im Video (nicht prüfungsrelevant)</th><th>Beobachtete Verhaltensfehler (Musterlösung kursiv eingetragen)</th><th>Typ des Fehlers (Musterlösung kursiv eingetragen)</th></tr></thead>
+                    <tbody>
+                    <tr><td>02:17</td><td><i>„So Herr Winter nach der kurzen Pause die wir doch einlegen mussten mit dem Telefonat äh machen wir jetzt weiter.“</i></td><td><i>Der Interviewer stellt Suggestivfragen oder geschlossene Fragen oder beachtet das Meister-Schüler-Modell nicht.</i></td></tr>
+                    <tr><td>04:50</td><td><i>“Ja Ich frag noch mal zu einer dieser Aufgabe nach. Ähm sie haben mir gesagt, dass es, dass zu den Aufgaben irgendwie auch dazu gehört, dass Sie Dienstleister anrufen. Äh kommt das häufig vor?” “Ja,”</i></td><td><i>Der Interviewer stellt Suggestivfragen oder geschlossene Fragen oder beachtet das Meister-Schüler-Modell nicht.</i></td></tr>
+                    <tr><td>05:54</td><td><i>„Also wir sind hier zurzeit insgesamt zu dritt. Ich habe noch eine Kollegin, die ist heute nicht da Äh, die hätten wir schön dazunehmen können Äh, die macht im Grunde genommen dasselbe wie ich…“ „Können sie kurz nochmal sagen, wie die Kollegin heißt?“</i></td><td><i>Der Interviewer stellt Suggestivfragen oder geschlossene Fragen oder beachtet das Meister-Schüler-Modell nicht.</i></td></tr>
+                    <tr><td>08:52</td><td><i>„Okay das könnte man also so verstehen, dass die Frau Schmidt äh also mit Frau Schmidt arbeiten Sie eher arbeitsteilig zusammen in Bezug auf unter-schiedliche Kunden und Angebote.“ „Ja, ja, ja.“ „Und während die Frau Müller ne sie sozusagen unterstützt und insgesamt haben Sie so ein Prozessthema, das ja was Sie sich dann wahrscheinlich auch mit Frau, wo sie dann mit Frau Schmidt auch immer mal im Kontakt sind dieses interne Prozess.</i></td><td><i>Der Interviewer stellt Suggestivfragen oder geschlossene Fragen oder beachtet das Meister-Schüler-Modell nicht.</i></td></tr>
+                    <tr><td>14:31</td><td><i>“Also da glaub ich ja, dass wir ein bisschen Glück hatten. Wir waren wahrscheinlich eher C.”</i></td><td><i>Der Interviewer verliert sich im Gespräch (statt wichtige Fragen zu thematisieren).</i></td></tr>
+                    <tr><td>19:50</td><td><i>“Sie würden sich schon wünschen, dass die Projektleiter mehr machen?” “Wenn ich ganz ehrlich bin ja.”</i></td><td><i>Der Interviewer stellt Suggestivfragen oder geschlossene Fragen oder beachtet das Meister-Schüler-Modell nicht.</i></td></tr>
+                    <tr><td>20:44</td><td><i>“Und lassen Sie mich raten, die füllen das nicht aus.” “Ja, ja und nein”</i></td><td><i>Der Interviewer stellt Suggestivfragen oder geschlossene Fragen oder beachtet das Meister-Schüler-Modell nicht.</i></td></tr>
+                    </tbody>
+                </table>
+            </details>
+            <p class="ex-src">Quelle: Übungen URE Seminar, Praktische Übungen (Spiegel Institut), <a href="../Input/bungencpuxurtnbescheinigungrckmeldungslink/CPUX-UR%20%C3%9CbungSchreibenIst-Szenario.pdf" target="_blank">CPUX-UR ÜbungSchreibenIst-Szenario.pdf</a></p>
+        </div>
+    </section>
+
+    <section class="section" id="ueb-frage4" data-uebung>
+        <div class="section-title"><div class="num"><span class="material-icons">edit_note</span></div><h2>Übung Erfordernisse-Nutzungsanforderungen Frage 4 Geschäftsreisender</h2></div>
+        <p class="section-lead">Zur Praktischen Übung 6 (Folie S. 277): Erfordernisse identifizieren, Nutzungsanforderungen ableiten, Aufgabenmodell erstellen und zuordnen.</p>
+        <div class="card">
+            <h4 class="ex-h">Einleitung:</h4>
+            <ul class="ex-list">
+                <li>Sie werden gleich eine Videoaufzeichnung gezeigt bekommen, in der ein Teil eines kontextuellen Interviews gezeigt wird. Die Videoaufzeichnung dauert ca. 30 Minuten.</li>
+                <li>Bevor die Aufzeichnung startet, haben Sie 5 Minuten Zeit,
+                    <ul><li>das Ziel der Nutzungskontextanalyse zu lesen,</li><li>das Benutzergruppenprofil zu lesen und</li><li>die 4 Fragen umfassende Interviewcheckliste zu lesen</li></ul></li>
+                <li>Zu Frage 1, 2 und Frage 4 der Interviewcheckliste finden Sie bereits den Text des Ist-Szenarios.</li>
+            </ul>
+            <h4 class="ex-h">Aufgabenstellung:</h4>
+            <ol class="ex-list">
+                <li>Komplettieren Sie das Ist-Szenario zu Frage 3 anhand der Ausführungen des Interviewteilnehmers in der Videoaufzeichnung. Schreiben Sie Ihr Ist-Szenario in die Tabelle im Abschnitt 3.5 rechts neben Frage 4.</li>
+                <li>Identifizieren Sie alle weiteren Benutzergruppen, die insgesamt im Ist-Szenario (Frage 1 – 4) vorkommen. Schreiben Sie hierzu alle Benutzergruppen in die Tabelle.</li>
+                <li>Identifizieren Sie alle Erfordernisse, die im Ausschnitt des Ist-Szenarios zu Frage 4 erkennbar sind. Schreiben Sie Ihre erkannten Erfordernisse in die Tabelle.</li>
+                <li>Leiten Sie anschließend alle Nutzungsanforderungen ab, die sich aus den von Ihnen identifizierten Erfordernissen herleiten lassen. Schreiben Sie Ihre abgeleiteten Nutzungsanforderungen ebenfalls in die gleiche Tabelle</li>
+                <li>Alle Ihre identifizierten Erfordernisse und Nutzungsanforderungen gehören zu einer (1) Aufgabe.
+                    <ol type="a"><li>Benennen Sie die Aufgabe, ihre Vorbedingung(en), ihre Nachbedingung(en)</li><li>Identifizieren Sie die Teilaufgaben, aus denen sich die Aufgabe zusammensetzt</li><li>Ordnen Sie Ihre identifizierten Nutzungsanforderungen der passenden Teilaufgabe zu.</li><li>Nutzen Sie hierzu die Tabelle</li></ol></li>
+                <li>Benennen Sie etwaige Verhaltensfehler des Interviewers, die Ihnen beim Betrachten der Videoaufzeichnung aufgefallen sind.</li>
+            </ol>
+        </div>
+        <div class="grid-2">
+            <div class="card">
+                <h4 class="ex-h">Ziel der Nutzungskontextanalyse</h4>
+                <p>Ein Hersteller von Apps für Smartphones sieht Potential für eine App, die Geschäftsreisende bei der Reisevorbereitung und Reisedurchführung effizient unterstützt.</p>
+                <p>Da unklar ist, was die Anforderungen an ein solches System sind, soll eine Nutzungskontextanalyse durch einen User Requirements Engineer durchgeführt werden.</p>
+            </div>
+            <div class="card">
+                <h4 class="ex-h">Interviewcheckliste für das kontextuelle Interview</h4>
+                <ol class="ex-list">
+                    <li>Wie oft reisen Sie geschäftlich und zu welchen Reisezielen?</li>
+                    <li>Wie entscheiden Sie im Einzelfall, ob Sie mit der Bahn, dem Firmen-PKW oder dem Flugzeug fliegen?</li>
+                    <li>Welches Verkehrsmittel bevorzugen Sie und warum?</li>
+                    <li>Welche Probleme erleben Sie mit den einzelnen Verkehrsmitteln bei Ihrer Geschäftsreise?</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card">
+            <h4 class="ex-h">Benutzergruppenprofil</h4>
+            <table class="ex-table">
+                <thead><tr><th>Bezeichnung der Nutzergruppe</th><th>Erwartete Berufsausbildung und berufliche Tätigkeit</th><th>Demographische Merkmale</th><th>Erwartete IT-Kenntnisse / IT-Ausrüstung</th></tr></thead>
+                <tbody><tr><td><b>Geschäftsreisender</b></td>
+                    <td><p>Abgeschlossene Berufsausbildung oder Studium in einem beliebigen Beruf</p><p>Außendienst-Tätigkeit, die häufige Reisetätigkeiten mit Geschäftsfahrzeug, Bahn und Flugzeug erfordert</p></td>
+                    <td>Männlich oder weiblich 25 – 65 Jahre</td>
+                    <td><ul><li>Smartphone</li><li>Notebook</li><li>E-Mail</li><li>Umgang mit elektronischen Kalendern</li></ul></td></tr></tbody>
+            </table>
+            <h4 class="ex-h">Auszug Ist-Szenario</h4>
+            <table class="ex-table ex-scen">
+                <thead><tr><th>Frage</th><th>Auszug Ist-Szenario</th></tr></thead>
+                <tbody>
+                <tr><td>1. Wie oft reisen Sie geschäftlich und zu welchen Reisezielen?</td><td>Herr Müller ist bei einem großen Dienstleistungsunternehmen im Vertriebsaußendienst. Herr Müller akquiriert für seinen Arbeitgeber Prozessaudits bei Herstellern von unterschiedlichsten Produkten. Ziel ist hierbei immer, bestehende Herstellungsprozesse auf Schwachstellen im Qualitätsmanagement hin zu untersuchen und konkrete Verbesserungen vorzuschlagen.<br>Er ist fast jede Woche von dienstags bis donnerstags auf Geschäftsreisen. Sein Zuständigkeitsbereich ist Deutschland, Österreich und die Schweiz. Er nutzt für Geschäftsreisen sowohl sein Firmenfahrzeug als auch die Bahn und das Flugzeug. Vor Ort beim potentiellen Kunden hat er es immer mit Budgetverantwortlichen für das Thema Qualität zu tun.<br>Meist reist er abends von der Geschäftsreise wieder nachhause. Es sei denn, er käme erst nach 21h abends zuhause an und muss morgens früh wieder raus. Das lohnt sich dann nicht für das Widersehen mit der Familie. In diesem Fall übernachtet er in einem Hotel am nächsten Zielort.</td></tr>
+                <tr><td>2. Wie entscheiden Sie im Einzelfall, ob Sie mit der Bahn, dem Firmen-PKW oder dem Flugzeug fliegen?</td><td>Die Entscheidung darüber, mit welchem Verkehrsmittel er zum Kunden fährt hängt stark von der Entfernung und der hiermit verbundenen Reisedauer ab. Herr Müller beginnt seine Geschäftsreise typisch von zuhause. Inzwischen fährt er meist mit der Bahn oder nimmt das Flugzeug, auch wenn er einen Firmenwagen hat. Wenn er weiß, dass er drei Tage am Stück verreist beginnt die Fahrt zuhause mit dem Taxi, da das unter dem Strich billiger ist als Parken am Flughafen.<br>Er entscheidet bei jedem Reiseziel aufs Neue, ob er mit der Bahn, dem PKW oder dem Flugzeug fährt. Es sei denn, das Reiseziel ist eines, das er schon mehrfach angefahren hat. Wenn er an einem Ziel noch nie war, kann es schon mal dauern, bis er die richtige Entscheidung getroffen hat. Hierzu sucht er dann auf bahn.de und bei Fluggesellschaften, wie lange die Reise dauert. Es zieht hierbei auch notwendige Taxifahrten in Betracht, diese können aber teuer werden. Vor Ort fährt er nie vor Ort mit lokalen Bussen oder Bahnen, da ihm das einfach zu lästig ist. Es erfordert zu viel Nachdenken und erzeugt nur Belege, die man für die spätere Abrechnung mit sich rumschleppen muss.</td></tr>
+                <tr><td>3. Welches Verkehrsmittel bevorzugen Sie und warum?</td><td>Szenario ist zu erstellen.
+                    <textarea class="ex-input" data-save="u6-ist3" rows="4" placeholder="Dein Ist-Szenario zu Frage 3 …"></textarea></td></tr>
+                <tr><td>4. Welche Probleme erleben Sie mit den einzelnen Verkehrsmitteln bei Ihrer Geschäftsreise?</td><td>Herr Müller fährt so spät wie möglich von zuhause los. Seine Ehefrau stresst das etwas, aber er sieht das eher gelassen. Sein Reiseplan für jeden der drei Tage (Dienstag, Mittwoch, Donnerstag) steht im Kalender seines Notebooks bzw. Smartphones. Das funktioniert bei der Fahrt zum Bahnhof ganz gut, da er hier eine sehr verkehrsruhige Strecke hat. Er braucht typisch max. 15 Minuten zum Bahnhof. Beim Flughafen ist das anderes. Hier muss er jedes Mal aufs Neue überlegen, wann er losfährt. Herr Müller vergisst dummerweise oft, sich zu informieren, ob die Bahnfahrt oder das Flugzeug sich verspäten. Wenn er das zufällig mitbekommt, fährt er noch später los. Er hat seine Tickets, egal ob Bahn oder Flugzeug in aller Regel bereits am letzten Freitag online gekauft. Eigentlich soll das seine Kollegin im Servicebüro machen, das ist ihm aber zu kompliziert, weswegen er es selbst macht. Trotzdem fährt Herr Müller üblicherweise genau eine Stunde vor Abflug des Flugzeugs los. Er braucht im Durchschnitt 20 Minuten zum Flughafen. Kürzlich fuhr er zum Flughafen mit dem Firmenwagen, um eine eintägige Geschäftsreise anzutreten. Als er am Flughafen ankam, waren alle Parkhäuser belegt. An jeder Zufahrt warteten schon10 Fahrzeuge. Herr Müller erwischte gerade noch seinen Flug, aber hätte er das geahnt, wäre er natürlich mit dem Taxi zum Flughafen gefahren.</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card">
+            <h4 class="ex-h">Weitere Benutzergruppen, die im obigen Szenario vorkommen:</h4>
+            <p class="ex-mute">Hinweis: Die Gesamtzahl der Benutzergruppen ist kleiner oder gleich 5. Die fünf Zeilen sollen nicht suggerieren, dass es sich um 5 Benutzergruppen handelt.</p>
+            <textarea class="ex-input" data-save="u6-gruppen" rows="5" placeholder="1. …"></textarea>
+            <details class="ex-sol"><summary><span class="material-icons">visibility</span>Lösung anzeigen</summary>
+                <table class="ex-table"><thead><tr><th>Nr</th><th>Benutzergruppe</th></tr></thead><tbody>
+                    <tr><td>1</td><td>Geschäftsreisender (Interviewpartner)</td></tr><tr><td>2</td><td>Budgetverantwortliche beim Kunden</td></tr>
+                    <tr><td>3</td><td>Ehefrau</td></tr><tr><td>4</td><td>Kollegin im Servicebüro</td></tr><tr><td>5</td><td></td></tr></tbody></table>
+            </details>
+        </div>
+        <div class="card">
+            <h4 class="ex-h">Erfordernisse und Nutzungsanforderungen</h4>
+            <details class="pu-schablonen" open><summary><span class="material-icons">text_fields</span>Formulierungsschablonen für diese Aufgabe</summary><div class="pu-sch-k"><div class="pu-sch-t">Formulierungsschablone (Syntax) für Erfordernisse <small>Folie S. 252</small> <a class="sm-link" href="schablonen.html#sch-252">bei allen Schablonen →</a></div><div class="schablone" data-titel="Formulierungsschablone (Syntax) für Erfordernisse" data-folie="S. 252"><div class="template">Die <span class="slot">&lt;Benutzergruppe&gt;</span> muss<br><span class="tpl-gruppe"><span class="tpl-zeilen"><span class="slot">&lt;Information&gt;</span> wissen /<br><span class="slot">&lt;Ressource&gt;</span> verfügbar haben /<br><span class="slot">&lt;Kompetenz/Fähigkeit&gt;</span> haben</span><span class="tpl-label">identifizierte Voraussetzung</span></span><br><span class="tpl-gruppe"><span class="tpl-zeilen">um <span class="slot">&lt;Entscheidung treffen&gt;</span> oder <span class="slot">&lt;Handlung ausführen&gt;</span> zu können.</span><span class="tpl-label">beabsichtigtes Ergebnis == Ziel</span></span></div></div></div><div class="pu-sch-k"><div class="pu-sch-t">Formulierungsschablone (Syntax) für qualitative Nutzungsanforderungen <small>Folie S. 264</small> <a class="sm-link" href="schablonen.html#sch-264">bei allen Schablonen →</a></div><div class="schablone" data-titel="Formulierungsschablone (Syntax) für qualitative Nutzungsanforderungen" data-folie="S. 264"><div class="template">Der Benutzer muss am System eine <span class="slot">&lt;Information oder Ressource&gt;</span><br><span class="tpl-gruppe"><span class="tpl-zeilen">eingeben /<br>auswählen /<br>erkennen können</span><span class="tpl-label">Anforderung an die Nutzung</span></span><br>unter <span class="slot">&lt;Bedingung (optional)&gt;</span>.</div></div></div></details>
+            <div class="ex-two">
+                <label>Identifizierte Erfordernisse<br><small>(Bitte nummerieren, E1, E2, E3, …)</small><textarea class="ex-input" data-save="u6-e" rows="12" placeholder="E1 Der GR muss wissen, …, um …"></textarea></label>
+                <label>Abgeleitete Nutzungsanforderungen<br><small>(Bitte nummerieren, NA1, NA2, NA3, …)</small><textarea class="ex-input" data-save="u6-na" rows="12" placeholder="NA1 Der GR muss am System … können."></textarea></label>
+            </div>
+            <details class="ex-sol"><summary><span class="material-icons">visibility</span>Lösung anzeigen</summary>
+                <table class="ex-table ex-sol3">
+                    <thead><tr><th>Ist-Szenario zu Frage 4 der Interviewcheckliste</th><th>Identifizierte Erfordernisse</th><th>Abgeleitete Nutzungsanforderungen</th></tr></thead>
+                    <tbody>
+                    <tr><td>Herr Müller fährt so spät wie möglich von zuhause los. Seine Ehefrau stresst das etwas, aber er sieht das eher gelassen. Sein Reiseplan für jeden der drei Tage (Dienstag, Mittwoch, Donnerstag) steht im Kalender seines Notebooks bzw. Smartphones.</td>
+                        <td><p><b>E10:</b> Der GR muss zu Hause starten, um zum Abfahrtsort des HVM (Bahn oder Flugzeug) zu fahren.</p><p><b>E1:</b> Der GR muss wissen, ob eine Geschäftsreise ansteht, um diese antreten zu können.</p><p><b>E2:</b> Der GR muss die Abfahrtszeit des Hauptverkehrsmittel (HVM) kennen, um entscheiden zu können wann er von zu Hause startet.</p></td>
+                        <td><p><b>NA10:</b> Der GR muss am System erkennen können, dass er losfahren muss.</p><p><b>NA1:</b> Der GR muss am System erkennen können, ob eine Geschäftsreise ansteht (etwa, ob ein Reiseplan für den Tag vorliegt).</p><p><b>NA2:</b> Der GR muss am System die geplante Abfahrtszeit des HVM erkennen können.</p></td></tr>
+                    <tr><td>Das funktioniert bei der Fahrt zum Bahnhof ganz gut, da er hier eine sehr verkehrsruhige Strecke hat. Er braucht typisch max. 15 Minuten zum Bahnhof. Beim Flughafen ist das anderes. Hier muss er jedes Mal aufs Neue überlegen, wann er losfährt.</td>
+                        <td><p><b>E3:</b> Der GR muss das HVM kennen, um den Ort der Abfahrt (Bahnhof, Flughafen) zu kennen.</p><p><b>E4:</b> Der GR muss die Dauer der Anfahrzeit zum HVM kennen, um den Start zu Hause festzulegen.</p></td>
+                        <td><p><b>NA3-1:</b> Der GR muss am System erkennen können, welches HMV er nutzt.</p><p><b>NA3-2:</b> Der GR muss am System den Abfahrtsort des HMV erkennen können.</p><p><b>NA4:</b> Der GR muss am System die benötigte Zeit zum Abfahrtsort des HVM kennen.</p></td></tr>
+                    <tr><td>Herr Müller vergisst dummerweise oft, sich zu informieren, ob die Bahnfahrt oder das Flugzeug sich verspäten. Wenn er das zufällig mitbekommt, fährt er noch später los.</td>
+                        <td><p><b>E5:</b> Der GR muss wissen, ob sich das HVM verspätet, um den Start zu Hause zu verschieben.</p><p><b>E6:</b> Der GR muss die Verspätung des HVM kennen, um den Start zu Hause festzulegen</p></td>
+                        <td><p><b>NA5:</b> Der GR muss am System erkennen können, ob sich das HVM verspätet.</p><p><b>NA6:</b> Der GR muss am System die Verspätung (tatsächliche Abfahrtzeit) des HMV erkennen können.</p></td></tr>
+                    <tr><td>Er hat seine Tickets, egal ob Bahn oder Flugzeug in aller Regel bereits am letzten Freitag online gekauft. Eigentlich soll das seine Kollegin im Servicebüro machen, das ist ihm aber zu kompliziert, weswegen er es selbst macht.</td>
+                        <td><p><b>E7:</b> Der GR muss wissen, ob er ein Ticket für das HVM hat, um mit diesem legal fahren zu können.</p><p><b>E8:</b> Der GR muss ein Ticket kaufen können, wenn er keines hat, um mit dem HVM legal fahren zu können.</p></td>
+                        <td><p><b>NA7:</b> Der GR muss am System erkennen können, ob er ein Ticket für das HMV hat.</p><p><b>NA8:</b> Der GR muss am System ein Ticket für das HVM kaufen können.</p></td></tr>
+                    <tr><td>Trotzdem fährt Herr Müller üblicherweise genau eine Stunde vor Abflug des Flugzeugs los. Er braucht im Durchschnitt 20 Minuten zum Flughafen. Kürzlich fuhr er zum Flughafen mit dem Firmenwagen, um eine eintägige Geschäftsreise anzutreten.</td><td></td><td></td></tr>
+                    <tr><td>Als er am Flughafen ankam, waren alle Parkhäuser belegt. An jeder Zufahrt warteten schon10 Fahrzeuge. Herr Müller erwischte gerade noch seinen Flug, aber hätte er das geahnt, wäre er natürlich mit dem Taxi zum Flughafen gefahren.</td>
+                        <td><p><b>E9:</b> Der GR muss die Parksituation am Flughafen (Startort des HVM) kennen, um sich für das Verkehrsmittel zur Anfahrt zum HVM zu entscheiden.</p></td>
+                        <td><p><b>NA9:</b> Der GR muss am System die Parksituation am Flughafen erkennen können falls er mit dem eigenen Wagen anreist.</p></td></tr>
+                    </tbody>
+                </table>
+            </details>
+        </div>
+        <div class="card">
+            <h4 class="ex-h">Aufgabenmodell</h4>
+            <table class="ex-table ex-form">
+                <tr><th>Titel der Aufgabe</th><td><textarea class="ex-input" data-save="u6-titel" rows="1"></textarea></td></tr>
+                <tr><th>Vorbedingung</th><td><textarea class="ex-input" data-save="u6-vor" rows="2"></textarea></td></tr>
+                <tr><th>Nachbedingung</th><td><textarea class="ex-input" data-save="u6-nach" rows="2"></textarea></td></tr>
+            </table>
+            <div class="ex-two">
+                <label>Teilaufgabe<textarea class="ex-input" data-save="u6-ta" rows="9" placeholder="TA1: …"></textarea></label>
+                <label>Zugeordnete Nutzungsanforderung, z.B. NA1, NA7 …<textarea class="ex-input" data-save="u6-ta-na" rows="9" placeholder="NA1"></textarea></label>
+            </div>
+            <details class="ex-sol"><summary><span class="material-icons">visibility</span>Lösung anzeigen</summary>
+                <table class="ex-table ex-form">
+                    <tr><th>Titel der Aufgabe</th><td>Eine Geschäftsreise antreten</td></tr>
+                    <tr><th>Vorbedingung</th><td>Geschäftsreise steht an</td></tr>
+                    <tr><th>Nachbedingung</th><td>Das HVM ist rechtzeitig erreicht</td></tr>
+                </table>
+                <p><b>Zuordnung der Nutzungsanforderungen zu Teilaufgaben</b></p>
+                <table class="ex-table">
+                    <thead><tr><th>Teilaufgabe</th><th>Zugeordnete Nutzungsanforderung, z.B. NA1, NA7 …</th></tr></thead>
+                    <tbody>
+                    <tr><td>TA1: Wissen, dass eine Geschäftsreise ansteht.</td><td>NA1</td></tr>
+                    <tr><td>TA2: Wissen, ob er ein Ticket für das HVM hat. Wenn kein Ticket vorhanden ist, eines kaufen.</td><td>NA7; NA8</td></tr>
+                    <tr><td>TA3: Wissen was das HVM ist.</td><td>NA3-1</td></tr>
+                    <tr><td>TA4: Wissen wann das HVM startet.</td><td>NA2</td></tr>
+                    <tr><td>TA5: Auf Verspätungen des HVM prüfen.</td><td>NA5; NA6</td></tr>
+                    <tr><td>TA6: Entscheiden welches Verkehrsmittel er zum HVM nimmt.</td><td>NA3-2; NA4; NA9</td></tr>
+                    <tr><td>TA7: Abfahrtzeit zu Hause festlegen.</td><td>NA2; NA4; NA6</td></tr>
+                    <tr><td>TA8: zu Hause starten</td><td>NA10</td></tr>
+                    </tbody>
+                </table>
+            </details>
+            <p class="ex-src">Quelle: Aufgaben und Übungen zum Seminar CPUX-UR, © UXQB und Spiegel Institut, <a href="../Input/bungencpuxurtnbescheinigungrckmeldungslink/CPUX-UR%20%C3%9Cbung6%20BspL%C3%B6sung%20Frage4%20Gesch%C3%A4ftsreisender.pdf" target="_blank">CPUX-UR Übung6 BspLösung Frage4 Geschäftsreisender.pdf</a></p>
+        </div>
+    </section>
+
+    <section class="section" id="ueb-frage2" data-uebung>
+        <div class="section-title"><div class="num"><span class="material-icons">alt_route</span></div><h2>Beispiellösung zu Frage 2 öffentliche praktische Prüfung, CPUX-UR</h2></div>
+        <p class="section-lead">Zur Praktischen Übung 6 (Folie S. 277): dieselbe Übung mit dem Ist-Szenario zu Frage 2 (siehe Auszug Ist-Szenario oben).</p>
+        <div class="card">
+            <p><b>Aufgabe:</b> Geeignetes Verkehrsmittel für Geschäftsreise auswählen</p>
+            <div class="ex-two">
+                <label>Identifiziertes Erfordernis<textarea class="ex-input" data-save="u6f2-e" rows="12" placeholder="E1 Der GR muss …, um …"></textarea></label>
+                <label>Abgeleitete Nutzungsanforderung<textarea class="ex-input" data-save="u6f2-na" rows="12" placeholder="NA1 Der GR muss am System … können."></textarea></label>
+            </div>
+            <details class="ex-sol"><summary><span class="material-icons">visibility</span>Beispiellösung anzeigen</summary>
+                <table class="ex-table ex-sol3">
+                    <thead><tr><th>Ist-Szenario</th><th>Identifiziertes Erfordernis</th><th>Abgeleitete Nutzungsanforderung</th></tr></thead>
+                    <tbody>
+                    <tr><td>Die Entscheidung darüber, mit welchem Verkehrsmittel (VM) er zum Kunden fährt, hängt stark von der Entfernung und der hiermit verbundenen Reisedauer ab.</td>
+                        <td><p>E0: Der Geschäftsreisende (GR) muss die Adresse des Kunden kennen, um die Reise planen zu können.</p><p>E1: Der GR muss die Entfernung zum Kunden wissen, um das VM entscheiden zu können.</p><p>E2: Der GR muss die Reisedauer wissen, um das VM entscheiden zu können.</p></td>
+                        <td><p>NA0: Der GR muss die Adresse des Kunden am System eingeben können.</p><p>NA1: Der GR muss am System die Entfernung erkennen können.</p><p>NA2: Der GR muss am System die Reisedauer erkennen können.</p></td></tr>
+                    <tr><td>Herr Müller beginnt seine Geschäftsreise typischerweise von zuhause.</td>
+                        <td><p>E23: Der GR muss den Startpunkt der Reise kennen, um die Reise planen zu können.</p></td>
+                        <td><p>NA23.1: Der GR muss am System den Startpunkt der Reise auswählen können.</p><p>NA23.2: Der GR muss am System, die Adresse des Startpunktes eingeben können.</p></td></tr>
+                    <tr><td>Inzwischen fährt er meist mit der Bahn oder nimmt das Flugzeug, auch wenn er einen Firmenwagen hat. Wenn er weiß, dass er drei Tage am Stück verreist, beginnt die Fahrt zuhause mit dem Taxi, da das unter dem Strich billiger ist als Parken am Flughafen.</td>
+                        <td><p>E20: Der GR muss die Reisedaten (Start- und Enddatum) wissen, um die Anfahrt zum Flughafen entscheiden zu können.</p><p>E21: Der GR muss den Preis für das Parken wissen, um die Anfahrt zum Flughafen entscheiden zu können.</p><p>E22: Der GR muss den Preis für das Taxi wissen, um die Anfahrt zum Flughafen entscheiden zu können.</p></td>
+                        <td><p>NA20.1: Der GR muss am System die Reisedaten eingeben können.</p><p>NA20.2: Der GR muss am System die Aufenthaltsdauer erkennen können.</p><p>NA21: Der GR muss am System die Parkkosten am Flughafen erkennen können.</p><p>NA22: Der GR muss am System die Taxikosten erkennen können.</p></td></tr>
+                    <tr><td>Er entscheidet bei jedem Reiseziel aufs Neue, ob er mit der Bahn, dem PKW oder dem Flugzeug reist. Es sei denn, das Reiseziel ist eines, das er schon mehrfach angefahren hat. Wenn er an einem Ziel noch nie war, kann es schon mal dauern, bis er die richtige Entscheidung getroffen hat. Hierzu sucht er dann auf bahn.de und bei Fluggesellschaften, wie lange die Reise dauert. Er zieht hierbei auch notwendige Taxifahrten in Betracht, diese können aber teuer werden.</td>
+                        <td><p>E3: Der GR muss die Anzahl der Besuche wissen, um sich für eine Reiseplanung zu entscheiden.</p><p>E2</p><p>E4: Der GR muss die Kosten des Taxis vor Ort kennen, um die Reiseplanung entscheiden zu können.</p><p>E5: Der GR muss die Gesamtkosten aller VM kennen, um das VM entscheiden zu können.</p></td>
+                        <td><p>NA3 Der GR muss am System die Anzahl der Besuche bei dieser Adresse erkennen können.</p><p>NA2</p><p>NA4: Der GR muss am System die Taxikosten vor Ort erkennen können.</p><p>NA5: Der GR muss am System die Gesamtkosten der Verkehrsmittel erkennen können.</p></td></tr>
+                    <tr><td>Vor Ort fährt er nie mit lokalen Bussen oder Bahnen, da ihm das einfach zu lästig ist. Es erfordert zu viel Nachdenken und erzeugt nur Belege, die man für die spätere Abrechnung mit sich rumschleppen muss.</td>
+                        <td><p>E6: Der GR muss vor Ort einfach reisen können, um nicht nachdenken zu müssen. (Bedürfnis)</p><p>E7: Der GR muss wenig Belege sammeln müssen, um wenig Aufwand zu haben. (Bedürfnis)</p></td>
+                        <td><p>NA6: Der GR muss am System die Anfahrt zum Kunden vor Ort einfach und ohne Nachdenken erkennen können.</p><p>NA7: Der GR muss am System Belege eingeben können.</p></td></tr>
+                    </tbody>
+                </table>
+            </details>
+        </div>
+        <div class="card">
+            <h4 class="ex-h">Aufgabenmodell mit zugeordneten Nutzungsanforderungen</h4>
+            <div class="ex-two">
+                <label>Modell (VB, TA1 …, NB)<textarea class="ex-input" data-save="u6f2-ta" rows="9" placeholder="VB …"></textarea></label>
+                <label>Nutzungsanforderungen<textarea class="ex-input" data-save="u6f2-ta-na" rows="9" placeholder="NA…"></textarea></label>
+            </div>
+            <details class="ex-sol"><summary><span class="material-icons">visibility</span>Beispiellösung anzeigen</summary>
+                <p><b>Aufgabe:</b> Geeignetes Verkehrsmittel (VM) für Dienstreise entscheiden.</p>
+                <table class="ex-table">
+                    <thead><tr><th></th><th>Modell</th><th>Nutzungsanforderungen</th></tr></thead>
+                    <tbody>
+                    <tr><td>VB</td><td>Dienstreise steht an, Reisedaten und Kundenadresse bekannt</td><td></td></tr>
+                    <tr><td>TA1</td><td>Kundenadresse eingeben und feststellen wie oft schon dort gewesen<br>→ mehrmals dort gewesen j/n<br>→ ja = Aufgabe beendet</td><td>NA0, NA3</td></tr>
+                    <tr><td>TA2</td><td>Startpunkt der Reise und Reisedaten eingeben</td><td>NA23.1, NA23.2, NA20.1</td></tr>
+                    <tr><td>TA3</td><td>Reisedauer und Reiseentfernung feststellen</td><td>NA1, NA2</td></tr>
+                    <tr><td>TA4</td><td>Reisekosten VM feststellen</td><td>NA5, NA4</td></tr>
+                    <tr><td>TA5</td><td>für VM entscheiden, wenn Flugzeug dann TA6/7</td><td>NA2, NA5, NA6, NA7</td></tr>
+                    <tr><td>TA6</td><td>Aufenthaltsdauer feststellen</td><td>NA20.2</td></tr>
+                    <tr><td>TA7</td><td>Anfahrt Taxi oder PKW entscheiden</td><td>NA21, NA22</td></tr>
+                    <tr><td>NB</td><td>Entscheidung für alle VM getroffen</td><td></td></tr>
+                    </tbody>
+                </table>
+            </details>
+            <p class="ex-src">Quelle: Aufgaben und Übungen zum Seminar CPUX-UR, © UXQB und Spiegel Institut, <a href="../Input/bungencpuxurtnbescheinigungrckmeldungslink/CPUX-UR%20%C3%9Cbung6%20BspL%C3%B6sung%20Frage2%20Gesch%C3%A4ftsreisender.pdf" target="_blank">CPUX-UR Übung6 BspLösung Frage2 Geschäftsreisender.pdf</a></p>
+            <div class="ex-actions"><button class="btn" id="uebReset"><span class="material-icons">restart_alt</span>Alle Eingaben auf dieser Seite löschen</button></div>
+        </div>
+    </section>
+
+    <nav class="pager"><a class="prev" href="pruefung-praxis.html"><span class="material-icons">chevron_left</span><span><small>Zurück</small>Praktische Prüfung</span></a><a class="next" href="kapitel-1.html"><span><small>Weiter</small>1 Einführung in die NKA</span><span class="material-icons">chevron_right</span></a></nav>
+
+    <footer>Lernmaterial auf Basis der CPUX-UR-Seminarunterlagen (Spiegel Institut, 2026) nach UXQB CPUX-F Curriculum V4.01 und ISO 9241-210:2019. Nur für den internen Gebrauch.</footer>
+</div>
+
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drTitle">
+    <div class="dr-head">
+        <button class="dr-close" id="drClose" aria-label="Schließen"><span class="material-icons">close</span></button>
+        <div class="dr-icon"><span class="material-icons" id="drIcon">info</span></div>
+        <h3 id="drTitle"></h3>
+        <div class="dr-tags" id="drTags"></div>
+    </div>
+    <div class="dr-body" id="drBody"></div>
+    <div class="dr-foot">
+        <div class="dr-nav">
+            <button class="btn" id="drPrev" title="Vorheriger Prozessschritt"><span class="material-icons">chevron_left</span></button>
+            <button class="btn" id="drNext" title="Nächster Prozessschritt"><span class="material-icons">chevron_right</span></button>
+        </div>
+        <a class="btn on" id="drLink" href="#"><span class="material-icons">open_in_full</span>Zur Detailkarte</a>
+    </div>
+</aside>
+
+<button class="back-to-top" id="backToTop" aria-label="Zurück nach oben"><span class="material-icons" style="font-size:26px">arrow_upward</span></button>
+
+<script src="lern-daten.js"></script>
+<script src="landkarte.js"></script>
+<script src="folien-daten.js"></script>
+<script src="folien.js"></script>
+<script src="hervorhebung-daten.js"></script>
+<script src="hervorhebung.js"></script>
+<script src="detail.js"></script>
+<script src="prozessgrafik.js"></script>
+<script src="pruefung-daten.js"></script>
+<script src="pruefung.js"></script>
+<script src="lernen.js"></script>
+<script src="ausrichten.js"></script>
+</body>
+</html>

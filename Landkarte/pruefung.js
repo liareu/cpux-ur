@@ -222,3 +222,18 @@ if (praxisScore) {
         fields.forEach(f => { f.value = ''; }); total();
     });
 }
+
+/* ---------- Übungen aus dem Seminar ---------- */
+if (document.querySelector('[data-uebung]')) {
+    const KEY = 'cpuxUebungen', U = store.get(KEY, {});
+    const felder = [...document.querySelectorAll('[data-uebung] [data-save]')];
+    felder.forEach(f => {
+        if (U[f.dataset.save] != null) f.value = U[f.dataset.save];
+        f.addEventListener('input', () => { U[f.dataset.save] = f.value; store.set(KEY, U); });
+    });
+    const reset = document.getElementById('uebReset');
+    if (reset) reset.addEventListener('click', () => {
+        if (!confirm('Alle Eingaben auf dieser Seite löschen?')) return;
+        Object.keys(U).forEach(k => delete U[k]); store.set(KEY, U); felder.forEach(f => { f.value = ''; });
+    });
+}
