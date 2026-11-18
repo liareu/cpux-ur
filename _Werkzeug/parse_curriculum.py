@@ -206,7 +206,7 @@ def slug(s):
     return re.sub(r'[^a-z0-9]+', '-', s).strip('-')[:60]
 
 
-PDF = '../CPUX-UR_DE_Curriculum-und-Glossar.pdf'
+PDF = '../Input/CPUX-UR_DE_Curriculum-und-Glossar.pdf'
 out_h, toc, terms = [], [], []
 open_sec = False
 for typ, d in blocks:

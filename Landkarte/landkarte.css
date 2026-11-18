@@ -1738,3 +1738,13 @@ details.mehr[open] > summary .mehr-pfeil { transform: rotate(-135deg); margin-bo
 .pg-vgl.breit { grid-template-columns: 210px repeat(var(--n), minmax(0, 1fr)); }
 .pg-vgl.breit .pg-vgl-nr { align-items: stretch; padding-top: 0; font-size: 13.5px; font-weight: 700; }
 .pg-vgl.breit .pg-vgl-nr .pg-el { text-align: left; width: 100%; height: 100%; }
+
+/* PDF-Verweise und Beginn der praktischen Prüfung */
+.pu-pdfs { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 4px; }
+.pu-pdfs .pu-pdf { margin: 0; }
+.pp-start { background: #111; color: white; border-radius: 6px; padding: 26px 32px; margin: 56px 0 36px; display: grid; grid-template-columns: 1fr auto; gap: 6px 24px; align-items: center; scroll-margin-top: 20px; }
+.pp-start-k { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 800; }
+.pp-start-k .material-icons { font-size: 26px; }
+.pp-start-t { grid-column: 1; font-size: 14.5px; color: #e5e5e5; }
+.pp-start-pdf { grid-column: 2; grid-row: 1 / span 2; display: inline-flex; align-items: center; gap: 8px; border: 1px solid white; border-radius: 4px; padding: 8px 14px; color: white !important; text-decoration: none !important; font-weight: 650; white-space: nowrap; }
+.pp-start-pdf:hover { background: white; color: #111 !important; }
