@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6 Konsolidieren &amp; priorisieren | CPUX-UR Prozess-Landkarte</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landkarte.css">
+<link rel="stylesheet" href="lernen.css">
+</head>
+<body>
+
+<button class="sb-toggle" id="sbToggle" aria-label="Navigation ein- oder ausblenden" title="Navigation ein-/ausblenden"><span class="material-icons" id="sbIcon">menu_open</span></button>
+
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <span class="ux-lab-pill">UX Lab</span>
+        <h2>CPUX-UR Prozess-Landkarte</h2>
+        <p>Lernbegleiter zum Training, Stand Folie S. 300</p>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+        <div class="nav-group">Überblick</div>
+        <a href="dashboard.html" class="nav-link"><span class="material-icons">dashboard</span>Lern-Cockpit</a>
+        <a href="index.html" class="nav-link"><span class="material-icons">map</span>Prozesskarte</a>
+        <a href="seminar.html" class="nav-link"><span class="material-icons">school</span>Zum Seminar</a>
+        <div class="nav-group">Lernen</div>
+        <a href="zusammenhang.html" class="nav-link"><span class="material-icons">hub</span>Alles im Zusammenhang</a>
+        <a href="schaubilder.html" class="nav-link"><span class="material-icons">account_tree</span>Schaubilder</a>
+        <a href="lernziele.html" class="nav-link"><span class="material-icons">checklist</span>Lernziele des Curriculums</a>
+        <a href="selbsttest.html" class="nav-link"><span class="material-icons">style</span>Selbsttest Begriffe</a>
+        <div class="nav-group">Kapitel</div>
+        <a href="kapitel-1.html" class="nav-link"><span class="material-icons">looks_one</span>1 Einführung in die NKA</a>
+        <a href="kapitel-2.html" class="nav-link"><span class="material-icons">looks_two</span>2 NKA planen</a>
+        <a href="kapitel-3.html" class="nav-link"><span class="material-icons">looks_3</span>3 Information erheben</a>
+        <a href="kapitel-4.html" class="nav-link"><span class="material-icons">looks_4</span>4 Erfordernisse identifizieren</a>
+        <a href="kapitel-5.html" class="nav-link"><span class="material-icons">looks_5</span>5 NA ableiten</a>
+        <a href="kapitel-6.html" class="nav-link active"><span class="material-icons">looks_6</span>6 Konsolidieren &amp; priorisieren</a>
+        <div class="nav-sub"><a href="#konsolidieren-6">6. Nutzungsanforderungen konsolidieren</a><a href="#kano">Kano-Schema (Kano scheme)</a><a href="#ure-6-1">URE Story</a><a href="#umsetzung-62">6. Nutzungsanforderungen konsolidieren</a><a href="#priorisierung">Priorisierung (prioritization)</a><a href="#na-in-hcd">Qualitative Nutzungsanforderungen in der Menschzentrierten Gestaltung</a><a href="#ure-6-2">URE Story</a></div>
+        <a href="kapitel-7.html" class="nav-link"><span class="material-icons">filter_7</span>7 Schnittstellen</a>
+        <div class="nav-group">Prüfung</div>
+        <a href="pruefung-theorie.html" class="nav-link"><span class="material-icons">quiz</span>Theoretische Prüfung</a>
+        <a href="pruefung-praxis.html" class="nav-link"><span class="material-icons">assignment</span>Praktische Prüfung</a>
+        <div class="nav-group">Nachschlagen</div>
+        <a href="glossar.html" class="nav-link"><span class="material-icons">menu_book</span>Glossar</a>
+        <a href="ure-story.html" class="nav-link"><span class="material-icons">auto_stories</span>URE Story</a>
+        <a href="schablonen.html" class="nav-link"><span class="material-icons">text_fields</span>Formulierungsschablonen</a>
+        <a href="curriculum.html" class="nav-link"><span class="material-icons">library_books</span>Curriculum</a>
+    </nav>
+    <div class="sidebar-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54331 231.41233" width="100" aria-label="Micromata"><g style="isolation:isolate"><polygon fill="#009ba3" points="148.258 115.749 126.403 93.891 126.401 93.892 73.277 40.768 51.416 62.623 104.543 115.75 51.416 168.878 73.277 190.733 126.4 137.607 126.403 137.61 148.258 115.749"/><rect fill="#007480" x="110.9384" y="100.29035" width="30.91783" height="30.91093" transform="translate(297.62103 108.27464) rotate(135.02027)"/><polygon fill="#ffcb00" style="mix-blend-mode:multiply" points="248.142 40.767 226.287 62.621 279.411 115.75 226.287 168.876 248.142 190.735 301.268 137.609 323.129 115.747 248.142 40.767"/><polygon fill="#75be01" points="410.565 115.749 388.71 93.891 388.708 93.892 335.584 40.768 313.723 62.623 366.85 115.75 313.723 168.878 335.584 190.733 388.707 137.608 388.71 137.61 410.565 115.749"/><rect fill="#32912e" x="373.25004" y="100.28859" width="30.91285" height="30.91093" transform="translate(745.47512 -77.14329) rotate(135.02027)"/><polygon fill="#e10057" points="235.693 115.747 160.706 40.767 138.851 62.621 191.975 115.75 138.851 168.876 160.706 190.735 213.832 137.609 213.832 137.609 235.693 115.747"/><rect fill="#a70836" x="198.37947" y="100.29397" width="30.90915" height="30.91093" transform="translate(446.87971 46.37618) rotate(134.99583)"/><rect fill="#ff9d01" x="285.81339" y="100.29397" width="30.90915" height="30.91093" transform="translate(596.13425 -15.45344) rotate(134.99583)"/></g></svg>
+    </div>
+</aside>
+
+<div class="container">
+
+    <div class="header sub">
+        <p class="eyebrow">Kapitel 6</p>
+        <h1>Nutzungsanforderungen konsolidieren</h1>
+    </div>
+
+    <section class="section" id="konsolidieren-6">
+        <div class="section-title"><div class="num"><span class="material-icons">fact_check</span></div><h2>6. Nutzungsanforderungen konsolidieren</h2></div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>6. Nutzungsanforderungen konsolidieren</h3>
+            <p>6.1 – Nutzungsanforderungen mit Benutzern konsolidieren und priorisieren</p><p>6.2 – Die Umsetzungspriorität von Nutzungsanforderungen mit Projektbeteiligten festlegen</p><p>Sicherstellen, dass erhobene Nutzungsanforderungen durch Benutzende als vollständig und richtig bestätigt werden (Konsolidierung) und die jeweilige Relevanz jeder Nutzungsanforderung eingestuft ist, so dass die Priorisierung für die Umsetzung aus Projektsicht festgelegt werden kann.</p><p>Nutzungsanforderungen mit Nutzenden priorisieren ⇨ Umsetzung im Projektteam festlegen</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 279</span>
+        </div>
+    </section>
+    <section class="section" id="kano">
+        <div class="section-title"><div class="num"><span class="material-icons">sentiment_satisfied</span></div><h2>Kano-Schema (Kano scheme)</h2></div>
+        <div class="card" id="kano-schema">
+            <h3><span class="material-icons">menu_book</span>Kano-Schema (Kano scheme)</h3>
+            <div class="box pink"><div class="box-title">Definition</div>Ein Einstufungssystem für die Priorität von qualitativen Nutzungsanforderungen oder (daraus abgeleiteten) Funktionen eines interaktiven Systems aus Benutzersicht.</div><div class="kano-grid"><div><svg class="kano-svg" viewBox="0 0 700 300" role="img" aria-label="Kano-Schema (Kano scheme)">
+<defs><marker id="kpf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#111"/></marker></defs>
+<line x1="40" y1="150" x2="440" y2="150" stroke="#111" stroke-width="1.2" marker-end="url(#kpf)"/><line x1="240" y1="290" x2="240" y2="14" stroke="#111" stroke-width="1.2" marker-end="url(#kpf)"/>
+<path d="M60,140 C230,138 340,100 420,16" fill="none" stroke="#2563eb" stroke-width="3"/>
+<path d="M70,270 L420,62" fill="none" stroke="#111" stroke-width="3"/>
+<path d="M60,285 C150,200 260,178 420,170" fill="none" stroke="#6b7280" stroke-width="3"/>
+<text x="250" y="16" font-size="13">Kundenzufriedenheit</text><text x="450" y="146" font-size="13">Erfüllung der Kundenanforderungen</text>
+<text x="428" y="20" font-size="13" font-weight="700" fill="#2563eb">Begeisterungsmerkmale</text><text x="428" y="66" font-size="13" font-weight="700">Leistungsmerkmale</text><text x="428" y="182" font-size="13" font-weight="700" fill="#6b7280">Basismerkmale</text>
+</svg></div><div><table class="criteria kano-tab"><tr><th></th><th></th><th></th></tr><tr><td><b>Begeisterungsmerkmale</b></td><td>→ Begeisterung</td><td>Sonderausstattung, besonderes Design</td></tr><tr><td><b>Leistungsmerkmale</b></td><td>→ Zufriedenheit</td><td>Fzg.: Fahreigenschaften, Lebensdauer, Verbrauch</td></tr><tr><td><b>Basismerkmale</b></td><td>→ keine Unzufriedenheit</td><td>Fzg.: Sicherheit, Rostschutz</td></tr></table><p><b>weitere Merkmale</b></p><ul><li>unerhebliche Merkmale</li><li>Rückweisungsmerkmale</li></ul></div></div><p class="ex-mute">S. 281 ist nicht fotografiert.</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 280</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Vorgehen Kano-Schema</h3>
+            <p>Es werden jeweils 5 – 15 Personen einer Benutzergruppe (Vermeidung von Meinungsverschiedenheiten) eingeladen. Nach Erklärung des Vorgehens und der Quelle der Merkmale (Nutzungsanforderungen / Teilaufgaben), werden diese wie folgt bewertet:</p><p>1. Wenn Anforderung X umgesetzt wird, ...</p><p>2. Wenn Anforderung X nicht umgesetzt wird, ...</p><p>mit den Antworten</p><ul><li>würde mich das sehr freuen</li><li>setze ich das voraus</li><li>wäre mir das egal</li><li>nehme ich das gerade noch hin</li><li>würde mich das sehr stören</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 282</span>
+        </div>
+        <div class="card" id="kano-notation">
+            <h3><span class="material-icons">article</span>Notation Kano-Schema</h3>
+            <div class="grid-2"><div><p><b>Wenn wir das umsetzen:</b></p><ul><li>Das würde mich sehr freuen</li><li>Das setze ich voraus</li><li>Das ist mir egal</li><li>Das nehme ich gerade noch hin</li><li>Das würde mich sehr stören</li></ul></div><div><p><b>Wenn wir das nicht umsetzen:</b></p><ul><li>Das würde mich sehr freuen</li><li>Das setze ich voraus</li><li>Das ist mir egal</li><li>Das nehme ich gerade noch hin</li><li>Das würde mich sehr stören</li></ul></div></div><table class="kano-mx"><tr><th>wenn nicht → wenn umgesetzt ↓</th><th>sehr freuen</th><th>setze ich voraus</th><th>egal</th><th>gerade noch ok</th><th>sehr stören</th></tr><tr><th>sehr freuen</th><td class="">-</td><td class="k-beg">Begeisterung</td><td class="k-beg">Begeisterung</td><td class="k-beg">Begeisterung</td><td class="k-leist">Leistungsmerkmal</td></tr><tr><th>setze ich voraus</th><td class="k-rueck">Rückweisung</td><td class="">unerheblich</td><td class="">unerheblich</td><td class="">unerheblich</td><td class="k-basis">Basismerkmal</td></tr><tr><th>egal</th><td class="k-rueck">Rückweisung</td><td class="">unerheblich</td><td class="">unerheblich</td><td class="">unerheblich</td><td class="k-basis">Basismerkmal</td></tr><tr><th>gerade noch ok</th><td class="k-rueck">Rückweisung</td><td class="">unerheblich</td><td class="">unerheblich</td><td class="">unerheblich</td><td class="k-basis">Basismerkmal</td></tr><tr><th>sehr stören</th><td class="k-rueck">Rückweisung</td><td class="k-rueck">Rückweisung</td><td class="k-rueck">Rückweisung</td><td class="k-rueck">Rückweisung</td><td class="">-</td></tr></table>
+            <span class="src"><span class="material-icons">description</span>Folie S. 283</span>
+        </div>
+    </section>
+    <section class="section" id="ure-6-1">
+        <div class="section-title"><div class="num"><span class="material-icons">auto_stories</span></div><h2>Nutzungsanforderungen mit Benutzern konsolidieren und priorisieren</h2></div>
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Nutzungsanforderungen mit Benutzern konsolidieren und priorisieren</h3>
+            <ul><li>Nach Ableitung der Nutzungsanforderungen und deren Strukturierung in Aufgaben und Teilaufgaben, sollten diese mit Benutzenden überprüft werden. Somit wird festgestellt, ob die einzelnen Nutzungsanforderungen angemessen, vollständig und für Benutzende relevant sind oder nicht.</li><li>Nicht jede Nutzungsanforderung ist für die Benutzende gleich relevant. Entscheidungen über die Umsetzungspriorität sollten auf der Relevanz der einzelnen Nutzungsanforderungen beruhen.</li><li>Strukturierte Befragungs-Schemata helfen den Benutzenden, die Relevanz der einzelner Nutzungs-anforderungen einzustufen. Ein weit verbreitetes Schema ist das Kano-Schema.</li><li>Durch Workshops mit Benutzenden kann sichergestellt werden, dass die Nutzungsanforderungen angemessen, vollständig und ihrer Relevanz entsprechend eingestuft sind.</li><li>Die überprüften und nach Relevanz geordneten Nutzungsanforderungen bilden die Grundlage für die Festlegung der Umsetzungspriorität dieser innerhalb eines bestimmten Projektzeitraums.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 286</span>
+        </div>
+    </section>
+    <section class="section" id="umsetzung-62">
+        <div class="section-title"><div class="num"><span class="material-icons">event_upcoming</span></div><h2>6. Nutzungsanforderungen konsolidieren</h2></div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>6. Nutzungsanforderungen konsolidieren</h3>
+            <p>6.1 – Nutzungsanforderungen mit Benutzern konsolidieren und priorisieren</p><p>6.2 – Die Umsetzungspriorität von Nutzungsanforderungen mit Projektbeteiligten festlegen</p><p>Sicherstellen, dass Nutzungsanforderungen bezüglich ihrer Umsetzung durch die Projektbeteiligten (zeitlich) priorisiert werden müssen, da typischerweise nicht alle Nutzungsanforderungen im gleichen Zeitrahmen umgesetzt werden können und mittels einer zeitlichen Priorisierung Konflikte über die Umsetzung / Nichtumsetzung von Anforderungen vermieden werden.</p><p>Nutzungsanforderungen mit Nutzenden priorisieren ⇨ Umsetzung im Projektteam festlegen</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 287</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Stakeholder- und Systemanforderung</h3>
+            <table class="criteria"><tr><th></th><th></th></tr><tr><td><b>Gesetzliche / regulatorische Anforderungen</b></td><td>Gesetzgeber</td></tr><tr><td><b>Marktanforderungen</b></td><td>Kaufentscheider</td></tr><tr><td><b>Organisatorische Anforderungen</b></td><td>Betreiber der Organisation</td></tr><tr><td><b>Fachliche Anforderungen</b></td><td>Indirekte Benutzer</td></tr><tr><td><b>Nutzungsanforderungen</b></td><td>Primäre, sekundäre Benutzer</td></tr></table><p>sind Basis für ↓ <b>Systemanforderungen</b></p><p class="ex-mute">Stakeholderanforderungen · System-</p><p><a class="sm-link" href="kapitel-1.html#anforderungen">Schaubild in Kapitel 1 ansehen →</a></p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 288</span>
+        </div>
+        <div class="card">
+            <h3><span class="material-icons">article</span>Menschzentrierte Gestaltung (HCD)</h3>
+            <div class="pg" data-pg="{&quot;titel&quot;: &quot;&quot;, &quot;folie&quot;: &quot;S. 289&quot;, &quot;stufen&quot;: [{&quot;titel&quot;: &quot;Planung des menschzentrierten Gestaltungsprozesses&quot;, &quot;k&quot;: &quot;planung&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: []}, {&quot;titel&quot;: &quot;Verstehen und Festlegen des Nutzungskontextes&quot;, &quot;k&quot;: &quot;verstehen&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: []}, {&quot;titel&quot;: &quot;Festlegen der Nutzungsanforderungen&quot;, &quot;k&quot;: &quot;festlegen&quot;, &quot;art&quot;: &quot;tl&quot;, &quot;gruppen&quot;: []}, {&quot;titel&quot;: &quot;Erarbeiten von Gestaltungslösungen&quot;, &quot;k&quot;: &quot;gestalten&quot;, &quot;art&quot;: &quot;l&quot;, &quot;gruppen&quot;: []}, {&quot;titel&quot;: &quot;Evaluieren der Gestaltung&quot;, &quot;k&quot;: &quot;evaluieren&quot;, &quot;art&quot;: &quot;l&quot;, &quot;gruppen&quot;: []}, {&quot;titel&quot;: &quot;Gestaltungslösung erfüllt die Nutzungsanforderungen&quot;, &quot;k&quot;: &quot;erfuellt&quot;, &quot;art&quot;: &quot;l&quot;, &quot;gruppen&quot;: []}]}" data-ort="Kapitel 6 · Schritt 3 Anforderungen festlegen" id="pg-"></div><p class="ex-mute">Iterationen · Quelle: ISO 9241-210:2019</p><details class="pg-wortlaut"><summary>Folientext S. 289 im Wortlaut</summary><p>Planung des menschzentrierten Gestaltungsprozesses</p><p>Verstehen und Festlegen des Nutzungskontextes</p><p>Iterationen</p><p>Festlegen der Nutzungsanforderungen</p><p>Erarbeiten von Gestaltungslösungen</p><p>Evaluieren der Gestaltung</p><p>Gestaltungslösung erfüllt die Nutzungsanforderungen</p><p>Quelle: ISO 9241-210:2019</p></details>
+            <span class="src"><span class="material-icons">description</span>Folie S. 289</span>
+        </div>
+    </section>
+    <section class="section" id="priorisierung">
+        <div class="section-title"><div class="num"><span class="material-icons">low_priority</span></div><h2>Priorisierung (prioritization)</h2></div>
+        <div class="card" id="priorisierung-def">
+            <h3><span class="material-icons">menu_book</span>Priorisierung (prioritization)</h3>
+            <p>Eine Aktivität, bei der festgelegt wird, ob und wann eine identifizierte Anforderung umgesetzt wird.</p><ul><li>Eine Priorisierung sollte immer zuerst in Hinblick auf die menschzentrierte Qualitätsziele vorgenommen werden. "Wie relevant ist die Umsetzung der Anforderung in Hinblick auf die Benutzenden?"</li><li>In einem zweiten Schritt sollte die Priorisierung aus der Perspektive weitere Stakeholder vorgenommen werden.</li><li>Den Stakeholdern sollte die Relevanz der Nutzungsanforderungen vermittelt werden. Basis für die<ul><li>Effizienz der Benutzung</li><li>Akzeptanz des Systems (UX)</li><li>zukünftige Entwicklungen neuer Versionen und Produkte im gleichen Nutzungskontext</li></ul></li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 290</span>
+        </div>
+        <div class="card" id="roadmap-def">
+            <h3><span class="material-icons">menu_book</span>Produkt-Roadmap (product road map)</h3>
+            <p>Darstellung, die zeigt, wie sich ein Produkt über Releases hinweg in definierten Zeiträumen bzgl. seines Funktionsumfangs entwickeln soll.</p><ul><li>Produkt-Roadmaps dienen der Kommunikation zwischen Disziplinen (Produktmanagement, Requirements Engineering, Systems Engineering) aber auch zum Management hin, um so ein gemeinsames Verständnis für die langfristige Produktplanung und den damit verbundenen Aktivitäten zu schaffen.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 291</span>
+        </div>
+        <div class="card" id="priorisierung-schema">
+            <h3><span class="material-icons">article</span>Schema der Priorisierung</h3>
+            <p>Typisches Priorisierungsschema für Anforderungen und deren Umsetzung</p><ul><ul><li>neu, noch nicht bewertet</li><li>Umsetzung in der aktuell fertigzustellenden Produktversion (Release X.x)</li><li>Umsetzung in der Produktpflege (Release X.x+1)</li><li>Umsetzung in der darauf folgenden Produktversion/Modellpflege (Release X+1.1)</li><li>Umsetzung in einer noch festzulegenden Produktversion, "for future consideration"</li><li>Keine Umsetzung, "out of scope", mögliche Umsetzung in einem anderen Produkt</li></ul></li><li>Jedes Projektmitglied darf Anforderungen melden</li><li>Anforderungen müssen versioniert werden, um Änderungen nachzuverfolgen</li><li>Anforderungen, die nicht aktuell umsetzbar sind, werden in die Produkt-Roadmap ("Produktschatzkästchen") aufgenommen.</li></ul>
+            <p class="ex-mute">Kleindruck auf der Folie – bitte im Originalfoto lesen.</p>
+            <span class="src"><span class="material-icons">description</span>Folie S. 292</span>
+        </div>
+    </section>
+    <section class="section" id="na-in-hcd">
+        <div class="section-title"><div class="num"><span class="material-icons">compare</span></div><h2>Qualitative Nutzungsanforderungen in der Menschzentrierten Gestaltung</h2></div>
+        <div class="card" id="na-hcd-vergleich">
+            <h3><span class="material-icons">compare</span>Qualitative Nutzungsanforderungen in der Menschzentrierten Gestaltung · Quantitative Nutzungsanforderungen in der Menschzentrierten Gestaltung</h3>
+            <div class="pg" data-pg="{&quot;titel&quot;: &quot;Qualitative Nutzungsanforderungen in der Menschzentrierten Gestaltung · Quantitative Nutzungsanforderungen in der Menschzentrierten Gestaltung&quot;, &quot;folie&quot;: &quot;S. 293, 294&quot;, &quot;form&quot;: &quot;vergleich&quot;, &quot;breit&quot;: true, &quot;stufen&quot;: [{&quot;titel&quot;: &quot;Planung des menschzentrierten Gestaltungsprozesses&quot;, &quot;k&quot;: &quot;planung&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Qualitative Nutzungsanforderungen (S. 293)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Stakeholder fordern Funktionen oder Teilfunktionen&quot;, &quot;folie&quot;: &quot;S. 293&quot;, &quot;text&quot;: &quot;Stakeholder fordern Funktionen oder Teilfunktionen&quot;, &quot;k&quot;: &quot;qual&quot;}]}, {&quot;titel&quot;: &quot;Quantitative Nutzungsanforderungen (S. 294)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Stakeholder fordern Kriterien der Nutzungsqualität&quot;, &quot;folie&quot;: &quot;S. 294&quot;, &quot;text&quot;: &quot;Stakeholder fordern Kriterien der Nutzungsqualität&quot;, &quot;k&quot;: &quot;quant&quot;}]}]}, {&quot;titel&quot;: &quot;Verstehen und Festlegen des Nutzungskontextes&quot;, &quot;k&quot;: &quot;verstehen&quot;, &quot;art&quot;: &quot;t&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Qualitative Nutzungsanforderungen (S. 293)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Werden genannt von Nutzenden in Form von heutigen Interaktionen und in \&quot;Frühform\&quot; von Zielen, Wünschen, Forderungen, Funktionen&quot;, &quot;folie&quot;: &quot;S. 293&quot;, &quot;text&quot;: &quot;Werden genannt von Nutzenden in Form von heutigen Interaktionen und in \&quot;Frühform\&quot; von Zielen, Wünschen, Forderungen, Funktionen&quot;, &quot;k&quot;: &quot;qual&quot;}]}, {&quot;titel&quot;: &quot;Quantitative Nutzungsanforderungen (S. 294)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Nutzende geben Rückmeldung in Form von Bedürfnissen und Info zur Akzeptanz&quot;, &quot;folie&quot;: &quot;S. 294&quot;, &quot;text&quot;: &quot;Nutzende geben Rückmeldung in Form von Bedürfnissen und Info zur Akzeptanz&quot;, &quot;k&quot;: &quot;quant&quot;}]}]}, {&quot;titel&quot;: &quot;Festlegen der Nutzungsanforderungen&quot;, &quot;k&quot;: &quot;festlegen&quot;, &quot;art&quot;: &quot;l&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Qualitative Nutzungsanforderungen (S. 293)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Ableitung aus Erfordernissen und Stakeholderanforderungen&quot;, &quot;folie&quot;: &quot;S. 293&quot;, &quot;text&quot;: &quot;Ableitung aus Erfordernissen und Stakeholderanforderungen&quot;, &quot;k&quot;: &quot;qual&quot;}]}, {&quot;titel&quot;: &quot;Quantitative Nutzungsanforderungen (S. 294)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Formulierung und Anpassung der Anforderungen aus der Planungsphase und den Infos des Nutzungskontextes&quot;, &quot;folie&quot;: &quot;S. 294&quot;, &quot;text&quot;: &quot;Formulierung und Anpassung der Anforderungen aus der Planungsphase und den Infos des Nutzungskontextes&quot;, &quot;k&quot;: &quot;quant&quot;}]}]}, {&quot;titel&quot;: &quot;&quot;, &quot;k&quot;: null, &quot;art&quot;: &quot;l&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Qualitative Nutzungsanforderungen (S. 293)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Priorisierung der Umsetzung in der Planung und Produkt Road Map&quot;, &quot;folie&quot;: &quot;S. 293&quot;, &quot;text&quot;: &quot;Priorisierung der Umsetzung in der Planung und Produkt Road Map&quot;, &quot;k&quot;: &quot;qual&quot;}]}, {&quot;titel&quot;: &quot;Quantitative Nutzungsanforderungen (S. 294)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Priorisierung der Umsetzung in der Planung der Produkt Road Map&quot;, &quot;folie&quot;: &quot;S. 294&quot;, &quot;text&quot;: &quot;Priorisierung der Umsetzung in der Planung der Produkt Road Map&quot;, &quot;k&quot;: &quot;quant&quot;}]}]}, {&quot;titel&quot;: &quot;Erarbeiten von Gestaltungslösungen&quot;, &quot;k&quot;: &quot;gestalten&quot;, &quot;art&quot;: &quot;l&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Qualitative Nutzungsanforderungen (S. 293)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Grundlage für Interaktion, Systemarchitektur, Funktionen&quot;, &quot;folie&quot;: &quot;S. 293&quot;, &quot;text&quot;: &quot;Grundlage für Interaktion, Systemarchitektur, Funktionen&quot;, &quot;k&quot;: &quot;qual&quot;}]}, {&quot;titel&quot;: &quot;Quantitative Nutzungsanforderungen (S. 294)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Grundlage und Richtwerte der zu erreichenden Nutzungsqualität&quot;, &quot;folie&quot;: &quot;S. 294&quot;, &quot;text&quot;: &quot;Grundlage und Richtwerte der zu erreichenden Nutzungsqualität&quot;, &quot;k&quot;: &quot;quant&quot;}]}]}, {&quot;titel&quot;: &quot;Evaluieren der Gestaltung&quot;, &quot;k&quot;: &quot;evaluieren&quot;, &quot;art&quot;: &quot;l&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Qualitative Nutzungsanforderungen (S. 293)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Grundlage für Testaufgaben und Evaluierung&quot;, &quot;folie&quot;: &quot;S. 293&quot;, &quot;text&quot;: &quot;Grundlage für Testaufgaben und Evaluierung&quot;, &quot;k&quot;: &quot;qual&quot;}]}, {&quot;titel&quot;: &quot;Quantitative Nutzungsanforderungen (S. 294)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Grundlage für Testaufgaben und Messung der MZ-Qualität&quot;, &quot;folie&quot;: &quot;S. 294&quot;, &quot;text&quot;: &quot;Grundlage für Testaufgaben und Messung der MZ-Qualität&quot;, &quot;k&quot;: &quot;quant&quot;}]}]}, {&quot;titel&quot;: &quot;Gestaltungslösung erfüllt die Nutzungsanforderungen&quot;, &quot;k&quot;: &quot;erfuellt&quot;, &quot;art&quot;: &quot;l&quot;, &quot;gruppen&quot;: [{&quot;titel&quot;: &quot;Qualitative Nutzungsanforderungen (S. 293)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Funktion oder Merkmal im Produkt, System&quot;, &quot;folie&quot;: &quot;S. 293&quot;, &quot;text&quot;: &quot;Funktion oder Merkmal im Produkt, System&quot;, &quot;k&quot;: &quot;qual&quot;}]}, {&quot;titel&quot;: &quot;Quantitative Nutzungsanforderungen (S. 294)&quot;, &quot;elemente&quot;: [{&quot;label&quot;: &quot;Produkt, System hat geforderte Nutzungsqualität / MZ-Qualität&quot;, &quot;folie&quot;: &quot;S. 294&quot;, &quot;text&quot;: &quot;Produkt, System hat geforderte Nutzungsqualität / MZ-Qualität&quot;, &quot;k&quot;: &quot;quant&quot;}]}]}]}" data-ort="Kapitel 6 · Schritt 3 Anforderungen festlegen" id="pg-qualitative-nutzungsanforderungen-in-der"></div><details class="pg-wortlaut"><summary>Folientext S. 293 im Wortlaut</summary><p>Stakeholder fordern Funktionen oder Teilfunktionen</p><p>Planung des menschzentrierten Gestaltungsprozesses</p><p>Werden genannt von Nutzenden in Form von heutigen Interaktionen und in "Frühform" von Zielen, Wünschen, Forderungen, Funktionen</p><p>Verstehen und Festlegen des Nutzungskontextes</p><p>Iterationen</p><p>Ableitung aus Erfordernissen und Stakeholderanforderungen</p><p>Festlegen der Nutzungsanforderungen</p><p>Priorisierung der Umsetzung in der Planung und Produkt Road Map</p><p>Grundlage für Interaktion, Systemarchitektur, Funktionen</p><p>Erarbeiten von Gestaltungslösungen</p><p>Grundlage für Testaufgaben und Evaluierung</p><p>Evaluieren der Gestaltung</p><p>Funktion oder Merkmal im Produkt, System</p><p>Gestaltungslösung erfüllt die Nutzungsanforderungen</p></details><details class="pg-wortlaut"><summary>Folientext S. 294 im Wortlaut</summary><p>Stakeholder fordern Kriterien der Nutzungsqualität</p><p>Planung des menschzentrierten Gestaltungsprozesses</p><p>Nutzende geben Rückmeldung in Form von Bedürfnissen und Info zur Akzeptanz</p><p>Verstehen und Festlegen des Nutzungskontextes</p><p>Iterationen</p><p>Formulierung und Anpassung der Anforderungen aus der Planungsphase und den Infos des Nutzungskontextes</p><p>Festlegen der Nutzungsanforderungen</p><p>Priorisierung der Umsetzung in der Planung der Produkt Road Map</p><p>Grundlage und Richtwerte der zu erreichenden Nutzungsqualität</p><p>Erarbeiten von Gestaltungslösungen</p><p>Grundlage für Testaufgaben und Messung der MZ-Qualität</p><p>Evaluieren der Gestaltung</p><p>Produkt, System hat geforderte Nutzungsqualität / MZ-Qualität</p><p>Gestaltungslösung erfüllt die Nutzungsanforderungen</p></details>
+            <span class="src"><span class="material-icons">description</span>Folien S. 293, 294</span>
+        </div>
+    </section>
+    <section class="section" id="ure-6-2">
+        <div class="section-title"><div class="num"><span class="material-icons">auto_stories</span></div><h2>Die Umsetzungspriorität von Nutzungsanforderungen mit Projektbeteiligten festlegen</h2></div>
+        <div class="card ure">
+            <h3><span class="material-icons">auto_stories</span>Die URE Story: Die Umsetzungspriorität von Nutzungsanforderungen mit Projektbeteiligten festlegen</h3>
+            <ul><li>Nachdem der Satz von Nutzungsanforderungen für das interaktive System mit den Benutzern überprüft wurde, muss das Projektteam über die Umsetzungspriorität jeder einzelnen Nutzungsanforderung entscheiden. Hierbei wird neben den geschätzten Kosten auch die Relevanz der einzelnen Nutzungsanforderungen für die Benutzenden berücksichtigt.</li><li>Es ist entscheidend den Stakeholdern und dem Projektteam die Nutzungsanforderungen zu kommunizieren, um deren Relevanz für die Benutzer im Hinblick auf Effektivität, Effizienz und Zufriedenheit hervorzuheben. Nutzungsanforderungen, die nicht sofort umgesetzt werden können, sollten in eine Produkt-Roadmap aufgenommen werden. Diese legt fest, was zu gegebener Zeit in verschiedenen Versionen umgesetzt werden soll.</li><li>Eine Priorisierung der Nutzungsanforderungen durch die Projektbeteiligten, legt den Zeitpunkt ihrer Umsetzung fest, da nicht alle Nutzungsanforderungen im gleichen Zeitrahmen umgesetzt werden können. So lassen sich durch eine zeitliche Priorisierung Umsetzungskonflikte vermeiden.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 295</span>
+        </div>
+    </section>
+
+    <nav class="pager"><a class="prev" href="kapitel-5.html"><span class="material-icons">chevron_left</span><span><small>Zurück</small>5 NA ableiten</span></a><a class="next" href="kapitel-7.html"><span><small>Weiter</small>7 Schnittstellen</span><span class="material-icons">chevron_right</span></a></nav>
+
+    <footer>Lernmaterial auf Basis der CPUX-UR-Seminarunterlagen (Spiegel Institut, 2026) nach UXQB CPUX-F Curriculum V4.01 und ISO 9241-210:2019. Nur für den internen Gebrauch.</footer>
+</div>
+
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drTitle">
+    <div class="dr-head">
+        <button class="dr-close" id="drClose" aria-label="Schließen"><span class="material-icons">close</span></button>
+        <div class="dr-icon"><span class="material-icons" id="drIcon">info</span></div>
+        <h3 id="drTitle"></h3>
+        <div class="dr-tags" id="drTags"></div>
+    </div>
+    <div class="dr-body" id="drBody"></div>
+    <div class="dr-foot">
+        <div class="dr-nav">
+            <button class="btn" id="drPrev" title="Vorheriger Prozessschritt"><span class="material-icons">chevron_left</span></button>
+            <button class="btn" id="drNext" title="Nächster Prozessschritt"><span class="material-icons">chevron_right</span></button>
+        </div>
+        <a class="btn on" id="drLink" href="#"><span class="material-icons">open_in_full</span>Zur Detailkarte</a>
+    </div>
+</aside>
+
+<button class="back-to-top" id="backToTop" aria-label="Zurück nach oben"><span class="material-icons" style="font-size:26px">arrow_upward</span></button>
+
+<script src="lern-daten.js"></script>
+<script src="landkarte.js"></script>
+<script src="folien-daten.js"></script>
+<script src="folien.js"></script>
+<script src="hervorhebung-daten.js"></script>
+<script src="hervorhebung.js"></script>
+<script src="detail.js"></script>
+<script src="prozessgrafik.js"></script>
+<script src="lernen.js"></script>
+<script src="ausrichten.js"></script>
+</body>
+</html>

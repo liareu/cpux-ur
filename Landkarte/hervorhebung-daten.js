@@ -2424,5 +2424,399 @@ const ROT = {
 "beabsichtigte Ergebnis",
 "erforderlichen Voraussetzungen"
 ]
+},
+"259": {
+"m": null,
+"rot": [
+"5.1 – Erfordernisse systematisch in Nutzungsanforderungen überführen",
+"Nutzungsanforderungen zutreffend aus Erfordernissen hergeleitet",
+"erforderliche Handlungen",
+"spezifiziert",
+"überflüssige Handlungen vermieden"
+]
+},
+"260": {
+"m": null,
+"rot": []
+},
+"261": {
+"m": null,
+"rot": [
+"Gestaltung",
+"Evaluierung",
+"Erfordernisse",
+"Basis für Gestaltung",
+"Basis für Evaluierung"
+]
+},
+"262": {
+"m": null,
+"rot": [
+"Benutzer",
+"Durchführung einer Aufgabe",
+"erkennen",
+"auswählen",
+"eingeben",
+"Maß an menschzentrierter Qualität",
+"Erfordernisse",
+"erfüllen"
+]
+},
+"263": {
+"m": null,
+"rot": [
+"Anforderung an die Nutzung",
+"auf",
+"Benutzergruppen beziehen",
+"Erfordernisse",
+"begründet",
+"Anforderung an die Nutzung",
+"Interaktion"
+]
+},
+"264": {
+"m": null,
+"rot": [
+"Anforderung an die Nutzung"
+]
+},
+"265": {
+"m": null,
+"rot": [
+"Leitfragen",
+"aus jedem Erfordernis qualitative Nutzungsanforderungen ableiten"
+]
+},
+"266": {
+"m": null,
+"rot": [
+"Anforderung an die Nutzung",
+"auf",
+"Benutzergruppen beziehen",
+"Stakeholderanforderungen begründen lassen",
+"Akzeptanzkriterien für die Nutzungsqualität"
+]
+},
+"267": {
+"m": null,
+"rot": [
+"Stakeholder",
+"betroffene Benutzergruppe",
+"Anzahl / Prozentzahl der Benutzenden",
+"Quantität",
+"Gegenstand der Nutzung",
+"spezifische Bedingung(en)"
+]
+},
+"268": {
+"m": null,
+"rot": [
+"innerhalb einer Benutzergruppe",
+"gleichzeitige Erfüllung",
+"verschiedener Benutzergruppen nicht möglich"
+]
+},
+"269": {
+"m": null,
+"rot": [
+"widersprechender Erfordernisse",
+"Kompromisse im Lösungsraum finden",
+"Nutzungsanforderungen",
+"werden formuliert",
+"Lösungsfindung",
+"Nutzungsanforderungen herunter priorisiert"
+]
+},
+"270": {
+"m": null,
+"rot": [
+"Erfordernisse",
+"direkte Quelle für Nutzungsanforderungen",
+"Nutzungsanforderung",
+"Erfordernisse zurückgeführt werden",
+"begründen die Nutzungsanforderungen",
+"Ableitung qualitativer Nutzungsanforderungen",
+"drei Leitfragen",
+"Information",
+"Auswahl",
+"Eingabe",
+"Interaktionsanforderung",
+"konsistente Formulierung",
+"klar",
+"eindeutig",
+"gut kommuniziert",
+"Quantitative Nutzungsanforderung",
+"Akzeptanzkriterien der menschzentrierten Qualität",
+"widersprüchliche Erfordernisse",
+"Konflikte aufzulösen",
+"Kompromisse gefunden",
+"Nutzungsanforderungen",
+"abgeleiteten Lösungen",
+"ausgearbeitet"
+]
+},
+"271": {
+"m": null,
+"rot": [
+"5.2 – Nutzungsanforderungen angemessen strukturieren",
+"Nutzungsanforderungen als Grundlage zur Spezifikation von Nutzungsszenarien"
+]
+},
+"272": {
+"m": null,
+"rot": []
+},
+"273": {
+"m": null,
+"rot": [
+"Aufgabenlebenszyklus",
+"während der Aufgabenbearbeitung wurde ...",
+"5. Ergebnis weitergeben",
+"und erfüllt",
+"ermöglicht das Erreichen des übergeordneten Ziels"
+]
+},
+"274": {
+"m": null,
+"rot": []
+},
+"275": {
+"m": null,
+"rot": [
+"Aufgabenlebenszyklus",
+"während der Aufgabenbearbeitung wurde ...",
+"5. Ergebnis weitergeben",
+"und erfüllt",
+"ermöglicht das Erreichen des übergeordneten Ziels"
+]
+},
+"276": {
+"m": null,
+"rot": []
+},
+"277": {
+"m": "Ü",
+"rot": [
+"Praktische Übung 6"
+]
+},
+"278": {
+"m": null,
+"rot": [
+"Nutzungsanforderungen",
+"entlang der Aufgaben",
+"Teilaufgaben strukturiert",
+"Aufgaben",
+"Teilaufgaben",
+"zukünftigen interaktiven Systems",
+"effektiv und effizient unterstützt",
+"Aufgabenmodell des heutigen Nutzungskontexts",
+"wahrscheinlich noch ändern",
+"automatisch",
+"verwendeter Technologie neu",
+"Aufgabenmodell für die Gestaltung",
+"angepassten Struktur",
+"Aufgaben",
+"Teilaufgaben",
+"nach Aufgaben und Teilaufgaben strukturierten Nutzungsanforderungen",
+"Aufgaben der Benutzenden zu konzentrieren"
+]
+},
+"279": {
+"m": null,
+"rot": [
+"6.1 – Nutzungsanforderungen mit Benutzern konsolidieren und priorisieren",
+"Nutzungsanforderungen durch Benutzende",
+"vollständig und richtig bestätigt",
+"Relevanz jeder Nutzungsanforderung",
+"Priorisierung",
+"Projektsicht festgelegt"
+]
+},
+"280": {
+"m": null,
+"rot": [
+"Einstufungssystem",
+"Priorität",
+"aus Benutzersicht"
+]
+},
+"282": {
+"m": null,
+"rot": []
+},
+"283": {
+"m": null,
+"rot": []
+},
+"286": {
+"m": null,
+"rot": [
+"Nutzungsanforderungen",
+"mit Benutzenden überprüft",
+"angemessen",
+"vollständig",
+"relevant",
+"Umsetzungspriorität",
+"Relevanz der einzelnen Nutzungsanforderungen",
+"Befragungs-Schemata",
+"Relevanz der einzelner Nutzungs-anforderungen",
+"Kano-Schema",
+"Workshops mit Benutzenden",
+"angemessen",
+"vollständig",
+"Relevanz",
+"überprüften",
+"Relevanz geordneten Nutzungsanforderungen",
+"Grundlage",
+"Umsetzungspriorität"
+]
+},
+"287": {
+"m": null,
+"rot": [
+"6.2 – Die Umsetzungspriorität von Nutzungsanforderungen mit Projektbeteiligten festlegen",
+"Nutzungsanforderungen",
+"durch die Projektbeteiligten",
+"priorisiert werden müssen"
+]
+},
+"288": {
+"m": null,
+"rot": []
+},
+"289": {
+"m": null,
+"rot": []
+},
+"290": {
+"m": null,
+"rot": [
+"ob und wann eine identifizierte Anforderung umgesetzt",
+"Priorisierung",
+"zuerst",
+"menschzentrierte Qualitätsziele",
+"zweiten Schritt"
+]
+},
+"291": {
+"m": null,
+"rot": [
+"Darstellung",
+"Produkt über Releases",
+"entwickeln soll",
+"Kommunikation zwischen Disziplinen",
+"Verständnis für die langfristige Produktplanung",
+"verbundenen Aktivitäten"
+]
+},
+"292": {
+"m": null,
+"rot": []
+},
+"293": {
+"m": null,
+"rot": [
+"Stakeholder fordern Funktionen oder Teilfunktionen",
+"Werden genannt von Nutzenden in Form von heutigen Interaktionen und in \"Frühform\" von Zielen, Wünschen, Forderungen, Funktionen",
+"Ableitung aus Erfordernissen und Stakeholderanforderungen",
+"Priorisierung der Umsetzung in der Planung und Produkt Road Map",
+"Grundlage für Interaktion, Systemarchitektur, Funktionen",
+"Grundlage für Testaufgaben und Evaluierung",
+"Funktion oder Merkmal im Produkt, System"
+]
+},
+"294": {
+"m": null,
+"rot": [
+"Stakeholder fordern Kriterien der Nutzungsqualität",
+"Nutzende geben Rückmeldung in Form von Bedürfnissen und Info zur Akzeptanz",
+"Formulierung und Anpassung der Anforderungen aus der Planungsphase und den Infos des Nutzungskontextes",
+"Priorisierung der Umsetzung in der Planung der Produkt Road Map",
+"Grundlage und Richtwerte der zu erreichenden Nutzungsqualität",
+"Grundlage für Testaufgaben und Messung der MZ-Qualität",
+"Produkt, System hat geforderte Nutzungsqualität / MZ-Qualität"
+]
+},
+"295": {
+"m": null,
+"rot": [
+"Satz von Nutzungsanforderungen",
+"überprüft",
+"Projektteam über die Umsetzungspriorität",
+"neben den geschätzten Kosten",
+"Relevanz der einzelnen Nutzungsanforderungen",
+"Nutzungsanforderungen zu kommunizieren",
+"Relevanz",
+"Hinblick auf Effektivität",
+"Effizienz",
+"Zufriedenheit",
+"nicht sofort umgesetzt",
+"Produkt-Roadmap",
+"Priorisierung der Nutzungsanforderungen",
+"legt den Zeitpunkt",
+"fest",
+"zeitliche Priorisierung Umsetzungskonflikte vermeiden"
+]
+},
+"296": {
+"m": "+",
+"rot": [
+"7.1 – Als User Requirements Engineer erfolgreicher Lieferant anderer Rollen sein",
+"User Requirements Engineer andere relevante Disziplinen und Rollen",
+"Arbeitsergebnisse",
+"kommunizieren"
+]
+},
+"297": {
+"m": "+",
+"rot": [
+"Planung",
+"Steuerung",
+"Kontrolle",
+"Verantwortet",
+"Erheben",
+"Dokumentieren",
+"Verwalten",
+"Stakeholderanforderungen",
+"Qualität der Umsetzung"
+]
+},
+"298": {
+"m": "+",
+"rot": [
+"systematische Spezifizieren",
+"Verwalten",
+"Stakeholderanforderungen",
+"Systemanforderungen",
+"nicht immer explizit",
+"unterschieden",
+"zunehmende Bedeutung",
+"Usability",
+"User Experience",
+"klassische Rolle des Requirements Engineer",
+"Systemanforderungen",
+"Relevanz der Nutzungsanforderungen steigt",
+"Notwendigkeit der Rolle",
+"Teildisziplin",
+"Usability Engineering",
+"Requirements Engineering"
+]
+},
+"299": {
+"m": "+",
+"rot": [
+"die technische Realisierung",
+"Umsetzung der Systemanforderungen",
+"Mitglieder des Projektteams",
+"Teil des Systems Engineering",
+"User Requirements Engineer",
+"fachlicher Ansprechpartner",
+"Nutzungsanforderungen"
+]
+},
+"300": {
+"m": "+",
+"rot": []
 }
 };

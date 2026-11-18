@@ -1692,3 +1692,49 @@ details.mehr[open] > summary .mehr-pfeil { transform: rotate(-135deg); margin-bo
 @media (max-width: 960px) { .pu-tab { grid-template-columns: 36px minmax(0, 1fr) 70px; } .pu-pro { display: none; } .pu-w { grid-template-columns: 1fr; } }
 .pu-pdf a { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #111; border-radius: 4px; padding: 6px 12px; font-weight: 650; text-decoration: none; }
 .pu-pdf .material-icons { font-size: 20px; }
+
+/* Tabmenü auf der Seite Formulierungsschablonen */
+.sch-tabs { position: sticky; top: 12px; z-index: 20; box-shadow: 0 4px 18px rgba(15,23,42,0.06); display: flex; gap: 6px; flex-wrap: wrap; background: var(--flaeche); border: 1px solid var(--linie); border-radius: 6px; padding: 6px; margin: 0 0 28px; }
+.sch-tab { flex: 1 1 0; min-width: 160px; display: flex; flex-direction: column; gap: 2px; padding: 8px 12px; border-radius: 4px; text-decoration: none !important; color: #111; border: 1px solid transparent; }
+.sch-tab b { font-size: 13.5px; line-height: 1.3; }
+.sch-tab small { font-size: 11.5px; color: #333; }
+.sch-tab:hover { background: white; border-color: var(--linie); }
+.sch-tab.on { background: white; border-color: #111; }
+.schablone-karte { scroll-margin-top: 110px; }
+.sch-krit { border-top: 1px solid var(--linie); margin-top: 18px; padding-top: 12px; }
+.sch-krit summary { font-weight: 750; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+.sch-krit-k { margin-top: 12px; }
+.sch-krit-k h3 { font-size: 15px; }
+
+/* Kapitel 5–7 (Folien S. 259–300) */
+.qq-tag { display: inline-block; margin-left: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; border: 1px solid #111; border-radius: 999px; padding: 1px 8px; vertical-align: middle; }
+.na-vgl { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; margin-top: 14px; }
+.na-vgl > div { padding: 10px 14px; background: var(--flaeche); }
+.na-vgl > .na-vgl-h, .na-vgl > .na-vgl-f { background: #a3122e; color: white; font-weight: 700; }
+.na-vgl > .na-vgl-f { margin-bottom: 0; }
+.am-titel { background: #a3122e; color: white; font-weight: 700; text-align: center; padding: 8px; border-radius: 3px; margin-bottom: 8px; }
+.am-tab td:first-child { width: 56px; font-weight: 700; }
+.am-tab tr.am-zw td { background: transparent !important; font-weight: 650; border-bottom: 0; padding-top: 12px; }
+.kano-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; margin-top: 16px; }
+.kano-svg { width: 100%; height: auto; }
+.kano-tab th { display: none; }
+.kano-mx { border-collapse: collapse; width: 100%; margin-top: 16px; font-size: 13px; text-align: center; }
+.kano-mx th, .kano-mx td { border: 1px solid #bbb; padding: 7px 6px; }
+.kano-mx th { background: white; font-weight: 650; }
+.kano-mx .k-beg { background: #2f6fd6; color: white; }
+.kano-mx .k-leist { background: #2f6b2f; color: white; }
+.kano-mx .k-basis { background: #55525e; color: white; }
+.kano-mx .k-rueck { background: #b3121f; color: white; }
+.pg-wortlaut { margin-top: 14px; font-size: 13.5px; }
+.pg-wortlaut summary { cursor: pointer; font-weight: 650; }
+.pg-wortlaut p, .pg-wortlaut ul { margin: 4px 0; }
+@media (max-width: 960px) { .kano-grid, .na-vgl { grid-template-columns: 1fr; } }
+.qq-tag { white-space: nowrap; }
+.kano-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
+.kano-tab { font-size: 13.5px; }
+.kano-tab td:first-child { hyphens: none; overflow-wrap: normal; }
+.kano-grid { grid-template-columns: 1fr; }
+.kano-svg { max-width: 680px; }
+.pg-vgl.breit { grid-template-columns: 210px repeat(var(--n), minmax(0, 1fr)); }
+.pg-vgl.breit .pg-vgl-nr { align-items: stretch; padding-top: 0; font-size: 13.5px; font-weight: 700; }
+.pg-vgl.breit .pg-vgl-nr .pg-el { text-align: left; width: 100%; height: 100%; }

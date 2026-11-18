@@ -1,5 +1,5 @@
 /* Abschnitte der Kapitelseiten (Lernfortschritt) und Begriffe aus dem Glossar (Selbsttest). Erzeugt mit build_site.py. */
-const LERN_DATEN = [{"seite": "kapitel-1.html", "titel": "1 Einführung in die NKA", "abschnitte": [{"id": "kette", "titel": "Zusammenhang Nutzungskontext, Erfordernis, Anforderung, Lösung"}, {"id": "kontext", "titel": "Die 5 Komponenten des Nutzungskontextes – B/A&amp;Z/U/R"}, {"id": "aufgabenmodell", "titel": "Aufgaben &amp; Ziele, Aufgabenmodell"}, {"id": "anforderungen", "titel": "Stakeholder- und Systemanforderung, Qualität"}, {"id": "nutzungsanforderungen", "titel": "Nutzungsanforderung (user requirement)"}]}, {"seite": "kapitel-2.html", "titel": "2 NKA planen", "abschnitte": [{"id": "planen", "titel": "2. Nutzungskontextanalysen planen"}, {"id": "methoden", "titel": "Weitere Methoden, Vorgehen zum Verstehen und Erheben des Nutzungskontextes, die UX-Professionals kennen sollten!"}]}, {"seite": "kapitel-3.html", "titel": "3 Information erheben", "abschnitte": [{"id": "erheben", "titel": "3. Nutzungskontextinformation erheben und dokumentieren"}, {"id": "rekrutieren", "titel": "3.1 – Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren"}, {"id": "durchfuehren", "titel": "3.2 – Erhebung von Nutzungskontextinformationen vorbereiten und durchführen"}, {"id": "beobachtung", "titel": "Beobachtung (observation)"}, {"id": "fokusgruppe", "titel": "Fokusgruppe (focus group)"}, {"id": "methodenwahl", "titel": "Kriterien für die Auswahl und Kombination von Methoden, gesammelte Antworten"}, {"id": "mentale-modelle", "titel": "Mentale Modelle, Wünsche und Bedürfnisse"}, {"id": "beschreiben", "titel": "3.3 – Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen"}, {"id": "nk-beschreibung", "titel": "Nutzungskontextbeschreibung (context of use discription)"}, {"id": "narrativ", "titel": "Detaillierte, Narrative Nutzungskontextbeschreibungen"}, {"id": "modellhaft", "titel": "Detaillierte, Modellhafte Nutzungskontextbeschreibung"}, {"id": "ergebnisse-33", "titel": "Planung, Durchführung und HCD-Ergebnisse der NK-Erhebung"}]}, {"seite": "kapitel-4.html", "titel": "4 Erfordernisse identifizieren", "abschnitte": [{"id": "erfordernisse-4", "titel": "4. Erfordernisse in Nutzungskontextinformationen identifizieren"}, {"id": "erfordernis-def", "titel": "Erfordernis (user need)"}, {"id": "arten-erfordernisse", "titel": "Arten von Erfordernissen"}, {"id": "qualitaet-erfordernisse", "titel": "Qualitätskriterien für Erfordernisse"}, {"id": "syntax-erfordernisse", "titel": "Formulierungsschablone (Syntax) für Erfordernisse"}, {"id": "erfordernisse-identifizieren", "titel": "Erfordernisse identifizieren"}, {"id": "nki-typen-beispiele", "titel": "NKI → Typen von Erfordernissen – Beispiele"}, {"id": "ueberblick-praxis", "titel": "Überblick Praktische Prüfung – Aufgaben und Punkte"}, {"id": "ure-erfordernisse", "titel": "Erfordernisse systematisch identifizieren und formulieren"}]}];
+const LERN_DATEN = [{"seite": "kapitel-1.html", "titel": "1 Einführung in die NKA", "abschnitte": [{"id": "kette", "titel": "Zusammenhang Nutzungskontext, Erfordernis, Anforderung, Lösung"}, {"id": "kontext", "titel": "Die 5 Komponenten des Nutzungskontextes – B/A&amp;Z/U/R"}, {"id": "aufgabenmodell", "titel": "Aufgaben &amp; Ziele, Aufgabenmodell"}, {"id": "anforderungen", "titel": "Stakeholder- und Systemanforderung, Qualität"}, {"id": "nutzungsanforderungen", "titel": "Nutzungsanforderung (user requirement)"}]}, {"seite": "kapitel-2.html", "titel": "2 NKA planen", "abschnitte": [{"id": "planen", "titel": "2. Nutzungskontextanalysen planen"}, {"id": "methoden", "titel": "Weitere Methoden, Vorgehen zum Verstehen und Erheben des Nutzungskontextes, die UX-Professionals kennen sollten!"}]}, {"seite": "kapitel-3.html", "titel": "3 Information erheben", "abschnitte": [{"id": "erheben", "titel": "3. Nutzungskontextinformation erheben und dokumentieren"}, {"id": "rekrutieren", "titel": "3.1 – Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren"}, {"id": "durchfuehren", "titel": "3.2 – Erhebung von Nutzungskontextinformationen vorbereiten und durchführen"}, {"id": "beobachtung", "titel": "Beobachtung (observation)"}, {"id": "fokusgruppe", "titel": "Fokusgruppe (focus group)"}, {"id": "methodenwahl", "titel": "Kriterien für die Auswahl und Kombination von Methoden, gesammelte Antworten"}, {"id": "mentale-modelle", "titel": "Mentale Modelle, Wünsche und Bedürfnisse"}, {"id": "beschreiben", "titel": "3.3 – Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen"}, {"id": "nk-beschreibung", "titel": "Nutzungskontextbeschreibung (context of use discription)"}, {"id": "narrativ", "titel": "Detaillierte, Narrative Nutzungskontextbeschreibungen"}, {"id": "modellhaft", "titel": "Detaillierte, Modellhafte Nutzungskontextbeschreibung"}, {"id": "ergebnisse-33", "titel": "Planung, Durchführung und HCD-Ergebnisse der NK-Erhebung"}]}, {"seite": "kapitel-4.html", "titel": "4 Erfordernisse identifizieren", "abschnitte": [{"id": "erfordernisse-4", "titel": "4. Erfordernisse in Nutzungskontextinformationen identifizieren"}, {"id": "erfordernis-def", "titel": "Erfordernis (user need)"}, {"id": "arten-erfordernisse", "titel": "Arten von Erfordernissen"}, {"id": "qualitaet-erfordernisse", "titel": "Qualitätskriterien für Erfordernisse"}, {"id": "syntax-erfordernisse", "titel": "Formulierungsschablone (Syntax) für Erfordernisse"}, {"id": "erfordernisse-identifizieren", "titel": "Erfordernisse identifizieren"}, {"id": "nki-typen-beispiele", "titel": "NKI → Typen von Erfordernissen – Beispiele"}, {"id": "ueberblick-praxis", "titel": "Überblick Praktische Prüfung – Aufgaben und Punkte"}, {"id": "ure-erfordernisse", "titel": "Erfordernisse systematisch identifizieren und formulieren"}]}, {"seite": "kapitel-5.html", "titel": "5 NA ableiten", "abschnitte": [{"id": "na-ableiten-5", "titel": "5. Nutzungsanforderungen aus Erfordernissen ableiten und strukturieren"}, {"id": "na-def-5", "titel": "Nutzungsanforderung (user requirement)"}, {"id": "guete-qual", "titel": "Gütekriterien für qualitative Nutzungsanforderungen"}, {"id": "syntax-qual", "titel": "Formulierungsschablone (Syntax) für qualitative Nutzungsanforderungen"}, {"id": "ableiten-qual", "titel": "Ableiten von qualitativen Nutzungsanforderungen"}, {"id": "guete-quant", "titel": "Gütekriterien für quantitative Nutzungsanforderungen"}, {"id": "elemente-quant", "titel": "Elemente für quantitative Nutzungsanforderungen"}, {"id": "widerspruch", "titel": "Sich widersprechende Erfordernisse identifizieren"}, {"id": "ure-5-1", "titel": "Erfordernisse systematisch in Nutzungsanforderungen überführen"}, {"id": "na-strukturieren", "titel": "5. Nutzungsanforderungen aus Erfordernissen ableiten und strukturieren"}, {"id": "aufgabenmodell-struktur", "titel": "Aufgabenmodell als Strukturgebendes Format"}, {"id": "uebung-6", "titel": "Praktische Übung 6"}, {"id": "ure-5-2", "titel": "Nutzungsanforderungen angemessen strukturieren"}]}, {"seite": "kapitel-6.html", "titel": "6 Konsolidieren & priorisieren", "abschnitte": [{"id": "konsolidieren-6", "titel": "6. Nutzungsanforderungen konsolidieren"}, {"id": "kano", "titel": "Kano-Schema (Kano scheme)"}, {"id": "ure-6-1", "titel": "Nutzungsanforderungen mit Benutzern konsolidieren und priorisieren"}, {"id": "umsetzung-62", "titel": "6. Nutzungsanforderungen konsolidieren"}, {"id": "priorisierung", "titel": "Priorisierung (prioritization)"}, {"id": "na-in-hcd", "titel": "Qualitative Nutzungsanforderungen in der Menschzentrierten Gestaltung"}, {"id": "ure-6-2", "titel": "Die Umsetzungspriorität von Nutzungsanforderungen mit Projektbeteiligten festlegen"}]}, {"seite": "kapitel-7.html", "titel": "7 Schnittstellen", "abschnitte": [{"id": "schnittstellen-7", "titel": "7. Schnittstellen des User Requirements Engineer mit anderen Rollen und Disziplinen"}, {"id": "disziplinen", "titel": "Produktmanagement, Produktmanager (product management, product manager)"}, {"id": "aufgaben-ure", "titel": "Aufgaben und Schnittstellen des User Requirements Engineer"}]}];
 const KARTEN = [
 {
 "term": "Menschzentrierte Gestaltung",
@@ -609,6 +609,76 @@ const KARTEN = [
 "def": "Ein Erfordernis, dass eine bestimmte Kompetenz oder Fähigkeit in einer Benutzergruppe vorhanden sein muss.",
 "folie": "250",
 "kap": "4 Erfordernisse identifizieren"
+},
+{
+"term": "Nutzungsanforderung",
+"en": "user requirement",
+"def": "Anforderungen an die Nutzung, die die Basis für die Gestaltung und Evaluierung eines interaktiven Systems in Hinblick auf identifizierte Erfordernisse bilden.",
+"folie": "261",
+"kap": "5 NA ableiten"
+},
+{
+"term": "Qualitative Nutzungsanforderung",
+"en": "qualitative user requirement",
+"def": "Eine Aussage darüber, was die Benutzer im Rahmen der Durchführung einer Aufgabe mit dem interaktiven System erkennen, auswählen oder eingeben können müssen, um den identifizierten Erfordernissen des Nutzungskontextes zu genügen.",
+"folie": "262",
+"kap": "5 NA ableiten"
+},
+{
+"term": "Quantitative Nutzungsanforderung",
+"en": "quantitative user requirement",
+"def": "Ein erforderliches Maß an menschzentrierter Qualität, um identifizierte Erfordernisse in einem bestimmten Nutzungskontext zu erfüllen, ausgedrückt in Maßen für die Usability, Barrierefreiheit, User Experience und Vermeidung von Schäden durch die Benutzung.",
+"folie": "262",
+"kap": "5 NA ableiten"
+},
+{
+"term": "Kano-Schema",
+"en": "Kano scheme",
+"def": "Ein Einstufungssystem für die Priorität von qualitativen Nutzungsanforderungen oder (daraus abgeleiteten) Funktionen eines interaktiven Systems aus Benutzersicht.",
+"folie": "280",
+"kap": "6 Konsolidieren & priorisieren"
+},
+{
+"term": "Priorisierung",
+"en": "prioritization",
+"def": "Eine Aktivität, bei der festgelegt wird, ob und wann eine identifizierte Anforderung umgesetzt wird.",
+"folie": "290",
+"kap": "6 Konsolidieren & priorisieren"
+},
+{
+"term": "Produkt-Roadmap",
+"en": "product road map",
+"def": "Darstellung, die zeigt, wie sich ein Produkt über Releases hinweg in definierten Zeiträumen bzgl. seines Funktionsumfangs entwickeln soll.",
+"folie": "291",
+"kap": "6 Konsolidieren & priorisieren"
+},
+{
+"term": "Produktmanagement",
+"en": "product management",
+"def": "Disziplin in der Produktentwicklung, die die Planung, Steuerung und Kontrolle eines Produkts von seiner Entstehung bis hin zum Ausscheiden aus dem Markt (Produktlebenszyklus) umfasst, mit dem Ziel, ein marktkonformes Ergebnis zu erzielen.",
+"folie": "297",
+"kap": "7 Schnittstellen"
+},
+{
+"term": "Produktmanager",
+"en": "product manager",
+"def": "Rolle im Produktmanagement, die typischerweise die Planung, Steuerung und Kontrolle eines Produkts von seiner Entstehung bis hin zum Ausscheiden aus dem Markt verantwortet.",
+"folie": "297",
+"kap": "7 Schnittstellen"
+},
+{
+"term": "Requirements Engineering",
+"en": "Requirements Engineering",
+"def": "Disziplin, die das systematische Spezifizieren und Verwalten von Stakeholderanforderungen und Systemanforderungen umfasst.",
+"folie": "298",
+"kap": "7 Schnittstellen"
+},
+{
+"term": "Systems Engineering",
+"en": "Systems Engineering",
+"def": "Disziplin in der Produktentwicklung, die für die technische Realisierung des interaktiven Systems verantwortlich ist.",
+"folie": "299",
+"kap": "7 Schnittstellen"
 },
 {
 "term": "Modellbasierte Nutzungskontextanalyse",

@@ -3606,5 +3606,612 @@
    "erforderlichen Voraussetzungen"
   ],
   "rot_box": []
+ },
+ {
+  "file": "IMG_9844.jpg",
+  "page": 259,
+  "marker": null,
+  "title": "5. Nutzungsanforderungen aus Erfordernissen ableiten und strukturieren",
+  "rot": [
+   "5.1 – Erfordernisse systematisch in Nutzungsanforderungen überführen",
+   "Nutzungsanforderungen zutreffend aus Erfordernissen hergeleitet",
+   "erforderliche Handlungen",
+   "spezifiziert",
+   "überflüssige Handlungen vermieden"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9844.jpg",
+  "page": 260,
+  "marker": null,
+  "title": "",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9845.jpg",
+  "page": 261,
+  "marker": null,
+  "title": "Nutzungsanforderung (user requirement)",
+  "rot": [
+   "Gestaltung",
+   "Evaluierung",
+   "Erfordernisse",
+   "Basis für Gestaltung",
+   "Basis für Evaluierung"
+  ],
+  "rot_box": [
+   "qualitative Nutzungsanforderungen",
+   "quantitative Nutzungsanforderungen",
+   "Interaktionsanforderungen",
+   "Anforderungen an die Nutzungsqualität"
+  ]
+ },
+ {
+  "file": "IMG_9845.jpg",
+  "page": 262,
+  "marker": null,
+  "title": "Qualitative / Quantitative Nutzungsanforderungen (qualitative / quantitative user requirements)",
+  "rot": [
+   "Benutzer",
+   "Durchführung einer Aufgabe",
+   "erkennen",
+   "auswählen",
+   "eingeben",
+   "Maß an menschzentrierter Qualität",
+   "Erfordernisse",
+   "erfüllen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9846.jpg",
+  "page": 263,
+  "marker": null,
+  "title": "Gütekriterien für qualitative Nutzungsanforderungen",
+  "rot": [
+   "Anforderung an die Nutzung",
+   "auf",
+   "Benutzergruppen beziehen",
+   "Erfordernisse",
+   "begründet",
+   "Anforderung an die Nutzung",
+   "Interaktion"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9846.jpg",
+  "page": 264,
+  "marker": null,
+  "title": "Formulierungsschablone (Syntax) für qualitative Nutzungsanforderungen",
+  "rot": [
+   "Anforderung an die Nutzung"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9847.jpg",
+  "page": 265,
+  "marker": null,
+  "title": "Ableiten von qualitativen Nutzungsanforderungen",
+  "rot": [
+   "Leitfragen",
+   "aus jedem Erfordernis qualitative Nutzungsanforderungen ableiten"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9847.jpg",
+  "page": 266,
+  "marker": null,
+  "title": "Gütekriterien für quantitative Nutzungsanforderungen",
+  "rot": [
+   "Anforderung an die Nutzung",
+   "auf",
+   "Benutzergruppen beziehen",
+   "Stakeholderanforderungen begründen lassen",
+   "Akzeptanzkriterien für die Nutzungsqualität"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9848.jpg",
+  "page": 267,
+  "marker": null,
+  "title": "Elemente für quantitative Nutzungsanforderungen",
+  "rot": [
+   "Stakeholder",
+   "betroffene Benutzergruppe",
+   "Anzahl / Prozentzahl der Benutzenden",
+   "Quantität",
+   "Gegenstand der Nutzung",
+   "spezifische Bedingung(en)"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9848.jpg",
+  "page": 268,
+  "marker": null,
+  "title": "Sich widersprechende Erfordernisse identifizieren",
+  "rot": [
+   "innerhalb einer Benutzergruppe",
+   "gleichzeitige Erfüllung",
+   "verschiedener Benutzergruppen nicht möglich"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9849.jpg",
+  "page": 269,
+  "marker": null,
+  "title": "Vorgehen bei sich widersprechende Erfordernisse",
+  "rot": [
+   "widersprechender Erfordernisse",
+   "Kompromisse im Lösungsraum finden",
+   "Nutzungsanforderungen",
+   "werden formuliert",
+   "Lösungsfindung",
+   "Nutzungsanforderungen herunter priorisiert"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9849.jpg",
+  "page": 270,
+  "marker": null,
+  "title": "Erfordernisse systematisch in Nutzungsanforderungen überführen",
+  "rot": [
+   "Erfordernisse",
+   "direkte Quelle für Nutzungsanforderungen",
+   "Nutzungsanforderung",
+   "Erfordernisse zurückgeführt werden",
+   "begründen die Nutzungsanforderungen",
+   "Ableitung qualitativer Nutzungsanforderungen",
+   "drei Leitfragen",
+   "Information",
+   "Auswahl",
+   "Eingabe",
+   "Interaktionsanforderung",
+   "konsistente Formulierung",
+   "klar",
+   "eindeutig",
+   "gut kommuniziert",
+   "Quantitative Nutzungsanforderung",
+   "Akzeptanzkriterien der menschzentrierten Qualität",
+   "widersprüchliche Erfordernisse",
+   "Konflikte aufzulösen",
+   "Kompromisse gefunden",
+   "Nutzungsanforderungen",
+   "abgeleiteten Lösungen",
+   "ausgearbeitet"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9850.jpg",
+  "page": 271,
+  "marker": null,
+  "title": "5. Nutzungsanforderungen aus Erfordernissen ableiten und strukturieren",
+  "rot": [
+   "5.2 – Nutzungsanforderungen angemessen strukturieren",
+   "Nutzungsanforderungen als Grundlage zur Spezifikation von Nutzungsszenarien"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9850.jpg",
+  "page": 272,
+  "marker": null,
+  "title": "Aufgabenmodell als Strukturgebendes Format",
+  "rot": [],
+  "rot_box": [
+   "Vorbedingung Grund des Aktivwerdens",
+   "Aufgabe / Aktivität",
+   "Nachbedingung Ziel"
+  ]
+ },
+ {
+  "file": "IMG_9851.jpg",
+  "page": 273,
+  "marker": null,
+  "title": "Struktur des Aufgabenmodells des gegenwärtigen Nutzungskontextes, 1980er, Aufgabe Fahrzeug bei lokaler Station per Telefon reservieren",
+  "rot": [
+   "Aufgabenlebenszyklus",
+   "während der Aufgabenbearbeitung wurde ...",
+   "5. Ergebnis weitergeben",
+   "und erfüllt",
+   "ermöglicht das Erreichen des übergeordneten Ziels"
+  ],
+  "rot_box": [
+   "Fahrzeug bei Leihfirma mieten",
+   "Fahrzeug reserviert für Abholung"
+  ]
+ },
+ {
+  "file": "IMG_9851.jpg",
+  "page": 274,
+  "marker": null,
+  "title": "Aufgabenmodell Ist-Zustand: Fahrzeug bei lokaler Station reservieren",
+  "rot": [],
+  "rot_box": [
+   "Aufgabe Leihwagen mieten (1980er Jahre)",
+   "Teilaufgabe",
+   "Was geschieht hier während der Teilaufgabe?"
+  ]
+ },
+ {
+  "file": "IMG_9852.jpg",
+  "page": 275,
+  "marker": null,
+  "title": "Struktur des Aufgabenmodells des gegenwärtigen Nutzungskontextes, 1990er, Aufgabe Fahrzeug per neues System, Webseite mieten",
+  "rot": [
+   "Aufgabenlebenszyklus",
+   "während der Aufgabenbearbeitung wurde ...",
+   "5. Ergebnis weitergeben",
+   "und erfüllt",
+   "ermöglicht das Erreichen des übergeordneten Ziels"
+  ],
+  "rot_box": [
+   "Fahrzeug bei Leihfirma mieten",
+   "Fahrzeug gemietet"
+  ]
+ },
+ {
+  "file": "IMG_9852.jpg",
+  "page": 276,
+  "marker": null,
+  "title": "Aufgabenmodell der Gestaltung: Fahrzeugbuchung über Webseite leihen",
+  "rot": [],
+  "rot_box": [
+   "Aufgabe Leihwagen mieten (1990er Jahre)",
+   "Teilaufgabe",
+   "Nutzungsanforderung: Der Benutzer muss ..."
+  ]
+ },
+ {
+  "file": "IMG_9853.jpg",
+  "page": 277,
+  "marker": "Ü",
+  "title": "Praktische Übung 6",
+  "rot": [
+   "Praktische Übung 6"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9853.jpg",
+  "page": 278,
+  "marker": null,
+  "title": "Nutzungsanforderungen angemessen strukturieren",
+  "rot": [
+   "Nutzungsanforderungen",
+   "entlang der Aufgaben",
+   "Teilaufgaben strukturiert",
+   "Aufgaben",
+   "Teilaufgaben",
+   "zukünftigen interaktiven Systems",
+   "effektiv und effizient unterstützt",
+   "Aufgabenmodell des heutigen Nutzungskontexts",
+   "wahrscheinlich noch ändern",
+   "automatisch",
+   "verwendeter Technologie neu",
+   "Aufgabenmodell für die Gestaltung",
+   "angepassten Struktur",
+   "Aufgaben",
+   "Teilaufgaben",
+   "nach Aufgaben und Teilaufgaben strukturierten Nutzungsanforderungen",
+   "Aufgaben der Benutzenden zu konzentrieren"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9854.jpg",
+  "page": 279,
+  "marker": null,
+  "title": "6. Nutzungsanforderungen konsolidieren",
+  "rot": [
+   "6.1 – Nutzungsanforderungen mit Benutzern konsolidieren und priorisieren",
+   "Nutzungsanforderungen durch Benutzende",
+   "vollständig und richtig bestätigt",
+   "Relevanz jeder Nutzungsanforderung",
+   "Priorisierung",
+   "Projektsicht festgelegt"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9854.jpg",
+  "page": 280,
+  "marker": null,
+  "title": "Kano-Schema (Kano scheme)",
+  "rot": [
+   "Einstufungssystem",
+   "Priorität",
+   "aus Benutzersicht"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9855.jpg",
+  "page": 282,
+  "marker": null,
+  "title": "Vorgehen Kano-Schema",
+  "rot": [],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9855.jpg",
+  "page": 283,
+  "marker": null,
+  "title": "Notation Kano-Schema",
+  "rot": [],
+  "rot_box": [
+   "Rückweisung"
+  ]
+ },
+ {
+  "file": "IMG_9857.jpg",
+  "page": 286,
+  "marker": null,
+  "title": "Nutzungsanforderungen mit Benutzern konsolidieren und priorisieren",
+  "rot": [
+   "Nutzungsanforderungen",
+   "mit Benutzenden überprüft",
+   "angemessen",
+   "vollständig",
+   "relevant",
+   "Umsetzungspriorität",
+   "Relevanz der einzelnen Nutzungsanforderungen",
+   "Befragungs-Schemata",
+   "Relevanz der einzelner Nutzungs-anforderungen",
+   "Kano-Schema",
+   "Workshops mit Benutzenden",
+   "angemessen",
+   "vollständig",
+   "Relevanz",
+   "überprüften",
+   "Relevanz geordneten Nutzungsanforderungen",
+   "Grundlage",
+   "Umsetzungspriorität"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9857.jpg",
+  "page": 287,
+  "marker": null,
+  "title": "6. Nutzungsanforderungen konsolidieren",
+  "rot": [
+   "6.2 – Die Umsetzungspriorität von Nutzungsanforderungen mit Projektbeteiligten festlegen",
+   "Nutzungsanforderungen",
+   "durch die Projektbeteiligten",
+   "priorisiert werden müssen"
+  ],
+  "rot_box": []
+ },
+ {
+  "file": "IMG_9858.jpg",
+  "page": 288,
+  "marker": null,
+  "title": "Stakeholder- und Systemanforderung",
+  "rot": [],
+  "rot_box": [
+   "6 Nutzungsanforderungen konsolidieren"
+  ]
+ },
+ {
+  "file": "IMG_9858.jpg",
+  "page": 289,
+  "marker": null,
+  "title": "Menschzentrierte Gestaltung (HCD)",
+  "rot": [],
+  "rot_box": [
+   "6 Nutzungsanforderungen konsolidieren"
+  ]
+ },
+ {
+  "file": "IMG_9859.jpg",
+  "page": 290,
+  "marker": null,
+  "title": "Priorisierung (prioritization)",
+  "rot": [
+   "ob und wann eine identifizierte Anforderung umgesetzt",
+   "Priorisierung",
+   "zuerst",
+   "menschzentrierte Qualitätsziele",
+   "zweiten Schritt"
+  ],
+  "rot_box": [
+   "6 Nutzungsanforderungen konsolidieren"
+  ]
+ },
+ {
+  "file": "IMG_9859.jpg",
+  "page": 291,
+  "marker": null,
+  "title": "Produkt-Roadmap (product road map)",
+  "rot": [
+   "Darstellung",
+   "Produkt über Releases",
+   "entwickeln soll",
+   "Kommunikation zwischen Disziplinen",
+   "Verständnis für die langfristige Produktplanung",
+   "verbundenen Aktivitäten"
+  ],
+  "rot_box": [
+   "6 Nutzungsanforderungen konsolidieren"
+  ]
+ },
+ {
+  "file": "IMG_9860.jpg",
+  "page": 292,
+  "marker": null,
+  "title": "Schema der Priorisierung",
+  "rot": [],
+  "rot_box": [
+   "6 Nutzungsanforderungen konsolidieren"
+  ]
+ },
+ {
+  "file": "IMG_9860.jpg",
+  "page": 293,
+  "marker": null,
+  "title": "Qualitative Nutzungsanforderungen in der Menschzentrierten Gestaltung",
+  "rot": [
+   "Stakeholder fordern Funktionen oder Teilfunktionen",
+   "Werden genannt von Nutzenden in Form von heutigen Interaktionen und in \"Frühform\" von Zielen, Wünschen, Forderungen, Funktionen",
+   "Ableitung aus Erfordernissen und Stakeholderanforderungen",
+   "Priorisierung der Umsetzung in der Planung und Produkt Road Map",
+   "Grundlage für Interaktion, Systemarchitektur, Funktionen",
+   "Grundlage für Testaufgaben und Evaluierung",
+   "Funktion oder Merkmal im Produkt, System"
+  ],
+  "rot_box": [
+   "6 Nutzungsanforderungen konsolidieren"
+  ]
+ },
+ {
+  "file": "IMG_9861.jpg",
+  "page": 294,
+  "marker": null,
+  "title": "Quantitative Nutzungsanforderungen in der Menschzentrierten Gestaltung",
+  "rot": [
+   "Stakeholder fordern Kriterien der Nutzungsqualität",
+   "Nutzende geben Rückmeldung in Form von Bedürfnissen und Info zur Akzeptanz",
+   "Formulierung und Anpassung der Anforderungen aus der Planungsphase und den Infos des Nutzungskontextes",
+   "Priorisierung der Umsetzung in der Planung der Produkt Road Map",
+   "Grundlage und Richtwerte der zu erreichenden Nutzungsqualität",
+   "Grundlage für Testaufgaben und Messung der MZ-Qualität",
+   "Produkt, System hat geforderte Nutzungsqualität / MZ-Qualität"
+  ],
+  "rot_box": [
+   "6 Nutzungsanforderungen konsolidieren"
+  ]
+ },
+ {
+  "file": "IMG_9861.jpg",
+  "page": 295,
+  "marker": null,
+  "title": "Die Umsetzungspriorität von Nutzungsanforderungen mit Projektbeteiligten festlegen",
+  "rot": [
+   "Satz von Nutzungsanforderungen",
+   "überprüft",
+   "Projektteam über die Umsetzungspriorität",
+   "neben den geschätzten Kosten",
+   "Relevanz der einzelnen Nutzungsanforderungen",
+   "Nutzungsanforderungen zu kommunizieren",
+   "Relevanz",
+   "Hinblick auf Effektivität",
+   "Effizienz",
+   "Zufriedenheit",
+   "nicht sofort umgesetzt",
+   "Produkt-Roadmap",
+   "Priorisierung der Nutzungsanforderungen",
+   "legt den Zeitpunkt",
+   "fest",
+   "zeitliche Priorisierung Umsetzungskonflikte vermeiden"
+  ],
+  "rot_box": [
+   "Die URE Story"
+  ]
+ },
+ {
+  "file": "IMG_9862.jpg",
+  "page": 296,
+  "marker": "+",
+  "title": "7. Schnittstellen des User Requirements Engineer mit anderen Rollen und Disziplinen",
+  "rot": [
+   "7.1 – Als User Requirements Engineer erfolgreicher Lieferant anderer Rollen sein",
+   "User Requirements Engineer andere relevante Disziplinen und Rollen",
+   "Arbeitsergebnisse",
+   "kommunizieren"
+  ],
+  "rot_box": [
+   "7 Schnittstellen des User Requirements Engineer mit anderen Rollen und Disziplinen"
+  ]
+ },
+ {
+  "file": "IMG_9862.jpg",
+  "page": 297,
+  "marker": "+",
+  "title": "Produktmanagement, Produktmanager (product management, product manager)",
+  "rot": [
+   "Planung",
+   "Steuerung",
+   "Kontrolle",
+   "Verantwortet",
+   "Erheben",
+   "Dokumentieren",
+   "Verwalten",
+   "Stakeholderanforderungen",
+   "Qualität der Umsetzung"
+  ],
+  "rot_box": [
+   "7 Schnittstellen des User Requirements Engineer mit anderen Rollen und Disziplinen"
+  ]
+ },
+ {
+  "file": "IMG_9863.jpg",
+  "page": 298,
+  "marker": "+",
+  "title": "Requirements Engineering",
+  "rot": [
+   "systematische Spezifizieren",
+   "Verwalten",
+   "Stakeholderanforderungen",
+   "Systemanforderungen",
+   "nicht immer explizit",
+   "unterschieden",
+   "zunehmende Bedeutung",
+   "Usability",
+   "User Experience",
+   "klassische Rolle des Requirements Engineer",
+   "Systemanforderungen",
+   "Relevanz der Nutzungsanforderungen steigt",
+   "Notwendigkeit der Rolle",
+   "Teildisziplin",
+   "Usability Engineering",
+   "Requirements Engineering"
+  ],
+  "rot_box": [
+   "7 Schnittstellen des User Requirements Engineer mit anderen Rollen und Disziplinen"
+  ]
+ },
+ {
+  "file": "IMG_9863.jpg",
+  "page": 299,
+  "marker": "+",
+  "title": "Systems Engineering",
+  "rot": [
+   "die technische Realisierung",
+   "Umsetzung der Systemanforderungen",
+   "Mitglieder des Projektteams",
+   "Teil des Systems Engineering",
+   "User Requirements Engineer",
+   "fachlicher Ansprechpartner",
+   "Nutzungsanforderungen"
+  ],
+  "rot_box": [
+   "7 Schnittstellen des User Requirements Engineer mit anderen Rollen und Disziplinen"
+  ]
+ },
+ {
+  "file": "IMG_9864.jpg",
+  "page": 300,
+  "marker": "+",
+  "title": "Aufgaben und Schnittstellen des User Requirements Engineer",
+  "rot": [],
+  "rot_box": [
+   "7 Schnittstellen des User Requirements Engineer mit anderen Rollen und Disziplinen"
+  ]
  }
 ]

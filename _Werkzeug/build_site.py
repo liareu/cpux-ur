@@ -43,6 +43,12 @@ PAGES = [
      'Kapitel 3', 'Nutzungskontextinformation erheben und dokumentieren'),
     ('kapitel-4.html', '4 Erfordernisse identifizieren', 'looks_4', 'Kapitel', ['erfordernisse-4', 'erfordernis-def', 'arten-erfordernisse', 'qualitaet-erfordernisse', 'syntax-erfordernisse', 'erfordernisse-identifizieren', 'nki-typen-beispiele', 'ueberblick-praxis', 'ure-erfordernisse'],
      'Kapitel 4', 'Erfordernisse in Nutzungskontextinformationen identifizieren'),
+    ('kapitel-5.html', '5 NA ableiten', 'looks_5', 'Kapitel', ['na-ableiten-5', 'na-def-5', 'guete-qual', 'syntax-qual', 'ableiten-qual', 'guete-quant', 'elemente-quant', 'widerspruch', 'ure-5-1', 'na-strukturieren', 'aufgabenmodell-struktur', 'uebung-6', 'ure-5-2'],
+     'Kapitel 5', 'Nutzungsanforderungen aus Erfordernissen ableiten und strukturieren'),
+    ('kapitel-6.html', '6 Konsolidieren & priorisieren', 'looks_6', 'Kapitel', ['konsolidieren-6', 'kano', 'ure-6-1', 'umsetzung-62', 'priorisierung', 'na-in-hcd', 'ure-6-2'],
+     'Kapitel 6', 'Nutzungsanforderungen konsolidieren'),
+    ('kapitel-7.html', '7 Schnittstellen', 'filter_7', 'Kapitel', ['schnittstellen-7', 'disziplinen', 'aufgaben-ure'],
+     'Kapitel 7', 'Schnittstellen des User Requirements Engineer mit anderen Rollen und Disziplinen'),
     ('pruefung-theorie.html', 'Theoretische Prüfung', 'quiz', 'Prüfung', ['@theorie'],
      'Theoretische Prüfung', 'Öffentliche Beispielprüfung CPUX-UR: 40 Fragen, 90 Minuten'),
     ('pruefung-praxis.html', 'Praktische Prüfung', 'assignment', 'Prüfung', ['pruefung', '@praxis'],
@@ -57,8 +63,7 @@ PAGES = [
      'Curriculum', 'CPUX-UR Curriculum und Glossar, durchsuchbar'),
 ]
 # Kapitel, deren Folien noch fehlen (Agenda S. 9)
-SOON = [ '5 NA ableiten',
-        '6 Konsolidieren & priorisieren', '7 Schnittstellen']
+SOON = []
 
 # Sektionen, die nicht aus der Einzelseite kommen
 EXTRA_SUB = {
@@ -221,12 +226,40 @@ extra_html = {
     '@curriculum': open(os.path.join(tool_dir, 'curriculum.html'), encoding='utf-8').read(),
 }
 extra_html['@ure'] = sammelseite(r'<div class="card ure">', 'URE Story', 'Noch keine URE Story vorhanden.')
-schab = []
+schab, sch_tabs = [], []
+# Gütekriterien zu einer Schablone (Folie der Schablone → Karten-IDs in den Kapiteln)
+SCH_KRIT = {'103': ['guete-qual-k', 'krit-anforderungen', 'immunisierungsfalle'], '264': ['guete-qual-k', 'immunisierungsfalle'],
+            '110': ['guete-quant-k', 'krit-anforderungen'], '267': ['guete-quant-k'], '252': ['krit-erfordernisse']}
+
+
+def karte_mit_id(kid):
+    for pg_, sec_ in ((pg_, sec_) for pg_ in PAGES for sec_ in pg_[4] if sec_ in sections):
+        i = sections[sec_].find('id="%s"' % kid)
+        if i >= 0:
+            return pg_, element_at(sections[sec_], sections[sec_].rindex('<div', 0, i))
+    raise KeyError('Karte nicht gefunden: ' + kid)
+
+
+def guetekriterien(nr):
+    teile = []
+    for kid in SCH_KRIT.get(nr, []):
+        pg_, h = karte_mit_id(kid)
+        innen = re.sub(r'^<div[^>]*>', '', h)[:-len('</div>')]
+        teile.append('<div class="sch-krit-k">%s <a class="sm-link" href="%s#%s">im Kapitel ansehen →</a></div>' % (innen, pg_[0], kid))
+    return ('<details class="sch-krit" open><summary><span class="material-icons">workspace_premium</span>Gütekriterien dazu</summary>%s</details>' % ''.join(teile)) if teile else ''
+
+
 for pg, sec, h in sammeln(r'<div class="schablone"'):
     t = re.search(r'data-titel="([^"]*)"', h).group(1); f = re.search(r'data-folie="([^"]*)"', h).group(1)
-    schab.append('        <div class="card schablone-karte" id="sch-%s"><h3>' % re.sub(r'\D', '', f.split(',')[0]) + '<span class="material-icons">text_fields</span>%s <small>%s</small></h3>\n            %s\n            <span class="src"><span class="material-icons">description</span>Folie %s</span> <a class="sm-link" href="%s#%s">im Kapitel ansehen →</a>\n        </div>\n' % (t, html.escape(pg[5] or ''), h, f.replace('S. ', 'S. '), pg[0], sec))
+    sch_tabs.append('<a class="sch-tab" href="#sch-%s"><b>%s</b><small>%s · Folie %s</small></a>' % (re.sub(r'\D', '', f.split(',')[0]), t, html.escape(pg[5] or ''), f))
+    schab.append('        <div class="card schablone-karte" id="sch-%s"><h3>' % re.sub(r'\D', '', f.split(',')[0]) + '<span class="material-icons">text_fields</span>%s <small>%s</small></h3>\n            %s\n            <span class="src"><span class="material-icons">description</span>Folie %s</span> <a class="sm-link" href="%s#%s">im Kapitel ansehen →</a>\n            %s\n        </div>\n' % (t, html.escape(pg[5] or ''), h, f.replace('S. ', 'S. '), pg[0], sec, guetekriterien(re.sub(r'\D', '', f.split(',')[0]))))
 extra_html['@schablonen'] = ('    <section class="section" id="schablonen-alle">\n        <div class="section-title"><div class="num"><span class="material-icons">text_fields</span></div><h2>Formulierungsschablonen</h2></div>\n'
-    '        <p class="section-lead">Alle Schablonen und Bausteine aus den Folien an einem Ort, im Wortlaut. Neue Schablonen aus weiteren Folien kommen automatisch dazu.</p>\n' + ''.join(schab) + '    </section>\n')
+    '        <p class="section-lead">Alle Schablonen und Bausteine aus den Folien an einem Ort, im Wortlaut. Neue Schablonen aus weiteren Folien kommen automatisch dazu.</p>\n'
+    '        <nav class="sch-tabs" aria-label="Schablonen">' + ''.join(sch_tabs) + '</nav>\n' + ''.join(schab) + '    </section>\n'
+    '<script>\n(() => {\n    const tabs = [...document.querySelectorAll(\'.sch-tab\')];\n'
+    '    const ziele = tabs.map(t => document.querySelector(t.getAttribute(\'href\')));\n'
+    '    function markieren() { let k = 0; ziele.forEach((z, i) => { if (z && z.getBoundingClientRect().top < 200) k = i; }); tabs.forEach((t, i) => t.classList.toggle(\'on\', i === k)); }\n'
+    '    window.addEventListener(\'scroll\', markieren); markieren();\n})();\n</script>\n')
 # Schablonen direkt an der Prüfungsaufgabe: <!--SCHABLONEN S. 252|S. 103--> in praxis.html
 sch_by = {re.search(r'data-folie="([^"]*)"', h).group(1).split(',')[0]: (re.search(r'data-titel="([^"]*)"', h).group(1), h) for pg, sec, h in sammeln(r'<div class="schablone"')}
 
@@ -253,7 +286,10 @@ for q in EXQ:
 # Zuordnung Lerneinheit → Abschnitte der Kapitelseiten (redaktionell, auf Ebene der Lerneinheit)
 UNIT_SECS = {'1.1': ['kette'], '1.2': ['anforderungen'], '1.3': ['kontext', 'aufgabenmodell'], '1.4': ['nutzungsanforderungen'],
              '2.1': ['planen'], '2.2': ['planen', 'methoden'], '3.1': ['rekrutieren'],
-             '3.2': ['durchfuehren', 'beobachtung', 'fokusgruppe', 'methodenwahl', 'mentale-modelle'], '3.3': ['beschreiben', 'nk-beschreibung', 'narrativ', 'modellhaft', 'ergebnisse-33'], '4.1': ['erfordernisse-4', 'erfordernis-def', 'arten-erfordernisse', 'qualitaet-erfordernisse', 'syntax-erfordernisse', 'erfordernisse-identifizieren', 'nki-typen-beispiele', 'ueberblick-praxis', 'ure-erfordernisse']}
+             '3.2': ['durchfuehren', 'beobachtung', 'fokusgruppe', 'methodenwahl', 'mentale-modelle'], '3.3': ['beschreiben', 'nk-beschreibung', 'narrativ', 'modellhaft', 'ergebnisse-33'], '4.1': ['erfordernisse-4', 'erfordernis-def', 'arten-erfordernisse', 'qualitaet-erfordernisse', 'syntax-erfordernisse', 'erfordernisse-identifizieren', 'nki-typen-beispiele', 'ueberblick-praxis', 'ure-erfordernisse'],
+             '5.1': ['na-ableiten-5', 'na-def-5', 'guete-qual', 'syntax-qual', 'ableiten-qual', 'guete-quant', 'elemente-quant', 'widerspruch', 'ure-5-1'],
+             '5.2': ['na-strukturieren', 'aufgabenmodell-struktur', 'uebung-6', 'ure-5-2'], '6.1': ['konsolidieren-6', 'kano', 'ure-6-1'],
+             '6.2': ['umsetzung-62', 'priorisierung', 'na-in-hcd', 'ure-6-2']}
 sec_title = {}
 for sid, h in sections.items():
     m = re.search(r'<h2>(.*?)</h2>', h, re.S)

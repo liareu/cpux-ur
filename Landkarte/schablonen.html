@@ -17,7 +17,7 @@
     <div class="sidebar-header">
         <span class="ux-lab-pill">UX Lab</span>
         <h2>CPUX-UR Prozess-Landkarte</h2>
-        <p>Lernbegleiter zum Training, Stand Folie S. 258</p>
+        <p>Lernbegleiter zum Training, Stand Folie S. 300</p>
     </div>
     <nav class="sidebar-nav" id="nav">
         <div class="nav-group">Überblick</div>
@@ -34,9 +34,9 @@
         <a href="kapitel-2.html" class="nav-link"><span class="material-icons">looks_two</span>2 NKA planen</a>
         <a href="kapitel-3.html" class="nav-link"><span class="material-icons">looks_3</span>3 Information erheben</a>
         <a href="kapitel-4.html" class="nav-link"><span class="material-icons">looks_4</span>4 Erfordernisse identifizieren</a>
-        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>5 NA ableiten</span>
-        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>6 Konsolidieren &amp; priorisieren</span>
-        <span class="nav-link soon" title="Folien folgen"><span class="material-icons">schedule</span>7 Schnittstellen</span>
+        <a href="kapitel-5.html" class="nav-link"><span class="material-icons">looks_5</span>5 NA ableiten</a>
+        <a href="kapitel-6.html" class="nav-link"><span class="material-icons">looks_6</span>6 Konsolidieren &amp; priorisieren</a>
+        <a href="kapitel-7.html" class="nav-link"><span class="material-icons">filter_7</span>7 Schnittstellen</a>
         <div class="nav-group">Prüfung</div>
         <a href="pruefung-theorie.html" class="nav-link"><span class="material-icons">quiz</span>Theoretische Prüfung</a>
         <a href="pruefung-praxis.html" class="nav-link"><span class="material-icons">assignment</span>Praktische Prüfung</a>
@@ -61,12 +61,47 @@
     <section class="section" id="schablonen-alle">
         <div class="section-title"><div class="num"><span class="material-icons">text_fields</span></div><h2>Formulierungsschablonen</h2></div>
         <p class="section-lead">Alle Schablonen und Bausteine aus den Folien an einem Ort, im Wortlaut. Neue Schablonen aus weiteren Folien kommen automatisch dazu.</p>
+        <nav class="sch-tabs" aria-label="Schablonen"><a class="sch-tab" href="#sch-103"><b>Qualitative Nutzungsanforderung</b><small>Kapitel 1 · Folie S. 103</small></a><a class="sch-tab" href="#sch-110"><b>Quantitative Nutzungsanforderung</b><small>Kapitel 1 · Folie S. 110</small></a><a class="sch-tab" href="#sch-252"><b>Formulierungsschablone (Syntax) für Erfordernisse</b><small>Kapitel 4 · Folie S. 252</small></a><a class="sch-tab" href="#sch-264"><b>Formulierungsschablone (Syntax) für qualitative Nutzungsanforderungen</b><small>Kapitel 5 · Folie S. 264</small></a><a class="sch-tab" href="#sch-267"><b>Elemente für quantitative Nutzungsanforderungen</b><small>Kapitel 5 · Folie S. 267</small></a></nav>
         <div class="card schablone-karte" id="sch-103"><h3><span class="material-icons">text_fields</span>Qualitative Nutzungsanforderung <small>Kapitel 1</small></h3>
             <div class="schablone" data-titel="Qualitative Nutzungsanforderung" data-folie="S. 103">
                         <div class="sec">Formulierungsschablone (Syntax) für eine qualitativen Nutzungsanforderung:</div>
                         <div class="template">Der <span class="slot">&lt;Benutzer&gt;</span> muss am System eine <span class="slot">&lt;Information oder Ressource&gt;</span> <span class="slot">erkennen / eingeben / auswählen</span> können unter <span class="slot">&lt;Bedingung (optional)&gt;</span>.</div>
                         </div>
             <span class="src"><span class="material-icons">description</span>Folie S. 103</span> <a class="sm-link" href="kapitel-1.html#nutzungsanforderungen">im Kapitel ansehen →</a>
+            <details class="sch-krit" open><summary><span class="material-icons">workspace_premium</span>Gütekriterien dazu</summary><div class="sch-krit-k">
+            <h3><span class="material-icons">article</span>Gütekriterien für qualitative Nutzungsanforderungen <span class="qq-tag">Qual.</span></h3>
+            <ul><li>Müssen immer als Anforderung an die Nutzung und nicht als geforderte Lösung formuliert werden.</li><li>Müssen sich immer auf eine oder mehrere Benutzergruppen beziehen.</li><li>Müssen immer durch Erfordernisse im Nutzungskontext begründet sein.</li><li>Müssen immer aus einer Anforderung an die Nutzung / Interaktion (etwas eingeben, auswählen, erkennen können) eines interaktiven Systems, ggf. unter welcher Bedingung (und ggf. Referenz zu Erfordernis) bestehen.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 263</span>
+         <a class="sm-link" href="kapitel-5.html#guete-qual-k">im Kapitel ansehen →</a></div><div class="sch-krit-k">
+                <h3><span class="material-icons">rule</span>Typische Qualitätskriterien von Anforderung aus dem RE <span class="note-inline">(Bosch)</span></h3>
+                <div class="box grau"><div class="box-title"><span class="material-icons">help_outline</span>Frage (S. 39)</div>Auf welche Kriterien hin können Anforderungen überprüft werden?<br>Gibt es Unterschiede für die Formulierung für das Requirements Engineering und das User Requirements Engineering?</div>
+                <table class="criteria">
+                    <tr><th>#</th><th>Eigenschaft</th><th>Beschreibung</th></tr>
+                    <tr><td>1</td><td>eindeutig</td><td>Darf nur in einer Weise auslegbar sein.</td></tr>
+                    <tr><td>2</td><td>umsetzbar</td><td>Darf physikalischen Grundsätzen nicht widersprechen.</td></tr>
+                    <tr><td>3</td><td>verständlich</td><td>Muss beim ersten Lesen zu verstehen sein.</td></tr>
+                    <tr><td>4</td><td>testbar</td><td>Muss ein Kriterium enthalten, das durch einen Test überprüfbar ist.</td></tr>
+                    <tr><td>5</td><td>lösungsneutral</td><td>Darf keine Lösung enthalten oder auf eine Lösung hinweisen.</td></tr>
+                    <tr><td>6</td><td>korrekt</td><td>Muss so formuliert sein, dass der Anfordernde und der Entwickelnde / Spezifizierende das Gleiche darunter verstehen.</td></tr>
+                    <tr><td>7</td><td>eineindeutig</td><td>Ein Sachverhalt pro Anforderung.</td></tr>
+                    <tr><td>8</td><td>identifizierbar</td><td>Eindeutige, nicht änderbare ID für das Lebenszyklusmanagement.</td></tr>
+                    <tr class="hl"><td>9</td><td>begründet</td><td>Muss auf einem Erfordernis beruhen. <span class="note-inline">und … wichtiges Qualitätskriterium im URE (S. 41)</span></td></tr>
+                </table>
+                <span class="src"><span class="material-icons">description</span>Folien S. 40, 41</span>
+             <a class="sm-link" href="kapitel-1.html#krit-anforderungen">im Kapitel ansehen →</a></div><div class="sch-krit-k">
+                <h3><span class="material-icons">warning_amber</span>Immunisierungsfalle (immunization trap)</h3>
+                <p style="font-size:13px;color:#6b7280">Immunisierungsfalle – Mobiltelefon (S. 49, Fotos auf der Folie)</p>
+                <div class="box pink"><div class="box-title">Definition</div>Ein unbewusst gewähltes Vorgehen, bei dem Anforderungen spezifiziert werden, die bekannte oder vorgestellte Lösungen repräsentieren, statt lösungsneutral auf der Basis von Erfordernissen im Nutzungskontext hergeleitet worden zu sein.
+                    <ul style="margin-top:6px"><li>Führt zu immunisierten Anforderungen.</li><li>Das systematische Herleiten von Anforderungen auf der Basis von Nutzungskontextinformationen vermeidet die Immunisierungsfalle. Dies ermöglicht den Vergleich von Lösungsalternativen, die die Anforderungen erfüllen.</li></ul></div>
+                <div style="margin-top:14px">
+                    <div class="nok"><span class="material-icons">close</span><span><b>Immunisiert:</b> Der Benutzer muss am Fahrkartenautomaten das Tarifsystem aufrufen können.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span><b>Nicht immunisiert:</b> Der Benutzer muss am System auf Grundlage des ausgewählten Fahrtziels den Preis für die Fahrt erkennen können.</span></div>
+                    <div class="nok"><span class="material-icons">close</span><span><b>Immunisiert:</b> Der Benutzer muss am Heizungsventil die Wärmestufen 1, 2, 3, 4, 5 auswählen können.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span><b>Nicht immunisiert:</b> Der Benutzer muss an der Heizung die Wunschtemperatur auswählen können.</span></div>
+                </div>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 48)</div>hilfreich</div>
+                <span class="src"><span class="material-icons">description</span>Folien S. 48, 49</span>
+             <a class="sm-link" href="kapitel-1.html#immunisierungsfalle">im Kapitel ansehen →</a></div></details>
         </div>
         <div class="card schablone-karte" id="sch-110"><h3><span class="material-icons">text_fields</span>Quantitative Nutzungsanforderung <small>Kapitel 1</small></h3>
             <div class="schablone" data-titel="Quantitative Nutzungsanforderung" data-folie="S. 110">
@@ -74,21 +109,77 @@
                         <ul><li><span class="slot">Stakeholder</span>, der die Anforderung stellt (z.B. Arbeitgeber oder Gesetzgeber)</li><li>betroffene <span class="slot">Benutzergruppen</span>, für die die Anforderung während der Nutzung gilt</li><li><span class="slot">Anzahl / Prozentzahl der Benutzer</span>, die die Anforderung erfüllen müssen</li><li><span class="slot">Gegenstand der Nutzung</span> (Nutzungsobjekt, Werkzeug) <span class="note-inline">Deine Notiz: Aufgabe</span></li><li><span class="slot">Quantität</span> (z.B. maximal zulässige Zeit, Fehlerrate, Genauigkeit)</li><li><span class="slot">spezifische Bedingungen</span> des Nutzungskontextes unter denen die Nutzung stattfindet</li></ul>
                         </div>
             <span class="src"><span class="material-icons">description</span>Folie S. 110</span> <a class="sm-link" href="kapitel-1.html#nutzungsanforderungen">im Kapitel ansehen →</a>
-        </div>
-        <div class="card schablone-karte" id="sch-200"><h3><span class="material-icons">text_fields</span>Benutzerwünsche, Bedürfnisse, emotionale Zustände – Beispiele <small>Kapitel 3</small></h3>
-            <div class="schablone" data-titel="Benutzerwünsche, Bedürfnisse, emotionale Zustände – Beispiele" data-folie="S. 200">
-                <div class="ok"><span class="material-icons">check</span><span>Der Arzt (Zielgruppe) will beim Kauf eines Medizinprodukts (spezifische Situation) feststellen können, dass er das Medizinprodukt im Einsatz beherrschen wird (Voraussetzung), um sich bei der Kaufentscheidung sicher zu fühlen (emotionaler Zustand).</span></div>
-                <div class="ok"><span class="material-icons">check</span><span>Der Wähler (Zielgruppe) will bei der Wahl in der Wahlkabine (spezifische Situation) feststellen können, dass er nicht beobachtet wird (Voraussetzung), um während des Wahlvorgangs Privatsphäre wahrzunehmen (emotionaler Zustand).</span></div>
-                <div class="ok"><span class="material-icons">check</span><span>Der Schüler (Zielgruppe) will im Sportunterricht (spezifische Situation) eine Turnhose eines anerkannten Markenherstellers tragen (Voraussetzung), um in der Schulklasse das Gefühl der Anerkennung durch die Schulkameraden zu haben (emotionaler Zustand).</span></div>
-                <div class="ok"><span class="material-icons">check</span><span>Der Lottospieler (Zielgruppe) will sich beim Kauf des Lottoscheines (spezifische Situation) vorstellen können, wie es wäre, wenn er gewinnt (Voraussetzung) um Glück zu empfinden (emotionaler Zustand).</span></div>
-            </div>
-            <span class="src"><span class="material-icons">description</span>Folie S. 200</span> <a class="sm-link" href="kapitel-3.html#mentale-modelle">im Kapitel ansehen →</a>
+            <details class="sch-krit" open><summary><span class="material-icons">workspace_premium</span>Gütekriterien dazu</summary><div class="sch-krit-k">
+            <h3><span class="material-icons">article</span>Gütekriterien für quantitative Nutzungsanforderungen <span class="qq-tag">Quant.</span></h3>
+            <ul><li>Müssen immer als Anforderung an die Nutzung und nicht als geforderte Lösung formuliert werden.</li><li>Müssen sich immer auf eine oder mehrere Benutzergruppen beziehen.</li><li>Quantitative Nutzungsanforderungen müssen sich immer durch Stakeholderanforderungen begründen lassen.</li><li>Quantitative Nutzungsanforderungen müssen als Akzeptanzkriterien für die Nutzungsqualität dienen können.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 266</span>
+         <a class="sm-link" href="kapitel-5.html#guete-quant-k">im Kapitel ansehen →</a></div><div class="sch-krit-k">
+                <h3><span class="material-icons">rule</span>Typische Qualitätskriterien von Anforderung aus dem RE <span class="note-inline">(Bosch)</span></h3>
+                <div class="box grau"><div class="box-title"><span class="material-icons">help_outline</span>Frage (S. 39)</div>Auf welche Kriterien hin können Anforderungen überprüft werden?<br>Gibt es Unterschiede für die Formulierung für das Requirements Engineering und das User Requirements Engineering?</div>
+                <table class="criteria">
+                    <tr><th>#</th><th>Eigenschaft</th><th>Beschreibung</th></tr>
+                    <tr><td>1</td><td>eindeutig</td><td>Darf nur in einer Weise auslegbar sein.</td></tr>
+                    <tr><td>2</td><td>umsetzbar</td><td>Darf physikalischen Grundsätzen nicht widersprechen.</td></tr>
+                    <tr><td>3</td><td>verständlich</td><td>Muss beim ersten Lesen zu verstehen sein.</td></tr>
+                    <tr><td>4</td><td>testbar</td><td>Muss ein Kriterium enthalten, das durch einen Test überprüfbar ist.</td></tr>
+                    <tr><td>5</td><td>lösungsneutral</td><td>Darf keine Lösung enthalten oder auf eine Lösung hinweisen.</td></tr>
+                    <tr><td>6</td><td>korrekt</td><td>Muss so formuliert sein, dass der Anfordernde und der Entwickelnde / Spezifizierende das Gleiche darunter verstehen.</td></tr>
+                    <tr><td>7</td><td>eineindeutig</td><td>Ein Sachverhalt pro Anforderung.</td></tr>
+                    <tr><td>8</td><td>identifizierbar</td><td>Eindeutige, nicht änderbare ID für das Lebenszyklusmanagement.</td></tr>
+                    <tr class="hl"><td>9</td><td>begründet</td><td>Muss auf einem Erfordernis beruhen. <span class="note-inline">und … wichtiges Qualitätskriterium im URE (S. 41)</span></td></tr>
+                </table>
+                <span class="src"><span class="material-icons">description</span>Folien S. 40, 41</span>
+             <a class="sm-link" href="kapitel-1.html#krit-anforderungen">im Kapitel ansehen →</a></div></details>
         </div>
         <div class="card schablone-karte" id="sch-252"><h3><span class="material-icons">text_fields</span>Formulierungsschablone (Syntax) für Erfordernisse <small>Kapitel 4</small></h3>
             <div class="schablone" data-titel="Formulierungsschablone (Syntax) für Erfordernisse" data-folie="S. 252"><div class="template">Die <span class="slot">&lt;Benutzergruppe&gt;</span> muss<br><span class="tpl-gruppe"><span class="tpl-zeilen"><span class="slot">&lt;Information&gt;</span> wissen /<br><span class="slot">&lt;Ressource&gt;</span> verfügbar haben /<br><span class="slot">&lt;Kompetenz/Fähigkeit&gt;</span> haben</span><span class="tpl-label">identifizierte Voraussetzung</span></span><br><span class="tpl-gruppe"><span class="tpl-zeilen">um <span class="slot">&lt;Entscheidung treffen&gt;</span> oder <span class="slot">&lt;Handlung ausführen&gt;</span> zu können.</span><span class="tpl-label">beabsichtigtes Ergebnis == Ziel</span></span></div></div>
             <span class="src"><span class="material-icons">description</span>Folie S. 252</span> <a class="sm-link" href="kapitel-4.html#syntax-erfordernisse">im Kapitel ansehen →</a>
+            <details class="sch-krit" open><summary><span class="material-icons">workspace_premium</span>Gütekriterien dazu</summary><div class="sch-krit-k">
+            <h3><span class="material-icons">article</span>Qualitätskriterien für Erfordernisse</h3>
+            <ul><li>Erfordernisse sind immer im Nutzungskontext begründet</li><li>Erfordernisse sind immer objektiv für alle Benutzenden einer Benutzergruppe zutreffend</li><li>Erfordernisse sind immer unstrittig</li><li>Erfordernisse bestehen immer aus einer Voraussetzung, die gegeben sein muss in Form eines Zustands ("etwas verfügbar haben" oder "etwas wissen" oder "etwas können") und dem Ziel, dem diese Voraussetzung dient ("etwas entscheiden können" oder "etwas tun können").</li><li>Das (zu entwickelnde oder zu evaluierende) interaktive System kommt nicht im Erfordernis vor.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 251</span>
+         <a class="sm-link" href="kapitel-4.html#krit-erfordernisse">im Kapitel ansehen →</a></div></details>
+        </div>
+        <div class="card schablone-karte" id="sch-264"><h3><span class="material-icons">text_fields</span>Formulierungsschablone (Syntax) für qualitative Nutzungsanforderungen <small>Kapitel 5</small></h3>
+            <div class="schablone" data-titel="Formulierungsschablone (Syntax) für qualitative Nutzungsanforderungen" data-folie="S. 264"><div class="template">Der Benutzer muss am System eine <span class="slot">&lt;Information oder Ressource&gt;</span><br><span class="tpl-gruppe"><span class="tpl-zeilen">eingeben /<br>auswählen /<br>erkennen können</span><span class="tpl-label">Anforderung an die Nutzung</span></span><br>unter <span class="slot">&lt;Bedingung (optional)&gt;</span>.</div></div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 264</span> <a class="sm-link" href="kapitel-5.html#syntax-qual">im Kapitel ansehen →</a>
+            <details class="sch-krit" open><summary><span class="material-icons">workspace_premium</span>Gütekriterien dazu</summary><div class="sch-krit-k">
+            <h3><span class="material-icons">article</span>Gütekriterien für qualitative Nutzungsanforderungen <span class="qq-tag">Qual.</span></h3>
+            <ul><li>Müssen immer als Anforderung an die Nutzung und nicht als geforderte Lösung formuliert werden.</li><li>Müssen sich immer auf eine oder mehrere Benutzergruppen beziehen.</li><li>Müssen immer durch Erfordernisse im Nutzungskontext begründet sein.</li><li>Müssen immer aus einer Anforderung an die Nutzung / Interaktion (etwas eingeben, auswählen, erkennen können) eines interaktiven Systems, ggf. unter welcher Bedingung (und ggf. Referenz zu Erfordernis) bestehen.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 263</span>
+         <a class="sm-link" href="kapitel-5.html#guete-qual-k">im Kapitel ansehen →</a></div><div class="sch-krit-k">
+                <h3><span class="material-icons">warning_amber</span>Immunisierungsfalle (immunization trap)</h3>
+                <p style="font-size:13px;color:#6b7280">Immunisierungsfalle – Mobiltelefon (S. 49, Fotos auf der Folie)</p>
+                <div class="box pink"><div class="box-title">Definition</div>Ein unbewusst gewähltes Vorgehen, bei dem Anforderungen spezifiziert werden, die bekannte oder vorgestellte Lösungen repräsentieren, statt lösungsneutral auf der Basis von Erfordernissen im Nutzungskontext hergeleitet worden zu sein.
+                    <ul style="margin-top:6px"><li>Führt zu immunisierten Anforderungen.</li><li>Das systematische Herleiten von Anforderungen auf der Basis von Nutzungskontextinformationen vermeidet die Immunisierungsfalle. Dies ermöglicht den Vergleich von Lösungsalternativen, die die Anforderungen erfüllen.</li></ul></div>
+                <div style="margin-top:14px">
+                    <div class="nok"><span class="material-icons">close</span><span><b>Immunisiert:</b> Der Benutzer muss am Fahrkartenautomaten das Tarifsystem aufrufen können.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span><b>Nicht immunisiert:</b> Der Benutzer muss am System auf Grundlage des ausgewählten Fahrtziels den Preis für die Fahrt erkennen können.</span></div>
+                    <div class="nok"><span class="material-icons">close</span><span><b>Immunisiert:</b> Der Benutzer muss am Heizungsventil die Wärmestufen 1, 2, 3, 4, 5 auswählen können.</span></div>
+                    <div class="ok"><span class="material-icons">check</span><span><b>Nicht immunisiert:</b> Der Benutzer muss an der Heizung die Wunschtemperatur auswählen können.</span></div>
+                </div>
+                <div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 48)</div>hilfreich</div>
+                <span class="src"><span class="material-icons">description</span>Folien S. 48, 49</span>
+             <a class="sm-link" href="kapitel-1.html#immunisierungsfalle">im Kapitel ansehen →</a></div></details>
+        </div>
+        <div class="card schablone-karte" id="sch-267"><h3><span class="material-icons">text_fields</span>Elemente für quantitative Nutzungsanforderungen <small>Kapitel 5</small></h3>
+            <div class="schablone" data-titel="Elemente für quantitative Nutzungsanforderungen" data-folie="S. 267"><p>Quantitative Nutzungsanforderungen können unter Berücksichtigung der folgenden Elemente formuliert werden:</p><ul><li>Stakeholder, der die Anforderung stellt (z.B. Arbeitgeber oder Gesetzgeber)</li><li>betroffene Benutzergruppe, die die Anforderung während der Nutzung erfüllen muss</li><li>Anzahl / Prozentzahl der Benutzenden, die die Anforderung erfüllen müssen</li><li>Quantität (z.B. maximal zulässige Zeit, Fehlerrate, Genauigkeit)</li><li>Gegenstand der Nutzung (was bei der Ausführung der Aufgabe gemacht wird)</li><li>spezifische Bedingung(en) des Nutzungskontextes unter denen die Nutzung stattfindet.</li></ul><p>✓ 95% der Benutzer des Intranets müssen an ihrem üblichen Arbeitsplatz, unabhängig von der aktuell ausgeführten Anwendung, innerhalb von zehn Sekunden das Reisekostenformular aufrufen können.</p></div>
+            <span class="src"><span class="material-icons">description</span>Folie S. 267</span> <a class="sm-link" href="kapitel-5.html#elemente-quant">im Kapitel ansehen →</a>
+            <details class="sch-krit" open><summary><span class="material-icons">workspace_premium</span>Gütekriterien dazu</summary><div class="sch-krit-k">
+            <h3><span class="material-icons">article</span>Gütekriterien für quantitative Nutzungsanforderungen <span class="qq-tag">Quant.</span></h3>
+            <ul><li>Müssen immer als Anforderung an die Nutzung und nicht als geforderte Lösung formuliert werden.</li><li>Müssen sich immer auf eine oder mehrere Benutzergruppen beziehen.</li><li>Quantitative Nutzungsanforderungen müssen sich immer durch Stakeholderanforderungen begründen lassen.</li><li>Quantitative Nutzungsanforderungen müssen als Akzeptanzkriterien für die Nutzungsqualität dienen können.</li></ul>
+            <span class="src"><span class="material-icons">description</span>Folie S. 266</span>
+         <a class="sm-link" href="kapitel-5.html#guete-quant-k">im Kapitel ansehen →</a></div></details>
         </div>
     </section>
+<script>
+(() => {
+    const tabs = [...document.querySelectorAll('.sch-tab')];
+    const ziele = tabs.map(t => document.querySelector(t.getAttribute('href')));
+    function markieren() { let k = 0; ziele.forEach((z, i) => { if (z && z.getBoundingClientRect().top < 200) k = i; }); tabs.forEach((t, i) => t.classList.toggle('on', i === k)); }
+    window.addEventListener('scroll', markieren); markieren();
+})();
+</script>
 
     <nav class="pager"><a class="prev" href="ure-story.html"><span class="material-icons">chevron_left</span><span><small>Zurück</small>URE Story</span></a><a class="next" href="curriculum.html"><span><small>Weiter</small>Curriculum</span><span class="material-icons">chevron_right</span></a></nav>
 

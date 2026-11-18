@@ -7,7 +7,7 @@
      "zusammenlauf" Stufe 1 oben, ihre Elemente als Kästen nebeneinander, alle münden in Stufe 2
      "ebenen"      Stufen als Zeilen untereinander, links die Ebene, rechts der Inhalt (ohne Gruppentitel = Pfeilkette)
      "wirkung"     Zeilen Anforderung → "wirkt" → Qualität (Stufe 1+2 links, Stufe 3 rechts; "spannen": Zeilen je rechtem Kasten)
-     "vergleich"   Gruppen als Spalten, Stufen als Zeilen; gleicher Wortlaut wird mit = markiert
+     "vergleich"   Gruppen als Spalten, Stufen als Zeilen; gleicher Wortlaut wird mit = markiert ("breit": lange Zeilentitel)
      "paare"       je Stufe eine Zeile: Stufentitel | Elemente, Spaltenköpfe aus "spalten"
      "klammer"     Stufen nebeneinander; ab Stufe "klammer_ab" fasst eine Klammer ("klammer") die übrigen zusammen
      "matrix"      Gruppen = Methoden (Umschalter), Stufen = Phasen; Stufen mit art "l" stehen als Ergänzung darunter */
@@ -75,11 +75,11 @@
             },
             vergleich: () => {
                 const spalten = (g.stufen[0].gruppen || []).map(gr => gr.titel);
-                return `<div class="pg-vgl" style="--n:${spalten.length}">
+                return `<div class="pg-vgl${g.breit ? ' breit' : ''}" style="--n:${spalten.length}">
                     <div class="pg-vgl-nr"></div>${spalten.map(t => `<div class="pg-vgl-h">${esc(t)}</div>`).join('')}
                     ${g.stufen.map(st => { const zellen = spalten.map(t => ((st.gruppen || []).find(gr => gr.titel === t) || {}).elemente || []);
                         const gleich = zellen.every(z => z.map(e => e.label).join('|') === zellen[0].map(e => e.label).join('|'));
-                        return `<div class="pg-vgl-nr">${esc(st.titel)}${gleich ? '<small title="gleicher Wortlaut">=</small>' : ''}</div>${zellen.map(z => `<div class="pg-vgl-z${gleich ? ' gleich' : ''}">${z.map(el).join('')}</div>`).join('')}`; }).join('')}
+                        return `<div class="pg-vgl-nr">${kopfK(st)}${gleich ? '<small title="gleicher Wortlaut">=</small>' : ''}</div>${zellen.map(z => `<div class="pg-vgl-z${gleich ? ' gleich' : ''}">${z.map(el).join('')}</div>`).join('')}`; }).join('')}
                 </div>`;
             },
             paare: () => `<div class="pg-paare">${(g.spalten || ['', '']).map(t => `<div class="pg-vgl-h">${esc(t)}</div>`).join('')}
