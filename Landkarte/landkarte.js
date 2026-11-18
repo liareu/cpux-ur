@@ -3,17 +3,19 @@
    Neue Folien ergänzen: Eintrag hier anlegen und in der SVG ein Element mit data-k="schluessel" setzen. */
 const ul = a => '<ul>' + a.map(x => '<li>' + x + '</li>').join('') + '</ul>';
 const pills = a => '<div class="dr-pills">' + a.map(x => '<span>' + x + '</span>').join('') + '</div>';
-const note = (t, s) => '<div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz' + (s ? ' (' + s + ')' : '') + '</div>' + t + '</div>';
+const note = (t, s) => '<div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Julias Notiz' + (s ? ' (' + s + ')' : '') + '</div>' + t + '</div>';
 const src = s => '<span class="src"><span class="material-icons">description</span>Folien ' + s + '</span>';
 
 const D = {
     hcd: { icon: 'account_balance', title: 'Menschzentrierte Gestaltung (Human-centred Design, HCD)', tags: ['ISO 9241-210:2019', 'Basis'], link: 'seminar.html#rollen', blocks: [
+        ['Alles im Zusammenhang', 'hub', '<a href="zusammenhang.html#z-hcd">Diesen Schritt mit Begriffen, Lernzielen, Prüfung und Schablonen ansehen</a>'],
         ['Definition (S. 7)', 'menu_book', 'Herangehensweise bei der Gestaltung und Entwicklung von interaktiven Systemen, die darauf abzielt, diese gebrauchstauglicher zu machen, indem sie sich auf die Verwendung des interaktiven Systems konzentriert und Kenntnisse und Methoden aus den Bereichen der Arbeitswissenschaft, Ergonomie und der Usability anwendet.'],
         ['Aktivitäten (S. 7)', 'sync', ul(['Planung des menschzentrierten Gestaltungsprozesses', 'Verstehen und Festlegen des Nutzungskontextes', 'Festlegen der Nutzungsanforderungen', 'Gestalten von Lösungen, die Nutzungsanforderungen erfüllen', 'Evaluieren der Gestaltungslösung gegen Nutzungsanforderungen', 'Gestaltungslösung erfüllt die Nutzungsanforderungen']) + '<p>Iterationen</p>'],
         ['Produktentwicklungsprozess Anteile zum PEP (S. 18)', 'hub', pills(['Technologie: Technische Entwicklung', 'Nutzende: Menschzentrierte Gestaltung (HCD)', 'Business: organisatorische Produktentwicklung'])],
         ['', '', note('beliebiger Start hier möglich', 'S. 8') + src('S. 7, 8, 18 · Quelle: UXQB CPUX-F Curriculum V4.01 nach ISO 9241-210:2019')]
     ]},
     planung: { icon: 'event_note', title: 'Planung des menschzentrierten Gestaltungsprozesses', tags: ['Problemraum', 'Kapitel 2'], link: 'kapitel-2.html#planen', blocks: [
+        ['Alles im Zusammenhang', 'hub', '<a href="zusammenhang.html#z-planung">Diesen Schritt mit Begriffen, Lernzielen, Prüfung und Schablonen ansehen</a>'],
         ['HCD-Ergebnisse (S. 8)', 'inventory_2', pills(['UX-Projektplan', 'menschzentrierte Qualitätsziele'])],
         ['Nutzungsanforderungen in der HCD (S. 117)', 'edit_note', 'Festlegung der zu entwickelnden menschzentrierten Qualitätsziele'],
         ['Kapitel 2 (S. 119)', 'flag', 'Sicherstellen, dass die Nutzungskontextanalyse für den gegebenen Anlass und die spezifizierten menschzentrierten Qualitätsziele in angemessenem Umfang geplant werden kann.' + pills(['2.1 Anlass und Ziele der Nutzungskontextanalyse ermitteln', '2.2 Das Vorgehen bei der Nutzungskontextanalyse festlegen'])],
@@ -134,6 +136,7 @@ const D = {
         ['', '', src('S. 250')]
     ]},
     verstehen: { icon: 'travel_explore', title: 'Verstehen und Festlegen des Nutzungskontextes', tags: ['Problemraum', 'Kapitel 3'], link: 'kapitel-1.html#kontext', blocks: [
+        ['Alles im Zusammenhang', 'hub', '<a href="zusammenhang.html#z-verstehen">Diesen Schritt mit Begriffen, Lernzielen, Prüfung und Schablonen ansehen</a>'],
         ['3. Nutzungskontextinformation erheben und dokumentieren (S. 154, 164, 207)', 'travel_explore', ul(['<a href="kapitel-3.html#rekrutieren">3.1 – Benutzer für die Erhebung von Nutzungskontextinformationen auswählen und rekrutieren</a>', '<a href="kapitel-3.html#durchfuehren">3.2 – Erhebung von Nutzungskontextinformationen vorbereiten und durchführen</a>', '<a href="kapitel-3.html#beschreiben">3.3 – Nutzungskontextbeschreibungen basierend auf Nutzungskontextinformationen erstellen</a>']) + '<p><a href="kapitel-3.html#erheben">Benutzer für NKA rekrutieren → Methoden für NKA festlegen → Ergebnisse der NKA dokumentieren</a></p>'],
         ['HCD-Ergebnisse (S. 8)', 'inventory_2', '<b>Nutzungskontextbeschreibung</b>' + pills(['Benutzergruppenprofile', 'Personas', 'Aufgabenmodelle', 'Ist-Szenarien', 'User Journey Maps'])],
         ['Nutzungsanforderungen in der HCD (S. 117)', 'edit_note', 'Informationen zu und in "Frühform" von Bedürfnissen, Zielen, Wünschen, Forderungen, Funktionen'],
@@ -200,6 +203,7 @@ const D = {
         ['', '', note('Lösungsneutral', 'S. 24') + src('S. 24, 41, 60, 101–118')]
     ]},
     festlegen: { icon: 'edit_note', title: 'Festlegen der Nutzungsanforderungen', tags: ['Problem-/Lösungsraum', 'Kapitel 4, 5, 6'], link: 'kapitel-1.html#nutzungsanforderungen', blocks: [
+        ['Alles im Zusammenhang', 'hub', '<a href="zusammenhang.html#z-festlegen">Diesen Schritt mit Begriffen, Lernzielen, Prüfung und Schablonen ansehen</a>'],
         ['HCD-Ergebnisse (S. 8)', 'inventory_2', pills(['Erfordernisse', 'Nutzungsanforderungen'])],
         ['Nutzungsanforderungen in der HCD (S. 117)', 'edit_note', 'Ableitung aus Erfordernissen und Stakeholderanforderungen' + '<br>Priorisierung in der Planung der Produkt Road Map'],
         ['Agenda (S. 9)', 'bookmark', pills(['4 Erfordernisse identifizieren', '5 Nutzungsanforderungen ableiten', '6 Nutzungsanforderungen konsolidieren & priorisieren'])],
@@ -245,6 +249,7 @@ const D = {
         ['', '', note('Bsp. Fahrkarte kaufen ↳ welche Infos gehören drauf · User: Käufer · Indirekt: Schaffner, Beamter v. Finanzamt, Controlling · Organisatorisch: Finanzamt', 'S. 55') + src('S. 38, 55–61, 100')]
     ]},
     gestalten: { icon: 'design_services', title: 'Gestalten von Lösungen, die Nutzungsanforderungen erfüllen', tags: ['Lösungsraum'], link: 'kapitel-1.html#aufgabenmodell', blocks: [
+        ['Alles im Zusammenhang', 'hub', '<a href="zusammenhang.html#z-gestalten">Diesen Schritt mit Begriffen, Lernzielen, Prüfung und Schablonen ansehen</a>'],
         ['HCD-Ergebnisse (S. 8)', 'inventory_2', pills(['Aufgabenmodelle der Gestaltung', 'Nutzungsszenarien', 'Storyboards', 'User Journey Maps der Gestaltung', 'Informationsarchitektur', '– Navigationsstruktur', 'Style Guide', 'Wireframes', 'Low-, High-Fidelity Prototypen'])],
         ['Nutzungsanforderungen in der HCD (S. 117)', 'edit_note', 'Grundlage für Design, Funktionen und zu erreichende MZ-Qualität'],
         ['Lösung (S. 23)', 'menu_book', 'Ein Produktmerkmal oder mehrere zusammenhängende Produktmerkmale, die spezifiziert oder realisiert sind und eine oder mehrere Anforderungen erfüllen sollen.'],
@@ -270,6 +275,7 @@ const D = {
         ['', '', src('S. 8, 24')]
     ]},
     evaluieren: { icon: 'fact_check', title: 'Evaluieren der Gestaltungslösung gegen Nutzungsanforderungen', tags: ['Lösungsraum'], link: 'kapitel-1.html#anforderungen', blocks: [
+        ['Alles im Zusammenhang', 'hub', '<a href="zusammenhang.html#z-evaluieren">Diesen Schritt mit Begriffen, Lernzielen, Prüfung und Schablonen ansehen</a>'],
         ['HCD-Ergebnisse (S. 8)', 'inventory_2', pills(['Usability-Evaluierungsberichte'])],
         ['Nutzungsanforderungen in der HCD (S. 117)', 'edit_note', 'Testaufgabe und Kriterium der Evaluierung'],
         ['Auf welche Art von Umsetzung hin können Anforderungen überprüft werden? (S. 62)', 'help', pills(['Verifizierung', 'Validierung'])],
@@ -566,6 +572,7 @@ if (document.getElementById('pTable')) {
         document.querySelector('.map-card .legend').style.display = tab ? 'none' : '';
         document.getElementById('pTable').hidden = !tab;
         document.querySelectorAll('.map-card [data-layer]').forEach(b => { b.style.display = tab ? 'none' : ''; });
+        document.querySelectorAll('.map-card [data-layer-label]').forEach(b => { b.style.display = tab ? 'none' : ''; });
         document.querySelector('[data-ptexam]').style.display = tab ? '' : 'none';
         document.querySelectorAll('[data-view]').forEach(b => { b.classList.toggle('on', b.dataset.view === v); b.setAttribute('aria-checked', b.dataset.view === v); });
         try { localStorage.setItem(VKEY, v); } catch (e) {}

@@ -28,6 +28,7 @@
         <div class="sl" id="sl" role="dialog" aria-modal="true" aria-label="Originalfolien" hidden>
             <div class="sl-bar"><span class="material-icons">photo_library</span><b class="sl-title"></b><span class="sl-count"></span>
                 <a class="sl-orig" target="_blank" title="Foto in neuem Tab öffnen"><span class="material-icons">open_in_new</span>Foto öffnen</a>
+                <a class="sl-orig sl-pdf" target="_blank" title="Diese Folie im Handout-PDF öffnen"><span class="material-icons">picture_as_pdf</span>im Handout-PDF</a>
                 <button class="sl-x" aria-label="Schließen"><span class="material-icons">close</span></button></div>
             <div class="sl-stage"><button class="sl-nav prev" aria-label="Vorheriges Foto"><span class="material-icons">chevron_left</span></button>
                 <img alt=""><button class="sl-nav next" aria-label="Nächstes Foto"><span class="material-icons">chevron_right</span></button></div>
@@ -44,6 +45,11 @@
         box.querySelector('.sl-title').textContent = label(f);
         box.querySelector('.sl-count').textContent = list.length > 1 ? (idx + 1) + ' / ' + list.length : '';
         box.querySelector('.sl-orig').href = img.src;
+        const pdf = box.querySelector('.sl-pdf');
+        if (typeof HANDOUT !== 'undefined') {                  /* nächstliegende Folie im Handout (manche Folien fehlen dort) */
+            let s = f.pages[0]; while (s > 0 && !HANDOUT[s]) s--;
+            pdf.href = HANDOUT_URL + '#page=' + (HANDOUT[s] || 1); pdf.hidden = false;
+        } else pdf.hidden = true;
         box.querySelectorAll('.sl-strip button').forEach((b, j) => b.classList.toggle('on', j === idx));
         box.classList.toggle('single', list.length < 2);
     }

@@ -38,7 +38,7 @@
             frag.append(d);
         };
         gruppe('Beispiele', 'lightbulb', beispiele);
-        gruppe('Deine Notizen', 'edit_note', notizen);
+        gruppe('Julias Notizen', 'edit_note', notizen);
 
         /* Weiterlesen: Folien, Abschnitt, Glossar als leise Links */
         const links = document.createElement('div'); links.className = 'dz-links';

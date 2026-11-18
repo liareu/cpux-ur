@@ -140,7 +140,7 @@ slot = lambda t: re.sub(r'(<[^>]+>)', lambda m: '<span class="slot">%s</span>' %
 tpl264 = ('<div class="schablone" data-titel="%s" data-folie="S. 264"><div class="template">%s<br><span class="tpl-gruppe"><span class="tpl-zeilen">%s</span>'
           '<span class="tpl-label">%s</span></span><br>%s</div></div>') % (
     e(T[264]['title']), slot(z[0]), '<br>'.join(e(x) for x in z[1:4]), e(z[4]), slot(z[5]))
-note264 = '<div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. 264)</div>%s</div>' % e(T[264]['notiz_wortlaut'])
+note264 = '<div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Julias Notiz (S. 264)</div>%s</div>' % e(T[264]['notiz_wortlaut'])
 ersetze_karte(264, karte(264, tpl264 + note264, 'text_fields').replace('%s</h3>' % e(T[264]['title']), '%s <span class="qq-tag">Qual.</span></h3>' % e(T[264]['title'])))
 tpl264_innen = tpl264[tpl264.index('<div class="template">'):-len('</div>')]
 

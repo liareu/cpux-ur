@@ -8,6 +8,8 @@ Die Einzelseite wird nur gelesen. Kann beliebig oft neu ausgeführt werden.
 import html, os, re, sys
 
 src_path, out_dir, tool_dir = sys.argv[1:4]
+# Handout-PDF mit allen Folien (Seite je Folie in handout_seiten.json)
+HANDOUT_URL = '../Input/bungencpuxurtnbescheinigungrckmeldungslink/CPUX-UR%20HANDOUT-Pr%C3%A4senztraining%20V3.2.2%20Nov26.pdf'
 src = open(src_path, encoding='utf-8').read()
 os.makedirs(out_dir, exist_ok=True)
 
@@ -176,13 +178,17 @@ if os.path.exists(fmap):
     open(os.path.join(out_dir, 'folien-daten.js'), 'w', encoding='utf-8').write(
         '/* Zuordnung Foto (Ordner Folien/) → gedruckte Folienseite. Erzeugt mit build_site.py. */\nconst FOLIEN = '
         + json.dumps(data, ensure_ascii=False, indent=0) + ';\n')
+hs = os.path.join(tool_dir, 'handout_seiten.json')
+if os.path.exists(hs):
+    open(os.path.join(out_dir, 'folien-daten.js'), 'a', encoding='utf-8').write(
+        '/* Folienseite → Seite im Handout-PDF (V3.2.2) */\nconst HANDOUT_URL = %s;\nconst HANDOUT = %s;\n' % (json.dumps(HANDOUT_URL), open(hs, encoding='utf-8').read().replace('\n', '')))
 frot = os.path.join(tool_dir, 'folien_rot.json')
 if os.path.exists(frot):
     rot = {str(x['page']): {'m': (x.get('marker') or '').replace('-', ' ') or None, 'rot': x.get('rot', [])} for x in json.load(open(frot, encoding='utf-8'))}
     open(os.path.join(out_dir, 'hervorhebung-daten.js'), 'w', encoding='utf-8').write(
         '/* Folienseite → Marker im roten Kreis (W = prüfungsrelevant) und rot gedruckte Begriffe. Erzeugt mit build_site.py. */\nconst ROT = '
         + json.dumps(rot, ensure_ascii=False, indent=0) + ';\n')
-for f in ('pruefung.css', 'pruefung.js', 'folien.js', 'hervorhebung.js', 'detail.js', 'curriculum.js', 'zusammenhang.js', 'prozessgrafik.js', 'ausrichten.js', 'lernen.js', 'lernen.css', 'selbsttest.js'):
+for f in ('pruefung.css', 'pruefung.js', 'folien.js', 'hervorhebung.js', 'detail.js', 'curriculum.js', 'zusammenhang.js', 'prozessgrafik.js', 'ausrichten.js', 'lernen.js', 'lernen.css', 'selbsttest.js', 'onboarding.js', 'rueckweg.js'):
     open(os.path.join(out_dir, f), 'w', encoding='utf-8').write(open(os.path.join(tool_dir, f), encoding='utf-8').read())
 open(os.path.join(out_dir, 'pruefung-daten.js'), 'w', encoding='utf-8').write(
     open(os.path.join(tool_dir, 'pruefung-daten.js'), encoding='utf-8').read())
@@ -224,6 +230,17 @@ def sammelseite(muster, titel, leer):
     return ''.join(teile) or '<p>%s</p>' % leer
 
 
+TAB_JS = ('<script>\n(() => {\n    const tabs = [...document.querySelectorAll(\'.sch-tab\')];\n'
+    '    const ziele = tabs.map(t => document.querySelector(t.getAttribute(\'href\')));\n'
+    '    function markieren() { let k = 0; ziele.forEach((z, i) => { if (z && z.getBoundingClientRect().top < 200) k = i; }); tabs.forEach((t, i) => t.classList.toggle(\'on\', i === k)); }\n'
+    '    window.addEventListener(\'scroll\', markieren); markieren();\n})();\n</script>\n')
+
+
+def tabmenue(eintraege, label):
+    """Sticky Tabmenü: [(anker, titel, unterzeile)]"""
+    return ('        <nav class="sch-tabs" aria-label="%s">' % label + ''.join('<a class="sch-tab" href="#%s"><b>%s</b><small>%s</small></a>' % e for e in eintraege) + '</nav>\n')
+
+
 extra_html = {
     '@theorie': open(os.path.join(tool_dir, 'theorie.html'), encoding='utf-8').read(),
     '@praxis': open(os.path.join(tool_dir, 'praxis.html'), encoding='utf-8').read(),
@@ -231,6 +248,12 @@ extra_html = {
     '@curriculum': open(os.path.join(tool_dir, 'curriculum.html'), encoding='utf-8').read(),
 }
 extra_html['@ure'] = sammelseite(r'<div class="card ure">', 'URE Story', 'Noch keine URE Story vorhanden.')
+_ure_tabs = []
+for _pg in PAGES:
+    _n = sum(1 for x in sammeln(r'<div class="card ure">') if x[0] == _pg)
+    if _n:
+        _ure_tabs.append(('s-' + _pg[0][:-5], html.escape(_pg[5] or _pg[1]), '%d %s' % (_n, 'Story' if _n == 1 else 'Storys')))
+extra_html['@ure'] = '    <div class="ure-tabs-wrap">\n' + tabmenue(_ure_tabs, 'URE Story nach Kapitel') + '    </div>\n' + extra_html['@ure'] + TAB_JS
 schab, sch_tabs = [], []
 # Gütekriterien zu einer Schablone (Folie der Schablone → Karten-IDs in den Kapiteln)
 SCH_KRIT = {'264': ['guete-qual-k', 'krit-anforderungen', 'immunisierungsfalle'], '267': ['guete-quant-k', 'krit-anforderungen'], '252': ['krit-erfordernisse']}
@@ -260,10 +283,7 @@ for pg, sec, h in sammeln(r'<div class="schablone"'):
 extra_html['@schablonen'] = ('    <section class="section" id="schablonen-alle">\n        <div class="section-title"><div class="num"><span class="material-icons">text_fields</span></div><h2>Formulierungsschablonen</h2></div>\n'
     '        <p class="section-lead">Alle Schablonen und Bausteine aus den Folien an einem Ort, im Wortlaut. Neue Schablonen aus weiteren Folien kommen automatisch dazu.</p>\n'
     '        <nav class="sch-tabs" aria-label="Schablonen">' + ''.join(sch_tabs) + '</nav>\n' + ''.join(schab) + '    </section>\n'
-    '<script>\n(() => {\n    const tabs = [...document.querySelectorAll(\'.sch-tab\')];\n'
-    '    const ziele = tabs.map(t => document.querySelector(t.getAttribute(\'href\')));\n'
-    '    function markieren() { let k = 0; ziele.forEach((z, i) => { if (z && z.getBoundingClientRect().top < 200) k = i; }); tabs.forEach((t, i) => t.classList.toggle(\'on\', i === k)); }\n'
-    '    window.addEventListener(\'scroll\', markieren); markieren();\n})();\n</script>\n')
+    + TAB_JS)
 # Schablonen direkt an der Prüfungsaufgabe: <!--SCHABLONEN S. 252|S. 103--> in praxis.html
 sch_by = {re.search(r'data-folie="([^"]*)"', h).group(1).split(',')[0]: (re.search(r'data-titel="([^"]*)"', h).group(1), h) for pg, sec, h in sammeln(r'<div class="schablone"')}
 
@@ -530,10 +550,24 @@ for st in STEPS:
 """)
     if st['k'] == 'verstehen':
         zt.append('    <div class="z-kette"><span class="material-icons">link</span>Die Kette verbindet Verstehen und Festlegen: Nutzungskontext → Erfordernis → Nutzungsanforderung → Lösung. <a href="index.html#karte">Als Tabelle in der Prozesskarte (Ansicht „Tabelle“)</a></div>\n')
-extra_html['@zusammenhang'] = ''.join(zt)
+Z_EINF = """    <section class="section" id="z-einfuehrung">
+        <div class="section-title"><div class="num"><span class="material-icons">info</span></div><h2>So liest du diese Seite</h2></div>
+        <div class="card z-einf">
+            <p class="z-einf-lead">Die Kapitelseiten folgen den Folien von vorn nach hinten. <b>Diese Seite schneidet den Kurs quer:</b> Sie ordnet alles nach den Schritten des HCD-Prozesses und zeigt zu jedem Schritt an einem Ort, was dazugehört – egal, in welchem Kapitel es auf den Folien steht. Ideal zum Wiederholen und für die Prüfungsvorbereitung.</p>
+            <div class="z-einf-grid">
+                <div><b><span class="material-icons">flag</span>Worum es geht</b>Der Kern des Schritts und seine Begriffe, Definitionen im Wortlaut der Folien. Ein Klick auf einen Begriff öffnet die Details.</div>
+                <div><b><span class="material-icons">checklist</span>Lernziele und Prüfung</b>Die Lernziele des Curriculums zu diesem Schritt, die Fragen der Beispielprüfung dazu und die Aufgaben der praktischen Prüfung mit Punkten.</div>
+                <div><b><span class="material-icons">account_tree</span>Schaubilder, W-Folien, Schablonen</b>Die Grafiken, wichtigen Folien und Formulierungsschablonen, die zu diesem Schritt gehören.</div>
+                <div><b><span class="material-icons">auto_stories</span>URE Story</b>Die Zusammenfassungen der Folien, die diesen Schritt betreffen.</div>
+            </div>
+            <p class="z-einf-hinweis"><span class="material-icons">north_east</span>Links mit ↗ führen auf die Kapitelseiten zum Nachlesen. Unten erscheint dann „Zurück zu …“, damit kommst du genau hierher zurück.</p>
+        </div>
+    </section>
+"""
+extra_html['@zusammenhang'] = Z_EINF + ''.join(zt)
 Z_NAME = {'hcd': 'Basis: Menschzentrierte Gestaltung', 'planung': 'Planung', 'verstehen': 'Verstehen und Festlegen des Nutzungskontextes',
           'festlegen': 'Festlegen der Nutzungsanforderungen', 'gestalten': 'Gestalten', 'evaluieren': 'Evaluieren'}
-EXTRA_SUB['@zusammenhang'] = [('z-' + st['k'], ('%d ' % Z_NR[st['k']] if st['k'] in Z_NR else '') + Z_NAME.get(st['k'], st['k']), 'chevron_right') for st in STEPS]
+EXTRA_SUB['@zusammenhang'] = [('z-einfuehrung', 'So liest du diese Seite', 'info')] + [('z-' + st['k'], ('%d ' % Z_NR[st['k']] if st['k'] in Z_NR else '') + Z_NAME.get(st['k'], st['k']), 'chevron_right') for st in STEPS]
 
 EXTRA_SUB['@curriculum'] = [(m.group(1), re.sub(r'^(\d) ', r'\1 ', m.group(2)), 'chevron_right') for m in
     re.finditer(r'<section class="section[^"]*" id="(cu-[\w-]+)">\s*<div class="section-title">.*?<h2>(.*?)</h2>', extra_html['@curriculum'], re.S)]
@@ -591,6 +625,7 @@ def nav_html(cur):
         if on and len(sub_items(p)) > 1:
             out.append('        <div class="nav-sub">' + ''.join(
                 '<a href="#%s">%s</a>' % (s, lbl) for s, lbl, _ in sub_items(p)) + '</div>')
+    out.append('        <a href="%s" class="nav-link" target="_blank"><span class="material-icons">picture_as_pdf</span>Alle Folien (Handout-PDF)</a>' % HANDOUT_URL)
     return '\n'.join(out)
 
 
@@ -649,7 +684,9 @@ for n, p in enumerate(PAGES):
 <script src="curriculum.js"></script>''' if p[0] == 'curriculum.html' else ''}{'''
 <script src="zusammenhang.js"></script>''' if p[0] == 'zusammenhang.html' else ''}
 <script src="lernen.js"></script>
-<script src="ausrichten.js"></script>{'''
+<script src="ausrichten.js"></script>
+<script src="onboarding.js"></script>
+<script src="rueckweg.js"></script>{'''
 <script src="selbsttest.js"></script>''' if p[0] == 'selbsttest.html' else ''}
 </body>
 </html>

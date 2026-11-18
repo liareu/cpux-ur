@@ -26,7 +26,7 @@ def punkte(pg):
 
 
 def note(pg):
-    return '<div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. %d)</div>%s</div>' % (pg, '<br>'.join(e(x) for x in T[pg]['notiz_wortlaut'].split(' · ')))
+    return '<div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Julias Notiz (S. %d)</div>%s</div>' % (pg, '<br>'.join(e(x) for x in T[pg]['notiz_wortlaut'].split(' · ')))
 
 
 def src(pg):

@@ -809,3 +809,79 @@ details.mehr[open] > summary .mehr-pfeil { transform: rotate(-135deg); margin-bo
 .pp-start-t { grid-column: 1; font-size: 14.5px; color: #e5e5e5; }
 .pp-start-pdf { grid-column: 2; grid-row: 1 / span 2; display: inline-flex; align-items: center; gap: 8px; border: 1px solid white; border-radius: 4px; padding: 8px 14px; color: white !important; text-decoration: none !important; font-weight: 650; white-space: nowrap; }
 .pp-start-pdf:hover { background: white; color: #111 !important; }
+
+/* Mini-Onboarding (onboarding.js) */
+body.ob-offen { overflow: hidden; }
+.ob-bg { position: fixed; inset: 0; z-index: 200; background: rgba(17, 17, 17, 0.55); display: grid; place-items: center; padding: 24px; }
+.ob-bg[hidden] { display: none; }
+.ob { position: relative; background: white; color: #111; border-radius: 6px; width: min(640px, 100%); max-height: calc(100vh - 48px); overflow: auto; padding: 36px 40px 28px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); }
+.ob-x { position: absolute; top: 14px; right: 14px; border: 0; background: none; cursor: pointer; color: #111; padding: 6px; }
+.ob-kopf { display: flex; align-items: center; gap: 12px; }
+.ob-kopf .material-icons { font-size: 28px; }
+.ob-kopf h2 { font-size: 22px; margin: 0; }
+.ob-text { font-size: 15px; line-height: 1.6; margin: 14px 0 18px; }
+.ob-wege { display: grid; gap: 8px; }
+.ob-wege a { display: flex; gap: 12px; align-items: center; border: 1px solid var(--linie); border-radius: 4px; padding: 10px 14px; text-decoration: none !important; color: #111; }
+.ob-wege a:hover { border-color: #111; }
+.ob-wege b { display: block; font-size: 14px; }
+.ob-wege small { display: block; font-size: 12.5px; color: #333; }
+.ob-fuss { display: flex; justify-content: space-between; align-items: center; margin-top: 24px; }
+.ob-punkte { display: flex; gap: 8px; }
+.ob-punkte button { width: 9px; height: 9px; border-radius: 50%; border: 1px solid #111; background: white; padding: 0; cursor: pointer; }
+.ob-punkte button.on { background: #111; }
+.ob-knoepfe { display: flex; gap: 8px; }
+.ob-weiter { background: #111 !important; color: white !important; display: inline-flex; align-items: center; gap: 6px; }
+.ob-weiter .material-icons { font-size: 18px; }
+.ob-start { display: flex; align-items: center; gap: 8px; width: 100%; margin-bottom: 16px; background: none; border: 1px solid rgba(255,255,255,0.35); border-radius: 4px; color: white; padding: 8px 10px; font: inherit; font-size: 13px; cursor: pointer; text-align: left; }
+.ob-start:hover { border-color: white; }
+.ob-start .material-icons { font-size: 18px; }
+.ob-zurueck[hidden] { display: none !important; }
+.sidebar-footer { flex-wrap: wrap; }
+.ure-tabs-wrap { position: sticky; top: 12px; z-index: 20; }
+.ure-tabs-wrap .sch-tabs { position: static; }
+section.section[id^="s-kapitel"] { scroll-margin-top: 120px; }
+
+/* Nach oben: auf jeder Seite, unten rechts */
+.back-to-top { background: #111 !important; box-shadow: 0 4px 16px rgba(0,0,0,0.28) !important; border-radius: 50% !important; right: 28px; bottom: 28px; width: 48px; height: 48px; }
+.back-to-top:hover { background: #333 !important; }
+.back-to-top:focus-visible { outline: 3px solid #111; outline-offset: 3px; }
+
+/* Rückweg (rueckweg.js): Links auf andere Seiten gekennzeichnet, „Zurück zu …“ unten */
+a.rw-weg::after { content: '↗'; font-size: 0.85em; margin-left: 3px; text-decoration: none; display: inline-block; }
+a.rw-pdf::after { content: 'PDF ↗'; font-size: 0.7em; font-weight: 700; margin-left: 5px; border: 1px solid currentColor; border-radius: 3px; padding: 0 3px; text-decoration: none; display: inline-block; vertical-align: 1px; }
+.pu-pdf a.rw-pdf::after, .pp-start-pdf.rw-pdf::after { content: '↗'; border: 0; font-size: 0.9em; padding: 0; }
+.rw { position: fixed; left: 50%; transform: translateX(-50%); bottom: 24px; z-index: 900; display: flex; align-items: stretch; background: #111; color: white; border-radius: 999px; box-shadow: 0 6px 22px rgba(0,0,0,0.3); max-width: calc(100vw - 140px); }
+.rw[hidden] { display: none; }
+.rw button { background: none; border: 0; color: white; font: inherit; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+.rw-zurueck { padding: 11px 6px 11px 18px; font-size: 14px; font-weight: 650; min-width: 0; }
+.rw-t { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rw-x { padding: 0 14px 0 8px; opacity: 0.75; }
+.rw-x:hover { opacity: 1; }
+.rw .material-icons { font-size: 19px; }
+@media print { .rw { display: none !important; } }
+
+/* Alles im Zusammenhang: Einführung */
+.z-einf-lead { font-size: 16px; line-height: 1.65; margin: 0 0 20px; max-width: 860px; }
+.z-einf-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.z-einf-grid > div { border: 1px solid var(--linie); border-radius: 4px; padding: 14px 16px; font-size: 13.5px; line-height: 1.5; }
+.z-einf-grid b { display: flex; align-items: center; gap: 8px; font-size: 14px; margin-bottom: 6px; }
+.z-einf-grid .material-icons { font-size: 19px; }
+.z-einf-hinweis { display: flex; align-items: center; gap: 8px; font-size: 13.5px; margin: 18px 0 0; }
+.z-einf-hinweis .material-icons { font-size: 18px; }
+@media (max-width: 1100px) { .z-einf-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Prozesskarte: Ansicht Grafik/Tabelle deutlich, Ebenen getrennt */
+.map-card .toolbar { flex-wrap: wrap; row-gap: 12px; }
+.view-row { display: flex; align-items: center; gap: 12px; flex-basis: 100%; padding-bottom: 12px; border-bottom: 1px solid var(--linie); }
+.view-label, .layer-label { font-size: 11.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #111; }
+.view-switch { border: 2px solid #111; border-radius: 6px; padding: 3px; gap: 3px !important; margin-right: 0 !important; }
+.view-switch .btn { border: 0 !important; border-radius: 4px !important; margin: 0 !important; padding: 8px 16px !important; display: inline-flex; align-items: center; gap: 10px; background: white !important; color: #111 !important; }
+.view-switch .btn b { display: block; font-size: 15px; line-height: 1.2; }
+.view-switch .btn small { display: block; font-size: 11.5px; font-weight: 500; opacity: 0.8; }
+.view-switch .btn .material-icons { font-size: 22px; }
+.view-switch .btn.on { background: #111 !important; color: white !important; }
+.view-switch .btn:not(.on):hover { background: var(--flaeche) !important; }
+.map-card [data-layer] { border-style: dashed !important; }
+.map-card [data-layer].on { border-style: solid !important; }
+.z-verweis { display: flex; align-items: center; gap: 8px; font-size: 14px; margin-top: -6px; }
+.z-verweis .material-icons { font-size: 19px; }

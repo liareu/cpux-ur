@@ -119,7 +119,7 @@ for ab in json.load(open(abschnitte_json, encoding='utf-8')):
             body.append(inner)
             n = notiz_wortlaut(r)
             if n:
-                body.append('<div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Deine Notiz (S. %d)</div>%s</div>' % (r['page'], e(n)))
+                body.append('<div class="note"><div class="note-label"><span class="material-icons">edit_note</span>Julias Notiz (S. %d)</div>%s</div>' % (r['page'], e(n)))
         if any(r.get('nur_bild') for r in g):
             body.append('<p class="ex-mute">Kleindruck auf der Folie – bitte im Originalfoto lesen.</p>')
         kopf = '<h3><span class="material-icons">%s</span>%s</h3>' % (icon, e(titel)) if titel else ''
